@@ -297,5 +297,22 @@
 - **[[andrew-norris]]** — Andrew Norris (Rutgers) — Norris Correspondence, 포로탄성 DMN 이론 기반
 - **[[bernhard-scholkopf]]** — Bernhard Schölkopf (MPI Tübingen) — Kernel PCA, SVM, Causal Inference
 - **Wikilink backfill:** Norris → 2 concept pages, Schölkopf → 2 concept pages (kernel-methods, kernel-pca)
+
+## [2026-04-29] ingest | 6 raw source papers → wiki 반영 (Batch)
+- **Updated Concepts (4):**
+  - [[waste-fiber-acoustic-absorber]] — 재활용 섬유 흡음 논문 + 3건 폐원단 보도자료 source 추가
+  - [[shifted-boundary-method]] — High-Order SBM (Atallah 2023) source + 내용 추가
+  - [[deep-material-network-quilting]] — Shin 2023 npj 논문 중복 source 추가
+  - [[fft-homogenization-polymer-composites]] — Colabella 파일명 인코딩 정합
+- **Deferred (2):** Friston free-energy principle × 2 (기존 분류 유지)
+- **Raw frontmatter added:** 6개 raw 파일에 SHA256 frontmatter 추가
+- **Index fix:** daniel-wolpert 제거, dongil-shin + waste-fiber-acoustic-absorber 추가
+- **Total pages:** 145 (94 concepts + 42 entities + 9 comparisons)
+
+## [2026-04-29] lint --fix | 3 issues resolved
+- **SCHEMA.md:** 7개 누락 태그 추가 (poroelasticity, thermoelasticity, homogenization, micromechanics, thermomechanics, acoustics, dmn, research-idea)
+- **Orphan cross-linking:** 5개 wikilink 추가 — mamba→albert-gu, vae→diederik-kingma, DMN pages→dongil-shin
+- **Index:** dongil-shin + waste-fiber-acoustic-absorber 추가 (total→145), daniel-wolpert ghost entry 제거
+
 - **Total pages:** 139 (was 137, +2 entities)
 

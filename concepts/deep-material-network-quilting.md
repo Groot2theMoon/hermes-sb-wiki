@@ -1,10 +1,10 @@
 ---
 title: "Deep Material Network with Quilting Strategy"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 type: concept
 tags: [paper, materials, surrogate-model, optimization]
-sources: [raw/papers/shin-2023-deep-material-network-quilting.md]
+sources: [raw/papers/shin-2023-deep-material-network-quilting.md, raw/papers/s41524-023-01085-6.md]
 confidence: high
 ---
 
@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-Dongil Shin, Ryan Alberdi, Ricardo A. Lebensohn, Rémi Dingreville가 *npj Computational Materials* (2023)에 발표. Deep Material Network(DMN)의 가시화(explainability)와 정확도 향상을 위한 **quilting 전략** 제안.
+[[dongil-shin|Dongil Shin]], Ryan Alberdi, Ricardo A. Lebensohn, Rémi Dingreville가 *npj Computational Materials* (2023)에 발표. Deep Material Network(DMN)의 가시화(explainability)와 정확도 향상을 위한 **quilting 전략** 제안.
 
 ## 배경
 

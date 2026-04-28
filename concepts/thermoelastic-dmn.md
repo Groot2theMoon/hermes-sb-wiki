@@ -12,7 +12,7 @@ confidence: medium
 
 ## 개요
 
-Dongil Shin(신동일), Ryan Alberdi, Ricardo A. Lebensohn, Rémi Dingreville가 *Composites Part B: Engineering* (Vol.272, 111177, 2024)에 발표. 기존 isothermal DMN을 **thermo-elasto-viscoplastic** 문제로 확장. 열팽창 특성을 building block homogenization에 직접 통합하고, thermal boundary condition을 online formulation에 포함시킴.
+[[dongil-shin|Dongil Shin]](신동일), Ryan Alberdi, Ricardo A. Lebensohn, Rémi Dingreville가 *Composites Part B: Engineering* (Vol.272, 111177, 2024)에 발표. 기존 isothermal DMN을 **thermo-elasto-viscoplastic** 문제로 확장. 열팽창 특성을 building block homogenization에 직접 통합하고, thermal boundary condition을 online formulation에 포함시킴.
 
 DOI: [10.1016/j.compositesb.2023.111177](https://doi.org/10.1016/j.compositesb.2023.111177)
 

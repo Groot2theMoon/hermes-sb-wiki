@@ -71,6 +71,12 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **dynamics:** Multi-body dynamics, rigid/flexible body
 - **photonics:** Photonic devices, nanophotonics, metamaterials
 - **solid-mechanics:** Solid mechanics, elasticity, plasticity, failure
+- **poroelasticity:** Poroelasticity, Biot theory, fluid-saturated porous media
+- **thermoelasticity:** Thermoelasticity, thermal stress, entropy coupling
+- **homogenization:** Homogenization, effective material properties, upscaling
+- **micromechanics:** Micromechanics, microstructure-property relations
+- **thermomechanics:** Thermomechanics, coupled thermal-mechanical problems
+- **acoustics:** Acoustics, sound absorption, wave propagation in porous media
 
 ### Fusion Domain (AI × Engineering)
 - **physics-informed:** PINN, physics-constrained ML, PIML
@@ -84,6 +90,7 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **reinforcement-learning:** RL for robotics, control, manipulation
 - **neural-operator:** Neural operator learning (FNO, DeepONet, etc.)
 - **uncertainty:** Uncertainty quantification, Bayesian methods, confidence estimation
+- **dmn:** Deep Material Network — binary tree surrogate for multiscale composites, physics-based ML
 
 ### Meta
 - **person:** Researcher, professor, industry leader
@@ -98,6 +105,7 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **hardware:** Hardware infrastructure, GPU, TPU, specialized chips
 - **infrastructure:** Computing infrastructure, cloud, cluster, platform
 - **landmark-paper:** Seminal/landmark research paper — high-impact, field-defining
+- **research-idea:** 연구 아이디어, 제안, 로드맵 — 개발 중인 개념
 
 ### 수학/기초
 - **mathematics:** Underlying math (PDEs, ODEs, numerical methods)

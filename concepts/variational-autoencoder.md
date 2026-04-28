@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Variational Autoencoder (VAE)**는 Diederik Kingma와 Max Welling이 2013년 제안한 생성 모델로, 변분 추론(variational inference)과 딥러닝을 결합하여 복잡한 확률 분포를 학습한다^[raw/papers/1312.6114v11.md]. 연속 잠재 변수(continuous latent variables)를 가진 방향성 확률 모델(directed probabilistic models)에서 효율적인 추론과 학습을 가능하게 한다.
+**Variational Autoencoder (VAE)**는 [[diederik-kingma|Diederik Kingma]]와 Max Welling이 2013년 제안한 생성 모델로, 변분 추론(variational inference)과 딥러닝을 결합하여 복잡한 확률 분포를 학습한다^[raw/papers/1312.6114v11.md]. 연속 잠재 변수(continuous latent variables)를 가진 방향성 확률 모델(directed probabilistic models)에서 효율적인 추론과 학습을 가능하게 한다.
 
 ## 핵심 아이디어
 

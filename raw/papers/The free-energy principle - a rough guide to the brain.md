@@ -1,3 +1,8 @@
+---
+source_url: ""
+ingested: 2026-04-29
+sha256: a67290d2706ef1d513aab0fdc701a25ecc9c766e2c569f100f1a5691a6928284
+---
 
 
 # The free-energy principle: a rough guide to the brain?

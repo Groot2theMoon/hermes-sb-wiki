@@ -1,3 +1,8 @@
+---
+source_url: ""
+ingested: 2026-04-29
+sha256: c0784089aaa78f69018df8af372cab1b8e4a9c4dee4b6900143b69589d9b17f1
+---
 
 
 ![TIN뉴스 logo](30a26f2d17ca95672702bf50fb4f0242_img.jpg)

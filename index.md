@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 139
+> Last updated: 2026-04-29 | Total pages: 145
 
 ## Entities
 
@@ -16,6 +16,7 @@
 - [[brown-university]] — Brown University — CRUNCH Group
 - [[caltech]] — Caltech — AI × Science 리더
 - [[diederik-kingma]] — Diederik Kingma
+- [[dongil-shin]] — Dongil Shin — POSTECH DSLab, DMN/Quilting
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
 - [[felix-gers]] — Felix Gers
 - [[frank-lu]] — Frank K. Lu
@@ -141,6 +142,7 @@
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
+- [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once

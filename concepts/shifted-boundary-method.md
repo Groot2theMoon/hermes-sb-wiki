@@ -1,10 +1,10 @@
 ---
 title: Shifted Boundary Method (SBM)
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 type: concept
 tags: [FEM, mathematics, mechanics, paper]
-sources: [raw/papers/1-s2.0-S0021999117307799-am.md]
+sources: [raw/papers/1-s2.0-S0021999117307799-am.md, raw/papers/1-s2.0-S0045782522001797-main.md]
 confidence: high
 ---
 
@@ -55,6 +55,20 @@ $$(\\nabla w^h, \\nabla u^h)_{\\tilde{\\Omega}} - \\langle w^h, \\nabla u^h \\cd
 - **복잡한 형상에서도 optimal convergence** 확인
 
 - [[gap-sbm]] — 개선된 SBM (Gap-SBM)
+
+### High-Order SBM (Atallah, Canuto, Scovazzi 2023)
+
+- **Source:** `raw/papers/1-s2.0-S0045782522001797-main.md`
+- Duke University 연구진이 제안한 **고차(high-order) SBM** 확장
+- Spectral/hp 요소 기반 고차 근사에서도 **Taylor 보정의 일관성** 유지
+- **지수 수렴(exponential convergence)** 달성 — smooth 해에 대해 $O(h^p)$가 아닌 $O(e^{-cN})$ 수렴
+
+| 버전 | 수렴률 | 메모 | 
+|:----|:-----:|:----|
+| Classical SBM (2017) | $O(h^2)$ | 2차 정확도 |
+| High-Order SBM (2023) | $O(h^p)$ / 지수 | p-version, hp-version |
+
+- 다음 단계: GAP-SBM의 고차 확장? — `[[gap-sbm]]` 참조
 
 ## References
 - A. Main, G. Scovazzi. "The Shifted Boundary Method for Embedded Domain Computations. Part I: Poisson and Stokes Problems", *J. Comput. Phys.* 2017
