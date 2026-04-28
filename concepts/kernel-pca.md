@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Bernhard Schölkopf, Alexander Smola, Klaus-Robert Müller (1998)** 가 제안한 **Kernel PCA (KPCA)** 는 기존 **PCA (Principal Component Analysis)** 의 선형성을 **커널 트릭 (kernel trick)** 을 통해 비선형으로 확장한 차원 축소 기법이다^[raw/papers/Nonlinear_Component_Analysis_as_a_Kernel.md]. 10,000+ 인용으로 비선형 차원 축소의 표준 방법 중 하나이다.
+**Bernhard [[bernhard-scholkopf|Schölkopf]], Alexander Smola, Klaus-Robert Müller (1998)** 가 제안한 **Kernel PCA (KPCA)** 는 기존 **PCA (Principal Component Analysis)** 의 선형성을 **커널 트릭 (kernel trick)** 을 통해 비선형으로 확장한 차원 축소 기법이다^[raw/papers/Nonlinear_Component_Analysis_as_a_Kernel.md]. 10,000+ 인용으로 비선형 차원 축소의 표준 방법 중 하나이다.
 
 ## 핵심 아이디어
 
@@ -66,7 +66,7 @@ $$\phi: \mathbb{R}^d \to \mathcal{H}, \quad x \mapsto \phi(x)$$
 
 ## References
 
-- B. Schölkopf, A. Smola, K.-R. Müller. "Kernel Principal Component Analysis", *Neural Computation*, 1998
+- B. [[bernhard-scholkopf|Schölkopf]], A. Smola, K.-R. Müller. "Kernel Principal Component Analysis", *Neural Computation*, 1998
 - [[kernel-methods]] — 커널 방법론의 상위 개념
 - [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — 차원 축소 방법 비교
 - [[t-sne]] — KPCA와 비교되는 확률적 차원 축소

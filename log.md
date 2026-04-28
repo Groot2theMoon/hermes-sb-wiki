@@ -285,3 +285,17 @@
 - **Raw frontmatter added:** 6개 raw 파일에 SHA256 frontmatter 추가
 - **Tags used:** foundation, pure-mechanics, materials, mathematics, paper
 - **Total pages:** 137 (was 136, +1 concept)
+
+## [2026-04-29] rewrite | 3 concept pages deepened (Content Deepening)
+- **[[physics-informed-neural-networks]]** (15→63 lines): PINN full formulation (PDE residual, loss 함수), Burgers/Schrödinger/NS 결과 표, 역사적 의의, 융합 도메인 연결 (7개 관련 페이지)
+- **[[kernel-methods]]** (18→61 lines): Kernel trick 원리, Mercer 정리, 대표적 알고리즘(SVM/KFD/GP/KPCA) 비교표, Deep Learning과의 관계 분석
+- **[[lstm-forget-gate]]** (18→58 lines): Continual prediction 문제, forget gate 수식 유도, 원조 LSTM vs forget gate LSTM 성능 비교표, GRU/Transformer로의 발전 연결
+- **Total wikilinks:** improved cross-referencing across all 3 pages
+- **Tags used:** landmark-paper, survey, sequence-modeling
+
+## [2026-04-29] create | 2 entity pages (Entity Backfill)
+- **[[andrew-norris]]** — Andrew Norris (Rutgers) — Norris Correspondence, 포로탄성 DMN 이론 기반
+- **[[bernhard-scholkopf]]** — Bernhard Schölkopf (MPI Tübingen) — Kernel PCA, SVM, Causal Inference
+- **Wikilink backfill:** Norris → 2 concept pages, Schölkopf → 2 concept pages (kernel-methods, kernel-pca)
+- **Total pages:** 139 (was 137, +2 entities)
+

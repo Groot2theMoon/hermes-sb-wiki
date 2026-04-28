@@ -31,9 +31,9 @@ confidence: medium
 - α: Biot-Willis 계수 벡터 (6×1)
 - β: M 계수 관련 (스칼라, = 1/M)
 
-## 핵심 발견: Norris Correspondence
+## 핵심 발견: [[andrew-norris|Norris]] Correspondence
 
-Norris (1992, J. Appl. Phys.)는 포로탄성과 열탄성 사이의 **완전한 정적 대응 관계**를 증명:
+[[andrew-norris|Norris]] (1992, J. Appl. Phys.)는 포로탄성과 열탄성 사이의 **완전한 정적 대응 관계**를 증명:
 
 | 포로탄성 | ↔ | 열탄성 |
 |:---------|:--|:-------|
@@ -42,7 +42,7 @@ Norris (1992, J. Appl. Phys.)는 포로탄성과 열탄성 사이의 **완전한
 | α (Biot 계수) | ↔ | β (열팽창) |
 | 1/M (저류 계수) | ↔ | c_σ (정압 비열) |
 
-→ Shin(2024)의 thermomechanical DMN은 Norris 정리에 의해 **준정적 포로탄성 DMN과 수학적으로 동일한 구조**를 가짐.
+→ Shin(2024)의 thermomechanical DMN은 [[andrew-norris|Norris]] 정리에 의해 **준정적 포로탄성 DMN과 수학적으로 동일한 구조**를 가짐.
 
 ## 병목 분석 (Bottleneck Analysis)
 
@@ -118,19 +118,19 @@ Shin(2024)의 thermoelastic DMN에서 θ(온도)를 다루는 방식과 동일.
 - **Source:** `raw/papers/LBiot_long.md`
 - **핵심 기여:** 직교 이방성(orthotropic) 포로탄성 층상 매질의 배수(drained) 및 비배수(undrained) boundary condition에서의 유효 물성 해석. 단순 해석적 결과가 없는 이방성 문제에 대한 일반적 프레임워크 제공.
 - **DMN 연결:** DMN의 laminate homogenization과 직접 연결 — 층상 구조에서 drained/undrained 조건이 어떻게 유효 물성에 영향을 미치는지 이론적 이해 가능. 특히 DMN quilting 전략(Shin 2023)과의 결합이 유망.
-- **Berryman & Milton 대응:** Norris 대응 정리와 연결되어, 열탄성 결과로부터 포로탄성 계수를 직접 유도하는 Berryman-Milton 접근법의 이론적 배경 포함.
+- **Berryman & Milton 대응:** [[andrew-norris|Norris]] 대응 정리와 연결되어, 열탄성 결과로부터 포로탄성 계수를 직접 유도하는 Berryman-Milton 접근법의 이론적 배경 포함.
 
 ## Aero-elasticity와의 차이
 
 | | Acusto-Elastic (Biot) | Aero-Elastic |
 |:--|:---------------------|:-------------|
 | Coupling 성질 | 국소적, 재료 내 | 비국소적, 형상-유동 시스템 |
-| DMN building block 접근 | ✅ 가능 (7×7 또는 Norris 경유) | ❌ 부적합 |
+| DMN building block 접근 | ✅ 가능 (7×7 또는 [[andrew-norris|Norris]] 경유) | ❌ 부적합 |
 | 대안 접근 | DMN 확장 | FNO, DeepONet, PINN |
 
 ## 연구 로드맵 (제안)
 
-### Phase 1: Norris 경유 — 최소 진입 장벽
+### Phase 1: [[andrew-norris|Norris]] 경유 — 최소 진입 장벽
 - Shin(2024) thermomechanical DMN 코드를 그대로 활용
 - 열탄성 계수(θ, β, c_σ)를 포로탄성 계수(p, α, 1/M)로 대체
 - 검증: 단순 배수/비배수 문제
@@ -147,13 +147,13 @@ Shin(2024)의 thermoelastic DMN에서 θ(온도)를 다루는 방식과 동일.
 
 ## 관련 개념
 
-- `poroelasticity-thermoelasticity-correspondence` — Norris 1992: 포로-열탄성 대응 정리
+- `poroelasticity-thermoelasticity-correspondence` — [[andrew-norris|Norris]] 1992: 포로-열탄성 대응 정리
 - `thermoelastic-dmn` — Shin 2024: thermomechanical DMN
 - `deep-material-network` — DMN 기본 아키텍처
 
 ## 참고 문헌
 
-- Norris, A. (1992). "On the correspondence between poroelasticity and thermoelasticity." *J. Appl. Phys.*, 71, 1138.
+- [[andrew-norris|Norris]], A. (1992). "On the correspondence between poroelasticity and thermoelasticity." *J. Appl. Phys.*, 71, 1138.
 - Shin, D. et al. (2024). "A deep material network approach for predicting the thermomechanical response of composites." *Composites Part B*, 272, 111177.
 - Berryman, J. (1997). "Mechanics of layered anisotropic poroelastic media." *Stanford Exploration Project*.
 - Liu, M. & Wu, J. (2019). "Exploring the 3D architectures of DMN." *J. Mech. Phys. Solids*.

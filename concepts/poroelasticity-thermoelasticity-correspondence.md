@@ -1,5 +1,5 @@
 ---
-title: "Poroelasticity–Thermoelasticity Correspondence (Norris 1992)"
+title: "Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)"
 created: 2026-04-28
 updated: 2026-04-29
 type: concept
@@ -8,11 +8,11 @@ sources: [raw/papers/1992_JAppliedPhysics_71_1138-1141.md]
 confidence: high
 ---
 
-# Poroelasticity–Thermoelasticity Correspondence (Norris 1992)
+# Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 
 ## 개요
 
-Andrew Norris (Rutgers University)가 *J. Appl. Phys.* 71(3), 1992, pp.1138–1141에 발표.
+[[andrew-norris|Andrew Norris]] (Rutgers University)가 *J. Appl. Phys.* 71(3), 1992, pp.1138–1141에 발표.
 
 정적(static) 포로탄성(poroelasticity)과 정적 열탄성(thermoelasticity) 사이의 **완전한 수학적 대응 관계**를 증명한 논문. 이 대응 덕분에, 비균질(inhomogeneous) 열탄성 매질에 대해 알려진 유효 물성 결과들을 **직접적으로** 비균질 포로탄성 매질에 적용할 수 있음.
 
@@ -59,7 +59,7 @@ s = c_ε θ + tr(C:β : e)
 이 correspondence는 **Shin et al. (2024)의 thermomechanical DMN**과 **포로탄성 DMN** 사이의 직접적인 이론적 연결고리를 제공:
 
 1. Shin(2024)은 열탄성 building block의 homogenization을 유도
-2. Norris 대응 정리에 의해, 같은 수학적 구조를 **Biot 포로탄성**으로 직접 변환 가능
+2. [[andrew-norris|Norris]] 대응 정리에 의해, 같은 수학적 구조를 **Biot 포로탄성**으로 직접 변환 가능
 3. 즉, 준정적(quasi-static) Biot consolidation 문제라면, Shin(2024)의 thermomechanical DMN 코드가 거의 수정 없이 포로탄성 DMN으로 확장 가능
 
 ### 7×7 Matrix Formulation
@@ -90,6 +90,6 @@ s = c_ε θ + tr(C:β : e)
 
 ## 참고 문헌
 
-- Norris, A. (1992). "On the correspondence between poroelasticity and thermoelasticity." *J. Appl. Phys.*, 71(3), 1138–1141.
+- [[andrew-norris|Norris]], A. (1992). "On the correspondence between poroelasticity and thermoelasticity." *J. Appl. Phys.*, 71(3), 1138–1141.
 - Biot, M. A. (1941). "General theory of three-dimensional consolidation." *J. Appl. Phys.*, 12, 155–164.
 - Cheng, A. H.-D. (2016). *Poroelasticity*. Springer.

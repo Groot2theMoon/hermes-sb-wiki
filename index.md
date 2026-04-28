@@ -3,14 +3,16 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 137
+> Last updated: 2026-04-29 | Total pages: 139
 
 ## Entities
 
 - [[albert-gu]] — Albert Gu
+- [[andrew-norris]] — Andrew Norris — Poroelasticity–Thermoelasticity Correspondence
 - [[andrew-stuart]] — Andrew Stuart
 - [[anima-anandkumar]] — Anima Anandkumar
 - [[ashish-vaswani]] — Ashish Vaswani
+- [[bernhard-scholkopf]] — Bernhard Schölkopf — Kernel Methods, SVM, Causal Inference
 - [[brown-university]] — Brown University — CRUNCH Group
 - [[caltech]] — Caltech — AI × Science 리더
 - [[diederik-kingma]] — Diederik Kingma
