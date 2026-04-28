@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 131
+> Last updated: 2026-04-28 | Total pages: 134
 
 ## Entities
 
@@ -64,6 +64,7 @@
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
+- [[ai-hallucination-physics]] — AI 모델의 유체/물리 시뮬레이션 Hallucination 현상
 - [[bayesian-pinns]] — B-PINNs (Bayesian Physics-Informed Neural Networks)
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
@@ -92,6 +93,7 @@
 - [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
 - [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
+- [[in-context-modeling-physics]] — In-Context Modeling: 재학습 없는 물리 시스템 일반화 패러다임
 - [[isomap]] — Isomap — Isometric Feature Mapping, nonlinear dimensionality reduction via geodesic distances
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
@@ -140,6 +142,7 @@
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
+- [[wind-energy-ml]] — Wind Energy × AI/ML: 풍력 에너지 분야 AI 응용
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
 

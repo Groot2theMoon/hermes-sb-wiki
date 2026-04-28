@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-28
 type: concept
 tags: [model, neural-network, fluid-dynamics, CFD, surrogate-model, mathematics, paper]
-sources: [raw/papers/2010.08895v3.md]
+sources: [raw/papers/2010.08895v3.md, raw/papers/trending/2026-04-28-03.md]
 confidence: high
 ---
 
@@ -59,3 +59,15 @@ $$(\mathcal{K}(v))(x) = \mathcal{F}^{-1}(R_\theta \cdot \mathcal{F}(v))(x)$$
 - [[physics-informed-neural-networks]] — PINN (Neural-FEM 접근법)
 - [[pseudo-hamiltonian-neural-networks]] — 구조 보존 신경망
 - [[pinn-high-speed-flows]] — PINN for Euler equations
+
+## 최신 응용: 부유식 해상 풍력 터빈(FOWT) 후류 예측
+
+Dong, Qin, Xu (2026)는 FNO와 PINN을 최초로 FOWT 후류 예측에 적용하여 비교했다^[raw/papers/trending/2026-04-28-03.md]. 주요 결과:
+
+- **FNO**는 PINN 대비 약 8배 빠른 훈련 속도
+- **고주파 난류 구조**: FNO는 Strouhal 고조파(2St, 3St)까지 포착, PINN은 low-pass filter 역할
+- **Wake meandering**: FNO가 large/small-scale coherent structure 모두 정확 재현
+- PINN은 시공간적으로 과도하게 평활화된(smooth) 후류 생성
+
+→ [[wind-energy-ml]] — 풍력 에너지 AI 응용 상세
+→ [[ai-hallucination-physics]] — PINN smoothness의 spectral bias 문제와 연결

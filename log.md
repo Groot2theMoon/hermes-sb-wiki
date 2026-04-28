@@ -225,3 +225,17 @@
 - **Raw Sources (5):** ml2-lecture-01.md, ml2-lecture-02.md, ml2-sheet-01.md, ml2-sheet-02.md, ml2-lle-intro.md
 - **Tags:** classic-ai, dimensionality-reduction, survey, person, comparison
 - **Total pages:** 131 (was 125)
+
+## [2026-04-28] ingest | Trending Scan — 3 new concept pages, 2 updated
+- **Trending scan:** Script ran (300s timeout), 50 papers fetched, 14 Tier 2, 36 Tier 3
+- **False positives filtered (4):** MoT-HRA robotics, Visual RL, vehicle path planning, PHIN-GAN particle physics
+- **New concept pages (3):**
+  - [[ai-hallucination-physics]] (31줄) — AI 모델 hallucination in fluid dynamics (Wibawa & Jha 2026)
+  - [[in-context-modeling-physics]] (31줄) — ICM retrain-free paradigm (Li et al. 2026)
+  - [[wind-energy-ml]] (28줄) — Wind Energy × AI/ML (FNO+PINN for FOWT wakes)
+- **Updated (2):**
+  - [[fourier-neural-operator]] — FOWT wake application section added (+12줄)
+  - [[physics-informed]] — 2026 trends section (ICM, Temporal U-Net, AI hallucination) (+8줄)
+- **Raw sources (4):** raw/papers/trending/2026-04-28-{01,02,03,04}.md
+- **Tags used:** physics-informed, fluid-dynamics, model, surrogate-model, CFD, paper, benchmark
+- **Total pages:** 134 (was 131)
