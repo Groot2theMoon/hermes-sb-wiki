@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 125
+> Last updated: 2026-04-28 | Total pages: 131
 
 ## Entities
 
@@ -21,6 +21,7 @@
 - [[google-deepmind]] — Google DeepMind — Transformer, BERT, AlphaFold 등 AI 연구 선도 조직
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber — LSTM 및 GRU 핵심 요소 창시자
 - [[kaiming-he]] — Kaiming He — ResNet 창시자, 컴퓨터 비전 연구자
+- [[klaus-robert-muller]] — Klaus-Robert Müller — LRP 창시자, TU Berlin, interpretable ML
 - [[maziar-raissi]] — Maziar Raissi — PINN (Physics-Informed Neural Networks) 창시자
 - [[openai]] — OpenAI — GPT 시리즈, DALL-E, AGI 연구 기관
 - [[yann-lecun]] — Yann LeCun — CNN의 아버지, JEPA/I-JEPA 주창
@@ -30,6 +31,7 @@
 - [[ian-goodfellow]] — Ian Goodfellow — GAN (Generative Adversarial Network) 창시자
 - [[kaushik-bhattacharya]] — Kaushik Bhattacharya — 고체역학 × AI 융합, Caltech
 - [[laurens-van-der-maaten]] — Laurens van der Maaten — t-SNE 및 DenseNet 공동 창시자
+- [[lawrence-saul]] — Lawrence K. Saul — LLE (Locally Linear Embedding) 공동 창시자
 - [[lu-lu]] — Lu Lu — DeepONet 및 hPINN 공동 창시자, DeepXDE/SciANN
 - [[paris-perdikaris]] — Paris Perdikaris — PINN 공동 창시자, UPenn
 - [[sepp-hochreiter]] — Sepp Hochreiter — LSTM 원조 창시자
@@ -41,6 +43,7 @@
 - [[kyunghyun-cho]] — Kyunghyun Cho — GRU (Gated Recurrent Unit) 창시자
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅, AI × Science 인프라
 - [[ross-girshick]] — Ross Girshick — R-CNN / Fast R-CNN 창시자, YOLO 공동 연구자
+- [[sam-roweis]] — Sam T. Roweis — LLE (Locally Linear Embedding) 공동 창시자, Gatsby Unit UCL
 - [[s-keshav]] — S. Keshav — How to Read a Paper, 3-pass 방법론 창시자
 - [[sepp-hochreiter]]
 
@@ -48,7 +51,7 @@
 
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
 - [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 아키텍처 비교
-- [[pca-vs-tsne-vs-lle]] — PCA vs t-SNE vs LLE — 차원 축소 방법 비교
+- [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — PCA vs MDS vs LLE vs Isomap vs t-SNE — 5-way 차원 축소 비교
 - [[pinn-vs-deeponet]] — PINN vs DeepONet — 물리 기반 ML 접근법 비교
 - [[pinn-vs-hpinn]] — PINN vs hPINN — Soft vs Hard Constraint 비교
 - [[pde-vs-rde]] — PDE vs RDE — Pulse vs Rotating Detonation Engine 비교
@@ -89,6 +92,7 @@
 - [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
 - [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
+- [[isomap]] — Isomap — Isometric Feature Mapping, nonlinear dimensionality reduction via geodesic distances
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
 - [[kennedy-ohagan-calibration]] — Kennedy-O'Hagan Bayesian Calibration
@@ -108,6 +112,7 @@
 - [[mode-collapse-flow-lattice]] — Mode-Collapse in Flow-based Sampling of Lattice Field Theories
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
 - [[muon-optimizer]] — Muon Optimizer for LLM Training
+- [[multi-dimensional-scaling]] — MDS — Multi-Dimensional Scaling, preserving pairwise distances in low-D
 - [[neural-tangent-kernel]] — Neural Tangent Kernel (NTK)
 - [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
@@ -125,6 +130,7 @@
 - [[residual-networks]] — Residual Networks (ResNet)
 - [[rotating-detonation-engine]] — RDE — Rotating Detonation Engine, continuous detonation wave propulsion
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
+- [[stochastic-neighbor-embedding]] — SNE — Stochastic Neighbor Embedding, probabilistic dimensionality reduction
 - [[transformer]] — Transformer Architecture
 - [[t-sne]] — t-SNE — Visualizing Data
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review

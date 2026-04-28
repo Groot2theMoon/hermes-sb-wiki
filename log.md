@@ -216,3 +216,12 @@
 - **Comparison:** [[pde-vs-rde]] — 15개 차원 상세 비교 + 선택 가이드 (105줄)
 - **Tags:** foundation, fluid-dynamics, thermodynamics, survey, comparison
 - **Total pages:** 125 (was 121)
+
+## [2026-04-28] update | ML2 Lecture Materials — 9 pages updated/created
+- **Deepened (2):** [[lle]] (16→91줄), [[t-sne]] (19→90줄) — SNE→t-SNE gradient derivation, LLE 3-step algorithm, invariance properties, Sheet 01/02 내용 반영
+- **Created Concepts (3):** [[multi-dimensional-scaling]], [[isomap]], [[stochastic-neighbor-embedding]]
+- **Created Entities (3):** [[klaus-robert-muller]], [[sam-roweis]], [[lawrence-saul]]
+- **Created Comparison (1):** [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] (replaces old pca-vs-tsne-vs-lle)
+- **Raw Sources (5):** ml2-lecture-01.md, ml2-lecture-02.md, ml2-sheet-01.md, ml2-sheet-02.md, ml2-lle-intro.md
+- **Tags:** classic-ai, dimensionality-reduction, survey, person, comparison
+- **Total pages:** 131 (was 125)
