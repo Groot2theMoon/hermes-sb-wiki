@@ -3,11 +3,50 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 75
+> Last updated: 2026-04-28 | Total pages: 111
 
 ## Entities
 
-- [[yoshua-bengio]] — Yoshua Bengio
+- [[albert-gu]] — Albert Gu — Mamba (Selective SSM) 공동 창시자
+- [[anima-anandkumar]] — Anima Anandkumar — FNO 공동 창시자, Caltech AI×Science 리더
+- [[ashish-vaswani]] — Ashish Vaswani — Transformer (Attention Is All You Need) 제1저자
+- [[diederik-kingma]] — Diederik Kingma — VAE 및 Adam Optimizer 공동 창시자
+- [[geoffrey-hinton]] — Geoffrey Hinton — 딥러닝의 대부, Backpropagation, t-SNE
+- [[george-em-karniadakis]] — George Em Karniadakis — PINN 및 DeepONet 공동 창시자
+- [[google-deepmind]] — Google DeepMind — Transformer, BERT, AlphaFold 등 AI 연구 선도 조직
+- [[juergen-schmidhuber]] — Jürgen Schmidhuber — LSTM 및 GRU 핵심 요소 창시자
+- [[kaiming-he]] — Kaiming He — ResNet 창시자, 컴퓨터 비전 연구자
+- [[maziar-raissi]] — Maziar Raissi — PINN (Physics-Informed Neural Networks) 창시자
+- [[openai]] — OpenAI — GPT 시리즈, DALL-E, AGI 연구 기관
+- [[yann-lecun]] — Yann LeCun — CNN의 아버지, JEPA/I-JEPA 주창
+- [[yoshua-bengio]] — Yoshua Bengio — 딥러닝 3대 거장, GRU 연구실
+- [[zongyi-li]] — Zongyi Li — Fourier Neural Operator (FNO) 창시자
+- [[andrew-stuart]] — Andrew Stuart — Neural Operator의 수학적 기반, Caltech
+- [[ian-goodfellow]] — Ian Goodfellow — GAN (Generative Adversarial Network) 창시자
+- [[kaushik-bhattacharya]] — Kaushik Bhattacharya — 고체역학 × AI 융합, Caltech
+- [[laurens-van-der-maaten]] — Laurens van der Maaten — t-SNE 및 DenseNet 공동 창시자
+- [[lu-lu]] — Lu Lu — DeepONet 및 hPINN 공동 창시자, DeepXDE/SciANN
+- [[paris-perdikaris]] — Paris Perdikaris — PINN 공동 창시자, UPenn
+- [[sepp-hochreiter]] — Sepp Hochreiter — LSTM 원조 창시자
+- [[steven-g-johnson]] — Steven G. Johnson — hPINN, 위상 최적화, MIT
+- [[brown-university]] — Brown University / CRUNCH Group — PINN 및 DeepONet 탄생지
+- [[caltech]] — Caltech — AI × Mechanics 융합 연구 중심, FNO 탄생지
+- [[felix-gers]] — Felix Gers — LSTM Forget Gate 공동 창시자
+- [[joseph-redmon]] — Joseph Redmon — YOLO (You Only Look Once) 창시자
+- [[kyunghyun-cho]] — Kyunghyun Cho — GRU (Gated Recurrent Unit) 창시자
+- [[nvidia]] — NVIDIA — GPU 컴퓨팅, AI × Science 인프라
+- [[ross-girshick]] — Ross Girshick — R-CNN / Fast R-CNN 창시자, YOLO 공동 연구자
+
+## Comparisons
+
+- [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
+- [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 아키텍처 비교
+- [[pca-vs-tsne-vs-lle]] — PCA vs t-SNE vs LLE — 차원 축소 방법 비교
+- [[pinn-vs-deeponet]] — PINN vs DeepONet — 물리 기반 ML 접근법 비교
+- [[pinn-vs-hpinn]] — PINN vs hPINN — Soft vs Hard Constraint 비교
+- [[resnet-vs-densenet]] — ResNet vs DenseNet — Skip Connection 아키텍처 비교
+- [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
+- [[vae-vs-gan]] — VAE vs GAN — 생성 모델 패러다임 비교
 
 ## Concepts
 
@@ -85,10 +124,6 @@
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
-
-## Comparisons
-
-<!-- Alphabetical within section -->
 
 ## Queries
 

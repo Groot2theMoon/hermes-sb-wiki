@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-Lu Lu, Raphaël Pestourie, Wenjie Yao, Zhicheng Wang, Francesc Verdugo, Steven G. Johnson (2021)이 제안한 **hPINN**은 기존 PINN의 **soft constraint** 방식을 **hard constraint**로 대체하여 **topology optimization (위상 최적화)** 문제를 해결하는 새로운 딥러닝 방법이다^[raw/papers/2102.04626v1.md]. Inverse design(역설계) 문제는 일반적으로 PDE 제약 조건과 추가 부등식 제약이 있는 고차원 최적화 문제로, 기존 PINN은 모든 제약을 soft하게 처리하여 정확도가 떨어지는 단점이 있었다.
+[[lu-lu|Lu Lu]], Raphaël Pestourie, Wenjie Yao, Zhicheng Wang, Francesc Verdugo, [[steven-g-johnson|Steven G. Johnson]] (2021)이 제안한 **hPINN**은 기존 PINN의 **soft constraint** 방식을 **hard constraint**로 대체하여 **topology optimization (위상 최적화)** 문제를 해결하는 새로운 딥러닝 방법이다^[raw/papers/2102.04626v1.md]. Inverse design(역설계) 문제는 일반적으로 PDE 제약 조건과 추가 부등식 제약이 있는 고차원 최적화 문제로, 기존 PINN은 모든 제약을 soft하게 처리하여 정확도가 떨어지는 단점이 있었다.
 
 ## 핵심 아이디어
 

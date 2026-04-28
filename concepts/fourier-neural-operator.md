@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Fourier Neural Operator (FNO)** 는 Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, Anima Anandkumar (Caltech)이 제안한 **함수 공간 간 매핑을 학습하는 신경 연산자(neural operator)** 이다^[raw/papers/2010.08895v3.md]. 적분 커널을 **Fourier 공간에서 직접 매개변수화**하여 PDE 계열 전체를 학습한다.
+**Fourier Neural Operator (FNO)** 는 [[zongyi-li|Zongyi Li]], Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, [[kaushik-bhattacharya|Kaushik Bhattacharya]], [[andrew-stuart|Andrew Stuart]], [[anima-anandkumar|Anima Anandkumar]] ([[caltech|Caltech]])이 제안한 **함수 공간 간 매핑을 학습하는 신경 연산자(neural operator)** 이다^[raw/papers/2010.08895v3.md]. 적분 커널을 **Fourier 공간에서 직접 매개변수화**하여 PDE 계열 전체를 학습한다.
 
 ## 기존 방법과의 차별성
 

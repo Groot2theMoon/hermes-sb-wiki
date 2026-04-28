@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-Lu Lu, Pengzhan Jin, George Em Karniadakis (Brown University)이 제안한 **Deep Operator Networks (DeepONet)**은 **연산자의 보편 근사 정리(universal approximation theorem of operators)**[^chen1995]를 실제로 구현한 딥러닝 아키텍처이다^[raw/papers/2281727.md]. 적은 데이터로도 비선형 연산자(nonlinear operators)를 정확하고 효율적으로 학습할 수 있다.
+[[lu-lu|Lu Lu]], Pengzhan Jin, [[george-em-karniadakis|George Em Karniadakis]] ([[brown-university|Brown University]])이 제안한 **Deep Operator Networks (DeepONet)**은 **연산자의 보편 근사 정리(universal approximation theorem of operators)**[^chen1995]를 실제로 구현한 딥러닝 아키텍처이다^[raw/papers/2281727.md]. 적은 데이터로도 비선형 연산자(nonlinear operators)를 정확하고 효율적으로 학습할 수 있다.
 
 ## 핵심 아이디어
 

@@ -9,6 +9,7 @@
 - Domain: AI/ML × Mechanical Engineering & Physics/Mechanics (융합)
 - WIKI_PATH: /home/aero_groot/agent-workspace/wiki
 - Structure: SCHEMA.md, index.md, log.md, raw/{articles,papers,transcripts,assets}, entities/, concepts/, comparisons/, queries/
+
 ## [2026-04-28] ingest | Batch 1: 5 papers (all concepts)
 - Ingested files (alphabetical order):
   - raw/papers/10.1.1.441.7873.md  →  concepts/universal-approximation-theorem.md (new)
@@ -36,23 +37,6 @@
 - raw/papers/1803.03635v5.md          → concepts/lottery-ticket-hypothesis.md (new)
 - Files created: 4 new concept pages
 - Total wiki pages now: 14
-
-## [2026-04-28] ingest | Batch 8-9: 10 papers → 9 new concepts + 1 update
-- Ingested files:
-  - raw/papers/2102.04626v1.md          → concepts/hpinns-inverse-design.md (new) — hPINN with hard constraints for topology optimization
-  - raw/papers/2104.06368v1.md          → concepts/unsupervised-phase-transitions.md (update) — VAE Ising model analysis added
-  - raw/papers/2201.11967v3.md          → concepts/pseudo-differential-neural-operator.md (new) — PDNO generalizing FNO
-  - raw/papers/2203.10989v2.md          → concepts/hierarchical-autoregressive-networks.md (new) — HAN for Ising model scaling
-  - raw/papers/2207.00980v1.md          → concepts/conditional-normalizing-flow-lattice.md (new) — C-NF for lattice sampling
-  - raw/papers/2281727.md               → concepts/deeponet.md (new) — Deep Operator Networks
-  - raw/papers/2301.08243v3.md          → concepts/i-jepa.md (new) — I-JEPA self-supervised learning
-  - raw/papers/2302.14082v2.md          → concepts/mode-collapse-flow-lattice.md (new) — Mode-collapse in flow sampling
-  - raw/papers/2303.15093v2.md          → concepts/quadratic-iss-lyapunov.md (new) — ISS Lyapunov for linear analytic systems
-  - raw/papers/2304.02034v1.md          → concepts/effective-theory-transformers.md (new) — Effective theory of Transformers
-- Files created: 9 new concept pages
-- Files updated: 1 existing page (unsupervised-phase-transitions.md)
-- Total wiki pages now: 23
-- Tags used: physics-informed, optimization, surrogate-model, control-system, neural-network, model, training, inference, benchmark, mathematics
 
 ## [2026-04-28] ingest | Batches 4-8: Consolidation of all subagent results
 - Subagents processed batches 4-9, created ~24 new concept pages
@@ -90,3 +74,93 @@
 - Empty directories: .gitkeep + README.md added to all 6 limbo directories
 - Tag confusion fixed: physics-informed and physics-informed-neural-networks now exist as real pages
 - Index: rebuilt with 75 entries (74 concepts + 1 entity)
+
+## [2026-04-28] create | 10 entity pages — key researchers & labs
+- Created entities/ pages for major figures and organizations central to the wiki domain:
+  - entities/maziar-raissi.md — PINN 창시자 (융합 도메인 핵심)
+  - entities/george-em-karniadakis.md — PINN, DeepONet 공동 창시자 (융합 도메인 핵심)
+  - entities/zongyi-li.md — FNO 창시자 (융합 도메인 핵심)
+  - entities/kaiming-he.md — ResNet 창시자 (ML 핵심)
+  - entities/ashish-vaswani.md — Transformer 제1저자 (ML 핵심)
+  - entities/yann-lecun.md — CNN 아버지, JEPA/I-JEPA (ML 핵심)
+  - entities/albert-gu.md — Mamba 공동 창시자 (차세대 아키텍처)
+  - entities/diederik-kingma.md — VAE, Adam Optimizer (ML 핵심)
+  - entities/openai.md — GPT series, AGI 연구 기관
+  - entities/google-deepmind.md — Transformer, BERT, AlphaFold
+- Total entities now: 11 (1 existing + 10 new)
+- Tags used: person, model, neural-network, company, physics-informed, computer-vision
+
+## [2026-04-28] create | 5 comparison pages — side-by-side analyses
+- Created comparisons/ pages for key concept pairs:
+  - comparisons/pinn-vs-deeponet.md — PINN vs DeepONet: 함수 vs 연산자 접근법 비교
+  - comparisons/transformer-vs-mamba.md — Transformer vs Mamba: Attention vs SSM
+  - comparisons/lstm-vs-gru.md — LSTM vs GRU: 게이트 RNN 비교
+  - comparisons/vae-vs-gan.md — VAE vs GAN: 생성 모델 패러다임 비교
+  - comparisons/resnet-vs-densenet.md — ResNet vs DenseNet: Skip Connection 비교
+- Each comparison includes: table comparison, architecture comparison, use-case guidance
+- Tags used: comparison, neural-network, model, physics-informed, benchmark
+
+## [2026-04-28] update | index.md — entities + comparisons 채움
+- Entities section: filled with 11 entity entries
+- Comparisons section: filled with 5 comparison entries
+- Total pages: updated to 90 (74 concepts + 11 entities + 5 comparisons)
+
+## [2026-04-28] create | 3 new entities + 3 new comparisons (Structural Backfill)
+- **BUG FIX:** zongyi-li was on disk but missing from index.md → added to index
+- **New entity pages:**
+  - entities/anima-anandkumar.md — FNO 공동 창시자, Caltech AI×Science 리더 (융합 도메인 핵심)
+  - entities/juergen-schmidhuber.md — LSTM/GRU 창시자 (sequence modeling 근간)
+  - entities/geoffrey-hinton.md — 딥러닝의 대부, Backpropagation, t-SNE, Nature Survey 공저
+- **New comparison pages:**
+  - comparisons/fno-vs-deeponet.md — FNO vs DeepONet: operator learning 2대 접근법 비교
+  - comparisons/pca-vs-tsne-vs-lle.md — PCA vs t-SNE vs LLE: 3-way 차원 축소 방법 비교
+  - comparisons/pinn-vs-hpinn.md — PINN vs hPINN: Soft vs Hard Constraint 비교
+- **Index rebuilt:** Total pages updated to 96 (74 concepts + 14 entities + 8 comparisons)
+- Tags used: person, surrogate-model, physics-informed, mathematics, neural-network, classic-ai, comparison, dimensionality-reduction, optimization, kernel-method
+
+## [2026-04-28] create | 8 new entity pages + wikilink backfill (Tier 1 Entity Backfill)
+- Created entity pages for key researchers missing from wiki:
+  - entities/paris-perdikaris.md — Paris Perdikaris — PINN 공동 창시자, UPenn
+  - entities/lu-lu.md — Lu Lu — DeepONet + hPINN 공동 창시자, DeepXDE/SciANN
+  - entities/andrew-stuart.md — Andrew Stuart — Neural Operator 수학적 기반, Caltech
+  - entities/kaushik-bhattacharya.md — Kaushik Bhattacharya — 고체역학 × AI 융합, Caltech
+  - entities/steven-g-johnson.md — Steven G. Johnson — hPINN, 위상 최적화, MIT
+  - entities/laurens-van-der-maaten.md — Laurens van der Maaten — t-SNE + DenseNet 창시자
+  - entities/sepp-hochreiter.md — Sepp Hochreiter — LSTM 원조 창시자
+  - entities/ian-goodfellow.md — Ian Goodfellow — GAN 창시자
+- Added wikilinks from 11 concept pages → 8 new entities:
+  - physics-informed-neural-networks.md → [[paris-perdikaris]], [[maziar-raissi]], [[george-em-karniadakis]]
+  - pinn-failure-modes.md → [[paris-perdikaris]]
+  - physics-constrained-surrogate.md → [[paris-perdikaris]]
+  - deeponet.md → [[lu-lu]], [[george-em-karniadakis]]
+  - hpinns-inverse-design.md → [[lu-lu]], [[steven-g-johnson]]
+  - fourier-neural-operator.md → [[zongyi-li]], [[kaushik-bhattacharya]], [[andrew-stuart]], [[anima-anandkumar]]
+  - t-sne.md → [[laurens-van-der-maaten]], [[geoffrey-hinton]]
+  - densenet.md → [[laurens-van-der-maaten]]
+  - gated-recurrent-units.md → [[sepp-hochreiter]]
+  - lstm-forget-gate.md → [[juergen-schmidhuber]], [[sepp-hochreiter]]
+  - gan-lattice-simulations.md → [[ian-goodfellow]]
+  - generative-models-physics.md → [[ian-goodfellow]]
+- Index rebuilt: Total pages updated to 104 (74 concepts + 22 entities + 8 comparisons)
+- Tags used: person, mechanics, photonics, dimensionality-reduction, classic-ai, generative-model
+
+## [2026-04-28] create | 7 new entity pages + wikilink backfill (Tier 2 Entity Backfill)
+- Created entity pages for additional researchers and institutions:
+  - entities/joseph-redmon.md — Joseph Redmon — YOLO 창시자
+  - entities/ross-girshick.md — Ross Girshick — R-CNN/Fast R-CNN 창시자, YOLO 공동 연구자
+  - entities/kyunghyun-cho.md — Kyunghyun Cho — GRU 창시자
+  - entities/felix-gers.md — Felix Gers — LSTM Forget Gate 공동 창시자
+  - entities/caltech.md — Caltech — AI × Mechanics 융합 연구 중심
+  - entities/brown-university.md — Brown CRUNCH Group — PINN/DeepONet 탄생지
+  - entities/nvidia.md — NVIDIA — GPU 컴퓨팅, AI × Science 인프라
+- Added wikilinks from 6 concept pages → 7 new entities:
+  - yolo-object-detection.md → [[joseph-redmon]], [[ross-girshick]]
+  - gated-recurrent-units.md → [[kyunghyun-cho]]
+  - lstm-forget-gate.md → [[felix-gers]]
+  - fourier-neural-operator.md → [[caltech]]
+  - deeponet.md → [[brown-university]]
+  - pinn-high-speed-flows.md → [[brown-university]]
+- Index rebuilt: Total pages updated to 111 (74 concepts + 29 entities + 8 comparisons)
+- Tags used: person, computer-vision, institution, hardware, infrastructure
+
+## [2026-04-28] git | commit and push to GitHub

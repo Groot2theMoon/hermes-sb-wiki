@@ -34,7 +34,7 @@ confidence: medium
 **Japneet Singh, Vipul Arora, Vinay Gupta, Mathias S. Scheurer** (2020)^[raw/papers/2006.11868v1.md]
 
 ### 방법
-- **Conditional GAN (Implicit model)**: 온도 조건부 생성
+- **Conditional GAN** ([[ian-goodfellow|Goodfellow]] et al., 2014) — Implicit model, 온도 조건부 생성
 - **Interpolation trick**: 임계 영역 밖 데이터로 학습 → 임계 영역 샘플 생성
 - 대칭성 활용 (물리적 구조 반영)
 

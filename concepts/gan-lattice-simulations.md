@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**GAN 기반 overrelaxation**은 Pawlowski & Urban (Heidelberg, 2018)이 제안한 방법으로, **Generative Adversarial Network (GAN)**을 lattice field theory Monte Carlo 시뮬레이션의 **overrelaxation step**으로 활용하여 autocorrelation time을 획기적으로 줄인다^[raw/papers/1811.03533v4.md].
+**GAN 기반 overrelaxation**은 Pawlowski & Urban (Heidelberg, 2018)이 제안한 방법으로, [[ian-goodfellow|Ian Goodfellow]]의 **Generative Adversarial Network (GAN)**을 lattice field theory Monte Carlo 시뮬레이션의 **overrelaxation step**으로 활용하여 autocorrelation time을 획기적으로 줄인다^[raw/papers/1811.03533v4.md].
 
 ## 문제: Critical Slowing Down
 

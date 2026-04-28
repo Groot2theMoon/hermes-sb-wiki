@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Gated Recurrent Units**는 vanishing gradient 문제를 해결하기 위해 설계된 RNN 아키텍처로, LSTM(Long Short-Term Memory, 1997)과 GRU(Gated Recurrent Unit, 2014)가 대표적이다. Chung et al. (2014)은 이들 게이트 유닛과 전통적인 tanh 유닛을 음악 모델링 및 음성 신호 모델링에서 체계적으로 비교 평가했다^[raw/papers/1412.3555v1.md].
+**Gated Recurrent Units**는 vanishing gradient 문제를 해결하기 위해 설계된 RNN 아키텍처로, [[sepp-hochreiter|Hochreiter]] & Schmidhuber (1997)의 **LSTM (Long Short-Term Memory)**과 GRU (Gated Recurrent Unit, 2014)가 대표적이다. Chung et al. (2014)은 이들 게이트 유닛과 전통적인 tanh 유닛을 음악 모델링 및 음성 신호 모델링에서 체계적으로 비교 평가했다^[raw/papers/1412.3555v1.md].
 
 ## Vanishing Gradient 문제
 
@@ -35,7 +35,7 @@ $$h_t = o_t \odot \tanh(c_t)$$
 
 ## Gated Recurrent Unit (GRU)
 
-### 구성 요소 (Cho et al., 2014; Bahdanau et al., 2014)
+### 구성 요소 ([[kyunghyun-cho|Cho]] et al., 2014; Bahdanau et al., 2014)
 - **Update gate $z_t$:** 기존 상태 유지 vs 새 정보 반영의 선형 보간
 - **Reset gate $r_t$:** 이전 상태를 얼마나 잊을지 결정
 - **Candidate activation $\tilde{h}_t$:** 리셋 게이트로 조절된 새 활성화

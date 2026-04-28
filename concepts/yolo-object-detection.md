@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**YOLO (You Only Look Once)**는 Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi가 2015년 제안한 **실시간 객체 탐지(object detection) 알고리즘**이다^[raw/papers/1506.02640v5.md]. 기존 접근법과 달리 객체 탐지를 **단일 회귀 문제(single regression problem)**로 프레임화하여, 하나의 CNN이 전체 이미지를 한 번만 보고 바운딩 박스와 클래스 확률을 동시에 예측한다.
+**YOLO (You Only Look Once)**는 [[joseph-redmon|Joseph Redmon]], Santosh Divvala, [[ross-girshick|Ross Girshick]], Ali Farhadi가 2015년 제안한 **실시간 객체 탐지(object detection) 알고리즘**이다^[raw/papers/1506.02640v5.md]. 기존 접근법과 달리 객체 탐지를 **단일 회귀 문제(single regression problem)**로 프레임화하여, 하나의 CNN이 전체 이미지를 한 번만 보고 바운딩 박스와 클래스 확률을 동시에 예측한다.
 
 ## 핵심 아이디어
 

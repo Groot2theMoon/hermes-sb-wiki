@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**DenseNet**은 Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger가 2016년 제안한 CNN 아키텍처로, **모든 앞선 레이어와 모든 뒤 레이어를 직접 연결**하는 밀집 연결(dense connectivity) 패턴을 도입했다^[raw/papers/1608.06993v5.md].
+**DenseNet**은 Gao Huang, Zhuang Liu, [[laurens-van-der-maaten|Laurens van der Maaten]], Kilian Q. Weinberger가 2016년 제안한 CNN 아키텍처로, **모든 앞선 레이어와 모든 뒤 레이어를 직접 연결**하는 밀집 연결(dense connectivity) 패턴을 도입했다^[raw/papers/1608.06993v5.md].
 
 $L$개 레이어가 $L$개 연결인 전통적 구조와 달리, DenseNet은 $\frac{L(L+1)}{2}$개의 직접 연결을 가짐.
 

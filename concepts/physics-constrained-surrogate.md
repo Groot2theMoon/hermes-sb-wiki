@@ -10,7 +10,7 @@ confidence: high
 
 # Physics-Constrained Surrogate Modeling
 
-Zhu, Zabaras, Koutsourelakis, Perdikaris (2019)가 Journal of Computational Physics에 발표한 논문으로, **레이블 데이터 없이 물리 법칙만으로 고차원 Surrogate Model을 학습**하는 방법을 제시한다^[raw/papers/1-s2.0-S0021999119303559-main.md].
+Zhu, Zabaras, Koutsourelakis, [[paris-perdikaris|Perdikaris]] (2019)가 Journal of Computational Physics에 발표한 논문으로, **레이블 데이터 없이 물리 법칙만으로 고차원 Surrogate Model을 학습**하는 방법을 제시한다^[raw/papers/1-s2.0-S0021999119303559-main.md].
 
 - **Physics-constrained:** PDE 손실 함수를 직접 최적화 (레이블 데이터 불필요)
 - **고차원 uncertainty quantification** — Stochastic PDE의 불확실성 전파

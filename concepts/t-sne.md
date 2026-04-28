@@ -10,7 +10,7 @@ confidence: high
 
 # t-SNE
 
-Laurens van der Maaten & Geoffrey Hinton (2008)의 **t-SNE (t-distributed Stochastic Neighbor Embedding)**는 고차원 데이터의 시각화를 위한 비선형 차원 축소 기법이다^[raw/papers/vandermaaten08a.md].
+[[laurens-van-der-maaten|Laurens van der Maaten]] & [[geoffrey-hinton|Geoffrey Hinton]] (2008)의 **t-SNE (t-distributed Stochastic Neighbor Embedding)**는 고차원 데이터의 시각화를 위한 비선형 차원 축소 기법이다^[raw/papers/vandermaaten08a.md].
 
 - **대조군:** PINN latent space, VAE latent space 시각화의 기준 도구
 - [[variational-autoencoder]]의 latent space 분석 시 대조군으로 활용 가능

@@ -10,7 +10,7 @@ confidence: high
 
 # When and Why PINNs Fail: An NTK Perspective
 
-Wang, Yu, Perdikaris (2021)가 Journal of Computational Physics에 발표한 논문으로, **Neural Tangent Kernel (NTK) 관점에서 PINN 학습 실패 원인을 규명**한다^[raw/papers/1-s2.0-S002199912100663X-main.md].
+Wang, Yu, [[paris-perdikaris|Perdikaris]] (2021)가 Journal of Computational Physics에 발표한 논문으로, **Neural Tangent Kernel (NTK) 관점에서 PINN 학습 실패 원인을 규명**한다^[raw/papers/1-s2.0-S002199912100663X-main.md].
 
 - PINN 손실 함수의 여러 항(PDE residual, BC, IC)이 **서로 다른 수렴 속도**를 가짐
 - NTK 고유값 분해로 각 손실 항의 **spectral bias** 분석

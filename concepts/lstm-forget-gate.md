@@ -10,7 +10,7 @@ confidence: high
 
 # LSTM with Forget Gate
 
-Felix Gers & Jürgen Schmidhuber (2000)는 **forget gate**를 LSTM에 추가하여 "continual prediction" 문제를 해결했다^[raw/papers/gers2000.md].
+[[felix-gers|Felix Gers]] & [[juergen-schmidhuber|Jürgen Schmidhuber]] (2000)는 **forget gate**를 LSTM에 추가하여 "continual prediction" 문제를 해결했다^[raw/papers/gers2000.md]. (원조 LSTM은 [[sepp-hochreiter|Hochreiter]] & Schmidhuber, 1997.)
 
 - **대조군:** 고전 RNN의 기준 — GRU, Transformer 등 최신 아키텍처의 출발점
 - [[gated-recurrent-units]]에서 GRU/LSTM 비교의 이론적 토대
