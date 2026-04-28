@@ -3,11 +3,16 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 116
+> Last updated: 2026-04-28 | Total pages: 125
 
 ## Entities
 
 - [[albert-gu]] — Albert Gu — Mamba (Selective SSM) 공동 창시자
+- [[fedor-bykovskii]] — Fedor A. Bykovskii — Seminal RDE experimentalist, LIH Novosibirsk
+- [[frank-lu]] — Frank K. Lu — RDE review author, UTA Aerodynamics Research Center
+- [[lavrentyev-institute-of-hydrodynamics]] — LIH — World-leading detonation physics center
+- [[piotr-wolanski]] — Piotr Wolański — Detonative propulsion pioneer, Warsaw University of Technology
+- [[sergey-zhdan]] — Sergey A. Zhdan — RDE theoretical modeler, LIH Novosibirsk
 - [[anima-anandkumar]] — Anima Anandkumar — FNO 공동 창시자, Caltech AI×Science 리더
 - [[ashish-vaswani]] — Ashish Vaswani — Transformer (Attention Is All You Need) 제1저자
 - [[diederik-kingma]] — Diederik Kingma — VAE 및 Adam Optimizer 공동 창시자
@@ -46,6 +51,7 @@
 - [[pca-vs-tsne-vs-lle]] — PCA vs t-SNE vs LLE — 차원 축소 방법 비교
 - [[pinn-vs-deeponet]] — PINN vs DeepONet — 물리 기반 ML 접근법 비교
 - [[pinn-vs-hpinn]] — PINN vs hPINN — Soft vs Hard Constraint 비교
+- [[pde-vs-rde]] — PDE vs RDE — Pulse vs Rotating Detonation Engine 비교
 - [[resnet-vs-densenet]] — ResNet vs DenseNet — Skip Connection 아키텍처 비교
 - [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
 - [[vae-vs-gan]] — VAE vs GAN — 생성 모델 패러다임 비교
@@ -61,6 +67,7 @@
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
+- [[deflagration-to-detonation-transition]] — DDT — Deflagration-to-Detonation Transition in detonation engines
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
 - [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
@@ -111,10 +118,12 @@
 - [[pinn-failure-modes]] — When and Why PINNs Fail — NTK Perspective
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[ppi-no]] — Pseudo Physics-Informed Neural Operator (PPI-NO)
+- [[pressure-gain-combustion]] — PGC — Pressure Gain Combustion, detonation-based thermodynamic cycle
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)
 - [[pseudo-hamiltonian-neural-networks]] — Pseudo-Hamiltonian Neural Networks (PHNN) for PDEs
 - [[quadratic-iss-lyapunov]] — Quadratic ISS Lyapunov Functions for Linear Analytic Systems
 - [[residual-networks]] — Residual Networks (ResNet)
+- [[rotating-detonation-engine]] — RDE — Rotating Detonation Engine, continuous detonation wave propulsion
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[transformer]] — Transformer Architecture
 - [[t-sne]] — t-SNE — Visualizing Data

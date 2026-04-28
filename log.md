@@ -199,3 +199,20 @@
 - **Classification:** Foundation Materials (순수 역학/추진 기반 이론, 추후 AI 융합을 위한 기초 재료)
 - **Tags:** foundation, fluid-dynamics, thermodynamics, survey
 - **Total Marker API cost:** 21 credits
+
+## [2026-04-28] create | 5 Wiki Entity Pages — RDE/PGC Researchers & Labs
+- **Entity:** [[piotr-wolanski]] — Piotr Wolański, Warsaw University of Technology, detonative propulsion pioneer
+- **Entity:** [[fedor-bykovskii]] — Fedor A. Bykovskii, LIH Novosibirsk, continuous spin detonation experimentalist
+- **Entity:** [[frank-lu]] — Frank K. Lu, UT Arlington, RDE review author
+- **Entity:** [[sergey-zhdan]] — Sergey A. Zhdan, LIH Novosibirsk, RDE theoretical modeler
+- **Entity:** [[lavrentyev-institute-of-hydrodynamics]] — LIH, world-leading detonation physics center
+- **Tags:** person, lab, foundation, survey
+- **Total pages:** 121 (was 116)
+
+## [2026-04-28] create | 4 Wiki Concept/Comparison Pages — RDE/PGC Core Topics
+- **Concept:** [[rotating-detonation-engine]] — RDE 작동 원리, 역사, 장단점, 과제 (78줄)
+- **Concept:** [[pressure-gain-combustion]] — PGC 열역학 사이클 비교 (Brayton/Humphrey/Fickett-Jacobs) (73줄)
+- **Concept:** [[deflagration-to-detonation-transition]] — DDT 물리적 메커니즘, 촉진 장치, RDE vs PDE 역할 (89줄)
+- **Comparison:** [[pde-vs-rde]] — 15개 차원 상세 비교 + 선택 가이드 (105줄)
+- **Tags:** foundation, fluid-dynamics, thermodynamics, survey, comparison
+- **Total pages:** 125 (was 121)
