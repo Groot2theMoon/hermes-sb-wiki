@@ -164,3 +164,13 @@
 - Tags used: person, computer-vision, institution, hardware, infrastructure
 
 ## [2026-04-28] git | commit and push to GitHub
+
+## [2026-04-28] rewrite | 6 concept pages — 중요도 대비 빈약한 문서 전면 재작성 (Content Deepening)
+- **hmm-tutorial** (14→53 lines): Rabiner 1989 완전 재작성 — HMM 3대 문제(평가/디코딩/학습) 알고리즘 수식, Rabiner 정리표, 한계/발전 관계, 융합 도메인 연결
+- **deep-learning-nature-survey** (14→46 lines): LeCun/Bengio/Hinton Nature 2015 전면 재작성 — 딥러닝 3축(CNN/RNN/사전학습) 정리, 역사적 의의 표, 융합 도메인 개념 매핑
+- **lenet-5** (14→52 lines): LeCun 1998 전면 재작성 — 7층 아키텍처 상세표, 핵심 혁신(weight sharing / 계층적 특징/end-to-end), MNIST 성능, 역사적 계보(AlexNet→ResNet) 추가
+- **gpt-1** (15→51 lines): Radford 2018 전면 재작성 — 2단계 학습 패러다임(사전학습+미세조정), 태스크별 입력 변환 표, 12개 NLP 태스크 성능표, GPT→GPT-4 계보 추가
+- **mc-dropout** (14→56 lines): Gal & Ghahramani 2016 전면 재작성 — Dropout=Bayesian VI 증명, MC Dropout 알고리즘, UQ 방법 비교표(계산비용/PINN 호환성), 융합 도메인(BNN/구조-UQ/배터리 surrogate) 연결
+- **kernel-pca** (13→53 lines): Schölkopf 1998 전면 재작성 — PCA 한계→Kernel trick→KPCA 알고리즘, 대표적 커널(RBF/Polynomial/Sigmoid) 표, 차원 축소 방법 4-way 비교, 격자 시뮬레이션 활용
+- 각 페이지에 수식(LaTeX), 비교표, References + wikilink 포함
+- Total wikilinks: 74→84 (+10)
