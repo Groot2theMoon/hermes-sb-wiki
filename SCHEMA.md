@@ -110,6 +110,9 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **optimization-method:** 최적화 알고리즘 — SGD, Adam 초기
 - **survey:** 리뷰/서베이 논문 — 특정 분야 종합 정리
 
+### 연구 방법론 (Research Meta-Skills)
+- **research-skills:** 연구 방법론, 논문 읽기/쓰기 기법, 리뷰 방법 — AI/ML × Mechanics 도메인 간접 지원
+
 ## Page Thresholds
 
 - **Create a page** when an entity/concept appears in 2+ sources OR is central to one source

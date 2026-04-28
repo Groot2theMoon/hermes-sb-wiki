@@ -174,3 +174,10 @@
 - **kernel-pca** (13→53 lines): Schölkopf 1998 전면 재작성 — PCA 한계→Kernel trick→KPCA 알고리즘, 대표적 커널(RBF/Polynomial/Sigmoid) 표, 차원 축소 방법 4-way 비교, 격자 시뮬레이션 활용
 - 각 페이지에 수식(LaTeX), 비교표, References + wikilink 포함
 - Total wikilinks: 74→84 (+10)
+
+## [2026-04-28] ingest | Marker API — How to Read a Paper (S. Keshav)
+- **Source:** raw/papers/how-to-read-a-paper.md (3 pages, 1-pass via Marker API, quality 4.8/5.0)
+- **Concept:** [[how-to-read-a-paper]] — Three-Pass Method (3-pass approach, literature survey guide)
+- **Entity:** [[s-keshav]] — S. Keshav, Waterloo CS 교수, 15년 연구 방법론 경험
+- **Schema:** SCHEMA.md에 research-skills 태그 카테고리 추가
+- wikilinks: [[deep-learning-nature-survey]], [[hmm-tutorial]] 연결

@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 111
+> Last updated: 2026-04-28 | Total pages: 113
 
 ## Entities
 
@@ -36,6 +36,8 @@
 - [[kyunghyun-cho]] — Kyunghyun Cho — GRU (Gated Recurrent Unit) 창시자
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅, AI × Science 인프라
 - [[ross-girshick]] — Ross Girshick — R-CNN / Fast R-CNN 창시자, YOLO 공동 연구자
+- [[s-keshav]] — S. Keshav — How to Read a Paper, 3-pass 방법론 창시자
+- [[sepp-hochreiter]]
 
 ## Comparisons
 
@@ -77,6 +79,7 @@
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
 - [[hierarchical-autoregressive-networks]] — Hierarchical Autoregressive Networks (HAN) for Statistical Systems
 - [[hmm-tutorial]] — Hidden Markov Model — Tutorial
+- [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
 - [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
