@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 136
+> Last updated: 2026-04-28 | Total pages: 139
 
 ## Entities
 
@@ -69,9 +69,12 @@
 - [[bayesian-pinns]] — B-PINNs (Bayesian Physics-Informed Neural Networks)
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
+- [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators — 최고 Q 상온 공진기
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
+- [[decoding-material-networks]] — Decoding Material Networks — DMN vs IMN 성능 비교
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
+- [[deep-material-network-quilting]] — Deep Material Network with Quilting — DMN 가시화 및 Recursive Training
 - [[deflagration-to-detonation-transition]] — DDT — Deflagration-to-Detonation Transition in detonation engines
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)

@@ -247,3 +247,18 @@
 - **Updated Comparison:** [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] → 6-way (+UMAP column)
 - **Tags:** classic-ai, dimensionality-reduction, person
 - **Total pages:** 136 (was 134)
+
+## [2026-04-28] ingest | Marker API — 3 Papers Batch (Nanomechanics & DMN)
+- **Source 1:** raw/papers/ghadimi-2024-centimeter-nanomechanical-resonators.md (10p, cost=3)
+  - Andrea Cupertino et al., "Centimeter-scale nanomechanical resonators with low dissipation," Nature Communications (2024) — 10.1038/s41467-024-48183-7
+  - Multi-fidelity Bayesian optimization for nanomechanical resonator design
+- **Source 2:** raw/papers/shin-2023-deep-material-network-quilting.md (16p, cost=5)
+  - Dongil Shin et al., "Deep material network via a quilting strategy: visualization for explainability and recursive training for improved accuracy," npj Computational Materials (2023) — 10.1038/s41524-023-01085-6
+  - DMN quilting strategy for explainability + recursive training
+- **Source 3:** raw/papers/wan-2024-decoding-material-networks.md (12p, cost=4)
+  - Wen-Ning Wan et al., "Decoding material networks: exploring performance of deep material network and interaction-based material networks," Journal of Mechanics (2024) — 10.1093/jom/ufae053
+  - DMN vs IMN systematic comparison
+- **Created Concepts (3):** [[centimeter-nanomechanical-resonators]], [[deep-material-network-quilting]], [[decoding-material-networks]]
+- **Tags:** materials, surrogate-model, optimization, mechanics
+- **Total Marker API cost:** 12 credits
+- **Total pages:** 139 (was 136)
