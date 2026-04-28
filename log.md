@@ -268,3 +268,20 @@
 - **Index:** README.md 2개 제거 (entities/, comparisons/) + filesystem 기반 재구축
 - **Total pages:** 136 (정확 — concepts 88 + entities 39 + comparisons 9)
 - **Tags in taxonomy:** 45→54 (+9)
+
+## [2026-04-28] discuss | 7×7 Acusto-Elastic DMN 및 Norris Correspondence
+- **New Concepts (2):** [[poroelasticity-thermoelasticity-correspondence]], [[poroelastic-dmn-research]]
+- **Concept Updates (2):** [[deep-material-network]], [[thermoelastic-dmn]] (신규 생성)
+- **Summary:** Shin(2024) thermomechanical DMN이 Norris(1992) 포로-열탄성 대응 정리에 의해 준정적 Biot-type poroelastic DMN으로 직접 확장 가능함을 분석. 7×7 행렬 확장의 6가지 병목 식별 및 연구 로드맵 제안.
+- **Tags in taxonomy:** 45→54 (+9)
+
+## [2026-04-29] ingest | 6 raw source papers → wiki 반영
+- **Updated Concepts (3):**
+  - [[poroelasticity-thermoelasticity-correspondence]] — Norris 1992 원본 논문 source 추가
+  - [[lle]] — Saul & Roweis LLE intro source 추가
+  - [[poroelastic-dmn-research]] — 3편 신규 포로탄성 논문 source + 내용 추가 (Mehrabian 다중공극, Gurevich interface 조건, Berryman 층상 이방성)
+- **Created Concepts (1):**
+  - [[fft-homogenization-polymer-composites]] — FFT 기반 균질화 (Colabella 2017, 생체 재료 적용) — foundation/base material
+- **Raw frontmatter added:** 6개 raw 파일에 SHA256 frontmatter 추가
+- **Tags used:** foundation, pure-mechanics, materials, mathematics, paper
+- **Total pages:** 137 (was 136, +1 concept)

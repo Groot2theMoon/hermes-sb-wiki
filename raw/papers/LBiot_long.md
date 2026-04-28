@@ -1,3 +1,8 @@
+---
+source_url: ""
+ingested: 2026-04-28
+sha256: e5a5ad7e1fb1b6692a84f1d89dca4f9aa5bc5814d06be54201c1ed93311f5e76
+---
 
 
 # Mechanics of Layered Anisotropic Poroelastic Media with Applications to Effective Stress for Fluid Permeability

@@ -1,3 +1,8 @@
+---
+source_url: ""
+ingested: 2026-04-28
+sha256: a34d5a493f34afc9a6be337e80520f5b231286333bf852193f931844fabdf67b
+---
 
 
 # Calculation of cancellous bone elastic properties with the polarization-based FFT iterative scheme

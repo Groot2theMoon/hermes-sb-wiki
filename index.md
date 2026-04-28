@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 136
+> Last updated: 2026-04-29 | Total pages: 137
 
 ## Entities
 
@@ -61,6 +61,7 @@
 - [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
+- [[deep-material-network]] — Deep Material Network (DMN) 기본 아키텍처
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
@@ -71,6 +72,7 @@
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
 - [[engram-sparse-memory]] — DeepSeek Engram — Conditional Sparse Memory for LLMs
 - [[ensemble-loss-landscape]] — Deep Ensembles — Loss Landscape Perspective
+- [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
 - [[fourier-neural-operator]] — Fourier Neural Operator (FNO)
 - [[gan-lattice-simulations]] — GAN-based Overrelaxation for Lattice Simulations
@@ -111,6 +113,8 @@
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
+- [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN 확장 분석: 병목과 로드맵
+- [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence (Norris 1992)
 - [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN)
 - [[physics-informed]] — Physics-Informed Machine Learning
 - [[pinn-failure-modes]] — When and Why PINNs Fail — NTK Perspective
@@ -125,6 +129,7 @@
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
+- [[thermoelastic-dmn]] — Thermoelastic Deep Material Network (Shin 2024)
 - [[transformer]] — Transformer Architecture
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review

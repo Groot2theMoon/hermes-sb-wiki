@@ -1,10 +1,10 @@
 ---
 title: Locally Linear Embedding (LLE)
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 type: concept
 tags: [classic-ai, dimensionality-reduction, survey]
-sources: [raw/papers/ml2-lle-intro.md, raw/papers/ml2-lecture-01.md, raw/papers/ml2-sheet-01.md]
+sources: [raw/papers/ml2-lle-intro.md, raw/papers/ml2-lecture-01.md, raw/papers/ml2-sheet-01.md, raw/papers/lleintro.md]
 confidence: high
 provenance: "Roweis & Saul (2000) Science 290, 2323-2326"
 ---

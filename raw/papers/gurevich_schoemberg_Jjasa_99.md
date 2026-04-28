@@ -1,3 +1,8 @@
+---
+source_url: ""
+ingested: 2026-04-28
+sha256: 5b2004a7343994a49ffd03bf8530c2d6ce7b54eda66c57bdbe4dc42b77732c65
+---
 
 
 # Interface conditions for Biot's equations of poroelasticity

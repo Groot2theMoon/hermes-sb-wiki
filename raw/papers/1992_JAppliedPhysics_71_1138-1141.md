@@ -1,3 +1,8 @@
+---
+source_url: ""
+ingested: 2026-04-28
+sha256: 20163f932b68da33073534827c479cd773a3fc0a3d362eeb1ff7730309312dab
+---
 
 
 # On the correspondence between poroelasticity and thermoelasticity

@@ -1,3 +1,8 @@
+---
+source_url: ""
+ingested: 2026-04-28
+sha256: c7cec3f388568c3085dd751c3bd429cc075a9f210e70a66506ec679ffbec2a09
+---
 
 
 # An Introduction to Locally Linear Embedding
