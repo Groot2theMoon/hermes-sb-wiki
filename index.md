@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 134
+> Last updated: 2026-04-28 | Total pages: 136
 
 ## Entities
 
@@ -32,6 +32,7 @@
 - [[kaushik-bhattacharya]] — Kaushik Bhattacharya — 고체역학 × AI 융합, Caltech
 - [[laurens-van-der-maaten]] — Laurens van der Maaten — t-SNE 및 DenseNet 공동 창시자
 - [[lawrence-saul]] — Lawrence K. Saul — LLE (Locally Linear Embedding) 공동 창시자
+- [[leland-mcinnes]] — Leland McInnes — UMAP 창시자, dimension reduction, topological data analysis
 - [[lu-lu]] — Lu Lu — DeepONet 및 hPINN 공동 창시자, DeepXDE/SciANN
 - [[paris-perdikaris]] — Paris Perdikaris — PINN 공동 창시자, UPenn
 - [[sepp-hochreiter]] — Sepp Hochreiter — LSTM 원조 창시자
@@ -135,6 +136,7 @@
 - [[stochastic-neighbor-embedding]] — SNE — Stochastic Neighbor Embedding, probabilistic dimensionality reduction
 - [[transformer]] — Transformer Architecture
 - [[t-sne]] — t-SNE — Visualizing Data
+- [[umap]] — UMAP — Uniform Manifold Approximation and Projection, modern manifold learning
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
 - [[universal-approximation-theorem]] — Universal Approximation Theorem
 - [[unsupervised-phase-transitions]] — Unsupervised Learning of Phase Transitions (ML × Physics)

@@ -239,3 +239,11 @@
 - **Raw sources (4):** raw/papers/trending/2026-04-28-{01,02,03,04}.md
 - **Tags used:** physics-informed, fluid-dynamics, model, surrogate-model, CFD, paper, benchmark
 - **Total pages:** 134 (was 131)
+
+## [2026-04-28] ingest | UMAP Paper — concept, entity, comparison expansion
+- **Raw Source:** raw/papers/1802.03426-umap.md (63p, cost=19)
+- **Created Concept:** [[umap]] (135줄) — Riemannian geometry framework, fuzzy simplicial sets, UMAP vs t-SNE 비교
+- **Created Entity:** [[leland-mcinnes]] — UMAP 창시자, umap-learn, HDBSCAN
+- **Updated Comparison:** [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] → 6-way (+UMAP column)
+- **Tags:** classic-ai, dimensionality-reduction, person
+- **Total pages:** 136 (was 134)

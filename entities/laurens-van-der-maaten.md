@@ -30,6 +30,6 @@ Huang, Liu, **van der Maaten**, Weinberger (2017)가 제안한 [[densenet]]는 *
 - [[geoffrey-hinton]] — t-SNE 공동 연구자
 - [[t-sne]] — van der Maaten의 대표 업적
 - [[densenet]] — DenseNet 공동 창시
-- [[pca-vs-tsne-vs-lle]] — 차원 축소 방법 비교
+- [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — 차원 축소 방법 비교
 - [[lle]] — LLE (t-SNE와 비교되는 방법)
 - [[kernel-pca]] — Kernel PCA

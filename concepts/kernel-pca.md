@@ -68,7 +68,7 @@ $$\phi: \mathbb{R}^d \to \mathcal{H}, \quad x \mapsto \phi(x)$$
 
 - B. Schölkopf, A. Smola, K.-R. Müller. "Kernel Principal Component Analysis", *Neural Computation*, 1998
 - [[kernel-methods]] — 커널 방법론의 상위 개념
-- [[pca-vs-tsne-vs-lle]] — 차원 축소 방법 비교
+- [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — 차원 축소 방법 비교
 - [[t-sne]] — KPCA와 비교되는 확률적 차원 축소
 - [[lle]] — 국소적 선형성을 가정한 LLE
 - [[unsupervised-phase-transitions]] — 상전이 탐지에서의 차원 축소 활용
