@@ -262,3 +262,9 @@
 - **Tags:** materials, surrogate-model, optimization, mechanics
 - **Total Marker API cost:** 12 credits
 - **Total pages:** 139 (was 136)
+
+## [2026-04-28] lint --fix | SCHEMA + Index 재구축
+- **SCHEMA.md:** 9개 누락 태그 추가 (institution, hardware, infrastructure, landmark-paper, neural-operator, uncertainty, photonics, solid-mechanics, sequence-modeling)
+- **Index:** README.md 2개 제거 (entities/, comparisons/) + filesystem 기반 재구축
+- **Total pages:** 136 (정확 — concepts 88 + entities 39 + comparisons 9)
+- **Tags in taxonomy:** 45→54 (+9)

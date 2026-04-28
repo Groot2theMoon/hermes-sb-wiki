@@ -3,80 +3,67 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 139
+> Last updated: 2026-04-28 | Total pages: 136
 
 ## Entities
 
-- [[albert-gu]] — Albert Gu — Mamba (Selective SSM) 공동 창시자
-- [[fedor-bykovskii]] — Fedor A. Bykovskii — Seminal RDE experimentalist, LIH Novosibirsk
-- [[frank-lu]] — Frank K. Lu — RDE review author, UTA Aerodynamics Research Center
-- [[lavrentyev-institute-of-hydrodynamics]] — LIH — World-leading detonation physics center
-- [[piotr-wolanski]] — Piotr Wolański — Detonative propulsion pioneer, Warsaw University of Technology
-- [[sergey-zhdan]] — Sergey A. Zhdan — RDE theoretical modeler, LIH Novosibirsk
-- [[anima-anandkumar]] — Anima Anandkumar — FNO 공동 창시자, Caltech AI×Science 리더
-- [[ashish-vaswani]] — Ashish Vaswani — Transformer (Attention Is All You Need) 제1저자
-- [[diederik-kingma]] — Diederik Kingma — VAE 및 Adam Optimizer 공동 창시자
-- [[geoffrey-hinton]] — Geoffrey Hinton — 딥러닝의 대부, Backpropagation, t-SNE
-- [[george-em-karniadakis]] — George Em Karniadakis — PINN 및 DeepONet 공동 창시자
-- [[google-deepmind]] — Google DeepMind — Transformer, BERT, AlphaFold 등 AI 연구 선도 조직
-- [[juergen-schmidhuber]] — Jürgen Schmidhuber — LSTM 및 GRU 핵심 요소 창시자
-- [[kaiming-he]] — Kaiming He — ResNet 창시자, 컴퓨터 비전 연구자
-- [[klaus-robert-muller]] — Klaus-Robert Müller — LRP 창시자, TU Berlin, interpretable ML
-- [[maziar-raissi]] — Maziar Raissi — PINN (Physics-Informed Neural Networks) 창시자
-- [[openai]] — OpenAI — GPT 시리즈, DALL-E, AGI 연구 기관
-- [[yann-lecun]] — Yann LeCun — CNN의 아버지, JEPA/I-JEPA 주창
-- [[yoshua-bengio]] — Yoshua Bengio — 딥러닝 3대 거장, GRU 연구실
-- [[zongyi-li]] — Zongyi Li — Fourier Neural Operator (FNO) 창시자
-- [[andrew-stuart]] — Andrew Stuart — Neural Operator의 수학적 기반, Caltech
-- [[ian-goodfellow]] — Ian Goodfellow — GAN (Generative Adversarial Network) 창시자
-- [[kaushik-bhattacharya]] — Kaushik Bhattacharya — 고체역학 × AI 융합, Caltech
-- [[laurens-van-der-maaten]] — Laurens van der Maaten — t-SNE 및 DenseNet 공동 창시자
-- [[lawrence-saul]] — Lawrence K. Saul — LLE (Locally Linear Embedding) 공동 창시자
-- [[leland-mcinnes]] — Leland McInnes — UMAP 창시자, dimension reduction, topological data analysis
-- [[lu-lu]] — Lu Lu — DeepONet 및 hPINN 공동 창시자, DeepXDE/SciANN
-- [[paris-perdikaris]] — Paris Perdikaris — PINN 공동 창시자, UPenn
-- [[sepp-hochreiter]] — Sepp Hochreiter — LSTM 원조 창시자
-- [[steven-g-johnson]] — Steven G. Johnson — hPINN, 위상 최적화, MIT
-- [[brown-university]] — Brown University / CRUNCH Group — PINN 및 DeepONet 탄생지
-- [[caltech]] — Caltech — AI × Mechanics 융합 연구 중심, FNO 탄생지
-- [[felix-gers]] — Felix Gers — LSTM Forget Gate 공동 창시자
-- [[joseph-redmon]] — Joseph Redmon — YOLO (You Only Look Once) 창시자
-- [[kyunghyun-cho]] — Kyunghyun Cho — GRU (Gated Recurrent Unit) 창시자
-- [[nvidia]] — NVIDIA — GPU 컴퓨팅, AI × Science 인프라
-- [[ross-girshick]] — Ross Girshick — R-CNN / Fast R-CNN 창시자, YOLO 공동 연구자
-- [[sam-roweis]] — Sam T. Roweis — LLE (Locally Linear Embedding) 공동 창시자, Gatsby Unit UCL
-- [[s-keshav]] — S. Keshav — How to Read a Paper, 3-pass 방법론 창시자
-- [[sepp-hochreiter]]
-
-## Comparisons
-
-- [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
-- [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 아키텍처 비교
-- [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — PCA vs MDS vs LLE vs Isomap vs t-SNE — 5-way 차원 축소 비교
-- [[pinn-vs-deeponet]] — PINN vs DeepONet — 물리 기반 ML 접근법 비교
-- [[pinn-vs-hpinn]] — PINN vs hPINN — Soft vs Hard Constraint 비교
-- [[pde-vs-rde]] — PDE vs RDE — Pulse vs Rotating Detonation Engine 비교
-- [[resnet-vs-densenet]] — ResNet vs DenseNet — Skip Connection 아키텍처 비교
-- [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
-- [[vae-vs-gan]] — VAE vs GAN — 생성 모델 패러다임 비교
+- [[albert-gu]] — Albert Gu
+- [[andrew-stuart]] — Andrew Stuart
+- [[anima-anandkumar]] — Anima Anandkumar
+- [[ashish-vaswani]] — Ashish Vaswani
+- [[brown-university]] — Brown University — CRUNCH Group
+- [[caltech]] — Caltech — AI × Science 리더
+- [[diederik-kingma]] — Diederik Kingma
+- [[fedor-bykovskii]] — Fedor A. Bykovskii
+- [[felix-gers]] — Felix Gers
+- [[frank-lu]] — Frank K. Lu
+- [[geoffrey-hinton]] — Geoffrey Hinton
+- [[george-em-karniadakis]] — George Em Karniadakis
+- [[google-deepmind]] — Google DeepMind
+- [[ian-goodfellow]] — Ian Goodfellow
+- [[joseph-redmon]] — Joseph Redmon
+- [[juergen-schmidhuber]] — Jürgen Schmidhuber
+- [[kaiming-he]] — Kaiming He
+- [[kaushik-bhattacharya]] — Kaushik Bhattacharya
+- [[klaus-robert-muller]] — Klaus-Robert Müller
+- [[kyunghyun-cho]] — Kyunghyun Cho
+- [[laurens-van-der-maaten]] — Laurens van der Maaten
+- [[lavrentyev-institute-of-hydrodynamics]] — Lavrentyev Institute of Hydrodynamics (LIH)
+- [[lawrence-saul]] — Lawrence K. Saul
+- [[leland-mcinnes]] — Leland McInnes
+- [[lu-lu]] — Lu Lu
+- [[maziar-raissi]] — Maziar Raissi
+- [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
+- [[openai]] — OpenAI
+- [[paris-perdikaris]] — Paris Perdikaris
+- [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
+- [[ross-girshick]] — Ross Girshick
+- [[s-keshav]] — S. Keshav
+- [[sam-roweis]] — Sam T. Roweis
+- [[sepp-hochreiter]] — Sepp Hochreiter
+- [[sergey-zhdan]] — Sergey A. Zhdan
+- [[steven-g-johnson]] — Steven G. Johnson
+- [[yann-lecun]] — Yann LeCun
+- [[yoshua-bengio]] — Yoshua Bengio
+- [[zongyi-li]] — Zongyi Li
 
 ## Concepts
 
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
+- [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
-- [[ai-hallucination-physics]] — AI 모델의 유체/물리 시뮬레이션 Hallucination 현상
 - [[bayesian-pinns]] — B-PINNs (Bayesian Physics-Informed Neural Networks)
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
-- [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators — 최고 Q 상온 공진기
+- [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
-- [[decoding-material-networks]] — Decoding Material Networks — DMN vs IMN 성능 비교
+- [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
-- [[deep-material-network-quilting]] — Deep Material Network with Quilting — DMN 가시화 및 Recursive Training
-- [[deflagration-to-detonation-transition]] — DDT — Deflagration-to-Detonation Transition in detonation engines
+- [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deeponet]] — DeepONet — Deep Operator Networks
+- [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
 - [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
 - [[dnn-interpretability-lrp]] — DNN Visualization & Interpretability (LRP)
@@ -97,8 +84,8 @@
 - [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
 - [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
-- [[in-context-modeling-physics]] — In-Context Modeling: 재학습 없는 물리 시스템 일반화 패러다임
-- [[isomap]] — Isomap — Isometric Feature Mapping, nonlinear dimensionality reduction via geodesic distances
+- [[in-context-modeling-physics]] — In-Context Modeling (ICM) for Computational Science
+- [[isomap]] — Isomap — Isometric Feature Mapping
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
 - [[kennedy-ohagan-calibration]] — Kennedy-O'Hagan Bayesian Calibration
@@ -108,8 +95,8 @@
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
-- [[lstm-forget-gate]] — LSTM Forget Gate (Gers & Schmidhuber)
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
+- [[lstm-forget-gate]] — LSTM Forget Gate (Gers & Schmidhuber)
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
@@ -117,10 +104,10 @@
 - [[misc-base-materials]] — Additional Base Materials Collection
 - [[mode-collapse-flow-lattice]] — Mode-Collapse in Flow-based Sampling of Lattice Field Theories
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
+- [[multi-dimensional-scaling]] — Multi-Dimensional Scaling (MDS)
 - [[muon-optimizer]] — Muon Optimizer for LLM Training
-- [[multi-dimensional-scaling]] — MDS — Multi-Dimensional Scaling, preserving pairwise distances in low-D
 - [[neural-tangent-kernel]] — Neural Tangent Kernel (NTK)
-- [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration
+- [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration (Neural TI)
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
@@ -129,17 +116,17 @@
 - [[pinn-failure-modes]] — When and Why PINNs Fail — NTK Perspective
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[ppi-no]] — Pseudo Physics-Informed Neural Operator (PPI-NO)
-- [[pressure-gain-combustion]] — PGC — Pressure Gain Combustion, detonation-based thermodynamic cycle
+- [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)
 - [[pseudo-hamiltonian-neural-networks]] — Pseudo-Hamiltonian Neural Networks (PHNN) for PDEs
 - [[quadratic-iss-lyapunov]] — Quadratic ISS Lyapunov Functions for Linear Analytic Systems
 - [[residual-networks]] — Residual Networks (ResNet)
-- [[rotating-detonation-engine]] — RDE — Rotating Detonation Engine, continuous detonation wave propulsion
+- [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
-- [[stochastic-neighbor-embedding]] — SNE — Stochastic Neighbor Embedding, probabilistic dimensionality reduction
+- [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
+- [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
 - [[transformer]] — Transformer Architecture
-- [[t-sne]] — t-SNE — Visualizing Data
-- [[umap]] — UMAP — Uniform Manifold Approximation and Projection, modern manifold learning
+- [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
 - [[universal-approximation-theorem]] — Universal Approximation Theorem
 - [[unsupervised-phase-transitions]] — Unsupervised Learning of Phase Transitions (ML × Physics)
@@ -147,10 +134,18 @@
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
-- [[wind-energy-ml]] — Wind Energy × AI/ML: 풍력 에너지 분야 AI 응용
+- [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
 
-## Queries
+## Comparisons
 
-<!-- Alphabetical within section -->
+- [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
+- [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 비교
+- [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — PCA vs MDS vs LLE vs Isomap vs t-SNE vs UMAP — 차원 축소 방법 비교 (6-way)
+- [[pde-vs-rde]] — Pulse Detonation Engine (PDE) vs Rotating Detonation Engine (RDE)
+- [[pinn-vs-deeponet]] — PINN vs DeepONet — Comparison
+- [[pinn-vs-hpinn]] — PINN vs hPINN — Soft vs Hard Constraint 비교
+- [[resnet-vs-densenet]] — ResNet vs DenseNet — Skip Connection 비교
+- [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
+- [[vae-vs-gan]] — VAE vs GAN — Generative Model 비교

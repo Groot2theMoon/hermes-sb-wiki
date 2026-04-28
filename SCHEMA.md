@@ -60,6 +60,7 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **inference:** Deployment, serving, edge inference
 - **benchmark:** Evaluation metrics, datasets, leaderboards
 - **neural-network:** Specific NN concepts (CNN, Transformer, GNN, etc.)
+- **sequence-modeling:** Sequence models (HMM, RNN, SSM, etc.)
 
 ### Mechanics/Physics Domain
 - **mechanics:** Classical mechanics, statics, dynamics
@@ -68,6 +69,8 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **materials:** Material science, composites, properties
 - **structural-analysis:** FEM, stress/strain, vibration
 - **dynamics:** Multi-body dynamics, rigid/flexible body
+- **photonics:** Photonic devices, nanophotonics, metamaterials
+- **solid-mechanics:** Solid mechanics, elasticity, plasticity, failure
 
 ### Fusion Domain (AI × Engineering)
 - **physics-informed:** PINN, physics-constrained ML, PIML
@@ -79,6 +82,8 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **control-system:** ML-based control, MPC, reinforcement learning for control
 - **optimization:** Topology optimization, multi-objective optimization, design optimization
 - **reinforcement-learning:** RL for robotics, control, manipulation
+- **neural-operator:** Neural operator learning (FNO, DeepONet, etc.)
+- **uncertainty:** Uncertainty quantification, Bayesian methods, confidence estimation
 
 ### Meta
 - **person:** Researcher, professor, industry leader
@@ -89,6 +94,10 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **paper:** Published research
 - **comparison:** Side-by-side analysis
 - **conference:** Venue (NeurIPS, ICML, ICLR, ICRA, IROS, etc.)
+- **institution:** Academic institution, university, research center
+- **hardware:** Hardware infrastructure, GPU, TPU, specialized chips
+- **infrastructure:** Computing infrastructure, cloud, cluster, platform
+- **landmark-paper:** Seminal/landmark research paper — high-impact, field-defining
 
 ### 수학/기초
 - **mathematics:** Underlying math (PDEs, ODEs, numerical methods)
