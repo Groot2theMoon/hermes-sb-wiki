@@ -180,4 +180,8 @@
 - **Concept:** [[how-to-read-a-paper]] — Three-Pass Method (3-pass approach, literature survey guide)
 - **Entity:** [[s-keshav]] — S. Keshav, Waterloo CS 교수, 15년 연구 방법론 경험
 - **Schema:** SCHEMA.md에 research-skills 태그 카테고리 추가
-- wikilinks: [[deep-learning-nature-survey]], [[hmm-tutorial]] 연결
+
+## [2026-04-28] create | Neural Thermodynamic Integration
+- **Source:** [[raw/papers/2406.02313v4]] (Mate, Fleuret, Bereau, J. Phys. Chem. Lett. 2024)
+- **Concept:** [[neural-thermodynamic-integration]] — Energy-based diffusion model을 이용한 TI, LJ fluid 성능 검증
+- **Seminar:** TU Berlin "Data-Driven Modelling in Statistical Physics" (SoSe 2026, Dr. Ankur Singha)
