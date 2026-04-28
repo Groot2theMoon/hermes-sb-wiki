@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-28 | Total pages: 113
+> Last updated: 2026-04-28 | Total pages: 116
 
 ## Entities
 

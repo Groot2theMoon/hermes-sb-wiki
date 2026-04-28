@@ -185,3 +185,17 @@
 - **Source:** [[raw/papers/2406.02313v4]] (Mate, Fleuret, Bereau, J. Phys. Chem. Lett. 2024)
 - **Concept:** [[neural-thermodynamic-integration]] — Energy-based diffusion model을 이용한 TI, LJ fluid 성능 검증
 - **Seminar:** TU Berlin "Data-Driven Modelling in Statistical Physics" (SoSe 2026, Dr. Ankur Singha)
+
+## [2026-04-28] ingest | Marker API — 3 PGC/RDE Foundation Papers (batch)
+- **Source 1:** raw/papers/wolanski-2013-detonative-propulsion.md (34p, cost=11)
+  - P. Wolanski, "Detonative propulsion," Proc. Combust. Inst. 34(1), 125–158 (2013) — DOI: 10.1016/j.proci.2012.10.005
+  - ~1,200회 인용, detonative propulsion 전반의 종합 리뷰
+- **Source 2:** raw/papers/lu-braun-2011-rotating-detonation-wave.md (20p, cost=6)
+  - F.K. Lu, E.M. Braun, "Rotating detonation wave propulsion," AIAA Paper 2011-6043 (2011) — DOI: 10.2514/6.2011-6043
+  - RDE 실험 도전과제, 모델링, 엔진 개념에 관한 권위 리뷰
+- **Source 3:** raw/papers/bykovskii-2006-continuous-spin-detonations.md (13p, cost=4)
+  - F.A. Bykovskii, S.A. Zhdan, E.F. Vedernikov, "Continuous spin detonations," J. Propul. Power 22(6), 1204–1216 (2006) — DOI: 10.2514/1.17656
+  - ~728회 인용, 회전 폭굉(continuous spin detonation)의 실험적 초석
+- **Classification:** Foundation Materials (순수 역학/추진 기반 이론, 추후 AI 융합을 위한 기초 재료)
+- **Tags:** foundation, fluid-dynamics, thermodynamics, survey
+- **Total Marker API cost:** 21 credits
