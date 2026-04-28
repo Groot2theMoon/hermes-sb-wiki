@@ -12,7 +12,7 @@ Huishuai Zhang<sup>1</sup>, Dongyan Zhao<sup>1</sup>, Wenfeng Liang<sup>2</sup>
 
 ## Abstract
 
-While Mixture-of-Experts (MoE) scales capacity via conditional computation, Transformers lack a native primitive for knowledge lookup, forcing them to inefficiently simulate retrieval through computation. To address this, we introduce conditional memory as a complementary sparsity axis, instantiated via **Engram**, a module that modernizes classic *N*-gram embedding for  $O(1)$  lookup. By formulating the *Sparsity Allocation* problem, we uncover a U-shaped scaling law that optimizes the trade-off between neural computation (MoE) and static memory (Engram). Guided by this law, we scale Engram to 27B parameters, achieving superior performance over a strictly iso-parameter and iso-FLOPs MoE baseline. Most notably, while the memory module is expected to aid knowledge retrieval (e.g., MMLU +3.4; CMMMLU +4.0), we observe even larger gains in general reasoning (e.g., BBH +5.0; ARC-Challenge +3.7) and code/math domains (HumanEval +3.0; MATH +2.4). Mechanistic analyses reveal that Engram relieves the backbone’s early layers from static reconstruction, effectively deepening the network for complex reasoning. Furthermore, by delegating local dependencies to lookups, it frees up attention capacity for global context, substantially boosting long-context retrieval (e.g., Multi-Query NIAH: 84.2  $\rightarrow$  97.0). Finally, Engram establishes infrastructure-aware efficiency: its deterministic addressing enables runtime prefetching from host memory, incurring negligible overhead. We envision conditional memory as an indispensable modeling primitive for next-generation sparse models. Code available at: <https://github.com/deepseek-ai/Engram>
+While Mixture-of-Experts (MoE) scales capacity via conditional computation, Transformers lack a native primitive for knowledge lookup, forcing them to inefficiently simulate retrieval through computation. To address this, we introduce conditional memory as a complementary sparsity axis, instantiated via **Engram**, a module that modernizes classic *N*-gram embedding for  $O(1)$  lookup. By formulating the *Sparsity Allocation* problem, we uncover a U-shaped scaling law that optimizes the trade-off between neural computation (MoE) and static memory (Engram). Guided by this law, we scale Engram to 27B parameters, achieving superior performance over a strictly iso-parameter and iso-FLOPs MoE baseline. Most notably, while the memory module is expected to aid knowledge retrieval (e.g., MMLU +3.4; CMMMLU +4.0), we observe even larger gains in general reasoning (e.g., BBH +5.0; ARC-Challenge +3.7) and code/math domains (HumanEval +3.0; MATH +2.4). Mechanistic analyses reveal that Engram relieves the backbone’s early layers from static reconstruction, effectively deepening the network for complex reasoning. Furthermore, by delegating local dependencies to lookups, it frees up attention capacity for global context, substantially boosting long-context retrieval (e.g., Multi-Query NIAH: 84.2 → 97.0). Finally, Engram establishes infrastructure-aware efficiency: its deterministic addressing enables runtime prefetching from host memory, incurring negligible overhead. We envision conditional memory as an indispensable modeling primitive for next-generation sparse models. Code available at: <https://github.com/deepseek-ai/Engram>
 
 ## 1. Introduction
 
@@ -30,9 +30,9 @@ Mechanistic analysis via LogitLens (nostalgebraist, 2020) and CKA (Hendrycks et 
 
 Finally, we establish infrastructure-aware efficiency as a first-class principle. Unlike MoE’s dynamic routing, Engram employs deterministic IDs to enable runtime prefetching, overlapping communication with computation. Empirical results show that offloading a 100B-parameter table to host memory incurs negligible overhead (< 3%). This demonstrates that Engram effectively bypasses GPU memory constraints, facilitating aggressive parameter expansion.
 
-![Diagram of the Engram Architecture. The left side shows a vertical stack of modules: Vocab Embedding, Transformer Block, Engram, Attention, and MoE, with skip connections. The right side shows a detailed view of the Engram module. It takes 'Input Hidden' and a sequence of tokens ('Only', 'Alexander', 'the', 'Great', 'could', 'tame', 'the', 'horse', 'Bucephalus', '.'). A dashed box highlights 'Alexander', 'the', 'Great'. These tokens are processed through 'Hash' blocks to produce '2-Gram Embedding' (for 'the Great') and '3-Gram Embedding' (for 'Alexander the Great'). These embeddings are passed through 'Linear' layers, then 'Scaled Dot Product' with the Input Hidden. The result is added to the Input Hidden via a 'Conv' layer and a skip connection.](b230b8f21d8e82d55c0d311c8c32ef73_img.jpg)
+![Diagram of the Engram Architecture. The left side shows a vertical stack of modules: Vocab Embedding, Transformer Block, Engram, Attention, and MoE, with skip connections. The right side shows a detailed view of the Engram module. It takes 'Input Hidden' and a sequence of tokens ('Only', 'Alexander', 'the', 'Great', 'could', 'tame', 'the', 'horse', 'Bucephalus', '.'). A dashed box highlights 'Alexander the Great'. Below this, '2-Gram Embedding' and '3-Gram Embedding' blocks are shown. Each block has a 'Hash' function that takes N-grams ('the Great' and 'Alexander the Great') and produces an embedding. These embeddings are concatenated ('Concat'), then passed through 'Linear' layers to produce 'Scaled Dot Product'. This is combined with the 'Input Hidden' state via element-wise multiplication and addition ('Conv').](b230b8f21d8e82d55c0d311c8c32ef73_img.jpg)
 
-Diagram of the Engram Architecture. The left side shows a vertical stack of modules: Vocab Embedding, Transformer Block, Engram, Attention, and MoE, with skip connections. The right side shows a detailed view of the Engram module. It takes 'Input Hidden' and a sequence of tokens ('Only', 'Alexander', 'the', 'Great', 'could', 'tame', 'the', 'horse', 'Bucephalus', '.'). A dashed box highlights 'Alexander', 'the', 'Great'. These tokens are processed through 'Hash' blocks to produce '2-Gram Embedding' (for 'the Great') and '3-Gram Embedding' (for 'Alexander the Great'). These embeddings are passed through 'Linear' layers, then 'Scaled Dot Product' with the Input Hidden. The result is added to the Input Hidden via a 'Conv' layer and a skip connection.
+Diagram of the Engram Architecture. The left side shows a vertical stack of modules: Vocab Embedding, Transformer Block, Engram, Attention, and MoE, with skip connections. The right side shows a detailed view of the Engram module. It takes 'Input Hidden' and a sequence of tokens ('Only', 'Alexander', 'the', 'Great', 'could', 'tame', 'the', 'horse', 'Bucephalus', '.'). A dashed box highlights 'Alexander the Great'. Below this, '2-Gram Embedding' and '3-Gram Embedding' blocks are shown. Each block has a 'Hash' function that takes N-grams ('the Great' and 'Alexander the Great') and produces an embedding. These embeddings are concatenated ('Concat'), then passed through 'Linear' layers to produce 'Scaled Dot Product'. This is combined with the 'Input Hidden' state via element-wise multiplication and addition ('Conv').
 
 Figure 1 | **The Engram Architecture.** The module augments the backbone by retrieving static  $N$ -gram memory and fusing it with dynamic hidden states via context-aware gating. This module is applied only to specific layers to decouple memory from compute, leaving the standard input embedding and un-embedding module intact.
 
@@ -46,7 +46,7 @@ As shown in Figure 1, Engram is a conditional memory module designed to augment 
 
 The first phase maps local contexts to static memory entries, involving tokenizer compression and retrieving embeddings via deterministic hashing.
 
-**Tokenizer Compression** While  $N$ -gram models typically operate directly on tokenizer outputs, standard subword tokenizers prioritize *lossless reconstruction*, often assigning disjoint IDs to semantically equivalent terms (e.g., Apple vs. <sub>▮</sub>apple) (Kudo and Richardson, 2018; Li et al., 2023b). To maximize semantic density, we implement a vocabulary projection layer. Specifically, we pre-compute a surjective function  $\mathcal{P} : V \rightarrow V'$  that collapses raw token IDs into canonical
+**Tokenizer Compression** While  $N$ -gram models typically operate directly on tokenizer outputs, standard subword tokenizers prioritize *lossless reconstruction*, often assigning disjoint IDs to semantically equivalent terms (e.g., Apple vs.  $\sqcup$ apple) (Kudo and Richardson, 2018; Li et al., 2023b). To maximize semantic density, we implement a vocabulary projection layer. Specifically, we pre-compute a surjective function  $\mathcal{P} : V \rightarrow V'$  that collapses raw token IDs into canonical
 
 identifiers based on normalized textual equivalence (using NFKC (Whistler, 2025), lowercasing, etc.). In practice, this process achieves a 23% reduction in the effective vocabulary size for a 128k tokenizer (see Appendix C). Formally, for a token at position  $t$ , we map its raw ID  $x_t$  to a canonical ID  $x'_t = \mathcal{P}(x_t)$  to form the suffix  $N$ -gram  $g_{t,n} = (x'_{t-n+1}, \dots, x'_t)$ .
 
@@ -76,9 +76,9 @@ $$\mathbf{Y} = \text{SiLU}(\text{Conv1D}(\text{RMSNorm}(\tilde{\mathbf{V}}))) + 
 
 The Engram module is integrated into the backbone via a residual connection:  $\mathbf{H}^{(\ell)} \leftarrow \mathbf{H}^{(\ell)} + \mathbf{Y}$ , followed by the standard Attention and MoE. Crucially, Engram is not applied to every layer; its specific placement is governed by the system-level latency constraints detailed in Section 2.5.
 
-![Figure 2: System implementation of Engram. (a) Engram at training: Shows two parallel processing units. Each unit consists of an Input ID, a Vocab Embedding layer, a Transformer Block, an Engram module, an Attention module, and a MoE module. The Engram module in the first unit is connected to the Attention module of the second unit via an All2All communication primitive. (b) Engram at inference: Shows a single processing unit with Input IDs, Vocab Embedding, and three Transformer Blocks. The first two blocks are 'Transformer Block with Engram', and the third is a standard 'Transformer Block'. These blocks are connected to an 'Offloaded Engram (Memory Hierarchy)' on the host via 'On Host Communication'. The 'On Device Computation' is shown for the first two blocks, while the third block is on the host.](f9a14fbfecbd7d059226cc93677d721b_img.jpg)
+![Figure 2: System implementation of Engram. (a) Engram at training: Shows two parallel processing units. Each unit consists of an Input ID, a Vocab Embedding block, a Transformer Block, an Engram block, an Attention block, and a MoE block. The Engram blocks in both units are connected via an All2All communication primitive. (b) Engram at inference: Shows a single processing unit with Input ID, Vocab Embedding, and three Transformer Blocks with Engram. The Engram blocks are connected to an Offloaded Engram (Memory Hierarchy) on the host via On Host Communication. The first Transformer Block with Engram is connected to the host, while the subsequent ones are connected to the previous block. The Vocab Embedding block is connected to the Input ID via On Device Computation.](f9a14fbfecbd7d059226cc93677d721b_img.jpg)
 
-Figure 2: System implementation of Engram. (a) Engram at training: Shows two parallel processing units. Each unit consists of an Input ID, a Vocab Embedding layer, a Transformer Block, an Engram module, an Attention module, and a MoE module. The Engram module in the first unit is connected to the Attention module of the second unit via an All2All communication primitive. (b) Engram at inference: Shows a single processing unit with Input IDs, Vocab Embedding, and three Transformer Blocks. The first two blocks are 'Transformer Block with Engram', and the third is a standard 'Transformer Block'. These blocks are connected to an 'Offloaded Engram (Memory Hierarchy)' on the host via 'On Host Communication'. The 'On Device Computation' is shown for the first two blocks, while the third block is on the host.
+Figure 2: System implementation of Engram. (a) Engram at training: Shows two parallel processing units. Each unit consists of an Input ID, a Vocab Embedding block, a Transformer Block, an Engram block, an Attention block, and a MoE block. The Engram blocks in both units are connected via an All2All communication primitive. (b) Engram at inference: Shows a single processing unit with Input ID, Vocab Embedding, and three Transformer Blocks with Engram. The Engram blocks are connected to an Offloaded Engram (Memory Hierarchy) on the host via On Host Communication. The first Transformer Block with Engram is connected to the host, while the subsequent ones are connected to the previous block. The Vocab Embedding block is connected to the Input ID via On Device Computation.
 
 Figure 2 | **System implementation of Engram.** (a) Training Phase: The massive embedding tables are sharded across available GPUs. An All-to-All communication primitive is employed to retrieve active embedding rows across devices. (b) Inference Phase: Engram tables are offloaded to host memory. By exploiting the deterministic retrieval logic, the host asynchronously prefetches and transfers embeddings, overlapping communication with the on-device computation of preceding Transformer blocks.
 
@@ -88,9 +88,9 @@ In this work, rather than standard single-stream connections (He et al., 2016), 
 
 Although the Engram module is inherently topology-agnostic, adapting it to this multi-branch framework necessitates structural optimization to balance efficiency and expressivity. Specifically, we implement a parameter-sharing strategy: a single sparse embedding table and a Value projection matrix  $W_V$  are shared across all  $M$  branches, whereas  $M$  distinct Key projection matrices  $\{W_K^{(m)}\}_{m=1}^M$  are employed to enable branch-specific gating behaviors. For the  $m$ -th branch with hidden state  $\mathbf{h}_t^{(m)}$ , the branch-specific gating signal is computed as:
 
-$$a_t^{(m)} = \sigma \left( \frac{\text{RMSNorm}(\mathbf{h}_t^{(m)})^\top \text{RMSNorm}(W_K^{(m)} \mathbf{e}_t)}{\sqrt{d}} \right). \quad (6)$$
+$$\alpha_t^{(m)} = \sigma \left( \frac{\text{RMSNorm}(\mathbf{h}_t^{(m)})^\top \text{RMSNorm}(W_K^{(m)} \mathbf{e}_t)}{\sqrt{d}} \right). \quad (6)$$
 
-The retrieved memory is then modulated by these independent gates applied to the shared value vector:  $\mathbf{u}_t^{(m)} = a_t^{(m)} \cdot (W_V \mathbf{e}_t)$ . This design allows the linear projections (one  $W_V$  and  $M$  distinct  $W_K^{(m)}$ ) to be fused into a single dense FP8 matrix multiplication, maximizing the compute utilization of modern GPUs. Unless otherwise stated, all experiments utilize this integration with Manifold-Constrained Hyper-Connections ( $M = 4$ ) (Xie et al., 2025).
+The retrieved memory is then modulated by these independent gates applied to the shared value vector:  $\mathbf{u}_t^{(m)} = \alpha_t^{(m)} \cdot (W_V \mathbf{e}_t)$ . This design allows the linear projections (one  $W_V$  and  $M$  distinct  $W_K^{(m)}$ ) to be fused into a single dense FP8 matrix multiplication, maximizing the compute utilization of modern GPUs. Unless otherwise stated, all experiments utilize this integration with Manifold-Constrained Hyper-Connections ( $M = 4$ ) (Xie et al., 2025).
 
 ![Figure 3: Sparsity allocation and Engram scaling. Left: Validation loss across allocation ratios (40% to 100%) for 6e20 and 2e20 FLOPs. Right: Validation loss vs. number of embedding slots (log scale) for Engram and OverEncoding.](431b8889a0e7f676f0eef40859590349_img.jpg)
 
@@ -262,11 +262,11 @@ The evaluation results are summarized in Table 2. To accurately assess the contr
 - **Iso-FLOPs Setting (50k vs. Baseline):** Under the standard iso-compute budget, Engram-27B (50k) further widens this gap, establishing the highest performance across the board.
 - **Extreme Setting ( $\approx$  82% Compute):** Even the early-stopped Engram-27B (41k) remains highly competitive against the fully trained MoE-27B (50k). It matches the baseline on LongPPL and surpasses it on RULER, underscoring the intrinsic superiority of the Engram architecture.
 
-![Figure 4: Analysis of representational alignment and convergence speed. (a) Layer-wise KL Divergence by LogitLens plot showing KL Divergence vs Layer Index for MoE-27B, Engram-27B, and Engram-40B. (b) CKA map: Engram-27B vs MoE-27B heatmap. (c) CKA map: Engram-40B vs MoE-27B heatmap. A color bar on the right indicates CKA Similarity from 0.0 to 1.0.](dd0f5301a5a6dd7c319701302110de88_img.jpg)
+![Figure 4: Analysis of representational alignment and convergence speed. (a) Layer-wise KL Divergence by LogitLens. (b) CKA map: Engram-27B vs MoE-27B. (c) CKA map: Engram-40B vs MoE-27B.](dd0f5301a5a6dd7c319701302110de88_img.jpg)
 
-Figure 4 consists of three panels. Panel (a) is a line plot titled 'Layer-wise KL Divergence by LogitLens' showing KL Divergence on the y-axis (0 to 10) against Layer Index on the x-axis (0 to 25). Three lines are plotted: MoE-27B (blue dashed), Engram-27B (orange dashed), and Engram-40B (red dashed). All lines show a downward trend, with Engram variants consistently showing lower KL divergence than the MoE-27B baseline, especially in the early layers. Panel (b) is a heatmap titled 'CKA map: Engram-27B vs MoE-27B' showing CKA Similarity on a scale from 0.0 (dark purple) to 1.0 (yellow). The x and y axes represent Engram Layer (0 to 25). A dashed white line indicates the diagonal. Panel (c) is a similar heatmap titled 'CKA map: Engram-40B vs MoE-27B'.
+Figure 4 consists of three panels. Panel (a) is a line graph titled "Layer-wise KL Divergence by LogitLens". The x-axis is "Layer Index" from 0 to 25, and the y-axis is "KL Divergence" from 0 to 10. Three lines are plotted: MoE-27B (blue dashed), Engram-27B (orange dashed), and Engram-40B (red dashed). All lines show a downward trend, with Engram variants consistently showing lower KL divergence than the MoE baseline, especially in the first 15 layers. Panel (b) is a heatmap titled "CKA map: Engram-27B vs MoE-27B". The x-axis and y-axis both represent "Engram Layer" from 0 to 25. The color scale ranges from 0.0 (dark purple) to 1.0 (light yellow). A dashed white line indicates the diagonal. The heatmap shows high similarity (yellow) along the diagonal and in the upper right, indicating that Engram's shallow layers are functionally equivalent to deeper layers of the MoE model. Panel (c) is a similar heatmap titled "CKA map: Engram-40B vs MoE-27B", with the same axes and color scale. It shows a similar pattern of high similarity along the diagonal and in the upper right.
 
-Figure 4: Analysis of representational alignment and convergence speed. (a) Layer-wise KL Divergence by LogitLens plot showing KL Divergence vs Layer Index for MoE-27B, Engram-27B, and Engram-40B. (b) CKA map: Engram-27B vs MoE-27B heatmap. (c) CKA map: Engram-40B vs MoE-27B heatmap. A color bar on the right indicates CKA Similarity from 0.0 to 1.0.
+Figure 4: Analysis of representational alignment and convergence speed. (a) Layer-wise KL Divergence by LogitLens. (b) CKA map: Engram-27B vs MoE-27B. (c) CKA map: Engram-40B vs MoE-27B.
 
 Figure 4 | **Analysis of representational alignment and convergence speed.** (a) Layer-wise KL Divergence via LogitLens (nostalgebraist, 2020). The consistently lower divergence in early layers indicates that Engram accelerates prediction convergence. (b-c) Similarity heatmap computed by CKA (Kornblith et al., 2019). The distinct upward shift of the high-similarity diagonal demonstrates that Engram’s shallow layers are functionally equivalent to deeper layers of the MoE model, effectively increasing the model’s depth.
 
@@ -312,24 +312,9 @@ $$a_j = \frac{\sum_{i \in I_j} S_{i,j} \cdot i}{\sum_{i \in I_j} S_{i,j}}, \quad
 
 Here,  $S_{i,j}$  denotes the similarity score between MoE layer  $i$  and Engram layer  $j$ . The index  $a_j$
 
-![Figure 5: Architecture ablation results. A line graph showing Validation Loss (Y-axis, 1.768 to 1.808) versus Layer Index (X-axis, 1 to 12). The graph compares the 3B MoE Baseline (dashed orange line at 1.808) against Engram variations. The dark blue curve represents '3B MoE + 1.6B Engram (Layer Sweep)', showing a U-shaped trend with a minimum loss of approximately 1.771 at Layer 2. The right side of the graph shows 'Ablation Variations' with markers for 'w/o multi branch', 'w/o token compress', 'w/o gating', '+ 4-gram', and 'w/o short conv'. A dashed green line at the bottom represents the reference configuration '3B MoE + 1.6B Engram' with a loss of 1.768.](71ab4df17511d75261da8d462d643b1a_img.jpg)
+![Figure 5: Architecture ablation results. A line graph showing Validation Loss (Y-axis, 1.768 to 1.808) versus Layer Index (X-axis, 1 to 12). The graph compares the 3B MoE Baseline (dashed orange line at 1.808) against Engram variations. The dark blue curve represents '3B MoE + 1.6B Engram (Layer Sweep)', showing a U-shaped trend with a minimum loss of approximately 1.771 at Layer 2. The right side of the graph shows 'Ablation Variations' for the reference configuration (3B MoE + 1.6B Engram, dashed green line at 1.768). The variations include: 'x w/o multi branch', 'x w/o token compress', 'x w/o gating', 'x + 4-gram', and 'x w/o short conv'. The 'x w/o short conv' variation shows a loss of approximately 1.768, which is the same as the reference configuration.](71ab4df17511d75261da8d462d643b1a_img.jpg)
 
-| Layer Index | Validation Loss |
-|-------------|-----------------|
-| 1           | 1.773           |
-| 2           | 1.771           |
-| 3           | 1.775           |
-| 4           | 1.777           |
-| 5           | 1.779           |
-| 6           | 1.778           |
-| 7           | 1.780           |
-| 8           | 1.781           |
-| 9           | 1.782           |
-| 10          | 1.783           |
-| 11          | 1.785           |
-| 12          | 1.784           |
-
-Figure 5: Architecture ablation results. A line graph showing Validation Loss (Y-axis, 1.768 to 1.808) versus Layer Index (X-axis, 1 to 12). The graph compares the 3B MoE Baseline (dashed orange line at 1.808) against Engram variations. The dark blue curve represents '3B MoE + 1.6B Engram (Layer Sweep)', showing a U-shaped trend with a minimum loss of approximately 1.771 at Layer 2. The right side of the graph shows 'Ablation Variations' with markers for 'w/o multi branch', 'w/o token compress', 'w/o gating', '+ 4-gram', and 'w/o short conv'. A dashed green line at the bottom represents the reference configuration '3B MoE + 1.6B Engram' with a loss of 1.768.
+Figure 5: Architecture ablation results. A line graph showing Validation Loss (Y-axis, 1.768 to 1.808) versus Layer Index (X-axis, 1 to 12). The graph compares the 3B MoE Baseline (dashed orange line at 1.808) against Engram variations. The dark blue curve represents '3B MoE + 1.6B Engram (Layer Sweep)', showing a U-shaped trend with a minimum loss of approximately 1.771 at Layer 2. The right side of the graph shows 'Ablation Variations' for the reference configuration (3B MoE + 1.6B Engram, dashed green line at 1.768). The variations include: 'x w/o multi branch', 'x w/o token compress', 'x w/o gating', 'x + 4-gram', and 'x w/o short conv'. The 'x w/o short conv' variation shows a loss of approximately 1.768, which is the same as the reference configuration.
 
 Figure 5 | **Architecture ablation results.** We compare the 3B MoE baseline against Engram variations in two settings: (1) Layer Sensitivity (dark blue curve): Sweeping the insertion depth of a single Engram module confirms that early injection (Layer 2) is optimal, whereas efficacy degrades in deeper layers. (2) Component Ablation (Right Markers): Removing sub-modules from the reference configuration demonstrates the importance of multi-branch integration, tokenizer compression, and context-aware gating.
 
@@ -359,35 +344,36 @@ Other changes have smaller effects: removing the lightweight depthwise convoluti
 
 ### 6.3. Sensitivity Analysis
 
-To characterize the functional contribution of the Engram module, we evaluate the model by completely suppressing the sparse embedding output during inference while keeping the backbone unchanged. Crucially, this post-hoc ablation induces a **training-inference inconsistency**, potentially introducing noise in complex, mixed-capability tasks. Consequently, we prioritize the analysis of *Factual Knowledge* and *Reading Comprehension*—the two extremes of the sensitivity spectrum—which exhibit the highest signal-to-noise ratio under this stress test.
+To characterize the functional contribution of the Engram module, we evaluate the model by completely suppressing the sparse embedding output during inference while keeping the backbone unchanged. Crucially, this post-hoc ablation induces a **training–inference inconsistency**, potentially introducing noise in complex, mixed-capability tasks. Consequently, we prioritize the analysis of *Factual Knowledge* and *Reading Comprehension*—the two extremes of the sensitivity spectrum—which exhibit the highest signal-to-noise ratio under this stress test.
 
 As shown in Figure 6, the results reveal a sharp functional dichotomy. Factual knowledge
 
-![Bar chart showing Retained Performance (% of Baseline) for various benchmarks under Engram ablation. The benchmarks are categorized into six groups: Reading Comprehension, Knowledge-Intensive Reasoning, Algorithmic Reasoning, Commonsense Reasoning, Code, and Factual Knowledge. The chart shows that Reading Comprehension tasks (C3, RACE-middle, RACE-high, HellaSwag, MMLU-challenge) retain high performance (81-93%), while Factual Knowledge tasks (TriviaQA, PopQA) show a significant drop (29-44%).](1d529a819ad929684331c55eed6673bb_img.jpg)
+![Bar chart showing Retained Performance (% of Baseline) for various benchmarks under Engram ablation. The benchmarks are categorized into six groups: Reading Comprehension (blue), Common Sense Reasoning (orange), Knowledge-Intensive Reasoning (green), Code (purple), Algorithmic Reasoning (red), and Factual Knowledge (yellow).](1d529a819ad929684331c55eed6673bb_img.jpg)
 
-| Benchmark      | Category                      | Retained Performance (% of Baseline) |
-|----------------|-------------------------------|--------------------------------------|
-| C3             | Reading Comprehension         | 93%                                  |
-| RACE-middle    | Reading Comprehension         | 89%                                  |
-| RACE-high      | Reading Comprehension         | 84%                                  |
-| HellaSwag      | Reading Comprehension         | 81%                                  |
-| MMLU-challenge | Reading Comprehension         | 83%                                  |
-| PIQA           | Commonsense Reasoning         | 81%                                  |
-| CMMLU          | Knowledge-Intensive Reasoning | 78%                                  |
-| MMLU           | Knowledge-Intensive Reasoning | 75%                                  |
-| MMLU-pro       | Knowledge-Intensive Reasoning | 72%                                  |
-| CoqaEval       | Code                          | 76%                                  |
-| MBPP           | Code                          | 68%                                  |
-| HumanEval      | Code                          | 58%                                  |
-| BBH            | Algorithmic Reasoning         | 67%                                  |
-| GSM8K          | Algorithmic Reasoning         | 62%                                  |
-| MGSM           | Algorithmic Reasoning         | 44%                                  |
-| MATH           | Algorithmic Reasoning         | 36%                                  |
-| TruthfulQA     | Factual Knowledge             | 44%                                  |
-| PopQA          | Factual Knowledge             | 44%                                  |
-| TriviaQA       | Factual Knowledge             | 29%                                  |
+| Benchmark     | Category                      | Retained Performance (% of Baseline) |
+|---------------|-------------------------------|--------------------------------------|
+| C3            | Reading Comprehension         | 93%                                  |
+| RACE-middle   | Reading Comprehension         | 89%                                  |
+| RACE-high     | Reading Comprehension         | 84%                                  |
+| HHSQ          | Reading Comprehension         | 81%                                  |
+| Hellasw       | Common Sense Reasoning        | 83%                                  |
+| MRC-challenge | Common Sense Reasoning        | 81%                                  |
+| PIQA          | Common Sense Reasoning        | 81%                                  |
+| CMMLU         | Knowledge-Intensive Reasoning | 78%                                  |
+| MMLU          | Knowledge-Intensive Reasoning | 75%                                  |
+| MMMLU-pro     | Knowledge-Intensive Reasoning | 72%                                  |
+| CoqEval       | Code                          | 76%                                  |
+| MMLP          | Code                          | 68%                                  |
+| HumanEval     | Code                          | 58%                                  |
+| BH            | Algorithmic Reasoning         | 67%                                  |
+| GSM8K         | Algorithmic Reasoning         | 62%                                  |
+| MGSM          | Algorithmic Reasoning         | 44%                                  |
+| MATH          | Algorithmic Reasoning         | 36%                                  |
+| TruthfulQA    | Factual Knowledge             | 44%                                  |
+| PopQA         | Factual Knowledge             | 44%                                  |
+| TriviaQA      | Factual Knowledge             | 29%                                  |
 
-Bar chart showing Retained Performance (% of Baseline) for various benchmarks under Engram ablation. The benchmarks are categorized into six groups: Reading Comprehension, Knowledge-Intensive Reasoning, Algorithmic Reasoning, Commonsense Reasoning, Code, and Factual Knowledge. The chart shows that Reading Comprehension tasks (C3, RACE-middle, RACE-high, HellaSwag, MMLU-challenge) retain high performance (81-93%), while Factual Knowledge tasks (TriviaQA, PopQA) show a significant drop (29-44%).
+Bar chart showing Retained Performance (% of Baseline) for various benchmarks under Engram ablation. The benchmarks are categorized into six groups: Reading Comprehension (blue), Common Sense Reasoning (orange), Knowledge-Intensive Reasoning (green), Code (purple), Algorithmic Reasoning (red), and Factual Knowledge (yellow).
 
 Figure 6 | **Retained performance under Engram ablation.** Factual knowledge relies heavily on the Engram module, whereas reading comprehension is largely preserved by the backbone.
 
@@ -433,9 +419,9 @@ The results demonstrate a distinct pattern of selectivity. The gating mechanism 
 
 <sup>2</sup>As detailed in our architecture setup, this model utilizes a mHC ( $M = 4$ ) with Engram modules inserted at layers 2 and 15. Consequently, for any given token, the model computes a total of 8 distinct gating scalars. We observe that not every branch encodes interpretable activation patterns. For the clarity of this visualization, we select and display the gating values most strongly correlated with semantic pattern matching.
 
-![Figure 7: Visualization of the gating mechanism of Engram. The figure shows five horizontal bars representing different input sequences. Each bar is a heatmap where the intensity of the red color indicates the magnitude of the gating scalar alpha_t for each token. The sequences are: 1) '<bos> Only Alexander the Great could tame the horse Bucephalus.'; 2) '<bos> By the way, I am a fan of the Milky Way.'; 3) '<bos> This study analyzes the media impact of Diana, Princess of Wales.'; 4) '<bos> 中国四大发明包括：造纸术、指南针、火药和印刷术。'; 5) '<bos> 东汉末年名医张仲景，因其卓越的贡献被后世尊称为“医圣”，并著有传世巨作《伤寒杂论》。'. A vertical color bar on the left indicates the intensity scale from 0.0 (white) to 1.0 (dark red).](b2d16e07bfa79d67a8adabf7e26c7764_img.jpg)
+![Figure 7: Visualization of the gating mechanism of Engram. The figure shows a heatmap where the intensity of the red color represents the magnitude of the gating scalar alpha_t for each token in a sequence. The sequences are: 1) 'Only Alexander the Great could tame the horse Bucephalus', 2) 'By the way, I am a fan of the Milky Way', 3) 'This study analyzes the media impact of Diana, Princess of Wales', 4) '中国四大发明包括：造纸术、指南针、火药和印刷术', and 5) '东汉末年名医张仲景，因其卓越的贡献被后世尊称为“医圣”，并著有传世巨作《伤寒杂论》'. The heatmap shows that certain tokens, like 'the' in the first sequence or '术' in the fourth, have higher gating values, indicating they are more strongly recognized as part of a static pattern.](b2d16e07bfa79d67a8adabf7e26c7764_img.jpg)
 
-Figure 7: Visualization of the gating mechanism of Engram. The figure shows five horizontal bars representing different input sequences. Each bar is a heatmap where the intensity of the red color indicates the magnitude of the gating scalar alpha\_t for each token. The sequences are: 1) ' Only Alexander the Great could tame the horse Bucephalus.'; 2) ' By the way, I am a fan of the Milky Way.'; 3) ' This study analyzes the media impact of Diana, Princess of Wales.'; 4) ' 中国四大发明包括：造纸术、指南针、火药和印刷术。'; 5) ' 东汉末年名医张仲景，因其卓越的贡献被后世尊称为“医圣”，并著有传世巨作《伤寒杂论》。'. A vertical color bar on the left indicates the intensity scale from 0.0 (white) to 1.0 (dark red).
+Figure 7: Visualization of the gating mechanism of Engram. The figure shows a heatmap where the intensity of the red color represents the magnitude of the gating scalar alpha\_t for each token in a sequence. The sequences are: 1) 'Only Alexander the Great could tame the horse Bucephalus', 2) 'By the way, I am a fan of the Milky Way', 3) 'This study analyzes the media impact of Diana, Princess of Wales', 4) '中国四大发明包括：造纸术、指南针、火药和印刷术', and 5) '东汉末年名医张仲景，因其卓越的贡献被后世尊称为“医圣”，并著有传世巨作《伤寒杂论》'. The heatmap shows that certain tokens, like 'the' in the first sequence or '术' in the fourth, have higher gating values, indicating they are more strongly recognized as part of a static pattern.
 
 Figure 7 | **Visualization of the gating mechanism of Engram.** The heatmap intensity corresponds to the magnitude of the gating scalar  $\alpha_t \in [0, 1]$ , where darker red indicates stronger activation. Because Engram operates on suffix  $N$ -grams (here  $N = 3$ ), a high activation on a specific token  $x_t$  implies that the preceding tokens culminating in that token (e.g., the phrase ending at  $t$ ) are recognized as a static pattern effectively retrieved from memory.
 
@@ -450,7 +436,7 @@ linear parameter scaling while maintaining constant inference costs. More recent
 
 **Memory Network.** Research on memory-augmented networks aims to expand model capacity without a proportional increase in computational cost, broadly categorized into parametric and non-parametric approaches. Parametric memory methods, such as PKM (Lample et al., 2019), PEER (He, 2024), Selfmem (Cheng et al., 2023b), Memory+ (Berges et al., 2025) and Ultra-Mem (Huang et al., 2025b,c), integrate large-scale, sparse key-value stores directly into the model layers, thereby significantly increasing capacity with negligible impact on FLOPs. Conversely, non-parametric memory approaches like REALM (Guu et al., 2020), RETRO (Borgeaud et al., 2022; Wang et al., 2023), and PlugLM (Cheng et al., 2023a) decouple knowledge storage from model processing, treating the external memory as an editable and scalable key-value store that allows the model to adapt to evolving information without retraining.
 
-**Mechanisms of Knowledge Storage.** Parallel to capacity scaling, substantial research has scrutinized the internal mechanisms governing how Transformers encode and retrieve factual knowledge. The Feed-Forward Networks (FFNs) are widely hypothesized to function as Key-Value memories (Geva et al., 2021). Under this framework, the first layer acts as a pattern detector ("keys") while the second layer projects specific information into the residual stream ("values"). This modularity is evidenced by the identification of specific "knowledge neurons" responsible for storing distinct facts (Dai et al., 2022). Further validation is provided by causal tracing methodologies, which map the information flow of factual recall to specific FFN layers (Meng et al., 2022). These insights have enabled precise model editing algorithms such as ROME (Meng et al., 2022) and MEMIT (Meng et al., 2023), which allow for the direct update of factual associations without retraining. Moreover, investigations into internal representations, such as those in Othello-GPT (Li et al., 2023a), suggest that these storage mechanisms may facilitate the emergence of structured "world models" rather than mere statistical memorization.
+**Mechanisms of Knowledge Storage.** Parallel to capacity scaling, substantial research has scrutinized the internal mechanisms governing how Transformers encode and retrieve factual knowledge. The Feed-Forward Networks (FFNs) are widely hypothesized to function as Key-Value memories (Geva et al., 2021). Under this framework, the first layer acts as a pattern detector (“keys”) while the second layer projects specific information into the residual stream (“values”). This modularity is evidenced by the identification of specific “knowledge neurons” responsible for storing distinct facts (Dai et al., 2022). Further validation is provided by causal tracing methodologies, which map the information flow of factual recall to specific FFN layers (Meng et al., 2022). These insights have enabled precise model editing algorithms such as ROME (Meng et al., 2022) and MEMIT (Meng et al., 2023), which allow for the direct update of factual associations without retraining. Moreover, investigations into internal representations, such as those in Othello-GPT (Li et al., 2023a), suggest that these storage mechanisms may facilitate the emergence of structured “world models” rather than mere statistical memorization.
 
 ## 8. Conclusion
 
@@ -458,7 +444,7 @@ In this work, we introduce **conditional memory** as a complementary sparsity ax
 
 By formulating the *Sparsity Allocation* problem, we uncover a U-shaped scaling law, demonstrating that a hybrid allocation of sparse capacity between MoE experts and Engram memory strictly outperforms pure MoE baselines. Guided by this law, we scale Engram to 27B parameters, achieving superior performance across diverse domains. Notably, while the memory module intuitively aids knowledge retrieval, we observe even larger gains in general reasoning, code, and mathematics.
 
-Our mechanistic analysis reveals that Engram effectively "deepen" the network by relieving early layers from static reconstruction tasks, thereby freeing up attention capacity to focus
+Our mechanistic analysis reveals that Engram effectively “deepen” the network by relieving early layers from static reconstruction tasks, thereby freeing up attention capacity to focus
 
 on global context and complex reasoning. This architectural shift translates into substantial improvements in long-context capabilities, as evidenced by performance gains in LongPPL and RULER. Finally, Engram advocates for infrastructure-aware efficiency as a first-class design principle. Its deterministic addressing allows for the decoupling of storage and compute, enabling the offloading of massive parameter tables to host memory with negligible inference overhead. We envision conditional memory functions as an indispensable modeling primitive for next-generation sparse models.
 
@@ -505,7 +491,7 @@ on global context and complex reasoning. This architectural shift translates int
 - A. P. Gema, J. O. J. Leang, G. Hong, A. Devoto, A. C. M. Mancino, R. Saxena, X. He, Y. Zhao, X. Du, M. R. G. Madani, et al. Are we done with mmlu? In *Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)*, pages 5069–5096, 2025.
 - M. Geva, R. Schuster, J. Berant, and O. Levy. Transformer feed-forward layers are key-value memories. In *Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing*, pages 5484–5495, 2021.
 - A. Ghandeharioun, A. Caciularu, A. Pearce, L. Dixon, and M. Geva. Patchscopes: A unifying framework for inspecting hidden representations of language models. In *International Conference on Machine Learning*, pages 15466–15490. PMLR, 2024.
-- A. Gretton, O. Bousquet, A. Smola, and B. Schölkopf. Measuring statistical dependence with hilbert-schmidt norms. In *International conference on algorithmic learning theory*, pages 63–77. Springer, 2005.
+- A. Grettón, O. Bousquet, A. Smola, and B. Schölkopf. Measuring statistical dependence with hilbert-schmidt norms. In *International conference on algorithmic learning theory*, pages 63–77. Springer, 2005.
 - A. Gu, K. Goel, and C. Ré. Efficiently modeling long sequences with structured state spaces. In *The Tenth International Conference on Learning Representations, ICLR 2022, Virtual Event, April 25-29, 2022*. OpenReview.net, 2022. URL <https://openreview.net/forum?id=uYLFoziv1AC>.
 - A. Gu, B. Rozière, H. J. Leather, A. Solar-Lezama, G. Synnaeve, and S. Wang. Cruxeval: A benchmark for code reasoning, understanding and execution. In *Forty-first International Conference on Machine Learning, ICML 2024, Vienna, Austria, July 21-27, 2024*. OpenReview.net, 2024. URL <https://openreview.net/forum?id=Ffpg52swvg>.
 - D. Guo, D. Yang, H. Zhang, J. Song, R. Zhang, R. Xu, Q. Zhu, S. Ma, P. Wang, X. Bi, et al. Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning. *arXiv preprint arXiv:2501.12948*, 2025.
@@ -517,13 +503,13 @@ on global context and complex reasoning. This architectural shift translates int
 - D. Hendrycks, C. Burns, S. Basart, A. Zou, M. Mazeika, D. Song, and J. Steinhardt. Measuring massive multitask language understanding. In 9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021. OpenReview.net, 2021a. URL <https://openreview.net/forum?id=d7KBjmI3GmQ>.
 - D. Hendrycks, C. Burns, S. Kadavath, A. Arora, S. Basart, E. Tang, D. Song, and J. Steinhardt. Measuring mathematical problem solving with the MATH dataset. In J. Vanschoren and S. Yeung, editors, Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks 1, NeurIPS Datasets and Benchmarks 2021, December 2021, virtual, 2021b. URL <https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/has/h/be83ab3ecd0db773eb2dc1b0a17836a1-Abstract-round2.html>.
 - C.-P. Hsieh, S. Sun, S. Kriman, S. Acharya, D. Rekes, F. Jia, and B. Ginsburg. Ruler: What’s the real context size of your long-context language models? In First Conference on Language Modeling.
-- H. Huang, D. Zhu, B. Wu, Y. Zeng, Y. Wang, Q. Min, and X. Zhou. Over-tokenized transformer: Vocabulary is generally worth scaling. In Forty-second International Conference on Machine Learning, ICML 2025, Vancouver, BC, Canada, July 13-19, 2025. OpenReview.net, 2025a. URL <https://openreview.net/forum?id=gbeZKej40M>.
+- H. Huang, D. Zhu, B. Wu, Y. Zeng, Y. Wang, Q. Min, and X. Zhou. Over-tokenized transformer: Vocabulary is generally worth scaling. In Forty-second International Conference on Machine Learning, ICML 2025, Vancouver, BC, Canada, July 13-19, 2025. OpenReview.net, 2025a. URL <https://openreview.net/forum?id=gbeZKej40m>.
 - Y. Huang, Y. Bai, Z. Zhu, J. Zhang, J. Zhang, T. Su, J. Liu, C. Lv, Y. Zhang, Y. Fu, et al. C-eval: A multi-level multi-discipline chinese evaluation suite for foundation models. Advances in Neural Information Processing Systems, 36:62991–63010, 2023.
 - Z. Huang, Y. Bao, Q. Min, S. Chen, R. Guo, H. Huang, D. Zhu, Y. Zeng, B. Wu, X. Zhou, et al. Ultramemv2: Memory networks scaling to 120b parameters with superior long-context learning. arXiv preprint arXiv:2508.18756, 2025b.
 - Z. Huang, Q. Min, H. Huang, Y. Zeng, D. Zhu, R. Guo, and X. Zhou. Ultra-sparse memory network. In The Thirteenth International Conference on Learning Representations, ICLR 2025, Singapore, April 24-28, 2025. OpenReview.net, 2025c. URL <https://openreview.net/forum?id=zjeHLSiNV1>.
 - M. Jin, Q. Yu, J. Huang, Q. Zeng, Z. Wang, W. Hua, H. Zhao, K. Mei, Y. Meng, K. Ding, F. Yang, M. Du, and Y. Zhang. Exploring concept depth: How large language models acquire knowledge and concept at different layers? In O. Rambow, L. Wanner, M. Apidianaki, H. Al-Khalifa, B. D. Eugenio, and S. Schockaert, editors, Proceedings of the 31st International Conference on Computational Linguistics, COLING 2025, Abu Dhabi, UAE, January 19-24, 2025, pages 558–573. Association for Computational Linguistics, 2025. URL <https://aclanthology.org/2025.coling-main.37/>.
 
-- K. Jordan, Y. Jin, V. Boza, J. You, F. Cesista, L. Newhouse, and J. Bernstein. Muon: An optimizer for hidden layers in neural networks, 2024. URL <https://kellerjordan.github.io/p/opts/muon/>.
+- K. Jordan, Y. Jin, V. Boza, J. You, F. Cesista, L. Newhouse, and J. Bernstein. Muon: An optimizer for hidden layers in neural networks, 2024. URL <https://kellerjordan.github.io/p/osts/muon/>.
 - M. Joshi, E. Choi, D. S. Weld, and L. Zettlemoyer. Triviaqa: A large scale distantly supervised challenge dataset for reading comprehension. In R. Barzilay and M. Kan, editors, Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics, ACL 2017, Vancouver, Canada, July 30 - August 4, Volume 1: Long Papers, pages 1601–1611. Association for Computational Linguistics, 2017. doi: 10.18653/V1/P17-1147. URL <https://doi.org/10.18653/v1/P17-1147>.
 - S. M. Katz. Estimation of probabilities from sparse data for the language model component of a speech recognizer. IEEE Trans. Acoust. Speech Signal Process., 35(3):400–401, 1987. doi: 10.1109/TASSP.1987.1165125. URL <https://doi.org/10.1109/TASSP.1987.1165125>.
 - D. P. Kingma. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980, 2014.
@@ -551,22 +537,22 @@ on global context and complex reasoning. This architectural shift translates int
 
 - A. Mallen, A. Asai, V. Zhong, R. Das, D. Khashabi, and H. Hajishirzi. When not to trust language models: Investigating effectiveness of parametric and non-parametric memories. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 9802–9822, 2023.
 - K. Meng, D. Bau, A. Andonian, and Y. Belinkov. Locating and editing factual associations in gpt. Advances in neural information processing systems, 35:17359–17372, 2022.
-- K. Meng, A. S. Sharma, A. J. Andonian, Y. Belinkov, and D. Bau. Mass-editing memory in a transformer. In The Eleventh International Conference on Learning Representations, ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net, 2023. URL <https://openreview.net/forum?id=MkbCAHIYgyS>.
+- K. Meng, A. S. Sharma, A. J. Andonian, Y. Belinkov, and D. Bau. Mass-editing memory in a transformer. In The Eleventh International Conference on Learning Representations, ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net, 2023. URL <https://openreview.net/forum?id=MkbcAHIYgyS>.
 - T. Nguyen. Understanding transformers via n-gram statistics. Advances in neural information processing systems, 37:98049–98082, 2024.
 - nostalgebraist. interpreting gpt: the logit lens. LessWrong, 2020. URL <https://www.lesswrong.org/posts/AckRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens>.
 - B. A. Olshausen and D. J. Field. Sparse coding with an overcomplete basis set: A strategy employed by v1? Vision research, 37(23):3311–3325, 1997.
 - A. Pagnoni, R. Pasunuru, P. Rodriguez, J. Nguyen, B. Muller, M. Li, C. Zhou, L. Yu, J. E. Weston, L. Zettlemoyer, et al. Byte latent transformer: Patches scale better than tokens. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 9238–9258, 2025.
 - B. Peng, E. Alcaide, Q. Anthony, A. Albalak, S. Arcadinho, S. Biderman, H. Cao, X. Cheng, M. Chung, L. Derczynski, X. Du, M. Grella, K. K. GV, X. He, H. Hou, P. Kazienko, J. Kocon, J. Kong, B. Koptyra, H. Lau, J. Lin, K. S. I. Mantri, F. Mom, A. Saito, G. Song, X. Tang, J. S. Wind, S. Wozniak, Z. Zhang, Q. Zhou, J. Zhu, and R. Zhu. RWKV: reinventing rnns for the transformer era. In H. Bouamor, J. Pino, and K. Bali, editors, Findings of the Association for Computational Linguistics: EMNLP 2023, Singapore, December 6-10, 2023, pages 14048–14077. Association for Computational Linguistics, 2023. doi: 10.18653/V1/2023.FINDINGS-EMNLP.936. URL <https://doi.org/10.18653/v1/2023.findings-emnlp.936>.
-- B. Peng, J. Quesnelle, H. Fan, and E. Shippole. Yarn: Efficient context window extension of large language models. In The Twelfth International Conference on Learning Representations, ICLR 2024, Vienna, Austria, May 7-11, 2024. OpenReview.net, 2024. URL <https://openreview.net/forum?id=wHBfxhZu1u>.
+- B. Peng, J. Quesnelle, H. Fan, and E. Shippole. Yarn: Efficient context window extension of large language models. In The Twelfth International Conference on Learning Representations, ICLR 2024, Vienna, Austria, May 7-11, 2024. OpenReview.net, 2024. URL <https://openreview.net/forum?id=wHBFxhZu1u>.
 - S. T. Piantadosi. Zipf’s word frequency law in natural language: A critical review and future directions. Psychonomic bulletin & review, 21(5):1112–1130, 2014.
-- O. Press, N. A. Smith, and M. Lewis. Train short, test long: Attention with linear biases enables input length extrapolation. In The Tenth International Conference on Learning Representations, ICLR 2022, Virtual Event, April 25-29, 2022. OpenReview.net, 2022. URL <https://openreview.net/forum?id=R8sQPpGCv0>.
-- RWKV Team. Rkv architecture history. <https://wiki.rwkv.com/basic/architecture.html>, 2025. Section “RWKV-V8’s DeepEmbed”, accessed 2025-12-09.
+- O. Press, N. A. Smith, and M. Lewis. Train short, test long: Attention with linear biases enables input length extrapolation. In The Tenth International Conference on Learning Representations, ICLR 2022, Virtual Event, April 25-29, 2022. OpenReview.net, 2022. URL <https://openreview.net/forum?id=R8sqPPgCV0>.
+- RWKV Team. Rwkv architecture history. <https://wiki.rwkv.com/basic/architecture.html>, 2025. Section “RWKV-V8’s DeepEmbed”, accessed 2025-12-09.
 - K. Sakaguchi, R. L. Bras, C. Bhagavatula, and Y. Choi. Winogrande: An adversarial winograd schema challenge at scale. Communications of the ACM, 64(9):99–106, 2021.
 
 - C. E. Shannon. A mathematical theory of communication. The Bell system technical journal, 27(3):379–423, 1948.
 - N. Shazeer, A. Mirhoseini, K. Maziarz, A. Davis, Q. Le, G. Hinton, and J. Dean. Outrageously large neural networks: The sparsely-gated mixture-of-experts layer. arXiv preprint arXiv:1701.06538, 2017.
 - F. Shi, M. Suzgun, M. Freitag, X. Wang, S. Srivats, S. Vosoughi, H. W. Chung, Y. Tay, S. Ruder, D. Zhou, D. Das, and J. Wei. Language models are multilingual chain-of-thought reasoners. In The Eleventh International Conference on Learning Representations, ICLR 2023, Kigali, Rwanda, May 1-5, 2023. OpenReview.net, 2023. URL <https://openreview.net/forum?id=fR3wGCk-IXp>.
-- J. Su, M. H. M. Ahmed, Y. Lu, S. Pan, W. Bo, and Y. Liu. Roformer: Enhanced transformer with rotary position embedding. Neurocomputing, 568:127063, 2024. doi: 10.1016/J.NEUCOM.2023.127063. URL <https://doi.org/10.1016/j.neucom.2023.127063>.
+- J. Su, M. H. M. Ahmed, Y. Lu, S. Pan, W. Bo, and Y. Liu. Roformer: Enhanced transformer with rotary position embedding. Neurocomputing, 568:127063, 2024. doi: 10.1016/j.NEUCOM.2023.127063. URL <https://doi.org/10.1016/j.neucom.2023.127063>.
 - K. Sun, D. Yu, D. Yu, and C. Cardie. Investigating prior knowledge for challenging chinese machine reading comprehension. Transactions of the Association for Computational Linguistics, 8:141–155, 2020.
 - M. Suzgun, N. Scales, N. Schärli, S. Gehrmann, Y. Tay, H. W. Chung, A. Chowdhery, Q. Le, E. Chi, D. Zhou, et al. Challenging big-bench tasks and whether chain-of-thought can solve them. In Findings of the Association for Computational Linguistics: ACL 2023, pages 13003–13051, 2023.
 - C. Szegedy, W. Liu, Y. Jia, P. Sermanet, S. Reed, D. Anguelov, D. Erhan, V. Vanhoucke, and A. Rabinovich. Going deeper with convolutions. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 1–9, 2015.
@@ -633,40 +619,11 @@ Table 5 | Detailed model architecture information and training hyper parameters.
 
 ### B. Full Benchmark Curves
 
-![A grid of 24 line charts showing benchmark performance for MoE-27B and Engram-27B models across various tasks like Pile-test, MMLU, and GSM8K. Each chart plots performance from 42k to 50k pre-training steps.](b3459be722bb1ef785aa859e6f4ec7e4_img.jpg)
+![A grid of 24 line charts showing benchmark performance for MoE-27B and Engram-27B models across various tasks like Pile-test, MMLU, and GSM8K. The x-axis for all charts represents training steps from 42k to 50k. The y-axis represents the benchmark score. MoE-27B is shown as a dashed black line, and Engram-27B as a solid red line.](b3459be722bb1ef785aa859e6f4ec7e4_img.jpg)
 
-The figure displays 24 individual line charts arranged in a 6x4 grid, showing benchmark performance for two models: MoE-27B (dashed black line) and Engram-27B (solid red line) over the last 10k pre-training steps (42k to 50k). The benchmarks included are:
+The figure displays 24 individual line charts arranged in a 6x4 grid, showing the performance of two language models, MoE-27B (dashed black line) and Engram-27B (solid red line), across various benchmarks. The x-axis for all charts represents training steps, ranging from 42k to 50k. The y-axis represents the benchmark score. The benchmarks shown are: Pile-test, MMLU, MMLU-Redux, MMLU-PRO, CMMLU, CEval, AGIEval, ARC-Easy, ARC-Challenge, TriviaQA, TriviaQA-ZH, PopQA, CCPM, BBH, HellaSwag, PIQA, Winogrande, DROP, RACE-High, RACE-Middle, C3, HumanEval, MBPP, Cruxeval-o, Cruxeval-i, GSM8K, MGSM, and MATH. In most cases, Engram-27B (red line) shows higher performance than MoE-27B (black dashed line) in the final 10k pre-training steps.
 
-- Pile-test
-- MMLU
-- MMLU-Redux
-- MMLU-PRO
-- CMLU
-- CEval
-- AGIEval
-- ARC-Easy
-- ARC-Challenge
-- TriviaQA
-- TriviaQA-ZH
-- PopQA
-- CCPM
-- BBH
-- HellaSwag
-- PIQA
-- WinoGrande
-- DROP
-- RACE-High
-- RACE-Middle
-- C3
-- HumanEval
-- MBPP
-- Cruxeval-o
-- Cruxeval-i
-- GSM8K
-- M GSM
-- MATH
-
-A grid of 24 line charts showing benchmark performance for MoE-27B and Engram-27B models across various tasks like Pile-test, MMLU, and GSM8K. Each chart plots performance from 42k to 50k pre-training steps.
+A grid of 24 line charts showing benchmark performance for MoE-27B and Engram-27B models across various tasks like Pile-test, MMLU, and GSM8K. The x-axis for all charts represents training steps from 42k to 50k. The y-axis represents the benchmark score. MoE-27B is shown as a dashed black line, and Engram-27B as a solid red line.
 
 Figure 8 | Last 10k pre-training benchmark curve.
 
@@ -675,9 +632,9 @@ Figure 8 | Last 10k pre-training benchmark curve.
 | Rank | Merge Count | Normalized Token | Original Tokens                                                     |
 |------|-------------|------------------|---------------------------------------------------------------------|
 | 1    | 163         | ' <sub>␣</sub> ' | '\t', '\n', '\r', '␣', '␣␣', '\n\n', '␣␣␣', '␣\n', ...              |
-| 2    | 54          | 'a'              | 'A', 'a', '␣a', '␣A', 'á', 'ã', 'ä', 'ą', 'å', '␣å', '␣A', 'â', ... |
-| 3    | 40          | 'o'              | 'O', 'o', '␣o', '␣O', 'ó', 'õ', 'ô', 'õ', 'õ', 'õ', 'õ', ...        |
-| 4    | 35          | 'e'              | 'E', 'e', '␣e', '␣E', 'é', 'è', 'ê', 'ë', 'ě', 'ě', 'ě', ...        |
-| 5    | 30          | 'i'              | 'I', 'i', '␣I', '␣i', 'í', 'ì', 'î', 'ï', 'í', 'í', 'í', ...        |
+| 2    | 54          | 'a'              | 'A', 'a', '␣a', '␣A', 'á', 'ã', 'ä', 'ą', 'å', '␣å', '␣å', 'å', ... |
+| 3    | 40          | 'o'              | 'O', 'o', '␣o', '␣O', 'ó', 'õ', 'ö', 'ø', 'ǿ', '␣ǿ', '␣ǿ', 'ǿ', ... |
+| 4    | 35          | 'e'              | 'E', 'e', '␣e', '␣E', 'é', 'è', 'ê', 'ë', 'ě', '␣ě', '␣ě', 'ě', ... |
+| 5    | 30          | 'i'              | 'I', 'i', '␣i', '␣I', 'í', 'ì', 'î', 'ï', 'ǐ', '␣ǐ', '␣ǐ', 'ǐ', ... |
 
 Table 6 | The table illustrates Top-5 merged tokens by *Tokenizer Compression* and the overall compression ratio is 23.43% for our 128k tokenizer.
