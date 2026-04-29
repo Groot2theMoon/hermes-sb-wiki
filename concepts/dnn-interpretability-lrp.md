@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-28
 type: concept
 tags: [neural-network, training, inference, benchmark, paper]
-sources: [raw/papers/1509.06321v1.md]
+sources: [raw/papers/1509.06321v1.md, raw/papers/1708.08296v1.md]
 confidence: high
 ---
 

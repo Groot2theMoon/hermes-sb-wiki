@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [model, benchmark, paper, training, infrastructure]
-sources: [raw/papers/2510.14057v1.md]
+sources: [raw/papers/2510.14057v1.md, raw/papers/2512.08296v2.md]
 confidence: medium
 ---
 
@@ -32,6 +32,28 @@ confidence: medium
 | Reflexion | 피드백 기반 자기 수정 | 중간 |
 | Multi-Agent | 여러 에이전트 협력 | 조건부 |
 
+## 확장: Coordination Science (arXiv:2512.08296)
+
+같은 Google Research 그룹의 후속 논문^[raw/papers/2512.08296v2.md]은 **정량적 스케일링 원리**를 도출하고 coordination에 관한 세 가지 지배적 효과를 규명했다:
+
+### 1. Tool-Coordination Trade-off ($\beta=-0.267, p<0.001$)
+- Tool-heavy tasks (16개 이상)는 multi-agent overhead로 성능 저하
+- 제한된 토큰 예산에서 per-agent capacity 부족이 원인
+
+### 2. Capability Saturation ($\hat{\beta}=-0.404, p<0.001$)
+- Single-agent 성능이 **~45%**를 넘으면 multi-agent coordination의 추가 이득이 소멸 또는 역전
+- Coordination cost가 diminishing improvement를 초과
+
+### 3. Topology-Dependent Error Amplification
+- **Independent agents:** 오류 증폭 **17.2×** (unchecked error propagation)
+- **Centralized coordination:** 오류 증폭 **4.4×** (validation bottlenecks)
+- **Decentralized:** Parallel exploration에 유리 (web navigation: +9.2%)
+- **Multi-agent variants universally degrade on sequential planning tasks** (−39% ~ −70%)
+
+### Cross-Validated Predictive Model ($R^2=0.524$)
+- Coordination 효율, 오류 증폭, 중복도 기반 혼합 효과 모델
+- Unseen task에서 87% 정확도로 최적 아키텍처 예측
+
 ## 융합 도메인 연결
 
 - **추론 시간 스케일링** 법칙은 [[muon-optimizer]]의 학습 시간 효율성과 대비되는 개념
@@ -40,5 +62,6 @@ confidence: medium
 
 ## References
 - Kim, S. et al. (2025). Scaling Agent Systems. arXiv:2510.14057. Google Research/MIT.
+- Kim, Y., Gu, K., Park, C., et al. (2025). Towards a Science of Scaling Agent Systems. arXiv:2512.08296. Google Research/DeepMind/MIT.
 - [[multi-agent-investment]]
 - [[ai-research-automation]]

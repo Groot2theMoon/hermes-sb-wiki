@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [training, model, benchmark, survey, mathematics]
-sources: [raw/papers/file.md]
+sources: [raw/papers/file.md, raw/papers/3-540-49430-8.md]
 confidence: high
 ---
 

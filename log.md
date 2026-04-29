@@ -401,3 +401,11 @@
 - **Updated Concept:** [[isentropic-relations]] — MATLAB 실습 섹션 추가 (Part 2: 4개 관계식 수치 계산 및 플로팅, Part 3: 함수화 리팩토링, 핵심 인사이트)
 - **Tags used:** thermodynamics, fluid-dynamics, foundation, pure-mechanics
 - **Total pages:** 164 (unchanged)
+
+## [2026-04-29] ingest | 대규모 인제스트 — 46개 미처리 raw 파일 → 28개 신규 개념 + 6개 업데이트
+- **Full triage:** 46 file classified → 28 created + 6 updated + 11 deferred + 3 skipped
+- **New concepts:** 28 pages (KAN, Score-SDE, SN-GAN, Deep Delta, DUAL-X, UDE, continual learning, neural MPC, PAC-Bayes EU, diffusion metamaterials, DiT, LYGE, predictive CBF, Koopman, DIFFUSOLVE, orthogonal projection, safety filters, UKF, Zames stability, Simformer, GFSVI, Bayesian UQ MDPs, spectral margin bounds, causal XAI, label-wise UQ, SSM emergence, DKMGP, Sinkhorn)
+- **Updated:** xai-surveys, agent-scaling, t-sne, nn-tricks, dnn-interpretability-lrp (+1 cross-ref)
+- **Deferred:** 2 astronomy, 2 HEP, 2 neuroscience, 1 cosmology, 1 physics-astro, 1 math textbook, 1 pure geometry, 1 neuromorphic hardware, 1 Korean law
+- **Index rebuilt:** 131 concepts + 56 entities + 11 comparisons = 198 total
+- **Tags:** model, training, neural-network, control-system, uncertainty, mathematics, generative-model, physics-informed, foundation

@@ -1,10 +1,10 @@
 ---
 title: t-SNE — t-distributed Stochastic Neighbor Embedding
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 type: concept
 tags: [classic-ai, dimensionality-reduction, survey]
-sources: [raw/papers/ml2-lecture-02.md, raw/papers/ml2-sheet-02.md]
+sources: [raw/papers/vandermaaten08a.md, raw/papers/ml2-lecture-02.md, raw/papers/ml2-sheet-02.md]
 confidence: high
 provenance: "van der Maaten & Hinton (2008) JMLR 9, 2579-2605"
 ---

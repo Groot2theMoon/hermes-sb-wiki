@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [classic-ai, benchmark, survey, paper]
-sources: []
+sources: [raw/papers/1-s2.0-S1051200417302385-main.md, raw/papers/1708.08296v1.md]
 confidence: medium
 ---
 
@@ -52,7 +52,19 @@ confidence: medium
 - **PINN/DMN의 예측 설명:** 어떤 물리 법칙/재료 특성이 예측에 가장 영향을 미치는지 분석
 - [[uncertainty-quantification-deep-learning]] — UQ와 XAI의 결합
 
+## Foundational Tutorial: Montavon et al. (2017)
+
+Montavon, Samek & Müller (TU Berlin, 2017)의 *Methods for interpreting and understanding deep neural networks*는 DSP 저널에 게재된 **tutorial 논문**으로, DNN interpretability 분야의 대표적 입문 자료다^[raw/papers/1-s2.0-S1051200417302385-main.md]. 주요 기여:
+
+- **Activation Maximization**: 특정 뉴런/클래스를 최대한 활성화하는 입력 패턴 생성
+- **Sensitivity Analysis**: 입력 perturbation에 대한 출력 변화 분석 (gradient 기반)
+- **Taylor Decomposition**: 테일러 급수를 이용한 relevance 분해 (LRP의 수학적 기반)
+- **LRP (Layer-wise Relevance Propagation)**: 출력에서 입력 방향으로 relevance를 보존하며 역전파 — 당시 SOTA interpretability 방법으로 평가됨
+
+Montavon et al.은 *post-hoc interpretability* (이미 학습된 모델을 사후 해석)에 초점을 두며, interpretability를 모델 구조에 통합하는 접근과 구별한다. 이 논문은 이후 LRP 계열 방법론의 표준 reference가 되었다.
+
 ## References
+- Montavon, G., Samek, W., & Müller, K.-R. (2017). Methods for interpreting and understanding deep neural networks. *Digital Signal Processing*, 73, 1–15. ^[raw/papers/1-s2.0-S1051200417302385-main.md]
 - Samek, W. et al. (2017). Explainable AI: Interpreting, Explaining and Visualizing Deep Learning. Springer.
 - [[dnn-interpretability-lrp]]
 - [[xai-surveys]]
