@@ -2,7 +2,7 @@
 > Content catalog.
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 214
+> Last updated: 2026-04-29 | Total pages: 216
 - [[albert-gu]] — Albert Gu
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andrew-norris]] — Andrew Norris
@@ -84,6 +84,7 @@
 - [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-delta-learning]] — Deep Delta Learning — Householder Reflection as Learnable Residual Connections
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
+- [[deep-kalman-filter]] — Deep Kalman Filter (DKF) — Variational Inference for Temporal Generative Models
 - [[deep-kernel-multitask-gp-vehicle-dynamics]] — Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
@@ -115,6 +116,7 @@
 - [[genai-stock-selection]] — Generative AI for Stock Selection
 - [[generative-models-physics]] — Generative Models for Physics — Spin Systems and Lattice Field Theory
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
+- [[gru-d]] — GRU-D — Gated Recurrent Unit with Missingness Patterns for Time Series
 - [[hierarchical-autoregressive-networks]] — Hierarchical Autoregressive Networks (HAN) for Statistical Systems
 - [[hilbert-simplex-geometry]] — Non-linear Embeddings in Hilbert Simplex Geometry
 - [[hmm-tutorial]] — Hidden Markov Model — Tutorial

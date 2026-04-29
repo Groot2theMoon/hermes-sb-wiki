@@ -488,3 +488,10 @@
 - **New Entity (1):** [[karl-friston]] — UCL 신경과학자, FEP/DCM/SPM 창시자
 - **SCHEMA.md:** Adjacent/Foundational Domains 섹션 + 5개 신규 태그 추가 (information-theory, neuroscience, cognitive-science, self-organization, information-thermodynamics)
 - **Total pages:** 214 (was 211, +3)
+
+## [2026-04-29] ingest | Deep Kalman Filter + GRU-D (2 PDFs → wiki)
+- **New Concepts (2):**
+  - [[deep-kalman-filter]] — DKF (Krishnan, Shalit, Sontag 2015): VAE + Kalman filter variational inference
+  - [[gru-d]] — GRU-D (Che et al. 2018): RNN with informative missingness for time series
+- **Raw files (2):** raw/papers/deep-kalman-filters.md, raw/papers/rnn-missing-values-timeseries.md
+- **Total pages:** 216 (was 214, +2)
