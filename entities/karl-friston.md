@@ -52,4 +52,4 @@ confidence: high
 - [[free-energy-principle]] — FEP의 상세 개념
 - [[landauer-friston-connection]] — Landauer 원리와 FEP의 연결
 - [[variational-autoencoder]] — VAE의 ELBO와 FEP의 수학적 동형성
-- [[predictive-coding]] — (예정) Predictive coding as FEP implementation
+- Predictive coding — (예정) Predictive coding as FEP implementation

@@ -68,6 +68,8 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **architecture:** Neural network architecture design, NAS, macro/micro search
 - **theory:** Theoretical ML foundations — proofs, bounds, convergence analysis
 - **information-theory:** Shannon entropy, mutual information, channel capacity, KL divergence
+- **variational-inference:** Variational inference, ELBO, amortized inference, reparameterization trick
+- **latent-dynamics:** Latent dynamics models, latent variable temporal modeling, state representation learning
 
 ### Mechanics/Physics Domain
 - **mechanics:** Classical mechanics, statics, dynamics

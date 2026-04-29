@@ -68,6 +68,7 @@ $$h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t$$
 - [[universal-approximation-theorem]] — 피드포워드 신경망의 표현력 이론
 - [[yolo-object-detection]] — CNN 기반 접근 (YOLO는 RNN 사용 안 함)
 - [[yoshua-bengio]] — Bengio 연구실에서 개발된 GRU
+- [[gru-d]] — GRU-D: Missingness-aware RNN for clinical time series
 
 ## References
 - J. Chung, C. Gulcehre, K. Cho, Y. Bengio. "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling", *NIPS 2014 Workshop on Deep Learning*

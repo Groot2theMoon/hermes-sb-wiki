@@ -2,7 +2,10 @@
 > Content catalog.
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 216
+> Last updated: 2026-04-29 | Total pages: 219
+
+## Entities
+
 - [[albert-gu]] — Albert Gu
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andrew-norris]] — Andrew Norris
@@ -15,6 +18,7 @@
 - [[bernhard-scholkopf]] — Bernhard Schölkopf
 - [[brown-university]] — Brown University — CRUNCH Group
 - [[caltech]] — Caltech — AI × Science 리더
+- [[david-sontag]] — David Sontag — MIT Professor, ML for Healthcare
 - [[deepseek]] — DeepSeek
 - [[diederik-kingma]] — Diederik Kingma
 - [[dongil-shin]] — Shin Dongil (신동일)
@@ -31,6 +35,7 @@
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
+- [[kaiming-he]] — Kaiming He
 - [[karl-friston]] — Karl Friston — Neuroscientist, Free Energy Principle Creator
 - [[kaushik-bhattacharya]] — Kaushik Bhattacharya
 - [[klaus-robert-muller]] — Klaus-Robert Müller
@@ -50,11 +55,11 @@
 - [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[ross-girshick]] — Ross Girshick
-- [[s-keshav]] — S. Keshav
 - [[sakana-ai]] — Sakana AI
 - [[sam-roweis]] — Sam T. Roweis
 - [[sepp-hochreiter]] — Sepp Hochreiter
 - [[sergey-zhdan]] — Sergey A. Zhdan
+- [[s-keshav]] — S. Keshav
 - [[stanislav-fort]] — Stanislav Fort
 - [[steven-g-johnson]] — Steven G. Johnson
 - [[takeru-miyato]] — Takeru Miyato
@@ -67,7 +72,7 @@
 - [[zongyi-li]] — Zongyi Li
 
 ## Concepts
-<!-- Alphabetical -->
+
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
@@ -87,8 +92,8 @@
 - [[deep-kalman-filter]] — Deep Kalman Filter (DKF) — Variational Inference for Temporal Generative Models
 - [[deep-kernel-multitask-gp-vehicle-dynamics]] — Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
-- [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
+- [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
@@ -140,8 +145,8 @@
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
-- [[ls-yolo]] — LS-YOLO for Autonomous Driving
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
+- [[ls-yolo]] — LS-YOLO for Autonomous Driving
 - [[lyapunov-guided-exploration]] — LYGE — Lyapunov-Guided Exploration for Stabilizing High-dimensional Unknown Systems
 - [[mach-number-and-flow-regimes]] — Mach Number and Flow Regimes — Subsonic to Hypersonic
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
@@ -159,13 +164,14 @@
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
 - [[offline-bayesian-uq-finite-mdps]] — Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs
+- [[optimal-control]] — Optimal Control — Optimal Decision-Making in Dynamical Systems
 - [[optimal-transport-stability-sinkhorn]] — Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence
 - [[orthogonal-projection-regularization]] — Orthogonal Projection Regularization for Efficient Model Augmentation
 - [[pac-bayesian-epistemic-uncertainty]] — PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
 - [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — Raissi, Perdikaris & Karniadakis (2019)
-- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[physics-informed]] — Physics-Informed Machine Learning
+- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN — 확장 연구 분석
@@ -188,11 +194,12 @@
 - [[ssl-agent-skill-representation]] — SSL — Scheduling-Structural-Logical Representation for Agent Skills
 - [[stagnation-properties]] — Stagnation Properties and Critical Conditions — Gas Dynamics
 - [[state-space-model-emergence-ergodicity]] — State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds
+- [[state-space-model]] — State-Space Model (SSM) — State-Space Representation of Dynamical Systems
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
-- [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
 - [[thermoelastic-dmn]] — Thermoelastic Deep Material Network
 - [[transformer]] — Transformer Architecture
+- [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
 - [[universal-approximation-theorem]] — Universal Approximation Theorem
@@ -210,9 +217,9 @@
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
 
 ## Comparisons
-<!-- Alphabetical -->
-- [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
+
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
+- [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
 - [[koh-vs-deep-uq]] — KOH Bayesian Calibration vs Deep Learning UQ Methods — 비교
 - [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 비교
 - [[mc-dropout-vs-deep-ensembles]] — MC Dropout vs Deep Ensembles — 비교

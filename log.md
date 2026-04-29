@@ -495,3 +495,14 @@
   - [[gru-d]] — GRU-D (Che et al. 2018): RNN with informative missingness for time series
 - **Raw files (2):** raw/papers/deep-kalman-filters.md, raw/papers/rnn-missing-values-timeseries.md
 - **Total pages:** 216 (was 214, +2)
+
+## [2026-04-29] lint --fix | 15 issues resolved
+- **New pages (3):**
+  - [[state-space-model]] — SSM 일반 이론 개념 페이지 생성
+  - [[optimal-control]] — Optimal control 개념 페이지 생성 (FEP 연결 포함)
+  - [[david-sontag]] — MIT 교수 entity 페이지 생성
+- **Fixed broken wikilinks (1):** `entities/karl-friston.md` — [[predictive-coding]] → plain text (page 없음)
+- **Fixed frontmatter (3):** `dongil-shin.md` (sources 추가), `yoshua-bengio.md` (sources 추가), `deep-material-network.md` (중복 sources 제거)
+- **Cross-linked orphan gru-d (2):** `deep-kalman-filter.md` + `gated-recurrent-units.md`에 [[gru-d]] wikilink 추가
+- **SCHEMA.md (2):** `variational-inference`, `latent-dynamics` 태그 추가
+- **Index:** filesystem에서 전체 재빌드 (219 pages, 0 broken links, 0 orphans)

@@ -89,6 +89,7 @@ DKF는 **VAE의 temporal 확장**이면서, **Friston FEP의 hierarchical dynami
 - [[free-energy-principle]] — Friston FEP과의 수학적 동형성
 - [[state-space-model]] — SSM 일반 이론
 - [[kyunghyun-cho]] — 공동 저자 (Gru, Bahdanau Attention)
+- [[gru-d]] — GRU-D: RNN with informative missingness for clinical time series
 
 ## References
 
