@@ -2,7 +2,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 198
+> Last updated: 2026-04-29 | Total pages: 209
 
 ## Entities
 <!-- Alphabetical within section -->
@@ -44,6 +44,8 @@
 - [[lawrence-saul]] — Lawrence K. Saul
 - [[leland-mcinnes]] — Leland McInnes
 - [[lu-lu]] — Lu Lu
+- [[marin-soljacic]] — Marin Soljačić
+- [[max-tegmark]] — Max Tegmark
 - [[maziar-raissi]] — Maziar Raissi
 - [[moonshot-ai]] — Moonshot AI
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
@@ -59,9 +61,13 @@
 - [[sergey-zhdan]] — Sergey A. Zhdan
 - [[stanislav-fort]] — Stanislav Fort
 - [[steven-g-johnson]] — Steven G. Johnson
+- [[takeru-miyato]] — Takeru Miyato
 - [[university-of-sheffield]] — University of Sheffield
+- [[yang-song]] — Yang Song
 - [[yann-lecun]] — Yann LeCun
+- [[yifan-zhang]] — Yifan Zhang
 - [[yoshua-bengio]] — Yoshua Bengio
+- [[ziming-liu]] — Ziming Liu
 - [[zongyi-li]] — Zongyi Li
 
 ## Concepts
@@ -89,11 +95,13 @@
 - [[deep-material-network]] — "Deep Material Network (DMN) — 기본 아키텍처"
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
+- [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
 - [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
 - [[diffusion-metamaterial-inverse-design]] — Guided Diffusion for Inverse Design of Mechanical Metamaterials
 - [[diffusion-trajectory-optimization]] — DIFFUSOLVE — Diffusion-based Solver for Non-Convex Trajectory Optimization
 - [[diffusion-transformers-dit]] — DiT — Scalable Diffusion Models with Transformers
+- [[digital-twin]] — Digital Twin — Real-Time Physics-Based Virtual Replica
 - [[discriminating-hyperplane-safety]] — Safety Filters via Discriminating Hyperplanes
 - [[dnn-interpretability-lrp]] — DNN Visualization & Interpretability (LRP)
 - [[dual-x-mlff-explainability]] — DUAL-X — Dual-Level Explainability Framework for Machine Learning Force Fields
@@ -180,6 +188,7 @@
 - [[stagnation-properties]] — Stagnation Properties and Critical Conditions — Gas Dynamics
 - [[state-space-model-emergence-ergodicity]] — "State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds"
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
+- [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
 - [[thermoelastic-dmn]] — "Thermoelastic Deep Material Network"
 - [[transformer]] — Transformer Architecture
@@ -202,6 +211,7 @@
 ## Comparisons
 <!-- Alphabetical within section -->
 
+- [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
 - [[koh-vs-deep-uq]] — KOH Bayesian Calibration vs Deep Learning UQ Methods — 비교
 - [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 비교
@@ -211,5 +221,6 @@
 - [[pinn-vs-deeponet]] — PINN vs DeepONet — Comparison
 - [[pinn-vs-hpinn]] — PINN vs hPINN — Soft vs Hard Constraint 비교
 - [[resnet-vs-densenet]] — ResNet vs DenseNet — Skip Connection 비교
+- [[sn-gan-vs-gan-lattice]] — SN-GAN vs GAN Lattice Simulations — GAN 안정화 방법 비교
 - [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
 - [[vae-vs-gan]] — VAE vs GAN — Generative Model 비교

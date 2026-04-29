@@ -420,3 +420,12 @@
 - [[pinn-failure-modes]] (9→45 lines) — NTK eigenvalue imbalance, adaptive learning rate annealing
 - [[ppi-no]] (8→38 lines) — Soft physics constraint, FNO-DeepONet-PINN spectrum middle ground
 - **Index rebuilt:** 198 total pages (131 concepts + 56 entities + 11 comparisons)
+
+## [2026-04-29] deepen | 6 페이지 추가 보강 (uq-aeroelasticity, variational-autoregressive, conditional-normalizing-flow, pseudo-differential-neural-operator, physics-informed-temporal-unet, physics-constrained-surrogate)
+- Deepened 6 pages to 85-126 lines with tables, formulas, ASCII architecture diagrams
+- Restored 7 previously-overwritten deepened pages from git
+
+## [2026-04-29] backfill | 6 entities + 2 comparisons 생성
+- **Entities:** [[ziming-liu]], [[max-tegmark]], [[marin-soljacic]], [[yang-song]], [[takeru-miyato]], [[yifan-zhang]]
+- **Comparisons:** [[sn-gan-vs-gan-lattice]], [[fno-vs-deeponet-vs-kan]]
+- Index rebuilt: 209 total (134 concepts + 62 entities + 13 comparisons)
