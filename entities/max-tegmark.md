@@ -16,7 +16,7 @@ confidence: high
 
 | 연도 | 기여 | 내용 |
 |------|------|------|
-| 2024 | [[kolmogorov-arnold-networks\|KAN]] | Kolmogorov-Arnold theorem 기반 신경망 아키텍처 공동 개발 |
+| 2024 | [[kolmogorov-arnold-networks|KAN]] | Kolmogorov-Arnold theorem 기반 신경망 아키텍처 공동 개발 |
 | 2020 | AI Feynman | Udrescu & Tegmark — 물리 기반 심볼릭 회귀 방법 |
 | 2019 | AI Physicist | Wu & Tegmark — 비지도 학습을 위한 AI 물리학자 |
 | 2019 | GORU | Jing, Shen, ..., Tegmark, Soljačić — Gated Orthogonal Recurrent Units |

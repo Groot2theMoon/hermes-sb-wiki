@@ -16,7 +16,7 @@ confidence: high
 
 | 연도 | 기여 | 내용 |
 |------|------|------|
-| 2018 | [[spectral-normalization-gan\|SN-GAN]] | Spectral normalization으로 GAN discriminator의 Lipschitz constant 제어 (ICLR 2018) |
+| 2018 | [[spectral-normalization-gan|SN-GAN]] | Spectral normalization으로 GAN discriminator의 Lipschitz constant 제어 (ICLR 2018) |
 | 2018 | Projection Discriminator | Miyato & Koyama — conditional GAN의 projection discriminator |
 | 2017 | Spectral Norm Regularization | Yoshida & Miyato — spectral norm 기반 정규화 |
 | 2016 | Virtual Adversarial Training | Miyato et al. — 분포 기반 adversarial training |

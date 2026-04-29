@@ -66,6 +66,8 @@ $$\mathrm{d}x = [f(x,t) - \frac{1}{2}g(t)^2 s_\theta(x,t)]\,\mathrm{d}t$$
 Score-SDE 프레임워크는 물리 시뮬레이션의 [[diffusion-lattice|격자장 이론 생성]], uncertainty quantification, inverse design 등에 활용된다. Probability flow ODE는 결정론적 물리 역문제에 특히 유용하다.
 
 ## References
+- [[yang-song]]
+
 
 - [[diffusion-lattice]] — Score-based model의 격자장 응용
 - [[generative-models-physics]] — 물리학 생성 모델 개요

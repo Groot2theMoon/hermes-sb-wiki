@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [physics-informed, neural-network, training, mathematics, paper]
-sources: [raw/papers/pinn-failure-modes-ntk.md]
+sources: []
 confidence: high
 ---
 

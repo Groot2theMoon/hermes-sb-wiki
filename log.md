@@ -436,3 +436,15 @@
 - Cross-link backfill: 33 wikilinks added from parent pages → orphan pages
 - Index rebuilt: 209 total (134 C + 62 E + 13 CMP)
 - Broken wikilinks: 9
+
+## [2026-04-29] lint --fix | Comprehensive lint + auto-repair
+- **Lint findings:** 28 broken wikilinks (trailing spaces/backslashes), 11 orphans, 8 dangling sources
+- **Fixed broken wikilinks (28→0):**
+  - Trailing space before `|` pipe: `[[lle | LLE]]` → `[[lle|LLE]]` (15 instances across entity pages)
+  - Trailing backslash before `|` pipe: `[[deeponet\|DeepONet]]` → `[[deeponet|DeepONet]]` (13 instances)
+- **Fixed orphans (11→0):** Added 12 cross-links — takeru-miyato, yang-song, yifan-zhang linked from concept pages; waste-fiber-* linked from poroelastic-dmn-research, etc.
+- **Fixed dangling sources (3):** pinn-failure-modes → sources: [] (no matching raw), ppi-no → 4999_Pseudo_Physics_Informed_N.md, physics-informed-temporal-unet → trending/2026-04-28-04.md
+- **Index rebuilt:** 209 total unchanged
+- **Tag audit:** 35 non-taxonomy tags in use, 6 unused schema tags — pending SCHEMA update
+- **Source drift:** 19 raw files have sha256 mismatch (content edited after ingest) — informational only
+- **Unprocessed raw:** 25 files remain in raw/papers/

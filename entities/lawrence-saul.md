@@ -15,7 +15,7 @@ confidence: high
 ## 주요 기여
 
 ### Locally Linear Embedding (LLE)
-[[sam-roweis | Sam Roweis]]와 공동으로 개발한 [[lle | LLE]]는 비선형 차원 축소의 고전으로 자리잡았다. Saul은 AT&T Labs 시절 LLE의 이론적 토대와 실용적 구현을 주도했다. LLE 논문(*Science*, 2000)은 manifold learning 분야를 개척했으며, 특히 **audiovisual speech synthesis** (입술 이미지 차원 축소) 예제를 통해 LLE의 실용성을 입증했다^[raw/papers/ml2-lle-intro.md].
+[[sam-roweis| Sam Roweis]]와 공동으로 개발한 [[lle| LLE]]는 비선형 차원 축소의 고전으로 자리잡았다. Saul은 AT&T Labs 시절 LLE의 이론적 토대와 실용적 구현을 주도했다. LLE 논문(*Science*, 2000)은 manifold learning 분야를 개척했으며, 특히 **audiovisual speech synthesis** (입술 이미지 차원 축소) 예제를 통해 LLE의 실용성을 입증했다^[raw/papers/ml2-lle-intro.md].
 
 ### Speech Processing
 AT&T Labs – Research에서 음성 인식 및 합성에 관한 연구를 수행. LLE를 활용한 입술 이미지의 저차원 embedding이 음성 애니메이션(visual speech animation) 분야에 응용되었다. Saul의 접근법은 고차원 음성 특징을 저차원 manifold로 효과적으로 압축하는 방법을 제시했다.

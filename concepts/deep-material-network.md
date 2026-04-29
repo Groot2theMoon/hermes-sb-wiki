@@ -84,7 +84,11 @@ L = (1/2N_s) Σ_s ‖C^DNS_s - DMN(Cᵖ¹_s, Cᵖ²_s, ...)‖² / ‖C^DNS_s‖
 | 회전 DOF | 1 (θ) | 3 (α, β, γ) |
 | Building block 파라미터 | 3개/층 | 7개/층 |
 
-## 관련 개념
+## 관련
+- [[centimeter-nanomechanical-resonators]]
+
+- [[waste-fiber-acoustic-absorber]]
+ 개념
 
 - `thermoelastic-dmn` — [[dongil-shin|Shin]] 2024: 열팽창 균질화 통합
 - `deep-material-network-quilting` — Shin 2023: DMN explainability 및 quilting 전략

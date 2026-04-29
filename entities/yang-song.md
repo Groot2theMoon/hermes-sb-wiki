@@ -16,7 +16,7 @@ confidence: high
 
 | 연도 | 기여 | 내용 |
 |------|------|------|
-| 2021 | [[score-based-generative-modeling-sde\|Score-SDE]] | SMLD와 DDPM을 SDE로 통합 — 생성 모델의 통합 이론 |
+| 2021 | [[score-based-generative-modeling-sde|Score-SDE]] | SMLD와 DDPM을 SDE로 통합 — 생성 모델의 통합 이론 |
 | 2020 | NCSN++ | Improved score-based generative models |
 | 2019 | SMLD/Sliced Score Matching | Score matching의 확장 가능한 방법론 |
 | 2019 | MintNet | Invertible neural network with masked convolutions |

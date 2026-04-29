@@ -74,7 +74,7 @@ Encoder-decoder는 deterministic surrogate를, flow 기반 생성 모델은 prob
 
 ## PINN과의 비교
 
-| 측면 | [[physics-informed-neural-networks\|PINN]] | Physics-Constrained Surrogate |
+| 측면 | [[physics-informed-neural-networks|PINN]] | Physics-Constrained Surrogate |
 |------|------|------|
 | **학습 방식** | coordinate 입력, 자동미분으로 PDE 잔차 | CNN decoder, Sobel filter로 잔차 |
 | **출력** | 단일 해 $u(x,t)$ | 분포 $p_\theta(\mathbf{y}|\mathbf{x})$ |

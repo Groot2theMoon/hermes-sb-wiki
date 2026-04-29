@@ -18,7 +18,7 @@ Piotr Wolański (also spelled Piotr Wolanski) is a professor at the Warsaw Unive
 ## Key Contributions
 
 ### Landmark Review (2013)
-Published the landmark review **"Detonative propulsion"** in *Proceedings of the Combustion Institute* (2013), which has accumulated approximately 1,200 citations. This comprehensive survey established the state of the art in detonative propulsion systems, covering both Pulse Detonation Engines (PDE) and [[rotating-detonation-engine | Rotating Detonation Engines (RDE)]].
+Published the landmark review **"Detonative propulsion"** in *Proceedings of the Combustion Institute* (2013), which has accumulated approximately 1,200 citations. This comprehensive survey established the state of the art in detonative propulsion systems, covering both Pulse Detonation Engines (PDE) and [[rotating-detonation-engine| Rotating Detonation Engines (RDE)]].
 
 ### Detonative Propulsion Research
 - **Continuous Rotating Detonation Engines (RDE):** Pioneered experimental and theoretical work on sustaining continuous detonation waves in annular and disk-shaped chambers.

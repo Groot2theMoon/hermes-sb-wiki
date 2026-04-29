@@ -15,7 +15,7 @@ confidence: high
 ## 주요 기여
 
 ### UMAP (Uniform Manifold Approximation and Projection)
-[[umap | UMAP]]은 리만 기하학(Riemannian geometry)과 대수적 위상수학(algebraic topology) — 특히 퍼지 단체(fuzzy simplicial sets) — 에 기반한 차원 축소 기법이다. [[t-sne | t-SNE]]와 비교해 더 빠른 속도, 더 나은 전역 구조 보존, 제한 없는 임베딩 차원을 제공한다. 2018년 arXiv 논문(1802.03426)으로 발표되어, 단일세포 유전체학, 재료과학, 기계학습 등 다양한 분야에서 광범위하게 채택되었다.
+[[umap| UMAP]]은 리만 기하학(Riemannian geometry)과 대수적 위상수학(algebraic topology) — 특히 퍼지 단체(fuzzy simplicial sets) — 에 기반한 차원 축소 기법이다. [[t-sne| t-SNE]]와 비교해 더 빠른 속도, 더 나은 전역 구조 보존, 제한 없는 임베딩 차원을 제공한다. 2018년 arXiv 논문(1802.03426)으로 발표되어, 단일세포 유전체학, 재료과학, 기계학습 등 다양한 분야에서 광범위하게 채택되었다.
 
 ### umap-learn 라이브러리
 Python 기반의 `umap-learn` 패키지의 주요 개발자. 이 라이브러리는 널리 사용되는 오픈소스 구현체로, scikit-learn 호환 API를 제공하며 numba를 사용한 고성능 최적화가 특징이다.

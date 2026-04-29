@@ -48,6 +48,8 @@ confidence: medium
 - [[ai-scientific-taste]] (Sci Taste) — 과학적 판단력 학습과의 연결
 
 ## References
+- [[ssl-agent-skill-representation]]
+
 - Lu, C. et al. (2026). Towards end-to-end automation of AI research. *Nature*.
 - [[kennedy-ohagan-calibration]]
 - [[ai-scientific-taste]]

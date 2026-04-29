@@ -81,6 +81,8 @@ $$\mathcal{L}_{total} = \mathcal{L}_{PDE} + \mathcal{L}_{data}$$
 | 고전 PINN vs DeepONet 비교 | [[pinn-vs-deeponet]] |
 
 ## References
+- [[universal-differential-equations]]
+
 - Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations." *J. Comput. Phys.*, 378, 686–707.
 - [[maziar-raissi]] — PINN 제1저자
 - [[paris-perdikaris]] — PINN 공동 창시자

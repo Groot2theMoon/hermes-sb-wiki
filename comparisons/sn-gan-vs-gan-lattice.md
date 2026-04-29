@@ -13,7 +13,7 @@ sources: [raw/papers/Spectral Normalization for Generative Adversarial Networks.
 
 ## 비교 표
 
-| 차원 | [[spectral-normalization-gan\|SN-GAN]] | [[gan-lattice-simulations\|GAN Lattice]] |
+| 차원 | [[spectral-normalization-gan|SN-GAN]] | [[gan-lattice-simulations|GAN Lattice]] |
 |------|----------------------------------------|------------------------------------------|
 | **핵심 목표** | GAN 학습 안정화 (discriminator Lipschitz 제어) | 물리 시뮬레이션 효율 개선 (autocorlation time 감소) |
 | **적용 대상** | GAN의 discriminator 층별 weight 행렬 | Lattice field theory Monte Carlo 시뮬레이션 |

@@ -3,10 +3,7 @@
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
 > Last updated: 2026-04-29 | Total pages: 209
-
-## Entities
 <!-- Alphabetical -->
-
 - [[albert-gu]] — Albert Gu
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andrew-norris]] — Andrew Norris
@@ -21,7 +18,7 @@
 - [[caltech]] — Caltech — AI × Science 리더
 - [[deepseek]] — DeepSeek
 - [[diederik-kingma]] — Diederik Kingma
-- [[dongil-shin]] — "Shin Dongil (신동일)"
+- [[dongil-shin]] — Shin Dongil (신동일)
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
@@ -72,7 +69,6 @@
 
 ## Concepts
 <!-- Alphabetical -->
-
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
@@ -80,19 +76,19 @@
 - [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
-- [[causal-semantic-xai-segmentation]] — "Causal XAI — SAM vs SLIC Segmentation Trade-Off"
-- [[centimeter-nanomechanical-resonators]] — "Centimeter-Scale Nanomechanical Resonators with Low Dissipation"
+- [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
+- [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
 - [[compressible-flow-governing-equations]] — Compressible Flow Governing Equations — Gas Dynamics 1
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
-- [[continual-learning-physical-systems]] — "Continual Learning for Physical Systems — Particle Accelerator Case Study"
-- [[decoding-material-networks]] — "Decoding Material Networks: DMN vs IMN Performance Comparison"
+- [[continual-learning-physical-systems]] — Continual Learning for Physical Systems — Particle Accelerator Case Study
+- [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-delta-learning]] — Deep Delta Learning — Householder Reflection as Learnable Residual Connections
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
-- [[deep-kernel-multitask-gp-vehicle-dynamics]] — "Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing"
+- [[deep-kernel-multitask-gp-vehicle-dynamics]] — Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
-- [[deep-material-network-quilting]] — "Deep Material Network with Quilting Strategy"
-- [[deep-material-network]] — "Deep Material Network (DMN) — 기본 아키텍처"
+- [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
+- [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
@@ -109,10 +105,10 @@
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
 - [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
 - [[ensemble-loss-landscape]] — Deep Ensembles — Loss Landscape Perspective
-- [[fft-homogenization-polymer-composites]] — "FFT-Based Homogenization for Composite & Biological Materials"
+- [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
 - [[fourier-neural-operator]] — Fourier Neural Operator (FNO)
-- [[function-space-variational-inference-bnn]] — "Generalized Function-Space Variational Inference for Bayesian Neural Networks"
+- [[function-space-variational-inference-bnn]] — Generalized Function-Space Variational Inference for Bayesian Neural Networks
 - [[gan-lattice-simulations]] — GAN-based Overrelaxation for Lattice Simulations
 - [[gap-sbm]] — Gap-SBM — Shifted Boundary Method Variant
 - [[gated-recurrent-units]] — Gated Recurrent Units (GRU & LSTM)
@@ -130,18 +126,18 @@
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
 - [[kennedy-ohagan-calibration]] — Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration
-- [[kernel-methods]] — "Kernel Methods — An Introduction (Müller et al. 2001 Survey)"
+- [[kernel-methods]] — Kernel Methods — An Introduction (Müller et al. 2001 Survey)
 - [[kernel-pca]] — Kernel PCA — Nonlinear Component Analysis
 - [[knudsen-number-and-continuum]] — Knudsen Number and Continuum Assumption — Flow Regime Classification
 - [[kolmogorov-arnold-networks]] — Kolmogorov-Arnold Networks (KAN) — Learnable B-Spline Activations on Edges
 - [[koopman-learner-continual-lifting]] — Continual Learning and Lifting of Koopman Dynamics for Legged Robots
-- [[label-wise-uncertainty-quantification]] — "Label-wise Aleatoric & Epistemic Uncertainty Quantification"
+- [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
-- [[lstm-forget-gate]] — "LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)"
+- [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[lyapunov-guided-exploration]] — LYGE — Lyapunov-Guided Exploration for Stabilizing High-dimensional Unknown Systems
 - [[mach-number-and-flow-regimes]] — Mach Number and Flow Regimes — Subsonic to Hypersonic
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
@@ -153,23 +149,23 @@
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
 - [[multi-dimensional-scaling]] — Multi-Dimensional Scaling (MDS)
 - [[muon-optimizer]] — Muon Optimizer for LLM Training
-- [[neural-mpc-terminal-constraint]] — "Neural MPC Terminal Constraint via HJ Reachability for Collision Avoidance"
+- [[neural-mpc-terminal-constraint]] — Neural MPC Terminal Constraint via HJ Reachability for Collision Avoidance
 - [[neural-tangent-kernel]] — Neural Tangent Kernel (NTK)
-- [[neural-thermodynamic-integration]] — "Neural Thermodynamic Integration (Neural TI)"
+- [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration (Neural TI)
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
-- [[offline-bayesian-uq-finite-mdps]] — "Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs"
-- [[optimal-transport-stability-sinkhorn]] — "Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence"
+- [[offline-bayesian-uq-finite-mdps]] — Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs
+- [[optimal-transport-stability-sinkhorn]] — Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence
 - [[orthogonal-projection-regularization]] — Orthogonal Projection Regularization for Efficient Model Augmentation
-- [[pac-bayesian-epistemic-uncertainty]] — "PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference"
+- [[pac-bayesian-epistemic-uncertainty]] — PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
-- [[physics-informed-neural-networks]] — "Physics-Informed Neural Networks (PINN) — Raissi, Perdikaris & Karniadakis (2019)"
+- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — Raissi, Perdikaris & Karniadakis (2019)
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[physics-informed]] — Physics-Informed Machine Learning
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
-- [[poroelastic-dmn-research]] — "7×7 Acusto-Elastic DMN — 확장 연구 분석"
-- [[poroelasticity-thermoelasticity-correspondence]] — "Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)"
+- [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN — 확장 연구 분석
+- [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
@@ -180,29 +176,29 @@
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
-- [[simulation-based-inference-aircraft-design]] — "Simulation-Based Inference for Conceptual Aircraft Design"
-- [[spectral-margin-generalization-bounds]] — "Spectrally-Normalized Margin Bounds for Neural Network Generalization"
+- [[simulation-based-inference-aircraft-design]] — Simulation-Based Inference for Conceptual Aircraft Design
+- [[spectral-margin-generalization-bounds]] — Spectrally-Normalized Margin Bounds for Neural Network Generalization
 - [[spectral-normalization-gan]] — Spectral Normalization for GANs — Lipschitz Constraint via Weight Normalization
 - [[square-root-unscented-kalman-filter]] — Square-Root Unscented Kalman Filter — State and Parameter Estimation
-- [[ssl-agent-skill-representation]] — "SSL — Scheduling-Structural-Logical Representation for Agent Skills"
+- [[ssl-agent-skill-representation]] — SSL — Scheduling-Structural-Logical Representation for Agent Skills
 - [[stagnation-properties]] — Stagnation Properties and Critical Conditions — Gas Dynamics
-- [[state-space-model-emergence-ergodicity]] — "State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds"
+- [[state-space-model-emergence-ergodicity]] — State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
-- [[thermoelastic-dmn]] — "Thermoelastic Deep Material Network"
+- [[thermoelastic-dmn]] — Thermoelastic Deep Material Network
 - [[transformer]] — Transformer Architecture
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
 - [[universal-approximation-theorem]] — Universal Approximation Theorem
-- [[universal-differential-equations]] — "Universal Differential Equations vs Neural ODEs Near Critical Transitions"
+- [[universal-differential-equations]] — Universal Differential Equations vs Neural ODEs Near Critical Transitions
 - [[unsupervised-phase-transitions]] — Unsupervised Learning of Phase Transitions (ML × Physics)
 - [[uq-aeroelasticity]] — Uncertainty Quantification in Aeroelasticity
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
-- [[waste-fiber-acoustic-absorber]] — "Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계"
-- [[waste-fiber-market-entry]] — "Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape"
+- [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계
+- [[waste-fiber-market-entry]] — Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
@@ -210,7 +206,6 @@
 
 ## Comparisons
 <!-- Alphabetical -->
-
 - [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
 - [[koh-vs-deep-uq]] — KOH Bayesian Calibration vs Deep Learning UQ Methods — 비교
@@ -224,4 +219,3 @@
 - [[sn-gan-vs-gan-lattice]] — SN-GAN vs GAN Lattice Simulations — GAN 안정화 방법 비교
 - [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
 - [[vae-vs-gan]] — VAE vs GAN — Generative Model 비교
-

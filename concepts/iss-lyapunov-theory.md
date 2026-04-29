@@ -73,6 +73,8 @@ $$\xi(|e|) \geq \sigma\alpha(|x|)$$
 - DMN 기반 공정 제어에서 외란(원료 편차, 온도 변동)에 대한 시스템 안정성 보장
 
 ## References
+- [[zames-input-output-stability]]
+
 - Sontag, E. D. (1989). Smooth stabilization implies coprime factorization. *IEEE TAC*, 34(4): 435-443.
 - Mironchenko, A. (2023). *Input-to-State Stability: Theory and Applications*. Springer.
 - Mironchenko & Prieur (2020). ISS of infinite-dimensional systems: Recent results and open questions. *SIAM Review*, 62(3): 529-614.

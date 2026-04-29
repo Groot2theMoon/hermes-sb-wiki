@@ -16,7 +16,7 @@ confidence: high
 
 | 연도 | 기여 | 내용 |
 |------|------|------|
-| 2025 | [[deep-delta-learning\|Deep Delta Learning]] | Householder reflection을 learnable Delta Operator로 일반화 — residual connection의 기하학적 확장 |
+| 2025 | [[deep-delta-learning|Deep Delta Learning]] | Householder reflection을 learnable Delta Operator로 일반화 — residual connection의 기하학적 확장 |
 
 ## 연구 분야
 

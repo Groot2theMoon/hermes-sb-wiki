@@ -88,7 +88,7 @@ $$\mathcal{K}_a[f](x, t) = a_{\theta_1}^{nn}(x, t) \cdot \mathcal{F}^{-1}[a_{\th
 
 ## FNO/KNO와의 비교
 
-| 측면 | [[fourier-neural-operator\|FNO]] | Multiwavelet (MWT) | **PDNO** |
+| 측면 | [[fourier-neural-operator|FNO]] | Multiwavelet (MWT) | **PDNO** |
 |------|------|------|------|
 | **Symbol 의존성** | $\xi$만 | multi-scale | $x + \xi$ |
 | **Smoothness** | 보장 없음 | wavelet 기반 | $S_{1,0}^1$ 보장 |

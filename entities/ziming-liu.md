@@ -16,7 +16,7 @@ confidence: high
 
 | 연도 | 기여 | 내용 |
 |------|------|------|
-| 2024 | [[kolmogorov-arnold-networks\|KAN]] | B-spline 활성화 함수를 edge에 배치한 새로운 신경망 아키텍처 제안 (Liu et al., MIT/Caltech) |
+| 2024 | [[kolmogorov-arnold-networks|KAN]] | B-spline 활성화 함수를 edge에 배치한 새로운 신경망 아키텍처 제안 (Liu et al., MIT/Caltech) |
 | 2023 | Precision Machine Learning | Michaud, Liu, Tegmark — 정밀도 제약 하의 ML 이론 |
 | 2023 | Quantization Model | Michaud, Liu, Girit, Tegmark — 신경망 스케일링의 양자화 모델 |
 | 2023 | Mechanistic Interpretability | Brain-inspired modular training 방법론 |

@@ -15,7 +15,7 @@ confidence: high
 ## 주요 기여
 
 ### Locally Linear Embedding (LLE)
-[[lawrence-saul | Lawrence Saul]]과 공동으로 개발한 [[lle | LLE]]는 *Science* 2000년 290권 5496호에 게재되어 **~15,000회 이상 인용**된 landmark 논문이다. LLE는 고차원 데이터가 저차원 비선형 다양체(manifold) 위에 놓여 있다는 가정 하에:
+[[lawrence-saul| Lawrence Saul]]과 공동으로 개발한 [[lle| LLE]]는 *Science* 2000년 290권 5496호에 게재되어 **~15,000회 이상 인용**된 landmark 논문이다. LLE는 고차원 데이터가 저차원 비선형 다양체(manifold) 위에 놓여 있다는 가정 하에:
 1. 각 점의 **K-최근접 이웃**을 찾고
 2. 이웃들의 **선형 재구성 가중치**를 계산하며
 3. 동일한 가중치를 저차원 embedding에서 **재사용**하는

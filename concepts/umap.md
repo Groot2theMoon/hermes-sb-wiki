@@ -11,11 +11,11 @@ provenance: "McInnes, Healy & Melville (2018) arXiv:1802.03426"
 
 # UMAP — Uniform Manifold Approximation and Projection
 
-**UMAP (Uniform Manifold Approximation and Projection)** 는 차원 축소(dimension reduction)를 위한 최신 다양체 학습(manifold learning) 기법이다. [[leland-mcinnes | Leland McInnes]], John Healy, James Melville (2018)이 개발했으며, 리만 기하학과 대수적 위상수학을 융합한 강력한 수학적 기초 위에 구축되었다.
+**UMAP (Uniform Manifold Approximation and Projection)** 는 차원 축소(dimension reduction)를 위한 최신 다양체 학습(manifold learning) 기법이다. [[leland-mcinnes| Leland McInnes]], John Healy, James Melville (2018)이 개발했으며, 리만 기하학과 대수적 위상수학을 융합한 강력한 수학적 기초 위에 구축되었다.
 
 ## 개요
 
-UMAP은 고차원 데이터의 다양체 구조를 퍼지 단체(fuzzy simplicial sets)로 표현한 후, 저차원 임베딩과의 차이를 최소화하는 방향으로 최적화한다. [[t-sne | t-SNE]]와 시각화 품질에서 경쟁력이 있으며, 더 나은 전역 구조 보존, 더 빠른 실행 시간, 제한 없는 임베딩 차원을 제공한다.
+UMAP은 고차원 데이터의 다양체 구조를 퍼지 단체(fuzzy simplicial sets)로 표현한 후, 저차원 임베딩과의 차이를 최소화하는 방향으로 최적화한다. [[t-sne| t-SNE]]와 시각화 품질에서 경쟁력이 있으며, 더 나은 전역 구조 보존, 더 빠른 실행 시간, 제한 없는 임베딩 차원을 제공한다.
 
 핵심 가정:
 1. 데이터가 균일하게 분포된 다양체(uniformly distributed manifold) 위에 존재한다.
@@ -39,7 +39,7 @@ $$\bigcup_{i=1}^n \text{FinSing}((X, d_i))$$
 
 $$CE(X,Y) = \sum_{a,b} \left[ w_h(a,b) \log\left(\frac{w_h(a,b)}{w_l(a,b)}\right) + (1-w_h(a,b)) \log\left(\frac{1-w_h(a,b)}{1-w_l(a,b)}\right) \right]$$
 
-이 손실 함수는 [[t-sne | t-SNE]]의 KL 발산과 달리, 멀리 떨어진 점들 사이의 관계도 패널티에 포함시켜 **전역 구조를 더 잘 보존**한다.
+이 손실 함수는 [[t-sne| t-SNE]]의 KL 발산과 달리, 멀리 떨어진 점들 사이의 관계도 패널티에 포함시켜 **전역 구조를 더 잘 보존**한다.
 
 ## 알고리즘
 

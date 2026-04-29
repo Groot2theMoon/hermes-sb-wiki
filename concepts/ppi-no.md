@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [physics-informed, neural-operator, surrogate-model, paper]
-sources: [raw/papers/ppi-no.md]
+sources: [raw/papers/4999_Pseudo_Physics_Informed_N.md]
 confidence: medium
 ---
 

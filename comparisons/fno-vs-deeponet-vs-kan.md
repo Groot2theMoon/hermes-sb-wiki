@@ -13,7 +13,7 @@ sources: [raw/papers/2010.08895v3.md, raw/papers/2281727.md, raw/papers/2404.197
 
 ## 비교 표
 
-| 차원 | [[fourier-neural-operator\|FNO]] | [[deeponet\|DeepONet]] | [[kolmogorov-arnold-networks\|KAN]] |
+| 차원 | [[fourier-neural-operator|FNO]] | [[deeponet|DeepONet]] | [[kolmogorov-arnold-networks|KAN]] |
 |------|----------------------------------|------------------------|--------------------------------------|
 | **핵심 메커니즘** | Fourier 공간 적분 커널: $\mathcal{F}^{-1}(R_\theta \cdot \mathcal{F}(v))$ | Branch-Trunk 내적: $\sum b_k(f) \cdot t_k(y)$ | Edge-wise B-spline 활성화 함수 |
 | **수학적 기반** | Fourier convolution 정리 + Green 함수 | Operator UAT (Chen & Chen, 1995) | Kolmogorov-Arnold representation theorem |

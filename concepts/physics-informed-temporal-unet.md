@@ -4,7 +4,7 @@ created: 2026-04-29
 updated: 2026-04-29
 type: concept
 tags: [physics-informed, fluid-dynamics, model, CFD, neural-network]
-sources: [arXiv:2604.23372]
+sources: [raw/papers/trending/2026-04-28-04.md]
 confidence: medium
 ---
 

@@ -145,7 +145,9 @@ Shin(2024)의 thermoelastic DMN에서 θ(온도)를 다루는 방식과 동일.
 - 변형-투과율 연성(k = k(ε))
 - (선택) 부분 포화
 
-## 관련 개념
+## 관련
+- [[waste-fiber-acoustic-absorber]]
+ 개념
 
 - `poroelasticity-thermoelasticity-correspondence` — [[andrew-norris|Norris]] 1992: 포로-열탄성 대응 정리
 - `thermoelastic-dmn` — Shin 2024: thermomechanical DMN

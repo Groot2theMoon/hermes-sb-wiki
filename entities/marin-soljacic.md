@@ -16,7 +16,7 @@ confidence: high
 
 | 연도 | 기여 | 내용 |
 |------|------|------|
-| 2024 | [[kolmogorov-arnold-networks\|KAN]] | Kolmogorov-Arnold theorem 기반 신경망 공동개발 (MIT/Caltech) |
+| 2024 | [[kolmogorov-arnold-networks|KAN]] | Kolmogorov-Arnold theorem 기반 신경망 공동개발 (MIT/Caltech) |
 | 2020 | OccamNet | Dugan, ..., Soljačić — 심볼릭 회귀를 위한 고속 신경 모델 |
 | 2019 | GORU | Jing, ..., Tegmark, Soljačić — Gated Orthogonal Recurrent Units |
 | 2017 | EUNN | Jing, ..., LeCun, Tegmark, Soljačić — Tunable Efficient Unitary NNs |

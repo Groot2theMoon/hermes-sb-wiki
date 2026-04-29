@@ -15,7 +15,7 @@ confidence: high
 ## 주요 기여
 
 ### Interpretable ML (LRP)
-[[dnn-interpretability-lrp | Layer-wise Relevance Propagation (LRP)]]의 공동 창시자 (Bach et al. 2015, Samek et al. 2017). LRP는 Taylor decomposition과 deep network 구조를 활용하여 각 입력 픽셀의 예측 기여도를 **heatmap** 형태로 시각화하는 방법이다. Müller 연구실은 XAI (Explainable AI) 분야의 실질적 표준을 제시했다.
+[[dnn-interpretability-lrp| Layer-wise Relevance Propagation (LRP)]]의 공동 창시자 (Bach et al. 2015, Samek et al. 2017). LRP는 Taylor decomposition과 deep network 구조를 활용하여 각 입력 픽셀의 예측 기여도를 **heatmap** 형태로 시각화하는 방법이다. Müller 연구실은 XAI (Explainable AI) 분야의 실질적 표준을 제시했다.
 
 ### Kernel Methods
 Support Vector Machine, Kernel PCA 등 kernel 기법의 이론 및 응용에 기여. 특히 **Mercer kernel의 스펙트럼 특성**과 **큐릭 규제화(Additive Regularization)** 측면에서 핵심 결과를 다수 도출.
@@ -27,7 +27,7 @@ Support Vector Machine, Kernel PCA 등 kernel 기법의 이론 및 응용에 기
 - **재료과학**: 물질 발견 및 특성 예측
 
 ### Machine Learning 2 (TU Berlin)
-TU Berlin에서 Machine Learning 2 강좌를 담당하며, [[lle | LLE]], [[multi-dimensional-scaling | MDS]], [[isomap | Isomap]], [[stochastic-neighbor-embedding | SNE]], [[t-sne | t-SNE]] 등 비선형 차원 축소 기법의 전반을 강의하였다. Lecture notes에는 Grégoire Montavon, Wojciech Samek과 공동 집필한 상세한 수학적 유도가 포함되어 있다.
+TU Berlin에서 Machine Learning 2 강좌를 담당하며, [[lle| LLE]], [[multi-dimensional-scaling| MDS]], [[isomap| Isomap]], [[stochastic-neighbor-embedding| SNE]], [[t-sne| t-SNE]] 등 비선형 차원 축소 기법의 전반을 강의하였다. Lecture notes에는 Grégoire Montavon, Wojciech Samek과 공동 집필한 상세한 수학적 유도가 포함되어 있다.
 
 ## 관계
 

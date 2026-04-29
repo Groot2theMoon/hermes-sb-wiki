@@ -122,7 +122,9 @@ Surrogate model (DMN) → α(f) 예측
 | 2 | **공정 모니터링 시스템** — 생산라인 불량 탐지 + 품질 관리 | TRL 5~6 | 시드 |
 | 3 | **Closed-Loop 제어** — 자동 공정 보정 | TRL 7+ | 스핀오프 |
 
-## 관련 개념
+## 관련
+- [[waste-fiber-market-entry]]
+ 개념
 
 - `poroelastic-dmn-research` — 7×7 DMN 연구 아이디어 및 병목 분석
 - `poroelasticity-thermoelasticity-correspondence` — Norris 1992: 포로-열탄성 대응 정리

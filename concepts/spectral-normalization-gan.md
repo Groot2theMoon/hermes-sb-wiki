@@ -56,6 +56,8 @@ $$\bar{W}_{SN}(W) = W / \sigma(W)$$
 - Conditional GAN에는 layer-wise가 아닌 최적화된 정규화가 더 효과적일 수 있음
 
 ## References
+- [[takeru-miyato]]
+
 
 - [[gan-lattice-simulations]] — GAN의 격자 시뮬레이션 응용
 - [[generative-models-physics]] — 물리학에서의 생성 모델 활용
