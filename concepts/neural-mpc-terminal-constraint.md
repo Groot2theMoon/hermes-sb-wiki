@@ -51,10 +51,10 @@ $$V(x) = d(x) - r(x), \quad r(x) \geq 0$$
 
 ## 관련 개념
 
-- [[control-system]] — ML 기반 제어, MPC, 강화학습
+- control system — ML 기반 제어, MPC, 강화학습
 - [[iss-lyapunov-theory]] — Lyapunov 안정성 이론 (HJ reachability의 이론적 기반)
-- [[reinforcement-learning]] — RL for robotics, control, manipulation
-- [[optimization]] — topology optimization, multi-objective optimization
+- reinforcement learning — RL for robotics, control, manipulation
+- optimization — topology optimization, multi-objective optimization
 
 ## 참고
 

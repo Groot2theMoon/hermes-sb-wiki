@@ -65,7 +65,7 @@ Conditioning 방식 비교:
 
 - [[score-based-generative-modeling-sde]] — Transformer backbone의 이론적 기반이 되는 SDE 프레임워크
 - [[diffusion-metamaterial-inverse-design]] — U-Net 기반 diffusion의 mechanical 응용 (Transformer로의 전환 가능성)
-- [[latent-diffusion-models]] — DiT가 작동하는 latent space 프레임워크
+- latent diffusion models — DiT가 작동하는 latent space 프레임워크
 
 ## References
 

@@ -55,7 +55,7 @@ $$\text{Input} = \text{Token Embedding} + \text{Segment Embedding} + \text{Posit
 - Positive 예시 (50%): 실제 연속된 두 문장
 - Negative 예시 (50%): 무작위로 선택된 다른 문장
 
-NSP는 QA(QA), Natural Language Inference(NLI) 등 문장 간 관계 이해가 중요한 downstream task를 위해 설계되었다. 단, 후속 연구([[roberta]] 등)에서 NSP의 효용성에 의문이 제기되어 제거되기도 했다.
+NSP는 QA(QA), Natural Language Inference(NLI) 등 문장 간 관계 이해가 중요한 downstream task를 위해 설계되었다. 단, 후속 연구(RoBERTa 등)에서 NSP의 효용성에 의문이 제기되어 제거되기도 했다.
 
 ## Fine-Tuning
 
@@ -150,4 +150,4 @@ Answer.AI + LightOn 팀이 최신 하드웨어와 기법으로 BERT 재구현:
 - [[elmo]] — BERT 이전의 contextual embedding (biLSTM 기반)
 - [[gpt-1]] — 동시대 단방향 언어 모델 (OpenAI)
 - [[nn-tricks]] — Layer Normalization, GeLU 등 BERT에 사용된 학습 기법들
-- [[roberta]] — RoBERTa (향후 생성 예정 페이지)
+- RoBERTa — RoBERTa (향후 생성 예정 페이지)

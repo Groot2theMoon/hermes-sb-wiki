@@ -64,7 +64,7 @@ $$\text{s.t.} \quad \Psi(x_{k+1}) = K \Psi(x_k) + L u_k, \quad u_k \in \mathcal{
 
 ## 융합 도메인 연결
 
-- [[koopman-operator-control]] — Koopman operator의 제어 응용 일반
+- Koopman operator control — Koopman operator의 제어 응용 일반
 - [[lyapunov-guided-exploration]] — 고차원 미지 시스템의 데이터 기반 제어
 - [[continual-learning-physical-systems]] — 물리 시스템에서의 continual learning
 
