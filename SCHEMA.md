@@ -61,6 +61,12 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **benchmark:** Evaluation metrics, datasets, leaderboards
 - **neural-network:** Specific NN concepts (CNN, Transformer, GNN, etc.)
 - **sequence-modeling:** Sequence models (HMM, RNN, SSM, etc.)
+- **nlp:** Natural Language Processing — text models, language understanding, generation
+- **transformer:** Transformer-based architectures, self-attention, multi-head attention
+- **learning:** General ML learning paradigms — supervised, unsupervised, self-supervised
+- **continual-learning:** Continual/lifelong learning, catastrophic forgetting, incremental learning
+- **architecture:** Neural network architecture design, NAS, macro/micro search
+- **theory:** Theoretical ML foundations — proofs, bounds, convergence analysis
 
 ### Mechanics/Physics Domain
 - **mechanics:** Classical mechanics, statics, dynamics
@@ -77,9 +83,14 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **micromechanics:** Micromechanics, microstructure-property relations
 - **thermomechanics:** Thermomechanics, coupled thermal-mechanical problems
 - **acoustics:** Acoustics, sound absorption, wave propagation in porous media
+- **mechanical-engineering:** Broad mechanical engineering — design, manufacturing, systems
+- **aerospace:** Aerospace engineering, aeronautics, propulsion, RDE, detonation
+- **acoustoelasticity:** Acousto-elastic coupling, elastic wave propagation in porous media
+- **inverse-design:** Inverse design, design-by-specification, generative engineering
 
 ### Fusion Domain (AI × Engineering)
 - **physics-informed:** PINN, physics-constrained ML, PIML
+- **pinn:** PINN — specific PINN implementations and variants (shorthand alias)
 - **surrogate-model:** ML-based emulators replacing expensive simulations
 - **digital-twin:** Real-time virtual replica, fleet learning
 - **sim-to-real:** Sim-to-real transfer, domain randomization
@@ -89,10 +100,24 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **optimization:** Topology optimization, multi-objective optimization, design optimization
 - **reinforcement-learning:** RL for robotics, control, manipulation
 - **neural-operator:** Neural operator learning (FNO, DeepONet, etc.)
+- **operator-learning:** Operator learning — FNO, DeepONet, KAN, PDNO specific
+- **deeponet:** DeepONet — Deep Operator Network specific (shorthand alias)
 - **uncertainty:** Uncertainty quantification, Bayesian methods, confidence estimation
 - **dmn:** Deep Material Network — binary tree surrogate for multiscale composites, physics-based ML
 - **engineering-design:** Engineering design automation, simulation-based inference, conceptual design
 - **robotics:** Robot control, legged locomotion, safety-critical control
+- **koopman:** Koopman operator theory, DMD, data-driven spectral analysis
+- **hybrid-modeling:** Hybrid physics-ML models, gray-box, physics-augmented learning
+- **trajectory-optimization:** Trajectory optimization, path planning, motion planning
+- **optimal-control:** Optimal control theory, MPC, LQR, dynamic programming
+- **system-identification:** System identification, data-driven dynamics discovery
+- **lyapunov:** Lyapunov functions, stability analysis, ISS
+- **kalman-filter:** Kalman filter, state estimation, sensor fusion, UKF
+- **state-space-model:** State-space models, SSM, linear dynamical systems
+- **sequence-model:** Sequence models for dynamics — autoregressive, neural ODE
+- **safety:** Safety-critical systems, verification, safe RL
+- **certificate-functions:** Control barrier functions (CBF), control Lyapunov functions (CLF)
+- **state-estimation:** State estimation, observers, filtering theory
 
 ### Meta
 - **person:** Researcher, professor, industry leader
@@ -108,6 +133,8 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **infrastructure:** Computing infrastructure, cloud, cluster, platform
 - **landmark-paper:** Seminal/landmark research paper — high-impact, field-defining
 - **research-idea:** 연구 아이디어, 제안, 로드맵 — 개발 중인 개념
+- **postech:** POSTECH — Pohang University of Science and Technology
+- **dslab:** DSLab — Data Science Lab @ POSTECH
 
 ### 수학/기초
 - **mathematics:** Underlying math (PDEs, ODEs, numerical methods)
@@ -119,6 +146,10 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **control-theory:** 제어 이론 — Lyapunov, ISS, small-gain 정리
 - **FEM-pure:** 순수 유한요소법 (ML 결합 없는 FEM 이론)
 - **boundary-method:** 경계 조건 처리 기법 — SBM, immersed boundary 등
+- **classic-control:** Classic control — PID, root locus, frequency domain, Bode/Nyquist
+- **stability-theory:** Stability theory — Lyapunov, ISS, small-gain theorems
+- **feedback-systems:** Feedback systems — closed-loop analysis, sensitivity, robustness
+- **nonlinear-control:** Nonlinear control — backstepping, sliding mode, feedback linearization
 
 ### AI 고전 기초 모델 (Classic AI Baselines for Comparison)
 - **classic-ai:** 고전 AI/ML 모델 — baseline 및 대조군
@@ -131,6 +162,12 @@ sha256: <hex digest of the raw content below the frontmatter>
 
 ### 연구 방법론 (Research Meta-Skills)
 - **research-skills:** 연구 방법론, 논문 읽기/쓰기 기법, 리뷰 방법 — AI/ML × Mechanics 도메인 간접 지원
+
+### 응용 도메인 (Applied Domains)
+- **healthcare:** Healthcare, biomedical engineering, medical AI applications
+- **upcycling:** Upcycling, recycling, waste-to-resource, circular economy
+- **building-materials:** Building materials, construction, architectural acoustics
+- **korea-market:** Korean market, domestic regulations, policy context
 
 ## Page Thresholds
 

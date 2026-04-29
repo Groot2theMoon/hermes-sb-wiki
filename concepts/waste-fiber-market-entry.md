@@ -4,9 +4,13 @@ created: 2026-04-29
 updated: 2026-04-29
 type: concept
 tags: [research-idea, acoustics, dmn, poroelasticity, upcycling, building-materials, korea-market]
-sources: []
+sources:
+  [
+    raw/papers/keitri-gr-certification-announcement-8items.md,
+    raw/papers/keitri-gr-inspection-research-2025.md,
+    raw/papers/자원순환기본법-시행령-별표6-폐기물처분부담금-산출기준.md,
+  ]
 confidence: medium
-sources: []
 ---
 
 # Waste-Fiber Acoustic Absorber — 시장 진입 전략
@@ -134,7 +138,7 @@ sources: []
 
 ## 관련 개념
 
-- `waste-fiber-acoustic-absorber` — 기술적 상세, DMN 적용, Biot model
-- `poroelastic-dmn-research` — 7×7 DMN 연구 아이디어
-- `gap-sbm` — GAP-SBM: meshing 없는 training data 생성
-- `dongil-shin` — 신동일 교수 (POSTECH DSLab)
+- [[waste-fiber-acoustic-absorber]] — 기술적 상세, DMN 적용, Biot model
+- [[poroelastic-dmn-research]] — 7×7 DMN 연구 아이디어
+- [[gap-sbm]] — GAP-SBM: meshing 없는 training data 생성
+- [[dongil-shin]] — 신동일 교수 (POSTECH DSLab)

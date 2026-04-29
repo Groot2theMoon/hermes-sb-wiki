@@ -448,3 +448,22 @@
 - **Tag audit:** 35 non-taxonomy tags in use, 6 unused schema tags — pending SCHEMA update
 - **Source drift:** 19 raw files have sha256 mismatch (content edited after ingest) — informational only
 - **Unprocessed raw:** 25 files remain in raw/papers/
+
+## [2026-04-29] schema | 35 non-taxonomy tags added to SCHEMA taxonomy
+- **Added 35 tags** across 7 sections: AI/ML (4), Mechanics (3), Fusion (15), Foundation (4), Meta (2), Applied Domains (4)
+- **New section:** 응용 도메인 (Applied Domains) — healthcare, upcycling, building-materials, korea-market
+- Duplicate fusion tags removed, uncertainty & robotics restored
+- **Tag audit now clean:** 0 non-taxonomy, 97 schema tags, 93 used
+
+## [2026-04-29] ingest | 5 raw files processed (unprocessed backlog 25→20)
+- **Updated (2):**
+  - [[mhc-deepseek]] — source added: 2512.24880v1.md (DeepSeek mHC paper)
+  - [[waste-fiber-market-entry]] — sources added: keitri-gr-* (2), 자원순환기본법-시행령 (Korean regulatory docs)
+- **New concepts (2):**
+  - [[rino]] — RINO: Renormalization Group Invariance with No Labels (NeurIPS ML4PS 2025)
+  - [[hilbert-simplex-geometry]] — Non-linear Embeddings in Hilbert Simplex Geometry (Nielsen & Sun, ICML 2023)
+- **Source fix:** [[pinn-failure-modes]] — sources updated to 1-s2.0-S002199912100663X-main.md (was empty, PINN NTK paper found in backlog)
+- **Index rebuilt:** 209→211 total (136 C + 62 E + 13 CMP)
+- **Deferred (3):** NeurIPS_ML4PS_2025_59(s), 362 (HEP/astro); 363_Scientific_Machine_Learnin (astro)
+- **Skipped (3):** The free-energy principle, nrn2787 (neuroscience); Optimization on Matrix Manifolds (textbook)
+- **Skipped (3):** keitri-gr-certification, keitri-gr-inspection, 자원순환기본법 (absorbed into waste-fiber-market-entry sources)

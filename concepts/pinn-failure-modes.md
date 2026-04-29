@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [physics-informed, neural-network, training, mathematics, paper]
-sources: []
+sources: [raw/papers/1-s2.0-S002199912100663X-main.md]
 confidence: high
 ---
 
