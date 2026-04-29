@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 146
+> Last updated: 2026-04-29 | Total pages: 148
 
 ## Entities
 
@@ -143,7 +143,8 @@
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
-- [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계
+- [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber: DMN 기반 저주파 흡음재 설계
+- [[waste-fiber-market-entry]] — Waste-Fiber Acoustic Absorber: 한국 시장 진입 전략 및 규제 분석
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once

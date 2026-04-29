@@ -330,3 +330,22 @@
 - **Script issue:** trending-papers.py timed out at 120s → 수동 재실행 (300s timeout) 성공
 - **Total pages:** 146 (was 145, +1 concept)
 
+## [2026-04-29] discuss | 시장 진입 전략 + 폐섬유 처리 제도 조사
+- **New Concept (1):** [[waste-fiber-market-entry]] — 폐섬유 흡음재 한국 시장 진입 전략 및 규제 분석
+- **조사 결과 요약:**
+  - 연간 80만톤 폐섬유 발생, 실질 물질 재활용 4.7%
+  - 폐기물 처리비용 소각 10~15만원/톤 + 처분부담금 별도
+  - 배출업체 톤당 ~17.5만원 절감 가능한 구조
+  - GR K 0004(재활용 섬유흡음재), GR K 0012(재활용 면섬유흡음재) 이미 존재
+  - EPR(섬유 생산자책임재활용제도) 도입 임박
+  - 44% 사후확인 불합격률 + 경쟁사 오슬로(Osllo) 슬로우넬 존재
+  - 차별점: DMN 기반 60Hz 저주파 타겟 + MaaS 맞춤 생산
+
+## [2026-04-29] rewrite | 16 concept pages deepened (Content Deepening)
+- **Tier 1 (3 pages):** gap-sbm (13→47), kennedy-ohagan-calibration (16→60), iss-lyapunov-theory (14→53)
+- **Tier 2 (4 pages):** linear-rnn-theory (13→48), ensemble-loss-landscape (14→54), muon-optimizer (16→52), nn-tricks (16→56)
+- **Tier 3 (9 pages):** ai-research-automation (14→41), ai-scientific-taste (14→41), jepa-world-models (14→36), agent-scaling (14→33), mhc-deepseek (14→35), engram-sparse-memory (15→35), xai-surveys (15→43), diffusion-lattice (14→31), memory-caching-rnn (13→41)
+- **Summary:** 229→706 lines (+477), 평균 14→44 lines
+- **New tags used:** landmark-paper (kennedy-ohagan, ai-research-automation), sequence-modeling (linear-rnn, memory-caching-rnn), optimization-method (muon), uncertainty (ensemble-loss, kennedy-ohagan), generative-model (diffusion-lattice), infrastructure (agent-scaling)
+- **Total pages:** 148 (was 146)
+
