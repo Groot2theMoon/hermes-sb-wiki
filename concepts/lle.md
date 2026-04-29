@@ -88,3 +88,4 @@ LLE의 고유벡터 2부터 $p+1$까지가 embedding 좌표를 제공한다^[raw
 - [[isomap]] — Isomap (geodesic distance 기반)
 - [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — 기법 간 비교
 - [[multi-dimensional-scaling]] — MDS
+- [[hilbert-simplex-geometry]]

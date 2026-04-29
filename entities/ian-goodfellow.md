@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-28
 type: entity
 tags: [person, generative-model, neural-network, paper]
-sources: [raw/papers/]
+sources: [raw/papers/1402.0030v2.md, raw/papers/1703.02435v2.md]
 ---
 
 # Ian Goodfellow

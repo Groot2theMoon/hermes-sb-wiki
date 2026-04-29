@@ -475,3 +475,9 @@
 - **Footnotes added** to market-entry page for key claims with `[^source]` markers
 - **Unprocessed backlog:** 16 → 10 (6 articles processed)
 - **Index unchanged:** 211 total
+
+## [2026-04-29] fix | lint follow-up — 3 minor issues
+- **Broken wikilinks (2):** [[rino]] → sim-to-real/self-supervised-learning — changed to plain text (no page exists)
+- **Dangling source (1):** [[ian-goodfellow]] — malformed `raw/papers/` → specific paper refs
+- **Orphans (2):** [[hilbert-simplex-geometry]] linked from lle, isomap, mds, kernels (4 links); [[rino]] linked from physics-informed, generative-models-physics (2 links)
+- **Final state:** 0 broken, 0 orphans, 0 dangling, 0 non-taxonomy

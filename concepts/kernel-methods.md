@@ -91,3 +91,4 @@ $$ \max_{\alpha} \sum_i \alpha_i - \frac{1}{2}\sum_{i,j} \alpha_i \alpha_j y_i y
 - [[klaus-robert-muller]] — 공저자, TU Berlin ML 교수
 - [[kernel-pca]] — Kernel PCA 상세
 - [[neural-tangent-kernel]] — NTK: 딥러닝과 커널 방법의 연결
+- [[hilbert-simplex-geometry]]

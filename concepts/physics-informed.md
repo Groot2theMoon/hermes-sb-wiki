@@ -152,3 +152,4 @@ $$\mathcal{L}_{\text{total}} = \lambda_d \mathcal{L}_{\text{data}} + \lambda_p \
 - **PINNeAPPle**: 60+ PIML 모델을 13개 카테고리로 정리한 통합 벤치마크 프레임워크
 
 → 각각의 상세 내용은 해당 개념 페이지 참조
+- [[rino]]

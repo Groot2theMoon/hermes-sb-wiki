@@ -43,8 +43,8 @@ confidence: medium
 ## 융합 도메인 연결
 
 - [[physics-informed]] — 물리 법칙을 학습에 활용하는 일반적 프레임워크
-- [[sim-to-real]] — 시뮬레이션-실험 차이 완화
-- [[self-supervised-learning]] — 레이블 없이 표현 학습 (링크 필요 시 생성)
+- sim-to-real — 시뮬레이션-실험 차이 완화
+- self-supervised learning — 레이블 없이 표현 학습 (링크 필요 시 생성)
 
 ## References
 - Hao, Kansal, Sun, Spiropulu et al. "RINO: Renormalization Group Invariance with No Labels." NeurIPS ML4PS 2025.

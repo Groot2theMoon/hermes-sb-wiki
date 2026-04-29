@@ -69,3 +69,4 @@ $$ B = -\frac{1}{2} J D_G^{(2)} J, \quad Y = \Lambda^{1/2} V^\top $$
 - [[lle]] — LLE (국소 접근법)
 - [[t-sne]] — t-SNE (확률적 접근법)
 - [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — 방법론 간 비교
+- [[hilbert-simplex-geometry]]

@@ -74,3 +74,4 @@ confidence: medium
 - [[unsupervised-phase-transitions]] — 비지도 상전이 탐지 (ML × Physics)
 - [[variational-autoencoder]] — VAE 기본 개념
 - [[bayesian-uncertainty-vision]] — 생성 모델 불확실성
+- [[rino]]
