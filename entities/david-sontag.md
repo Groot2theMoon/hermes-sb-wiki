@@ -3,34 +3,33 @@ title: David Sontag — MIT Professor, ML for Healthcare
 created: 2026-04-29
 updated: 2026-04-29
 type: entity
-tags: [person, machine-learning, healthcare, variational-inference]
+tags: [person, learning, theory]
 sources: [raw/papers/deep-kalman-filters.md, raw/papers/rnn-missing-values-timeseries.md]
-confidence: medium
+confidence: high
 ---
 
 # David Sontag
 
 ## 개요
 
-**David Sontag** — MIT 교수 (Electrical Engineering and Computer Science). **머신러닝의 헬스케어 응용**과 **variational inference** 분야의 선도적 연구자. 특히 EHR (Electronic Health Records) 데이터의 불완전성과 시계열 모델링에 기여.
+**David Sontag** — MIT EECS 교수, IMES (Institute for Medical Engineering & Science) 소속. 기계학습의 의료 응용, 특히 **EHR 데이터 분석, counterfactual inference, missing data 문제**에 기여.
 
-## 주요 연구 분야
+## 주요 기여 (wiki 관련)
 
-### 1. Variational Inference for Temporal Models
-- Krishnan, Shalit, Sontag (2015): **Deep Kalman Filter** — VAE + Kalman filter 결합
-- 비선형 시계열 데이터를 위한 scalable variational inference 알고리즘 개발
+### Deep Kalman Filters (2015)
+- Krishnan, Shalit, Sontag: **VAE + Kalman filter** variational inference 프레임워크
+- EHR counterfactual inference: 약물 효과 추정
 
-### 2. Clinical Time Series with Missing Values
-- Che et al. (2018): **GRU-D** — informative missingness를 활용한 RNN 기반 시계열 예측
-- 불규칙 간격 EHR 데이터의 end-to-end 학습
+### GRU-D (2018)
+- Che, Purushotham, Cho, Sontag, Liu: **Informative missingness**를 GRU에 통합
+- 의료 시계열 예측 SOTA
 
-### 3. ML for Healthcare Systems
-- 처방 최적화, 환자 risk stratification, treatment effect estimation
-- Causal inference in healthcare
+## 소속
+- **MIT** (Massachusetts Institute of Technology) — EECS + IMES
+- 이전: NYU Courant Institute (PhD), Harvard (postdoc)
 
-## 관련 위키 페이지
-
-- [[deep-kalman-filter]] — DKF (Krishnan, Shalit, Sontag 2015)
-- [[gru-d]] — GRU-D (Che et al. 2018)
-- [[kyunghyun-cho]] — 공동 저자관계
-- [[variational-autoencoder]] — Variational inference의 기초
+## 관련 페이지
+- [[deep-kalman-filter]] — DKF 공동 저자
+- [[gru-d]] — GRU-D 공동 저자
+- [[kyunghyun-cho]] — GRU-D 공동 저자 (NYU)
+- [[eduardo-sontag]] — 동일 성씨, 다른 인물 (Rutgers, control theory)

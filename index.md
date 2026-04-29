@@ -2,7 +2,7 @@
 > Content catalog.
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 219
+> Last updated: 2026-04-29 | Total pages: 221
 
 ## Entities
 
@@ -110,6 +110,7 @@
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
 - [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
 - [[ensemble-loss-landscape]] — Deep Ensembles — Loss Landscape Perspective
+- [[epiplexity]] — Epiplexity — Structural Information for Computationally Bounded Observers
 - [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
 - [[fourier-neural-operator]] — Fourier Neural Operator (FNO)

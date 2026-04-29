@@ -506,3 +506,13 @@
 - **Cross-linked orphan gru-d (2):** `deep-kalman-filter.md` + `gated-recurrent-units.md`에 [[gru-d]] wikilink 추가
 - **SCHEMA.md (2):** `variational-inference`, `latent-dynamics` 태그 추가
 - **Index:** filesystem에서 전체 재빌드 (219 pages, 0 broken links, 0 orphans)
+
+## [2026-04-29] ingest | Epiplexity paper
+- **New Concept (1):** [[epiplexity]] — Finzi et al. 2025: computationally bounded structural information measure
+- **Raw file:** raw/papers/epiplexity.md (65 pages, 221K chars)
+- **Relevance:** 우리 entropy 논의와 직접 연결 — Shannon entropy가 설명 못하는 "계산적으로 추출 가능한 구조적 정보" 정식화
+- **Total pages:** 220 (was 219, +1)
+
+## [2026-04-29] backfill | David Sontag entity
+- **New Entity (1):** [[david-sontag]] — MIT, DKF + GRU-D 공동 저자, 의료 ML
+- **Total pages:** 221 (was 220, +1)
