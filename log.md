@@ -369,3 +369,14 @@
 - **eduardo-sontag.md:** `[[control-system]]` → `` `control-system` `` (tag/link confusion)
 - **전수검사 결과:** broken wikilinks 0, broken sources 0
 
+## [2026-04-29] ingest | 4 news articles (층간소음 + 폐섬유 재활용)
+- **raw/articles/aptn-202509-110157-경실련-층간소음-전수조사-촉구.md** — 경실련, 층간소음 사후확인제 미달 32%, 특별법 촉구 (아파트관리신문)
+- **raw/articles/rcnews-32933-LH-층간소음-사후확인제-바닥구조.md** — LH의 층간소음 사후확인제 대응과 바닥구조 혁신 (주거환경신문)
+- **raw/articles/dbr-274-제클린-폐섬유-100퍼센트-재활용.md** — 제클린, 폐수건→새수건 섬유 100% 재활용 성공 (동아일보 DBR)
+- **raw/articles/socialimpactnews-5443-서울시-의류섬유순환-정책-포럼.md** — 연 80만톤 의류폐기물, 서울시 순환 정책 포럼 (소셜임팩트뉴스)
+
+## [2026-04-29] ingest | Marker API — KEITI GR certification docs (2 PDFs)
+- **raw/papers/keitri-gr-certification-announcement-8items.md** — 우수재활용제품(GR) 인증 대상품목 8개 선정 공고안 (12p, quality 4.6, cost 4)
+- **raw/papers/keitri-gr-inspection-research-2025.md** — GR 인증 현장조사 연구용역 보고서 (201p, quality N/A, cost 61)
+- **Total Marker API cost:** 65 credits
+
