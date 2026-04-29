@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 145
+> Last updated: 2026-04-29 | Total pages: 146
 
 ## Entities
 
@@ -118,8 +118,9 @@
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
 - [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN 확장 분석: 병목과 로드맵
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence (Norris 1992)
-- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN)
 - [[physics-informed]] — Physics-Informed Machine Learning
+- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN)
+- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net for Fluid Interpolation
 - [[pinn-failure-modes]] — When and Why PINNs Fail — NTK Perspective
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[ppi-no]] — Pseudo Physics-Informed Neural Operator (PPI-NO)

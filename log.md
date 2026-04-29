@@ -316,3 +316,17 @@
 
 - **Total pages:** 139 (was 137, +2 entities)
 
+## [2026-04-29] trending-scan | Temporal U-Net for fluid interpolation | 1 new concept
+- **Scan result:** 6 Tier 2 papers (기존 2건 중복, 2건 false positive, 1건 skip, 1건 신규)
+- **Covered (already in wiki):**
+  - `2604.23937` — FOWT FNO+PINN (기존 [[wind-energy-ml]], [[fourier-neural-operator]])
+  - `2604.20372` — AI hallucination in fluid (기존 [[ai-hallucination-physics]])
+- **Skipped (false positive or tangential):**
+  - `2604.23599` — PU-GKAN (rom/les false positive, KAN architecture)
+  - `2604.25756` — Bayesian active learning for phase transitions (materials science, not core mechanics)
+  - `2604.25568` — Bandgap benchmark (materials informatics, tangential)
+- **Created Concepts (1):**
+  - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net for High-Fidelity Fluid Interpolation
+- **Script issue:** trending-papers.py timed out at 120s → 수동 재실행 (300s timeout) 성공
+- **Total pages:** 146 (was 145, +1 concept)
+
