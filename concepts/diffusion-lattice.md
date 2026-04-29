@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [physics-informed, model, paper, generative-model]
-sources: []
+sources: [raw/papers/2311.03578v1.md]
 confidence: medium
 ---
 

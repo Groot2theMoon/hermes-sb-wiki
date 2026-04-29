@@ -4,7 +4,9 @@ created: 2026-04-29
 updated: 2026-04-29
 type: concept
 tags: [research-idea, acoustics, dmn, poroelasticity, upcycling, building-materials, korea-market]
+sources: []
 confidence: medium
+sources: []
 ---
 
 # Waste-Fiber Acoustic Absorber — 시장 진입 전략

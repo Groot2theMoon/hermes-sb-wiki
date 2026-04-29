@@ -4,7 +4,9 @@ created: 2026-04-29
 updated: 2026-04-29
 type: concept
 tags: [physics-informed, fluid-dynamics, model, CFD]
+sources: []
 confidence: medium
+sources: []
 ---
 
 # Physics-Informed Temporal U-Net for Fluid Interpolation

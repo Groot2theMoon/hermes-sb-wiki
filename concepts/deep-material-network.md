@@ -4,7 +4,9 @@ created: 2026-04-28
 updated: 2026-04-28
 type: concept
 tags: [materials, surrogate-model, micromechanics, homogenization]
+sources: []
 confidence: high
+sources: []
 ---
 
 # Deep Material Network (DMN) — 기본 아키텍처

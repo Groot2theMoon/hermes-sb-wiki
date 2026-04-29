@@ -360,3 +360,12 @@
 - **Tag/link confusion fix:** `[[control-system]]` → `` `control-system` `` in iss-lyapunov-theory.md
 - **Index rebuilt:** entities 42→56, comparisons 9→11, total 148→164
 
+## [2026-04-29] fix | Raw references & wikilink cleanup
+- **engram-sparse-memory.md:** `engram.md` → `Engram_paper.md` (실제 파일명 반영)
+- **diffusion-lattice.md:** `sources:` 복원 → `2311.03578v1.md` (파일 존재)
+- **memory-caching-rnn.md:** `sources:` 복원 → `2602.24281v1.md` (파일 존재)
+- **mhc-deepseek.md, xai-surveys.md:** 없는 raw 파일 참조 제거 (`sources: []`)
+- **ssl-agent-skill-representation.md:** PDF 참조 제거
+- **eduardo-sontag.md:** `[[control-system]]` → `` `control-system` `` (tag/link confusion)
+- **전수검사 결과:** broken wikilinks 0, broken sources 0
+

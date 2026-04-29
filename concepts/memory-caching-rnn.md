@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [classic-ai, neural-network, model, sequence-modeling]
-sources: []
+sources: [raw/papers/2602.24281v1.md]
 confidence: medium
 ---
 

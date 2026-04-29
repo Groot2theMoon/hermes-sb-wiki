@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-29
 type: concept
 tags: [model, architecture, training, paper]
-sources: [raw/papers/mhc-deepseek.md]
+sources: []
 confidence: medium
 ---
 
@@ -12,7 +12,7 @@ confidence: medium
 
 ## 개요
 
-**DeepSeek**가 제안한 **mHC (manifold-constrained Hyper-Connections)**는 기존 residual connection을 일반화한 **hyper-connection** 아키텍처에 **다양체 제약(manifold constraint)** 을 추가한 변종이다^[raw/papers/mhc-deepseek.md].
+**DeepSeek**가 제안한 **mHC (manifold-constrained Hyper-Connections)**는 기존 residual connection을 일반화한 **hyper-connection** 아키텍처에 **다양체 제약(manifold constraint)** 을 추가한 변종이다.
 
 ## 배경: Residual Connection의 한계
 

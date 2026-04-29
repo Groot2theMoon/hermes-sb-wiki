@@ -22,4 +22,4 @@ Rutgers University/Northeastern University 교수. **Input-to-State Stability (I
 ## 관련 페이지
 - [[iss-lyapunov-theory]]
 - [[quadratic-iss-lyapunov]]
-- [[control-system]]
+- `control-system`
