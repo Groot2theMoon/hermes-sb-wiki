@@ -395,3 +395,9 @@
 - **raw/papers/keitri-gr-inspection-research-2025.md** — GR 인증 현장조사 연구용역 보고서 (201p, quality N/A, cost 61)
 - **Total Marker API cost:** 65 credits
 
+
+## [2026-04-29] ingest | GD1 Tutorial 1 — Isentropic Flow Relations (MATLAB)
+- **Source:** raw/papers/gd1-tutorial-1-isentropic-relations-matlab.md — PDF from Telegram
+- **Updated Concept:** [[isentropic-relations]] — MATLAB 실습 섹션 추가 (Part 2: 4개 관계식 수치 계산 및 플로팅, Part 3: 함수화 리팩토링, 핵심 인사이트)
+- **Tags used:** thermodynamics, fluid-dynamics, foundation, pure-mechanics
+- **Total pages:** 164 (unchanged)
