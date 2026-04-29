@@ -4,7 +4,7 @@ created: 2026-04-29
 updated: 2026-04-29
 type: concept
 tags: [research-idea, acoustics, dmn, poroelasticity, upcycling, building-materials]
-sources: [raw/papers/1-s2.0-S0003682X21003662-main.md, raw/papers/TIN뉴스.md, raw/papers/소각·매립되는 폐원단 조각  자원으로 품다(보도자료)(생활폐기물 9.9).md, raw/papers/인쇄하기.md]
+sources: [raw/papers/1-s2.0-S0003682X21003662-main.md, raw/papers/TIN뉴스.md, raw/papers/소각·매립되는 폐원단 조각  자원으로 품다(보도자료)(생활폐기물 9.9).md, raw/papers/인쇄하기.md, raw/articles/dbr-274-제클린-폐섬유-100퍼센트-재활용.md]
 confidence: medium
 ---
 

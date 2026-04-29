@@ -3,7 +3,6 @@
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
 > Last updated: 2026-04-29 | Total pages: 211
-<!-- Alphabetical -->
 - [[albert-gu]] — Albert Gu
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andrew-norris]] — Andrew Norris

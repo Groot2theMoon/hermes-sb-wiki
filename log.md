@@ -467,3 +467,11 @@
 - **Deferred (3):** NeurIPS_ML4PS_2025_59(s), 362 (HEP/astro); 363_Scientific_Machine_Learnin (astro)
 - **Skipped (3):** The free-energy principle, nrn2787 (neuroscience); Optimization on Matrix Manifolds (textbook)
 - **Skipped (3):** keitri-gr-certification, keitri-gr-inspection, 자원순환기본법 (absorbed into waste-fiber-market-entry sources)
+
+## [2026-04-29] ingest | 6 raw articles → waste-fiber wiki pages
+- **Updated (2):**
+  - [[waste-fiber-market-entry]] — sources +5: 층간소음 전수조사 촉구 (aptn), 폐기물처분부담금 (keco), LH ESG, LH 바닥구조 (rcnews), 서울시 의류섬유순환 (socialimpactnews)
+  - [[waste-fiber-acoustic-absorber]] — sources +1: DBR 폐섬유 100% 재활용 기사
+- **Footnotes added** to market-entry page for key claims with `[^source]` markers
+- **Unprocessed backlog:** 16 → 10 (6 articles processed)
+- **Index unchanged:** 211 total
