@@ -3,6 +3,7 @@
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
 > Last updated: 2026-04-29 | Total pages: 198
+
 ## Entities
 <!-- Alphabetical within section -->
 
@@ -70,7 +71,7 @@
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
-- [[bayesian-pinns]] — B-PINNs (Bayesian Physics-Informed Neural Networks)
+- [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[causal-semantic-xai-segmentation]] — "Causal XAI — SAM vs SLIC Segmentation Trade-Off"
@@ -157,11 +158,11 @@
 - [[physics-informed-neural-networks]] — "Physics-Informed Neural Networks (PINN) — Raissi, Perdikaris & Karniadakis (2019)"
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[physics-informed]] — Physics-Informed Machine Learning
-- [[pinn-failure-modes]] — When and Why PINNs Fail — NTK Perspective
+- [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[poroelastic-dmn-research]] — "7×7 Acusto-Elastic DMN — 확장 연구 분석"
 - [[poroelasticity-thermoelasticity-correspondence]] — "Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)"
-- [[ppi-no]] — Pseudo Physics-Informed Neural Operator (PPI-NO)
+- [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)

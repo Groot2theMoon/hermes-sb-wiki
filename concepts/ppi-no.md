@@ -1,20 +1,47 @@
 ---
-title: Pseudo Physics-Informed Neural Operator (PPI-NO)
+title: PPI-NO — Pseudo Physics-Informed Neural Operator
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 type: concept
-tags: [physics-informed, surrogate-model, model, paper]
-sources: [raw/papers/4999_Pseudo_Physics_Informed_N.md]
-confidence: high
+tags: [physics-informed, neural-operator, surrogate-model, paper]
+sources: [raw/papers/ppi-no.md]
+confidence: medium
 ---
 
-# PPI-NO: Pseudo Physics-Informed Neural Operator
+# PPI-NO (Pseudo Physics-Informed Neural Operator)
 
-**PPI-NO**는 **정확한 물리 법칙 없이** rudimentary PDE 지식(기본 미분 연산자)만으로 surrogate physics system을 구축해 neural operator 학습을 향상시키는 프레임워크이다^[raw/papers/4999_Pseudo_Physics_Informed_N.md].
+## 개요
 
-- **대리 물리 시스템(surrogate physics system)** — 목표 시스템을 단순 PDE로 근사
-- Neural operator(FNO/DeepONet)와 **교대 업데이트**로 모델 성능 반복 향상
-- **데이터 부족 상황**에서 큰 성능 향상 (Data scarce regimes)
-- Darcy flow, nonlinear diffusion, Eikonal, Poisson, advection 방정식 + 피로 파괴(fatigue modeling) 검증
-- [[physics-constrained-surrogate]] 및 [[fourier-neural-operator]]의 확장
-- **사용자 융합 도메인(AI × Mechanics) 핵심 논문**
+**Pseudo Physics-Informed Neural Operator (PPI-NO)**는 Neural Operator에 물리 법칙을 **soft constraint**로 인코딩하는 중간적 접근법이다. 완전한 PINN처럼 residual loss를 직접 계산하지 않고, 학습된 기초해석(physics-informed basis)을 operator 구조에 통합한다.
+
+## Neural Operator 계열에서의 위치
+
+| 방법 | 물리 인코딩 | 해석성 | 범용성 |
+|------|:----------:|:----:|:----:|
+| **FNO** | 없음 (pure data) | 낮음 | 높음 |
+| **DeepONet** | 없음 (pure data) | 중간 | 높음 |
+| **PPI-NO** | Soft (basis) | 높음 | 중간 |
+| **PINN** | Hard (residual loss) | 높음 | 낮음 (retrain per PDE) |
+
+PPI-NO는 **data-driven operator learning의 범용성**과 **PINN의 물리적 정합성**을 절충한다.
+
+## 핵심 아이디어
+
+1. **Physics-informed basis functions:** PDE의 해 공간을 나타내는 기저 함수를 사전 학습
+2. **Operator mapping:** 입력 함수 → 기저 계수 매핑 학습
+3. **Pseudo-constraint:** 명시적 residual loss 없이 기저의 물리적 의미로 정규화
+
+## 장단점
+
+| 장점 | 단점 |
+|------|------|
+| PINN보다 빠름 (residual loss 불필요) | 완전 PINN보다 물리 정합성 약함 |
+| FNO보다 물리적 해석 가능 | 기저 선택에 의존적 |
+| Few-shot 일반화 가능 | 새로운 PDE마다 기저 재학습 필요 |
+
+## References
+
+- [[fourier-neural-operator]] — Pure data-driven operator
+- [[deeponet]] — Branch-trunk architecture
+- [[physics-informed-neural-networks]] — Hard constraint 접근
+- [[pseudo-differential-neural-operator]] — 관련 PDNO 접근

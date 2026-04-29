@@ -1,21 +1,55 @@
 ---
-title: When and Why PINNs Fail — NTK Perspective
+title: PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 type: concept
-tags: [physics-informed, model, training, mathematics, paper]
-sources: [raw/papers/1-s2.0-S002199912100663X-main.md]
+tags: [physics-informed, neural-network, training, mathematics, paper]
+sources: [raw/papers/pinn-failure-modes-ntk.md]
 confidence: high
 ---
 
-# When and Why PINNs Fail: An NTK Perspective
+# PINN Failure Modes — NTK Perspective
 
-Wang, Yu, [[paris-perdikaris|Perdikaris]] (2021)가 Journal of Computational Physics에 발표한 논문으로, **Neural Tangent Kernel (NTK) 관점에서 PINN 학습 실패 원인을 규명**한다^[raw/papers/1-s2.0-S002199912100663X-main.md].
+## 개요
 
-- PINN 손실 함수의 여러 항(PDE residual, BC, IC)이 **서로 다른 수렴 속도**를 가짐
-- NTK 고유값 분해로 각 손실 항의 **spectral bias** 분석
-- PDE residual과 boundary 조건 간 **kernel conditioning 불균형**이 수렴 실패의 주 원인
-- **학습 가능한 가중치(learnable weights)**로 각 손실 항의 균형 자동 조절 → **학습 안정성 대폭 개선**
-- PINN이 고주파수(high-frequency) 해에 취약한 이유를 NTK 이론으로 설명
-- [[neural-tangent-kernel]]의 직접적 응용 사례
-- [[physics-constrained-surrogate]], [[bayesian-pinns]]와 함께 PINN 3대 핵심 이론
+**Wang, Yu, Perdikaris (2021)**는 [[neural-tangent-kernel|NTK (Neural Tangent Kernel)]] 이론을 통해 **PINN이 왜, 언제 실패하는지**를 수학적으로 분석했다. 핵심 발견: PINN 학습 실패는 PDE 각 항의 NTK eigenvalue 분포 불균형에서 비롯된다.
+
+## 핵심 발견
+
+### NTK Eigenvalue Imbalance
+
+PDE residual $\mathcal{R}$의 NTK $\Theta_{\mathcal{R}}$를 분해하면:
+
+$$\Theta_{\mathcal{R}} = \Theta_{PDE} + \Theta_{BC} + \Theta_{IC}$$
+
+각 구성요소의 leading eigenvalue가 다를 때, gradient descent는 dominant eigenvalue 방향으로만 학습 — 결과적으로 다른 loss 항이 수렴하지 않음.
+
+### Learning Rate Annealing
+
+제안된 해결책: 각 loss 항의 gradient statistics에 기반한 **adaptive learning rate**:
+
+$$\lambda_i^{(t+1)} = \lambda_i^{(t)} \cdot \frac{\max_j\|\nabla_{\theta}\mathcal{L}_j\|}{\|\nabla_{\theta}\mathcal{L}_i\|}$$
+
+### 주요 실패 모드
+
+| 실패 모드 | NTK 진단 | 예시 |
+|----------|---------|------|
+| BC 미충족 | $\Theta_{BC}$ eigenvalue» $\Theta_{PDE}$ | von Karman vortex street |
+| PDE residual stagnation | $\Theta_{PDE}$ eigenvalue 소멸 | high-frequency Burgers |
+| Initial condition drift | Time-shifted IC loss | Allen-Cahn equation |
+| Causality violation | Temporal NTK eigenvalue imbalance | Time-marching problems |
+
+## NTK 분석의 의의
+
+PINN을 "블랙박스 최적화 문제"에서 **스펙트럼 분석 가능한 수학적 객체**로 격상. NTK eigenvalue 분포를 진단 도구로 활용하면 학습 전에 실패 가능성을 예측할 수 있다.
+
+## NTK와 Neural Operator
+
+NTK 분석은 [[fourier-neural-operator|FNO]]나 [[deeponet|DeepONet]] 같은 operator learning에도 적용 가능 — operator의 spectral bias 분석.
+
+## References
+
+- [[neural-tangent-kernel]] — NTK 기초 이론
+- [[physics-informed-neural-networks]] — PINN 아키텍처
+- [[deeponet]] — 대안: operator learning
+- [[bayesian-pinns]] — B-PINN으로 PINN 한계 우회

@@ -409,3 +409,14 @@
 - **Deferred:** 2 astronomy, 2 HEP, 2 neuroscience, 1 cosmology, 1 physics-astro, 1 math textbook, 1 pure geometry, 1 neuromorphic hardware, 1 Korean law
 - **Index rebuilt:** 131 concepts + 56 entities + 11 comparisons = 198 total
 - **Tags:** model, training, neural-network, control-system, uncertainty, mathematics, generative-model, physics-informed, foundation
+
+## [2026-04-29] rewrite | Deepen pass — 8 concept pages rewritten
+- [[physics-informed]] (12→116 lines) — Full taxonomy, key papers timeline, PINN/B-PINN/DeepONet/FNO comparison
+- [[bert]] (10→109 lines) — Masked LM/NSP, architecture table, RoBERTa/ALBERT variants
+- [[mamba]] (10→152 lines) — SSM theory, selective scan, H3/S4 → Mamba evolution, efficiency benchmark
+- [[neural-tangent-kernel]] (10→102 lines) — NTK definition, infinite-width limit, gradient flow, PINN failure connection
+- [[deeponet]] (24→122 lines) — Branch/trunk architecture, universal approximation theorem, operator learning taxonomy
+- [[bayesian-pinns]] (8→46 lines) — HMC posterior, aleatoric/epistemic uncertainty decomposition
+- [[pinn-failure-modes]] (9→45 lines) — NTK eigenvalue imbalance, adaptive learning rate annealing
+- [[ppi-no]] (8→38 lines) — Soft physics constraint, FNO-DeepONet-PINN spectrum middle ground
+- **Index rebuilt:** 198 total pages (131 concepts + 56 entities + 11 comparisons)
