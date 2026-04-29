@@ -45,3 +45,4 @@ DNN은 뛰어난 성능에도 불구하고 **블랙박스(black box)**라는 한
 - S. Bach et al. "On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-wise Relevance Propagation", *PLoS ONE 2015'
 - [[xai-surveys]] — XAI 참고 문헌 종합
 - [[bayesian-uncertainty-vision]] — 불확실성 시각화
+- [[causal-semantic-xai-segmentation]]

@@ -62,3 +62,4 @@ $$\mathbf{x}_\ell = H_\ell([\mathbf{x}_0, \mathbf{x}_1, \dots, \mathbf{x}_{\ell-
 - G. Huang, Z. Liu, L. van der Maaten, K.Q. Weinberger. "Densely Connected Convolutional Networks", *CVPR 2017*
 - [[residual-networks]] — DenseNet의 직접적 전신 및 비교 대상
 - [[yolo-object-detection]] — CNN 기반 detection의 다른 접근
+- [[resnet-vs-densenet]]

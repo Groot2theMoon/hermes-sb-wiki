@@ -55,3 +55,4 @@ confidence: high
 - J.M. Pawlowski, J.M. Urban. "Reducing Autocorrelation Times in Lattice Simulations with Generative Adversarial Networks", *Mach. Learn.: Sci. Technol.* 2020
 - [[flow-based-mcmc]] — 정규화 플로우 기반 MCMC (대안적 접근)
 - [[variational-autoregressive-networks]] — Autoregressive network 기반 lattice 접근법
+- [[sn-gan-vs-gan-lattice]]

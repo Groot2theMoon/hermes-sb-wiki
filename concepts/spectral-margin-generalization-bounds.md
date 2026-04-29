@@ -41,3 +41,7 @@ $$\Pr[\text{error}] \leq \widehat{\mathcal{R}}_\gamma(F_{\mathcal{A}}) + \tilde{
 - [[spectral-normalization-gan]] — 응용: GAN discriminator 정규화
 - [[nn-tricks]] — 실용적 regularization과의 관계
 - [[deep-ensembles]] — generalization 향상의 대안적 접근
+
+## References
+
+- [[sn-gan-vs-gan-lattice]]

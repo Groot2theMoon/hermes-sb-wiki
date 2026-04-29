@@ -61,3 +61,4 @@ $$\bar{W}_{SN}(W) = W / \sigma(W)$$
 - [[generative-models-physics]] — 물리학에서의 생성 모델 활용
 - [[nn-tricks]] — 신경망 학습 practical tips
 - [[mode-collapse-flow-lattice]] — Mode collapse 문제와 해결
+- [[sn-gan-vs-gan-lattice]]

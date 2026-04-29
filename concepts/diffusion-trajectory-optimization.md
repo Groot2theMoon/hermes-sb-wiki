@@ -68,3 +68,4 @@ Task 조건 (시작/목표 상태, 장애물 등)을 diffusion model에 embeddin
 
 - Li, A., Ding, Z., Dieng, A.B., & Beeson, R. (2024). DIFFUSOLVE: Diffusion-based Solver for Non-Convex Trajectory Optimization. L4DC.
 - [[denoising-diffusion-probabilistic-models]]
+- [[optimal-transport-stability-sinkhorn]]

@@ -75,3 +75,5 @@ MC Dropout은 **PINN 및 Physics-Constrained 모델의 불확실성 정량화에
 - [[uncertainty-quantification-deep-learning]] — UQ 전체 조망
 - [[bayesian-pinns]] — MC Dropout을 PINN에 적용한 확장
 - [[vvuq-framework]] — 과학 컴퓨팅 VV&UQ 프레임워크
+- [[mc-dropout-vs-deep-ensembles]]
+- [[koh-vs-deep-uq]]

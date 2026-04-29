@@ -48,3 +48,4 @@ Alex Kendall & Yarin Gal (Cambridge, 2017)은 컴퓨터 비전에서 **두 가�
 - A. Kendall, Y. Gal. "What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?", *NeurIPS 2017*
 - [[deep-ensembles]] — 대안적 uncertainty 추정 방법
 - [[densenet]] — 실험에서 backbone으로 사용
+- [[offline-bayesian-uq-finite-mdps]]

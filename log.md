@@ -429,3 +429,10 @@
 - **Entities:** [[ziming-liu]], [[max-tegmark]], [[marin-soljacic]], [[yang-song]], [[takeru-miyato]], [[yifan-zhang]]
 - **Comparisons:** [[sn-gan-vs-gan-lattice]], [[fno-vs-deeponet-vs-kan]]
 - Index rebuilt: 209 total (134 concepts + 62 entities + 13 comparisons)
+
+## [2026-04-29] fix | Wikilink confusion + cross-link backfill
+- Fixed 2 remaining broken wikilinks (control-system, roberta → plain text)
+- SCHEMA.md: engineering-design + robotics 태그 추가
+- Cross-link backfill: 33 wikilinks added from parent pages → orphan pages
+- Index rebuilt: 209 total (134 C + 62 E + 13 CMP)
+- Broken wikilinks: 9

@@ -68,3 +68,4 @@ Montavon et al.은 *post-hoc interpretability* (이미 학습된 모델을 사�
 - Samek, W. et al. (2017). Explainable AI: Interpreting, Explaining and Visualizing Deep Learning. Springer.
 - [[dnn-interpretability-lrp]]
 - [[xai-surveys]]
+- [[causal-semantic-xai-segmentation]]

@@ -23,7 +23,7 @@ confidence: high
 
 ## 융합 도메인 연결
 
-Digital Twin은 [[surrogate-model|Surrogate Model]] + [[uncertainty-quantification-deep-learning|UQ]] + [[control-system|Control]]의 통합 패러다임 — AI×Mechanics의 궁극적 응용 목표.
+Digital Twin은 [[surrogate-model|Surrogate Model]] + [[uncertainty-quantification-deep-learning|UQ]] + control system의 통합 패러다임 — AI×Mechanics의 궁극적 응용 목표.
 
 ## References
 - [[surrogate-model]]

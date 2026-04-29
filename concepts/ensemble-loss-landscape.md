@@ -72,3 +72,5 @@ $$
 - [[deep-ensembles]]
 - [[mc-dropout]]
 - [[bayesian-uncertainty-vision]]
+- [[mc-dropout-vs-deep-ensembles]]
+- [[stanislav-fort]]

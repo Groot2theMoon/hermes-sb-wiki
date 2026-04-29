@@ -91,6 +91,8 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **neural-operator:** Neural operator learning (FNO, DeepONet, etc.)
 - **uncertainty:** Uncertainty quantification, Bayesian methods, confidence estimation
 - **dmn:** Deep Material Network — binary tree surrogate for multiscale composites, physics-based ML
+- **engineering-design:** Engineering design automation, simulation-based inference, conceptual design
+- **robotics:** Robot control, legged locomotion, safety-critical control
 
 ### Meta
 - **person:** Researcher, professor, industry leader

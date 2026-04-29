@@ -57,3 +57,4 @@ KAN은 [[physics-informed-neural-networks|PINN]]의 대체 아키텍처로 유�
 - [[physics-informed-neural-networks]] — KAN-based PINN 가능성
 - [[nn-tricks]] — Practical training tips
 - [[fourier-neural-operator]] — Operator learning의 또 다른 접근
+- [[fno-vs-deeponet-vs-kan]]

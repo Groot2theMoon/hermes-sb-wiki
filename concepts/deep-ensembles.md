@@ -54,3 +54,5 @@ Bayesian NN의 복잡성 없이도 **비슷하거나 더 나은 uncertainty cali
 - [[variational-autoencoder]] — VAE도 generative 방식의 uncertainty 제공 가능
 - [[mc-dropout]] — MC Dropout (대안적 uncertainty)
 - [[ensemble-loss-landscape]] — Loss landscape 분석
+- [[mc-dropout-vs-deep-ensembles]]
+- [[koh-vs-deep-uq]]

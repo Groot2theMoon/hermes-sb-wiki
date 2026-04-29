@@ -85,3 +85,5 @@ $$\mathcal{L}_{total} = \mathcal{L}_{PDE} + \mathcal{L}_{data}$$
 - [[maziar-raissi]] — PINN 제1저자
 - [[paris-perdikaris]] — PINN 공동 창시자
 - [[george-em-karniadakis]] — PINN, DeepONet 공동 창시자 (Brown CRUNCH)
+- [[orthogonal-projection-regularization]]
+- [[neural-thermodynamic-integration]]

@@ -1,11 +1,11 @@
 # Wiki Index
-> Content catalog. Every wiki page listed under its type with a one-line summary.
-> Read this first to find relevant pages for any query.
+> Content catalog.
+> Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
 > Last updated: 2026-04-29 | Total pages: 209
 
 ## Entities
-<!-- Alphabetical within section -->
+<!-- Alphabetical -->
 
 - [[albert-gu]] — Albert Gu
 - [[allen-institute-for-ai]] — Allen Institute for AI
@@ -71,7 +71,7 @@
 - [[zongyi-li]] — Zongyi Li
 
 ## Concepts
-<!-- Alphabetical within section -->
+<!-- Alphabetical -->
 
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
@@ -209,7 +209,7 @@
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
 
 ## Comparisons
-<!-- Alphabetical within section -->
+<!-- Alphabetical -->
 
 - [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
@@ -224,3 +224,4 @@
 - [[sn-gan-vs-gan-lattice]] — SN-GAN vs GAN Lattice Simulations — GAN 안정화 방법 비교
 - [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
 - [[vae-vs-gan]] — VAE vs GAN — Generative Model 비교
+

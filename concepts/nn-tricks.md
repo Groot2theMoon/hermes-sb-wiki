@@ -73,3 +73,4 @@ confidence: high
 - Montavon, G., Orr, G. B., & Müller, K.-R. (Eds.). (2012). *Neural Networks: Tricks of the Trade* (2nd ed.). Springer LNCS 7700.
 - [[deep-learning-nature-survey]]
 - [[nn-tricks]]
+- [[misc-base-materials]]

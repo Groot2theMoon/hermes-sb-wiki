@@ -90,3 +90,8 @@ L = (1/2N_s) Σ_s ‖C^DNS_s - DMN(Cᵖ¹_s, Cᵖ²_s, ...)‖² / ‖C^DNS_s‖
 - `deep-material-network-quilting` — Shin 2023: DMN explainability 및 quilting 전략
 - `decoding-material-networks` — DMN vs IMN 성능 비교
 - `interaction-based-material-network` — IMN: 회전 없는 DMN 변형
+
+## References
+
+- [[decoding-material-networks]]
+- [[fft-homogenization-polymer-composites]]

@@ -182,3 +182,7 @@ $$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{data}} + \lambda \cdot \mathca
 - [[predictive-control-barrier-functions]] — MPC/CBF (DeepONet 응용처)
 
 [^chen1995]: Chen, T., & Chen, H. (1995). Universal approximation to nonlinear operators by neural networks with arbitrary activation functions and its application to dynamical systems. *IEEE Transactions on Neural Networks*, 6(4), 911-917.
+
+## References
+
+- [[fno-vs-deeponet-vs-kan]]

@@ -71,3 +71,5 @@ Dong, Qin, Xu (2026)는 FNO와 PINN을 최초로 FOWT 후류 예측에 적용하
 
 → [[wind-energy-ml]] — 풍력 에너지 AI 응용 상세
 → [[ai-hallucination-physics]] — PINN smoothness의 spectral bias 문제와 연결
+- [[nvidia]]
+- [[fno-vs-deeponet-vs-kan]]
