@@ -515,4 +515,10 @@
 
 ## [2026-04-29] backfill | David Sontag entity
 - **New Entity (1):** [[david-sontag]] — MIT, DKF + GRU-D 공동 저자, 의료 ML
+
+## [2026-04-29] ingest | ML2 Lecture 03 — CCA, kCCA, tkCCA, CTA
+- **Source:** raw/papers/ml2-lecture-03-cca.md — Klaus-Robert Müller, TU Berlin ML2 (2023)
+- **New Concept (1):** [[canonical-correlation-analysis]] — CCA, kCCA, tkCCA, Canonical Trend Analysis
+- **Tags used:** classic-ai, dimensionality-reduction, learning, algorithms, kernel-method, survey
+- **Total wiki pages:** 221 → 222 (+1)
 - **Total pages:** 221 (was 220, +1)

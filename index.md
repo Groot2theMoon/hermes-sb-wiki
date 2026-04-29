@@ -2,7 +2,7 @@
 > Content catalog.
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 221
+> Last updated: 2026-04-29 | Total pages: 222
 
 ## Entities
 
@@ -80,6 +80,7 @@
 - [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
+- [[canonical-correlation-analysis]] — Canonical Correlation Analysis — CCA, kCCA, tkCCA, CTA
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
 - [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
