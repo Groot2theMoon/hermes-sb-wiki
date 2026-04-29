@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 164
+> Last updated: 2026-04-29 | Total pages: 170
 
 ## Entities
 <!-- Alphabetical within section -->
@@ -76,6 +76,8 @@
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
+- [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
+- [[compressible-flow-governing-equations]] — Compressible Flow Governing Equations — Gas Dynamics 1
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
 - [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
@@ -106,18 +108,21 @@
 - [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
 - [[in-context-modeling-physics]] — In-Context Modeling (ICM) for Computational Science
+- [[isentropic-relations]] — Isentropic Relations — Thermodynamic Derivation for Gas Dynamics
 - [[isomap]] — Isomap — Isometric Feature Mapping
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
 - [[kennedy-ohagan-calibration]] — Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration
 - [[kernel-methods]] — Kernel Methods — An Introduction (Müller et al. 2001 Survey)
 - [[kernel-pca]] — Kernel PCA — Nonlinear Component Analysis
+- [[knudsen-number-and-continuum]] — Knudsen Number and Continuum Assumption
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
+- [[mach-number-and-flow-regimes]] — Mach Number and Flow Regimes — Subsonic to Hypersonic
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
@@ -148,6 +153,7 @@
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[ssl-agent-skill-representation]] — SSL — Scheduling-Structural-Logical Representation for Agent Skills
+- [[stagnation-properties]] — Stagnation Properties and Critical Conditions — Gas Dynamics
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
 - [[thermoelastic-dmn]] — Thermoelastic Deep Material Network

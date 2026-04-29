@@ -5,6 +5,21 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-29] ingest | Gas Dynamics 1 — Lecture 2, Thermodynamics Review, Lecture 3
+- **Sources ingested (3 raw files):**
+  - raw/papers/gasdynamic-lecture-2-governing-equations.md — Lecture 2 (28p): Knudsen, continuity, momentum, RTT, Euler equations
+  - raw/papers/gasdynamic-thermodynamics-review.md — Thermodynamics Review (26p): Energy eq., perfect gas, 1st/2nd law, entropy, isentropic
+  - raw/papers/gasdynamic-lecture-3-compressibility-sound.md — Lecture 3 (23p): Compressibility, speed of sound, Mach, stagnation conditions
+- **Concept pages created (6):**
+  - concepts/compressible-flow-governing-equations.md — 7-equation system, conservative/non-conservative, RTT
+  - concepts/compressibility-and-speed-of-sound.md — β_T, β_S, Newton vs Laplace derivation
+  - concepts/mach-number-and-flow-regimes.md — M, sub/trans/super/hypersonic, Mach cone
+  - concepts/stagnation-properties.md — T0, p0, ρ0, T*, M* relation
+  - concepts/isentropic-relations.md — Thermodynamic derivation, p-T-ρ relations
+  - concepts/knudsen-number-and-continuum.md — Continuum assumption, flow regime classification
+- **Tags used:** fluid-dynamics, thermodynamics, foundation, pure-mechanics
+- **Total wiki pages:** 164 → 170 (+6)
+
 ## [2026-04-28] create | Wiki initialized
 - Domain: AI/ML × Mechanical Engineering & Physics/Mechanics (융합)
 - WIKI_PATH: /home/aero_groot/agent-workspace/wiki
