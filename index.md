@@ -2,7 +2,7 @@
 > Content catalog.
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 211
+> Last updated: 2026-04-29 | Total pages: 214
 - [[albert-gu]] — Albert Gu
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andrew-norris]] — Andrew Norris
@@ -31,7 +31,7 @@
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
-- [[kaiming-he]] — Kaiming He
+- [[karl-friston]] — Karl Friston — Neuroscientist, Free Energy Principle Creator
 - [[kaushik-bhattacharya]] — Kaushik Bhattacharya
 - [[klaus-robert-muller]] — Klaus-Robert Müller
 - [[kyunghyun-cho]] — Kyunghyun Cho
@@ -107,6 +107,7 @@
 - [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
 - [[fourier-neural-operator]] — Fourier Neural Operator (FNO)
+- [[free-energy-principle]] — Free Energy Principle — Variational Free Energy Minimization as a Unified Brain Theory
 - [[function-space-variational-inference-bnn]] — Generalized Function-Space Variational Inference for Bayesian Neural Networks
 - [[gan-lattice-simulations]] — GAN-based Overrelaxation for Lattice Simulations
 - [[gap-sbm]] — Gap-SBM — Shifted Boundary Method Variant
@@ -132,6 +133,7 @@
 - [[kolmogorov-arnold-networks]] — Kolmogorov-Arnold Networks (KAN) — Learnable B-Spline Activations on Edges
 - [[koopman-learner-continual-lifting]] — Continual Learning and Lifting of Koopman Dynamics for Legged Robots
 - [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
+- [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)

@@ -67,6 +67,7 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **continual-learning:** Continual/lifelong learning, catastrophic forgetting, incremental learning
 - **architecture:** Neural network architecture design, NAS, macro/micro search
 - **theory:** Theoretical ML foundations — proofs, bounds, convergence analysis
+- **information-theory:** Shannon entropy, mutual information, channel capacity, KL divergence
 
 ### Mechanics/Physics Domain
 - **mechanics:** Classical mechanics, statics, dynamics
@@ -118,6 +119,12 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **safety:** Safety-critical systems, verification, safe RL
 - **certificate-functions:** Control barrier functions (CBF), control Lyapunov functions (CLF)
 - **state-estimation:** State estimation, observers, filtering theory
+
+### Adjacent / Foundational Domains
+- **neuroscience:** Brain theories, computational neuroscience, active inference
+- **cognitive-science:** Bayesian brain, predictive processing, free-energy principle
+- **self-organization:** Self-organizing systems, dissipative structures, autopoiesis
+- **information-thermodynamics:** Landauer principle, Maxwell's demon, entropic gravity
 
 ### Meta
 - **person:** Researcher, professor, industry leader

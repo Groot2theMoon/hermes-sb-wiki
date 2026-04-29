@@ -480,4 +480,11 @@
 - **Broken wikilinks (2):** [[rino]] → sim-to-real/self-supervised-learning — changed to plain text (no page exists)
 - **Dangling source (1):** [[ian-goodfellow]] — malformed `raw/papers/` → specific paper refs
 - **Orphans (2):** [[hilbert-simplex-geometry]] linked from lle, isomap, mds, kernels (4 links); [[rino]] linked from physics-informed, generative-models-physics (2 links)
-- **Final state:** 0 broken, 0 orphans, 0 dangling, 0 non-taxonomy
+
+## [2026-04-29] ingest | Friston Free Energy Principle (deferred → wiki integration)
+- **Changed status:** 기존 Deferred (2) Friston 논문 → wiki 통합
+- **New Concepts (1):** [[free-energy-principle]] — Friston 2009 TiCS + 2010 nrn2787 통합 요약
+- **New Comparison (1):** [[landauer-friston-connection]] — Landauer 원리 ↔ Friston FEP 정보-열역학적 연결
+- **New Entity (1):** [[karl-friston]] — UCL 신경과학자, FEP/DCM/SPM 창시자
+- **SCHEMA.md:** Adjacent/Foundational Domains 섹션 + 5개 신규 태그 추가 (information-theory, neuroscience, cognitive-science, self-organization, information-thermodynamics)
+- **Total pages:** 214 (was 211, +3)
