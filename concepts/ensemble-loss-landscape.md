@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Fort, Hu, Lakshminarayanan** (Google Research / DeepMind, 2019)은 **loss landscape 관점**에서 deep ensembles의 성공 원인을 분석했다^[raw/papers/1912.02757v2.md]. 왜 단순히 random initialization만 다르게 한 앙상블이 Bayesian 신경망(Bayesian NN)보다 실제로 더 잘 작동하는지 설명한다.
+**Fort, Hu, [[balaji-lakshminarayanan|Lakshminarayanan]]** (Google Research / DeepMind, 2019)은 **loss landscape 관점**에서 deep ensembles의 성공 원인을 분석했다^[raw/papers/1912.02757v2.md]. 왜 단순히 random initialization만 다르게 한 앙상블이 Bayesian 신경망(Bayesian NN)보다 실제로 더 잘 작동하는지 설명한다.
 
 ## 관찰된 현상
 

@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-Andrii Mironchenko, Felix L. Schwenninger가 제안한 이 연구는 **무한 차원 선형 해석적 시스템(infinite-dimensional linear analytic systems)**에 대한 **입력-상태 안정성(Input-to-State Stability, ISS)의 역 Lyapunov 정리(converse Lyapunov theorem)**를 최초로 증명한다^[raw/papers/2303.15093v2.md].
+[[andrii-mironchenko|Andrii Mironchenko]], Felix L. Schwenninger가 제안한 이 연구는 **무한 차원 선형 해석적 시스템(infinite-dimensional linear analytic systems)**에 대한 **입력-상태 안정성(Input-to-State Stability, ISS)의 역 Lyapunov 정리(converse Lyapunov theorem)**를 최초로 증명한다^[raw/papers/2303.15093v2.md].
 
 ## 핵심 결과
 

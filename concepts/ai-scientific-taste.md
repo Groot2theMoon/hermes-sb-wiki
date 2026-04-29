@@ -12,7 +12,7 @@ confidence: medium
 
 ## 개요
 
-**Tong, Li, Yang et al.** (Fudan University / Shanghai Innovation Institute, 2025)는 AI가 과학적 연구의 **qualitative taste** (연구의 중요성, 우아함, 잠재적 영향력 등)를 학습할 수 있음을 보였다^[raw/papers/2603.14473v1.md]. 핵심 방법론은 RL from Community Feedback (RLCF)이다.
+**Tong, Li, Yang et al.** ([[fudan-university|Fudan University]] / Shanghai Innovation Institute, 2025)는 AI가 과학적 연구의 **qualitative taste** (연구의 중요성, 우아함, 잠재적 영향력 등)를 학습할 수 있음을 보였다^[raw/papers/2603.14473v1.md]. 핵심 방법론은 RL from Community Feedback (RLCF)이다.
 
 ## 방법: RLCF (Reinforcement Learning from Community Feedback)
 

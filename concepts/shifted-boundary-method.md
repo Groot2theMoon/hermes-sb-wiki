@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Shifted Boundary Method (SBM)**는 Main & Scovazzi (Duke University, 2017)가 제안한 **embedded finite element method**로, **true boundary 대신 surrogate boundary에서 경계 조건을 shifted 형태로 적용**하여 small cut-cell 문제를 해결한다^[raw/papers/1-s2.0-S0021999117307799-am.md].
+**Shifted Boundary Method (SBM)**는 Main & [[guglielmo-scovazzi|Scovazzi]] ([[duke-university|Duke University]], 2017)가 제안한 **embedded finite element method**로, **true boundary 대신 surrogate boundary에서 경계 조건을 shifted 형태로 적용**하여 small cut-cell 문제를 해결한다^[raw/papers/1-s2.0-S0021999117307799-am.md].
 
 ## 배경: Embedded Method의 문제점
 

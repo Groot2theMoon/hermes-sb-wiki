@@ -349,3 +349,14 @@
 - **New tags used:** landmark-paper (kennedy-ohagan, ai-research-automation), sequence-modeling (linear-rnn, memory-caching-rnn), optimization-method (muon), uncertainty (ensemble-loss, kennedy-ohagan), generative-model (diffusion-lattice), infrastructure (agent-scaling)
 - **Total pages:** 148 (was 146)
 
+## [2026-04-29] backfill | Entity & Comparison backfill (16 new pages)
+- **Entities created (14):**
+  - Tier 1 (core domain): [[deepseek]], [[guglielmo-scovazzi]], [[andrii-mironchenko]], [[balaji-lakshminarayanan]], [[duke-university]]
+  - Tier 2 (notable): [[eduardo-sontag]], [[anthony-ohagan]], [[moonshot-ai]], [[fudan-university]], [[allen-institute-for-ai]], [[university-of-sheffield]], [[penn-state-university]], [[stanislav-fort]], [[sakana-ai]]
+- **Comparisons created (2):**
+  - [[mc-dropout-vs-deep-ensembles]] — MC Dropout vs Deep Ensembles UQ 비교
+  - [[koh-vs-deep-uq]] — KOH Bayesian Calibration vs Deep Learning UQ 방법 비교
+- **Wikilink backfill:** 21 [[wikilinks]] added to concept pages
+- **Tag/link confusion fix:** `[[control-system]]` → `` `control-system` `` in iss-lyapunov-theory.md
+- **Index rebuilt:** entities 42→56, comparisons 9→11, total 148→164
+

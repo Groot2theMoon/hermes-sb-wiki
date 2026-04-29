@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Muon**은 **Jordan et al. (2024)**가 제안한 **행렬 직교화(matrix orthogonalization)** 기반의 최적화기로, **Moonshot AI (2025)**가 대규모 LLM 학습으로 확장했다^[raw/papers/2502.16982.md]. AdamW 대비 **약 2배의 계산 효율성**을 제공하며, 이를 기반으로 **Moonlight (3B/16B MoE, 5.7T tokens)** 모델이 학습되었다.
+**Muon**은 **Jordan et al. (2024)**가 제안한 **행렬 직교화(matrix orthogonalization)** 기반의 최적화기로, **[[moonshot-ai|Moonshot AI]] (2025)**가 대규모 LLM 학습으로 확장했다^[raw/papers/2502.16982.md]. AdamW 대비 **약 2배의 계산 효율성**을 제공하며, 이를 기반으로 **Moonlight (3B/16B MoE, 5.7T tokens)** 모델이 학습되었다.
 
 ## Muon 업데이트 규칙
 

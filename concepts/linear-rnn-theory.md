@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Merrill, Jiang, Li, Lin, Sabharwal** (Allen Institute for AI / RPTU / MPI-SWS, 2025)는 **선형 RNN (LRNN)**이 기존 비선형 RNN보다 병렬화에 유리한 이유를 **복잡도 이론(complexity theory)**의 관점에서 엄밀히 분석했다^[raw/papers/2603.03612v2.md]. 이론적 결과는 실험적 검증까지 포함한다.
+**Merrill, Jiang, Li, Lin, Sabharwal** ([[allen-institute-for-ai|[[allen-institute-for-ai|Allen Institute]] for AI]] / RPTU / MPI-SWS, 2025)는 **선형 RNN (LRNN)**이 기존 비선형 RNN보다 병렬화에 유리한 이유를 **복잡도 이론(complexity theory)**의 관점에서 엄밀히 분석했다^[raw/papers/2603.03612v2.md]. 이론적 결과는 실험적 검증까지 포함한다.
 
 ## 핵심 결과
 

@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Deep Ensembles**는 Balaji Lakshminarayanan, Alexander Pritzel, Charles Blundell (DeepMind)이 2017년 제안한 방법으로, **Multiple deterministic neural networks의 앙상블**을 통해 간단하면서도 효과적인 불확실성(uncertainty) 추정을 달성한다^[raw/papers/1612.01474v3 (1).md].
+**Deep Ensembles**는 [[balaji-lakshminarayanan|Balaji Lakshminarayanan]], Alexander Pritzel, Charles Blundell (DeepMind)이 2017년 제안한 방법으로, **Multiple deterministic neural networks의 앙상블**을 통해 간단하면서도 효과적인 불확실성(uncertainty) 추정을 달성한다^[raw/papers/1612.01474v3 (1).md].
 
 Bayesian NN의 복잡성 없이도 **비슷하거나 더 나은 uncertainty calibration**을 제공.
 
@@ -50,7 +50,7 @@ Bayesian NN의 복잡성 없이도 **비슷하거나 더 나은 uncertainty cali
 - **Dataset shift에 robust한 uncertainty 표현**
 
 ## References
-- B. Lakshminarayanan, A. Pritzel, C. Blundell. "Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles", *NeurIPS 2017*
+- B. [[balaji-lakshminarayanan|Lakshminarayanan]], A. Pritzel, C. Blundell. "Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles", *NeurIPS 2017*
 - [[variational-autoencoder]] — VAE도 generative 방식의 uncertainty 제공 가능
 - [[mc-dropout]] — MC Dropout (대안적 uncertainty)
 - [[ensemble-loss-landscape]] — Loss landscape 분석

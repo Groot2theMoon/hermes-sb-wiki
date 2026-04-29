@@ -1,5 +1,5 @@
 ---
-title: DeepSeek mHC — Manifold-Constrained Hyper-Connections
+title: [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
 created: 2026-04-28
 updated: 2026-04-29
 type: concept

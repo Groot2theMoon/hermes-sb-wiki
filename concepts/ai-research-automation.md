@@ -12,7 +12,7 @@ confidence: medium
 
 ## 개요
 
-**Lu, Lu, Lange et al.** (Sakana AI / Oxford / Foerster Lab / Clune Lab, *Nature* 2026)는 AI 연구의 **end-to-end 자동화**를 최초로 실현했다^[raw/papers/s41586-026-10265-5-1.md]. **The AI Scientist**는 아이디어 생성 → 코드 작성 → 실험 실행 → 분석 → 논문 작성 → 피어 리뷰까지 전 과정을 자율적으로 수행한다.
+**Lu, Lu, Lange et al.** ([[sakana-ai|Sakana AI]] / Oxford / Foerster Lab / Clune Lab, *Nature* 2026)는 AI 연구의 **end-to-end 자동화**를 최초로 실현했다^[raw/papers/s41586-026-10265-5-1.md]. **The AI Scientist**는 아이디어 생성 → 코드 작성 → 실험 실행 → 분석 → 논문 작성 → 피어 리뷰까지 전 과정을 자율적으로 수행한다.
 
 ## 주요 구성 요소
 

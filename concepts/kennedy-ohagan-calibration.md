@@ -1,5 +1,5 @@
 ---
-title: Kennedy-O'Hagan Framework for Computer Model Calibration
+title: Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration
 created: 2026-04-28
 updated: 2026-04-29
 type: concept
@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Kennedy & O'Hagan** (University of Sheffield, *Journal of the Royal Statistical Society B*, 2001, ~6,000+ citations)는 컴퓨터 모델(computer code)의 **Bayesian 보정(calibration)** 을 위한 체계적 프레임워크를 제시했다. 이는 복잡한 전산 코드를 Gaussian Process (GP) surrogate로 대체하고, **모든 불확실성 소스** (parameter uncertainty, model inadequacy, observation error)를 체계적으로 처리하는 최초의 방법론이다.
+**Kennedy & O'Hagan** ([[university-of-sheffield|University of Sheffield]], *Journal of the Royal Statistical Society B*, 2001, ~6,000+ citations)는 컴퓨터 모델(computer code)의 **Bayesian 보정(calibration)** 을 위한 체계적 프레임워크를 제시했다. 이는 복잡한 전산 코드를 Gaussian Process (GP) surrogate로 대체하고, **모든 불확실성 소스** (parameter uncertainty, model inadequacy, observation error)를 체계적으로 처리하는 최초의 방법론이다.
 
 ## 핵심 방정식
 

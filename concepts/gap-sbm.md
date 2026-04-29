@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Collins, Li, Lozinski, Scovazzi** (Duke University / Penn State / Université Marie et Louis Pasteur, CMAME 2025)가 제안한 **Gap-SBM**은 기존 Shifted Boundary Method(SBM)의 새로운 개념화로, Neumann 및 Dirichlet 문제 모두에서 **최적 수렴성**을 달성한다^[raw/papers/1-s2.0-S0045782526000678-main.md].
+**Collins, Li, Lozinski, [[guglielmo-scovazzi|Scovazzi]]** ([[duke-university|Duke University]] / [[penn-state-university|Penn State]] / Université Marie et Louis Pasteur, CMAME 2025)가 제안한 **Gap-SBM**은 기존 Shifted Boundary Method(SBM)의 새로운 개념화로, Neumann 및 Dirichlet 문제 모두에서 **최적 수렴성**을 달성한다^[raw/papers/1-s2.0-S0045782526000678-main.md].
 
 ## 배경: SBM의 한계
 

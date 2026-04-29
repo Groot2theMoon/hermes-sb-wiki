@@ -3,26 +3,36 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 148
+> Last updated: 2026-04-29 | Total pages: 164
 
 ## Entities
+<!-- Alphabetical within section -->
 
 - [[albert-gu]] — Albert Gu
-- [[andrew-norris]] — Andrew Norris — Poroelasticity–Thermoelasticity Correspondence
+- [[allen-institute-for-ai]] — Allen Institute for AI
+- [[andrew-norris]] — Andrew Norris
 - [[andrew-stuart]] — Andrew Stuart
+- [[andrii-mironchenko]] — Andrii Mironchenko
 - [[anima-anandkumar]] — Anima Anandkumar
+- [[anthony-ohagan]] — Anthony O'Hagan
 - [[ashish-vaswani]] — Ashish Vaswani
-- [[bernhard-scholkopf]] — Bernhard Schölkopf — Kernel Methods, SVM, Causal Inference
+- [[balaji-lakshminarayanan]] — Balaji Lakshminarayanan
+- [[bernhard-scholkopf]] — Bernhard Schölkopf
 - [[brown-university]] — Brown University — CRUNCH Group
 - [[caltech]] — Caltech — AI × Science 리더
+- [[deepseek]] — DeepSeek
 - [[diederik-kingma]] — Diederik Kingma
-- [[dongil-shin]] — Dongil Shin — POSTECH DSLab, DMN/Quilting
+- [[dongil-shin]] — Shin Dongil (신동일)
+- [[duke-university]] — Duke University
+- [[eduardo-sontag]] — Eduardo Sontag
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
 - [[felix-gers]] — Felix Gers
 - [[frank-lu]] — Frank K. Lu
+- [[fudan-university]] — Fudan University
 - [[geoffrey-hinton]] — Geoffrey Hinton
 - [[george-em-karniadakis]] — George Em Karniadakis
 - [[google-deepmind]] — Google DeepMind
+- [[guglielmo-scovazzi]] — Guglielmo Scovazzi
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
@@ -36,21 +46,27 @@
 - [[leland-mcinnes]] — Leland McInnes
 - [[lu-lu]] — Lu Lu
 - [[maziar-raissi]] — Maziar Raissi
+- [[moonshot-ai]] — Moonshot AI
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
 - [[openai]] — OpenAI
 - [[paris-perdikaris]] — Paris Perdikaris
+- [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[ross-girshick]] — Ross Girshick
 - [[s-keshav]] — S. Keshav
+- [[sakana-ai]] — Sakana AI
 - [[sam-roweis]] — Sam T. Roweis
 - [[sepp-hochreiter]] — Sepp Hochreiter
 - [[sergey-zhdan]] — Sergey A. Zhdan
+- [[stanislav-fort]] — Stanislav Fort
 - [[steven-g-johnson]] — Steven G. Johnson
+- [[university-of-sheffield]] — University of Sheffield
 - [[yann-lecun]] — Yann LeCun
 - [[yoshua-bengio]] — Yoshua Bengio
 - [[zongyi-li]] — Zongyi Li
 
 ## Concepts
+<!-- Alphabetical within section -->
 
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
@@ -64,8 +80,8 @@
 - [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
-- [[deep-material-network]] — Deep Material Network (DMN) 기본 아키텍처
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
+- [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
@@ -73,7 +89,7 @@
 - [[dnn-interpretability-lrp]] — DNN Visualization & Interpretability (LRP)
 - [[effective-theory-transformers]] — Effective Theory of Transformers at Initialization
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
-- [[engram-sparse-memory]] — DeepSeek Engram — Conditional Sparse Memory for LLMs
+- [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
 - [[ensemble-loss-landscape]] — Deep Ensembles — Loss Landscape Perspective
 - [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
@@ -93,19 +109,19 @@
 - [[isomap]] — Isomap — Isometric Feature Mapping
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
-- [[kennedy-ohagan-calibration]] — Kennedy-O'Hagan Bayesian Calibration
-- [[kernel-methods]] — Kernel Methods — An Introduction
+- [[kennedy-ohagan-calibration]] — Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration
+- [[kernel-methods]] — Kernel Methods — An Introduction (Müller et al. 2001 Survey)
 - [[kernel-pca]] — Kernel PCA — Nonlinear Component Analysis
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
-- [[lstm-forget-gate]] — LSTM Forget Gate (Gers & Schmidhuber)
+- [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
-- [[mhc-deepseek]] — DeepSeek mHC — Manifold-Constrained Hyper-Connections
+- [[mhc-deepseek]] — [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
 - [[misc-base-materials]] — Additional Base Materials Collection
 - [[mode-collapse-flow-lattice]] — Mode-Collapse in Flow-based Sampling of Lattice Field Theories
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
@@ -116,13 +132,13 @@
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
-- [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN 확장 분석: 병목과 로드맵
-- [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence (Norris 1992)
+- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — Raissi, Perdikaris & Karniadakis (2019)
+- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[physics-informed]] — Physics-Informed Machine Learning
-- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN)
-- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net for Fluid Interpolation
 - [[pinn-failure-modes]] — When and Why PINNs Fail — NTK Perspective
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
+- [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN — 확장 연구 분석
+- [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[ppi-no]] — Pseudo Physics-Informed Neural Operator (PPI-NO)
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)
@@ -131,9 +147,10 @@
 - [[residual-networks]] — Residual Networks (ResNet)
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
+- [[ssl-agent-skill-representation]] — SSL — Scheduling-Structural-Logical Representation for Agent Skills
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
-- [[thermoelastic-dmn]] — Thermoelastic Deep Material Network (Shin 2024)
+- [[thermoelastic-dmn]] — Thermoelastic Deep Material Network
 - [[transformer]] — Transformer Architecture
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
@@ -143,16 +160,19 @@
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
-- [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber: DMN 기반 저주파 흡음재 설계
-- [[waste-fiber-market-entry]] — Waste-Fiber Acoustic Absorber: 한국 시장 진입 전략 및 규제 분석
+- [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계
+- [[waste-fiber-market-entry]] — Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
 
 ## Comparisons
+<!-- Alphabetical within section -->
 
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
+- [[koh-vs-deep-uq]] — KOH Bayesian Calibration vs Deep Learning UQ Methods — 비교
 - [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 비교
+- [[mc-dropout-vs-deep-ensembles]] — MC Dropout vs Deep Ensembles — 비교
 - [[pca-vs-mds-vs-lle-vs-isomap-vs-tsne]] — PCA vs MDS vs LLE vs Isomap vs t-SNE vs UMAP — 차원 축소 방법 비교 (6-way)
 - [[pde-vs-rde]] — Pulse Detonation Engine (PDE) vs Rotating Detonation Engine (RDE)
 - [[pinn-vs-deeponet]] — PINN vs DeepONet — Comparison

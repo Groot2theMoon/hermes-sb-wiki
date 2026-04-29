@@ -46,7 +46,7 @@ confidence: medium
 - **대조군:** [[lstm-forget-gate]], [[gated-recurrent-units]]의 현대적 확장
 - RNN 계열 아키텍처의 메모리 용량 확장 문제에 대한 새로운 접근
 - [[linear-rnn-theory]] — 선형 RNN의 병렬화 이점과의 비교
-- [[engram-sparse-memory]] — DeepSeek Engram의 조건부 메모리와 유사한 방향
+- [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram의 조건부 메모리와 유사한 방향
 
 ## References
 - Behrouz, A. & Li, M. (2025). Memory Caching RNNs. arXiv:2602.24281.

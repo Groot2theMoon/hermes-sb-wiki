@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**ISS (Input-to-State Stability)** 는 **E. Sontag** (1989)가 제안한 비선형 제어의 핵심 개념으로, 외란(disturbance)에 대한 **강건 안정성(robust stability)** 을 보장한다. 기존의 Lyapunov 안정성 이론(외란이 없을 때의 점근 안정성)을 외란이 존재하는 실제 환경으로 확장한 개념이다. Heni, Mironchenko, Wirth, Damak, Hammami는 시간 가변 무한 차원 시스템으로 ISS/Lyapunov 이론을 확장했다^[raw/papers/2512.24880v2.md].
+**ISS (Input-to-State Stability)** 는 **[[eduardo-sontag|E. Sontag]]** (1989)가 제안한 비선형 제어의 핵심 개념으로, 외란(disturbance)에 대한 **강건 안정성(robust stability)** 을 보장한다. 기존의 Lyapunov 안정성 이론(외란이 없을 때의 점근 안정성)을 외란이 존재하는 실제 환경으로 확장한 개념이다. Heni, [[andrii-mironchenko|Mironchenko]], Wirth, Damak, Hammami는 시간 가변 무한 차원 시스템으로 ISS/Lyapunov 이론을 확장했다^[raw/papers/2512.24880v2.md].
 
 ## ISS 정의
 
@@ -69,7 +69,7 @@ $$\xi(|e|) \geq \sigma\alpha(|x|)$$
 - **ML 기반 제어기**의 안정성 보장 장치로 활용 가능 — PINN 기반 제어, RL 제어 정책이 ISS 조건을 만족하는지 검증
 - [[pseudo-hamiltonian-neural-networks]] — PHNN이 보존하는 Hamiltonian 구조와 ISS의 연결
 - [[quadratic-iss-lyapunov]] — ISS 역 Lyapunov 정리 (구체적 확장)
-- [[control-system]] 태그 하의 **ML-based control** 연구의 이론적 기반
+- `control-system` 태그 하의 **ML-based control** 연구의 이론적 기반
 - DMN 기반 공정 제어에서 외란(원료 편차, 온도 변동)에 대한 시스템 안정성 보장
 
 ## References
