@@ -10,7 +10,7 @@ confidence: medium
 
 # PINN Lyapunov Functions
 
-Liu, Meng, Fitzsimmons, Zhou (Automatica, 2025) — **PINN을 이용해 Lyapunov 함수를 학습**하고, **PDE로 특성화(characterization)**하며, **형식 검증(formal verification)**까지 수행하는 프레임워크.
+[[jun-liu|Jun Liu]], Yiming Meng, Maxwell Fitzsimmons, Ruikun Zhou (Automatica, 2025) — **PINN을 이용해 Lyapunov 함수를 학습**하고, **PDE로 특성화(characterization)**하며, **형식 검증(formal verification)**까지 수행하는 프레임워크.
 
 ## 승원님 아이디어와의 연결
 

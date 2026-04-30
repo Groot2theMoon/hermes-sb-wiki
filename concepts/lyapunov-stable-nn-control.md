@@ -10,7 +10,7 @@ confidence: medium
 
 # Lyapunov-Stable NN Control
 
-Dai, Landry, Yang, Pavone, Tedrake (TRI/Stanford/MIT) — NN controller의 출력 후처리(post-processing)를 통해 **Lyapunov 안정성을 사후 보장**하는 방법.
+[[hongkai-dai|Hongkai Dai]], Benoit Landry, Lujie Yang, [[marco-pavone|Marco Pavone]], [[russ-tedrake|Russ Tedrake]] (TRI/Stanford/MIT) — NN controller의 출력 후처리(post-processing)를 통해 **Lyapunov 안정성을 사후 보장**하는 방법.
 
 ## 핵심 아이디어 (2109.14152)
 
@@ -23,6 +23,10 @@ u(x) = arg min_u ‖u - π_θ(x)‖²   (최소 변경)
 - NN은 자유롭게 학습 (성능 최대화)
 - QP가 안정성을 보장 (안전성 보장)
 - **Lyapunov 함수 V는 미리 알고 있다고 가정**
+
+## 관련 페이지
+- [[lyapunov-neural-network]] — Lyapunov 함수 자체를 NN으로 학습 (Richards 2018)
+- [[pinn-lyapunov-functions]] — PINN 기반 Lyapunov 학습 (Liu 2025)
 
 ## Lyapunov NN MPC (s41598-024)
 

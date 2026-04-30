@@ -558,3 +558,13 @@
   - [[koopman-resolvent-dynamics]] — Resolvent generator learning + Koopman stability certificates
 - **Raw files (6):** lyapunov-stable-nn-control, lyapunov-nn-mpc, pinn-lyapunov-functions, resolvent-data-driven-generators, koopman-stability-certificates, lyapunov-neural-network
 - **Total pages:** 239
+
+## [2026-04-30] backfill | Lyapunov batch — Entity + Wikilink
+- **New Entities (7):** [[jun-liu]] (Waterloo, PINN Lyapunov + Koopman), [[spencer-richards]] (ETH, Lyapunov NN), [[felix-berkenkamp]] (ETH), [[andreas-krause]] (ETH), [[hongkai-dai]] (TRI), [[marco-pavone]] (Stanford), [[russ-tedrake]] (MIT/TRI)
+- **Wikilink backfill (10 edits):**
+  - pinn-lyapunov-functions: [[jun-liu]]
+  - lyapunov-neural-network: [[spencer-richards]], [[felix-berkenkamp]], [[andreas-krause]], cross-refs → pinn-lyapunov-functions, lyapunov-stable-nn-control
+  - lyapunov-stable-nn-control: [[hongkai-dai]], [[marco-pavone]], [[russ-tedrake]], cross-refs → lyapunov-neural-network, pinn-lyapunov-functions
+  - koopman-resolvent-dynamics: [[jun-liu]]
+- **Key insight:** PINN Lyapunov + Resolvent + Koopman Stability는 모두 **Jun Liu (Waterloo)** 그룹
+- **Total pages:** 239 → **246** (4 concepts + 7 entities)

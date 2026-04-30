@@ -25,6 +25,7 @@ Koopman 연산자의 spectrum을 학습 → Lyapunov 함수를 **명시적으로
 - NN이 Koopman eigenfunction을 근사
 
 ## 관련 페이지
+- [[jun-liu]] — Waterloo 그룹 (Resolvent + Koopman stability, PINN Lyapunov)
 - [[koopman-learner-continual-lifting]] — Koopman 기반 continual learning (기존 위키)
 - [[iss-lyapunov-theory]] — Lyapunov 기초
 - [[lyapunov-stable-nn-control]] — 대안적 안정성 보장 접근

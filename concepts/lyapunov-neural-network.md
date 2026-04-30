@@ -10,7 +10,7 @@ confidence: medium
 
 # Lyapunov Neural Network (LNN)
 
-Richards, Berkenkamp, Krause (ETH Zürich, 2018) — **Lyapunov 함수 자체를 neural network로 모델링**하여 동역학 시스템의 안정성 인증(stability certification)을 학습.
+[[spencer-richards|Spencer M. Richards]], [[felix-berkenkamp|Felix Berkenkamp]], [[andreas-krause|Andreas Krause]] (ETH Zürich, 2018) — **Lyapunov 함수 자체를 neural network로 모델링**하여 동역학 시스템의 안정성 인증(stability certification)을 학습.
 
 ## 핵심 아이디어
 
@@ -28,6 +28,7 @@ Neural network V_θ(x)를 Lyapunov 함수로 학습:
 - 승원님의 "Lipschitz로 에너지 발산 무력화"는 LNN의 한 축소 사례로 볼 수 있음
 
 ## 관련 페이지
-- [[pinn-lyapunov-functions]] — PINN Lyapunov (Automatica 2025, 후속 발전)
-- [[iss-lyapunov-theory]] — Lyapunov 기초 이론
+- [[pinn-lyapunov-functions]] — PINN 기반 Lyapunov 학습 (Automatica 2025, 후속 발전)
+- [[lyapunov-stable-nn-control]] — NN controller + QP post-processing (대안적 접근)
+- [[iss-lyapunov-theory]] — Lyapunov 이론의 기초
 - [[lyapunov-guided-exploration]] — Lyapunov를 RL에 활용
