@@ -2,10 +2,11 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-30 | Total pages: 265
+> Last updated: 2026-05-01 | Total pages: 285
 ## Entities
 
 - [[albert-gu]] — Albert Gu
+- [[alexander-davydov]] — Alexander Davydov — UCSB, Contractivity & Neural ODE
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andreas-krause]] — Andreas Krause — ETH Zürich Professor, Safe Learning
 - [[andrew-norris]] — Andrew Norris
@@ -25,6 +26,7 @@
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
+- [[francesco-bullo]] — Francesco Bullo — UCSB Distinguished Professor, Contraction Theory
 - [[felix-berkenkamp]] — Felix Berkenkamp — ETH Zürich Researcher, Safe Learning
 - [[felix-gers]] — Felix Gers
 - [[frank-lu]] — Frank K. Lu
@@ -34,8 +36,11 @@
 - [[google-deepmind]] — Google DeepMind
 - [[guglielmo-scovazzi]] — Guglielmo Scovazzi
 - [[guy-revach]] — Guy Revach — Differentiable Filtering & Model-Based Deep Learning
+- [[hamidreza-montazeri-hedesh]] — Hamidreza Montazeri Hedesh — Northeastern University, NN Verification
 - [[hongkai-dai]] — Hongkai Dai — Toyota Research Institute, NN Control
 - [[ian-goodfellow]] — Ian Goodfellow
+- [[ian-r-manchester]] — Ian R. Manchester — USyd ACFR, REN & Stabilizing Nonlinear Control
+- [[johannes-schiffer]] — Johannes Schiffer — RNN Lipschitz Certification
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
 - [[jun-liu]] — Jun Liu — University of Waterloo, PINN & Koopman
@@ -53,16 +58,21 @@
 - [[marin-soljacic]] — Marin Soljačić
 - [[max-tegmark]] — Max Tegmark
 - [[maziar-raissi]] — Maziar Raissi
+- [[max-revay]] — Max Revay — USyd ACFR, Recurrent Equilibrium Networks
+- [[milad-siami]] — Milad Siami — Northeastern University, Lur'e Systems
 - [[moonshot-ai]] — Moonshot AI
 - [[nir-shlezinger]] — Nir Shlezinger — Signal Processing & Model-Based Deep Learning
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
 - [[openai]] — OpenAI
 - [[paris-perdikaris]] — Paris Perdikaris
+- [[paul-hamelbeck]] — Paul Hamelbeck — RNN Lipschitz Certification
 - [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[ross-girshick]] — Ross Girshick
+- [[ruigang-wang]] — Ruigang Wang — USyd ACFR, REN & Lipschitz Networks (3 papers)
 - [[russ-tedrake]] — Russ Tedrake — MIT / TRI, Robotics & Control
+- [[ryotaro-shima]] — Ryotaro Shima — UCSB, Contractivity Analysis
 - [[s-keshav]] — S. Keshav
 - [[sakana-ai]] — Sakana AI
 - [[sam-roweis]] — Sam T. Roweis
@@ -127,6 +137,7 @@
 - [[dnn-interpretability-lrp]] — DNN Visualization & Interpretability (LRP)
 - [[dual-x-mlff-explainability]] — DUAL-X — Dual-Level Explainability Framework for Machine Learning Force Fields
 - [[effective-theory-transformers]] — Effective Theory of Transformers at Initialization
+- [[ekf-stochastic-stability-fading]] — EKF Stochastic Stability over Fading Channels — Liu, Li et al. 2017
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
 - [[em-kalman-smoother-noise-covariance]] — EM-Kalman Smoother — Analytical Noise Covariance Update (Shumway-Stoffer)
 - [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
@@ -147,6 +158,8 @@
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
 - [[gru-d]] — GRU-D — Gated Recurrent Unit with Missingness Patterns for Time Series
 - [[hamiltonian-neural-networks]] — Hamiltonian Neural Networks — Physics-Embedded Dynamics with Energy Conservation
+- [[hedesh-local-stability-roa]] — Local Stability and ROA for NN Feedback Systems — Hedesh, Wafi & Siami 2025
+- [[hedesh-siami-sector-bound]] — Sector-Bounded Nonlinearity for NN-Controlled Systems — Hedesh & Siami 2024
 - [[hierarchical-autoregressive-networks]] — Hierarchical Autoregressive Networks (HAN) for Statistical Systems
 - [[hilbert-simplex-geometry]] — Non-linear Embeddings in Hilbert Simplex Geometry
 - [[hmm-tutorial]] — Hidden Markov Model — Tutorial
@@ -168,11 +181,13 @@
 - [[koopman-resolvent-dynamics]] — Koopman-Resolvent Data-Driven Dynamics — Generator Learning for Continuous Systems
 - [[label-wise-uncertainty-quantification]] — "Label-wise Aleatoric & Epistemic Uncertainty Quantification"
 - [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
+- [[lbdn-lipschitz-bounded-networks]] — LBDN — Direct Parameterization of Lipschitz-Bounded Deep Networks (Wang & Manchester 2023)
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
 - [[lesnets-pino-wall-turbulence]] — LESnets — Physics-Informed Neural Operator for Wall-Bounded Turbulence
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
+- [[lure-stability]] — Lur'e Stability Analysis — A+NN Systems
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
 - [[lstm-forget-gate]] — "LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)"
 - [[lyapunov-guided-exploration]] — LYGE — Lyapunov-Guided Exploration for Stabilizing High-dimensional Unknown Systems
@@ -220,14 +235,17 @@
 - [[pseudo-hamiltonian-neural-networks]] — Pseudo-Hamiltonian Neural Networks (PHNN) for PDEs
 - [[quadratic-iss-lyapunov]] — Quadratic ISS Lyapunov Functions for Linear Analytic Systems
 - [[recursive-kalmannet]] — Recursive KalmanNet — Deep Learning-Augmented Kalman Filtering with Consistent Uncertainty Quantification
+- [[ren-recurrent-equilibrium-networks]] — REN — Recurrent Equilibrium Networks with Guaranteed Stability & Robustness (Revay, Wang, Manchester 2021)
 - [[residual-networks]] — Residual Networks (ResNet)
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
+- [[rnn-sdp-lipschitz-certification]] — RNN-SDP — Lipschitz Robustness Certification for RNNs (Hamelbeck & Schiffer 2025)
 - [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Human Motion Prediction (Liu 2024)
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[rtsnet]] — RTSNet — Learning to Smooth in Partially Known State-Space Models
 - [[sagawa-ueda-information-thermodynamics]] — Information Thermodynamics — Maxwell's Demon in Nonequilibrium Dynamics
 - [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
+- [[shima-contractivity-lure]] — Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025
 - [[simulation-based-inference-aircraft-design]] — "Simulation-Based Inference for Conceptual Aircraft Design"
 - [[spectral-margin-generalization-bounds]] — "Spectrally-Normalized Margin Bounds for Neural Network Generalization"
 - [[spectral-normalization-gan]] — Spectral Normalization for GANs — Lipschitz Constraint via Weight Normalization
@@ -243,6 +261,7 @@
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
 - [[thermoelastic-dmn]] — "Thermoelastic Deep Material Network"
 - [[transformer]] — Transformer Architecture
+- [[ukf-stochastic-stability]] — UKF Stochastic Stability — Modified UKF with Fading Measurements (Li, Yu, Xia, Yang 2017)
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
 - [[universal-approximation-theorem]] — Universal Approximation Theorem
@@ -257,6 +276,7 @@
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
+- [[youla-ren-stabilizing-controllers]] — Youla-REN — Learning over All Stabilizing Nonlinear Controllers (Wang, Barbara, Revay, Manchester 2021)
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
 
 ## Comparisons

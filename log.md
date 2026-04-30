@@ -5,6 +5,48 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-01] ingest | 6 papers — REN, Youla-REN, LBDN, RNN-SDP, UKF/EKF Stochastic Stability
+
+- **Raw sources (6):**
+  - raw/papers/rnn-sdp-lipschitz-certification-hamelbeck25.md — RNN Lipschitz SDP (arXiv:2509.17898)
+  - raw/papers/ren-recurrent-equilibrium-networks-revay21.md — REN: Contracting RNN (arXiv:2104.05942) ⭐
+  - raw/papers/youla-ren-stabilizing-nonlinear-control-wang21.md — Youla-REN (arXiv:2112.04219)
+  - raw/papers/lbdn-lipschitz-bounded-networks-wang23.md — LBDN: SDP Lipschitz bound (arXiv:2301.11526) ⭐
+  - raw/papers/modified-ukf-stochastic-stability-li17.md — UKF stability with fading (J. Franklin Inst. 2017)
+  - raw/papers/modified-ekf-stochastic-stability-fading-liu17.md — EKF stability over fading channels (Signal Processing 2017)
+- **Concept pages (6):**
+  - concepts/ren-recurrent-equilibrium-networks.md — REN (contracting + IQC 보장)
+  - concepts/youla-ren-stabilizing-controllers.md — Youla-REN (안정화 제어기 universal approximation)
+  - concepts/lbdn-lipschitz-bounded-networks.md — LBDN (Sandwich layer, SDP Lipschitz direct param)
+  - concepts/rnn-sdp-lipschitz-certification.md — RNN-SDP (Lipschitz certification via SDP)
+  - concepts/ukf-stochastic-stability.md — UKF stability with fading measurements
+  - concepts/ekf-stochastic-stability-fading.md — EKF stability over fading channels
+- **Entity pages (5):**
+  - entities/ruigang-wang.md — USyd, REN + LBDN (3편 공동 저자)
+  - entities/ian-r-manchester.md — USyd, REN + LBDN
+  - entities/max-revay.md — USyd, REN
+  - entities/paul-hamelbeck.md, entities/johannes-schiffer.md — RNN-SDP
+- **Backfill:** lure-stability.md → 6개 신규 개념 페이지 wikilink 추가
+- Total pages: 274 → 285
+- **RIGOR 관련성:** REN + Youla-REN = A+NN stability의 강력한 이론적 기반. LBDN의 direct LMI parameterization으로 spectral normalization 대체 가능. UKF/EKF stability으로 EM Q,R의 error boundedness 근거 마련.
+
+
+
+- **Raw sources (3):**
+  - raw/papers/hedesh-siami-positivity-stability-sector-bound-nn.md — Sector Bounds for NN (Hedesh & Siami 2024) arXiv:2406.12744
+  - raw/papers/shima-davydov-bullo-contractivity-lure-systems.md — Contractivity LMI for Lur'e Systems (Shima, Davydov & Bullo 2025) arXiv:2503.20177
+  - raw/papers/hedesh-local-stability-nn-feedback-positivity.md — Local Stability & ROA (Hedesh, Wafi & Siami 2025) arXiv:2505.22889
+- **Concept pages (4):**
+  - concepts/lure-stability.md — Lur'e Stability Analysis for A+NN Systems (통합 개념)
+  - concepts/hedesh-siami-sector-bound.md — Sector-Bounded NN Verification
+  - concepts/shima-contractivity-lure.md — Contractivity LMI for Lur'e Systems
+  - concepts/hedesh-local-stability-roa.md — Local Stability & ROA
+- **Entity pages (5):**
+  - entities/hamidreza-montazeri-hedesh.md, entities/milad-siami.md
+  - entities/ryotaro-shima.md, entities/alexander-davydov.md, entities/francesco-bullo.md
+- Total pages: 265 → 274
+- **RIGOR 관련성:** A+NN 구조 (x→A·x+NN(x))를 Lur'e system으로 공식화. Shima LMI로 total budget heuristic 대체 가능. EM Q,R + LMI stability = 강력한 stability argument.
+
 ## [2026-04-30] create | 2 new pages — EM-Kalman Smoother + Diff. Filter Variant 비교
 - concepts/em-kalman-smoother-noise-covariance.md — EM for analytical Q,R update (Shumway-Stoffer 1982)
 - comparisons/kf-ekf-ukf-srukf-differentiable.md — KF vs EKF vs UKF vs SR-UKF in differentiable filtering context
