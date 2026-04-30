@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-Zhiping Mao, Ameya D. Jagtap, George Em Karniadakis ([[brown-university|Brown University]])가 제안한 **Physics-Informed Neural Networks (PINNs)을 고속 압축성 유동(Euler 방정식)에 적용**한 연구이다^[raw/papers/1-s2.0-S0045782519306814-am.md]. 충격파(shock wave)가 존재하는 고속 유동에서 PINNs의 정/역문제 해결 능력을 체계적으로 평가한다.
+Zhiping Mao, Ameya D. Jagtap, [[george-em-karniadakis|George Em Karniadakis]] ([[brown-university|Brown University]])가 제안한 **Physics-Informed Neural Networks (PINNs)을 고속 압축성 유동(Euler 방정식)에 적용**한 연구이다^[raw/papers/1-s2.0-S0045782519306814-am.md]. 충격파(shock wave)가 존재하는 고속 유동에서 PINNs의 정/역문제 해결 능력을 체계적으로 평가한다.
 
 ## 방법론
 

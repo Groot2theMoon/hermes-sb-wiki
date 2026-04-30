@@ -10,7 +10,7 @@ confidence: high
 
 # Structured Inference Networks for Nonlinear SSMs (DMM)
 
-Krishnan, Shalit, Sontag (AAAI 2017) — DKF의 직접 후속. Inference network를 bidirectional RNN → **structured posterior**로 발전시키고, Pyro의 Deep Markov Model (DMM) 구현의 기반.
+[[rahul-krishnan|Krishnan]], [[uri-shalit|Shalit]], Sontag (AAAI 2017) — DKF의 직접 후속. Inference network를 bidirectional RNN → **structured posterior**로 발전시키고, Pyro의 Deep Markov Model (DMM) 구현의 기반.
 
 ## 핵심 기여
 

@@ -36,9 +36,9 @@ $$\mathcal{L}_{\text{total}} = \lambda_d \mathcal{L}_{\text{data}} + \lambda_p \
 
 | 방법 | 설명 | 핵심 논문 |
 |:---|:----|:---|
-| **Vanilla PINN** | PDE residual을 MSE 손실에 추가 | Raissi et al. (2019), *J. Comput. Phys.* |
+| **Vanilla PINN** | PDE residual을 MSE 손실에 추가 | [[maziar-raissi|Raissi]] et al. (2019), *J. Comput. Phys.* |
 | **Variational PINN (VPINN)** | 약형(weak form) 기반; 적분형 residual 사용 | Kharazmi et al. (2019) |
-| **cPINN / XPINN** | 도메인 분할(domain decomposition) + 병렬화 | Jagtap & Karniadakis (2020) |
+| **cPINN / XPINN** | 도메인 분할(domain decomposition) + 병렬화 | Jagtap & [[george-em-karniadakis|Karniadakis]] (2020) |
 | **fPINN** | Fractional PDE 용; 분수 미분 연산자 대응 | Pang et al. (2019) |
 | **nPINN** | Nonlocal PDE 용 | Pang et al. (2020) |
 
@@ -89,11 +89,11 @@ $$\mathcal{L}_{\text{total}} = \lambda_d \mathcal{L}_{\text{data}} + \lambda_p \
 | 연도 | 논문 | 기여 |
 |:---|:----|:---|
 | 1995 | Chen & Chen | Operator Universal Approximation Theorem (DeepONet의 이론적 기반) |
-| 2017 | Raissi et al. (arXiv) | Physics-Informed Neural Networks 최초 제안 |
-| 2019 | Raissi, Perdikaris, Karniadakis | PINN 프레임워크 정립 (*J. Comput. Phys.*, 378, 686-707) |
-| 2020 | Wang, Yu, Perdikaris | **NTK 관점**에서 PINN 학습 실패 분석 ([[pinn-failure-modes]]) |
-| 2020 | Jagtap & Karniadakis | cPINN / XPINN — domain decomposition |
-| 2021 | Lu, Jin, Karniadakis | DeepONet 정식 발표 ([[deeponet]]) |
+| 2017 | [[maziar-raissi|Raissi]] et al. (arXiv) | Physics-Informed Neural Networks 최초 제안 |
+| 2019 | [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]], [[george-em-karniadakis|Karniadakis]] | PINN 프레임워크 정립 (*J. Comput. Phys.*, 378, 686-707) |
+| 2020 | Wang, Yu, [[paris-perdikaris|Perdikaris]] | **NTK 관점**에서 PINN 학습 실패 분석 ([[pinn-failure-modes]]) |
+| 2020 | Jagtap & [[george-em-karniadakis|Karniadakis]] | cPINN / XPINN — domain decomposition |
+| 2021 | Lu, Jin, [[george-em-karniadakis|Karniadakis]] | DeepONet 정식 발표 ([[deeponet]]) |
 | 2021 | Li et al. | Fourier Neural Operator ([[fourier-neural-operator]]) |
 | 2021 | Yang et al. | B-PINN (Bayesian) ([[bayesian-pinns]]) |
 | 2022 | Krishnapriyan et al. | NTK nonlinear regime 분석 — PINN의 한계 확장 |

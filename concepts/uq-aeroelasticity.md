@@ -55,7 +55,7 @@ $$w(\mathbf{x}, \xi) = \sum_{k=0}^P \hat{w}_k(\mathbf{x}) \Psi_k(\xi)$$
 
 - $P+1 = (n+p)!/(n!p!)$ 개의 항 (total-order expansion)
 - **Hermite 다항식** → Gaussian RV에 최적 (exponential convergence)
-- **Generalized PC**: 비가우시안 RV에도 적용 가능 (Xiu & Karniadakis 2002)
+- **Generalized PC**: 비가우시안 RV에도 적용 가능 (Xiu & [[george-em-karniadakis|Karniadakis]] 2002)
 - **Intrusive vs Non-intrusive**: 코드 수정 필요 여부에 따라 구분
 
 ### 확률적 콜로케이션 (Stochastic Collocation)

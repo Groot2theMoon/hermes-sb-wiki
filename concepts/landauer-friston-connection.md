@@ -45,14 +45,14 @@ F = Energy - Entropy = -⟨ln p(y,θ)⟩_q + ⟨ln q(θ)⟩_q
 ### ② Maxwell's Demon — 두 이론을 잇는 가교
 
 - **Landauer → Bennett:** Charles Bennett이 Landauer 원리로 Maxwell's Demon 역설 해결. 데몬이 정보를 삭제할 때 k_B·T·ln2가 방출되므로 열역학 2법칙은 유지된다.
-- **Sagawa-Ueda (2008-09):** 정보-열역학적 피드백 — 측정 정보를 활용하면 Landauer 한계를 우회하여 실질적 일(work)을 얻을 수 있음을 증명.
+- **[[takahiro-sagawa|Sagawa]]-Ueda (2008-09):** 정보-열역학적 피드백 — 측정 정보를 활용하면 Landauer 한계를 우회하여 실질적 일(work)을 얻을 수 있음을 증명.
 - **Friston의 Active Inference:** 생물체 = Maxwell's Demon-like agent. 지각(측정) → 행동(정보-열역학적 피드백) → surprise 최소화(entropy 감소).
 
 ### ③ Friston이 Landauer를 인용하는 방식
 
 Friston (2006, 2009, 2010)은 생물학적 시스템이 "무질서 경향에 저항한다"고 서술할 때, 이는 Landauer가 정량화한 정보 처리의 열역학적 비용을 생물학적 맥락으로 일반화한 것이다. FEP의 핵심 motivation인 **"living systems resist the second law"**는 Landauer로부터 시작된 정보-열역학 전통에 뿌리를 둔다.
 
-## Sagawa-Ueda 피드백 — FEP로의 다리
+## [[takahiro-sagawa|Sagawa]]-Ueda 피드백 — FEP로의 다리
 
 2008년 Sagawa & Ueda는 다음을 증명했다:
 
@@ -64,7 +64,7 @@ Friston의 active inference는 이와 정확히 동일한 구조를 따른다:
 - **이득:** surprise 최소화 = entropy 최소화 = 생존
 
 ```
-Landauer → Sagawa-Ueda → Friston
+Landauer → [[takahiro-sagawa|Sagawa]]-Ueda → Friston
 
 정보 삭제    정보-열역학 피드백    생물학적 자기조직화
 (비용)      (측정으로 이득)      (지각 + 행동 통합)
@@ -77,7 +77,7 @@ Landauer → Sagawa-Ueda → Friston
 └─ 정보 삭제의 열역학적 하한: k_B·T·ln2 per bit
     └─ 명제: "Information is physical"
 
-층위 2: Bennett / Sagawa-Ueda (1982-2009)
+층위 2: Bennett / [[takahiro-sagawa|Sagawa]]-Ueda (1982-2009)
 └─ 정보-열역학 피드백: 측정 정보의 열역학적 효용
     └─ 명제: "Information can be converted to work"
 
@@ -95,7 +95,7 @@ Landauer → Sagawa-Ueda → Friston
 | AI의 에너지 효율성 이론적 한계 | Landauer (하한) + FEP (구조적 원리) |
 | **Reverse engineering biological intelligence** | FEP → Landauer (FEP가 왜 정보를 효율적으로 처리하는지, Landauer가 그 물리적 한계는 무엇인지) |
 | 계산의 물리학 (Physics of Computation) | Landauer (기본) + FEP (생물학적 확장) |
-| Active inference robotics | FEP + Sagawa-Ueda (정보-열역학적 최적성) |
+| Active inference robotics | FEP + [[takahiro-sagawa|Sagawa]]-Ueda (정보-열역학적 최적성) |
 
 ## 결론
 

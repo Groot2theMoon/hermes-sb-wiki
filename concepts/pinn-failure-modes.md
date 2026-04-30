@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Wang, Yu, Perdikaris (2021)**는 [[neural-tangent-kernel|NTK (Neural Tangent Kernel)]] 이론을 통해 **PINN이 왜, 언제 실패하는지**를 수학적으로 분석했다. 핵심 발견: PINN 학습 실패는 PDE 각 항의 NTK eigenvalue 분포 불균형에서 비롯된다.
+**Wang, Yu, [[paris-perdikaris|Perdikaris]] (2021)**는 [[neural-tangent-kernel|NTK (Neural Tangent Kernel)]] 이론을 통해 **PINN이 왜, 언제 실패하는지**를 수학적으로 분석했다. 핵심 발견: PINN 학습 실패는 PDE 각 항의 NTK eigenvalue 분포 불균형에서 비롯된다.
 
 ## 핵심 발견
 

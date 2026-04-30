@@ -538,3 +538,14 @@
 - **Raw files (11):** raw/papers/ 11개 추가
 - **Index:** full rebuild (231 pages)
 - **Total pages:** 231 (was 221, +10)
+
+## [2026-04-29] backfill | Entity + Wikilink + Comparison
+- **New Entities (3):** [[takahiro-sagawa]], [[rahul-krishnan]], [[uri-shalit]]
+- **Wikilink backfill (11 edits):**
+  - Karniadakis: bayesian-pinns, physics-informed, pinn-high-speed-flows, uq-aeroelasticity
+  - Perdikaris: physics-informed-neural-networks, physics-informed, pinn-failure-modes
+  - Raissi: physics-informed-neural-networks, physics-informed, universal-differential-equations
+  - Sagawa: landauer-friston-connection
+  - Krishnan + Shalit: deep-kalman-filter, structured-inference-networks
+- **New Comparison (1):** [[dkf-vs-differentiable-enkf]] — DKF vs Differentiable Ensemble KF
+- **Total pages:** 235 (was 231, +4)

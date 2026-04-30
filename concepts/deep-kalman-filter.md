@@ -10,7 +10,7 @@ confidence: high
 
 # Deep Kalman Filter (DKF)
 
-Krishnan, Shalit, Sontag (2015)가 제안한, **VAE의 variational inference + Kalman filter의 temporal structure**를 결합한 프레임워크. 고전적 Kalman filter의 transition/emission을 deep neural network로 대체하고, variational inference로 학습 가능한 일반 알고리즘을 제공한다.
+[[rahul-krishnan|Krishnan]], [[uri-shalit|Shalit]], Sontag (2015)가 제안한, **VAE의 variational inference + Kalman filter의 temporal structure**를 결합한 프레임워크. 고전적 Kalman filter의 transition/emission을 deep neural network로 대체하고, variational inference로 학습 가능한 일반 알고리즘을 제공한다.
 
 ## 동기
 
@@ -93,4 +93,4 @@ DKF는 **VAE의 temporal 확장**이면서, **Friston FEP의 hierarchical dynami
 
 ## References
 
-- Krishnan, R. G., Shalit, U., & Sontag, D. (2015). Deep Kalman Filters. *arXiv:1511.05121*.
+- [[rahul-krishnan|Krishnan]], R. G., [[uri-shalit|Shalit]], U., & Sontag, D. (2015). Deep Kalman Filters. *arXiv:1511.05121*.

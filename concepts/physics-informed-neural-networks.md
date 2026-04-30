@@ -1,5 +1,5 @@
 ---
-title: "Physics-Informed Neural Networks (PINN) — Raissi, Perdikaris & Karniadakis (2019)"
+title: "Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)"
 created: 2026-04-28
 updated: 2026-04-29
 type: concept
@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**PINN** — Raissi, Perdikaris, Karniadakis (2019), *Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations*, J. Computational Physics, 378, 686–707. **~7,000회 인용.**
+**PINN** — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]], Karniadakis (2019), *Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations*, J. Computational Physics, 378, 686–707. **~7,000회 인용.**
 
 물리 법칙(PDE)을 신경망 학습에 **직접 통합**하여, 데이터 없이도 PDE 해를 근사할 수 있는 최초의 실용적 프레임워크. AI/ML × Mechanics 융합 분야의 **기폭제** 역할을 한 핵심 논문.
 
@@ -83,7 +83,7 @@ $$\mathcal{L}_{total} = \mathcal{L}_{PDE} + \mathcal{L}_{data}$$
 ## References
 - [[universal-differential-equations]]
 
-- Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations." *J. Comput. Phys.*, 378, 686–707.
+- [[maziar-raissi|Raissi]], M., [[paris-perdikaris|Perdikaris]], P., & Karniadakis, G. E. (2019). "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations." *J. Comput. Phys.*, 378, 686–707.
 - [[maziar-raissi]] — PINN 제1저자
 - [[paris-perdikaris]] — PINN 공동 창시자
 - [[george-em-karniadakis]] — PINN, DeepONet 공동 창시자 (Brown CRUNCH)

@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-**Yang, Meng, Karniadakis (2019)**가 제안한 B-PINN은 PINN의 결정론적 예측을 **Bayesian 추론 프레임워크**로 확장하여 예측의 **불확실성 정량화(Uncertainty Quantification)**를 가능하게 한다. HMC (Hamiltonian Monte Carlo)로 posterior를 샘플링한다.
+**Yang, Meng, [[george-em-karniadakis|Karniadakis]] (2019)**가 제안한 B-PINN은 PINN의 결정론적 예측을 **Bayesian 추론 프레임워크**로 확장하여 예측의 **불확실성 정량화(Uncertainty Quantification)**를 가능하게 한다. HMC (Hamiltonian Monte Carlo)로 posterior를 샘플링한다.
 
 ## 핵심 아이디어
 

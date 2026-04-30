@@ -2,7 +2,7 @@
 > Content catalog.
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 231
+> Last updated: 2026-04-29 | Total pages: 235
 
 ## Entities
 
@@ -54,6 +54,7 @@
 - [[paris-perdikaris]] — Paris Perdikaris
 - [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
+- [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[ross-girshick]] — Ross Girshick
 - [[sakana-ai]] — Sakana AI
 - [[sam-roweis]] — Sam T. Roweis
@@ -62,8 +63,10 @@
 - [[s-keshav]] — S. Keshav
 - [[stanislav-fort]] — Stanislav Fort
 - [[steven-g-johnson]] — Steven G. Johnson
+- [[takahiro-sagawa]] — Takahiro Sagawa — Physicist, Information Thermodynamics
 - [[takeru-miyato]] — Takeru Miyato
 - [[university-of-sheffield]] — University of Sheffield
+- [[uri-shalit]] — Uri Shalit — ML Researcher, Causal Inference for Healthcare
 - [[yang-song]] — Yang Song
 - [[yann-lecun]] — Yann LeCun
 - [[yifan-zhang]] — Yifan Zhang
@@ -177,7 +180,7 @@
 - [[orthogonal-projection-regularization]] — Orthogonal Projection Regularization for Efficient Model Augmentation
 - [[pac-bayesian-epistemic-uncertainty]] — PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
-- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — Raissi, Perdikaris & Karniadakis (2019)
+- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)
 - [[physics-informed]] — Physics-Informed Machine Learning
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
@@ -228,6 +231,7 @@
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
 
 ## Comparisons
+- [[dkf-vs-differentiable-enkf]] — Deep Kalman Filter vs Differentiable Ensemble Kalman Filter — Temporal Inference 비교
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
 - [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
 - [[koh-vs-deep-uq]] — KOH Bayesian Calibration vs Deep Learning UQ Methods — 비교
