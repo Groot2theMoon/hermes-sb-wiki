@@ -37,3 +37,5 @@ REN의 contracting property는 A+NN 구조의 안정성 보장과 직접 연결:
 ## Related
 - [[youla-ren-stabilizing-controllers]] — Youla-REN: 모든 안정화 비선형 제어기 학습
 - [[lure-stability]] — Lur'e stability 분석
+- [[lbdn-lipschitz-bounded-networks]] — LBDN: SDP Lipschitz bound
+- [[lipkernel-dissipative-cnn]] — LipKernel: dissipativity 기반 CNN

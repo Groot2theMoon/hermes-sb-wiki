@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-01 | Total pages: 289
+> Last updated: 2026-05-02 | Total pages: 298
 
 ## Entities
 
@@ -17,24 +17,29 @@
 - [[anthony-ohagan]] — Anthony O'Hagan
 - [[ashish-vaswani]] — Ashish Vaswani
 - [[balaji-lakshminarayanan]] — Balaji Lakshminarayanan
+- [[bernd-prach]] — Bernd Prach
 - [[bernhard-scholkopf]] — Bernhard Schölkopf
 - [[brown-university]] — Brown University — CRUNCH Group
 - [[caltech]] — Caltech — AI × Science 리더
+- [[christoph-h-lampert]] — Christoph H. Lampert
 - [[david-sontag]] — David Sontag — MIT Professor, ML for Healthcare
 - [[deepseek]] — DeepSeek
 - [[diederik-kingma]] — Diederik Kingma
-- [[dongchu-sun]] — Dongchu Sun — UNL, Objective Bayesian, generalized prior class
+- [[dongchu-sun]] — Dongchu Sun
 - [[dongil-shin]] — Shin Dongil (신동일)
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
+- [[fabio-brau]] — Fabio Brau
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
 - [[felix-berkenkamp]] — Felix Berkenkamp — ETH Zürich Researcher, Safe Learning
 - [[felix-gers]] — Felix Gers
 - [[francesco-bullo]] — Francesco Bullo
+- [[frank-allgoewer]] — Frank Allgöwer
 - [[frank-lu]] — Frank K. Lu
 - [[fudan-university]] — Fudan University
 - [[geoffrey-hinton]] — Geoffrey Hinton
 - [[george-em-karniadakis]] — George Em Karniadakis
+- [[giorgio-buttazzo]] — Giorgio Buttazzo
 - [[google-deepmind]] — Google DeepMind
 - [[guglielmo-scovazzi]] — Guglielmo Scovazzi
 - [[guy-revach]] — Guy Revach — Differentiable Filtering & Model-Based Deep Learning
@@ -42,8 +47,8 @@
 - [[hongkai-dai]] — Hongkai Dai — Toyota Research Institute, NN Control
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[ian-r-manchester]] — Ian R. Manchester
+- [[james-o-berger]] — James O. Berger
 - [[johannes-schiffer]] — Johannes Schiffer
-- [[james-o-berger]] — James O. Berger — Duke, Objective Bayesian & Reference Prior
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
 - [[jun-liu]] — Jun Liu — University of Waterloo, PINN & Koopman
@@ -68,13 +73,14 @@
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
 - [[openai]] — OpenAI
 - [[paris-perdikaris]] — Paris Perdikaris
+- [[patricia-pauli]] — Patricia Pauli
 - [[paul-hamelbeck]] — Paul Hamelbeck
 - [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[ross-girshick]] — Ross Girshick
-- [[ruoyong-yang]] — Ruoyong Yang — Purdue, Reference Prior for Covariance Matrix
 - [[ruigang-wang]] — Ruigang Wang (王瑞刚)
+- [[ruoyong-yang]] — Ruoyong Yang
 - [[russ-tedrake]] — Russ Tedrake — MIT / TRI, Robotics & Control
 - [[ryotaro-shima]] — Ryotaro Shima
 - [[sakana-ai]] — Sakana AI
@@ -98,6 +104,7 @@
 
 ## Concepts
 
+- [[1-lipschitz-layers-comparison]] — 1-Lipschitz Layers Compared — Comprehensive Benchmark of Lipschitz Constraint Methods
 - [[active-inference-ai-science]] — Active Inference AI Systems for Scientific Discovery
 - [[adaptive-neural-ukf]] — Adaptive Neural UKF — ProcessNet for Noise Covariance Learning (Levy & Klein 2025)
 - [[adaptive-online-smoother]] — Adaptive Online Smoother — Closed-Form Solutions with Information-Theoretic Lag Selection
@@ -105,6 +112,7 @@
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
+- [[aol-almost-orthogonal-layers]] — AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks
 - [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
@@ -190,6 +198,7 @@
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
 - [[lesnets-pino-wall-turbulence]] — LESnets — Physics-Informed Neural Operator for Wall-Bounded Turbulence
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
+- [[lipkernel-dissipative-cnn]] — LipKernel — Lipschitz-Bounded CNNs via Dissipative Layers (2-D Roesser Parameterization)
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)

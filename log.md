@@ -709,3 +709,29 @@
 - Total pages: 289 → 289 (update only, no new pages)
 - **Outbound link deficiency fixed (6):** adaptive-online-smoother, esn-as-ssm, genai-stock-selection, neural-mpc-terminal-constraint, neural-thermodynamic-integration, thermoelastic-dmn, waste-fiber-acoustic-absorber
 - **Index rebuilt:** 285 total pages (86 entities + 184 concepts + 15 comparisons)
+
+## [2026-05-02] ingest | 3 papers — 1-Lipschitz Neural Networks (AOL + LipKernel + Comparison)
+
+- **Raw sources (3):**
+  - raw/papers/aol-almost-orthogonal-layers.md — AOL: Almost-Orthogonal Layers (Prach & Lampert, ECCV 2022, arXiv:2208.03160)
+  - raw/papers/lipkernel-dissipative-cnn.md — LipKernel: Lipschitz-Bounded CNNs via Dissipative Layers (Pauli, Wang, Manchester, Allgöwer, *Automatica* 2026, arXiv:2410.22258)
+  - raw/papers/1-lipschitz-layers-compared.md — 1-Lipschitz Layers Compared (Prach, Brau, Buttazzo, Lampert, 2023, arXiv:2311.16833)
+- **Concept pages (3):**
+  - concepts/aol-almost-orthogonal-layers.md — Spectral rescaling 기반 general-purpose Lipschitz layer
+  - concepts/lipkernel-dissipative-cnn.md — 2-D Roesser LMI dissipativity 기반 CNN kernel param.
+  - concepts/1-lipschitz-layers-comparison.md — 6개 메트릭 종합 비교 + 선택 가이드라인
+- **Entity pages (6):**
+  - entities/bernd-prach.md — ISTA, AOL + 비교 연구 창시자
+  - entities/christoph-h-lampert.md — ISTA Professor, Lipschitz network 연구 지도자
+  - entities/patricia-pauli.md — TU/e, LipKernel 1저자
+  - entities/frank-allgoewer.md — University of Stuttgart, 제어 이론 권위자
+  - entities/fabio-brau.md — Scuola Sant'Anna, 1-Lipschitz 비교 공동 1저자
+  - entities/giorgio-buttazzo.md — Scuola Sant'Anna, 실시간 시스템 권위자
+- **Backfill (5 pages updated):**
+  - entities/ian-r-manchester.md — LipKernel 추가
+  - entities/ruigang-wang.md — LipKernel 추가
+  - concepts/lbdn-lipschitz-bounded-networks.md — AOL/LipKernel 비교표 + Related 추가
+  - concepts/ren-recurrent-equilibrium-networks.md — LBDN/LipKernel Related 추가
+  - concepts/shima-contractivity-lure.md — AOL/LipKernel/Comparison Related 추가
+- **RIGOR 관련성:** AOL → A+NN spectral norm 제약, LipKernel → LMI dissipativity = RIGOR Lur'e LMI와 방법론적 평행, Comparison → LBDN/AOL/LipKernel 선택 근거
+- Total pages: 289 → 298

@@ -22,6 +22,7 @@ confidence: medium
 - (2021) [[ren-recurrent-equilibrium-networks|REN: Recurrent Equilibrium Networks]] — arXiv:2104.05942
 - (2021) [[youla-ren-stabilizing-controllers|Youla-REN: Stabilizing Nonlinear Controllers]] — arXiv:2112.04219
 - (2023) [[lbdn-lipschitz-bounded-networks|LBDN: Lipschitz-Bounded Deep Networks]] — ICML 2023, arXiv:2301.11526
+- (2024) [[lipkernel-dissipative-cnn|LipKernel: Lipschitz-Bounded CNNs via Dissipative Layers]] — *Automatica* 188 (2026), arXiv:2410.22258
 
 **협력:** [[ian-r-manchester]], [[max-revay]]
 

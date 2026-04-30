@@ -53,3 +53,6 @@ RIGOR의 A+NN 구조 (x→A·x + NN(x)):
 ## Related
 - [[lure-stability]] — Lur'e stability 통합 개념
 - [[hedesh-siami-sector-bound]] — NN sector bound
+- [[aol-almost-orthogonal-layers]] — AOL: spectral norm rescaling
+- [[lipkernel-dissipative-cnn]] — LipKernel: dissipativity LMI
+- [[1-lipschitz-layers-comparison]] — 1-Lipschitz 방법 종합 비교

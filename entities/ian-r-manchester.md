@@ -22,5 +22,6 @@ confidence: medium
 - (2021) [[ren-recurrent-equilibrium-networks|REN]] — arXiv:2104.05942
 - (2021) [[youla-ren-stabilizing-controllers|Youla-REN]] — arXiv:2112.04219
 - (2023) [[lbdn-lipschitz-bounded-networks|LBDN]] — ICML 2023, arXiv:2301.11526
+- (2024) [[lipkernel-dissipative-cnn|LipKernel]] — *Automatica* 188 (2026), arXiv:2410.22258
 
 **협력:** [[ruigang-wang]], [[max-revay]]
