@@ -522,3 +522,19 @@
 - **Tags used:** classic-ai, dimensionality-reduction, learning, algorithms, kernel-method, survey
 - **Total wiki pages:** 221 → 222 (+1)
 - **Total pages:** 221 (was 220, +1)
+
+## [2026-04-29] ingest | Batch: 11 papers from arXiv/NeurIPS (information thermo + dynamics + active inference)
+- **New Concepts (10):**
+  - [[structured-inference-networks]] — DMM (Krishnan AAAI'17): structured VI for SSMs
+  - [[hamiltonian-neural-networks]] — HNN (Greydanus NeurIPS'19): physics-embedded dynamics
+  - [[neural-odes]] — Neural ODEs (Chen NeurIPS'18): continuous-depth dynamics
+  - [[sagawa-ueda-information-thermodynamics]] — Sagawa-Ueda 2008 + 2011 review: 정보-열역학 가교
+  - [[structured-hybrid-mechanistic-models]] — Physics + ML for intervention estimation
+  - [[active-inference-ai-science]] — Active inference for scientific discovery
+  - [[brain-active-inference]] — Embodied AI via active inference
+  - [[deep-variational-smc]] — Particle filter + VI (non-Gaussian posterior)
+  - [[factorized-inference-dmm]] — Multimodal DMM with incomplete data
+  - [[differentiable-enkf]] — Differentiable Ensemble KF for robotics (사이드 프로젝트 참조)
+- **Raw files (11):** raw/papers/ 11개 추가
+- **Index:** full rebuild (231 pages)
+- **Total pages:** 231 (was 221, +10)
