@@ -1,5 +1,11 @@
 
 
+---
+source_url: tu-berlin-ml2-2023
+ingested: 2026-05-01
+sha256: d461e9e0459ecacaae82ee2e74395fa61dd66b902acd76de62069e7461cdf010
+---
+
 # Exercise Sheet 3
 
 Recall: For a sample of  $d_1$ - and  $d_2$ -dimensional data of size  $N$ , given as two data matrices  $X \in \mathbb{R}^{d_1 \times N}$ ,  $Y \in \mathbb{R}^{d_2 \times N}$  (assumed to be centered), canonical correlation analysis (CCA) finds a one-dimensional projection maximizing the cross-correlation for constant auto-correlation. The primal optimization problem is:

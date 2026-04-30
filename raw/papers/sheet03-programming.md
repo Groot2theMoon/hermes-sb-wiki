@@ -1,5 +1,11 @@
 
 
+---
+source_url: tu-berlin-ml2-2023
+ingested: 2026-05-01
+sha256: b6c0a1cf5d90e6414e5882ff67fc87bb09600f85b9a7dae0a47358e8846f7270
+---
+
 # Canonical Correlation Analysis
 
 In this exercise, we consider canonical correlation analysis (CCA) on two simple problems, one in low dimensions and one in high dimensions. The goal is to implement the primal and dual versions of CCA to handle these two different cases. The first dataset consists of two trajectories in two dimensions. The dataset is extracted and plotted below. The first data points are shown in dark blue, and the last ones are shown in yellow.

@@ -702,5 +702,10 @@
   - [[lesnets-pino-wall-turbulence]] → fourier-neural-operator
   - [[pisml-sparse-neural]] → surrogate-model
   - [[rnn-enhanced-ukf]] → state-space-model
+
+## [2026-05-01] update+ingest | ML2 Sheet 3 — CCA Exercises
+- **Raw sources (2):** raw/papers/sheet03.md, raw/papers/sheet03-programming.md (from git pull)
+- **Updated (1):** concepts/canonical-correlation-analysis.md — block matrix eigenvalue form, representer theorem details, CCA ↔ LS regression equivalence
+- Total pages: 289 → 289 (update only, no new pages)
 - **Outbound link deficiency fixed (6):** adaptive-online-smoother, esn-as-ssm, genai-stock-selection, neural-mpc-terminal-constraint, neural-thermodynamic-integration, thermoelastic-dmn, waste-fiber-acoustic-absorber
 - **Index rebuilt:** 285 total pages (86 entities + 184 concepts + 15 comparisons)
