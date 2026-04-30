@@ -1,3 +1,14 @@
+---
+title: "Bayesian analysis of the covariance matrix of a multivariate normal distribution with a new class of priors"
+journal: "Annals of Statistics, 48(4), 2285-2312"
+authors: ["James O. Berger", "Dongchu Sun", "Chengyuan Song"]
+year: 2020
+source: paper
+ingested: 2026-05-01
+sha256: 08ad3fdf28872b8cae2102ef81475c254e6cbee32de22f8db5b2e5d1b83d93b3
+conversion: pymupdf4llm
+---
+
 
 
 # BAYESIAN ANALYSIS OF THE COVARIANCE MATRIX OF A MULTIVARIATE NORMAL DISTRIBUTION WITH A NEW CLASS OF PRIORS

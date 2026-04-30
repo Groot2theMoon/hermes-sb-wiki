@@ -1,3 +1,14 @@
+---
+title: "Estimation of a Covariance Matrix Using the Reference Prior"
+journal: "Annals of Statistics, 22(3), 1195-1232"
+authors: ["Ruoyong Yang", "James O. Berger"]
+year: 1994
+source: paper
+ingested: 2026-05-01
+sha256: 9768901aeacfcdf6f3640f48e8d720e53c6ee71c6218e4ff141c5758b583053c
+conversion: pymupdf4llm
+---
+
 
 
 # ESTIMATION OF A COVARIANCE MATRIX USING THE REFERENCE PRIOR<sup>1</sup>

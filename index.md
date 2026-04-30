@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-01 | Total pages: 285
+> Last updated: 2026-05-01 | Total pages: 289
 
 ## Entities
 
@@ -23,6 +23,7 @@
 - [[david-sontag]] — David Sontag — MIT Professor, ML for Healthcare
 - [[deepseek]] — DeepSeek
 - [[diederik-kingma]] — Diederik Kingma
+- [[dongchu-sun]] — Dongchu Sun — UNL, Objective Bayesian, generalized prior class
 - [[dongil-shin]] — Shin Dongil (신동일)
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
@@ -42,6 +43,7 @@
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[ian-r-manchester]] — Ian R. Manchester
 - [[johannes-schiffer]] — Johannes Schiffer
+- [[james-o-berger]] — James O. Berger — Duke, Objective Bayesian & Reference Prior
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
 - [[jun-liu]] — Jun Liu — University of Waterloo, PINN & Koopman
@@ -71,6 +73,7 @@
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[ross-girshick]] — Ross Girshick
+- [[ruoyong-yang]] — Ruoyong Yang — Purdue, Reference Prior for Covariance Matrix
 - [[ruigang-wang]] — Ruigang Wang (王瑞刚)
 - [[russ-tedrake]] — Russ Tedrake — MIT / TRI, Robotics & Control
 - [[ryotaro-shima]] — Ryotaro Shima
@@ -171,6 +174,7 @@
 - [[isentropic-relations]] — Isentropic Relations — Thermodynamic Derivation for Gas Dynamics
 - [[isomap]] — Isomap — Isometric Feature Mapping
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
+- [[jeffreys-prior-dimension-scaling]] — Jeffreys Prior Dimension Scaling — 표준 vs RIGOR 변형 분석
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
 - [[kalmannet]] — KalmanNet — Neural Network Aided Kalman Filtering for Partially Known Dynamics
 - [[kennedy-ohagan-calibration]] — Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration

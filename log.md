@@ -5,6 +5,27 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-01] ingest | 3 raw papers — Covariance Prior References (Berger, Yang, Alvarez)
+
+- **Raw sources (3):**
+  - raw/papers/1408.4050v2.md — Alvarez, Niemi & Simpson 2014: Bayesian inference for covariance matrix
+  - raw/papers/yang.md — Yang & Berger 1994: Reference Prior for Covariance Matrix (Ann. Statist.)
+  - raw/papers/Download.md — Berger, Sun & Song 2020: New class of priors (Ann. Statist.)
+- **Entity pages (3):**
+  - entities/james-o-berger.md — Duke, objective prior 이론 창시자
+  - entities/dongchu-sun.md — UNL, generalized prior class
+  - entities/ruoyong-yang.md — Purdue, reference prior
+- **Backfill:** jeffreys-prior-dimension-scaling.md → 3개 entity wikilink 추가
+- Total pages: 286 → 289
+
+## [2026-05-01] create | concepts/jeffreys-prior-dimension-scaling.md — 표준 vs RIGOR 변형 분석
+
+- RIGOR Jeffreys 변형 `(d+1)/(2d)·log|det(Q)|`의 이론적 정당성 분석
+- Yang & Berger (1994) reference prior, Berger-Sun-Song (2020) generalized prior class와의 연결
+- Diagonal Q에서 full-matrix Jeffreys는 d=100에서 계수 50.5 (과도), RIGOR 변형은 0.505
+- 결론: Berger-Sun-Song framework 내에서 principled한 generalized prior
+- Total pages: 285 → 286
+
 ## [2026-05-01] ingest | 6 papers — REN, Youla-REN, LBDN, RNN-SDP, UKF/EKF Stochastic Stability
 
 - **Raw sources (6):**
