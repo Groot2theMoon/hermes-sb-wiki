@@ -133,3 +133,6 @@ Friston이 nrn2787에서 제시한 통합:
 
 - Friston, K. (2009). The free-energy principle: a rough guide to the brain? *Trends in Cognitive Sciences*, 13(7), 293-301.
 - Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11, 127-138. doi:10.1038/nrn2787
+
+
+- [[brain-active-inference]] — BRAIN — Active Inference AI Systems

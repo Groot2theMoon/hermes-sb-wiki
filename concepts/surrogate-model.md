@@ -33,3 +33,6 @@ AI×Mechanics 연구의 핵심 등장배경: FEM 해석 1회에 수 시간 → s
 - [[deeponet]]
 - [[deep-material-network]]
 - [[deep-kernel-multitask-gp-vehicle-dynamics]]
+
+
+- [[structured-hybrid-mechanistic-models]] — Structured Hybrid Mechanistic Models

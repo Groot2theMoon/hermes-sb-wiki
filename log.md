@@ -568,3 +568,12 @@
   - koopman-resolvent-dynamics: [[jun-liu]]
 - **Key insight:** PINN Lyapunov + Resolvent + Koopman Stability는 모두 **Jun Liu (Waterloo)** 그룹
 - **Total pages:** 239 → **246** (4 concepts + 7 entities)
+
+## [2026-04-30] lint --fix | 17 issues resolved
+- **SCHEMA.md:** Added 7 missing tags (safe-learning, learning-theory, bayesian-optimization, neural-network-control, autonomous-systems, manipulation, planning)
+- **Entity pages fixed (7):** andreas-krause, felix-berkenkamp, hongkai-dai, jun-liu, marco-pavone, russ-tedrake, spencer-richards — added title, created, updated, sources fields; normalized tags (control→control-system, neural-networks→neural-network)
+- **Broken wikilinks fixed (3):** canonical-correlation-analysis: [[dimensionality-reduction]]→차원 축소, [[independent-component-analysis]]→독립 성분 분석; deep-variational-smc: [[enhancing-state-estimation-robots]]→[[differentiable-enkf]]
+- **New page created (1):** concepts/principal-component-analysis.md (stub, resolves broken link from canonical-correlation-analysis)
+- **Orphan cross-links added (5):** deep-kalman-filter→factorized-inference-dmm, dkf-vs-differentiable-enkf; free-energy-principle→brain-active-inference; kernel-pca→canonical-correlation-analysis; surrogate-model→structured-hybrid-mechanistic-models; sagawa-ueda-information-thermodynamics→epiplexity
+- **Index rebuilt from filesystem:** 247 total pages (Entities 74, Concepts 159, Comparisons 14)
+- **Removed stale:** queries/README.md

@@ -37,3 +37,6 @@ Sagawa-Ueda 피드백 구조:
 ## 관련 페이지
 - [[landauer-friston-connection]] — Landauer → Sagawa-Ueda → Friston 연결
 - [[free-energy-principle]] — FEP가 이 구조를 생물학적으로 확장
+
+
+- [[epiplexity]] — Epiplexity — Structural Information for Bounded Observers

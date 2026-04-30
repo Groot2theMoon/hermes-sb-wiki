@@ -63,8 +63,8 @@ Kernel trick을 적용하여 CCA를 비선형 의존성 포착 및 고차원 데
 
 - [[principal-component-analysis]] — 분산 최대화 vs 상관관계 최대화
 - [[kernel-methods]] — kernel trick의 일반적 원리
-- [[dimensionality-reduction]] — 차원 축소 방법론
-- [[independent-component-analysis]] — 독립 성분 분석 (CCA와의 관계)
+- 차원 축소 — 차원 축소 방법론
+- 독립 성분 분석 — 독립 성분 분석 (CCA와의 관계)
 
 ## References
 

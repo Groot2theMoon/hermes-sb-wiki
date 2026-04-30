@@ -23,4 +23,4 @@ Particle filter (Sequential Monte Carlo) + variational inference를 결합하여
 
 ## 관련 페이지
 - [[deep-kalman-filter]] — 가우시안 variational inference
-- [[enhancing-state-estimation-robots]] — Differentiable EnKF (또 다른 particle-free 대안)
+- [[differentiable-enkf|Differentiable EnKF]] — Differentiable EnKF (또 다른 particle-free 대안)

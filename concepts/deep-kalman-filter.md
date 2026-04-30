@@ -94,3 +94,7 @@ DKF는 **VAE의 temporal 확장**이면서, **Friston FEP의 hierarchical dynami
 ## References
 
 - [[rahul-krishnan|Krishnan]], R. G., [[uri-shalit|Shalit]], U., & Sontag, D. (2015). Deep Kalman Filters. *arXiv:1511.05121*.
+
+
+- [[factorized-inference-dmm]] — Factorized Inference in Deep Markov Models
+- [[dkf-vs-differentiable-enkf]] — DKF vs Differentiable EnKF 비교

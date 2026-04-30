@@ -1,13 +1,14 @@
 # Wiki Index
-> Content catalog.
-> Read this first.
+
+> Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-30 | Total pages: 239
+> Last updated: 2026-04-30 | Total pages: 247
 
 ## Entities
 
 - [[albert-gu]] — Albert Gu
 - [[allen-institute-for-ai]] — Allen Institute for AI
+- [[andreas-krause]] — Andreas Krause — ETH Zürich Professor, Safe Learning
 - [[andrew-norris]] — Andrew Norris
 - [[andrew-stuart]] — Andrew Stuart
 - [[andrii-mironchenko]] — Andrii Mironchenko
@@ -25,6 +26,7 @@
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
+- [[felix-berkenkamp]] — Felix Berkenkamp — ETH Zürich Researcher, Safe Learning
 - [[felix-gers]] — Felix Gers
 - [[frank-lu]] — Frank K. Lu
 - [[fudan-university]] — Fudan University
@@ -32,9 +34,11 @@
 - [[george-em-karniadakis]] — George Em Karniadakis
 - [[google-deepmind]] — Google DeepMind
 - [[guglielmo-scovazzi]] — Guglielmo Scovazzi
+- [[hongkai-dai]] — Hongkai Dai — Toyota Research Institute, NN Control
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
+- [[jun-liu]] — Jun Liu — University of Waterloo, PINN & Koopman
 - [[kaiming-he]] — Kaiming He
 - [[karl-friston]] — Karl Friston — Neuroscientist, Free Energy Principle Creator
 - [[kaushik-bhattacharya]] — Kaushik Bhattacharya
@@ -45,6 +49,7 @@
 - [[lawrence-saul]] — Lawrence K. Saul
 - [[leland-mcinnes]] — Leland McInnes
 - [[lu-lu]] — Lu Lu
+- [[marco-pavone]] — Marco Pavone — Stanford University, Autonomous Systems
 - [[marin-soljacic]] — Marin Soljačić
 - [[max-tegmark]] — Max Tegmark
 - [[maziar-raissi]] — Maziar Raissi
@@ -56,11 +61,13 @@
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[ross-girshick]] — Ross Girshick
+- [[russ-tedrake]] — Russ Tedrake — MIT / TRI, Robotics & Control
 - [[sakana-ai]] — Sakana AI
 - [[sam-roweis]] — Sam T. Roweis
 - [[sepp-hochreiter]] — Sepp Hochreiter
 - [[sergey-zhdan]] — Sergey A. Zhdan
 - [[s-keshav]] — S. Keshav
+- [[spencer-richards]] — Spencer M. Richards — ETH Zürich / Stanford, Lyapunov NN
 - [[stanislav-fort]] — Stanislav Fort
 - [[steven-g-johnson]] — Steven G. Johnson
 - [[takahiro-sagawa]] — Takahiro Sagawa — Physicist, Information Thermodynamics
@@ -75,6 +82,7 @@
 - [[zongyi-li]] — Zongyi Li
 
 ## Concepts
+
 - [[active-inference-ai-science]] — Active Inference AI Systems for Scientific Discovery
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
@@ -194,6 +202,7 @@
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
+- [[principal-component-analysis]] — Principal Component Analysis (PCA) — 선형 차원 축소
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)
 - [[pseudo-hamiltonian-neural-networks]] — Pseudo-Hamiltonian Neural Networks (PHNN) for PDEs
 - [[quadratic-iss-lyapunov]] — Quadratic ISS Lyapunov Functions for Linear Analytic Systems
@@ -235,6 +244,7 @@
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
 
 ## Comparisons
+
 - [[dkf-vs-differentiable-enkf]] — Deep Kalman Filter vs Differentiable Ensemble Kalman Filter — Temporal Inference 비교
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
 - [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교

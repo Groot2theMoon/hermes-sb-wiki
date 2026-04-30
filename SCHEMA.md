@@ -122,6 +122,14 @@ sha256: <hex digest of the raw content below the frontmatter>
 - **certificate-functions:** Control barrier functions (CBF), control Lyapunov functions (CLF)
 - **state-estimation:** State estimation, observers, filtering theory
 
+- **safe-learning:** Safe learning, constrained exploration, stability-guaranteed learning
+- **learning-theory:** Learning theory, generalization bounds, sample complexity
+- **bayesian-optimization:** Bayesian optimization, acquisition functions, GP-based optimization
+- **neural-network-control:** Neural network-based control, learned controllers
+- **autonomous-systems:** Autonomous systems, self-driving, autonomous robotics
+- **manipulation:** Robotic manipulation, grasping, object handling
+- **planning:** Motion planning, path planning, task planning
+
 ### Adjacent / Foundational Domains
 - **neuroscience:** Brain theories, computational neuroscience, active inference
 - **cognitive-science:** Bayesian brain, predictive processing, free-energy principle

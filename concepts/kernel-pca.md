@@ -72,3 +72,6 @@ $$\phi: \mathbb{R}^d \to \mathcal{H}, \quad x \mapsto \phi(x)$$
 - [[t-sne]] — KPCA와 비교되는 확률적 차원 축소
 - [[lle]] — 국소적 선형성을 가정한 LLE
 - [[unsupervised-phase-transitions]] — 상전이 탐지에서의 차원 축소 활용
+
+
+- [[canonical-correlation-analysis]] — CCA — 다변량 상관관계 분석
