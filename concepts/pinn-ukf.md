@@ -55,17 +55,12 @@ $$Q_{k+1} = \alpha P_k + Q_0$$
 - $\alpha = 0.01$ (empirically chosen)
 - Augmented state vector: $\tilde{x}_k = [x_k; \theta]$ (model parameters included)
 
-## RIGOR과의 비교 (핵심)
+## RIGOR Novelty Gap Matrix
 
-| 항목 | PINN-UKF | RIGOR | 의미 |
-|------|----------|-------|------|
-| **Transition model** | **PINN (soft constraint)** | **A+NN (hard decomposition)** | PINN은 물리 법칙을 loss term으로만 반영 → 물리 파라미터의 해석 불가. A+NN은 물리 파트(A)가 고유한 의미 유지 |
-| **Identifiability** | ❌ **없음** | ✅ **Orthogonal projection** | PINN의 NN이 물리 모드를 흡수 → A 파라미터 식별 불가. RIGOR는 NN이 A의 직교 방향으로만 학습 |
-| **Filter type** | **Vanilla UKF** | **SR-UKF (Square-Root)** | SR-UKF가 수치적으로 더 안정적 (Cholesky 재분해 불필요) |
-| **Smoother** | ❌ **없음** | ✅ **RTS smoother** | Smoother가 dynamics 학습 + state estimation 동시 개선 |
-| **Uncertainty** | MC Dropout + heuristic Q | **NLL + VFE Bayesian anchor** | RIGOR의 Bayesian evidence scaling이 더 원리적 |
-| **Missing data** | ❌ **없음** | ✅ **Curriculum block masking** | RIGOR가 partially-observed system에 대응 가능 |
-| **적용 분야** | Double pendulum, quadcopter | Chaotic system (Lorenz) + mechanical systems | - |
+| Paper | Filter | Dynamics | AD? | Smoother? | Reg. | Domain | Gap? |
+|-------|--------|----------|-----|-----------|------|--------|------|
+| **de Curtò (2024)** | UKF (vanilla) | PINN (soft) | ✅ PyTorch | ❌ | None | General | ✅ |
+|| **RIGOR** | **SR-UKF** | **A+NN (hard)** | **✅ JAX** | **✅** | **Orthogonal proj.** | **Chaotic** | — |
 
 ### 핵심 차별점 요약
 

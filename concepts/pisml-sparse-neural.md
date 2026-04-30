@@ -53,17 +53,14 @@ $$L = L_{\text{data}} + \lambda_1 L_{\text{physics}} + \lambda_2 L_{\text{jacobi
 2. Neural residual → symbolic regression → compact explicit form
 3. **최종 출력은 fully interpretable ODE**
 
-## RIGOR과의 연결점
+## RIGOR Novelty Gap Matrix
 
-PISML과 RIGOR의 **A+NN 구조는 동일한 패러다임**:
+| Paper | Filter | Dynamics | AD? | Smoother? | Reg. | Domain | Gap? |
+|-------|--------|----------|-----|-----------|------|--------|------|
+| **Zheng (2026)** | None (ODE only) | Sparse + NN residual | ✅ PyTorch | ❌ | Jacobian reg. | Power systems | ✅ |
+| **RIGOR** | **SR-UKF** | **A+NN hybrid** | **✅ JAX** | **✅** | **Orthogonal proj.** | **Chaotic system ID** | — |
 
-| 구성 요소 | PISML | RIGOR |
-|----------|-------|-------|
-| **물리 파트** | Sparse symbolic ODE | **A matrix (learned linear dynamics)** |
-| **신경망 파트** | Neural residual branch | **NN residual (spectrally-normalized)** |
-| **분해 보장** | Jacobian regularization | **Orthogonal projection regularization** |
-| **최종 목표** | 완전히 해석 가능한 ODE | **A: physics 해석 + NN: residual 보정** |
-| **Domain** | Inverter power systems | **Mechanical/chaotic systems** |
+### A+NN 구조 공통점
 
 ## References
 

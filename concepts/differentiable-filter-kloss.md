@@ -81,17 +81,12 @@ Filter recursion을 **RNN layer처럼** TensorFlow 연산 그래프로 구축:
 3. **End-to-end training**이 stage-wise training보다 항상 우수
 4. **Filter의 inductive bias** (Bayesian structure)가 LSTM보다 data efficiency 월등
 
-## RIGOR과의 비교 (핵심)
+## RIGOR Novelty Gap Matrix
 
-| 항목 | Kloss (2021) | RIGOR | 차별점 |
-|------|-------------|-------|--------|
-| Framework | **TensorFlow** | **JAX** | JAX의 function transform + pmap |
-| Filter | **Vanilla UKF / EKF** | **SR-UKF** | Square-root → 수치 안정성 + Joseph form |
-| Dynamics | **Black-box NN** $f_θ$ | **A+NN hybrid** | Physics 기저 보존 + 해석 가능 |
-| Smoothing | ❌ **없음** | ✅ **RTS smoother** | Smoother 기반 offline 학습 |
-| Identifiability | ❌ 없음 | ✅ **Orthogonal projection** | A/NN 분리 보장 |
-| Missing data | ❌ | ✅ **Curriculum masking** | Partially-observed 대응 |
-| Uncertainty | Diagonal Q/R | **Full NLL + VFE anchor** | Bayesian evidence scaling |
+| Paper | Filter | Dynamics | AD? | Smoother? | Reg. | JAX? | Gap? |
+|-------|--------|----------|-----|-----------|------|------|------|
+| **Kloss (2021)** | UKF (vanilla) | NN (black-box) | ✅ TF | ❌ | None | ❌ TF | ✅ |
+| **RIGOR** | **SR-UKF** | **A+NN hybrid** | ✅ **JAX** | **✅** | **Orthogonal proj.** | **✅** | — |
 
 ## References
 

@@ -65,16 +65,12 @@ Meta-learning으로 **time-varying weight 합성**:
 | IMM | 0.85 | 0.72 | ⚠️ partial |
 | **MA-UKF** | **0.71** | **0.45** | **✅ OOD에서도 유지** |
 
-## RIGOR과의 비교 (핵심)
+## RIGOR Novelty Gap Matrix
 
-| 항목 | MA-UKF | RIGOR | 의미 |
-|------|--------|-------|------|
-| **학습 대상** | **Sigma-point weights** | **Dynamics (A + NN)** | 완전히 다른 learning target. MA-UKF는 "어떻게 필터링할지" 학습, RIGOR는 "dynamics 자체" 학습 |
-| **Dynamics** | **Fixed / known** | **Learned A+NN hybrid** | MA-UKF는 dynamics가 주어져야 함. RIGOR는 dynamics도 학습 |
-| **Partial obs.** | ❌ 없음 | ✅ Curriculum masking | RIGOR가 partially-observed system에 적용 가능 |
-| **Identifiability** | N/A (dyn. 고정) | ✅ Orthogonal projection | - |
-| **Smoothing** | ❌ 없음 | ✅ RTS smoother | RIGOR가 smoother 기반 학습으로 성능 향상 |
-| **응용** | Maneuvering target tracking | Chaotic system identification | 서로 다른 application domain |
+| Paper | Filter | Dynamics | AD? | Smoother? | Reg. | Domain | Gap? |
+|-------|--------|----------|-----|-----------|------|--------|------|
+| **Majewski (2026)** | UKF (vanilla) | Fixed (known) | ✅ PyTorch | ❌ | None | Target tracking | ✅ |
+| **RIGOR** | **SR-UKF** | **A+NN hybrid** | **✅ JAX** | **✅** | **Orthogonal proj.** | **Chaotic system ID** | — |
 
 ### 상호 보완 가능성
 

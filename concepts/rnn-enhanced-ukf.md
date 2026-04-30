@@ -49,16 +49,12 @@ $$R_k = R_0 + \gamma \cdot \text{Var}(\text{RNN}_2)$$
 - → filter가 불확실한 예측을 덜 신뢰
 - → physical model + data-driven model의 균형 자동 조절
 
-## RIGOR과의 비교
+## RIGOR Novelty Gap Matrix
 
-| 항목 | RNN-Enhanced UKF | RIGOR |
-|------|-----------------|-------|
-| **Dynamics** | Lagrangian physics (known) + RNN muscle force | **Learned A + NN residual** |
-| **Residual 역할** | RNN이 muscle force 예측 (external input) | **NN이 state dynamics residual 학습** |
-| **Filter** | Vanilla UKF | **SR-UKF** |
-| **Smoother** | ❌ | ✅ |
-| **Adaptation** | Uncertainty → Q/R heuristic | **NLL + VFE Bayesian anchor** |
-| **응용** | Human motion prediction (specific) | **General chaotic system ID** |
+| Paper | Filter | Dynamics | AD? | Smoother? | Reg. | Domain | Gap? |
+|-------|--------|----------|-----|-----------|------|--------|------|
+| **Liu (2024)** | UKF (vanilla) | Lagrangian + RNN | ❌ | ❌ | None | Human motion | ✅ |
+| **RIGOR** | **SR-UKF** | **A+NN hybrid** | **✅ JAX** | **✅** | **Orthogonal proj.** | **Chaotic system ID** | — |
 
 ## References
 

@@ -65,15 +65,12 @@ confidence: high
 
 3개 dataset (off-road, passenger car, mobile robot)에서 일관된 성능 향상 확인.
 
-## RIGOR과의 비교
+## RIGOR Novelty Gap Matrix
 
-| 항목 | Adaptive Neural UKF | RIGOR |
-|------|--------------------|-------|
-| **학습 대상** | **Q/R covariance만** | **Dynamics (A+NN) + Q/R** |
-| **Dynamics** | Fixed / known | **Learned A+NN hybrid** |
-| **Filter** | Vanilla UKF | **SR-UKF** |
-| **Smoother** | ❌ | ✅ |
-| **응용** | **Navigation** (IMU+GNSS) | **Chaotic system identification** |
+| Paper | Filter | Dynamics | AD? | Smoother? | Reg. | Domain | Gap? |
+|-------|--------|----------|-----|-----------|------|--------|------|
+| **Levy & Klein (2025)** | UKF (vanilla) | Fixed (known) | ✅ PyTorch | ❌ | None | Navigation | ✅ |
+| **RIGOR** | **SR-UKF** | **A+NN hybrid** | **✅ JAX** | **✅** | **Orthogonal proj.** | **Chaotic system ID** | — |
 
 ## References
 

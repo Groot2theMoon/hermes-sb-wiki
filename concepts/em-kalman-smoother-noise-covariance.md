@@ -58,16 +58,13 @@ $$
 
 ## 왜 이것이 "더 엄밀한" 해법인가?
 
-### VFE Anchor (Heuristic) vs EM (Principled)
+## RIGOR Novelty Gap Matrix
 
-| 항목 | VFE Anchor (승원님 현재) | EM Analytical (제안) |
-|------|------------------------|---------------------|
-| **이론적 근거** | 🟡 "Q가 너무 커지지 않도록" | ✅ **MLE of LG-SSM (Dempster 1977)** |
-| **하이퍼파라미터** | 🔴 q_floor, r_floor, loss weight, 1/T scaling | ✅ **없음 (zero hyperparameter)** |
-| **Q의 의미** | "floor에서 얼마나 먼가" | ✅ **"dynamics model의 실제 prediction error"** |
-| **A+NN 학습 영향** | 간접적 (Q 제한 → A 학습 유도) | ✅ **직접적 (Q = residual → clear gradient)** |
-| **수렴 보장** | Heuristic | ✅ **EM은 monotonic likelihood 증가** |
-| **심사자 대응** | "왜 이 prior인가?" | ✅ **"Standard EM for SSMs since 1982"** |
+| Paper | Noise update | Dynamics | Filter | Smoother? | AD? | Domain | Gap? |
+|-------|-------------|----------|--------|-----------|-----|--------|------|
+| **Shumway-Stoffer (1982)** | EM analytical | Linear (fixed) | KF | ✅ | ❌ | Time series | ✅ |
+| **KalmanNet (2022)** | EM (baseline) | Fixed (known) | KF | ❌ | ✅ | General | ✅ |
+|| **RIGOR** | **EM analytical** | **A+NN hybrid** | **SR-UKF** | **✅ RTS** | **✅ JAX** | **Chaotic system ID** | — |
 
 ### Q의 Self-Calibrating 속성
 
