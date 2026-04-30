@@ -577,3 +577,16 @@
 - **Orphan cross-links added (5):** deep-kalman-filter→factorized-inference-dmm, dkf-vs-differentiable-enkf; free-energy-principle→brain-active-inference; kernel-pca→canonical-correlation-analysis; surrogate-model→structured-hybrid-mechanistic-models; sagawa-ueda-information-thermodynamics→epiplexity
 - **Index rebuilt from filesystem:** 247 total pages (Entities 74, Concepts 159, Comparisons 14)
 - **Removed stale:** queries/README.md
+
+## [2026-04-30] trending-scan | 4 Tier 2 papers — 2 new concepts, 2 updates, 1 schema update, 1 cron fix
+- **스캔:** 10편 (Tier 2: 4편, Tier 3: 6편)
+- **신규 개념 (2):**
+  - [[lesnets-pino-wall-turbulence]] — LESnets: LES 방정식을 F-FNO에 통합한 physics-informed neural operator (Zhao et al. 2026, novel 5)
+  - [[diffusion-les-super-resolution]] — Conditional DDPM for LES super-resolution in ABL (Sallam & Fürth 2026, novel 3)
+- **기존 업데이트 (2):**
+  - [[wind-energy-ml]] — updated (2026-04-30): FNO+PINN FOWT 논문 재확인
+  - [[physics-informed-temporal-unet]] — updated (2026-04-30): 논문 재확인
+- **스키마 업데이트 (1):**
+  - [[physics-informed]] — 2026 trends에 LESnets 항목 추가
+- **Cron fix:** wrapper.sh → wrapper.py (Python 실행 방식으로 변경, 120s timeout 우회)
+- **총 페이지:** 247 → 249 (+2)

@@ -147,6 +147,7 @@ $$\mathcal{L}_{\text{total}} = \lambda_d \mathcal{L}_{\text{data}} + \lambda_p \
 
 - **Retrain-free 패러다임**: [[in-context-modeling-physics]] — ICM은 Transformer 기반 in-context learning을 물리 시스템에 도입, 단일 forward pass로 재학습 없이 새로운 PDE 조건에 일반화
 - **Physics-Informed Temporal U-Net** (arXiv:2604.23372): U-Net 아키텍처에 VGG perceptual loss + parabolic boundary bridge 결합, 유체 interpolation에서 기존 대비 5배 이상 MAE 개선
+- **LESnets** (arXiv:2604.26621): LES 방정식을 factorized FNO에 통합한 physics-informed neural operator, 벽면 난류 장기 예측에서 레이블 데이터 없이 전통 LES 수준 정확도 달성
 - **AI Hallucination in Physics**: [[ai-hallucination-physics]] — 유동 AI 모델이 물리 법칙을 위반하는 가상 해를 생성하는 현상 최초 보고
 - **CoPINN (Cognitive PINN)**: 쉬운 샘플에서 어려운 샘플로 순차 학습하여 unbalanced prediction 문제 해결
 - **PINNeAPPle**: 60+ PIML 모델을 13개 카테고리로 정리한 통합 벤치마크 프레임워크

@@ -1,7 +1,7 @@
 ---
 title: Physics-Informed Temporal U-Net — Fluid Interpolation
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 type: concept
 tags: [physics-informed, fluid-dynamics, model, CFD, neural-network]
 sources: [raw/papers/trending/2026-04-28-04.md]

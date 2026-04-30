@@ -1,7 +1,7 @@
 ---
 title: AI/ML Applications in Wind Energy
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-30
 type: concept
 tags: [physics-informed, CFD, surrogate-model, fluid-dynamics, optimization]
 sources: [raw/papers/trending/2026-04-28-03.md, raw/papers/trending/2026-04-28-01.md]

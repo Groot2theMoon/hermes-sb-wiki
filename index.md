@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-30 | Total pages: 247
+> Last updated: 2026-04-30 | Total pages: 249
 
 ## Entities
 
@@ -114,6 +114,7 @@
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
 - [[differentiable-enkf]] — Differentiable Ensemble Kalman Filter — Data-Driven State Estimation for Robotics
 - [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
+- [[diffusion-les-super-resolution]] — Conditional Diffusion Model for LES Super-Resolution in ABL
 - [[diffusion-metamaterial-inverse-design]] — Guided Diffusion for Inverse Design of Mechanical Metamaterials
 - [[diffusion-trajectory-optimization]] — DIFFUSOLVE — Diffusion-based Solver for Non-Convex Trajectory Optimization
 - [[diffusion-transformers-dit]] — DiT — Scalable Diffusion Models with Transformers
@@ -161,6 +162,7 @@
 - [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
 - [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
+- [[lesnets-pino-wall-turbulence]] — LESnets — PINO for Wall-Bounded Turbulence
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
