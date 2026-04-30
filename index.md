@@ -84,6 +84,7 @@
 ## Concepts
 
 - [[active-inference-ai-science]] — Active Inference AI Systems for Scientific Discovery
+- [[adaptive-neural-ukf]] — Adaptive Neural UKF — ProcessNet for Noise Covariance (Levy & Klein 2025)
 - [[agent-scaling]] — Agent Scaling Systems — Google Research
 - [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
@@ -103,7 +104,9 @@
 - [[deep-delta-learning]] — Deep Delta Learning — Householder Reflection as Learnable Residual Connections
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
 - [[deep-kalman-filter]] — Deep Kalman Filter (DKF) — Variational Inference for Temporal Generative Models
+- [[em-kalman-smoother-noise-covariance]] — EM-Kalman Smoother — Analytical Noise Covariance (Shumway-Stoffer 1982)
 - [[deep-kernel-multitask-gp-vehicle-dynamics]] — Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing
+- [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
 - [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
@@ -247,6 +250,7 @@
 
 ## Comparisons
 
+- [[kf-ekf-ukf-srukf-differentiable]] — KF vs EKF vs UKF vs SR-UKF — Differentiable Filtering 비교
 - [[differentiable-filter-kloss]] — Differentiable Filter (Kloss, Martius & Bohg 2021) — How to Train Your Differentiable Filter
 - [[ma-ukf-meta-adaptive]] — MA-UKF — Meta-Adaptive Unscented Kalman Filter (Majewski 2026)
 - [[pinn-ukf]] — PINN-UKF — Physics-Informed Neural Network + Adaptive UKF (de Curtò 2024)

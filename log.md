@@ -5,6 +5,11 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-30] create | 2 new pages — EM-Kalman Smoother + Diff. Filter Variant 비교
+- concepts/em-kalman-smoother-noise-covariance.md — EM for analytical Q,R update (Shumway-Stoffer 1982)
+- comparisons/kf-ekf-ukf-srukf-differentiable.md — KF vs EKF vs UKF vs SR-UKF in differentiable filtering context
+- Updated index.md with 2 new entries
+
 ## [2026-04-30] create | 6 new concept pages — Differentiable UKF × Neural Dynamics Deep Research
 - Added from deep-research results for RIGOR positioning analysis:
   - concepts/differentiable-filter-kloss.md — Differentiable Filter (Kloss 2021) — 직접 baseline
