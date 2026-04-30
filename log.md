@@ -5,6 +5,17 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-30] create | 6 new concept pages — Differentiable UKF × Neural Dynamics Deep Research
+- Added from deep-research results for RIGOR positioning analysis:
+  - concepts/differentiable-filter-kloss.md — Differentiable Filter (Kloss 2021) — 직접 baseline
+  - concepts/pinn-ukf.md — PINN-UKF (de Curtò 2024) — 가장 유사한 competitor
+  - concepts/ma-ukf-meta-adaptive.md — MA-UKF (Majewski 2026) — Meta-learned weights
+  - concepts/adaptive-neural-ukf.md — Adaptive Neural UKF (Levy & Klein 2025) — ProcessNet
+  - concepts/rnn-enhanced-ukf.md — RNN-Enhanced UKF (Liu 2024) — Human motion
+  - concepts/pisml-sparse-neural.md — PISML (Zheng 2026) — Sparse+neural residual
+- Updated comparisons/dkf-vs-differentiable-enkf.md → 3-way (DKF / Diff.EnKF / RIGOR)
+- Updated index.md with 6 new entries
+
 ## [2026-04-29] ingest | Gas Dynamics 1 — Lecture 2, Thermodynamics Review, Lecture 3
 - **Sources ingested (3 raw files):**
   - raw/papers/gasdynamic-lecture-2-governing-equations.md — Lecture 2 (28p): Knudsen, continuity, momentum, RTT, Euler equations

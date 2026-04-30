@@ -44,9 +44,27 @@ confidence: medium
 | 고차원 이미지 시계열 | **DKF** | Amortized inference가 efficient |
 | **사이드 프로젝트 (A+NN SR-UKF)** | **UKF (hybrid)** | UKF가 EnKF보다 sigma point efficient (2L+1 vs ensemble) |
 
+## RIGOR (Differentiable SR-UKF + A+NN Hybrid) — 새로운 축
+
+승원님의 RIGOR 프레임워크는 DKF와 Diff. EnKF 사이의 **제3의 길**:
+
+| 차원 | DKF | Diff. EnKF | **RIGOR (SR-UKF)** |
+|------|-----|-----------|-------------------|
+| **핵심 메커니즘** | VAE variational inference | Ensemble MC | **Deterministic UT (2L+1 sigma points)** |
+| **Posterior 표현** | Gaussian (diagonal) | Ensemble (non-parametric) | **Gaussian (via SR-UKF)** |
+| **Inference** | Learned RNN encoder | EnKF update equations | **Bayesian filter equations** |
+| **Dynamics** | Black-box NN | Learnable + structured | **A+NN hybrid + orthogonal proj.** |
+| **Smoother** | Bidirectional RNN | ❌ | **✅ Differentiable RTS smoother** |
+| **Online 가능** | ❌ | ✅ | **✅** |
+| **저차원 효율** | 보통 (amortized cost) | ❌ (ensemble 필요) | **✅ (2L+1만 필요)** |
+| **물리 해석** | ❌ | ⚠️ 부분적 | **✅ (A 분리 + 직교화)** |
+
 ## 관련 페이지
 - [[deep-kalman-filter]] — DKF 상세
 - [[differentiable-enkf]] — Diff. EnKF 상세
 - [[deep-variational-smc]] — Particle filter + VI (중간 지점)
 - [[square-root-unscented-kalman-filter]] — SR-UKF baseline
 - [[structured-inference-networks]] — DMM (DKF 개선)
+- [[differentiable-filter-kloss]] — Differentiable Filter (Kloss 2021)
+- [[pinn-ukf]] — PINN+UKF (가장 유사한 competitor)
+- [[ma-ukf-meta-adaptive]] — MA-UKF (meta-learned weights)

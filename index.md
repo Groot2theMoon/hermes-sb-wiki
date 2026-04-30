@@ -247,6 +247,12 @@
 
 ## Comparisons
 
+- [[differentiable-filter-kloss]] — Differentiable Filter (Kloss, Martius & Bohg 2021) — How to Train Your Differentiable Filter
+- [[ma-ukf-meta-adaptive]] — MA-UKF — Meta-Adaptive Unscented Kalman Filter (Majewski 2026)
+- [[pinn-ukf]] — PINN-UKF — Physics-Informed Neural Network + Adaptive UKF (de Curtò 2024)
+- [[adaptive-neural-ukf]] — Adaptive Neural UKF — ProcessNet for Noise Covariance (Levy & Klein 2025)
+- [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Motion Prediction (Liu 2024)
+- [[pisml-sparse-neural]] — PISML — Sparse Symbolic Backbone + Neural Residual (Zheng 2026)
 - [[dkf-vs-differentiable-enkf]] — Deep Kalman Filter vs Differentiable Ensemble Kalman Filter — Temporal Inference 비교
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
 - [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
