@@ -2,7 +2,7 @@
 > Content catalog.
 > Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-04-29 | Total pages: 235
+> Last updated: 2026-04-30 | Total pages: 239
 
 ## Entities
 
@@ -149,6 +149,7 @@
 - [[knudsen-number-and-continuum]] — Knudsen Number and Continuum Assumption — Flow Regime Classification
 - [[kolmogorov-arnold-networks]] — Kolmogorov-Arnold Networks (KAN) — Learnable B-Spline Activations on Edges
 - [[koopman-learner-continual-lifting]] — Continual Learning and Lifting of Koopman Dynamics for Legged Robots
+- [[koopman-resolvent-dynamics]] — Koopman-Resolvent Data-Driven Dynamics — Generator Learning for Continuous Systems
 - [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
 - [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
@@ -158,6 +159,8 @@
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
 - [[lyapunov-guided-exploration]] — LYGE — Lyapunov-Guided Exploration for Stabilizing High-dimensional Unknown Systems
+- [[lyapunov-neural-network]] — Lyapunov Neural Network — Adaptive Stability Certification for Safe Learning
+- [[lyapunov-stable-nn-control]] — Lyapunov-Stable Neural Network Control — Certified Stability via NN + Quadratic Programming
 - [[mach-number-and-flow-regimes]] — Mach Number and Flow Regimes — Subsonic to Hypersonic
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
@@ -185,6 +188,7 @@
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
+- [[pinn-lyapunov-functions]] — PINN Lyapunov Functions — PDE Characterization, Learning, and Verification
 - [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN — 확장 연구 분석
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator

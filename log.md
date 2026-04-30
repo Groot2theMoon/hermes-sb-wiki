@@ -549,3 +549,12 @@
   - Krishnan + Shalit: deep-kalman-filter, structured-inference-networks
 - **New Comparison (1):** [[dkf-vs-differentiable-enkf]] — DKF vs Differentiable Ensemble KF
 - **Total pages:** 235 (was 231, +4)
+
+## [2026-04-30] ingest | Lyapunov/PINN/Koopman batch (6 papers)
+- **New Concepts (4):**
+  - [[pinn-lyapunov-functions]] — Liu et al. Automatica 2025: PINN for Lyapunov function learning + verification
+  - [[lyapunov-neural-network]] — Richards 2018: Lyapunov function as NN
+  - [[lyapunov-stable-nn-control]] — Dai et al. + MPC: Lyapunov stability via NN + QP post-processing
+  - [[koopman-resolvent-dynamics]] — Resolvent generator learning + Koopman stability certificates
+- **Raw files (6):** lyapunov-stable-nn-control, lyapunov-nn-mpc, pinn-lyapunov-functions, resolvent-data-driven-generators, koopman-stability-certificates, lyapunov-neural-network
+- **Total pages:** 239
