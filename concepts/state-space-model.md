@@ -60,5 +60,6 @@ $$
 - [[deep-kalman-filter]] — Variational inference 기반 Deep SSM
 - [[square-root-unscented-kalman-filter]] — 고전적 nonlinear state estimation
 - [[gru-d]] — RNN 기반 시계열 missing value 모델링
+- [[rnn-enhanced-ukf]] — RNN 예측을 UKF에 통합한 hybrid state estimation
 - [[variational-autoencoder]] — VAE의 latent variable 모델과 SSM의 연결
 - [[free-energy-principle]] — Friston FEP의 variational inference와 SSM의 동형성

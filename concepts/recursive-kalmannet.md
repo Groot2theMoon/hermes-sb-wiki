@@ -12,7 +12,7 @@ confidence: medium
 
 ## 개요
 
-[[kalmannet|KalmanNet]] 프레임워크를 확장하여 **Kalman gain과 error covariance를 동시에 학습**하는 최초의 KalmanNet 변형. Joseph's formula로 covariance를 recursive하게 전파하여 **일관된 uncertainty quantification** 달성. (Mortada et al. 2025, EUSIPCO 2025)
+[[kalmannet|KalmanNet]] 프레임워크를 확장하여 **Kalman gain과 error covariance를 동시에 학습**하는 최초의 KalmanNet 변형. Joseph's formula로 covariance를 recursive하게 전파하여 **일관된 uncertainty quantification** 달성. (Mortada, [[nir-shlezinger|Shlezinger]] et al. 2025, EUSIPCO 2025)
 
 ## 핵심 아이디어
 
@@ -37,6 +37,7 @@ confidence: medium
 
 - [[kalmannet]] — 선행 연구 (Revach 2022)
 - [[rtsnet]] — Smoothing 확장 (동일 저자군)
+- [[kf-ekf-ukf-srukf-differentiable]] — Filter variant 비교 (differentiable filtering 관점)
 - Bayesian KalmanNet (2023) — UQ 시도 (다른 접근법)
 - [[em-kalman-smoother-noise-covariance]] — RIGOR의 EM 기반 Q,R 추정 (다른 철학)
 

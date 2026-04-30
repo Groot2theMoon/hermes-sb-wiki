@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-MAML (Model-Agnostic Meta-Learning)을 [[kalmannet|KalmanNet]]에 적용하여 **제한된 labeled data와 적은 training rounds로도 빠른 adaptation**이 가능한 NNA (Neural Network-Assisted) Kalman filter. (Chen et al. 2025, IEEE TSP Vol. 73)
+MAML (Model-Agnostic Meta-Learning)을 [[kalmannet|KalmanNet]]에 적용하여 **제한된 labeled data와 적은 training rounds로도 빠른 adaptation**이 가능한 NNA (Neural Network-Assisted) Kalman filter. (Chen, Zheng, Lin, Cai, Xiao, Wang; [[nir-shlezinger|Shlezinger]] co-author of base KalmanNet. 2025, IEEE TSP Vol. 73)
 
 ## 핵심 동기
 

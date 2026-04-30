@@ -12,7 +12,7 @@ confidence: medium
 
 ## 개요
 
-Derajić et al. (TU Berlin / Continental, 2025)은 동적 환경에서 MPC(Model Predictive Control)의 **terminal constraint로 사용할 safe set을 학습 기반으로 실시간 근사**하는 방법을 제안한다. Hamilton-Jacobi (HJ) reachability analysis의 value function을 signed distance function (SDF) + neural residual로 분해하여, 이론적 안전성을 보장하면서도 실시간 계산이 가능하게 한다.
+Derajić et al. (TU Berlin / Continental, 2025)은 동적 환경에서 [[optimal-control|MPC]] (Model Predictive Control)의 **terminal constraint로 사용할 safe set을 학습 기반으로 실시간 근사**하는 방법을 제안한다. Hamilton-Jacobi (HJ) reachability analysis의 value function을 signed distance function (SDF) + neural residual로 분해하여, 이론적 안전성을 보장하면서도 실시간 계산이 가능하게 한다.
 
 ## 핵심 아이디어
 

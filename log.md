@@ -670,3 +670,16 @@
   - entities/nir-shlezinger.md — Co-author, model-based deep learning
 - **Wikilink backfill:** em-kalman-smoother-noise-covariance.md (comparison table → [[kalmannet]], [[rtsnet]], [[esn-as-ssm]], [[adaptive-online-smoother]], [[guy-revach]]), kf-ekf-ukf-srukf-differentiable.md (reference → [[kalmannet]])
 - **총 페이지:** 249 → 265 (+16)
+## [2026-04-30] lint --fix | Cross-link repair + index rebuild
+
+- **Broken wikilinks fixed (1):** [[shima-davydov-bullo-contractivity-lure]] → [[shima-contractivity-lure]] in lure-stability.md
+- **Orphan inbound links added (7):**
+  - [[nir-shlezinger]] → kalmannet, rtsnet, recursive-kalmannet, maml-kalmannet
+  - [[kf-ekf-ukf-srukf-differentiable]] → kalmannet, recursive-kalmannet
+  - [[maml-kalmannet]] → kalmannet
+  - [[diffusion-les-super-resolution]] → physics-informed
+  - [[lesnets-pino-wall-turbulence]] → fourier-neural-operator
+  - [[pisml-sparse-neural]] → surrogate-model
+  - [[rnn-enhanced-ukf]] → state-space-model
+- **Outbound link deficiency fixed (6):** adaptive-online-smoother, esn-as-ssm, genai-stock-selection, neural-mpc-terminal-constraint, neural-thermodynamic-integration, thermoelastic-dmn, waste-fiber-acoustic-absorber
+- **Index rebuilt:** 285 total pages (86 entities + 184 concepts + 15 comparisons)

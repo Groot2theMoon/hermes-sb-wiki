@@ -3,10 +3,11 @@
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
 > Last updated: 2026-05-01 | Total pages: 285
+
 ## Entities
 
 - [[albert-gu]] — Albert Gu
-- [[alexander-davydov]] — Alexander Davydov — UCSB, Contractivity & Neural ODE
+- [[alexander-davydov]] — Alexander Davydov
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andreas-krause]] — Andreas Krause — ETH Zürich Professor, Safe Learning
 - [[andrew-norris]] — Andrew Norris
@@ -22,13 +23,13 @@
 - [[david-sontag]] — David Sontag — MIT Professor, ML for Healthcare
 - [[deepseek]] — DeepSeek
 - [[diederik-kingma]] — Diederik Kingma
-- [[dongil-shin]] — "Shin Dongil (신동일)"
+- [[dongil-shin]] — Shin Dongil (신동일)
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
-- [[francesco-bullo]] — Francesco Bullo — UCSB Distinguished Professor, Contraction Theory
 - [[felix-berkenkamp]] — Felix Berkenkamp — ETH Zürich Researcher, Safe Learning
 - [[felix-gers]] — Felix Gers
+- [[francesco-bullo]] — Francesco Bullo
 - [[frank-lu]] — Frank K. Lu
 - [[fudan-university]] — Fudan University
 - [[geoffrey-hinton]] — Geoffrey Hinton
@@ -36,11 +37,11 @@
 - [[google-deepmind]] — Google DeepMind
 - [[guglielmo-scovazzi]] — Guglielmo Scovazzi
 - [[guy-revach]] — Guy Revach — Differentiable Filtering & Model-Based Deep Learning
-- [[hamidreza-montazeri-hedesh]] — Hamidreza Montazeri Hedesh — Northeastern University, NN Verification
+- [[hamidreza-montazeri-hedesh]] — Hamidreza Montazeri Hedesh
 - [[hongkai-dai]] — Hongkai Dai — Toyota Research Institute, NN Control
 - [[ian-goodfellow]] — Ian Goodfellow
-- [[ian-r-manchester]] — Ian R. Manchester — USyd ACFR, REN & Stabilizing Nonlinear Control
-- [[johannes-schiffer]] — Johannes Schiffer — RNN Lipschitz Certification
+- [[ian-r-manchester]] — Ian R. Manchester
+- [[johannes-schiffer]] — Johannes Schiffer
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
 - [[jun-liu]] — Jun Liu — University of Waterloo, PINN & Koopman
@@ -56,28 +57,28 @@
 - [[lu-lu]] — Lu Lu
 - [[marco-pavone]] — Marco Pavone — Stanford University, Autonomous Systems
 - [[marin-soljacic]] — Marin Soljačić
+- [[max-revay]] — Max Revay
 - [[max-tegmark]] — Max Tegmark
 - [[maziar-raissi]] — Maziar Raissi
-- [[max-revay]] — Max Revay — USyd ACFR, Recurrent Equilibrium Networks
-- [[milad-siami]] — Milad Siami — Northeastern University, Lur'e Systems
+- [[milad-siami]] — Milad Siami
 - [[moonshot-ai]] — Moonshot AI
 - [[nir-shlezinger]] — Nir Shlezinger — Signal Processing & Model-Based Deep Learning
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
 - [[openai]] — OpenAI
 - [[paris-perdikaris]] — Paris Perdikaris
-- [[paul-hamelbeck]] — Paul Hamelbeck — RNN Lipschitz Certification
+- [[paul-hamelbeck]] — Paul Hamelbeck
 - [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[ross-girshick]] — Ross Girshick
-- [[ruigang-wang]] — Ruigang Wang — USyd ACFR, REN & Lipschitz Networks (3 papers)
+- [[ruigang-wang]] — Ruigang Wang (王瑞刚)
 - [[russ-tedrake]] — Russ Tedrake — MIT / TRI, Robotics & Control
-- [[ryotaro-shima]] — Ryotaro Shima — UCSB, Contractivity Analysis
-- [[s-keshav]] — S. Keshav
+- [[ryotaro-shima]] — Ryotaro Shima
 - [[sakana-ai]] — Sakana AI
 - [[sam-roweis]] — Sam T. Roweis
 - [[sepp-hochreiter]] — Sepp Hochreiter
 - [[sergey-zhdan]] — Sergey A. Zhdan
+- [[s-keshav]] — S. Keshav
 - [[spencer-richards]] — Spencer M. Richards — ETH Zürich / Stanford, Lyapunov NN
 - [[stanislav-fort]] — Stanislav Fort
 - [[steven-g-johnson]] — Steven G. Johnson
@@ -106,22 +107,22 @@
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[brain-active-inference]] — BRAIN — Bayesian Reasoning via Active Inference for Agentic Intelligence
 - [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
-- [[causal-semantic-xai-segmentation]] — "Causal XAI — SAM vs SLIC Segmentation Trade-Off"
-- [[centimeter-nanomechanical-resonators]] — "Centimeter-Scale Nanomechanical Resonators with Low Dissipation"
+- [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
+- [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
 - [[compressible-flow-governing-equations]] — Compressible Flow Governing Equations — Gas Dynamics 1
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
-- [[continual-learning-physical-systems]] — "Continual Learning for Physical Systems — Particle Accelerator Case Study"
-- [[decoding-material-networks]] — "Decoding Material Networks: DMN vs IMN Performance Comparison"
+- [[continual-learning-physical-systems]] — Continual Learning for Physical Systems — Particle Accelerator Case Study
+- [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-delta-learning]] — Deep Delta Learning — Householder Reflection as Learnable Residual Connections
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
 - [[deep-kalman-filter]] — Deep Kalman Filter (DKF) — Variational Inference for Temporal Generative Models
-- [[deep-kernel-multitask-gp-vehicle-dynamics]] — "Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing"
+- [[deep-kernel-multitask-gp-vehicle-dynamics]] — Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
-- [[deep-material-network-quilting]] — "Deep Material Network with Quilting Strategy"
-- [[deep-material-network]] — "Deep Material Network (DMN) — 기본 아키텍처"
-- [[deep-variational-smc]] — Deep Variational Sequential Monte Carlo — Differentiable Particle Filtering
+- [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
+- [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deeponet]] — DeepONet — Deep Operator Networks
+- [[deep-variational-smc]] — Deep Variational Sequential Monte Carlo — Differentiable Particle Filtering
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
@@ -137,7 +138,7 @@
 - [[dnn-interpretability-lrp]] — DNN Visualization & Interpretability (LRP)
 - [[dual-x-mlff-explainability]] — DUAL-X — Dual-Level Explainability Framework for Machine Learning Force Fields
 - [[effective-theory-transformers]] — Effective Theory of Transformers at Initialization
-- [[ekf-stochastic-stability-fading]] — EKF Stochastic Stability over Fading Channels — Liu, Li et al. 2017
+- [[ekf-stochastic-stability-fading]] — EKF Stochastic Stability over Fading Channels
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
 - [[em-kalman-smoother-noise-covariance]] — EM-Kalman Smoother — Analytical Noise Covariance Update (Shumway-Stoffer)
 - [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
@@ -145,11 +146,11 @@
 - [[epiplexity]] — Epiplexity — Structural Information for Computationally Bounded Observers
 - [[esn-as-ssm]] — Echo State Networks as State-Space Models — A Systems Perspective
 - [[factorized-inference-dmm]] — Factorized Inference in Deep Markov Models — Multimodal Time Series
-- [[fft-homogenization-polymer-composites]] — "FFT-Based Homogenization for Composite & Biological Materials"
+- [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
 - [[fourier-neural-operator]] — Fourier Neural Operator (FNO)
 - [[free-energy-principle]] — Free Energy Principle — Variational Free Energy Minimization as a Unified Brain Theory
-- [[function-space-variational-inference-bnn]] — "Generalized Function-Space Variational Inference for Bayesian Neural Networks"
+- [[function-space-variational-inference-bnn]] — Generalized Function-Space Variational Inference for Bayesian Neural Networks
 - [[gan-lattice-simulations]] — GAN-based Overrelaxation for Lattice Simulations
 - [[gap-sbm]] — Gap-SBM — Shifted Boundary Method Variant
 - [[gated-recurrent-units]] — Gated Recurrent Units (GRU & LSTM)
@@ -173,30 +174,30 @@
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
 - [[kalmannet]] — KalmanNet — Neural Network Aided Kalman Filtering for Partially Known Dynamics
 - [[kennedy-ohagan-calibration]] — Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration
-- [[kernel-methods]] — "Kernel Methods — An Introduction (Müller et al. 2001 Survey)"
+- [[kernel-methods]] — Kernel Methods — An Introduction (Müller et al. 2001 Survey)
 - [[kernel-pca]] — Kernel PCA — Nonlinear Component Analysis
 - [[knudsen-number-and-continuum]] — Knudsen Number and Continuum Assumption — Flow Regime Classification
 - [[kolmogorov-arnold-networks]] — Kolmogorov-Arnold Networks (KAN) — Learnable B-Spline Activations on Edges
 - [[koopman-learner-continual-lifting]] — Continual Learning and Lifting of Koopman Dynamics for Legged Robots
 - [[koopman-resolvent-dynamics]] — Koopman-Resolvent Data-Driven Dynamics — Generator Learning for Continuous Systems
-- [[label-wise-uncertainty-quantification]] — "Label-wise Aleatoric & Epistemic Uncertainty Quantification"
+- [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
 - [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
-- [[lbdn-lipschitz-bounded-networks]] — LBDN — Direct Parameterization of Lipschitz-Bounded Deep Networks (Wang & Manchester 2023)
+- [[lbdn-lipschitz-bounded-networks]] — LBDN — Lipschitz-Bounded Deep Networks via Direct Parameterization
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
 - [[lesnets-pino-wall-turbulence]] — LESnets — Physics-Informed Neural Operator for Wall-Bounded Turbulence
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
-- [[lure-stability]] — Lur'e Stability Analysis — A+NN Systems
+- [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
-- [[lstm-forget-gate]] — "LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)"
+- [[lure-stability]] — Lur'e Stability Analysis — A+NN Systems
 - [[lyapunov-guided-exploration]] — LYGE — Lyapunov-Guided Exploration for Stabilizing High-dimensional Unknown Systems
 - [[lyapunov-neural-network]] — Lyapunov Neural Network — Adaptive Stability Certification for Safe Learning
 - [[lyapunov-stable-nn-control]] — Lyapunov-Stable Neural Network Control — Certified Stability via NN + Quadratic Programming
-- [[ma-ukf-meta-adaptive]] — MA-UKF — Meta-Adaptive Unscented Kalman Filter
 - [[mach-number-and-flow-regimes]] — Mach Number and Flow Regimes — Subsonic to Hypersonic
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
 - [[maml-kalmannet]] — MAML-KalmanNet — Neural Network-Assisted Kalman Filter Based on Model-Agnostic Meta-Learning
+- [[ma-ukf-meta-adaptive]] — MA-UKF — Meta-Adaptive Unscented Kalman Filter
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
 - [[mhc-deepseek]] — [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
@@ -205,28 +206,28 @@
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
 - [[multi-dimensional-scaling]] — Multi-Dimensional Scaling (MDS)
 - [[muon-optimizer]] — Muon Optimizer for LLM Training
-- [[neural-mpc-terminal-constraint]] — "Neural MPC Terminal Constraint via HJ Reachability for Collision Avoidance"
+- [[neural-mpc-terminal-constraint]] — Neural MPC Terminal Constraint via HJ Reachability for Collision Avoidance
 - [[neural-odes]] — Neural Ordinary Differential Equations — Continuous-Depth Latent Dynamics
 - [[neural-tangent-kernel]] — Neural Tangent Kernel (NTK)
-- [[neural-thermodynamic-integration]] — "Neural Thermodynamic Integration (Neural TI)"
+- [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration (Neural TI)
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
-- [[offline-bayesian-uq-finite-mdps]] — "Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs"
+- [[offline-bayesian-uq-finite-mdps]] — Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs
 - [[optimal-control]] — Optimal Control — Optimal Decision-Making in Dynamical Systems
-- [[optimal-transport-stability-sinkhorn]] — "Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence"
+- [[optimal-transport-stability-sinkhorn]] — Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence
 - [[orthogonal-projection-regularization]] — Orthogonal Projection Regularization for Efficient Model Augmentation
-- [[pac-bayesian-epistemic-uncertainty]] — "PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference"
+- [[pac-bayesian-epistemic-uncertainty]] — PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
-- [[physics-informed-neural-networks]] — "Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)"
-- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
+- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)
 - [[physics-informed]] — Physics-Informed Machine Learning
+- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[pinn-lyapunov-functions]] — PINN Lyapunov Functions — PDE Characterization, Learning, and Verification
 - [[pinn-ukf]] — PINN-UKF — Physics-Informed Neural Network + Adaptive UKF
 - [[pisml-sparse-neural]] — PISML — Physics-Informed Sparse ML (Sparse + Neural Residual for Dynamics Discovery)
-- [[poroelastic-dmn-research]] — "7×7 Acusto-Elastic DMN — 확장 연구 분석"
-- [[poroelasticity-thermoelasticity-correspondence]] — "Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)"
+- [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN — 확장 연구 분석
+- [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
@@ -235,55 +236,55 @@
 - [[pseudo-hamiltonian-neural-networks]] — Pseudo-Hamiltonian Neural Networks (PHNN) for PDEs
 - [[quadratic-iss-lyapunov]] — Quadratic ISS Lyapunov Functions for Linear Analytic Systems
 - [[recursive-kalmannet]] — Recursive KalmanNet — Deep Learning-Augmented Kalman Filtering with Consistent Uncertainty Quantification
-- [[ren-recurrent-equilibrium-networks]] — REN — Recurrent Equilibrium Networks with Guaranteed Stability & Robustness (Revay, Wang, Manchester 2021)
+- [[ren-recurrent-equilibrium-networks]] — REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness
 - [[residual-networks]] — Residual Networks (ResNet)
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
-- [[rnn-sdp-lipschitz-certification]] — RNN-SDP — Lipschitz Robustness Certification for RNNs (Hamelbeck & Schiffer 2025)
 - [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Human Motion Prediction (Liu 2024)
+- [[rnn-sdp-lipschitz-certification]] — RNN-SDP — Lipschitz Robustness Certification for RNNs
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[rtsnet]] — RTSNet — Learning to Smooth in Partially Known State-Space Models
 - [[sagawa-ueda-information-thermodynamics]] — Information Thermodynamics — Maxwell's Demon in Nonequilibrium Dynamics
 - [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[shima-contractivity-lure]] — Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025
-- [[simulation-based-inference-aircraft-design]] — "Simulation-Based Inference for Conceptual Aircraft Design"
-- [[spectral-margin-generalization-bounds]] — "Spectrally-Normalized Margin Bounds for Neural Network Generalization"
+- [[simulation-based-inference-aircraft-design]] — Simulation-Based Inference for Conceptual Aircraft Design
+- [[spectral-margin-generalization-bounds]] — Spectrally-Normalized Margin Bounds for Neural Network Generalization
 - [[spectral-normalization-gan]] — Spectral Normalization for GANs — Lipschitz Constraint via Weight Normalization
 - [[square-root-unscented-kalman-filter]] — Square-Root Unscented Kalman Filter — State and Parameter Estimation
-- [[ssl-agent-skill-representation]] — "SSL — Scheduling-Structural-Logical Representation for Agent Skills"
+- [[ssl-agent-skill-representation]] — SSL — Scheduling-Structural-Logical Representation for Agent Skills
 - [[stagnation-properties]] — Stagnation Properties and Critical Conditions — Gas Dynamics
-- [[state-space-model-emergence-ergodicity]] — "State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds"
+- [[state-space-model-emergence-ergodicity]] — State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds
 - [[state-space-model]] — State-Space Model (SSM) — State-Space Representation of Dynamical Systems
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[structured-hybrid-mechanistic-models]] — Structured Hybrid Mechanistic Models — Physics + ML for Intervention Outcome Estimation
 - [[structured-inference-networks]] — Structured Inference Networks for Nonlinear State Space Models — Deep Markov Models
 - [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
-- [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
-- [[thermoelastic-dmn]] — "Thermoelastic Deep Material Network"
+- [[thermoelastic-dmn]] — Thermoelastic Deep Material Network
 - [[transformer]] — Transformer Architecture
-- [[ukf-stochastic-stability]] — UKF Stochastic Stability — Modified UKF with Fading Measurements (Li, Yu, Xia, Yang 2017)
+- [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
+- [[ukf-stochastic-stability]] — UKF Stochastic Stability — Modified UKF with Fading Measurements
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
 - [[universal-approximation-theorem]] — Universal Approximation Theorem
-- [[universal-differential-equations]] — "Universal Differential Equations vs Neural ODEs Near Critical Transitions"
+- [[universal-differential-equations]] — Universal Differential Equations vs Neural ODEs Near Critical Transitions
 - [[unsupervised-phase-transitions]] — Unsupervised Learning of Phase Transitions (ML × Physics)
 - [[uq-aeroelasticity]] — Uncertainty Quantification in Aeroelasticity
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
-- [[waste-fiber-acoustic-absorber]] — "Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계"
-- [[waste-fiber-market-entry]] — "Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape"
+- [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계
+- [[waste-fiber-market-entry]] — Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
-- [[youla-ren-stabilizing-controllers]] — Youla-REN — Learning over All Stabilizing Nonlinear Controllers (Wang, Barbara, Revay, Manchester 2021)
+- [[youla-ren-stabilizing-controllers]] — Youla-REN — Learning over All Stabilizing Nonlinear Controllers
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
 
 ## Comparisons
 
 - [[dkf-vs-differentiable-enkf]] — Deep Kalman Filter vs Differentiable Ensemble Kalman Filter — Temporal Inference 비교
-- [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
 - [[fno-vs-deeponet]] — FNO vs DeepONet — Operator Learning 접근법 비교
+- [[fno-vs-deeponet-vs-kan]] — FNO vs DeepONet vs KAN — Operator Learning 3-way 비교
 - [[kf-ekf-ukf-srukf-differentiable]] — Differentiable Filtering — KF vs EKF vs UKF vs SR-UKF 비교
 - [[koh-vs-deep-uq]] — KOH Bayesian Calibration vs Deep Learning UQ Methods — 비교
 - [[lstm-vs-gru]] — LSTM vs GRU — Gated RNN 비교

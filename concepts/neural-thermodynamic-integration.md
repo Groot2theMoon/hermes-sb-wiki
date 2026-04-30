@@ -91,6 +91,7 @@ Z_hat_N = Z^ideal_N * exp( beta * integral_0^1 dt * ⟨partial_t U^theta_t⟩_t 
 - `score-based-diffusion-models` — 생성모델로서의 diffusion model
 - `energy-based-models` — 에너지 기반 모델
 - [[physics-informed-neural-networks]] — 물리 정보를 활용한 신경망
+- [[variational-autoencoder]] — VAE의 생성 모델 및 변분 추론과의 연결
 - `lennard-jones-fluid` — LJ 유체 시스템
 - `free-energy-computation` — 자유에너지 계산 방법론
 

@@ -40,3 +40,4 @@ Conditional Gaussian Nonlinear System (CGNS)을 위한 **forward-in-time online 
 
 - **arXiv:** 2411.05870
 - 관련: [[em-kalman-smoother-noise-covariance]] — RIGOR의 EM 기반 접근
+- 관련: [[kalmannet]] — Neural network aided Kalman filtering for partially known dynamics

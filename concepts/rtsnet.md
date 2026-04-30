@@ -12,7 +12,7 @@ confidence: high
 
 ## 개요
 
-RTSNet은 [[kalmannet|KalmanNet]]의 smoothing 확장판으로, Rauch-Tung-Striebel (RTS) smoother의 **forward + backward pass**를 모두 학습 가능한 구조로 변환. (Revach et al. 2023, IEEE TSP)
+RTSNet은 [[kalmannet|KalmanNet]]의 smoothing 확장판으로, Rauch-Tung-Striebel (RTS) smoother의 **forward + backward pass**를 모두 학습 가능한 구조로 변환. ([[guy-revach|Revach]], [[nir-shlezinger|Shlezinger]] et al. 2023, IEEE TSP)
 
 ## 핵심 아이디어
 

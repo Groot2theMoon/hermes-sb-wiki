@@ -12,7 +12,7 @@ confidence: medium
 
 ## 개요
 
-Echo State Network (ESN)을 **state-space model (SSM)** 체계로 재해석한 논문. Reservoir computing과 고전적 system identification, 현대적 structured SSM(S4/Mamba 계열)을 연결. (Singh & Raman 2025)
+Echo State Network (ESN)을 **[[state-space-model|state-space model (SSM)]]** 체계로 재해석한 논문. Reservoir computing과 고전적 system identification, 현대적 structured SSM(S4/Mamba 계열)을 연결. (Singh & Raman 2025)
 
 ## 핵심 아이디어
 
