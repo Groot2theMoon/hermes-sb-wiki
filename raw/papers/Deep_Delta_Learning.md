@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: ad6e066d56ba8a63e727c7e3183b0eab3ec08517a7ede3c6b894a90c4763c160
+---
+
 
 
 # Deep Delta Learning

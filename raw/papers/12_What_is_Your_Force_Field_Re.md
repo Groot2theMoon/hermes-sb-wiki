@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 0d2e488556877f17872c23188878b3e60a8547b55d7e18ad3c7d67523153c853
+---
+
 
 
 # What is Your Force Field *Really* Learning? Gaining Scientific Intuition with A Dual-Level Explainability Framework

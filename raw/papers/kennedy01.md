@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 174fb9dd4529eabb3226e15020bd7536865ca3438b31af284981b3fad9928002
+---
+
 
 
 # Bayesian Calibration of Computer Models

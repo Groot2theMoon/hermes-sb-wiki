@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 92d34cb297b86d8dd79a1641f6a0afe2e54f6891f8bff6173b3687a07b4f310c
+---
+
 
 
 # Biometrika Trust ---

@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: d66c5d7b5858caf88f10af288bc2bb2d18ea9177a47c5b1cb03045ab0af72ecc
+---
+
 ## Page 1
 
 Gas Dynamics 1

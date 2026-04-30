@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: a1df6b37cc8df944a9a5139ca181469114eec160aee982aa729e2eefa1edf056
+---
+
 
 
 # --- Learning IRC-Safe Jet Clustering with Geometric Algebra Transformers ---

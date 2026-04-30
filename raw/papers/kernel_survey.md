@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: b9bf6e63838b33cd7bd20603918f03b212932ea9095da2ac69ebaf8ee33fb282
+---
+
 
 
 # An Introduction to Kernel-Based Learning Algorithms

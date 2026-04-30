@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 6a8956d1d26439d98e689a3d1859f03a39a18a5b58494c4d6963c92f2e91d8b1
+---
+
 
 
 # --- RINO: Renormalization Group Invariance with No Labels ---

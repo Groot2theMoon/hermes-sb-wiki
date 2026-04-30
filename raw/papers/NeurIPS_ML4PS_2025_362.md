@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 94bf7961fc5803cb52aab4df329546a6535749ca5735e929f1f4b48f4794a918
+---
+
 
 
 # --- Continuous Representations of Baryonic Feedback for Robust Inference from Multiple Simulation Suites ---

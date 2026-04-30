@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 6c848d91ce012e3d3946326a3ebb47e98d35612c07aadd296e024b5223a2922b
+---
+
 
 
 # --- The Platonic Universe: Do Foundation Models See the Same Sky? ---

@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 9098e21e9464448f7a9c0d8c7080e1fd664a2713635058108cb4a67b1dec3f66
+---
+
 
 
 # Offline Bayesian Aleatoric and Epistemic Uncertainty Quantification and Posterior Value Optimisation in Finite-State MDPs

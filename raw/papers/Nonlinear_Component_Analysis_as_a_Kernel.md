@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: a0ef6fcc3ae6552646d65231519a79bebc4964040237f8ce8a52abd0ab703e51
+---
+
 
 
 # Nonlinear Component Analysis as a Kernel Eigenvalue Problem

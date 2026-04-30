@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: c1386f5289791c7f1280ca50a8cb66ce5c73c876bda43d0ea187c8dfd23ad9a8
+---
+
 
 
 # On the Input-Output Stability of Time-Varying Nonlinear Feedback Systems Part I: Conditions Derived Using Concepts of Loop Gain, Conicity, and Positivity

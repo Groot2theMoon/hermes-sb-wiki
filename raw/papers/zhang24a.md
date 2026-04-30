@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: a7751b698f3c9c391037e12f0691e7852ca323f84f7abec0a0f0b18ec222a598
+---
+
 
 
 # Learning to Stabilize High-dimensional Unknown Systems Using Lyapunov-guided Exploration

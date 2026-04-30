@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 4f90ff6c9d65c6def6886c4959abd4f9ed60017882a302dd917ed4e09f0a1f4b
+---
+
 
 
 # Non-linear Embeddings in Hilbert Simplex Geometry

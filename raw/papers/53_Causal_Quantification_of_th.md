@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 58ae0c99f533a6e675fb0789bf5002ee47cfd716cdaec1ef3caf5af0839b02de
+---
+
 
 
 # Causal Quantification of the Sensitivity-Reliability Trade-Off in Semantic XAI: Comparing Object-Aware (SAM) and Texture-Aware (SLIC) Segmentation

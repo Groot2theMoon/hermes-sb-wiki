@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 53f3452de1b62e6ce67844441d5565af5cb5606833dd5afaf820ce56d948ba45
+---
+
 
 
 # Orthogonal projection-based regularization for efficient model augmentation

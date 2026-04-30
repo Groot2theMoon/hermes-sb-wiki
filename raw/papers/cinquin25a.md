@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: afab623ecef887bbd4580744f74dab907ba4236a84bf65134a4bf149c03ed361
+---
+
 
 
 # --- Well-Defined Function-Space Variational Inference in Bayesian Neural Networks via Regularized KL-Divergence ---

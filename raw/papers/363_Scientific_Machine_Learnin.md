@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: f724fb340e44df0db6580909441188e57e2a4fe70c2ab89b2ac9d994cf09fc04
+---
+
 
 
 # --- Scientific Machine Learning for Symbolic Recovery of Relativistic Effects in Black Hole Orbits ---

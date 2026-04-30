@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: b4696fff37fe1c7389ffeb19790b0f1161f2a5ff1ee95a69e7834569560237cf
+---
+
 
 
 # Spectrally-normalized margin bounds for neural networks

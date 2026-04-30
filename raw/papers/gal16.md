@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: f1e0796c48a87917907e82152e642ebb162cd002f3e5920f7d3926f1e85a996e
+---
+
 
 
 # --- Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning ---

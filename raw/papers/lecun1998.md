@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 10da266742ea588d298a3cce66279c79279416c7342a55df9088294d5391c0e2
+---
+
 
 
 ![HAL open science logo, featuring a stylized circular emblem with purple and orange segments.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)

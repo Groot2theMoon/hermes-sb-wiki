@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 8b8b149580f9a8530de29169fcfecc28e502f4e602ba5db796c469f4df8af286
+---
+
 
 
 # Residual Neural Terminal Constraint for MPC-based Collision Avoidance in Dynamic Environments

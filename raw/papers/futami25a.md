@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: cbfbf4191f2976fc2b4d62d37cbf2db078bb2eecdafba4d1aed243366bf60e86
+---
+
 
 
 # Epistemic Uncertainty and Excess Risk in Variational Inference

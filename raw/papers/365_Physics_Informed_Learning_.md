@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 16e7a033a367a85c099d7ec5b08fcf02fa76ddecf9af3789cb09f7d8c8ae512a
+---
+
 
 
 # --- Physics-Informed Learning Near Critical Transitions: A Comparative Study of UDEs and Neural ODEs ---

@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 4f37347216f08860c8720f3612aed9a2eebc39f1c764ad893cc902b7fef2e6e5
+---
+
 
 
 # --- Continual Learning for Particle Accelerators ---

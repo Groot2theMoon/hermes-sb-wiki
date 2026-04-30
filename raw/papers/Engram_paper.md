@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: a08c67e367763c887564cf87721e374e9c86218ce58070ea5ec1812a8f120b7d
+---
+
 
 
 # Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models

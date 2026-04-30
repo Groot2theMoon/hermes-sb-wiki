@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 5032611f43bdad5919f99f8576ed0088c8ad099698c7a73fbc15818fc393124e
+---
+
 
 
 ![HAL logo, featuring stylized curved lines in purple and orange.](2dfa6ac3edfe874f68aa0cbccaa42322_img.jpg)

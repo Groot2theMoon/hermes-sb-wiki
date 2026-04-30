@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 329b118854588a9c082a52783a00915f4b59c3bdd72a179a7b67d85b46bd9604
+---
+
 
 
 # State space models, emergence, and ergodicity: How many parameters are needed for stable predictions?

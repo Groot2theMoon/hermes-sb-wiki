@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: d8b4ccacbcb0cfc51710502b72712794daef82df68066f93ea41f7e204a90529
+---
+
 
 
 # --- A Preliminary Study into the Conceptual Design of Aircraft using Simulation-Based Inference ---

@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 908561e3250f7b350c34dc8bfea0741cc03d9b00fe6e1d5b510f77266897b035
+---
+
 
 
 # How to construct a *Nature* summary paragraph

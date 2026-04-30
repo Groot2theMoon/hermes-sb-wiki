@@ -1,3 +1,8 @@
+---
+ingested: 2026-04-30
+sha256: 76b754855e455a124e6a06fc45a00a2218c2a833a1ea25d31e4d219e60da37c2
+---
+
 
 
 # A Tutorial on Hidden Markov Models and Selected Applications in Speech Recognition
