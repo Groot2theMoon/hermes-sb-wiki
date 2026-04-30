@@ -63,7 +63,7 @@ $$
 | Paper | Noise update | Dynamics | Filter | Smoother? | AD? | Domain | Gap? |
 |-------|-------------|----------|--------|-----------|-----|--------|------|
 | **Shumway-Stoffer (1982)** | EM analytical | Linear (fixed) | KF | ✅ | ❌ | Time series | ✅ |
-| **KalmanNet (2022)** | EM (baseline) | Fixed (known) | KF | ❌ | ✅ | General | ✅ |
+| **[[kalmannet|KalmanNet]] (2022)** | EM (baseline) | Fixed (known) | KF | ❌ | ✅ | General | ✅ |
 || **RIGOR** | **EM analytical** | **A+NN hybrid** | **SR-UKF** | **✅ RTS** | **✅ JAX** | **Chaotic system ID** | — |
 
 ### Q의 Self-Calibrating 속성
@@ -120,10 +120,10 @@ Q_new += correction_for_smoother_uncertainty(...)  # P_{t|T} 관련 항
 | 논문 | 연결점 |
 |------|--------|
 | **Shumway & Stoffer (1982)** — EM + RTS smoother | **이론적 기초. 40년 이상 검증된 표준** |
-| **KalmanNet (Revach 2022)** — Shumway-Stoffer 인용 | Neural filter도 EM 기반 Q,R을 표준으로 사용 |
-| **ESN as SSM (2025)** — EM for noise cov. + neural readout | **Neural + EM 조합의 선행 검증** |
-| **Adaptive Online Smoother (2024)** — Online EM for noise | EM을 online 확장 |
-| **RTSNet (Revach 2023)** — Neural RTS smoother | Smoother 학습의 대안적 접근 |
+|| **[[kalmannet|KalmanNet]] ([[guy-revach|Revach]] 2022)** — Shumway-Stoffer 인용 | Neural filter도 EM 기반 Q,R을 표준으로 사용 |
+|| **[[esn-as-ssm|ESN as SSM]] (2025)** — EM for noise cov. + neural readout | **Neural + EM 조합의 선행 검증** |
+|| **[[adaptive-online-smoother|Adaptive Online Smoother]] (2024)** — Online EM for noise | EM을 online 확장 |
+|| **[[rtsnet|RTSNet]] ([[guy-revach|Revach]] 2023)** — Neural RTS smoother | Smoother 학습의 대안적 접근 |
 | **Győrök (2025)** — Orthogonal projection for A+NN | **직교화 + EM의 결합으로 identifiability 완벽 해결** |
 
 ## References

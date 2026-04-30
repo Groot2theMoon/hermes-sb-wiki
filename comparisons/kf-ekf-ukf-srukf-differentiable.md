@@ -233,8 +233,8 @@ L_post = sqrt_cov_from_dev_qr(dev_post, w_cov, gain_noise)
 - Wan, E.A. & van der Merwe, R. (2001). The Square-Root Unscented Kalman Filter for State and Parameter-Estimation. *ICASSP*.
 - Kloss, A. et al. (2021). How to Train Your Differentiable Filter. *Autonomous Robots*.
 - Majewski, K. et al. (2026). MA-UKF: Robust Unscented Kalman Filtering via Recurrent Meta-Adaptation. *FUSION 2026*.
-- Revach, G. et al. (2022). KalmanNet: Neural Network Aided Kalman Filtering for Partially Known Dynamics. *IEEE TSP*.
-- [[square-root-unscented-kalman-filter]] — SR-UKF 기반
+|- Revach, G. et al. (2022). [[kalmannet|KalmanNet]]: Neural Network Aided Kalman Filtering for Partially Known Dynamics. *IEEE TSP*.
+|- [[square-root-unscented-kalman-filter]] — SR-UKF 기반
 - [[differentiable-filter-kloss]] — Kloss differentiable filter
 - [[ma-ukf-meta-adaptive]] — MA-UKF
 - [[em-kalman-smoother-noise-covariance]] — EM analytical Q,R

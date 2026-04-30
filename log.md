@@ -606,3 +606,25 @@
   - [[physics-informed]] — 2026 trends에 LESnets 항목 추가
 - **Cron fix:** wrapper.sh → wrapper.py (Python 실행 방식으로 변경, 120s timeout 우회)
 - **총 페이지:** 247 → 249 (+2)
+
+## [2026-04-30] ingest | 6 papers + 2 entities — Neural Kalman filtering family
+- **Raw papers ingested (5 PDF → pymupdf4llm):**
+  - raw/papers/kalmannet-revach21.md — KalmanNet (Revach 2022, arXiv:2107.10043)
+  - raw/papers/rtsnet-revach21.md — RTSNet (Revach 2023, arXiv:2110.04717)
+  - raw/papers/esn-as-ssm-singh25.md — ESN as SSMs (Singh & Raman 2025, arXiv:2509.04422)
+  - raw/papers/adaptive-online-smoother-andreou24.md — Adaptive Online Smoother (Andreou 2024, arXiv:2411.05870)
+  - raw/papers/recursive-kalmannet-mortada25.md — Recursive KalmanNet (Mortada 2025, arXiv:2506.11639)
+  - raw/papers/maml-kalmannet-chen25.md — MAML-KalmanNet (Chen 2025, IEEE TSP — user-provided PDF)
+- **MAML-KalmanNet (Chen 2025):** 처음에는 abstract만 (IEEE paywall) → 이후 사용자 PDF 제공 → full ingest 완료
+- **Concept pages created (6):**
+  - concepts/kalmannet.md — KalmanNet hybrid filter
+  - concepts/rtsnet.md — Neural RTS smoother
+  - concepts/esn-as-ssm.md — ESN reinterpreted as SSM
+  - concepts/adaptive-online-smoother.md — Online EM smoother with adaptive lag
+  - concepts/recursive-kalmannet.md — Joseph's formula for consistent UQ
+  - concepts/maml-kalmannet.md — MAML meta-learning for few-shot adaptation
+- **Entity pages created (2):**
+  - entities/guy-revach.md — KalmanNet/RTSNet series lead author
+  - entities/nir-shlezinger.md — Co-author, model-based deep learning
+- **Wikilink backfill:** em-kalman-smoother-noise-covariance.md (comparison table → [[kalmannet]], [[rtsnet]], [[esn-as-ssm]], [[adaptive-online-smoother]], [[guy-revach]]), kf-ekf-ukf-srukf-differentiable.md (reference → [[kalmannet]])
+- **총 페이지:** 249 → 265 (+16)
