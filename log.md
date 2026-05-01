@@ -16,7 +16,7 @@
 - **중복/기커버:** LESnets (2604.26621), Diffusion LES SR (2604.26776), FOWT FNOvsPINN (2604.23937) — 기존 페이지에서 이미 커버
 - **Tier 3 (기록):** sparse SGS closures (2604.25824), EMSL (2604.27179), nudged LES (2604.23874), MLIP MoE (2604.26143), Soft-FQEq (2604.27910), VibroML (2604.27685), particle-turb SGS (2604.27255), viscoelastic jet ROM (2604.26240), DSMC-CFD RBF (2604.24225), two-phase interfacial area (2604.23946), K-S entropy observables (2604.27412), DeepPropNet (2604.27298), DSM modularization (2604.28018), acoustic coin auth (2604.27803), electrofacies (2604.27126), MappingEvolve (2604.26591), GMG 3D SIMP (2604.26441), HydroSludge (2604.27432)
 - **Data-collection script timeout:** trending-papers-wrapper.py (300s timeout) — arXiv MCP로 직접 스캔으로 대체
-- **Git:** `8dd8ddc`
+- **Git:** `5cef7ea`
 
 ## [2026-05-01] ingest | 3 raw papers — Covariance Prior References (Berger, Yang, Alvarez)
 
@@ -761,3 +761,11 @@
 - **EM Q,R + LMI stability 조합은 novelty gap 유지** (논문 0건)
 - Triangle inequality (∥A∥₂ + L < ρ)는 lmi.py에 이미 있음 → train-time penalty로는 무의미
 - Total pages: 298 → 299
+
+## [2026-05-02] create | concepts/soft-shima-lmi.md — Soft Shima LMI: P-learning for train-time contractivity
+
+- Added soft Shima LMI penalty + trainable P = L L^T Cholesky factor
+- Soft penalty: max(0, λ_max(M) + ε) — SDP/Solver 불필요
+- A+NN 분할 유지, Birkhoff 기존 코드 유지
+- 기존 heuristic leakage → 이론적 LMI 기반으로 대체
+- Git commit with RIGOR_v2.3_FINAL_GUIDELINE.md (rigor-filter repo)

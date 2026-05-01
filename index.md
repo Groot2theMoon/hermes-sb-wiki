@@ -273,6 +273,7 @@
 - [[stagnation-properties]] — Stagnation Properties and Critical Conditions — Gas Dynamics
 - [[state-space-model-emergence-ergodicity]] — State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds
 - [[state-space-model]] — State-Space Model (SSM) — State-Space Representation of Dynamical Systems
+- [[soft-shima-lmi]] — Soft Shima LMI — Train-Time Contractivity via P-learning
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[structured-hybrid-mechanistic-models]] — Structured Hybrid Mechanistic Models — Physics + ML for Intervention Outcome Estimation
 - [[structured-inference-networks]] — Structured Inference Networks for Nonlinear State Space Models — Deep Markov Models
