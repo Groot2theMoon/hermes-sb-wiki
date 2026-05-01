@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-02 | Total pages: 298
+> Last updated: 2026-05-02 | Total pages: 299
 
 ## Entities
 
@@ -137,6 +137,7 @@
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
+- [[differentiable-lmi-contractivity]] — Differentiable Shima LMI — Train-Time Contractivity via Bullo Exact Param.
 - [[differentiable-enkf]] — Differentiable Ensemble Kalman Filter — Data-Driven State Estimation for Robotics
 - [[differentiable-filter-kloss]] — Differentiable Filter — Kloss, Martius & Bohg (2021)
 - [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory

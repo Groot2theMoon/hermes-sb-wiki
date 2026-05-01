@@ -735,3 +735,11 @@
   - concepts/shima-contractivity-lure.md — AOL/LipKernel/Comparison Related 추가
 - **RIGOR 관련성:** AOL → A+NN spectral norm 제약, LipKernel → LMI dissipativity = RIGOR Lur'e LMI와 방법론적 평행, Comparison → LBDN/AOL/LipKernel 선택 근거
 - Total pages: 289 → 298
+
+## [2026-05-02] create | concepts/differentiable-lmi-contractivity.md — Differentiable Shima LMI 연구
+
+- **Deep research 결과:** Bullo 그룹 (Gokhale, Proskurnikov, Kawano, Bullo, 2026)의 exact unconstrained parameterization (arXiv:2604.15238, 2604.00119)이 Shima LMI를 SDP 없이 학습에 통합하는 최적의 방법임을 확인
+- **3개 접근법 비교:** (A) Bullo exact param — zero-overhead, (B) LMI-Net projection (Tang & Azizan, 2604.05374), (C) Non-Euclidean contractivity (Kuang & Lin, 2604.00490)
+- **EM Q,R + LMI stability 조합은 novelty gap 유지** (논문 0건)
+- Triangle inequality (∥A∥₂ + L < ρ)는 lmi.py에 이미 있음 → train-time penalty로는 무의미
+- Total pages: 298 → 299
