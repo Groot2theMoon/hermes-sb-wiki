@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-02 | Total pages: 299
+> Last updated: 2026-05-02 | Total pages: 303
 
 ## Entities
 
@@ -168,6 +168,7 @@
 - [[gated-recurrent-units]] — Gated Recurrent Units (GRU & LSTM)
 - [[genai-stock-selection]] — Generative AI for Stock Selection
 - [[generative-models-physics]] — Generative Models for Physics — Spin Systems and Lattice Field Theory
+- [[gmt-geometric-multigrid-transformer]] — GMT — Geometric Multigrid Transformer for Microstructure Homogenization (SIGGRAPH 2026)
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
 - [[gru-d]] — GRU-D — Gated Recurrent Unit with Missingness Patterns for Time Series
 - [[hamiltonian-neural-networks]] — Hamiltonian Neural Networks — Physics-Embedded Dynamics with Energy Conservation
@@ -178,6 +179,7 @@
 - [[hmm-tutorial]] — Hidden Markov Model — Tutorial
 - [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
 - [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
+- [[hybrid-fno-lbm]] — Hybrid FNO-LBM — Fourier Neural Operator-Lattice Boltzmann Method Coupling
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
 - [[in-context-modeling-physics]] — In-Context Modeling (ICM) for Computational Science
 - [[isentropic-relations]] — Isentropic Relations — Thermodynamic Derivation for Gas Dynamics
@@ -201,6 +203,7 @@
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lipkernel-dissipative-cnn]] — LipKernel — Lipschitz-Bounded CNNs via Dissipative Layers (2-D Roesser Parameterization)
 - [[lle]] — Locally Linear Embedding (LLE)
+- [[llm-mechanical-linkage-design]] — LLM for Mechanical Linkage Design — Symbolic Reflection and Modular Optimisation
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
@@ -209,6 +212,7 @@
 - [[lyapunov-neural-network]] — Lyapunov Neural Network — Adaptive Stability Certification for Safe Learning
 - [[lyapunov-stable-nn-control]] — Lyapunov-Stable Neural Network Control — Certified Stability via NN + Quadratic Programming
 - [[mach-number-and-flow-regimes]] — Mach Number and Flow Regimes — Subsonic to Hypersonic
+- [[machine-collective-intelligence]] — Machine Collective Intelligence for Explainable Scientific Discovery
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
 - [[maml-kalmannet]] — MAML-KalmanNet — Neural Network-Assisted Kalman Filter Based on Model-Agnostic Meta-Learning
 - [[ma-ukf-meta-adaptive]] — MA-UKF — Meta-Adaptive Unscented Kalman Filter

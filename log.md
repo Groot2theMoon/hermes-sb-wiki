@@ -5,6 +5,19 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-02] trending-scan | AI/ML × Mechanics arXiv | 4 new concept(s)
+
+- **신규 개념 (4):**
+  - [[hybrid-fno-lbm]] — FNO-LBM Hybrid Coupling (2604.27158)
+  - [[gmt-geometric-multigrid-transformer]] — GMT for Microstructure Homogenization (2604.26518, SIGGRAPH 2026)
+  - [[machine-collective-intelligence]] — Multi-Agent Symbolic Scientific Discovery (2604.27297)
+  - [[llm-mechanical-linkage-design]] — LLM for Mechanical Linkage Design (2604.27962)
+- **추가 스캔:** arXiv cs.CE 10편, physics.flu-dyn 20편, physics.comp-ph 20편, cond-mat.mtrl-sci 10편에서 메커니즘/ML 관련 논문 선별
+- **중복/기커버:** LESnets (2604.26621), Diffusion LES SR (2604.26776), FOWT FNOvsPINN (2604.23937) — 기존 페이지에서 이미 커버
+- **Tier 3 (기록):** sparse SGS closures (2604.25824), EMSL (2604.27179), nudged LES (2604.23874), MLIP MoE (2604.26143), Soft-FQEq (2604.27910), VibroML (2604.27685), particle-turb SGS (2604.27255), viscoelastic jet ROM (2604.26240), DSMC-CFD RBF (2604.24225), two-phase interfacial area (2604.23946), K-S entropy observables (2604.27412), DeepPropNet (2604.27298), DSM modularization (2604.28018), acoustic coin auth (2604.27803), electrofacies (2604.27126), MappingEvolve (2604.26591), GMG 3D SIMP (2604.26441), HydroSludge (2604.27432)
+- **Data-collection script timeout:** trending-papers-wrapper.py (300s timeout) — arXiv MCP로 직접 스캔으로 대체
+- **Git:** commit hash TBD (git-sync.sh 실행 후 확인)
+
 ## [2026-05-01] ingest | 3 raw papers — Covariance Prior References (Berger, Yang, Alvarez)
 
 - **Raw sources (3):**
