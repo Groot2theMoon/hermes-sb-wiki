@@ -739,6 +739,11 @@
 ## [2026-05-02] create | concepts/differentiable-lmi-contractivity.md — Differentiable Shima LMI 연구
 
 - **Deep research 결과:** Bullo 그룹 (Gokhale, Proskurnikov, Kawano, Bullo, 2026)의 exact unconstrained parameterization (arXiv:2604.15238, 2604.00119)이 Shima LMI를 SDP 없이 학습에 통합하는 최적의 방법임을 확인
+- **Raw sources (3):**
+  - raw/papers/bullo-nonlinear-separation-principle.md — Bullo exact unconstrained param. (arXiv:2604.15238)
+  - raw/papers/lmi-net-differentiable-projection.md — LMI-Net: differentiable LMI projection (arXiv:2604.05374)
+  - raw/papers/non-euclidean-contractivity.md — Non-Euclidean contractivity (arXiv:2604.00490)
+- **Concept page updated:** sources 추가, confidence: medium → high
 - **3개 접근법 비교:** (A) Bullo exact param — zero-overhead, (B) LMI-Net projection (Tang & Azizan, 2604.05374), (C) Non-Euclidean contractivity (Kuang & Lin, 2604.00490)
 - **EM Q,R + LMI stability 조합은 novelty gap 유지** (논문 0건)
 - Triangle inequality (∥A∥₂ + L < ρ)는 lmi.py에 이미 있음 → train-time penalty로는 무의미
