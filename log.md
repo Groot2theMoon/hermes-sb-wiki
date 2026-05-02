@@ -28,7 +28,7 @@
 - **중복/기커버:** LaST-R1 (2604.28192, cs.RO), GSDrive (2604.28111, cs.RO), Scene Graph Matching (2604.27821, cs.RO), Connected Dependability Cage (2604.27728, cs.RO) — wiki 도메인(Mechanics)과 거리 있음, 로그만 기록
 - **Tier 3 (기록):** GNN Core-Electron Binding Energies (2604.27070), DeepPropNet 원래 Tier3 → Tier2 업그레이드됨
 - **참고:** 첫 번째 스캔(06:00)이 script 타임아웃으로 cs.RO 카테고리 누락, 본 스캔에서 보완
-- **Git:** pending commit
+- **Git:** `8a419d0`
 
 ## [2026-05-01] ingest | 3 raw papers — Covariance Prior References (Berger, Yang, Alvarez)
 
