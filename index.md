@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-02 | Total pages: 312
+> Last updated: 2026-05-02 | Total pages: 318
 
 ## Entities
 
@@ -39,11 +39,13 @@
 - [[fudan-university]] — Fudan University
 - [[geoffrey-hinton]] — Geoffrey Hinton
 - [[george-em-karniadakis]] — George Em Karniadakis
+- [[gerard-dreyfus]] — Gérard Dreyfus — ESPCI Paris, Canonical Form of Nonlinear Discrete-Time Models
 - [[giorgio-buttazzo]] — Giorgio Buttazzo
 - [[google-deepmind]] — Google DeepMind
 - [[guglielmo-scovazzi]] — Guglielmo Scovazzi
 - [[guy-revach]] — Guy Revach — Differentiable Filtering & Model-Based Deep Learning
 - [[hamidreza-montazeri-hedesh]] — Hamidreza Montazeri Hedesh
+- [[hassan-mansour]] — Hassan Mansour — MERL, PINODE Physics-Informed Neural ODE
 - [[hongkai-dai]] — Hongkai Dai — Toyota Research Institute, NN Control
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[ian-r-manchester]] — Ian R. Manchester
@@ -93,6 +95,7 @@
 - [[steven-g-johnson]] — Steven G. Johnson
 - [[takahiro-sagawa]] — Takahiro Sagawa — Physicist, Information Thermodynamics
 - [[takeru-miyato]] — Takeru Miyato
+- [[tufan-kumbasar]] — Tufan Kumbasar — ITU, SOLIS Physics-Informed Surrogates
 - [[university-of-sheffield]] — University of Sheffield
 - [[uri-shalit]] — Uri Shalit — ML Researcher, Causal Inference for Healthcare
 - [[wenxuan-yuan]] — Wenxuan Yuan — NYU, Information-Theoretic Koopman Representation
@@ -122,6 +125,7 @@
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[brain-active-inference]] — BRAIN — Bayesian Reasoning via Active Inference for Agentic Intelligence
 - [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
+- [[canonical-form-nonlinear-discrete-models]] — The Canonical Form of Nonlinear Discrete-Time Models — Dreyfus & Idan (1998)
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
 - [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
@@ -250,6 +254,7 @@
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[pinn-lyapunov-functions]] — PINN Lyapunov Functions — PDE Characterization, Learning, and Verification
 - [[pinn-ukf]] — PINN-UKF — Physics-Informed Neural Network + Adaptive UKF
+- [[pinode-physics-informed-neural-ode]] — PINODE — Physics-Informed Neural ODE for Data-Efficient ROM
 - [[pisml-sparse-neural]] — PISML — Physics-Informed Sparse ML (Sparse + Neural Residual for Dynamics Discovery)
 - [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN — 확장 연구 분석
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
@@ -274,6 +279,7 @@
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[shima-contractivity-lure]] — Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025
 - [[simulation-based-inference-aircraft-design]] — Simulation-Based Inference for Conceptual Aircraft Design
+- [[solis-physics-informed-surrogates]] — SOLIS — Physics-Informed Learning of Interpretable Neural Surrogates
 - [[spectral-margin-generalization-bounds]] — Spectrally-Normalized Margin Bounds for Neural Network Generalization
 - [[spectral-normalization-gan]] — Spectral Normalization for GANs — Lipschitz Constraint via Weight Normalization
 - [[square-root-unscented-kalman-filter]] — Square-Root Unscented Kalman Filter — State and Parameter Estimation

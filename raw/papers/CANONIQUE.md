@@ -1,5 +1,16 @@
 
 
+---
+title: "The Canonical Form of Nonlinear Discrete-Time Models"
+authors: ["Gérard Dreyfus", "Yizhak Idan"]
+year: 1998
+source: paper
+ingested: 2026-05-02
+sha256: acb76bcc36ec28126ea8673aedf067443845bc365e1d5a6003ab943155d3528d
+conversion: marker-api
+---
+
+
 # The Canonical Form of Nonlinear Discrete-Time Models
 
 Gérard DREYFUS and Yizhak IDAN  

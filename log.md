@@ -782,7 +782,22 @@
 - 기존 heuristic leakage → 이론적 LMI 기반으로 대체
 - Git commit with RIGOR_v2.3_FINAL_GUIDELINE.md (rigor-filter repo)
 
-## [2026-05-02] ingest | 1 paper — Information Shapes Koopman Representation
+## [2026-05-02] ingest | auto-parsed batch — 3 papers (SOLIS, PINODE, CANONIQUE)
+
+- **Raw sources (3):**
+  - raw/papers/2604.14879v1.md — SOLIS: Physics-Informed Learning of Interpretable Neural Surrogates (Mansur & Kumbasar, arXiv:2604.14879)
+  - raw/papers/s41598-023-36799-6.md — PINODE: Physics-informed neural ODE (Sholokhov et al., Scientific Reports 2023)
+  - raw/papers/CANONIQUE.md — The Canonical Form of Nonlinear Discrete-Time Models (Dreyfus & Idan, 1998)
+- **New concepts (3):**
+  - [[solis-physics-informed-surrogates]] — Quasi-LPV + PINN + cyclic curriculum for interpretable system identification
+  - [[pinode-physics-informed-neural-ode]] — Collocation-based physics-informed loss for autoencoder ROMs
+  - [[canonical-form-nonlinear-discrete-models]] — Graph-based canonical state-space transformation for nonlinear discrete systems
+- **New entities (3):**
+  - [[tufan-kumbasar]] — ITU, SOLIS 선임 저자
+  - [[hassan-mansour]] — MERL, PINODE 선임 저자
+  - [[gerard-dreyfus]] — ESPCI Paris, 신경망 이론
+- **Wikilinks backfill:** 각 concept 페이지에 PINN, Neural ODE, SSM, surrogate modeling 관련 wikilink 포함
+- Total pages: 312 → 318
 
 - **Raw sources (1):**
   - raw/papers/information-koopman-2510.13025.md — Information Shapes Koopman Representation (Cheng, Yuan, Yang, Zhang, Cheng, He, Sun, ICLR 2026)
