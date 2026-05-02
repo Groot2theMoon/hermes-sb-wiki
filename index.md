@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-02 | Total pages: 306
+> Last updated: 2026-05-02 | Total pages: 312
 
 ## Entities
 
@@ -95,11 +95,15 @@
 - [[takeru-miyato]] — Takeru Miyato
 - [[university-of-sheffield]] — University of Sheffield
 - [[uri-shalit]] — Uri Shalit — ML Researcher, Causal Inference for Healthcare
+- [[wenxuan-yuan]] — Wenxuan Yuan — NYU, Information-Theoretic Koopman Representation
+- [[xiaoyuan-cheng]] — Xiaoyuan Cheng — UCL, Information-Theoretic Koopman Representation
 - [[yang-song]] — Yang Song
-- [[yann-lecun]] — Yann LeCun
+- [[yuanzhao-zhang]] — Yuanzhao Zhang — NYU, Complex Systems & Koopman
 - [[yifan-zhang]] — Yifan Zhang
+- [[yann-lecun]] — Yann LeCun
 - [[yoshua-bengio]] — Yoshua Bengio
 - [[ziming-liu]] — Ziming Liu
+- [[zhuo-sun]] — Zhuo Sun — Northeastern University, Info-Koopman
 - [[zongyi-li]] — Zongyi Li
 
 ## Concepts
@@ -197,6 +201,7 @@
 - [[kolmogorov-arnold-networks]] — Kolmogorov-Arnold Networks (KAN) — Learnable B-Spline Activations on Edges
 - [[koopman-learner-continual-lifting]] — Continual Learning and Lifting of Koopman Dynamics for Legged Robots
 - [[koopman-resolvent-dynamics]] — Koopman-Resolvent Data-Driven Dynamics — Generator Learning for Continuous Systems
+- [[information-koopman-representation]] — Information Shapes Koopman Representation — Information-Theoretic Koopman for Dynamical Systems
 - [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
 - [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
 - [[lbdn-lipschitz-bounded-networks]] — LBDN — Lipschitz-Bounded Deep Networks via Direct Parameterization

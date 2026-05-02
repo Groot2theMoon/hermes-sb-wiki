@@ -781,3 +781,18 @@
 - A+NN 분할 유지, Birkhoff 기존 코드 유지
 - 기존 heuristic leakage → 이론적 LMI 기반으로 대체
 - Git commit with RIGOR_v2.3_FINAL_GUIDELINE.md (rigor-filter repo)
+
+## [2026-05-02] ingest | 1 paper — Information Shapes Koopman Representation
+
+- **Raw sources (1):**
+  - raw/papers/information-koopman-2510.13025.md — Information Shapes Koopman Representation (Cheng, Yuan, Yang, Zhang, Cheng, He, Sun, ICLR 2026)
+- **New concepts (1):**
+  - [[information-koopman-representation]] — Information-theoretic Lagrangian formulation (InfoNCE + von Neumann entropy) for balancing expressivity vs simplicity in Koopman representation learning
+- **New entities (4):**
+  - [[wenxuan-yuan]] — NYU, 공동 제1저자 (GitHub 레포 소유자)
+  - [[xiaoyuan-cheng]] — UCL Dynamic Systems Lab, 공동 제1저자
+  - [[yuanzhao-zhang]] — NYU, 복잡계 & 비선형 동역학
+  - [[zhuo-sun]] — Northeastern University, 교신 저자
+- **Backfill:** koopman-learner-continual-lifting, koopman-resolvent-dynamics → information-koopman-representation wikilink 추가
+- **RIGOR 관련성:** InfoNCE MI + von Neumann entropy 정규화 접근법은 RIGOR의 loss 설계(spectral norm + EM Q,R)와 직교하지만 잠재 공간 정규화 측면에서 유사. Koopman (linear in lifted space) vs A+NN (Lur'e system) 구조적 차이 존재
+- Total pages: 306 → 312

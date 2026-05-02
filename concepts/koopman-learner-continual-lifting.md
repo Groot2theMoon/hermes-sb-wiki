@@ -67,6 +67,7 @@ $$\text{s.t.} \quad \Psi(x_{k+1}) = K \Psi(x_k) + L u_k, \quad u_k \in \mathcal{
 - Koopman operator control — Koopman operator의 제어 응용 일반
 - [[lyapunov-guided-exploration]] — 고차원 미지 시스템의 데이터 기반 제어
 - [[continual-learning-physical-systems]] — 물리 시스템에서의 continual learning
+- [[information-koopman-representation]] — Information-theoretic Koopman representation (ICLR 2026)
 
 ## References
 

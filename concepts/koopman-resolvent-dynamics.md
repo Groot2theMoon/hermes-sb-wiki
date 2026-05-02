@@ -27,6 +27,7 @@ Koopman 연산자의 spectrum을 학습 → Lyapunov 함수를 **명시적으로
 ## 관련 페이지
 - [[jun-liu]] — Waterloo 그룹 (Resolvent + Koopman stability, PINN Lyapunov)
 - [[koopman-learner-continual-lifting]] — Koopman 기반 continual learning (기존 위키)
+- [[information-koopman-representation]] — 정보 이론적 Koopman representation (ICLR 2026)
 - [[iss-lyapunov-theory]] — Lyapunov 기초
 - [[lyapunov-stable-nn-control]] — 대안적 안정성 보장 접근
 - [[neural-odes]] — 연속시간 dynamics의 다른 접근
