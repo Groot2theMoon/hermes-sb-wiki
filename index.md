@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-02 | Total pages: 303
+> Last updated: 2026-05-02 | Total pages: 306
 
 ## Entities
 
@@ -133,6 +133,7 @@
 - [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deeponet]] — DeepONet — Deep Operator Networks
+- [[deeppropnet-thermal-plasma]] — DeepPropNet — Operator Learning for Thermal Plasma Property Prediction
 - [[deep-variational-smc]] — Deep Variational Sequential Monte Carlo — Differentiable Particle Filtering
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
@@ -146,6 +147,7 @@
 - [[diffusion-trajectory-optimization]] — DIFFUSOLVE — Diffusion-based Solver for Non-Convex Trajectory Optimization
 - [[diffusion-transformers-dit]] — DiT — Scalable Diffusion Models with Transformers
 - [[digital-twin]] — Digital Twin — Real-Time Physics-Based Virtual Replica
+- [[dm-phisnet-scf-acceleration]] — dm-PhiSNet — Equivariant Density-Matrix Learning for Accelerated SCF Workflows
 - [[discriminating-hyperplane-safety]] — Safety Filters via Discriminating Hyperplanes
 - [[dnn-interpretability-lrp]] — DNN Visualization & Interpretability (LRP)
 - [[dual-x-mlff-explainability]] — DUAL-X — Dual-Level Explainability Framework for Machine Learning Force Fields
@@ -259,6 +261,7 @@
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
 - [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Human Motion Prediction (Liu 2024)
 - [[rnn-sdp-lipschitz-certification]] — RNN-SDP — Lipschitz Robustness Certification for RNNs
+- [[ropedreamer-dlo-dynamics]] — RopeDreamer — Kinematic Recurrent SSM for Deformable Linear Object Dynamics
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[rtsnet]] — RTSNet — Learning to Smooth in Partially Known State-Space Models
 - [[sagawa-ueda-information-thermodynamics]] — Information Thermodynamics — Maxwell's Demon in Nonequilibrium Dynamics

@@ -18,6 +18,18 @@
 - **Data-collection script timeout:** trending-papers-wrapper.py (300s timeout) — arXiv MCP로 직접 스캔으로 대체
 - **Git:** `5cef7ea`
 
+## [2026-05-02] trending-scan | Supplemental cs.RO & physics.comp-ph | 3 new concept(s)
+
+- **신규 개념 (3):**
+  - [[ropedreamer-dlo-dynamics]] — RopeDreamer: Kinematic RSSM for Deformable Linear Object Dynamics (2604.28161)
+  - [[dm-phisnet-scf-acceleration]] — dm-PhiSNet: Equivariant Density-Matrix Learning for Accelerated SCF (2604.27256)
+  - [[deeppropnet-thermal-plasma]] — DeepPropNet: Operator Learning for Thermal Plasma Properties (2604.27298, upgraded from Tier 3)
+- **추가 스캔:** cs.RO 10편 (신규 카테고리), physics.comp-ph/physics.chem-ph 신규 논문
+- **중복/기커버:** LaST-R1 (2604.28192, cs.RO), GSDrive (2604.28111, cs.RO), Scene Graph Matching (2604.27821, cs.RO), Connected Dependability Cage (2604.27728, cs.RO) — wiki 도메인(Mechanics)과 거리 있음, 로그만 기록
+- **Tier 3 (기록):** GNN Core-Electron Binding Energies (2604.27070), DeepPropNet 원래 Tier3 → Tier2 업그레이드됨
+- **참고:** 첫 번째 스캔(06:00)이 script 타임아웃으로 cs.RO 카테고리 누락, 본 스캔에서 보완
+- **Git:** pending commit
+
 ## [2026-05-01] ingest | 3 raw papers — Covariance Prior References (Berger, Yang, Alvarez)
 
 - **Raw sources (3):**
