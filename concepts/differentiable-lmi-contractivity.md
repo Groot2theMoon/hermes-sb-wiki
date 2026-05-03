@@ -1,9 +1,9 @@
 ---
 title: "Differentiable LMI for Contractivity — Train-Time Stability Enforcement"
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-03
 type: concept
-tags: [differentiable-lmi, contractivity, lure-system, shima-lmi, bullo-param, stability]
+tags: [differentiable-lmi, contractivity, lure-system, shima-lmi, bullo-param, stability, monotone-operator]
 sources:
   - raw/papers/bullo-nonlinear-separation-principle.md
   - raw/papers/lmi-net-differentiable-projection.md
@@ -117,3 +117,4 @@ Backward: Implicit differentiation via fixed-point (no unrolling)
 - Tang, S., Goertzen, A. & Azizan, N. (2026). LMI-Net: LMI-Constrained Neural Networks via Differentiable Projection Layers. arXiv:2604.05374.
 - Kuang, Z. & Lin, W. (2026). Incremental Stability in Non-Euclidean Norms. arXiv:2604.00490.
 - Revay, M., Wang, R. & Manchester, I. R. (2020). A Convex Parameterization of Robust Recurrent Neural Networks. arXiv:2004.05290.
+- Winston, E. & Kolter, J. Z. (2020). Monotone Operator Equilibrium Networks. NeurIPS 2020. arXiv:2006.08591. — 실험 baseline으로 Bullo 논문에 인용됨

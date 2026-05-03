@@ -1,9 +1,9 @@
 ---
 title: "REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-03
 type: concept
-tags: [contracting, ren, iqc, lipschitz, stability, nn-dynamics, system-identification]
+tags: [contracting, ren, iqc, lipschitz, stability, nn-dynamics, system-identification, monotone-operator]
 sources:
   - raw/papers/ren-recurrent-equilibrium-networks-revay21.md
 confidence: high
@@ -39,3 +39,4 @@ REN의 contracting property는 A+NN 구조의 안정성 보장과 직접 연결:
 - [[lure-stability]] — Lur'e stability 분석
 - [[lbdn-lipschitz-bounded-networks]] — LBDN: SDP Lipschitz bound
 - [[lipkernel-dissipative-cnn]] — LipKernel: dissipativity 기반 CNN
+- [[monotone-operator-equilibrium-networks]] — monDEQ: monotone operator 기반, REN의 선행 implicit model (Winston & Kolter 2020)

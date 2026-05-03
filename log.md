@@ -811,3 +811,19 @@
 - **Backfill:** koopman-learner-continual-lifting, koopman-resolvent-dynamics → information-koopman-representation wikilink 추가
 - **RIGOR 관련성:** InfoNCE MI + von Neumann entropy 정규화 접근법은 RIGOR의 loss 설계(spectral norm + EM Q,R)와 직교하지만 잠재 공간 정규화 측면에서 유사. Koopman (linear in lifted space) vs A+NN (Lur'e system) 구조적 차이 존재
 - Total pages: 306 → 312
+
+## [2026-05-03] ingest + deepen + backfill | monDEQ — Monotone Operator Equilibrium Networks (Winston & Kolter 2020)
+
+- **Raw source (1):**
+  - raw/papers/monotone-operator-equilibrium-networks.md — Monotone Operator Equilibrium Networks (Winston & Kolter, NeurIPS 2020, arXiv:2006.08591)
+- **New concepts (1):**
+  - [[monotone-operator-equilibrium-networks]] — Monotone operator 기반 equilibrium network. $I - W \succeq mI$ 파라미터화로 유일 해 존재성 보장, Peaceman-Rachford operator splitting으로 수렴
+- **New entities (2):**
+  - [[ezra-winston]] — CMU, 제1저자
+  - [[j-zico-kolter]] — CMU / Bosch Center for AI, 교신 저자 (DEQ, OptNet 등 implicit model 선구자)
+- **Wikilink backfill (4 pages):**
+  - concepts/lbdn-lipschitz-bounded-networks.md → [[monotone-operator-equilibrium-networks]] 추가
+  - concepts/ren-recurrent-equilibrium-networks.md → [[monotone-operator-equilibrium-networks]] 추가
+  - concepts/differentiable-lmi-contractivity.md → tag + reference 추가
+- **RIGOR 관련성:** monDEQ의 monotonicity 조건 ($I - W \succeq mI$)은 Lur'e system sector bound와 동치. RIGOR의 Shima LMI로 일반화 가능. Operator splitting은 RIGOR A+NN forward iteration의 수렴 보장 방법과 공통점.
+- Total pages: 318 → 321

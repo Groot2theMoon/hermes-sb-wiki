@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-02 | Total pages: 318
+> Last updated: 2026-05-03 | Total pages: 321
 
 ## Entities
 
@@ -29,6 +29,7 @@
 - [[dongil-shin]] — Shin Dongil (신동일)
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
+- [[ezra-winston]] — Ezra Winston — CMU, Monotone Operator Equilibrium Networks
 - [[fabio-brau]] — Fabio Brau
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
 - [[felix-berkenkamp]] — Felix Berkenkamp — ETH Zürich Researcher, Safe Learning
@@ -50,6 +51,7 @@
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[ian-r-manchester]] — Ian R. Manchester
 - [[james-o-berger]] — James O. Berger
+- [[j-zico-kolter]] — J. Zico Kolter — CMU / Bosch Center for AI, Monotone Operator Equilibrium Networks
 - [[johannes-schiffer]] — Johannes Schiffer
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
@@ -232,6 +234,7 @@
 - [[mhc-deepseek]] — [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
 - [[misc-base-materials]] — Additional Base Materials Collection
 - [[mode-collapse-flow-lattice]] — Mode-Collapse in Flow-based Sampling of Lattice Field Theories
+- [[monotone-operator-equilibrium-networks]] — monDEQ — Monotone Operator Equilibrium Network (Winston & Kolter 2020, NeurIPS)
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
 - [[multi-dimensional-scaling]] — Multi-Dimensional Scaling (MDS)
 - [[muon-optimizer]] — Muon Optimizer for LLM Training

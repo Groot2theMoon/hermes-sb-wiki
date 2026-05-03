@@ -1,9 +1,9 @@
 ---
 title: "LBDN — Lipschitz-Bounded Deep Networks via Direct Parameterization"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-03
 type: concept
-tags: [lipschitz, sdp, robust-accuracy, sandwich-layer, certification]
+tags: [lipschitz, sdp, robust-accuracy, sandwich-layer, certification, monotone-operator]
 sources:
   - raw/papers/lbdn-lipschitz-bounded-networks-wang23.md
 confidence: high
@@ -48,3 +48,4 @@ LBDN의 접근법은 Shima의 Lur'e contractivity LMI와 직접 연결:
 - [[spectral-normalization-gan]] — 기존 spectral normalization
 - [[aol-almost-orthogonal-layers]] — AOL: spectral rescaling 기반
 - [[lipkernel-dissipative-cnn]] — LipKernel: 2-D Roesser dissipativity 기반
+- [[monotone-operator-equilibrium-networks]] — monDEQ: monotone operator 기반 equilibrium network (Winston & Kolter, 동일 CMU/Bosch lineage)
