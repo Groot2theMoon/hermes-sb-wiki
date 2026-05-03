@@ -855,3 +855,51 @@
 - **RIGOR 관련성:** psintelligence의 KF/EKF/UKF 단계는 RIGOR 필터링 방법론과 직접 연결. SolarSail-MFBO의 multi-fidelity 전략은 RIGOR의 gate-based EM Q,R 전환과 유사.
 - Total pages: 321 → 327
 - GitHub: postech-psi/psintelligence + Groot2theMoon/SolarSail-MFBO
+
+## [2026-05-03] ingest | batch — 12 papers (FFT Homogenization + DMN/IMN/DMN Survey + evoxels + DeepONet + Acoustic ML Review)
+
+- **Deep Research topic #1-3 관련 12편 일괄 ingest**
+- **Raw sources (12):**
+  - raw/papers/willot15-fourier-fft-homogenization.md — Willot (2015) Fourier-based FFT homogenization schemes (Comptes Rendus Mécanique)
+  - raw/papers/kuts24-porous-nonwoven-homogenization.md — Kuts et al. (2024) Porous non-woven fibrous homogenization (Mech. Mater.)
+  - raw/papers/karakoc-3d-fibrous-homogenization.md — Karakoc, 3D fibrous materials homogenization (Elsevier book ch.)
+  - raw/papers/wan24-nonwoven-compression-microscale.md — Wan et al. (2024) Microscale nonwoven compression (PAMM)
+  - raw/papers/wei25-dmn-overview.md — Wei et al. (2025) DMN Overview & Survey (arXiv:2504.12159)
+  - raw/papers/dey24-dmn-sfrt-effectiveness.md — Dey et al. (2024) DMN effectiveness for SFRT (Archive Appl. Mech.)
+  - raw/papers/nguyen23-imn-porous-interaction.md — Nguyen & Noels (2023) IMN for porous materials (Int. J. Plasticity)
+  - raw/papers/decoding-material-networks-2024.md — DMN vs IMN comparison (J. Mechanics, 2024)
+  - raw/papers/ml-acoustic-metamaterials-review24.md — ML for acoustic metamaterials review (Smart Mater. Struct., 2024)
+  - raw/papers/yang22-visual-acoustic-sound-preference.md — Yang & Kang (2022) Visual-acoustic sound preference (Applied Acoustics)
+  - raw/papers/park25-deeponet-poroelastic.md — Park, Shin & Choo (2025) DeepONet poroelastic surrogate (arXiv:2509.11966)
+  - raw/papers/daubner25-evoxels.md — Daubner et al. (2025) evoxels: differentiable voxel physics (JOSS, arXiv:2507.21748)
+- **New concepts (7):**
+  - [[fft-homogenization-composites]] — Willot discretization FFT for accurate local fields
+  - [[porous-nonwoven-homogenization]] — Kuts(2024) + Wan(2024) nonwoven fibrous homogenization
+  - [[dmn-overview-wei25]] — DMN survey: 8 extensions, thermodynamic consistency
+  - [[imn-porous-materials]] — IMN: interaction-based material network for porous (Nguyen & Noels)
+  - [[ml-acoustic-metamaterials-review]] — ML-based acoustic metamaterial design review
+  - [[deeponet-poroelastic-surrogate]] — DeepONet for poroelasticity with random permeability
+  - [[evoxels-differentiable-voxel]] — Differentiable voxel physics, JAX-based
+- **New entities (4):**
+  - [[francois-willot]] — Mines ParisTech, FFT homogenization
+  - [[simon-daubner]] — Imperial College, evoxels
+  - [[jinhyun-choo]] — SNU, DeepONet poroelastic
+  - [[ting-ju-wei]] — NTU, DMN survey
+- **Backfill:** deep-material-network, fft-homogenization-polymer-composites, thermoelastic-dmn, decoding-material-networks → new wikilinks
+- **RIGOR 관련성:** evoxels는 JAX 기반으로 RIGOR 생태계와 직접 통합 가능. FFT homogenization은 DMN training data 생성의 표준 방법. IMN/DMN 비교는 surrogate model 선택의 근거. ML acoustic review는 acoustic metamaterial inverse design 최신 동향.
+- Total pages: 327 → 341
+
+## [2026-05-03] create | evoxels + DeepONet poroelastic concept pages (4 new pages)
+
+- **Concept pages (2):**
+  - [[evoxels-differentiable-voxel]] — evoxels: Differentiable Voxel-Based Microstructure Simulation (Daubner et al. 2025, JOSS)
+  - [[deeponet-poroelastic-surrogate]] — DeepONet for Poroelastic Surrogate: Random Permeability Fields (Park, Shin & Choo 2025, arXiv:2509.11966)
+- **Entity pages (2):**
+  - [[simon-daubner]] — Simon Daubner — Imperial College, evoxels 제1저자/교신저자
+  - [[jinhyun-choo]] — Jinhyun Choo (추진현) — SNU, DeepONet poroelastic 교신저자
+- **Key cross-links added:**
+  - evoxels ↔ DMN (training data 생성기 + 검증 기준), RIGOR 생태계 연결
+  - DeepONet poroelastic ↔ DMN (비교 분석), thermoelastic DMN (Norris correspondence), monDEQ
+  - Both concept pages → [[monotone-operator-equilibrium-networks]], [[deep-material-network]] wikilinks
+- **Tags used:** tool, materials, micromechanics, homogenization, differentiable-physics, inverse-design, dmn, deeponet, operator-learning, poroelasticity, surrogate-model, neural-operator, uncertainty, person
+- **Total pages:** 327 → 331

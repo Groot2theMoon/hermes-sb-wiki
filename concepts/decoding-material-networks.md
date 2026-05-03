@@ -38,6 +38,11 @@ Wen-Ning Wan, Ting-Ju Wei, Tung-Huan Su, Chuin-Shan Chen이 *Journal of Mechanic
 - `surrogate-model` — Surrogate modeling in multiscale materials
 - `micromechanics-homogenization` — 미세역학 균질화 이론
 
+## 관련 확장
+
+- **Wei et al. (2025) DMN 서베이** — DMN 최신 확장 (IMN 포함) 종합 리뷰: [[dmn-overview-wei25]]
+- **Nguyen & Noels (2023) IMN** — Porous materials 전용 IMN 프레임워크: [[imn-porous-materials]]
+
 ## 의의
 
 DMN과 IMN의 첫 번째 체계적인 비교 연구. IMN의 속도 이점과 DMN의 정확도 강점을 정량화하여, 문제 특성에 따라 적절한 방법론을 선택할 수 있는 가이드라인 제시.

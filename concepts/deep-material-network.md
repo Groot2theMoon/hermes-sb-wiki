@@ -83,6 +83,16 @@ L = (1/2N_s) Σ_s ‖C^DNS_s - DMN(Cᵖ¹_s, Cᵖ²_s, ...)‖² / ‖C^DNS_s‖
 | 회전 DOF | 1 (θ) | 3 (α, β, γ) |
 | Building block 파라미터 | 3개/층 | 7개/층 |
 
+## FFT Training Data 연결
+
+DMN의 offline training 단계에서 FFT 균질화는 reference (ground truth) solution 생성에 사용된다:
+
+- [[fft-homogenization-composites]] — Willot discretization (Gʀ) 기반 FFT: 가장 정확한 training data 생성 가능
+- [[fft-homogenization-polymer-composites]] — Polarization-based FFT: Colabella et al. scheme의 생체 재료 적용
+- FFT는 **DNS (Direct Numerical Simulation)** 의 역할을 하며, DMN은 이를 surrogate하는 구조
+- **계산 비용:** FFT (고해상도) → DMN training (offline) → DMN online prediction (∼8,100× faster)
+- 비선형 extrapolation 시 FFT-generated training data는 다양한 contrast 조합을 포괄해야 함
+
 ## 관련
 - [[centimeter-nanomechanical-resonators]]
 
@@ -92,7 +102,8 @@ L = (1/2N_s) Σ_s ‖C^DNS_s - DMN(Cᵖ¹_s, Cᵖ²_s, ...)‖² / ‖C^DNS_s‖
 - `thermoelastic-dmn` — [[dongil-shin|Shin]] 2024: 열팽창 균질화 통합
 - `deep-material-network-quilting` — Shin 2023: DMN explainability 및 quilting 전략
 - `decoding-material-networks` — DMN vs IMN 성능 비교
-- `interaction-based-material-network` — IMN: 회전 없는 DMN 변형
+- `imn-porous-materials` — IMN: 다공질 재료 전용 rotation-free 변형
+- `dmn-overview-wei25` — DMN 서베이 (IMN, ODMN, MIpDMN 등 최신 확장)
 
 ## References
 

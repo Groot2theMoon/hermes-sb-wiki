@@ -47,6 +47,14 @@ Monchiet & Bonnet (2013)의 **polarization-based FFT scheme**은 기존 Moulinec
 - 완전 이방성(fully anisotropic) 탄성 응답 정확히 예측
 - 인공 해면골 미세구조(반복 가능한 모델)에서도 검증
 
+## Willot Discretization과의 관계
+
+[[fft-homogenization-composites]] 페이지에서 다루는 **Willot discretization (Gʀ)** 은 Moulinec-Suquet 표준 FFT scheme의 spurious oscillation 문제를 해결하고, 국소장 정확도와 수렴 속도를 획기적으로 향상시킨 발전이다. Colabella et al.의 polarization scheme과 달리, Willot 접근법은 Green operator 자체를 finite-difference 기반으로 변경한다.
+
+- **Gʀ (rotated scheme)** — 계면에서의 oscillation 최소화, 대칭적 field
+- **Porous 재료 (χ=0)** 에서도 안정적 수렴 보장
+- 기존 polarization scheme과 **호환 가능** → 두 방법의 장점 결합 가능
+
 ## DMN과의 관계
 
 FFT 균질화는 DMN의 **training data 생성 방법** 중 하나(Bottleneck 3 참조). DMN이 homogenization을 학습하는 surrogate라면, FFT는 직접 균질화를 수행하는 reference solver다.
@@ -57,6 +65,8 @@ FFT 균질화는 DMN의 **training data 생성 방법** 중 하나(Bottleneck 3 
 
 ## 관련 개념
 
+- [[fft-homogenization-composites]] — Willot discretization + 3D fibrous homogenization
+- [[francois-willot]] — François Willot (Mines ParisTech, FFT homogenization researcher)
 - [[deep-material-network]] — DMN: FFT 기반 homogenization의 surrogate
 - [[poroelastic-dmn-research]] — DMN 포로탄성 확장에서 FFT 균질화를 training data 생성 방법으로 검토
 - [[deep-material-network-quilting]] — DMN quilting 전략

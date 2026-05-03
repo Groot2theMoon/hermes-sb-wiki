@@ -75,6 +75,8 @@ DMN은 **Mandel notation**을 사용하여 3차원 탄성 문제를 표현:
 - `deep-material-network-quilting` — Shin 2023: DMN explainability 및 quilting 전략
 - `deep-material-network` — DMN 기본 아키텍처와 메커니즘
 - `decoding-material-networks` — DMN vs IMN 성능 비교
+- `dmn-overview-wei25` — DMN 서베이 (열-기계 DMN, MIpDMN 등 포함)
+- `imn-porous-materials` — IMN 프레임워크 (다공질 재료)
 - `micromechanics-homogenization` — 미세역학 균질화 이론
 
 ## 의의
