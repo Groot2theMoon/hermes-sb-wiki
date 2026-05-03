@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-03 | Total pages: 321
+> Last updated: 2026-05-03 | Total pages: 327
 
 ## Entities
 
@@ -73,6 +73,7 @@
 - [[maziar-raissi]] — Maziar Raissi
 - [[milad-siami]] — Milad Siami
 - [[moonshot-ai]] — Moonshot AI
+- [[mikhail-polyanskiy]] — Mikhail N. Polyanskiy — Brookhaven National Laboratory
 - [[nir-shlezinger]] — Nir Shlezinger — Signal Processing & Model-Based Deep Learning
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
 - [[openai]] — OpenAI
@@ -95,6 +96,7 @@
 - [[spencer-richards]] — Spencer M. Richards — ETH Zürich / Stanford, Lyapunov NN
 - [[stanislav-fort]] — Stanislav Fort
 - [[steven-g-johnson]] — Steven G. Johnson
+- [[seungwon-lee]] — Seungwon Lee (이승원) — POSTECH PSI, Solar Sail MFBO, RIGOR
 - [[takahiro-sagawa]] — Takahiro Sagawa — Physicist, Information Thermodynamics
 - [[takeru-miyato]] — Takeru Miyato
 - [[tufan-kumbasar]] — Tufan Kumbasar — ITU, SOLIS Physics-Informed Surrogates
@@ -267,6 +269,7 @@
 - [[principal-component-analysis]] — Principal Component Analysis (PCA) — 선형 차원 축소
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)
 - [[pseudo-hamiltonian-neural-networks]] — Pseudo-Hamiltonian Neural Networks (PHNN) for PDEs
+- [[polyanskiy2024-refractiveindex-database]] — Refractiveindex.info Database — 태양돛 광학 특성 데이터베이스
 - [[quadratic-iss-lyapunov]] — Quadratic ISS Lyapunov Functions for Linear Analytic Systems
 - [[recursive-kalmannet]] — Recursive KalmanNet — Deep Learning-Augmented Kalman Filtering with Consistent Uncertainty Quantification
 - [[ren-recurrent-equilibrium-networks]] — REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness
@@ -277,6 +280,7 @@
 - [[ropedreamer-dlo-dynamics]] — RopeDreamer — Kinematic Recurrent SSM for Deformable Linear Object Dynamics
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[rtsnet]] — RTSNet — Learning to Smooth in Partially Known State-Space Models
+- [[rocket-apogee-ai-pipeline]] — Rocket Apogee AI Pipeline — 로켓 원지점 예측 AI/ML 파이프라인 (PSIntelligence)
 - [[sagawa-ueda-information-thermodynamics]] — Information Thermodynamics — Maxwell's Demon in Nonequilibrium Dynamics
 - [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
@@ -295,6 +299,7 @@
 - [[structured-hybrid-mechanistic-models]] — Structured Hybrid Mechanistic Models — Physics + ML for Intervention Outcome Estimation
 - [[structured-inference-networks]] — Structured Inference Networks for Nonlinear State Space Models — Deep Markov Models
 - [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
+- [[solar-sail-mfbo]] — Solar Sail MFBO — 태양돛 형상 MFBO 최적화
 - [[thermoelastic-dmn]] — Thermoelastic Deep Material Network
 - [[transformer]] — Transformer Architecture
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding

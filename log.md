@@ -5,6 +5,14 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-03] trending-scan | arXiv (manual recovery from cron timeout) | 0 new, 9 already covered
+
+- **스캔 상태:** cron job (06:00 UTC) — `trending-papers-wrapper.py` 120s 타임아웃. 수동 재실행으로 복구.
+- **수집:** arXiv 5개 카테고리, 20편 적출 → Tier 2: 9편, Tier 3: 11편
+- **신규 개념:** 없음 (전체 9편 Tier 2 모두 2026-05-02 스캔에서 이미 처리 완료)
+- **⚠️ Cron timeout 문제:** arXiv API 응답 지연(3/5 쿼리 타임아웃)으로 120s 기본 제한 초과. `trending-papers-wrapper.py`는 300s subprocess timeout이나 cron 시스템 자체 120s 제한에 걸림. cron timeout 증가 필요.
+- **Git:** `112834e` (변경사항 없음, push 생략)
+
 ## [2026-05-02] trending-scan | AI/ML × Mechanics arXiv | 4 new concept(s)
 
 - **신규 개념 (4):**
@@ -827,3 +835,23 @@
   - concepts/differentiable-lmi-contractivity.md → tag + reference 추가
 - **RIGOR 관련성:** monDEQ의 monotonicity 조건 ($I - W \succeq mI$)은 Lur'e system sector bound와 동치. RIGOR의 Shima LMI로 일반화 가능. Operator splitting은 RIGOR A+NN forward iteration의 수렴 보장 방법과 공통점.
 - Total pages: 318 → 321
+
+## [2026-05-03] ingest | GitHub repos — PSIntelligence + SolarSail-MFBO
+
+- **Raw sources (3):**
+  - raw/papers/psintelligence.md — PSIntelligence: AI & ML Pipeline for Rocket Apogee Prediction (code-repo)
+  - raw/papers/solar-sail-mfbo.md — SolarSail-MFBO: MFBO for Solar Sail Design (code-repo)
+  - raw/papers/polyanskiy2024-refractiveindex-database.md — Refractiveindex.info Database (Scientific Data, 2024)
+- **Concept pages (3):**
+  - concepts/rocket-apogee-ai-pipeline.md — 로켓 원지점 예측 AI 파이프라인 (POSTECH PSI)
+  - concepts/solar-sail-mfbo.md — 태양돛 형상 MFBO 최적화
+  - concepts/polyanskiy2024-refractiveindex-database.md — Refractiveindex.info DB (태양돛 광학 특성)
+- **Entity pages (2):**
+  - entities/seungwon-lee.md — Seungwon Lee (이승원) — POSTECH PSI, Solar Sail MFBO, RIGOR
+  - entities/mikhail-polyanskiy.md — Mikhail N. Polyanskiy (Brookhaven National Laboratory)
+- **Backfill:**
+  - concepts/centimeter-nanomechanical-resonators.md → [[solar-sail-mfbo]] 추가 (동일 MFBO 방법론)
+  - entities/seungwon-lee.md → solar-sail-mfbo, rocket-apogee-ai-pipeline, RIGOR 연결
+- **RIGOR 관련성:** psintelligence의 KF/EKF/UKF 단계는 RIGOR 필터링 방법론과 직접 연결. SolarSail-MFBO의 multi-fidelity 전략은 RIGOR의 gate-based EM Q,R 전환과 유사.
+- Total pages: 321 → 327
+- GitHub: postech-psi/psintelligence + Groot2theMoon/SolarSail-MFBO

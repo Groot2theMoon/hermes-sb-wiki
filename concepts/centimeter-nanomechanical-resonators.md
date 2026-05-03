@@ -41,7 +41,8 @@ Andrea Cupertino, Dongil Shin, Leo Guo, Peter G. Steeneken, Miguel A. Bessa & Ri
 
 ## 관련 개념
 
-- `bayesian-optimization` — Multi-fidelity Bayesian optimization framework
+|- `bayesian-optimization` — Multi-fidelity Bayesian optimization framework
+- [[solar-sail-mfbo]] — 태양돛 형상 최적화 MFBO (구조 최적화 영역)
 - `nanomechanics` — 나노스케일 기계 시스템
 - `quality-factor` — 공진기의 에너지 손실 척도
 - `phononic-crystals` — 포노닉 밴드갭을 이용한 진동 격리

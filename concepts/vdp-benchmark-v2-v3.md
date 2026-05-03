@@ -42,5 +42,30 @@
 3. **Rollout losses have zero effect on v3_bullo** — VDP limit cycle is already well-captured by UKF one-step NLL. The nonlinear A+NN dynamics don't benefit from multi-step constraints because the UKF already corrects state estimates.
 4. **Rollout ≠ identifiability** — multi-step loss doesn't resolve `d_out < d_state` ambiguity. This requires structural constraints (canonical form, physical parameterization).
 
-## Interpretation
-For VDP (oscillatory, non-chaotic), the UKF one-step NLL + state_loss provides sufficient training signal. The dynamics identifiability issue (A off-diagonal sign ambiguity) persists regardless of rollout, and can only be resolved by (a) more observation channels, (b) physical canonical form, or (c) SOLIS cyclic curriculum for chaotic systems.
+## Lorenz 500-step Results
+
+| Mode | NLL | RMSE | Whiteness | Time (s) |
+|------|:---:|:----:|:---------:|:--------:|
+| v2_pi | 54.53 | 15.56 | 70.9 | 614 |
+| v3_bullo | **25.92** | 16.17 | 135.6 | 554 |
+
+**Lorenz (chaotic)에서는 v3_bullo의 NLL이 2배 더 좋음.** 이유:
+- v3_bullo의 hard contraction이 model mismatch를 covariance로 적절히 반영 → better calibration
+- v2_pi는 overconfident → chaotic에서 잘못된 확신으로 NLL 폭발
+- RMSE는 비슷 (추정 정확도 유사, calibration 차이)
+
+## System-dependent Trade-off
+
+| System | Type | Winner | Key Metric |
+|:------|:----:|:------:|:----------:|
+| Damped oscillator | linear stable | **v3_bullo** | RMSE 0.57 vs 0.79 |
+| VDP | oscillatory, limit cycle | **v2_pi** | RMSE 1.21 vs 1.42 |
+| Lorenz | chaotic | **v3_bullo** | NLL 25.9 vs 54.5 |
+
+Neither model dominates universally — the choice depends on system characteristics.
+
+## Hyperparameter Reduction (v3.1)
+DeltaModulatorV3 refactored to remove `residual_scale` and `rho_nn` as fixed hyperparameters:
+- `residual_scale` → learnable σ (softplus parameter, init from config)
+- `rho_nn` → learnable ρ (sigmoid parameter, init from config)
+- `activation` retained as configurable (gelu/relu/tanh)
