@@ -1,7 +1,7 @@
 ---
 title: "Local Stability and ROA for NN Feedback Systems — Hedesh, Wafi & Siami 2025"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-03
 type: concept
 tags: [local-stability, roa, lure-system, sector-bound, lmi, nn-control]
 sources:
@@ -48,3 +48,4 @@ NN 피드백 시스템의 **local exponential stability + ROA 추정** 방법 �
 - [[lure-stability]] — Lur'e stability 통합 개념
 - [[hedesh-siami-sector-bound]] — Global sector bound for FFNN
 - [[shima-contractivity-lure]] — Contractivity LMI
+- [[monotone-operator-equilibrium-networks]] — monDEQ: monotone operator 접근법과 Lur'e ROA 분석의 연결점

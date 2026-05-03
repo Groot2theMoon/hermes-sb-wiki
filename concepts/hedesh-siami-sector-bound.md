@@ -1,7 +1,7 @@
 ---
 title: "Sector-Bounded Nonlinearity for NN-Controlled Systems — Hedesh & Siami 2024"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-03
 type: concept
 tags: [sector-bound, nn-control, lure-system, aizerman, stability, positive-system]
 sources:
@@ -43,3 +43,4 @@ A+NN 구조의 NN_θ(·)에 sector bound [α, β]를 계산하면:
 ## Related
 - [[lure-stability]] — Lur'e stability 통합 개념
 - [[shima-contractivity-lure]] — Contractivity LMI
+- [[monotone-operator-equilibrium-networks]] — monDEQ: $I - W \succeq mI$ 강한 단조성 조건 → sector-bound nonlineary의 극단적 사례에 해당

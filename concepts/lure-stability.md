@@ -1,7 +1,7 @@
 ---
 title: "Lur'e Stability Analysis — A+NN Systems"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-03
 type: concept
 tags: [lure-system, contractivity, sector-bound, aizerman, lmi, stability, nn-control]
 sources:
@@ -79,6 +79,7 @@ RIGOR의 A+NN: x_{t+1} = A·x_t + NN_θ(x_t), 여기서 NN_θ는 feedforward net
 - [[em-kalman-smoother-noise-covariance]] — EM Q,R noise covariance estimation
 - [[kalmannet]] — Differentiable Kalman filtering
 - [[esn-as-ssm]] — Echo State Networks as State Space Models
+- [[monotone-operator-equilibrium-networks]] — monDEQ: monotone operator 기반 equilibrium network. $I - W \succeq mI$ 조건은 Lur'e sector bound와 동치
 
 ## References
 - Shima, Davydov, Bullo (2025). arXiv:2503.20177

@@ -1,7 +1,7 @@
 ---
 title: "Soft Shima LMI — Train-Time Contractivity via P-learning"
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-03
 type: concept
 tags: [shima-lmi, contractivity, p-learning, lur-e-system, a-plus-nn, soft-penalty]
 sources:
@@ -48,3 +48,4 @@ LMI를 hard constraint가 아닌 **soft penalty**로 사용하고, P(=L L^T)를 
 
 - 자세한 구현은 RIGOR_v2.3_FINAL_GUIDELINE.md (rigor-filter repo)
 - LMI penalty는 convergence에만 필요, inference-time은 verification만
+- **대안 접근법:** [[monotone-operator-equilibrium-networks|monDEQ]]는 operator splitting으로 동일한 수렴 문제를 다른 각도에서 해결

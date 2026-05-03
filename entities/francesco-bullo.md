@@ -1,9 +1,9 @@
 ---
 title: "Francesco Bullo"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-03
 type: entity
-tags: [researcher, ucsb, contractivity, multi-agent, network-control]
+tags: [researcher, ucsb, contractivity, multi-agent, network-control, equilibrium-networks]
 sources: []
 confidence: high
 ---
@@ -23,6 +23,7 @@ confidence: high
 - "Lectures on Network Systems" (2022, 2nd ed.)
 
 **주요 논문:**
+- (2026) *A Nonlinear Separation Principle via Contraction Theory* — arXiv:2604.15238 (monDEQ 실험 baseline)
 - (2025) Contractivity Analysis for Lur'e Systems — arXiv:2503.20177
 - (2024) Perspectives on Contractivity — arXiv:2404.11707
 - (2024) Exponential Stability of Parametric Optimization Controllers — arXiv:2403.08159

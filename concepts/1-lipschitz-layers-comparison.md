@@ -1,7 +1,7 @@
 ---
 title: "1-Lipschitz Layers Compared — Comprehensive Benchmark of Lipschitz Constraint Methods"
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-03
 type: concept
 tags: [lipschitz, comparison, benchmark, certified-robustness, orthogonal-layers]
 sources:
@@ -78,3 +78,4 @@ Figure 1 (radar chart) 기준 종합 순위:
 - [[lipkernel-dissipative-cnn]] — LipKernel 상세
 - [[lbdn-lipschitz-bounded-networks]] — LBDN 상세
 - [[spectral-normalization-gan]] — Spectral normalization
+- [[monotone-operator-equilibrium-networks]] — monDEQ: monotone operator 기반, Lipschitz 제약의 대안적 접근 (strong monotonicity)

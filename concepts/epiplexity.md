@@ -1,7 +1,7 @@
 ---
 title: Epiplexity — Structural Information for Computationally Bounded Observers
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-03
 type: concept
 tags: [information-theory, theory, learning, neuroscience]
 sources: [raw/papers/epiplexity.md]
@@ -10,7 +10,7 @@ confidence: medium
 
 # Epiplexity
 
-**Finzi, Qiu, Jiang, Izmailov, Kolter, Wilson** (CMU & NYU, 2025)가 제안한 새로운 정보 측도. Shannon 정보와 Kolmogorov 복잡도로는 설명되지 않는, **computationally bounded observer가 데이터로부터 추출할 수 있는 구조적 정보**를 정량화한다.
+**Finzi, Qiu, Jiang, [[j-zico-kolter|Izmailov, Kolter, Wilson]] (CMU & NYU, 2025)가 제안한 새로운 정보 측도. Shannon 정보와 Kolmogorov 복잡도로는 설명되지 않는, **computationally bounded observer가 데이터로부터 추출할 수 있는 구조적 정보**를 정량화한다.
 
 ## 동기: 세 가지 역설 (Three Paradoxes)
 

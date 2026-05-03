@@ -1,9 +1,9 @@
 ---
 title: Neural Ordinary Differential Equations — Continuous-Depth Latent Dynamics
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-03
 type: concept
-tags: [model, dynamics, neural-operator, system-identification, training]
+tags: [model, dynamics, neural-operator, system-identification, training, implicit-depth]
 sources: [raw/papers/neural-odes.md]
 confidence: high
 ---
@@ -33,3 +33,4 @@ ODE solver (e.g., dopri5)로 궤적 적분.
 - [[hamiltonian-neural-networks]] — 물리 기반 ODE (Hamiltonian)
 - [[deep-kalman-filter]] — 이산시간 variational dynamics
 - [[fourier-neural-operator]] — Operator learning (연속공간)
+- [[monotone-operator-equilibrium-networks]] — monDEQ: 이산시간 implicit-depth model, Neural ODE의 direct competitor (NeurIPS 2020, CIFAR-10 89%)
