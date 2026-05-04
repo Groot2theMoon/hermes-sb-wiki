@@ -1,7 +1,7 @@
 ---
 title: "Deep Material Network (DMN) — 기본 아키텍처"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-04
 type: concept
 tags: [materials, surrogate-model, micromechanics, homogenization]
 sources: []
@@ -93,17 +93,15 @@ DMN의 offline training 단계에서 FFT 균질화는 reference (ground truth) s
 - **계산 비용:** FFT (고해상도) → DMN training (offline) → DMN online prediction (∼8,100× faster)
 - 비선형 extrapolation 시 FFT-generated training data는 다양한 contrast 조합을 포괄해야 함
 
-## 관련
+## 관련 개념
+
 - [[centimeter-nanomechanical-resonators]]
-
-- [[waste-fiber-acoustic-absorber]]
- 개념
-
-- `thermoelastic-dmn` — [[dongil-shin|Shin]] 2024: 열팽창 균질화 통합
-- `deep-material-network-quilting` — Shin 2023: DMN explainability 및 quilting 전략
-- `decoding-material-networks` — DMN vs IMN 성능 비교
-- `imn-porous-materials` — IMN: 다공질 재료 전용 rotation-free 변형
-- `dmn-overview-wei25` — DMN 서베이 (IMN, ODMN, MIpDMN 등 최신 확장)
+- [[waste-fiber-acoustic-absorber]] — 폐섬유 흡음재 설계
+- [[thermoelastic-dmn]] — [[dongil-shin|Shin]] 2024: 열팽창 균질화 통합
+- [[deep-material-network-quilting]] — Shin 2023: DMN explainability 및 quilting 전략
+- [[decoding-material-networks]] — DMN vs IMN 성능 비교
+- [[imn-porous-materials]] — IMN: 다공질 재료 전용 rotation-free 변형
+- [[dmn-overview-wei25]] — DMN 서베이 (IMN, ODMN, MIpDMN 등 최신 확장)
 
 ## References
 

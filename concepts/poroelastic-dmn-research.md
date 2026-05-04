@@ -1,7 +1,7 @@
 ---
 title: "7×7 Acusto-Elastic DMN — 확장 연구 분석"
 created: 2026-04-28
-updated: 2026-04-29
+updated: 2026-05-03
 type: concept
 tags: [research-idea, dmn, poroelasticity, surrogate-model, acoustoelasticity]
 sources: [raw/papers/1992_JAppliedPhysics_71_1138-1141.md, raw/papers/1-s2.0-S0020722518316872-main.md, raw/papers/LBiot_long.md, raw/papers/gurevich_schoemberg_Jjasa_99.md]
@@ -152,6 +152,7 @@ Shin(2024)의 thermoelastic DMN에서 θ(온도)를 다루는 방식과 동일.
 - `poroelasticity-thermoelasticity-correspondence` — [[andrew-norris|Norris]] 1992: 포로-열탄성 대응 정리
 - `thermoelastic-dmn` — Shin 2024: thermomechanical DMN
 - `deep-material-network` — DMN 기본 아키텍처
+- [[deeponet-poroelastic-surrogate]] — Park, Shin & Choo 2025: DeepONet 포로탄성 surrogate (7×7 DMN의 data-driven 대안)
 
 ## 참고 문헌
 

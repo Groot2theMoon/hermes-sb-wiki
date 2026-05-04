@@ -1,7 +1,7 @@
 ---
 title: "FFT-Based Homogenization for Composites — Willot Discretization & 3D Fibrous"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: concept
 tags: [fft-homogenization, composites, willot-discretization, micromechanics, fibrous-materials, computational-homogenization]
 sources:
@@ -98,6 +98,7 @@ CT 재구성 도메인 등 **비주기적·비정합 메시**에 대해 Karakoc�
 - [[fft-homogenization-polymer-composites]] — FFT 균질화 기본 (Moulinec-Suquet, polarization scheme)
 - [[deep-material-network]] — DMN: FFT 균질화의 surrogate model, FFT로 training data 생성
 - [[porous-nonwoven-homogenization]] — 다공성 부직포 재료의 균질화 (Kuts 2024, Wan 2024)
+- [[evoxels-differentiable-voxel]] — Differentiable voxel-based 미세구조 시뮬레이션 (Daubner 2025)
 - [[poroelastic-dmn-research]] — DMN 포로탄성 확장에서 FFT training data 검토
 - [[francois-willot]] — François Willot (Mines ParisTech, FFT homogenization)
 

@@ -1,7 +1,7 @@
 ---
 title: "Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계"
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-03
 type: concept
 tags: [research-idea, acoustics, dmn, poroelasticity, upcycling, building-materials]
 sources: [raw/papers/1-s2.0-S0003682X21003662-main.md, raw/papers/TIN뉴스.md, raw/papers/소각·매립되는 폐원단 조각  자원으로 품다(보도자료)(생활폐기물 9.9).md, raw/papers/인쇄하기.md, raw/articles/dbr-274-제클린-폐섬유-100퍼센트-재활용.md]
@@ -100,9 +100,11 @@ Micro-CT (폐섬유 시편)
 훈련된 Poroelastic DMN (7×7 또는 Norris 경유)
     ↓ (3) Online prediction + JCA→α(f)
 흡음 계수 α(f) 예측 (ms 단위)
-    ↓ (4) Inverse design / 최적화
-목표 α(60Hz)를 만족하는 공정 조건 도출
-```
+|    ↓ (4) Inverse design / 최적화
+|목표 α(60Hz)를 만족하는 공정 조건 도출
+|```
+
+> **권장:** GAP-SBM 대신 [[fft-homogenization-composites]] (Willot 2015, FFT-based homogenization)으로 training data 생성 고려. SBM은 embedded FEM으로 meshing을 회피하지만, FFT 방식이 voxel 기반 미세구조를 직접 입력으로 사용하여 더 빠르고 정확함. 특히 Willot discretization (Gʀ)은 고대비 재료(고체 vs 공극)에서도 빠른 수렴을 보장하므로 폐섬유 매트의 다공성 균질화에 적합. (참고: [[porous-nonwoven-homogenization]] — Kuts 2024의 FEM 기반 nonwoven 균질화도 FFT 접근과 방법론적 유사성 있음)
 
 ### 생산라인 Closed-Loop 비전 (장기)
 
@@ -132,6 +134,10 @@ Surrogate model (DMN) → α(f) 예측
 - `deep-material-network` — DMN 기본 아키텍처
 - `gap-sbm` — GAP-SBM: meshing 없는 embedded FEM
 - `dongil-shin` — 신동일 교수 (POSTECH DSLab)
+- [[porous-nonwoven-homogenization]] — Kuts 2024 / Wan 2024: 다공성 부직포 균질화 및 압축 모델링 (nonwoven FFT 직접 연결)
+- [[ml-acoustic-metamaterials-review]] — Chen et al. 2024: 음향 메타물질 ML 리뷰
+- [[deeponet-poroelastic-surrogate]] — Park, Shin & Choo 2025: DeepONet 포로탄성 surrogate (DMN 대안 operator learning)
+- [[evoxels-differentiable-voxel]] — Daubner et al. 2025: 미분 가능 복셀 기반 미세구조 시뮬레이션 (미분 가능 물성 예측)
 
 ## 참고 문헌
 

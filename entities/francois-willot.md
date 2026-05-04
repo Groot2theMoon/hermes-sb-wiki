@@ -1,7 +1,7 @@
 ---
 title: "François Willot"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: entity
 tags: [researcher, mines-paristech, fft-homogenization, micromechanics, green-operator, mathematical-morphology]
 sources:

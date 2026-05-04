@@ -1,7 +1,7 @@
 ---
 title: "Shin Dongil (신동일)"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-04
 type: entity
 tags: [person, postech, mechanical-engineering, solid-mechanics, dslab]
 sources: []
@@ -46,8 +46,9 @@ confidence: high
 
 ## 관련 개념
 
-- `thermoelastic-dmn` — Thermomechanical DMN 확장
-- `deep-material-network` — DMN 기본 아키텍처
-- `deep-material-network-quilting` — DMN quilting 전략
-- `poroelastic-dmn-research` — 7×7 DMN 연구 아이디어
-- `decoding-material-networks` — DMN vs IMN 성능 비교
+- [[thermoelastic-dmn]] — Thermomechanical DMN 확장
+- [[deep-material-network]] — DMN 기본 아키텍처
+- [[deep-material-network-quilting]] — DMN quilting 전략
+- [[poroelastic-dmn-research]] — 7×7 DMN 연구 아이디어
+- [[decoding-material-networks]] — DMN vs IMN 성능 비교
+- [[ting-ju-wei]] — Ting-Ju Wei (NTU): DMN 서베이 및 DMN vs IMN 비교 연구 (Wei et al. 2025, Wan et al. 2024)

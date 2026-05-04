@@ -1,7 +1,7 @@
 ---
 title: "Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape"
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-03
 type: concept
 tags: [research-idea, acoustics, dmn, poroelasticity, upcycling, building-materials, korea-market]
 sources:
@@ -155,3 +155,4 @@ confidence: medium
 - [[poroelastic-dmn-research]] — 7×7 DMN 연구 아이디어
 - [[gap-sbm]] — GAP-SBM: meshing 없는 training data 생성
 - [[dongil-shin]] — 신동일 교수 (POSTECH DSLab)
+- [[ml-acoustic-metamaterials-review]] — Chen et al. 2024: 음향 메타물질 ML 리뷰 (폐섬유 흡음재의 ML 기반 설계 경쟁 기술 조망)

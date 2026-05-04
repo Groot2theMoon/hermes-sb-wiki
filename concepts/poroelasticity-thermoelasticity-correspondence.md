@@ -1,7 +1,7 @@
 ---
 title: "Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)"
 created: 2026-04-28
-updated: 2026-04-29
+updated: 2026-05-03
 type: concept
 tags: [paper, poroelasticity, thermoelasticity, homogenization, micromechanics, theory]
 sources: [raw/papers/1992_JAppliedPhysics_71_1138-1141.md]
@@ -87,6 +87,7 @@ s = c_ε θ + tr(C:β : e)
 - `thermoelastic-dmn` — Shin 2024: 열팽창을 building block에 통합한 thermomechanical DMN
 - `deep-material-network` — DMN 기본 아키텍처와 building block
 - `poroelastic-dmn-research` — 7×7 DMN 연구 아이디어: 병목과 로드맵
+- [[deeponet-poroelastic-surrogate]] — Park, Shin & Choo 2025: DeepONet 포로탄성 surrogate (Norris 대응을 통해 열탄성 DMN → 포로탄성 DMN 연결, DeepONet은 data-driven 대안 제시)
 
 ## 참고 문헌
 

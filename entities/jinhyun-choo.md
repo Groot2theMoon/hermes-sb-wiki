@@ -1,7 +1,7 @@
 ---
 title: Jinhyun Choo (추진현)
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: entity
 tags: [person, snu, poroelasticity, surrogate-model, deeponet, fem, geotechnical]
 sources:

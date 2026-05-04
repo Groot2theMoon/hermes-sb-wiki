@@ -1,7 +1,7 @@
 ---
 title: "evoxels — Differentiable Voxel-Based Microstructure Simulation"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: concept
 tags: [tool, materials, micromechanics, homogenization, differentiable-physics, surrogate-model, inverse-design, dmn]
 sources: [raw/papers/daubner25-evoxels.md]
@@ -81,6 +81,8 @@ RIGOR (Differentiable SR-UKF with Lur'e stability)는 상태 추정 프레임워
 ## 관련 개념
 
 - [[deep-material-network]] — DMN: 물리 기반 surrogate model, evoxels와 보완적 관계
+- [[fft-homogenization-composites]] — Willot discretization 기반 FFT 균질화 (3D fibrous homogenization)
+- [[porous-nonwoven-homogenization]] — 다공성 부직포 재료의 FEM 기반 균질화
 - [[fft-homogenization-polymer-composites]] — FFT 기반 균질화 (Willot 2015, Moulinec-Suquet)
 - [[thermoelastic-dmn]] — 열탄성 DMN (Shin 2024): building block 확장의 예
 - [[surrogate-model]] — Surrogate modeling 패러다임

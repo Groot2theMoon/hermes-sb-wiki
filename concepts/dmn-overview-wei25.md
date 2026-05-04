@@ -1,7 +1,7 @@
 ---
 title: "DMN Overview — Wei et al. (2025) Survey"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: concept
 tags: [paper, survey, dmn, imn, rotation-free, thermomechanical, multiphysics]
 sources:

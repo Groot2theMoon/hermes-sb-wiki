@@ -1,7 +1,7 @@
 ---
 title: "DeepONet for Poroelastic Surrogate Modeling — Random Permeability Fields"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: concept
 tags: [paper, deeponet, surrogate-model, poroelasticity, operator-learning, dmn, neural-operator, uncertainty]
 sources: [raw/papers/park25-deeponet-poroelastic.md]

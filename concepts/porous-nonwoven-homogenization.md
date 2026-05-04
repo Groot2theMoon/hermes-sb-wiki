@@ -1,7 +1,7 @@
 ---
 title: "Porous Nonwoven Homogenization — Computational Homogenization & Compression Modeling"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: concept
 tags: [nonwoven, porous-media, homogenization, fem, fibrous-networks, compression-modeling]
 sources:
@@ -91,6 +91,7 @@ confidence: high
 - [[fft-homogenization-composites]] — FFT 기반 균질화 (Willot discretization + 3D fibrous homogenization)
 - [[fft-homogenization-polymer-composites]] — FFT 균질화 기본 (Moulinec-Suquet)
 - [[deep-material-network]] — DMN: 균질화 surrogate model
+- [[waste-fiber-acoustic-absorber]] — DMN 기반 저주파 흡음재 설계 (폐섬유 업사이클링)
 - [[poroelastic-dmn-research]] — DMN 포로탄성 균질화
 - [[fm-dem-pore-network]] — FEM-DEM coupled pore network
 

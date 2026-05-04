@@ -1,7 +1,7 @@
 ---
 title: "Thermoelastic Deep Material Network"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-03
 type: concept
 tags: [paper, materials, surrogate-model, thermomechanics, homogenization]
 sources: [raw/papers/shin-2023-deep-material-network-quilting.md]
@@ -78,6 +78,7 @@ DMN은 **Mandel notation**을 사용하여 3차원 탄성 문제를 표현:
 - `dmn-overview-wei25` — DMN 서베이 (열-기계 DMN, MIpDMN 등 포함)
 - `imn-porous-materials` — IMN 프레임워크 (다공질 재료)
 - `micromechanics-homogenization` — 미세역학 균질화 이론
+- [[deeponet-poroelastic-surrogate]] — Park, Shin & Choo 2025: DeepONet 포로탄성 surrogate (열탄성 DMN → Norris 대응 → 포로탄성 DMN과 비교 가능)
 
 ## 의의
 

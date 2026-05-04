@@ -1,7 +1,7 @@
 ---
 title: "Ting-Ju Wei (魏廷儒)"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: entity
 tags: [person, ntu, taiwan, dmn, imn, multiscale, surrogate-model]
 sources:

@@ -1,7 +1,7 @@
 ---
 title: "FFT-Based Homogenization for Composite & Biological Materials"
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-04
 type: concept
 tags: [foundation, pure-mechanics, materials, mathematics]
 sources: [raw/papers/Numer Methods Biomed Eng - 2017 - Colabella - Calculation of cancellous bone elastic properties with the polarization‐based.md]

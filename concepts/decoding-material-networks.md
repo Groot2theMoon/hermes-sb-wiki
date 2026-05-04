@@ -1,7 +1,7 @@
 ---
 title: "Decoding Material Networks: DMN vs IMN Performance Comparison"
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-04
 type: concept
 tags: [paper, materials, surrogate-model, comparison]
 sources: [raw/papers/wan-2024-decoding-material-networks.md]
@@ -33,10 +33,11 @@ Wen-Ning Wan, Ting-Ju Wei, Tung-Huan Su, Chuin-Shan Chen이 *Journal of Mechanic
 
 ## 관련 개념
 
-- `deep-material-network` — DMN 기본 아키텍처
-- `interaction-based-material-network` — IMN formulation
-- `surrogate-model` — Surrogate modeling in multiscale materials
-- `micromechanics-homogenization` — 미세역학 균질화 이론
+- [[deep-material-network]] — DMN 기본 아키텍처
+- [[imn-porous-materials]] — IMN: 다공질 재료 전용 interaction-based 변형
+- [[dmn-overview-wei25]] — Wei et al. (2025) DMN 서베이
+- [[surrogate-model]] — Surrogate modeling in multiscale materials
+- [[micromechanics-homogenization]] — 미세역학 균질화 이론
 
 ## 관련 확장
 
