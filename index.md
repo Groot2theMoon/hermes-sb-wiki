@@ -148,6 +148,7 @@
 - [[deep-kernel-multitask-gp-vehicle-dynamics]] — Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
 - [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
+- [[delany-bazley-miki-empirical-models]] — Delany-Bazley & Miki Empirical Baseline Models
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deeponet-poroelastic-surrogate]] — DeepONet for Poroelastic Surrogate — Random Permeability Fields (Park, Shin & Choo 2025)
 - [[deeponet]] — DeepONet — Deep Operator Networks
