@@ -5,6 +5,11 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-04] maintenance | index rebuild + git sync
+- Index rebuilt from filesystem: header 342→347, duplicate entries removed (9 duplicates)
+- New pages committed: [[dmn-jca-conversion-impossibility]], [[jca-inverse-parameter-estimation]]
+- Git: `5e3c8c9`
+
 ## [2026-05-03] trending-scan | arXiv (manual recovery from cron timeout) | 0 new, 9 already covered
 
 - **스캔 상태:** cron job (06:00 UTC) — `trending-papers-wrapper.py` 120s 타임아웃. 수동 재실행으로 복구.
