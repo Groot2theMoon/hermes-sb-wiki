@@ -315,6 +315,8 @@
 - [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
 - [[solar-sail-mfbo]] — Solar Sail MFBO — 태양돛 형상 MFBO 최적화
 - [[thermoelastic-dmn]] — Thermoelastic Deep Material Network
+- [[transfer-matrix-method-acoustic-porous]] — TMM — Transfer Matrix Method for Acoustic Porous Materials
+- [[acoustipy]] — acoustipy — Python TMM Package, JCA Model Implementation
 - [[ting-ju-wei]] — Ting-Ju Wei — NTU, DMN Survey & IMN Comparison
 - [[transformer]] — Transformer Architecture
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding

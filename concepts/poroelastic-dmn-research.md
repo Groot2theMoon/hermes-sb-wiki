@@ -44,6 +44,16 @@ confidence: medium
 
 → Shin(2024)의 thermomechanical DMN은 [[andrew-norris|Norris]] 정리에 의해 **준정적 포로탄성 DMN과 수학적으로 동일한 구조**를 가짐.
 
+## DMN → α(f) 전체 파이프라인
+
+DMN 출력(7×7 poroelastic stiffness) → 흡음계수 α(f)를 계산하기 위해서는 **TMM (Transfer Matrix Method)** 이 필요:
+
+```
+DMN → Norris → 7×7 stiffness → JCA 5-param homogenization → TMM → α(f)
+```
+
+TMM의 표준 구현은 Allard & Atalla (2009)에 자세히 기술되어 있으며, Python 오픈소스 패키지 `acoustipy`가 MIT 라이선스로 제공. 현재 단계에서 **가장 큰 병목**은 7×7 stiffness 텐서 → JCA 5-param 변환 (G2에서 다룸). TMM 자체는 이미 정립된 방법. [[transfer-matrix-method-acoustic-porous|TMM 개념 페이지]] 참조.
+
 ## 병목 분석 (Bottleneck Analysis)
 
 ### Bottleneck 1: "Phase 정의" ⬅ 최우선
