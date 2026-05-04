@@ -1,9 +1,9 @@
 ---
 title: "미세구조 → JCA 5-파라미터 경험식 변환"
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 type: concept
-tags: [jca, microstructure, fibrous-materials, empirical-formulas, garai-pompoli, bruggeman, allard]
+tags: [jca, microstructure, fibrous-materials, empirical-formulas, garai-pompoli, bruggeman, allard, needle-punch, process-parameters, g4]
 sources:
   [
     raw/papers/acoustipy-jakep72-2026.md,
@@ -120,18 +120,102 @@ C = 2
 | Needle-punched waste fiber | 80 | 25 | 0.942 | 25,800 | 1.030 | 12.3 | 24.6 |
 | Melamine foam | 9 | — | 0.994 | 10,500 | 1.02 | 100 | 200 |
 
-## 공정 변수 → JCA 파라미터 연결
+## 공정 변수 → 미세구조 관계 (G4)
 
-Needle punching 공정 변수와 JCA parameter 사이의 관계는 추후 실험적 보정 필요:
+### 개요
 
-| 공정 변수 | φ 영향 | σ 영향 | τ 영향 | Λ 영향 |
-|:---------|:-----:|:-----:|:-----:|:-----:|
-| Needle density ↑ | ↓ (미세) | ↑↑ | ↗ (미세) | ↓ |
-| Needle penetration ↓ | — | ↗ (열압축) | — | — |
-| Air-bow 적층 배향 제어 | — | ↓ (이방성) | ↑ | ↗ |
-| Thermal bonding ↑ | ↓ | ↑↑ | ↗ | ↓↓ |
+Needle punching 공정변수와 JCA parameter 사이의 정량적 관계는 **현재 통계적-경험적 수준에 머물러 있음**. 미분 가능한 end-to-end 모델은 존재하지 않으며, 이는 G4의 핵심 갭.
 
-→ 이 관계는 **DMN 학습과 병행하여 실험 데이터로 fitting 필요.**
+### 주요 문헌 (인용 순)
+
+| 논문 | 연도 | ★cit | 핵심 내용 |
+|:----|:----|:----:|:---------|
+| Yilmaz et al. | 2011 | 100 | Porosity, fiber size, layering → SAC. 표준 reference. |
+| Shahani et al. | 2014 | 75 | Fiber type/fineness/cross-section, areal density, **punch density** |
+| Applied Acoustics | 2022 | 24 | Natural/synthetic fiber, punch density → compactness → α (비단조) |
+| El Messiry et al. | 2023 | 6 | **유일한 recycled polyester waste + 공정변수 연구.** Needle speed, lattice speed, punch density, stroke frequency → SAC (ANOVA + 회귀) |
+| Leshchenko et al. | 2024 | 4 | Bulk density → fiber orientation fraction → permeability 계수. 유일한 microstructure 정량 모델 |
+| Prahsarn et al. | 2020 | 8 | Fiber denier (7 vs 15), hole config, multi-layer + perforated rubber |
+| σ empirical model | 2024 | — | σ = exp(6.454 + 0.039·ρ_b − 0.028·d_f), R²=0.949 (203 PP samples) |
+
+### 공정변수 ↔ JCA 파라미터 관계 (실험 기반)
+
+| 공정 변수 | φ | σ | τ | Λ | 비고 |
+|:---------|:-:|:-:|:-:|:-:|:----|
+| Punch density ↑ (10→30 cm⁻²) | ↓ (미세) | ↑↑ (비단조) | ↗ (미세) | ↓ | 최적점 존재, excessive → fiber damage |
+| Needle speed ↑ (strokes/min) | ↓ | ↑ | ↗ | ↓ | Fiber entanglement ↑ → σ↑ |
+| Lattice/belt speed ↑ | ↑ | ↓ | ↓ | ↑ | Areal density ↓ |
+| Needle penetration depth ↑ | — | ↗ | ↑ (z-dir) | ↓ | z-orientation ↑ (Leshchenko 2024) |
+| Fiber linear density ↓ (finer) | → | ↑↑ | ↑ | ↓↓ | 더 많은 fiber surface area |
+| Hollow/circular cross-section | ↑ (hollow) | ↓ | ↑ | ↑ | Hollow conjugated > hollow > circular |
+| Air-blow 압력 ↑ | → | ↓ (in-plane) | ↑ (thickness) | — | Fiber orientation distribution 변화 |
+| Blend ratio (waste:virgin) | ↑ (waste↑) | ↑ | ? | ? | **데이터 전무** (El Messiry 2023 유일) |
+
+### 정량적 관계 (현재까지 확인된 것)
+
+**σ 예측 (needle-punched nonwoven, thin & low-density):**
+```
+σ = exp(6.454 + 0.039·ρ_b − 0.028·d_f)   [203 PP samples, R²=0.949]
+```
+- 적용 범위: t < 20mm, ρ_b < 50 kg/m³
+- ISO 9053-1 airflow resistivity test
+
+**Garai-Pompoli (PET fiber, 일반):**
+```
+σ = 25.99 · ρ_b^1.404 · d_f^(-2)          [R²≈0.95, polyester staple fiber]
+```
+- 적용 범위: d_f = 20-50μm, ρ_b = 10-200 kg/m³
+- 폐섬유 매트(고밀도, 두꺼움)에는 적용 범위 확인 필요
+
+**Leshchenko permeability model (유일한 orientation 정량화):**
+```
+K_coeff = f(ρ_bulk, ρ_fabric)              [fiber orientation fraction in airflow direction]
+P(z) = K_coeff · K_0                       [permeability from orientation]
+```
+- Bulk/fabric density → perpendicular fiber fraction → permeability
+
+### 공정변수 → JCA 5-param 전체 파이프라인
+
+```
+공정변수 (punch density, needle speed, belt speed, N_depth, d_f, blend ratio)
+    │
+    ▼  [경험식/통계 모델 — 미분 가능 모델 없음]
+ρ_b, φ, σ
+    │
+    ▼  [Bruggeman, Allard 경험식 — 미분 가능]
+τ = φ^(-0.5),  Λ = d_f/(2√τ),  Λ' = d_f/√τ
+    │
+    ▼  [JCA dynamic density & bulk modulus]
+TMM → α(f)
+```
+
+### 핵심 갭 (Closed-loop 제어 불가 원인)
+
+1. **미분 가능 공정변수→미세구조 모델 없음** — Needle speed/lattice speed/punch density를 JCA param으로 미분 가능하게 연결 = **0편**
+2. **폐섬유(waste fiber) 특화 모델 부재** — El Messiry (2023) 외 0편
+3. **Punch density → tortuosity/Λ 정량 모델 없음** — 정성적 관계만 있음
+4. **Needle penetration depth → z-direction anisotropy 미연결** — Leshchenko (2024)가 방향성 계수 예측하나 acoustics 연결 안 됨
+5. **Air-blow 공정 변수와의 관계 없음** — Fiber orientation distribution과 air-blow 압력 관계 = 0편
+6. **폐섬유 혼합물(blend ratio) 효과 없음** — PET + waste blend ratio 영향 = 0편
+
+### 기회 (Novelty)
+
+**"Needle Punch 공정변수 → JCA 5-param 미분 가능 ML surrogate"** — El Messiry (2023) 데이터 + Yilmaz (2011) porosity 관계 + Garai-Pompoli σ 모델 통합:
+- 입력: (P_punch, N_depth, v_belt, d_f, ρ_b, blend_ratio)
+- 출력: (σ, φ, τ, Λ, Λ')
+- DMN+GAP-SBM 파이프라인에 미분 가능 연결
+- **현재 0편 — novelty gap 확인됨**
+
+### 참고 문헌 (G4 추가)
+
+- Yilmaz, N.D. et al. (2011). Effects of porosity, fiber size, and layering sequence on sound absorption performance of needle-punched nonwovens. *J. Applied Polymer Science*. DOI:10.1002/app.33312
+- Shahani et al. (2014). The Analysis of Acoustic Characteristics and Sound Absorption Coefficient of Needle Punched Nonwoven Fabrics. *J. Engineered Fibers and Fabrics*. DOI:10.1177/155892501400900210
+- Acoustic behaviour of needle punched nonwoven structures from natural and synthetic fibers (2022). *Applied Acoustics*, 199, 109043. DOI:10.1016/j.apacoust.2022.109043
+- El Messiry, M. et al. (2023). Statistical analysis of the effect of processing machine parameters on acoustical absorptive properties of needle-punched nonwovens. *J. Engineered Fibers and Fabrics*. DOI:10.1177/15589250231155623
+- Leshchenko, T.A. et al. (2024). Orientation of Fibers in Needle-Punched Nonwoven Fabrics. *Fibre Chemistry*, 55, 323-327. DOI:10.1007/s10692-024-10484-4
+- Prahsarn, C. et al. (2020). Sound absorption performance of needle-punched nonwovens and their composites with perforated rubber. *Discover Applied Sciences*. DOI:10.1007/s42452-020-2401-4
+- Development of an empirical model for the prediction of the airflow resistivity of thin and low-density fibrous materials (2024). *J. Measurements in Engineering*. DOI:10.21595/jme.2024.23382
+- Influence of airflow resistance on acoustic behaviour of needle-punched nonwoven structures (2024). *J. Textile Institute*. DOI:10.1080/00405000.2024.2343152
 
 ## DMN → JCA 파이프라인에의 의미
 

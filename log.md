@@ -889,6 +889,15 @@
 - **RIGOR 관련성:** evoxels는 JAX 기반으로 RIGOR 생태계와 직접 통합 가능. FFT homogenization은 DMN training data 생성의 표준 방법. IMN/DMN 비교는 surrogate model 선택의 근거. ML acoustic review는 acoustic metamaterial inverse design 최신 동향.
 - Total pages: 327 → 341
 
+## [2026-05-04] deep-research | G2: JCA 5-Parameter Inverse Estimation (total pages 341→342)
+
+- **Deep research (G2):** JCA 5-parameter (σ, φ, τ, Λ, Λ') inverse estimation methods surveyed
+- **3 approaches compared:** Direct optimization (GA/PSO), ML (ANN), Bayesian inference
+- **Novelty gap confirmed:** Online sequential JCA estimation = 0 papers — RIGOR SR-UKF entry
+- **New concept page:** [[jca-inverse-parameter-estimation]] — impedance tube → JCA parameter estimation
+- **Key refs:** Jaouen (2020)★72, Yi (2024)★15, Rong (2025), Niskanen (2020), Xu (2021)★38
+- **Total pages:** 341 → 342
+
 ## [2026-05-03] create | evoxels + DeepONet poroelastic concept pages (4 new pages)
 
 - **Concept pages (2):**
@@ -903,3 +912,15 @@
   - Both concept pages → [[monotone-operator-equilibrium-networks]], [[deep-material-network]] wikilinks
 - **Tags used:** tool, materials, micromechanics, homogenization, differentiable-physics, inverse-design, dmn, deeponet, operator-learning, poroelasticity, surrogate-model, neural-operator, uncertainty, person
 - **Total pages:** 327 → 331
+
+## [2026-05-04] deep-research + update | G4: Manufacturing-Microstructure (Needle Punch → JCA)
+- **Updated Concept (1):** [[microstructure-to-jca-empirical-formulas]] — 공정변수→미세구조 관계 대폭 보강 (159→289 lines)
+  - 7편 핵심 논문 matrix 추가 (Yilmaz★100, Shahani★75, El Messiry★6 등)
+  - 공정변수↔JCA 정량 관계표 (punch density, needle speed, belt speed, penetration depth, air-blow)
+  - σ 예측 정량식 2종 (empirical MLR R²=0.949, Garai-Pompoli R²≈0.95)
+  - Leshchenko (2024) fiber orientation permeability model
+  - 공정변수→JCA 5-param 전체 파이프라인 도식화
+  - 6개 핵심 갭 식별 + novelty 기회 제안
+- **Novelty gap:** Needle Punch 공정변수→JCA 5-param 미분 가능 ML surrogate = 0 papers
+- **Tags added:** needle-punch, process-parameters, g4
+- **Total pages:** 342 (unchanged)
