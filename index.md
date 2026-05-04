@@ -334,6 +334,7 @@
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework
 - [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계
+- [[waste-fiber-acoustic-lca]] — Waste Fiber Acoustic Absorber — Life Cycle Assessment
 - [[waste-fiber-market-entry]] — Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
