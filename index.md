@@ -249,6 +249,7 @@
 - [[misc-base-materials]] — Additional Base Materials Collection
 - [[mod-collapse-flow-lattice]] — Mode-Collapse in Flow-based Sampling of Lattice Field Theories
 - [[ml-acoustic-metamaterials-review]] — ML for Acoustic Metamaterials — Comprehensive Review (Chen et al. 2024)
+- [[microstructure-to-jca-empirical-formulas]] — Microstructure → JCA 5-param via Empirical Formulas
 - [[monotone-operator-equilibrium-networks]] — monDEQ — Monotone Operator Equilibrium Network (Winston & Kolter 2020, NeurIPS)
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
 - [[multi-dimensional-scaling]] — Multi-Dimensional Scaling (MDS)
