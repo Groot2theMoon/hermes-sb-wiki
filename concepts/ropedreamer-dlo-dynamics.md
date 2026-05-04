@@ -22,7 +22,7 @@ RopeDreamer (Missal et al., TU Darmstadt/DFKI)는 Deformable Linear Objects (DLO
 - [[state-space-model]] — RSSM 기반 잠재 동역학 모델링의 확장
 - [[surrogate-model]] — 물리 제약을 내장한 데이터 기반 변형 예측
 - [[physics-informed]] — Quaternion kinematic chain을 통한 물리적 귀결성 확보
-- [[soft-robot]] (entity) — 유연체 로봇 조작과의 연결 가능성
+- soft robot (entity) — 유연체 로봇 조작과의 연결 가능성
 
 ## References
 - arXiv:2604.28161 — RopeDreamer: A Kinematic Recurrent State Space Model for Dynamics of Flexible Deformable Linear Objects

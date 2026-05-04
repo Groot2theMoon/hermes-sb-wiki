@@ -4,7 +4,7 @@ created: 2026-04-30
 updated: 2026-04-30
 type: concept
 tags: [kalman-filter, adaptive-filter, neural-network, navigation, state-estimation]
-sources: [raw/papers/levy25_adaptive_neural_ukf.md, raw/papers/versano26_hybrid_neural_ukf.md]
+sources: [raw/papers/levy25_adaptive_neural_ukf.md]
 confidence: high
 ---
 

@@ -119,7 +119,7 @@ DMN 아키텍처는 열역학 법칙을 외부 제약 없이 **구조 자체에 
 - [[decoding-material-networks]] — DMN vs IMN 성능 비교
 - [[thermoelastic-dmn]] — 열-기계 DMN
 - [[deep-material-network-quilting]] — DMN explainability
-- [[dey24-dmn-sfrt-effectiveness]] — SFRT 적용
+- Dey et al. (2024) DMN-SFRT effectiveness study — SFRT 적용
 
 ## References
 

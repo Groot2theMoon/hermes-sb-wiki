@@ -14,7 +14,7 @@ confidence: high
 
 ## 개요
 
-monDEQ는 [[deep-equilibrium-networks|DEQ]]와 [[neural-ode|Neural ODE]] 계열의 **implicit-depth model**의 문제점 — 수렴 불안정성과 해의 존재성/유일성 부재 — 을 해결하기 위해 **monotone operator theory**를 도입한 모델이다. 핵심 아이디어는 고정점 탐색을 monotone operator splitting 문제로 재구성하고, 가중치 행렬을 강한 단조성(strong monotonicity) 조건 하에 parameterize하여 항상 유일한 평형점이 존재함을 보장하는 것이다.
+monDEQ는 [[deep-equilibrium-networks|DEQ]]와 [[neural-odes|Neural ODE]] 계열의 **implicit-depth model**의 문제점 — 수렴 불안정성과 해의 존재성/유일성 부재 — 을 해결하기 위해 **monotone operator theory**를 도입한 모델이다. 핵심 아이디어는 고정점 탐색을 monotone operator splitting 문제로 재구성하고, 가중치 행렬을 강한 단조성(strong monotonicity) 조건 하에 parameterize하여 항상 유일한 평형점이 존재함을 보장하는 것이다.
 
 ## 핵심 기여
 
@@ -111,14 +111,14 @@ monDEQ의 접근법은 RIGOR의 [[lure-stability|Lur'e system]] 안정성 분석
 
 ## 참고
 
-- [[deep-equilibrium-networks]] — DEQ: 선행 implicit-depth model
-- [[neural-ode]] — Neural ODE: 연속 시간 implicit-depth model
+- [[monotone-operator-equilibrium-networks|deep equilibrium networks]] — DEQ: 선행 implicit-depth model
+- [[neural-odes|neural ODE]] — Neural ODE: 연속 시간 implicit-depth model
 - [[lure-stability]] — Lur'e system: monDEQ과 구조적 동치
-- [[shima-contractivity-lmi]] — Shima LMI: monotonicity 조건의 일반화
-- [[lipschitz-bounded-networks]] — LBDN: Lipschitz 제약 네트워크 (동일 저자진)
-- [[recurrent-equilibrium-networks]] — REN: Revay & Manchester의 contracting implicit RNN (monDEQ의 후속/경쟁)
+- [[shima-contractivity-lure|Shima contractivity LMI]] — Shima LMI: monotonicity 조건의 일반화
+- [[lbdn-lipschitz-bounded-networks|Lipschitz-bounded networks]] — LBDN: Lipschitz 제약 네트워크 (동일 저자진)
+- [[ren-recurrent-equilibrium-networks|recurrent equilibrium networks]] — REN: Revay & Manchester의 contracting implicit RNN (monDEQ의 후속/경쟁)
 
 ## Source
 
-- Raw: [[raw/papers/monotone-operator-equilibrium-networks.md]]
+- Raw: monotone operator equilibrium networks (raw paper)
 - GitHub: [locuslab/monotone_op_net](https://github.com/locuslab/monotone_op_net)

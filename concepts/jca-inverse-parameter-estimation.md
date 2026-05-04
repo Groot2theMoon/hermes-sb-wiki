@@ -4,12 +4,7 @@ created: 2026-05-04
 updated: 2026-05-04
 type: concept
 tags: [jca, inverse-problem, parameter-estimation, impedance-tube, optimization, bayesian, machine-learning, sequential-estimation]
-sources:
-  [
-    raw/papers/acoustipy-jakep72-2026.md,
-    raw/papers/jaouen2020-jcal-inverse.md,
-    raw/papers/rong2025-simultaneous-inverse.md,
-  ]
+sources: [raw/papers/acoustipy-jakep72-2026.md]
 confidence: high
 ---
 

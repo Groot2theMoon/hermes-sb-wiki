@@ -929,3 +929,28 @@
 - **Novelty gap:** Needle Punch 공정변수→JCA 5-param 미분 가능 ML surrogate = 0 papers
 - **Tags added:** needle-punch, process-parameters, g4
 - **Total pages:** 342 (unchanged)
+
+## [2026-05-04] deep-research + update | G5: 저주파 대안 기술 비교
+- **Updated Concept (1):** [[waste-fiber-acoustic-absorber]] — 저주파 대안 기술 비교 섹션 추가 (7개 기술 matrix: porous, graded porous, membrane, Helmholtz, MPP, ANC, hybrid)
+  - 층간소음(40-80Hz) 충격성 광대역 특성 → 협대역 공명기 부적합 논리
+  - Mass-spring-mass + graded porous 결합 = 유일한 실용적 접근
+  - Groby (2019) graded porosity λ/4 단축, Phys. Rev. Applied (2024) hybrid, Maa (1998) MPP 등 참고 문헌
+- **Reasoning:** "왜 porous absorber가 대안 기술을 이길 자신이 있는가?"에 대한 기술적 차별화 논리 확보
+- **Tags added:** g5, competitive-analysis
+- **Total pages:** 342 (unchanged)
+
+## [2026-05-04] deep-research + rewrite | G6: LCA — Waste Fiber Acoustic Absorber
+- **Rewritten Concept (1):** [[waste-fiber-acoustic-lca]] — 44→165 lines, confidence: low→medium
+  - CO₂ 2중 혜택 구조 정식화 (제조 + 폐기물 회피)
+  - 2편 acoustic-specific LCA benchmark (Sun 2024 ★9, Ružickij 2024 ★10)
+  - 건축 흡음재 GWP 비교표 (5종, kgCO₂e/kg + kgCO₂e/m²·inch)
+  - 한국 폐섬유 통계 (80만톤/년, 재활용 4.7%)
+  - 정량적 환경편익 주장 가능 수치 제시 (1m²당 12-42 kgCO₂e 저감)
+- **Sources added:** sun2024-comparative-lca, ruzickij2024-wttf-lca-acoustic
+- **Tags added:** g6, carbon-footprint
+- **Total pages:** 342 (unchanged)
+
+## [2026-05-04] deep-research + create | G7: 건축 음향 규격
+- **New Concept (1):** [[building-acoustic-standards]] — ISO 11654 흡음 등급(A-E), KS F 2862 바닥충격음 등급(1-5), 한국 층간소음 규제, 가산비 제도(1-2% 건축비), 시장 진입 기준선 정리
+- **Key finding:** α_w ≥ 0.80 (Class B) 달성 시 건축 음향 자재 시장 진입 가능
+- **Total pages:** 342 → 343

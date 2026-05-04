@@ -4,7 +4,7 @@ created: 2026-04-30
 updated: 2026-04-30
 type: concept
 tags: [kalman-filter, expectation-maximization, system-identification, noise-covariance, state-space-model, foundational]
-sources: [raw/papers/shumway-stoffer-1982-em-smoother.md]
+sources: []
 confidence: high
 ---
 

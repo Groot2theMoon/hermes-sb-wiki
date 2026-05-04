@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-04 | Total pages: 347
+> Last updated: 2026-05-04 | Total pages: 358
 
 ## Entities
 
@@ -20,6 +20,7 @@
 - [[balaji-lakshminarayanan]] — Balaji Lakshminarayanan
 - [[bernd-prach]] — Bernd Prach
 - [[bernhard-scholkopf]] — Bernhard Schölkopf
+- [[brandon-amos]] — Brandon Amos
 - [[brown-university]] — Brown University — CRUNCH Group
 - [[caltech]] — Caltech — AI × Science 리더
 - [[christoph-h-lampert]] — Christoph H. Lampert
@@ -96,6 +97,7 @@
 - [[sepp-hochreiter]] — Sepp Hochreiter
 - [[sergey-zhdan]] — Sergey A. Zhdan
 - [[seungwon-lee]] — Seungwon Lee (이승원)
+- [[shaojie-bai]] — Shaojie Bai
 - [[simon-daubner]] — Simon Daubner
 - [[s-keshav]] — S. Keshav
 - [[spencer-richards]] — Spencer M. Richards — ETH Zürich / Stanford, Lyapunov NN
@@ -129,10 +131,13 @@
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
 - [[aol-almost-orthogonal-layers]] — AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks
+- [[autoencoder-rom]] — Autoencoder-Based Reduced Order Models (ROM)
+- [[bayesian-optimization]] — Bayesian Optimization
 - [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[brain-active-inference]] — BRAIN — Bayesian Reasoning via Active Inference for Agentic Intelligence
+- [[building-acoustic-standards]] — 건축 음향 규격 — 층간소음 기준 및 흡음 등급
 - [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
 - [[canonical-form-nonlinear-discrete-models]] — Canonical Form of Nonlinear Discrete-Time Models
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
@@ -144,6 +149,7 @@
 - [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-delta-learning]] — Deep Delta Learning — Householder Reflection as Learnable Residual Connections
 - [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
+- [[deep-equilibrium-networks]] — Deep Equilibrium Networks (DEQ)
 - [[deep-kalman-filter]] — Deep Kalman Filter (DKF) — Variational Inference for Temporal Generative Models
 - [[deep-kernel-multitask-gp-vehicle-dynamics]] — Deep Kernel Multi-Task GP for Vehicle Dynamics in Autonomous Racing
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
@@ -157,6 +163,7 @@
 - [[delany-bazley-miki-empirical-models]] — Delany-Bazley and Miki Empirical Models for Porous Sound Absorbers
 - [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
 - [[densenet]] — DenseNet (Densely Connected Convolutional Networks)
+- [[density-functional-theory]] — Density Functional Theory (DFT)
 - [[differentiable-enkf]] — Differentiable Ensemble Kalman Filter — Data-Driven State Estimation for Robotics
 - [[differentiable-filter-kloss]] — Differentiable Filter — Kloss, Martius & Bohg (2021)
 - [[differentiable-lmi-contractivity]] — Differentiable LMI for Contractivity — Train-Time Stability Enforcement
@@ -185,6 +192,7 @@
 - [[fft-homogenization-composites]] — FFT-Based Homogenization for Composites — Willot Discretization & 3D Fibrous
 - [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
+- [[fm-dem-pore-network]] — FM-DEM — Fiber-level Discrete Element Model for Porous Media
 - [[fourier-neural-operator]] — Fourier Neural Operator (FNO)
 - [[free-energy-principle]] — Free Energy Principle — Variational Free Energy Minimization as a Unified Brain Theory
 - [[function-space-variational-inference-bnn]] — Generalized Function-Space Variational Inference for Bayesian Neural Networks
@@ -215,6 +223,7 @@
 - [[jca-inverse-parameter-estimation]] — JCA 5-Parameter Inverse Estimation — Impedance Tube / Microstructure → JCA
 - [[jeffreys-prior-dimension-scaling]] — Jeffreys Prior Dimension Scaling — 표준 vs RIGOR 변형 분석
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
+- [[kalman-filter]] — Kalman Filter
 - [[kalmannet]] — KalmanNet — Neural Network Aided Kalman Filtering for Partially Known Dynamics
 - [[kennedy-ohagan-calibration]] — Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration
 - [[kernel-methods]] — Kernel Methods — An Introduction (Müller et al. 2001 Survey)
@@ -248,6 +257,7 @@
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
 - [[mhc-deepseek]] — [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
+- [[micromechanics-homogenization]] — Micromechanics and Homogenization
 - [[microstructure-to-jca-empirical-formulas]] — 미세구조 → JCA 5-파라미터 경험식 변환
 - [[misc-base-materials]] — Additional Base Materials Collection
 - [[ml-acoustic-metamaterials-review]] — ML for Acoustic Metamaterials and Phononic Crystals — Review (2024)
@@ -292,6 +302,7 @@
 - [[recursive-kalmannet]] — Recursive KalmanNet — Deep Learning-Augmented Kalman Filtering with Consistent Uncertainty Quantification
 - [[ren-recurrent-equilibrium-networks]] — REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness
 - [[residual-networks]] — Residual Networks (ResNet)
+- [[rigor-filter]] — RIGOR Filter — Differentiable SR-UKF
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
 - [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Human Motion Prediction (Liu 2024)
 - [[rnn-sdp-lipschitz-certification]] — RNN-SDP — Lipschitz Robustness Certification for RNNs
@@ -359,4 +370,3 @@
 - [[sn-gan-vs-gan-lattice]] — SN-GAN vs GAN Lattice Simulations — GAN 안정화 방법 비교
 - [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
 - [[vae-vs-gan]] — VAE vs GAN — Generative Model 비교
-

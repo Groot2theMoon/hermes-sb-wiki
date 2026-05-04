@@ -6,10 +6,7 @@ type: concept
 tags: [dmn, jca, poroelasticity, biot-theory, norris-correspondence, rigid-frame, equivalent-fluid, parallel-pipeline, gap-sbm]
 sources:
   [
-    raw/papers/norris1992-poroelastic-thermoelastic.md,
-    raw/papers/allard-atalla2009-porous-media.md,
-    raw/papers/wei25-dmn-overview.md,
-  ]
+    raw/papers/wei25-dmn-overview.md]
 confidence: high
 ---
 

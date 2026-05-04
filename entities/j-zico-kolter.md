@@ -32,4 +32,4 @@ confidence: medium
 - **[[brandon-amos]]** — 학생, OptNet 공동 저자
 - **Carnegie Mellon University** — 소속 기관
 - **Bosch Center for AI** — 공동 소속
-- **[[lipschitz-bounded-networks]]** — LBDN과 간접적 연관 (Wang et al. 2023에서 weight normalization 인용)
+- **[[lbdn-lipschitz-bounded-networks|Lipschitz-bounded networks]]** — LBDN과 간접적 연관 (Wang et al. 2023에서 weight normalization 인용)
