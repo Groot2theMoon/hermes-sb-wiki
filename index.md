@@ -231,6 +231,7 @@
 - [[linear-rnn-theory]] — Linear RNN Parallelization Theory
 - [[lipkernel-dissipative-cnn]] — LipKernel — Lipschitz-Bounded CNNs via Dissipative Layers (2-D Roesser Parameterization)
 - [[lle]] — Locally Linear Embedding (LLE)
+- [[low-frequency-absorption-technologies-comparison]] — LF Absorption Technologies: Membrane, Helmholtz, MPP, ANC vs Porous
 - [[llm-mechanical-linkage-design]] — LLM for Mechanical Linkage Design — Symbolic Reflection and Modular Optimisation
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
