@@ -5,6 +5,12 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-04] lint --fix | 18 broken wikilinks + 8 dangling source refs
+- 18 broken wikilinks → 9 fixed (corrected pipe-syntax), 9 stub pages created
+- 8 dangling source references removed (raw files not ingested yet)
+- Index rebuilt: 347→358 (+11 new pages)
+- Git: `62cfed8`
+
 ## [2026-05-04] maintenance | index rebuild + git sync
 - Index rebuilt from filesystem: header 342→347, duplicate entries removed (9 duplicates)
 - New pages committed: [[dmn-jca-conversion-impossibility]], [[jca-inverse-parameter-estimation]]
