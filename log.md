@@ -1176,3 +1176,16 @@
 - [[dongil-shin]] → 8 new wikilinks (new concepts + entities)
 
 - Total pages: 406 → 412 (+6)
+
+## [2026-05-05] update | RIGOR vel recovery experiment log (10 runs)
+- **Updated:** [[rigor-filter]] — full experiment log 추가 (10개 실험 비교표, key findings, open questions)
+- **Updated:** [[rigor-sigma-point-research]] — 실험 결과 업데이트, sigma cloud conditioning 추가
+- **Experiments today (all VDP μ=1.0, SR-UKF no KKL, 500 iter, SEED=43):**
+  - Baseline: pos=0.991, vel=0.905, RMSE=0.798
+  - Whiteness loss: vel=0.902 (≈baseline, RMSE↑)
+  - Whiteness+LMI: vel=0.882 (하락)
+  - Per-state spread (RMSE 0.742로 최고, vel 0.899)
+  - Sigma spread regularizer: vel=0.920 (최고 vel corr, pos 희생)
+  - Sigma cloud conditioning: vel=0.919 (두 번째, RMSE↑)
+  - Supervised w=0.1: vel=0.914 (in-dist), OOD μ=3.0: vel=0.181 (실패)
+- **Code changes:** nn.py DeltaModulator → sigma_cond conditioning, filter.py → sigma_cond computation + pass to modulator

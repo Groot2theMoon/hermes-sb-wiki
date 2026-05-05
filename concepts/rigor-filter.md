@@ -32,3 +32,40 @@ This filter addresses the same learning-based state estimation problem as [[miao
 | ⚠️ 결합 | ④ Learnable sigma weights | MA-UKF (Majewski 2026) | ①+③과 결합 시 시너지 |
 | ❌ 보류 | ② LMI-aware adaptive point count | Novel | 낮음 |
 | 📌 장기 | ⑤ Per-sigma-point correction | Novel | 매우 높음 (risk 높음) |
+
+## Comprehensive Experiment Log (2026-05-05)
+
+All experiments: VDP μ=1.0, dt=0.1, steps=300, obs_std=0.3, SR-UKF (no KKL), 500 iter, SEED=43.
+
+### Unsupervised Experiments (position NLL only)
+
+| # | Approach | pos_corr | vel_corr | RMSE | Note |
+|---|----------|----------|----------|------|------|
+| 0 | Baseline (clean v2) | 0.9914 | 0.9054 | 0.798 | SR-UKF + A+NN only |
+| 1 | Whiteness loss w=0.1 | 0.9866 | 0.9023 | 1.205 | lag-1 innovation autocorrelation |
+| 2 | Whiteness + LMI (0.1+0.01) | 0.9827 | 0.8824 | 1.343 | LMI contractivity penalty (ρ=0.99) |
+| 3 | Per-state spread (bad init) | 0.9349 | 0.8182 | 1.690 | softplus(logits)+0.5 → init 1.19 < gamma 1.414 |
+| 4 | Per-state spread (good init) | 0.9891 | 0.8995 | 0.742 | gamma+delta, RMSE best |
+| 5 | Sigma spread regularizer w=0.01 | 0.9740 | 0.9197 | 1.103 | (pos_std/vel_std)² penalty |
+| 6 | **Sigma cloud conditioning** | 0.9246 | **0.9191** | 1.251 | std+skew → NN residual conditioning |
+
+### Supervised Experiments (pos NLL + λ·vel MSE)
+
+| # | Approach | pos_corr | vel_corr | RMSE | Note |
+|---|----------|----------|----------|------|------|
+| 7 | Supervised w=1.0 | 0.336 | 0.226 | 1.409 | Weight too high → pos collapse |
+| 8 | Supervised w=0.1 (μ=1.0) | 0.907 | 0.914 | 1.572 | Better vel but pos sacrificed |
+| 9 | OOD μ=3.0 (from #8) | 0.141 | 0.181 | 1.927 | Supervised doesn't generalize OOD |
+
+### Key Findings
+
+1. **Velocity 비선형성의 근본적 한계:** Position NLL만으로는 velocity의 rich dynamics를 covariance → Kalman gain 경로로만 간접 학습. True velocity의 sharp peak(±4) 대비 추정 amplitude는 ±1.5 수준.
+2. **Sigma point 정보 활용 방향성은 유효:** vel_corr이 0.905→0.919로 개선된 두 접근법(spread reg, cloud cond) 모두 sigma point 정보를 활용. 다만 pos_corr/RMSE 희생.
+3. **OOD generalization은 미해결:** Supervised + multi-mu로도 μ=1.0→3.0 일반화 실패. A+NN 구조의 근본적 한계.
+4. **초기화 중요성:** Per-state spread의 init 값이 gamma와 다르면 성능 급락. Zero-delta init 필요.
+
+### Open Questions
+- Position-velocity trade-off 해결을 위한 loss 구조 개선 (normalized loss?)
+- Parameter-conditioned A+NN (RIGOR++: mu를 입력으로)
+- Delay embedding (Takens)으로 관측 augment
+- 다양한 dynamics family에서의 벤치마크

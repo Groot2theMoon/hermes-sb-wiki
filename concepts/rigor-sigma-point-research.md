@@ -160,3 +160,26 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 - [[optimized-sigma-points-n-plus-1]] — Minimal sigma points
 - [[generalized-gaussian-cubature]] — GGC
 - [[ukf-scaling-adaptive-dunik]] — Adaptive scaling
+- [[rigor-filter]] — RIGOR 실험 로그 포함
+
+## Experiment Updates (2026-05-05)
+
+### Tested Approaches on VDP μ=1.0
+
+| Priority | Idea | Status | Result |
+|----------|------|--------|--------|
+| ① Differentiable per-state spread | ✅ Tested | vel_corr=0.899 (≈baseline), RMSE 개선(0.798→0.742) |
+| ② LMI-aware adaptive point count | ❌ 보류 | 실용적 impact 낮음 |
+| ③ Sigma point trajectory regularizer | ✅ Tested | vel_corr=0.920 (최고), pos_corr 희생 |
+| ④ Learnable sigma weights | ⚠️ 결합 필요 | 단독 novelty 낮음 |
+| ⑤ Per-sigma-point correction | 📌 장기 | risk 높음 |
+
+### New: Sigma Cloud Conditioning (v4.3, 2026-05-05)
+→ Sigma point의 pre-dynamics std + skewness를 NN residual의 추가 입력으로 사용.
+→ vel_corr=0.919 (baseline 0.905 대비 개선) 확인했으나 pos_corr 희생.
+
+### Key Insight
+근본적 한계: **position NLL만으로 velocity 비선형성을 covariance를 통해 간접 학습하는 SR-UKF 구조의 정보 병목.** 해결 방향:
+1. Loss 구조 개선 (rollout NLL, innovation whiteness)
+2. 구조적 확장 (parameter-conditioned A+NN)
+3. Delay embedding (Takens)으로 관측 정보 augment
