@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-05 | Total pages: 380
+> Last updated: 2026-05-05 | Total pages: 386
 
 ## Entities
 
@@ -213,6 +213,7 @@
 - [[gap-sbm]] — Gap-SBM — Shifted Boundary Method Variant
 - [[gated-recurrent-units]] — Gated Recurrent Units (GRU & LSTM)
 - [[genai-stock-selection]] — Generative AI for Stock Selection
+- [[generalized-gaussian-cubature]] — Generalized Gaussian Cubature for Nonlinear Filtering
 - [[generative-models-physics]] — Generative Models for Physics — Spin Systems and Lattice Field Theory
 - [[gmt-geometric-multigrid-transformer]] — GMT — Geometric Multigrid Transformer for Microstructure Homogenization
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
@@ -228,6 +229,7 @@
 - [[hybrid-fno-lbm]] — Hybrid FNO-LBM — Fourier Neural Operator-Lattice Boltzmann Method Coupling
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
 - [[imn-porous-materials]] — Interaction-based Material Network (IMN) for Porous Materials
+- [[improved-ckf-gnss-ins]] — Improved Cubature Kalman Filter for GNSS/INS — Posterior Sigma-Point Error Transformation
 - [[in-context-modeling-physics]] — In-Context Modeling (ICM) for Computational Science
 - [[information-koopman-representation]] — Information Shapes Koopman Representation
 - [[isentropic-relations]] — Isentropic Relations — Thermodynamic Derivation for Gas Dynamics
@@ -280,6 +282,7 @@
 - [[monotone-operator-equilibrium-networks]] — Monotone Operator Equilibrium Networks (monDEQ)
 - [[multi-agent-investment]] — Multi-Agent LLM Investment System
 - [[multi-dimensional-scaling]] — Multi-Dimensional Scaling (MDS)
+- [[multi-scaled-ukf]] — Multi-Scaled Unscented Kalman Filter — Per-State Scaling
 - [[muon-optimizer]] — Muon Optimizer for LLM Training
 - [[needle-punching-process-jca-mapping]] — Needle Punching Process — Microstructure — JCA Parameter Mapping
 - [[neural-mpc-terminal-constraint]] — Neural MPC Terminal Constraint via HJ Reachability for Collision Avoidance
@@ -292,6 +295,7 @@
 - [[offline-bayesian-uq-finite-mdps]] — Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs
 - [[optimal-control]] — Optimal Control — Optimal Decision-Making in Dynamical Systems
 - [[optimal-transport-stability-sinkhorn]] — Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence
+- [[optimized-sigma-points-n-plus-1]] — Optimized Sigma Point Selection — n+1 Points for UKF
 - [[orthogonal-projection-regularization]] — Orthogonal Projection Regularization for Efficient Model Augmentation
 - [[pac-bayesian-epistemic-uncertainty]] — PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
@@ -354,6 +358,8 @@
 - [[transfer-matrix-method-acoustic-porous]] — Transfer Matrix Method (TMM) for Acoustic Porous Materials
 - [[transformer]] — Transformer Architecture
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
+- [[ukf-learning-sigma-points]] — UKF-L — Model Based Learning of Sigma Points
+- [[ukf-scaling-adaptive-dunik]] — UKF Scaling Parameter — Analysis and Adaptive Setting
 - [[ukf-stochastic-stability]] — UKF Stochastic Stability — Modified UKF with Fading Measurements
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review

@@ -4,7 +4,7 @@ created: 2026-04-30
 updated: 2026-04-30
 type: comparison
 tags: [kalman-filter, unscented-kalman-filter, square-root, differentiable-filtering, comparison]
-sources: [raw/papers/kloss21_diff_filter.md, raw/papers/majewski26_ma_ukf.md]
+sources: [raw/papers/kloss21_diff_filter.md, raw/papers/2603.04360v1.md]
 confidence: high
 ---
 

@@ -5,8 +5,12 @@ updated: 2026-05-05
 type: concept
 tags: [rigor, sigma-point, ukf, differentiable-filter, state-estimation, research-landscape]
 sources:
-  - raw/papers/TurRas10_model_based_learning_sigma_points.md
-  - raw/papers/majewski26_ma_ukf.md
+  - raw/papers/turras10.md
+  - raw/papers/2603.04360v1.md
+  - raw/papers/optimized-sigma-points-ukf.md
+  - raw/papers/ukf-scaling-adaptive-setting.md
+  - raw/papers/aas-2015-423-ukf.md
+  - raw/papers/2604.04792v1.md
 confidence: high
 ---
 

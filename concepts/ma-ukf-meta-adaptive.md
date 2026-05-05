@@ -4,7 +4,8 @@ created: 2026-04-30
 updated: 2026-04-30
 type: concept
 tags: [kalman-filter, meta-learning, end-to-end, state-estimation, comparison-target]
-sources: [raw/papers/majewski26_ma_ukf.md]
+sources:
+  - raw/papers/2603.04360v1.md
 confidence: high
 ---
 

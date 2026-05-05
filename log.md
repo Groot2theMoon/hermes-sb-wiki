@@ -1046,3 +1046,34 @@
 - 363_Scientific_Machine_Learnin.md, NeurIPS_ML4PS_2025_114.md, _362.md, _87.md
 
 - Total pages: 369 → 380 (+11)
+
+## [2026-05-05] ingest | 7 sigma-point papers — UKF/CKF/GGC/MS-UKF/MA-UKF/UKF-L
+
+### 업데이트
+- `raw/papers/majewski26_ma_ukf.md` → `raw/papers/2603.04360v1.md`로 대체 (frontmatter 추가)
+
+### Raw sources ingested (7):
+- raw/papers/2603.04360v1.md — MA-UKF: Meta-Adaptive UKF via RNN sigma-point weights (Majewski, Warsaw UT)
+- raw/papers/optimized-sigma-points-ukf.md — n+1 sigma point scheme (Cheng & Liu)
+- raw/papers/ukf-scaling-adaptive-setting.md — UKF scaling parameter adaptive setting (Duník et al., IEEE TAC 2012)
+- raw/papers/improved-ckf-gnss-ins.md — ICKF for GNSS/INS posterior sigma-point error (Cui et al., IEEE TSP 2017)
+- raw/papers/aas-2015-423-ukf.md — Generalized Gaussian Cubature (Linares & Crassidis, AAS 2015)
+- raw/papers/turras10.md — UKF-L: Learning sigma points (Turner & Rasmussen, Cambridge)
+- raw/papers/2604.04792v1.md — Multi-Scaled UKF: per-state scaling (Levy & Klein, Haifa)
+
+### New concept pages (6):
+- [[optimized-sigma-points-n-plus-1]] — n+1 minimal sigma points for UKF
+- [[ukf-scaling-adaptive-dunik]] — UKF scaling parameter analysis & adaptive setting
+- [[improved-ckf-gnss-ins]] — ICKF for GNSS/INS under signal outage
+- [[generalized-gaussian-cubature]] — Generalized Gaussian Cubature (arbitrary order accuracy)
+- [[ukf-learning-sigma-points]] — UKF-L: model-based learning of sigma points
+- [[multi-scaled-ukf]] — Multi-scaled UKF: per-state scaling parameters
+
+### Updated concept pages (2):
+- [[ma-ukf-meta-adaptive]] — sources updated to 2603.04360v1.md
+- [[rigor-sigma-point-research]] — sources updated (TurRas10 → turras10.md + 6 new papers)
+
+### Updated comparison pages (1):
+- [[kf-ekf-ukf-srukf-differentiable]] — sources updated to 2603.04360v1.md
+
+- Total pages: 380 → 386 (+6)
