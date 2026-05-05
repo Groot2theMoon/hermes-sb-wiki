@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-05 | Total pages: 375
+> Last updated: 2026-05-05 | Total pages: 380
 
 ## Entities
 
@@ -32,7 +32,7 @@
 - [[dongil-shin]] — Shin Dongil (신동일)
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
-- [[eleni-chatzi]] — Eleni Chatzi — ETH Zürich, Structural Health Monitoring & Neural ODEs
+- [[eleni-chatzi]] — Eleni Chatzi
 - [[ezra-winston]] — Ezra Winston
 - [[fabio-brau]] — Fabio Brau
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
@@ -65,9 +65,9 @@
 - [[kaiming-he]] — Kaiming He
 - [[karl-friston]] — Karl Friston — Neuroscientist, Free Energy Principle Creator
 - [[kaushik-bhattacharya]] — Kaushik Bhattacharya
-- [[keyan-miao]] — Keyan Miao — University of Oxford, NODE Observer
+- [[keyan-miao]] — Keyan Miao
 - [[klaus-robert-muller]] — Klaus-Robert Müller
-- [[konstantinos-gatsis]] — Konstantinos Gatsis — University of Oxford, Control Theory
+- [[konstantinos-gatsis]] — Konstantinos Gatsis
 - [[kyunghyun-cho]] — Kyunghyun Cho
 - [[laurens-van-der-maaten]] — Laurens van der Maaten
 - [[lavrentyev-institute-of-hydrodynamics]] — Lavrentyev Institute of Hydrodynamics (LIH)
@@ -81,7 +81,7 @@
 - [[maziar-raissi]] — Maziar Raissi
 - [[mikhail-polyanskiy]] — Mikhail N. Polyanskiy
 - [[milad-siami]] — Milad Siami
-- [[mona-buisson-fenet]] — Mona Buisson-Fenet — Mines Paris - PSL, KKL Observer & Neural ODEs
+- [[mona-buisson-fenet]] — Mona Buisson-Fenet
 - [[moonshot-ai]] — Moonshot AI
 - [[nir-shlezinger]] — Nir Shlezinger — Signal Processing & Model-Based Deep Learning
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
@@ -92,7 +92,7 @@
 - [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
-- [[rebecca-willett]] — Rebecca Willett — University of Chicago, Statistics & CS, Data Assimilation
+- [[rebecca-willett]] — Rebecca Willett
 - [[ross-girshick]] — Ross Girshick
 - [[ruigang-wang]] — Ruigang Wang (王瑞刚)
 - [[ruoyong-yang]] — Ruoyong Yang
@@ -126,7 +126,6 @@
 - [[ziming-liu]] — Ziming Liu
 - [[zongyi-li]] — Zongyi Li
 
-
 ## Concepts
 
 - [[1-lipschitz-layers-comparison]] — 1-Lipschitz Layers Compared — Comprehensive Benchmark of Lipschitz Constraint Methods
@@ -138,20 +137,21 @@
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
 - [[aol-almost-orthogonal-layers]] — AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks
-- [[auto-diff-data-assimilation]] — Auto-Differentiable Data Assimilation — Co-learning of States, Dynamics, and Filtering Algorithms
+- [[auto-diff-data-assimilation]] — Auto-differentiable Data Assimilation — Co-learning States, Dynamics, and Filtering Algorithms
 - [[autoencoder-rom]] — Autoencoder-Based Reduced Order Models (ROM)
+- [[bayesian-covariance-priors]] — Bayesian Covariance Matrix Priors — SIW, IW, Reference Prior
 - [[bayesian-optimization]] — Bayesian Optimization
 - [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[brain-active-inference]] — BRAIN — Bayesian Reasoning via Active Inference for Agentic Intelligence
 - [[building-acoustic-standards]] — 건축 음향 규격 — 층간소음 기준 및 흡음 등급
-- [[buisson-fenet-kkl-observer]] — Buisson-Fenet KKL Observer — Recognition Models for Neural ODEs with Partial Observations
+- [[buisson-fenet-kkl-observer]] — Buisson-Fenet KKL Observer — Recognition Models for Neural ODEs from Partial Observations
 - [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
 - [[canonical-form-nonlinear-discrete-models]] — Canonical Form of Nonlinear Discrete-Time Models
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
-- [[cloud-gpu-compute-platforms]] — Cloud GPU Compute Platforms — Modal vs RunPod vs Beam
 - [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
+- [[cloud-gpu-compute-platforms]] — Cloud GPU Compute Platforms — Modal vs RunPod vs Beam
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
 - [[compressible-flow-governing-equations]] — Compressible Flow Governing Equations — Gas Dynamics 1
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
@@ -177,7 +177,6 @@
 - [[differentiable-enkf]] — Differentiable Ensemble Kalman Filter — Data-Driven State Estimation for Robotics
 - [[differentiable-filter-kloss]] — Differentiable Filter — Kloss, Martius & Bohg (2021)
 - [[differentiable-lmi-contractivity]] — Differentiable LMI for Contractivity — Train-Time Stability Enforcement
-- [[differentiable-sigma-point-quadrature]] — Differentiable Sigma Point Quadrature — UKF/SR-UKF Sigma Point 적극적 활용 방향
 - [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
 - [[diffusion-les-super-resolution]] — Conditional Diffusion Model for LES Super-Resolution in Atmospheric Boundary Layer
 - [[diffusion-metamaterial-inverse-design]] — Guided Diffusion for Inverse Design of Mechanical Metamaterials
@@ -186,11 +185,13 @@
 - [[digital-twin]] — Digital Twin — Real-Time Physics-Based Virtual Replica
 - [[dilo-diffusion-latent-optimization]] — DiLO — Diffusion Latent Optimization for PDE-Constrained Inverse Problems
 - [[discriminating-hyperplane-safety]] — Safety Filters via Discriminating Hyperplanes
+- [[dmn-fatigue-sfrt]] — DMN for Short Fiber-Reinforced Thermoplastics — Fatigue & Creep
 - [[dmn-jca-conversion-impossibility]] — DMN 7×7 ↔ JCA 5-Parameter 변환 불가능성과 병렬 파이프라인 설계
 - [[dmn-overview-wei25]] — DMN Overview — Wei et al. (2025) Survey
 - [[dm-phisnet-scf-acceleration]] — dm-PhiSNet — Equivariant Density-Matrix Learning for Accelerated SCF Workflows
 - [[dnn-interpretability-lrp]] — DNN Visualization & Interpretability (LRP)
 - [[dual-x-mlff-explainability]] — DUAL-X — Dual-Level Explainability Framework for Machine Learning Force Fields
+- [[dynamic-sparsity-perception]] — Neuro-Inspired Dynamic Sparsity for Energy-Efficient Perception
 - [[effective-theory-transformers]] — Effective Theory of Transformers at Initialization
 - [[ekf-stochastic-stability-fading]] — EKF Stochastic Stability over Fading Channels
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
@@ -254,8 +255,8 @@
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[llm-mechanical-linkage-design]] — LLM for Mechanical Linkage Design — Symbolic Reflection and Modular Optimisation
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
-- [[low-rank-spatial-attention-neural-operators]] — Low-Rank Spatial Attention for Neural Operators — Unifying Global Mixing Modules
 - [[low-frequency-absorption-technologies-comparison]] — Low-Frequency Sound Absorption Technologies Comparison
+- [[low-rank-spatial-attention-neural-operators]] — Low-Rank Spatial Attention for Neural Operators — Unifying Global Mixing Modules
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
 - [[lure-stability]] — Lur'e Stability Analysis — A+NN Systems
@@ -270,7 +271,7 @@
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
 - [[mhc-deepseek]] — [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
-- [[miao-robust-observer]] — Miao Robust Observer — Learning Robust State Observers using Neural ODEs
+- [[miao-robust-observer]] — Miao Robust Observer — Learning Robust KKL Observers via Neural ODEs
 - [[micromechanics-homogenization]] — Micromechanics and Homogenization
 - [[microstructure-to-jca-empirical-formulas]] — 미세구조 → JCA 5-파라미터 경험식 변환
 - [[misc-base-materials]] — Additional Base Materials Collection
@@ -287,7 +288,7 @@
 - [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration (Neural TI)
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
-- [[observability-nssm]] — Observability Conditions for Neural State-Space Models — Eigenvalue Roots of Unity Analysis
+- [[observability-nssm]] — Observability Conditions for Neural State-Space Models with Eigenvalues and Roots of Unity
 - [[offline-bayesian-uq-finite-mdps]] — Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs
 - [[optimal-control]] — Optimal Control — Optimal Decision-Making in Dynamical Systems
 - [[optimal-transport-stability-sinkhorn]] — Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence
@@ -297,8 +298,8 @@
 - [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)
 - [[physics-informed]] — Physics-Informed Machine Learning
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
-- [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pi-jepa-surrogate-pretraining]] — PI-JEPA — Label-Free Surrogate Pretraining for Coupled Multiphysics Simulation
+- [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[pinn-lyapunov-functions]] — PINN Lyapunov Functions — PDE Characterization, Learning, and Verification
 - [[pinn-ukf]] — PINN-UKF — Physics-Informed Neural Network + Adaptive UKF
@@ -309,8 +310,8 @@
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[porous-nonwoven-homogenization]] — Porous Nonwoven Homogenization — Computational Homogenization & Compression Modeling
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
-- [[predictivity-neural-surrogates-multiscale-pde]] — Predictivity of Neural Surrogates of Multiscale PDEs — Critical Analysis
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
+- [[predictivity-neural-surrogates-multiscale-pde]] — Predictivity and Utility of Neural Surrogates of Multiscale PDEs — Critical Analysis
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
 - [[principal-component-analysis]] — Principal Component Analysis (PCA) — 선형 차원 축소
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)
@@ -320,6 +321,7 @@
 - [[ren-recurrent-equilibrium-networks]] — REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness
 - [[residual-networks]] — Residual Networks (ResNet)
 - [[rigor-filter]] — RIGOR Filter — Differentiable SR-UKF
+- [[rigor-sigma-point-research]] — RIGOR Sigma Point Innovation — Research Landscape & Gap Analysis
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
 - [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Human Motion Prediction (Liu 2024)
 - [[rnn-sdp-lipschitz-certification]] — RNN-SDP — Lipschitz Robustness Certification for RNNs
@@ -328,12 +330,12 @@
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
 - [[rtsnet]] — RTSNet — Learning to Smooth in Partially Known State-Space Models
 - [[sagawa-ueda-information-thermodynamics]] — Information Thermodynamics — Maxwell's Demon in Nonequilibrium Dynamics
-- [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
 - [[scno-spiking-compositional-neural-operator]] — SCNO — Spiking Compositional Neural Operator for Neuromorphic PDE Solving
+- [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[shima-contractivity-lure]] — Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025
 - [[simulation-based-inference-aircraft-design]] — Simulation-Based Inference for Conceptual Aircraft Design
-- [[skanode]] — SKANODE — Structured Kolmogorov-Arnold Neural ODEs for Interpretable Dynamics Discovery
+- [[skanode]] — SKANODE — Structured Kolmogorov-Arnold Neural ODEs
 - [[soft-shima-lmi]] — Soft Shima LMI — Train-Time Contractivity via P-learning
 - [[solar-sail-mfbo]] — Solar Sail MFBO (Multi-Fidelity Bayesian Optimization)
 - [[solis-physics-informed-surrogates]] — SOLIS: Physics-Informed Learning of Interpretable Neural Surrogates
@@ -366,12 +368,12 @@
 - [[waste-fiber-acoustic-absorber]] — Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계
 - [[waste-fiber-acoustic-lca]] — Life Cycle Assessment — Waste Fiber Acoustic Absorber
 - [[waste-fiber-market-entry]] — Waste-Fiber Acoustic Absorber — Market Entry & Korean Regulatory Landscape
+- [[waterscape-sound-preference]] — Waterscape Sound Preference — Visual & Acoustic Factors
 - [[wind-energy-ml]] — AI/ML Applications in Wind Energy
 - [[xai-surveys]] — XAI — Explaining DNN Predictions (Survey)
 - [[yolo-object-detection]] — YOLO — You Only Look Once
 - [[youla-ren-stabilizing-controllers]] — Youla-REN — Learning over All Stabilizing Nonlinear Controllers
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
-
 
 ## Comparisons
 

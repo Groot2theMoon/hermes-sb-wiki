@@ -1,11 +1,13 @@
 ---
 title: "Jeffreys Prior Dimension Scaling — 표준 vs RIGOR 변형 분석"
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-05
 type: concept
 tags: [jeffreys-prior, dimension-scaling, covariance-estimation, reference-prior, bayesian]
 sources:
   - raw/papers/rigor_v2/loss.py
+  - raw/papers/1408.4050v2.md
+  - raw/papers/Download.md
 confidence: high
 ---
 

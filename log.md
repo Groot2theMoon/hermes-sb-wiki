@@ -1015,3 +1015,34 @@
 - **Key findings:** RunPod이 일반적으로 30~40% 저렴, 장기 batch에서는 Modal GB-sec 과금 대비 25배 저렴. Beam/Beta9는 오픈소스이나 self-host는 K8s 필수 (PN40 단독 불가). 투-플랫폼 전략 (Modal prototype → RunPod production) 제안
 - **From discussion with user** (Modal 대체 옵션 질의 → DDGS 조사 → Beam/Beta9 K8s 의존성 설명)
 - **Total pages:** 374 → 375 (+1)
+
+
+## [2026-05-05] cleanup + ingest | 6 unprocessed raw files ingested
+
+### 삭제
+- `raw/articles/삼겹살-양송이-김치볶음-덮밥-레시피.md` — 레시피 (wiki 도메인 외)
+- `raw/papers/NeurIPS_ML4PS_2025_59 (1).md` — `59.md`와 중복
+- `raw/papers/Optimization Algorithms on Matrix Manifolds [Absil, Mahony & Sepulchre 2007-12-23].md` — 책 (wiki 도메인 외)
+
+### Raw sources ingested (6):
+- raw/papers/dey24-dmn-sfrt-effectiveness.md — DMN for SFRT under fatigue/creep (Bosch × KIT, 2024)
+- raw/papers/2510.13025v2.md — Information Shapes Koopman Rep. v2 (ICLR 2026 camera-ready)
+- raw/papers/1408.4050v2.md — Bayesian inference for covariance matrix (Alvarez, Niemi, Simpson 2014)
+- raw/papers/Download.md — SIW priors (Berger, Sun, Song 2020, Annals of Statistics)
+- raw/papers/s41467-025-65387-7 (1).md — Dynamic sparsity for perception (Zhou et al. 2025, Nature Comms)
+- raw/papers/yang22-visual-acoustic-sound-preference.md — Waterscape sound preference (Yang & Kang 2022)
+
+### New concept pages (4):
+- [[dmn-fatigue-sfrt]] — DMN for SFRT: a posteriori FOT interpolation, fatigue-damage, creep, inverse ID
+- [[bayesian-covariance-priors]] — IW, SIW, HIW, shrinkage IW (Berger-Sun-Song), comparison survey
+- [[dynamic-sparsity-perception]] — Neuro-inspired dynamic sparsity for energy-efficient AI perception
+- [[waterscape-sound-preference]] — Visual & acoustic factors in waterscape sound preference
+
+### Updated concept pages (2):
+- [[information-koopman-representation]] — sources에 v2 추가
+- [[jeffreys-prior-dimension-scaling]] — sources에 1408.4050v2 + Download.md 추가
+
+### Deferred (astronomy/cosmology — not ingested):
+- 363_Scientific_Machine_Learnin.md, NeurIPS_ML4PS_2025_114.md, _362.md, _87.md
+
+- Total pages: 369 → 380 (+11)
