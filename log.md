@@ -3,6 +3,52 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
+
+## [2026-05-05] ingest | 13 acoustic papers — JCA 역추정, 섬유모델, 폐기물 흡음재, 저주파 메타물질, 음향 기준/표준
+
+- **Raw sources (13):**
+  - raw/papers/yi24-ml-jca-prediction.md — ML for JCA prediction (Applied Acoustics 2024)
+  - raw/papers/jaouen20-jcal-6param-impedance-tube.md — JCAL 6-param from impedance tube (JASA 2020)
+  - raw/papers/xu21-pso-parameter-identification.md — PSO parameter identification (PLOS ONE 2021)
+  - raw/papers/atalla05-inverse-acoustical-characterization.md — Inverse characterization (Canadian Acoustics 2005)
+  - raw/papers/niskanen20-bayesian-inversion-poroviscoelastic.md — Bayesian inversion PhD thesis (Le Mans 2020)
+  - raw/papers/garai05-polyester-empirical-model.md — Polyester fibre empirical model (Applied Acoustics 2005)
+  - raw/papers/maa98-microperforated-panel.md — Potential of MPP absorber (Maa 1998)
+  - raw/papers/messiry23-needle-punching-statistical.md — Needle punching process stats (JEFF 2023)
+  - raw/papers/ruzickij24-wttf-composite-lca.md — WTTF composite acoustic + LCA (Sustainability 2024)
+  - raw/papers/qi25-ventilated-metamaterials.md — LF broadband ventilated metamaterials (IJMS 2025)
+  - raw/papers/boulvert19-graded-porous-broadband.md — Graded porous perfect absorption (HAL 2019)
+  - raw/papers/korea-floor-impact-sound-regulation-2023.md — 국토부 고시 바닥충격음 기준 (2023)
+  - raw/papers/iso-11654-1997.md — ISO 11654:1997 Sound absorption rating
+
+- **Concept pages updated (8):**
+  - [[jca-inverse-parameter-estimation]] — Yi24 ANN, Jaouen20 stepwise, Xu21 PSO, Atalla05 DE, Niskanen20 Bayesian 추가
+  - [[delany-bazley-miki-empirical-models]] — Garai-Pompoli polyester empirical model 섹션 추가
+  - [[low-frequency-absorption-technologies-comparison]] — Boulvert19 graded porous + Qi25 ventilated metamaterials 섹션 추가
+  - [[needle-punching-process-jca-mapping]] — Messiry23 ANOVA 통계 분석 추가
+  - [[waste-fiber-acoustic-absorber]] — Messiry23 NP + Ružickij24 WTTF 섹션 추가
+  - [[waste-fiber-acoustic-lca]] — Ružickij24 LCA 심화 (binder별 GWP/Pt, 시나리오 분석)
+  - [[building-acoustic-standards]] — 국토부 고시 2023-494호 전체 + ISO 11654 α_w 계산법
+
+- **Concept pages created (1):**
+  - [[microperforated-panel-absorber]] — Maa MPP 이론, 설계 파라미터, 주파수 튜닝
+
+- **Entity pages created (12):**
+  - [[wei-yi]] — BYD, ANN JCA 예측
+  - [[luc-jaouen]] — Matelys, JCAL 6-param stepwise
+  - [[matti-niskanen]] — Le Mans, Bayesian inversion
+  - [[raymond-panneton]] — UdeS GAUS, DE 역추정
+  - [[youssef-atalla]] — UdeS GAUS, DE JCA 적용
+  - [[xiaomei-xu]] — Nanjing Forestry, MPSO
+  - [[ping-lin]] — Nanjing Forestry, MPSO
+  - [[massimo-garai]] — Univ. Bologna, Garai-Pompoli 모델
+  - [[francesco-pompoli]] — Univ. Ferrara, 공동 개발
+  - [[dah-you-maa]] — Academia Sinica, MPP 창시자
+  - [[jean-philippe-groby]] — LAUM Le Mans, graded porous
+  - [[vicente-romero-garcia]] — LAUM, complex frequency plane
+
+- Total pages: 393 → 406 (+13)
+- **관련 프로젝트:** 폐섬유 흡음재 (DMN 기반 저주파 흡음재 설계) — JCA 역추정 방법론 보강, 경험식 모델 범위 확장, LCA 사례 추가, 국내 기준 정리
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
 ## [2026-05-05] create | differentiable-sigma-point-quadrature — Differentiable filter RIGOR에서 sigma point 적극적 활용 방향 5가지 제안

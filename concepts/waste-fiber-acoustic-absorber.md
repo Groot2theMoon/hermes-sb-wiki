@@ -1,10 +1,10 @@
 ---
 title: "Waste-Fiber Acoustic Absorber — DMN 기반 저주파 흡음재 설계"
 created: 2026-04-29
-updated: 2026-05-04
+updated: 2026-05-05
 type: concept
-tags: [research-idea, acoustics, dmn, poroelasticity, upcycling, building-materials, g5, competitive-analysis]
-sources: [raw/papers/1-s2.0-S0003682X21003662-main.md, raw/papers/TIN뉴스.md, raw/papers/소각·매립되는 폐원단 조각  자원으로 품다(보도자료)(생활폐기물 9.9).md, raw/papers/인쇄하기.md, raw/articles/dbr-274-제클린-폐섬유-100퍼센트-재활용.md]
+tags: [research-idea, acoustics, dmn, poroelasticity, upcycling, building-materials, g5, competitive-analysis, needle-punching, nonwoven, waste-fiber]
+sources: [raw/papers/1-s2.0-S0003682X21003662-main.md, raw/papers/TIN뉴스.md, raw/papers/소각·매립되는 폐원단 조각  자원으로 품다(보도자료)(생활폐기물 9.9).md, raw/papers/인쇄하기.md, raw/articles/dbr-274-제클린-폐섬유-100퍼센트-재활용.md, raw/papers/messiry23-needle-punching-statistical.md, raw/papers/ruzickij24-wttf-composite-lca.md]
 confidence: medium
 ---
 
@@ -128,6 +128,99 @@ DMN이 학습할 수 있는 관계:
 - 섬유 직경, 재질 → 공극률, 유동 저항
 - **적층 수 / 면밀도 → mass 효과**
 
+## Needle Punching 공정 — Messiry (2023) 데이터
+
+El Messiry et al. (2023)의 통계 분석 결과, needle punch 공정변수 4가지(needle speed, lattice speed, penetration depth, waste ratio) 모두 음향 성능에 유의한 영향을 미침.
+
+### 공정변수 범위
+
+| 변수 | 최소 | 중간 | 최대 | 최적값 |
+|:----|:---:|:---:|:---:|:-----:|
+| Needle speed (rpm) | 227 | 245 | 280 | 280 |
+| Lattice speed (m/min) | 0.72 | 1.47 | 2.35 | 0.72 |
+| Penetration depth (mm) | 5 | 10 | 26 | 26 |
+| Virgin:waste ratio (%) | 60:40 | 80:20 | 100:0 | 100:0 (virgin) |
+
+### ANOVA 유의성 (α=0.05)
+
+| 변수 | p-value | F-value | 유의 순위 |
+|:----|:------:|:-------:|:--------:|
+| Waste amount | **7.93E-08** | 85.54 | 1위 |
+| Penetration depth | **1.96E-05** | 30.53 | 2위 |
+| Needle speed | **0.000106** | 21.57 | 3위 |
+| Lattice speed | **0.000211** | 18.60 | 4위 |
+
+### 주파수별 중요 변수
+
+- **저주파 (400-600Hz):** Lattice speed + Waste amount 지배
+- **중주파 (800-1200Hz):** Waste amount + Penetration depth 지배
+- **고주파 (1400-1600Hz):** Needle speed 중요도 상승, Penetration depth 부분적 감소
+
+### 시사점
+
+- Needle punching 조건(속도, 깊이)은 골격의 동적 강성과 공극률에 직접 영향
+- 높은 stitch density = 낮은 공기 투과도 = 높은 유동 저항(σ) → JCA σ 증가
+- 최적 공정(NS=280, LS=0.72, DP=26)에서 STL 22dB 달성 (250-1600Hz)
+
+## WTTF Composite 흡음 — Ružickij (2024) 데이터
+
+Ružickij et al. (2024)는 폐타이어 섬유(WTTF)와 3종 바인더(PU, PVA, Starch)로 제조한 복합 흡음재의 음향 성능 평가.
+
+### 재료 및 시편
+
+| 항목 | 값 |
+|:----|:---|
+| WTTF fiber diameter | 15-30 μm |
+| WTTF fiber length | 800-2000 μm |
+| WTTF bulk density | 40.1 ± 2.3 kg/m³ |
+| 시편 두께 | 40 mm |
+| 시편 직경 | 29.9 mm |
+| 밀도 | 75, 100, 125, 150 kg/m³ |
+| Binder content | 10, 30, 50 wt% |
+| 총 시편 수 | 108개 (3종×4밀도×3함량×3반복) |
+
+### 흡음 성능 요약
+
+| 대역 | SAC 범위 | 비고 |
+|:----|:-------:|:----|
+| 저주파 (160-500Hz) | 0.04 - 0.42 (75kg/m³) → 0.13-0.75 (150kg/m³) | 밀도 증가로 저주파 흡음 향상 |
+| 중주파 (630-2000Hz) | 0.11 - 0.99 | 대부분 시편 피크 도달 |
+| 고주파 (2500-5000Hz) | 0.52 - 0.99 | 단파장으로 높은 흡음 |
+| **전체 범위** | **0.04 - 0.99** | |
+| **Peak 주파수** | **800 - 2000 Hz** | 밀도 증가 시 2000→800Hz로 이동 |
+
+### Binder별 성능
+
+| Binder | 저주파 성능 | 중주파 성능 | 비고 |
+|:------|:---------:|:---------:|:----|
+| **PU** (polyurethane) | 🏆 최고 | 🏆 최고 | 섬유 코팅 + open cavity 유지 |
+| PVA (polyvinyl acetate) | 중간 | 중간 | Film-like 구조로 일부 폐색 |
+| POS (starch) | 최저 | 최저 | Cavity 대부분 폐색 |
+
+- PU 10 wt% 조합이 전 대역에서 최고 흡음 성능
+- Binder 함량 증가 → 흡음 성능 감소 (cavity 폐색으로 porosity 감소)
+
+### 기류 저항(Airflow Resistivity) 범위
+
+| 항목 | 값 |
+|:----|:---|
+| σ 범위 | 17.4 - 83.6 kPas/m² |
+| 밀도 ↑ → σ ↑ | 밀도 증가로 fiber content 증가 → porosity 감소 |
+| Binder 영향 | PU < PVA < POS 순서로 σ 증가 |
+
+### 비교 문헌 대비 우위
+
+- 동일 두께(40mm) 천연섬유 복합재 대비 WTTF는 500Hz에서 SAC 0.42-0.75로 **1.5-2배 우수** (비교군 0.39)
+- 재활용 청바지 섬유+resin 대비 10wt% binder에서 **4-6배 우수**
+- Rock wool (GWP 27.33 kgCO₂e/m²) 대비 **0.6-4.3배 낮은 환경영향**
+
+## WTTF 흡음재의 건축 적용 시사점
+
+- **40mm 두께로 α_max 0.99 달성** → 경쟁력 있는 흡음 성능
+- **밀도 150kg/m³, PU 10wt%** 조합이 800Hz에서 peak → 중주파 흡음재로 적합
+- **저주파 160-500Hz SAC 0.13-0.75** → 추가 두께 증가 or graded 구조로 개선 필요
+- 바인더 최적화(PU) + 재생에너지 전환 시 환경영향 10-12% 추가 저감 가능
+
 ## 전체 파이프라인
 
 ### 연구 단계
@@ -142,7 +235,8 @@ Micro-CT (폐섬유 시편)
 흡음 계수 α(f) 예측 (ms 단위)
 |    ↓ (4) Inverse design / 최적화
 |목표 α(60Hz)를 만족하는 공정 조건 도출
-|```
+||
+```
 
 > **권장:** GAP-SBM 대신 [[fft-homogenization-composites]] (Willot 2015, FFT-based homogenization)으로 training data 생성 고려. SBM은 embedded FEM으로 meshing을 회피하지만, FFT 방식이 voxel 기반 미세구조를 직접 입력으로 사용하여 더 빠르고 정확함. 특히 Willot discretization (Gʀ)은 고대비 재료(고체 vs 공극)에서도 빠른 수렴을 보장하므로 폐섬유 매트의 다공성 균질화에 적합. (참고: [[porous-nonwoven-homogenization]] — Kuts 2024의 FEM 기반 nonwoven 균질화도 FFT 접근과 방법론적 유사성 있음)
 
@@ -166,7 +260,7 @@ Surrogate model (DMN) → α(f) 예측
 
 ## 관련
 - [[waste-fiber-market-entry]]
- 개념
+개념
 
 - `poroelastic-dmn-research` — 7×7 DMN 연구 아이디어 및 병목 분석
 - `poroelasticity-thermoelasticity-correspondence` — Norris 1992: 포로-열탄성 대응 정리
@@ -187,5 +281,7 @@ Surrogate model (DMN) → α(f) 예측
 - Norris (1992). "On the correspondence between poroelasticity and thermoelasticity." *J. Appl. Phys.*
 - Shin et al. (2024). "Thermomechanical DMN." *Composites Part B.*
 - Santoni, A. et al. (2022). "A hybrid approach for modelling the acoustic properties of recycled fibre mixtures for automotive applications." *Applied Acoustics.* — 재활용 섬유 혼합물 흡음 모델링 (raw/papers/1-s2.0-S0003682X21003662-main.md)
+- El Messiry, M. et al. (2023). "Statistical analysis of the effect of processing machine parameters on acoustical absorptive properties of needle-punched nonwovens." *J. Engineered Fibers and Fabrics*, 18. DOI: 10.1177/15589250231155623 (raw/papers/messiry23-needle-punching-statistical.md)
+- Ružickij, R. et al. (2024). "Waste Tyre Textile Fibre Composite Material: Acoustic Performance and Life Cycle Assessment." *Sustainability*, 16, 6281. DOI: 10.3390/su16156281 (raw/papers/ruzickij24-wttf-composite-lca.md)
 - 종로구 폐원단 자원화 시범사업 보도자료 (raw/papers/TIN뉴스.md)
 - 성동구 폐원단 재활용 협약 보도자료 (raw/papers/인쇄하기.md)
