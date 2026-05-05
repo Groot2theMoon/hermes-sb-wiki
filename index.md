@@ -177,6 +177,7 @@
 - [[differentiable-enkf]] — Differentiable Ensemble Kalman Filter — Data-Driven State Estimation for Robotics
 - [[differentiable-filter-kloss]] — Differentiable Filter — Kloss, Martius & Bohg (2021)
 - [[differentiable-lmi-contractivity]] — Differentiable LMI for Contractivity — Train-Time Stability Enforcement
+- [[differentiable-sigma-point-quadrature]] — Differentiable Sigma Point Quadrature — UKF/SR-UKF Sigma Point 적극적 활용 방향
 - [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
 - [[diffusion-les-super-resolution]] — Conditional Diffusion Model for LES Super-Resolution in Atmospheric Boundary Layer
 - [[diffusion-metamaterial-inverse-design]] — Guided Diffusion for Inverse Design of Mechanical Metamaterials

@@ -5,7 +5,12 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
-## [2026-05-05] ingest | 5 auto-parsed papers — RIGOR-relevant observer & differentiable filtering papers
+## [2026-05-05] create | differentiable-sigma-point-quadrature — Differentiable filter RIGOR에서 sigma point 적극적 활용 방향 5가지 제안
+
+- **개념:** [[differentiable-sigma-point-quadrature]] — Parametric sigma point selection, adaptive LMI-based count, trajectory feature, weight learning, per-point correction
+- **출처:** 연구 브레인스토밍 (승원님 × Hermes, Telegram 코딩 채널)
+
+## [2026-05-05] ingest | 5 auto-parsed papers -- RIGOR-relevant observer & differentiable filtering papers
 
 - **Raw sources (5):**
   - raw/papers/2603.20891v1.md — Auto-diff DA: Co-learning states, dynamics, filtering (arXiv:2603.20891)
