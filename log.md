@@ -1149,3 +1149,30 @@
 - Each received 4-6 [[wikilinks]] to related pages
 
 - Total pages: 386 → 393 (+7)
+## [2026-05-05] ingest | 3 papers — 신동일 교수 DMN 확장 및 나노공진기
+
+### Raw sources (3):
+- raw/papers/shin-2026-unet-dmn.md — U-net Architected DMN (Shin, Lebensohn, Dingreville, *Computational Mechanics* 2026)
+- raw/papers/francis-2025-micropolar-dmn.md — Micropolar Deep Material Network (Francis, Shin et al., *CMAME* 2025)
+- raw/papers/cupertino-2024-centimeter-resonators.md — Centimeter-scale nanomechanical resonators (Cupertino†, Shin† et al., *Nature Communications* 2024)
+
+### New concept pages (3):
+- [[unet-architected-dmn]] — U-Net DMN: local field supervision for improved generalization
+- [[micropolar-deep-material-network]] — Cosserat continuum integration into DMN
+- [[centimeter-scale-nanomechanical-resonators]] — cm-스케일 나노공진기 (Bayesian opt. 설계)
+
+### New entity pages (4):
+- [[remi-dingreville]] — Sandia National Laboratories, DMN 공동 연구자
+- [[ricardo-lebensohn]] — Los Alamos National Laboratory, FFT 균질화
+- [[miguel-bessa]] — TU Delft, Bayesian Optimization & Nanomechanics
+- [[richard-norte]] — TU Delft, Nanomechanics & Optomechanics
+
+### Updated entity pages (1):
+- [[dongil-shin]] — 3 new papers added to 대표 논문, wikilinks to new concepts/entities
+
+### Backfill:
+- [[deep-material-network]] → [[unet-architected-dmn]], [[micropolar-deep-material-network]], fix [[centimeter-scale-nanomechanical-resonators]] (was broken wikilink)
+- [[deep-material-network-quilting]] → [[unet-architected-dmn]], [[micropolar-deep-material-network]]
+- [[dongil-shin]] → 8 new wikilinks (new concepts + entities)
+
+- Total pages: 406 → 412 (+6)

@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-05 | Total pages: 406
+> Last updated: 2026-05-05 | Total pages: 412
 
 ## Entities
 
@@ -89,6 +89,7 @@
 - [[max-revay]] — Max Revay
 - [[max-tegmark]] — Max Tegmark
 - [[maziar-raissi]] — Maziar Raissi
+- [[miguel-bessa]] — Miguel A. Bessa — TU Delft, Bayesian Optimization & Nanomechanics
 - [[mikhail-polyanskiy]] — Mikhail N. Polyanskiy
 - [[milad-siami]] — Milad Siami
 - [[miroslav-simandl]] — Miroslav Šimandl
@@ -106,7 +107,10 @@
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[raymond-panneton]] — Raymond Panneton
 - [[rebecca-willett]] — Rebecca Willett
+- [[remi-dingreville]] — Rémi Dingreville — Sandia National Laboratories, DMN 공동 연구자
+- [[ricardo-lebensohn]] — Ricardo A. Lebensohn — Los Alamos National Laboratory, FFT 균질화
 - [[richard-linares]] — Richard Linares
+- [[richard-norte]] — Richard A. Norte — TU Delft, Nanomechanics & Optomechanics
 - [[ross-girshick]] — Ross Girshick
 - [[ruigang-wang]] — Ruigang Wang (王瑞刚)
 - [[ruoyong-yang]] — Ruoyong Yang
@@ -168,7 +172,7 @@
 - [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
 - [[canonical-form-nonlinear-discrete-models]] — Canonical Form of Nonlinear Discrete-Time Models
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
-- [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
+- [[centimeter-scale-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[cloud-gpu-compute-platforms]] — Cloud GPU Compute Platforms — Modal vs RunPod vs Beam
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
 - [[compressible-flow-governing-equations]] — Compressible Flow Governing Equations — Gas Dynamics 1
@@ -294,6 +298,7 @@
 - [[miao-robust-observer]] — Miao Robust Observer — Learning Robust KKL Observers via Neural ODEs
 - [[micromechanics-homogenization]] — Micromechanics and Homogenization
 - [[microperforated-panel-absorber]] — Microperforated Panel (MPP) Absorber
+- [[micropolar-deep-material-network]] — Micropolar Deep Material Network — Francis, Shin et al. 2025
 - [[microstructure-to-jca-empirical-formulas]] — 미세구조 → JCA 5-파라미터 경험식 변환
 - [[misc-base-materials]] — Additional Base Materials Collection
 - [[ml-acoustic-metamaterials-review]] — ML for Acoustic Metamaterials and Phononic Crystals — Review (2024)
@@ -382,6 +387,7 @@
 - [[ukf-stochastic-stability]] — UKF Stochastic Stability — Modified UKF with Fading Measurements
 - [[umap]] — UMAP — Uniform Manifold Approximation and Projection
 - [[uncertainty-quantification-deep-learning]] — Uncertainty Quantification in Deep Learning — A Review
+- [[unet-architected-dmn]] — U-Net Architected Deep Material Network — Shin, Lebensohn, Dingreville 2026
 - [[universal-approximation-theorem]] — Universal Approximation Theorem
 - [[universal-differential-equations]] — Universal Differential Equations vs Neural ODEs Near Critical Transitions
 - [[unsupervised-phase-transitions]] — Unsupervised Learning of Phase Transitions (ML × Physics)

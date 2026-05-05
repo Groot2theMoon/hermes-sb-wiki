@@ -95,7 +95,9 @@ DMN의 offline training 단계에서 FFT 균질화는 reference (ground truth) s
 
 ## 관련 개념
 
-- [[centimeter-nanomechanical-resonators]]
+- [[unet-architected-dmn]] — Shin 2026: U-Net DMN, local field supervision
+- [[micropolar-deep-material-network]] — Francis/Shin 2025: Micropolar DMN 확장
+- [[centimeter-scale-nanomechanical-resonators]]
 - [[waste-fiber-acoustic-absorber]] — 폐섬유 흡음재 설계
 - [[thermoelastic-dmn]] — [[dongil-shin|Shin]] 2024: 열팽창 균질화 통합
 - [[deep-material-network-quilting]] — Shin 2023: DMN explainability 및 quilting 전략

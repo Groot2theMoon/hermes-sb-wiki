@@ -1,10 +1,13 @@
 ---
 title: "Shin Dongil (신동일)"
 created: 2026-04-28
-updated: 2026-05-04
+updated: 2026-05-05
 type: entity
 tags: [person, postech, mechanical-engineering, solid-mechanics, dslab]
-sources: []
+sources:
+  - raw/papers/shin-2026-unet-dmn.md
+  - raw/papers/francis-2025-micropolar-dmn.md
+  - raw/papers/cupertino-2024-centimeter-resonators.md
 confidence: high
 ---
 
@@ -41,14 +44,24 @@ confidence: high
 
 ## 대표 논문
 
-- Shin et al. (2024). "A deep material network approach for predicting the thermomechanical response of composites." *Composites Part B: Engineering*, 272, 111177.
-- Shin et al. (2023). "Deep material network via a quilting strategy: visualization for explainability and recursive training." *npj Computational Materials*, 9, 128.
+- Cupertino†, **Shin†** et al. (2024). "Centimeter-scale nanomechanical resonators with low dissipation." *Nature Communications*, 15(1), 4255. (†공동 1저자)
+- **Shin** et al. (2024). "A deep material network approach for predicting the thermomechanical response of composites." *Composites Part B: Engineering*, 272, 111177.
+- **Shin** et al. (2023). "Deep material network via a quilting strategy: visualization for explainability and recursive training." *npj Computational Materials*, 9, 128.
+- Francis, **Shin** et al. (2025). "Micropolar deep material network." *Computer Methods in Applied Mechanics and Engineering*, 446, 118329.
+- **Shin**, Lebensohn, Dingreville (2026). "U-net architected deep material network training with microstructure local field information." *Computational Mechanics*, DOI: 10.1007/s00466-025-02744-9.
 
 ## 관련 개념
 
+- [[unet-architected-dmn]] — U-Net DMN (Shin, Lebensohn, Dingreville 2026)
+- [[micropolar-deep-material-network]] — Micropolar DMN (Francis, Shin et al. 2025)
+- [[centimeter-scale-nanomechanical-resonators]] — cm-스케일 나노공진기 (Cupertino, Shin et al. 2024)
 - [[thermoelastic-dmn]] — Thermomechanical DMN 확장
 - [[deep-material-network]] — DMN 기본 아키텍처
 - [[deep-material-network-quilting]] — DMN quilting 전략
 - [[poroelastic-dmn-research]] — 7×7 DMN 연구 아이디어
 - [[decoding-material-networks]] — DMN vs IMN 성능 비교
+- [[remi-dingreville]] — Rémi Dingreville (Sandia, DMN 공동 연구자)
+- [[ricardo-lebensohn]] — Ricardo Lebensohn (LANL, FFT 균질화)
+- [[miguel-bessa]] — Miguel Bessa (TU Delft, Bayesian optimization)
+- [[richard-norte]] — Richard Norte (TU Delft, nanomechanics)
 - [[ting-ju-wei]] — Ting-Ju Wei (NTU): DMN 서베이 및 DMN vs IMN 비교 연구 (Wei et al. 2025, Wan et al. 2024)
