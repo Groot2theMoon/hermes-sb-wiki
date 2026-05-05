@@ -1003,4 +1003,4 @@
   - [[pinn-failure-modes]] — "When PINNs Go Wrong: Pseudo-Time Stepping" (arXiv:2604.23528) 참조 추가
 - **생략 (3):** AeTHERON(2604.13369), C-PINN(2604.25606), PISTM(2604.14424) — specialized/covered by existing content
 - **Total pages:** 369 → 374 (+5)
-- **Git:** `pending`
+- **Git:** `a2f1529`
