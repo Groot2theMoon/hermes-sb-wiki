@@ -161,6 +161,8 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 - [[generalized-gaussian-cubature]] — GGC
 - [[ukf-scaling-adaptive-dunik]] — Adaptive scaling
 - [[rigor-filter]] — RIGOR 실험 로그 포함
+- [[higher-order-unscented-transform]] — HOUT (4차 moment matching, 2021)
+- [[adurthi-singla-higher-order-unscented-estimator]] — HOUE (closed-form, 2021)
 
 ## Experiment Updates (2026-05-05)
 

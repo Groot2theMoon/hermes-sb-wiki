@@ -1189,3 +1189,17 @@
   - Sigma cloud conditioning: vel=0.919 (두 번째, RMSE↑)
   - Supervised w=0.1: vel=0.914 (in-dist), OOD μ=3.0: vel=0.181 (실패)
 - **Code changes:** nn.py DeltaModulator → sigma_cond conditioning, filter.py → sigma_cond computation + pass to modulator
+
+## [2026-05-05] ingest+backfill | RIGOR sigma point alternatives (4 papers)
+- **Raw sources (4):**
+  - raw/papers/2006.13429v1.md — HOUT (Easley & Berry, 2021)
+  - raw/papers/adurthi-singla-2022-higher-order-unscented-estimator.md — HOUE (Stojanovski & Savransky, 2021)
+  - raw/papers/2510.01089v2.md — DSR with DVAE (Sip et al., 2025)
+  - raw/papers/2507.04808v1.md — Koopman+KF Federated (Chen & Chen, 2025)
+- **New concept pages (4):**
+  - [[higher-order-unscented-transform]] — HOUT (4th order UT, skewness≠0)
+  - [[adurthi-singla-higher-order-unscented-estimator]] — HOUE (closed-form)
+  - [[double-projection-dva-reconstruction]] — DSR with DVAE
+  - [[kalman-filter-koopman-federated]] — Koopman + UKF
+- **Updated:** [[rigor-sigma-point-research]] — HOUT/HOUE references
+- Total: 412 → 417
