@@ -32,3 +32,4 @@ confidence: medium
 - [[deep-kalman-filter]] — Variational inference 대안
 - [[deep-variational-smc]] — Particle filter + VI
 - [[neural-odes]] — 연속시간 dynamics 대안
+- [[auto-diff-data-assimilation]] — Generalized auto-differentiable filtering framework

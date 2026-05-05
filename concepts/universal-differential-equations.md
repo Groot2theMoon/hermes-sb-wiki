@@ -50,6 +50,9 @@ Swish ($\phi(a)=a/(1+e^{-a})$)는 smooth order-to-chaos transition을 가능하�
 - [[physics-informed]] — broader physics-informed ML 개요
 - [[iss-lyapunov-theory]] — Lyapunov 안정성 이론 (연관 분석 도구)
 - [[pinn-failure-modes]] — PINN 실패 모드 (NTK 관점)
+- [[skanode]] — KAN 기반 structured Neural ODE with symbolic discovery
+- [[buisson-fenet-kkl-observer]] — KKL observer + NODE for partial observations
+- [[miao-robust-observer]] — Neural ODE 기반 KKL observer (Neural ODE의 제어/추정 응용)
 
 ## 참고
 

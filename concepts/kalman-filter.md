@@ -13,3 +13,5 @@ The Kalman Filter is a recursive algorithm for state estimation of linear dynami
 
 For nonlinear variants, see [[square-root-unscented-kalman-filter|SR-UKF]].
 For neural network-augmented variants, see [[kalmannet]].
+For auto-differentiable filtering frameworks, see [[auto-diff-data-assimilation]].
+For observability theory in neural SSMs, see [[observability-nssm]].

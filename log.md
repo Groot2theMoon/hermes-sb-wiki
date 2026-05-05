@@ -5,6 +5,33 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-05] ingest | 5 auto-parsed papers — RIGOR-relevant observer & differentiable filtering papers
+
+- **Raw sources (5):**
+  - raw/papers/2603.20891v1.md — Auto-diff DA: Co-learning states, dynamics, filtering (arXiv:2603.20891)
+  - raw/papers/2506.18339v3.md — SKANODE: Structured KAN Neural ODEs (arXiv:2506.18339)
+  - raw/papers/2504.15758v2.md — Observability Conditions for NSSM (arXiv:2504.15758)
+  - raw/papers/2205.12550v3.md — Buisson-Fenet KKL Observer (arXiv:2205.12550)
+  - raw/papers/miao23a.md — Miao Robust Observer using Neural ODEs
+
+- **Concept pages (5):**
+  - [[auto-diff-data-assimilation]] — End-to-end differentiable data assimilation
+  - [[buisson-fenet-kkl-observer]] — KKL observer with Neural ODEs for partial observations
+  - [[miao-robust-observer]] — Robust Luenberger/KKL observer via Neural ODEs
+  - [[observability-nssm]] — Observability conditions for NSSM (eigenvalue analysis)
+  - [[skanode]] — Structured KAN Neural ODEs for interpretable dynamics
+
+- **Entity pages (6):**
+  - [[andrew-gracyk]] — Purdue, Observability theory
+  - [[eleni-chatzi]] — ETH Zürich, SHM & Neural ODEs
+  - [[keyan-miao]] — Oxford, NODE observer
+  - [[konstantinos-gatsis]] — Oxford, Control theory
+  - [[mona-buisson-fenet]] — Mines Paris, KKL observer
+  - [[rebecca-willett]] — UChicago, Data assimilation
+
+- **Backfill:** rigor-filter, differentiable-filter-kloss, kalman-filter, differentiable-enkf, state-space-model, state-space-model-emergence-ergodicity, neural-odes, universal-differential-equations → wikilinks to all 5 new concept pages
+- Total pages: 358 → 369 (+11)
+
 ## [2026-05-04] lint --fix | 18 broken wikilinks + 8 dangling source refs
 - 18 broken wikilinks → 9 fixed (corrected pipe-syntax), 9 stub pages created
 - 8 dangling source references removed (raw files not ingested yet)

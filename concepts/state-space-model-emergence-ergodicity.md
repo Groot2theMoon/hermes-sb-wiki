@@ -41,3 +41,4 @@ Ziemann, Matni, Pappas (UPenn, 2025)는 LLM의 **emergent capability** 현상을
 - [[linear-rnn-theory]] — SSM과 RNN의 이론적 분석
 - [[koopman-learner-continual-lifting]] — 동적 시스템 학습
 - [[nn-tricks]] — 모델 스케일링과 학습 안정화
+- [[observability-nssm]] — Observability conditions for neural SSMs (direct theoretical complement)

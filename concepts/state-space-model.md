@@ -59,7 +59,12 @@ $$
 
 - [[deep-kalman-filter]] — Variational inference 기반 Deep SSM
 - [[square-root-unscented-kalman-filter]] — 고전적 nonlinear state estimation
+- [[miao-robust-observer]] — Neural ODE 기반 KKL observer 학습 (SSM framework의 learning-based observer variant)
 - [[gru-d]] — RNN 기반 시계열 missing value 모델링
 - [[rnn-enhanced-ukf]] — RNN 예측을 UKF에 통합한 hybrid state estimation
 - [[variational-autoencoder]] — VAE의 latent variable 모델과 SSM의 연결
 - [[free-energy-principle]] — Friston FEP의 variational inference와 SSM의 동형성
+- [[skanode]] — Structured state-space + KAN Neural ODE for symbolic dynamics discovery
+- [[buisson-fenet-kkl-observer]] — KKL observer-based recognition for NODEs with structured SSM
+- [[auto-diff-data-assimilation]] — Auto-differentiable filtering framework for SSM learning
+- [[observability-nssm]] — Observability conditions for neural SSMs

@@ -88,11 +88,18 @@ Filter recursion을 **RNN layer처럼** TensorFlow 연산 그래프로 구축:
 | **Kloss (2021)** | UKF (vanilla) | NN (black-box) | ✅ TF | ❌ | None | ❌ TF | ✅ |
 | **RIGOR** | **SR-UKF** | **A+NN hybrid** | ✅ **JAX** | **✅** | **Orthogonal proj.** | **✅** | — |
 
+## Related Dynamics Approaches
+
+- [[skanode]] — Structured KAN Neural ODEs for interpretable symbolic discovery
+- [[buisson-fenet-kkl-observer]] — KKL observer-based NODE recognition models for partial observations
+
 ## References
 
 - Kloss, A., Martius, G., & Bohg, J. (2021). How to Train Your Differentiable Filter. *Autonomous Robots*.
 - [[square-root-unscented-kalman-filter]] — SR-UKF 기반
 - [[deep-kalman-filter]] — DKF (alternative approach)
 - [[differentiable-enkf]] — Differentiable EnKF (alternative approach)
+- [[auto-diff-data-assimilation]] — Generalized auto-differentiable filtering framework (Adrian et al., 2026)
 - [[pinn-ukf]] — PINN+UKF (가장 유사한 competitor)
 - [[ma-ukf-meta-adaptive]] — MA-UKF (meta-learned weights)
+- [[miao-robust-observer]] — Neural ODE 기반 KKL observer (competitor approach: continuous-time latent dynamics)

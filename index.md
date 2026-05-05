@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-04 | Total pages: 358
+> Last updated: 2026-05-05 | Total pages: 369
 
 ## Entities
 
@@ -11,6 +11,7 @@
 - [[alexander-davydov]] — Alexander Davydov
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[andreas-krause]] — Andreas Krause — ETH Zürich Professor, Safe Learning
+- [[andrew-gracyk]] — Andrew Gracyk
 - [[andrew-norris]] — Andrew Norris
 - [[andrew-stuart]] — Andrew Stuart
 - [[andrii-mironchenko]] — Andrii Mironchenko
@@ -31,6 +32,7 @@
 - [[dongil-shin]] — Shin Dongil (신동일)
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
+- [[eleni-chatzi]] — Eleni Chatzi — ETH Zürich, Structural Health Monitoring & Neural ODEs
 - [[ezra-winston]] — Ezra Winston
 - [[fabio-brau]] — Fabio Brau
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
@@ -63,7 +65,9 @@
 - [[kaiming-he]] — Kaiming He
 - [[karl-friston]] — Karl Friston — Neuroscientist, Free Energy Principle Creator
 - [[kaushik-bhattacharya]] — Kaushik Bhattacharya
+- [[keyan-miao]] — Keyan Miao — University of Oxford, NODE Observer
 - [[klaus-robert-muller]] — Klaus-Robert Müller
+- [[konstantinos-gatsis]] — Konstantinos Gatsis — University of Oxford, Control Theory
 - [[kyunghyun-cho]] — Kyunghyun Cho
 - [[laurens-van-der-maaten]] — Laurens van der Maaten
 - [[lavrentyev-institute-of-hydrodynamics]] — Lavrentyev Institute of Hydrodynamics (LIH)
@@ -77,6 +81,7 @@
 - [[maziar-raissi]] — Maziar Raissi
 - [[mikhail-polyanskiy]] — Mikhail N. Polyanskiy
 - [[milad-siami]] — Milad Siami
+- [[mona-buisson-fenet]] — Mona Buisson-Fenet — Mines Paris - PSL, KKL Observer & Neural ODEs
 - [[moonshot-ai]] — Moonshot AI
 - [[nir-shlezinger]] — Nir Shlezinger — Signal Processing & Model-Based Deep Learning
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
@@ -87,6 +92,7 @@
 - [[penn-state-university]] — Penn State University
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
+- [[rebecca-willett]] — Rebecca Willett — University of Chicago, Statistics & CS, Data Assimilation
 - [[ross-girshick]] — Ross Girshick
 - [[ruigang-wang]] — Ruigang Wang (王瑞刚)
 - [[ruoyong-yang]] — Ruoyong Yang
@@ -120,6 +126,7 @@
 - [[ziming-liu]] — Ziming Liu
 - [[zongyi-li]] — Zongyi Li
 
+
 ## Concepts
 
 - [[1-lipschitz-layers-comparison]] — 1-Lipschitz Layers Compared — Comprehensive Benchmark of Lipschitz Constraint Methods
@@ -131,6 +138,7 @@
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
 - [[aol-almost-orthogonal-layers]] — AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks
+- [[auto-diff-data-assimilation]] — Auto-Differentiable Data Assimilation — Co-learning of States, Dynamics, and Filtering Algorithms
 - [[autoencoder-rom]] — Autoencoder-Based Reduced Order Models (ROM)
 - [[bayesian-optimization]] — Bayesian Optimization
 - [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
@@ -138,6 +146,7 @@
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[brain-active-inference]] — BRAIN — Bayesian Reasoning via Active Inference for Agentic Intelligence
 - [[building-acoustic-standards]] — 건축 음향 규격 — 층간소음 기준 및 흡음 등급
+- [[buisson-fenet-kkl-observer]] — Buisson-Fenet KKL Observer — Recognition Models for Neural ODEs with Partial Observations
 - [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
 - [[canonical-form-nonlinear-discrete-models]] — Canonical Form of Nonlinear Discrete-Time Models
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
@@ -257,6 +266,7 @@
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
 - [[mhc-deepseek]] — [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
+- [[miao-robust-observer]] — Miao Robust Observer — Learning Robust State Observers using Neural ODEs
 - [[micromechanics-homogenization]] — Micromechanics and Homogenization
 - [[microstructure-to-jca-empirical-formulas]] — 미세구조 → JCA 5-파라미터 경험식 변환
 - [[misc-base-materials]] — Additional Base Materials Collection
@@ -273,6 +283,7 @@
 - [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration (Neural TI)
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
 - [[nn-tricks]] — Neural Networks — Tricks of the Trade
+- [[observability-nssm]] — Observability Conditions for Neural State-Space Models — Eigenvalue Roots of Unity Analysis
 - [[offline-bayesian-uq-finite-mdps]] — Offline Bayesian Aleatoric & Epistemic UQ in Finite-State MDPs
 - [[optimal-control]] — Optimal Control — Optimal Decision-Making in Dynamical Systems
 - [[optimal-transport-stability-sinkhorn]] — Quantitative Stability of Regularized Optimal Transport and Sinkhorn Convergence
@@ -315,6 +326,7 @@
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[shima-contractivity-lure]] — Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025
 - [[simulation-based-inference-aircraft-design]] — Simulation-Based Inference for Conceptual Aircraft Design
+- [[skanode]] — SKANODE — Structured Kolmogorov-Arnold Neural ODEs for Interpretable Dynamics Discovery
 - [[soft-shima-lmi]] — Soft Shima LMI — Train-Time Contractivity via P-learning
 - [[solar-sail-mfbo]] — Solar Sail MFBO (Multi-Fidelity Bayesian Optimization)
 - [[solis-physics-informed-surrogates]] — SOLIS: Physics-Informed Learning of Interpretable Neural Surrogates
@@ -352,6 +364,7 @@
 - [[yolo-object-detection]] — YOLO — You Only Look Once
 - [[youla-ren-stabilizing-controllers]] — Youla-REN — Learning over All Stabilizing Nonlinear Controllers
 - [[zames-input-output-stability]] — Zames — Input-Output Stability of Time-Varying Nonlinear Feedback Systems
+
 
 ## Comparisons
 
