@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-05 | Total pages: 374
+> Last updated: 2026-05-05 | Total pages: 375
 
 ## Entities
 
@@ -150,6 +150,7 @@
 - [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
 - [[canonical-form-nonlinear-discrete-models]] — Canonical Form of Nonlinear Discrete-Time Models
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
+- [[cloud-gpu-compute-platforms]] — Cloud GPU Compute Platforms — Modal vs RunPod vs Beam
 - [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
 - [[compressible-flow-governing-equations]] — Compressible Flow Governing Equations — Gas Dynamics 1

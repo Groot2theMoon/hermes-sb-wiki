@@ -1004,3 +1004,9 @@
 - **생략 (3):** AeTHERON(2604.13369), C-PINN(2604.25606), PISTM(2604.14424) — specialized/covered by existing content
 - **Total pages:** 369 → 374 (+5)
 - **Git:** `217159a`
+
+## [2026-05-05] concept | Cloud GPU Compute Platforms — Modal vs RunPod vs Beam
+- **New Concept (1):** [[cloud-gpu-compute-platforms]] — 서버리스 GPU 플랫폼 비교. 가격 (Modal $3.48/hr A100 vs RunPod $1.89~2.49/hr vs Beam/Beta9), cold start, preemption, DX 비교
+- **Key findings:** RunPod이 일반적으로 30~40% 저렴, 장기 batch에서는 Modal GB-sec 과금 대비 25배 저렴. Beam/Beta9는 오픈소스이나 self-host는 K8s 필수 (PN40 단독 불가). 투-플랫폼 전략 (Modal prototype → RunPod production) 제안
+- **From discussion with user** (Modal 대체 옵션 질의 → DDGS 조사 → Beam/Beta9 K8s 의존성 설명)
+- **Total pages:** 374 → 375 (+1)
