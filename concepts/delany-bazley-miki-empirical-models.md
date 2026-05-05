@@ -61,3 +61,8 @@ D-B/Miki 계수 재-fitting, 저유동저항 재료 정확도 향상.
 - Miki, Y. (1990). Acoustical properties of porous materials — Modifications of Delany-Bazley models. *J. Acoust. Soc. Jpn. (E)*, 11(1), 19-24.
 - Allard, J.F. & Champoux, Y. (1992). New empirical equations for sound propagation in rigid frame fibrous materials. *JASA*, 91(6), 3346-3353.
 - Komatsu, T. (2008). Improvement of the Delany-Bazley and Miki models for fibrous sound-absorbing materials. *Acoust. Sci. Tech.*, 29(2), 121-129.
+
+## Wikilinks
+- [[transfer-matrix-method-acoustic-porous]] — TMM for porous materials
+- [[jca-inverse-parameter-estimation]] — JCA parameter estimation
+- [[microstructure-to-jca-empirical-formulas]] — Microstructure → JCA

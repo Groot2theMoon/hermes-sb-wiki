@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-05 | Total pages: 386
+> Last updated: 2026-05-05 | Total pages: 393
 
 ## Entities
 
@@ -24,6 +24,7 @@
 - [[brandon-amos]] — Brandon Amos
 - [[brown-university]] — Brown University — CRUNCH Group
 - [[caltech]] — Caltech — AI × Science 리더
+- [[carl-edward-rasmussen]] — Carl Edward Rasmussen
 - [[christoph-h-lampert]] — Christoph H. Lampert
 - [[david-sontag]] — David Sontag — MIT Professor, ML for Healthcare
 - [[deepseek]] — DeepSeek
@@ -55,9 +56,12 @@
 - [[hongkai-dai]] — Hongkai Dai — Toyota Research Institute, NN Control
 - [[ian-goodfellow]] — Ian Goodfellow
 - [[ian-r-manchester]] — Ian R. Manchester
+- [[itzik-klein]] — Itzik Klein
 - [[james-o-berger]] — James O. Berger
+- [[jindrich-dunik]] — Jindřich Duník
 - [[jinhyun-choo]] — Jinhyun Choo (추진현)
 - [[johannes-schiffer]] — Johannes Schiffer
+- [[john-crassidis]] — John L. Crassidis
 - [[joseph-redmon]] — Joseph Redmon
 - [[juergen-schmidhuber]] — Jürgen Schmidhuber
 - [[jun-liu]] — Jun Liu — University of Waterloo, PINN & Koopman
@@ -81,6 +85,7 @@
 - [[maziar-raissi]] — Maziar Raissi
 - [[mikhail-polyanskiy]] — Mikhail N. Polyanskiy
 - [[milad-siami]] — Milad Siami
+- [[miroslav-simandl]] — Miroslav Šimandl
 - [[mona-buisson-fenet]] — Mona Buisson-Fenet
 - [[moonshot-ai]] — Moonshot AI
 - [[nir-shlezinger]] — Nir Shlezinger — Signal Processing & Model-Based Deep Learning
@@ -93,6 +98,7 @@
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[rebecca-willett]] — Rebecca Willett
+- [[richard-linares]] — Richard Linares
 - [[ross-girshick]] — Ross Girshick
 - [[ruigang-wang]] — Ruigang Wang (王瑞刚)
 - [[ruoyong-yang]] — Ruoyong Yang
@@ -395,6 +401,7 @@
 - [[pinn-vs-deeponet]] — PINN vs DeepONet — Comparison
 - [[pinn-vs-hpinn]] — PINN vs hPINN — Soft vs Hard Constraint 비교
 - [[resnet-vs-densenet]] — ResNet vs DenseNet — Skip Connection 비교
+- [[sigma-point-methods-comparison]] — Sigma-Point Methods Comparison — Learning-Based vs Adaptive vs Minimal vs Multi-Scale
 - [[sn-gan-vs-gan-lattice]] — SN-GAN vs GAN Lattice Simulations — GAN 안정화 방법 비교
 - [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
 - [[vae-vs-gan]] — VAE vs GAN — Generative Model 비교

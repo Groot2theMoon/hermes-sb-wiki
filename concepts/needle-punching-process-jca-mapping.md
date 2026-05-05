@@ -48,3 +48,8 @@ Needle punching 공정변수(punch density, penetration depth, lattice speed, fi
 ## DMN 연결
 
 공정변수 → JCA 5-param의 정량적 differentiable model은 존재하지 않음. DMN이 이 gap을 채우는 핵심 도구.
+
+## Wikilinks
+- [[waste-fiber-acoustic-absorber]] — Waste-fiber acoustic absorber
+- [[jca-inverse-parameter-estimation]] — JCA parameter estimation
+- [[microstructure-to-jca-empirical-formulas]] — Microstructure → JCA

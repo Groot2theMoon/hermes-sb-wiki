@@ -151,3 +151,12 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 5. Cui, B., Chen, X. & Tang, X. (2017). Improved cubature Kalman filter for GNSS/INS based on transformation of posterior sigma-points error. *IEEE Trans. Signal Processing*, 65(11), 2975-2987.
 6. Cheng & Liu (2011). Optimized selection of sigma points in the unscented Kalman filter. IEEE.
 7. Revach, G. et al. (2022). KalmanNet: Neural Network Aided Kalman Filtering for Partially Known Dynamics. *IEEE Trans. Signal Processing*.
+
+## Wikilinks
+- [[differentiable-sigma-point-quadrature]] — RIGOR sigma point quadrature
+- [[ma-ukf-meta-adaptive]] — MA-UKF
+- [[ukf-learning-sigma-points]] — UKF-L
+- [[multi-scaled-ukf]] — MS-UKF
+- [[optimized-sigma-points-n-plus-1]] — Minimal sigma points
+- [[generalized-gaussian-cubature]] — GGC
+- [[ukf-scaling-adaptive-dunik]] — Adaptive scaling

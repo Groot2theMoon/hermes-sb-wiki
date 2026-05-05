@@ -1077,3 +1077,29 @@
 - [[kf-ekf-ukf-srukf-differentiable]] — sources updated to 2603.04360v1.md
 
 - Total pages: 380 → 386 (+6)
+
+## [2026-05-05] deepen & backfill | 5 thin pages deepened + 6 entities + 1 comparison + 5 wikilink fixes
+
+### Deepened concept pages (5):
+- [[kalman-filter]] (14→46 lines): 알고리즘, optimality 조건, 확장 표, 풍부한 wikilinks
+- [[deep-equilibrium-networks]] (11→41 lines): DEQ 원리, 장점, monDEQ/MDEQ 변형, 학습 기법
+- [[density-functional-theory]] (11→40 lines): Hohenberg-Kohn, Kohn-Sham, 근사법 계층, AI 융합
+- [[micromechanics-homogenization]] (11→40 lines): RVE 개념, 균질화 방법 비교, scale transition
+- [[autoencoder-rom]] (11→34 lines): AE-ROM pipeline, latent dynamics, 장점
+
+### New entity pages (6):
+- [[carl-edward-rasmussen]] — Cambridge, GP textbook, UKF-L
+- [[john-crassidis]] — UB, GGC, spacecraft attitude filtering
+- [[richard-linares]] — LANL, Generalized Gaussian Cubature
+- [[itzik-klein]] — Haifa, MS-UKF, INS/MAV navigation
+- [[jindrich-dunik]] — UWB, UKF adaptive scaling, SIF
+- [[miroslav-simandl]] — UWB, stochastic systems, PMF
+
+### New comparison page (1):
+- [[sigma-point-methods-comparison]] — UKF-L vs MA-UKF vs MS-UKF vs Adaptive vs Minimal vs GGC
+
+### Wikilink fixes (5 pages with 0 outbound links):
+- [[square-root-unscented-kalman-filter]], [[delany-bazley-miki-empirical-models]], [[needle-punching-process-jca-mapping]], [[zames-input-output-stability]], [[rigor-sigma-point-research]]
+- Each received 4-6 [[wikilinks]] to related pages
+
+- Total pages: 386 → 393 (+7)
