@@ -14,6 +14,8 @@ confidence: high
 
 **Wang, Yu, [[paris-perdikaris|Perdikaris]] (2021)**는 [[neural-tangent-kernel|NTK (Neural Tangent Kernel)]] 이론을 통해 **PINN이 왜, 언제 실패하는지**를 수학적으로 분석했다. 핵심 발견: PINN 학습 실패는 PDE 각 항의 NTK eigenvalue 분포 불균형에서 비롯된다.
 
+**최근 연구 (2026):** *"When PINNs Go Wrong: Pseudo-Time Stepping Against Spurious Solutions"* (arXiv:2604.23528)는 pseudo-time stepping의 효과가 단순한 optimization 완화가 아니라 **spurious solution 회피**에 있음을 밝혔다. Collocation-point resampling과 결합 시 효과적이나, step size 선택이 training loss만으로는 불가능하여 **adaptive pseudo-time stepping** 전략(Jacobian finite-difference 기반)을 제안한다.
+
 ## 핵심 발견
 
 ### NTK Eigenvalue Imbalance

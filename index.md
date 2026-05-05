@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-05 | Total pages: 369
+> Last updated: 2026-05-05 | Total pages: 374
 
 ## Entities
 
@@ -182,6 +182,7 @@
 - [[diffusion-trajectory-optimization]] — DIFFUSOLVE — Diffusion-based Solver for Non-Convex Trajectory Optimization
 - [[diffusion-transformers-dit]] — DiT — Scalable Diffusion Models with Transformers
 - [[digital-twin]] — Digital Twin — Real-Time Physics-Based Virtual Replica
+- [[dilo-diffusion-latent-optimization]] — DiLO — Diffusion Latent Optimization for PDE-Constrained Inverse Problems
 - [[discriminating-hyperplane-safety]] — Safety Filters via Discriminating Hyperplanes
 - [[dmn-jca-conversion-impossibility]] — DMN 7×7 ↔ JCA 5-Parameter 변환 불가능성과 병렬 파이프라인 설계
 - [[dmn-overview-wei25]] — DMN Overview — Wei et al. (2025) Survey
@@ -251,6 +252,7 @@
 - [[lle]] — Locally Linear Embedding (LLE)
 - [[llm-mechanical-linkage-design]] — LLM for Mechanical Linkage Design — Symbolic Reflection and Modular Optimisation
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
+- [[low-rank-spatial-attention-neural-operators]] — Low-Rank Spatial Attention for Neural Operators — Unifying Global Mixing Modules
 - [[low-frequency-absorption-technologies-comparison]] — Low-Frequency Sound Absorption Technologies Comparison
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
@@ -294,6 +296,7 @@
 - [[physics-informed]] — Physics-Informed Machine Learning
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
+- [[pi-jepa-surrogate-pretraining]] — PI-JEPA — Label-Free Surrogate Pretraining for Coupled Multiphysics Simulation
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[pinn-lyapunov-functions]] — PINN Lyapunov Functions — PDE Characterization, Learning, and Verification
 - [[pinn-ukf]] — PINN-UKF — Physics-Informed Neural Network + Adaptive UKF
@@ -304,6 +307,7 @@
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[porous-nonwoven-homogenization]] — Porous Nonwoven Homogenization — Computational Homogenization & Compression Modeling
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
+- [[predictivity-neural-surrogates-multiscale-pde]] — Predictivity of Neural Surrogates of Multiscale PDEs — Critical Analysis
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
 - [[principal-component-analysis]] — Principal Component Analysis (PCA) — 선형 차원 축소
@@ -323,6 +327,7 @@
 - [[rtsnet]] — RTSNet — Learning to Smooth in Partially Known State-Space Models
 - [[sagawa-ueda-information-thermodynamics]] — Information Thermodynamics — Maxwell's Demon in Nonequilibrium Dynamics
 - [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
+- [[scno-spiking-compositional-neural-operator]] — SCNO — Spiking Compositional Neural Operator for Neuromorphic PDE Solving
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[shima-contractivity-lure]] — Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025
 - [[simulation-based-inference-aircraft-design]] — Simulation-Based Inference for Conceptual Aircraft Design

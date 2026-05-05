@@ -987,3 +987,20 @@
 - **New Concept (1):** [[building-acoustic-standards]] — ISO 11654 흡음 등급(A-E), KS F 2862 바닥충격음 등급(1-5), 한국 층간소음 규제, 가산비 제도(1-2% 건축비), 시장 진입 기준선 정리
 - **Key finding:** α_w ≥ 0.80 (Class B) 달성 시 건축 음향 자재 시장 진입 가능
 - **Total pages:** 342 → 343
+
+## [2026-05-05] trending-scan | arXiv (manual recovery from cron timeout) | 5 new concept(s), 1 updated
+
+- **스캔 상태:** cron job (06:00 UTC) — `trending-papers-wrapper.py` 110s subprocess 타임아웃. arXiv API 3/5 쿼리 지연. 수동 복구 완료.
+- **수집 방식:** web_search로 arXiv:2604 (2026년 4월) AI/ML × Mechanics 융합 도메인 논문 검색. arXiv MCP 429 rate-limited되어 web_search로 대체.
+- **스캔 범위:** 15편 Tier 2 후보 → 7편 기존 위키 중복/포함됨 → 8편 신규
+- **신규 개념 (5):**
+  - [[scno-spiking-compositional-neural-operator]] — SCNO: 첫 compositional spiking neural operator (arXiv:2604.11625)
+  - [[predictivity-neural-surrogates-multiscale-pde]] — Neural surrogates of multiscale PDEs 비판적 검토, Duraisamy (arXiv:2604.20061)
+  - [[pi-jepa-surrogate-pretraining]] — PI-JEPA: Self-supervised label-free multiphysics surrogate pretraining (arXiv:2604.01349)
+  - [[dilo-diffusion-latent-optimization]] — DiLO: Diffusion + neural operator decoupling for inverse problems (arXiv:2604.11375)
+  - [[low-rank-spatial-attention-neural-operators]] — LRSA: Low-rank 통합 관점의 neural operator attention (arXiv:2604.03582)
+- **업데이트 (1):**
+  - [[pinn-failure-modes]] — "When PINNs Go Wrong: Pseudo-Time Stepping" (arXiv:2604.23528) 참조 추가
+- **생략 (3):** AeTHERON(2604.13369), C-PINN(2604.25606), PISTM(2604.14424) — specialized/covered by existing content
+- **Total pages:** 369 → 374 (+5)
+- **Git:** `pending`
