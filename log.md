@@ -1190,7 +1190,32 @@
   - Supervised w=0.1: vel=0.914 (in-dist), OOD μ=3.0: vel=0.181 (실패)
 - **Code changes:** nn.py DeltaModulator → sigma_cond conditioning, filter.py → sigma_cond computation + pass to modulator
 
-## [2026-05-05] ingest+backfill | RIGOR sigma point alternatives (4 papers)
+## [2026-05-06] ingest+backfill | Polynomial UKF + Action-Conditional RKN (2 papers)
+
+- **Raw sources (2):**
+  - raw/papers/2603.20259v1.md — Polynomial Updates for the UKF (Cherian & Servadio 2026, Iowa State)
+  - raw/papers/2010.10201v2.md — Action-Conditional RKN (Shaj et al., CoRL 2020, KIT/Lincoln/MPI-IS/Bosch)
+
+- **New concept pages (2):**
+  - [[polynomial-unscented-kalman-filter]] — PUKF/QUKF/CUT polynomial measurement update hierarchy
+  - [[action-conditional-recurrent-kalman-network]] — ac-RKN: principled action conditioning + forward/inverse dynamics
+
+- **New entity pages (5):**
+  - [[chiran-cherian]] — Iowa State, polynomial UKF
+  - [[simone-servadio]] — Iowa State, nonlinear filtering
+  - [[vaisakh-shaj]] — KIT ALR, ac-RKN
+  - [[philipp-becker]] — KIT ALR, RKN creator
+  - [[autonomous-learning-robots-kit]] — ALR Lab @ KIT
+
+- **Deepened pages (4):**
+  - [[rigor-sigma-point-research]] — ⑥ Polynomial Measurement Update gap 추가 (Cherian & Servadio 2026)
+  - [[higher-order-unscented-transform]] — HOUT vs CUT 비교 표 추가
+  - [[kalmannet]] — ac-RKN 관련 연구 추가
+  - [[deep-kalman-filter]] — ac-RKN 관련 페이지 추가
+
+- Total: 417 → **425** (+8)
+- Index rebuilt from filesystem
+
 - **Raw sources (4):**
   - raw/papers/2006.13429v1.md — HOUT (Easley & Berry, 2021)
   - raw/papers/adurthi-singla-2022-higher-order-unscented-estimator.md — HOUE (Stojanovski & Savransky, 2021)
@@ -1203,3 +1228,15 @@
   - [[kalman-filter-koopman-federated]] — Koopman + UKF
 - **Updated:** [[rigor-sigma-point-research]] — HOUT/HOUE references
 - Total: 412 → 417
+
+## [2026-05-05] new concept | Unscented Feature Interaction (UFI)
+- **New Concept (1):** [[unscented-feature-interaction]] — UFI: sigma point pairwise interaction features for neural residual in RIGOR SR-UKF
+- **Position:** ③' (확장) of rigor-sigma-point-research.md Gap Matrix
+- **deep-research:** UFI 관련 참고문헌 조사 예정
+
+## [2026-05-05] ingest | 2 papers — DKFNet + Enhanced Ensemble Filter
+- **Raw sources (2):**
+  - raw/papers/wu25-dkfnet.md — DKFNet: Differentiable Kalman Filter for Field Inversion (Wu & He 2025, arXiv:2509.07474)
+  - raw/papers/bach25-enhanced-ensemble-filter.md — Learning Enhanced Ensemble Filters (Bach, Baptista, Calvello, Chen & Stuart 2025, arXiv:2504.17836, J. Comp. Physics)
+- **UFI concept page:** [[unscented-feature-interaction]] — References 섹션에 2편 추가
+- **Backfill:** [[rigor-sigma-point-research]] — Bach 2025 (Set transformer) 언급 추가 예정

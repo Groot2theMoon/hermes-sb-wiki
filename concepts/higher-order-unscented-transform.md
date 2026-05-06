@@ -49,6 +49,17 @@ HOUT(μ, C, S, K, f, τ):
 
 ## 증명된 성질
 
+| 성질 | SUT (UKF) | HOUT | CUT (Cherian & Servadio) |
+|------|-----------|------|--------------------------|
+| Moment matching | 2nd (cov) | 3rd (skew) + 4th (kurt) | 4th/6th/8th (CUT4/6/8) |
+| Symmetry | 대칭 (skew=0) | **비대칭** (skew≠0) | conjugate-symmetric (odd=0) |
+| Point count | $2n+1$ | $O(n \cdot \text{rank})$ | $O(n^2)$ (CUT4) ~ $O(n^3)$ (CUT8) |
+| 계산 overhead | 매우 낮음 | CP decomposition (iterative) | 1회 radii/weights 계산 |
+| Noise 통합 | Additive only | 미지원 | Augmented formulation |
+| **Polynomial update** | ❌ (LMMSE) | ❌ (moment matching만) | **✅ PUKF/QUKF 지원** |
+
+HOUT와 CUT는 **다른 철학**: HOUT는 rank-1 tensor decomposition으로 sigma point 자체의 비대칭성을 확보 (skewness matching 가능). CUT는 conjugate symmetry로 odd moment를 항등적으로 소거하고 even moment를 exact matching. PUKF/QUKF 프레임워크는 CUT를 polynomial update와 결합.
+
 1. **Exact on polynomials ≤ degree 4** (Thm 4.2 + Corollary 4.3)
 2. Mean + covariance exactly matched; skewness + kurtosis matched up to tolerance τ
 3. Convergence of approximate rank-1 decomposition proved **linear** — 기존 문헌에서는 증명 없었음

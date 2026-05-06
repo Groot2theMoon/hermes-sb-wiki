@@ -92,6 +92,13 @@ mu_f = mu_pred + K @ innov_val
 - **Cui, Chen & Tang (2017):** Posterior sigma-point error matrix를 prediction 단계로 재투영 (IEEE TSP, vol. 65, no. 11)
 - **KalmanNet (Revach 2022):** Innovation sequence를 RNN encoding
 - **MA-UKF (Majewski 2026):** Innovation history를 RNN context로 encoding
+- **Bach et al. (2025):** Set transformer로 ensemble member 간 **암시적(implicit) 상호작용** 학습 (arXiv:2504.17836, J. Comp. Physics). [[unscented-feature-interaction|UFI]]의 Set transformer 대비 **명시적(explicit) pairwise feature** 접근과 비교 핵심 대상.
+
+**③' 확장 — Unscented Feature Interaction (UFI) (제안):**
+- Sigma point 간 **pairwise outer product**를 명시적 feature로 NN에 제공
+- [[unscented-feature-interaction]] 별도 개념 페이지 참조
+- ③의 scalar 통계량 수준을 넘어 **모든 쌍별 기하학적 구조 보존**
+- 예상: vel_corr 0.93-0.95 (baseline 0.905, ③: 0.919)
 
 **RIGOR 차별화:** `spread_mag, skew, kurt = f(sigma_pred)` → NN residual 입력에 conditioning. 계산 비용 거의 0. NLL blind spot 완화 가능성.
 
@@ -130,16 +137,36 @@ mu_f = mu_pred + K @ innov_val
 
 ---
 
+### ⑥ Polynomial Measurement Update (NEW — Cherian & Servadio, 2026)
+
+**선행연구:** Cherian & Servadio, arXiv:2603.20259 — Polynomial UKF (PUKF) with CUT.
+
+**핵심 아이디어:** UKF의 측정 업데이트를 **선형(LMMSE)이 아닌 다항식(quadratic/cubic) 함수**로 확장. CUT로 고차 central moment 계산.
+
+**RIGOR 연결:**
+- RIGOR의 SR-UKF는 현재 LMMSE만 사용 → differentiable PUKF update로 확장 가능 ($\delta\mathbf{y}^{[2]}$ Kronecker square + augmented gain)
+- CUT4 ($O(n^2)$ sigma points)는 ①의 differentiable spread와 독립적 — orthogonal contribution
+- Non-Gaussian noise에서 RIGOR 성능 향상 (KKL observer `z` 분포가 비가우시안일 가능성)
+- **① (differentiable spread) + ③ (sigma cloud conditioning) + ⑥ (polynomial update)의 조합 가능성** — 각각 sigma point positioning, feature extraction, measurement correction의 독립적 개선
+
+**난이도:** 중간 (augmented covariance block 구현 필요, SR-Cholesky 호환성 확인)
+**Impact:** 높음 (non-Gaussian likelihood에서 근본적 개선)
+→ **추천: ①/③ 이후 세 번째 우선순위**
+
+---
+
 ## 종합 Gap Matrix
 
 ```
 Idea    선행연구  Novelty   난이도  Impact   추천
 ────────────────────────────────────────────────────
-①       3건       ★★★★☆    낮음    높음    ✅ 즉시
-②       0건       ★★★★☆    높음    낮음    ❌ 보류
-③       0건       ★★★★★    낮음    중간    ✅ ①과 병행
-④       2건       ★★☆☆☆    매우 낮음 중간    ⚠️ 결합 필요
-⑤       0건       ★★★★★    매우 높음 높음    📌 장기 과제
+| ①       3건       ★★★★☆    낮음    높음    ✅ 즉시
+| ②       0건       ★★★★☆    높음    낮음    ❌ 보류
+| ③       0건       ★★★★★    낮음    중간    ✅ ①과 병행
+| **③' (UFI)** | **0건** | **★★★★★** | **낮음** | **높음** | **✅ 제안**
+| ④       2건       ★★☆☆☆    매우 낮음 중간    ⚠️ 결합 필요
+| ⑤       0건       ★★★★★    매우 높음 높음    📌 장기 과제
+| **⑥ Polynomial Update** | **1건 (Cherian & Servadio 2026)** | **★★★★☆** | **중간** | **높음** | **⏳ ①/③ 이후**
 ```
 
 ## References
@@ -151,6 +178,8 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 5. Cui, B., Chen, X. & Tang, X. (2017). Improved cubature Kalman filter for GNSS/INS based on transformation of posterior sigma-points error. *IEEE Trans. Signal Processing*, 65(11), 2975-2987.
 6. Cheng & Liu (2011). Optimized selection of sigma points in the unscented Kalman filter. IEEE.
 7. Revach, G. et al. (2022). KalmanNet: Neural Network Aided Kalman Filtering for Partially Known Dynamics. *IEEE Trans. Signal Processing*.
+8. Bach, E. et al. (2025). Learning Enhanced Ensemble Filters. *J. Comp. Physics*. arXiv:2504.17836. — Set transformer 기반 implicit ensemble interaction (③ 유사 접근)
+9. Cherian & Servadio (2026). Polynomial Updates for the Unscented Kalman Filter. arXiv:2603.20259. — **⑥ Polynomial Update**의 선행연구
 
 ## Wikilinks
 - [[differentiable-sigma-point-quadrature]] — RIGOR sigma point quadrature
@@ -163,6 +192,8 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 - [[rigor-filter]] — RIGOR 실험 로그 포함
 - [[higher-order-unscented-transform]] — HOUT (4차 moment matching, 2021)
 - [[adurthi-singla-higher-order-unscented-estimator]] — HOUE (closed-form, 2021)
+- [[unscented-feature-interaction]] — UFI (③' 확장, sigma point pairwise feature)
+- [[polynomial-unscented-kalman-filter]] — ⑥ Polynomial Update with CUT (Cherian & Servadio 2026)
 
 ## Experiment Updates (2026-05-05)
 
@@ -175,6 +206,7 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 | ③ Sigma point trajectory regularizer | ✅ Tested | vel_corr=0.920 (최고), pos_corr 희생 |
 | ④ Learnable sigma weights | ⚠️ 결합 필요 | 단독 novelty 낮음 |
 | ⑤ Per-sigma-point correction | 📌 장기 | risk 높음 |
+| **③' UFI (Unscented Feature Interaction)** | **✅ 제안** | **예상: vel_corr 0.93-0.95** |
 
 ### New: Sigma Cloud Conditioning (v4.3, 2026-05-05)
 → Sigma point의 pre-dynamics std + skewness를 NN residual의 추가 입력으로 사용.
@@ -185,3 +217,4 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 1. Loss 구조 개선 (rollout NLL, innovation whiteness)
 2. 구조적 확장 (parameter-conditioned A+NN)
 3. Delay embedding (Takens)으로 관측 정보 augment
+4. **UFI (③' Unscented Feature Interaction)** — sigma point 간 pairwise 상호작용을 명시적 특징으로 NN 제공. [[unscented-feature-interaction]] 참조.

@@ -90,6 +90,8 @@ DKF는 **VAE의 temporal 확장**이면서, **Friston FEP의 hierarchical dynami
 - [[state-space-model]] — SSM 일반 이론
 - [[kyunghyun-cho]] — 공동 저자 (Gru, Bahdanau Attention)
 - [[gru-d]] — GRU-D: RNN with informative missingness for clinical time series
+- [[kalmannet]] — KalmanNet: gain GRU (neural Kalman, parallel line)
+- [[action-conditional-recurrent-kalman-network]] — ac-RKN (Shaj et al., CoRL 2020): **Kalman filter 구조를 explicit하게 유지**하면서 additive action conditioning을 latent transition에 적용. DKF와 달리 variational inference 대신 Kalman update를 사용하지만, **action conditional dynamics learning**과 **forward/inverse joint training**에서 유사한 관심사.
 
 ## References
 
