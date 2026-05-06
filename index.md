@@ -2,9 +2,26 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-06 | Total pages: 425
+> Last updated: 2026-05-06 | Total pages: 461
 
 ## Entities
+- [[zhongrui-wang]] — "Zhongrui Wang — LaCGKN, UW-Madison"
+- [[youssef-marzouk]] — "Youssef Marzouk — Exact Affine Conditioning, MIT LIDS"
+- [[yee-whye-teh]] — "Yee Whye Teh — Set Transformer, Oxford"
+- [[shenglun-yi]] — "Shenglun Yi — Robust Sigma Point Kalman Filtering"
+- [[peter-racioppo]] — "Peter Racioppo — Robust Filter Attention"
+- [[nan-chen-wisconsin]] — "Nan Chen — LaCGKN, UW-Madison Mathematics"
+- [[mattia-zorzi]] — "Mattia Zorzi — Robust Sigma Point Kalman Filtering"
+- [[marcus-haywood-alexander]] — "Marcus Haywood-Alexander — PiGGO, ETH Zurich"
+- [[lei-guo]] — "Lei Guo — Beihang, Attentional Filtering"
+- [[khashayar-ghanizadegan]] — "Khashayar Ghanizadegan — DeepUKF-VIN"
+- [[juho-lee]] — "Juho Lee — Set Transformer"
+- [[jin-long-wu]] — "Jin-Long Wu — LaCGKN, UW-Madison"
+- [[hashim-hashim]] — "Hashim A. Hashim — DeepUKF-VIN, Carleton University"
+- [[gregory-duthe]] — "Gregory Duthé — PiGGO, ETH Zurich"
+- [[frederic-jorgensen]] — "Frederic J. N. Jorgensen — Exact Affine Conditioning, MIT"
+- [[chuanqi-chen-wisconsin]] — "Chuanqi Chen — LaCGKN, UW-Madison"
+- [[andi-lin]] — "Andi Lin — Attentional Filtering, ZJUT"
 
 ## Entities
 - [[acoustipy]] — "acoustipy — Python Transfer Matrix Method Package"
@@ -165,6 +182,7 @@
 - [[ai-research-automation]] — AI Research Automation (Nature 2026)
 - [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
 - [[aol-almost-orthogonal-layers]] — "AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks"
+- [[attentional-filtering]] — "Attentional Filtering — Dynamic System State Estimation as Attention (Lin et al., 2025)"
 - [[auto-diff-data-assimilation]] — "Auto-differentiable Data Assimilation — Co-learning States, Dynamics, and Filtering Algorithms"
 - [[autoencoder-rom]] — Autoencoder-Based Reduced Order Models (ROM)
 - [[bayesian-covariance-priors]] — "Bayesian Covariance Matrix Priors — SIW, IW, Reference Prior"
@@ -198,6 +216,7 @@
 - [[deeponet-poroelastic-surrogate]] — "DeepONet for Poroelastic Surrogate Modeling — Random Permeability Fields"
 - [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deeppropnet-thermal-plasma]] — "DeepPropNet — Operator Learning for Thermal Plasma Property Prediction"
+- [[deepukf-vin]] — "DeepUKF-VIN — Adaptively-tuned Deep UKF for Visual-Inertial Navigation (Ghanizadegan & Hashim, 2025)"
 - [[deflagration-to-detonation-transition]] — Deflagration-to-Detonation Transition (DDT)
 - [[delany-bazley-miki-empirical-models]] — "Delany-Bazley and Miki Empirical Models for Porous Sound Absorbers"
 - [[denoising-diffusion-probabilistic-models]] — Denoising Diffusion Probabilistic Models (DDPM)
@@ -231,6 +250,7 @@
 - [[epiplexity]] — Epiplexity — Structural Information for Computationally Bounded Observers
 - [[esn-as-ssm]] — Echo State Networks as State-Space Models — A Systems Perspective
 - [[evoxels-differentiable-voxel]] — "evoxels — Differentiable Voxel-Based Microstructure Simulation"
+- [[exact-affine-conditioning-ensemble-kalman-update]] — "Exact Affine Conditioning beyond Gaussians — EnKF Update Characterization (Jorgensen & Marzouk, 2025)"
 - [[factorized-inference-dmm]] — Factorized Inference in Deep Markov Models — Multimodal Time Series
 - [[fft-homogenization-composites]] — "FFT-Based Homogenization for Composites — Willot Discretization & 3D Fibrous"
 - [[fft-homogenization-polymer-composites]] — "FFT-Based Homogenization for Composite & Biological Materials"
@@ -247,6 +267,7 @@
 - [[generative-models-physics]] — Generative Models for Physics — Spin Systems and Lattice Field Theory
 - [[gmt-geometric-multigrid-transformer]] — GMT — Geometric Multigrid Transformer for Microstructure Homogenization
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
+- [[graph-neural-ode-structural-dynamics]] — "Graph Neural ODE for Structural Dynamics — PiGGO Component"
 - [[gru-d]] — GRU-D — Gated Recurrent Unit with Missingness Patterns for Time Series
 - [[hamiltonian-neural-networks]] — Hamiltonian Neural Networks — Physics-Embedded Dynamics with Energy Conservation
 - [[hedesh-local-stability-roa]] — "Local Stability and ROA for NN Feedback Systems — Hedesh, Wafi & Siami 2025"
@@ -280,6 +301,7 @@
 - [[koopman-learner-continual-lifting]] — Continual Learning and Lifting of Koopman Dynamics for Legged Robots
 - [[koopman-resolvent-dynamics]] — Koopman-Resolvent Data-Driven Dynamics — Generator Learning for Continuous Systems
 - [[label-wise-uncertainty-quantification]] — "Label-wise Aleatoric & Epistemic Uncertainty Quantification"
+- [[lagrangian-koopman-network]] — "LaCGKN — Lagrangian Conditional Gaussian Koopman Network for DA and Prediction (Wang et al., 2026)"
 - [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
 - [[lbdn-lipschitz-bounded-networks]] — "LBDN — Lipschitz-Bounded Deep Networks via Direct Parameterization"
 - [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
@@ -337,6 +359,7 @@
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[physics-informed]] — Physics-Informed Machine Learning
 - [[pi-jepa-surrogate-pretraining]] — PI-JEPA — Label-Free Surrogate Pretraining for Coupled Multiphysics Simulation
+- [[pigg-graph-kalman-filter]] — "PiGGO — Physics-Guided Learnable Graph Kalman Filters (Haywood-Alexander et al., 2026)"
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
 - [[pinn-lyapunov-functions]] — PINN Lyapunov Functions — PDE Characterization, Learning, and Verification
@@ -364,6 +387,8 @@
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
 - [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Human Motion Prediction (Liu 2024)
 - [[rnn-sdp-lipschitz-certification]] — "RNN-SDP — Lipschitz Robustness Certification for RNNs"
+- [[robust-sigma-point-kalman-filter]] — "Robust Sigma Point Kalman Filtering — Minimax Approach (Yi & Zorzi, 2025)"
+- [[robust-filter-attention]] — "Robust Filter Attention — Self-Attention as a Parallel State Estimator (Racioppo, 2025)"
 - [[rocket-apogee-ai-pipeline]] — "Rocket Apogee AI Pipeline (PSIntelligence)"
 - [[ropedreamer-dlo-dynamics]] — "RopeDreamer — Kinematic Recurrent SSM for Deformable Linear Object Dynamics"
 - [[rotating-detonation-engine]] — Rotating Detonation Engine (RDE)
@@ -371,6 +396,7 @@
 - [[sagawa-ueda-information-thermodynamics]] — Information Thermodynamics — Maxwell's Demon in Nonequilibrium Dynamics
 - [[scno-spiking-compositional-neural-operator]] — SCNO — Spiking Compositional Neural Operator for Neuromorphic PDE Solving
 - [[score-based-generative-modeling-sde]] — Score-Based Generative Modeling through SDEs — Unifying SMLD and DDPM
+- [[set-transformer]] — "Set Transformer — Attention-based Permutation-Invariant Neural Networks (Lee et al., 2019)"
 - [[shifted-boundary-method]] — Shifted Boundary Method (SBM)
 - [[shima-contractivity-lure]] — "Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025"
 - [[simulation-based-inference-aircraft-design]] — "Simulation-Based Inference for Conceptual Aircraft Design"
@@ -391,6 +417,7 @@
 - [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
 - [[thermoelastic-dmn]] — "Thermoelastic Deep Material Network"
+- [[tracer-homogenization]] — "Tracer Homogenization — Permutation-Equivariant Set Encoding for Lagrangian DA"
 - [[transfer-matrix-method-acoustic-porous]] — "Transfer Matrix Method (TMM) for Acoustic Porous Materials"
 - [[transformer]] — Transformer Architecture
 - [[ukf-learning-sigma-points]] — "UKF-L — Model Based Learning of Sigma Points"

@@ -1240,3 +1240,38 @@
   - raw/papers/bach25-enhanced-ensemble-filter.md — Learning Enhanced Ensemble Filters (Bach, Baptista, Calvello, Chen & Stuart 2025, arXiv:2504.17836, J. Comp. Physics)
 - **UFI concept page:** [[unscented-feature-interaction]] — References 섹션에 2편 추가
 - **Backfill:** [[rigor-sigma-point-research]] — Bach 2025 (Set transformer) 언급 추가 예정
+
+## [2026-05-06] ingest | 8 papers — Sigma Point × Set Transformer × Attention × Koopman DA (Deep-Researched Gaps)
+
+- **Raw sources (8):**
+  - raw/papers/set-transformer-lee19.md — Set Transformer (Lee et al., 2019, arXiv:1810.00825)
+  - raw/papers/robust-sigma-point-kf-yi25.md — Robust sigma point KF (Yi & Zorzi, 2025, arXiv:2506.04815)
+  - raw/papers/pigg-graph-kalman-haywood26.md — PiGGO: Graph Kalman Filter (Haywood-Alexander et al., 2026, arXiv:2604.26593)
+  - raw/papers/robust-filter-attention-racioppo25.md — Robust Filter Attention (Racioppo, 2025, arXiv:2509.04154)
+  - raw/papers/attentional-filtering-lin25.md — Attentional Filtering (Lin, Zhang & Guo, 2025, Information Fusion)
+  - raw/papers/lagrangian-koopman-wang26.md — LaCGKN (Wang et al., 2026, arXiv:2603.14115)
+  - raw/papers/deepukf-vin-ghanizadegan25.md — DeepUKF-VIN (Ghanizadegan & Hashim, 2025, arXiv:2502.00575)
+  - raw/papers/exact-affine-conditioning-jorgensen25.md — Exact Affine Conditioning (Jorgensen & Marzouk, 2025, arXiv:2510.00158)
+
+- **New concept pages (10):**
+  - [[set-transformer]] — Set Transformer: Attention-based Permutation-Invariant Neural Networks
+  - [[robust-filter-attention]] — Robust Filter Attention: Self-Attention as Parallel State Estimator
+  - [[attentional-filtering]] — Attentional Filtering: State Estimation as Attention
+  - [[robust-sigma-point-kalman-filter]] — Robust Sigma Point KF: Minimax Approach
+  - [[deepukf-vin]] — DeepUKF-VIN: Adaptive Deep UKF for Visual-Inertial Navigation
+  - [[exact-affine-conditioning-ensemble-kalman-update]] — EnKF Exact Affine Conditioning (Jorgensen & Marzouk)
+  - [[pigg-graph-kalman-filter]] — PiGGO: Physics-Guided Graph Kalman Filter
+  - [[graph-neural-ode-structural-dynamics]] — GNODE for Structural Dynamics
+  - [[lagrangian-koopman-network]] — LaCGKN: Lagrangian Conditional Gaussian Koopman Network
+  - [[tracer-homogenization]] — Permutation-Equivariant Set Encoding for Lagrangian DA
+
+- **New entity pages (17):**
+  - [[juho-lee]], [[yee-whye-teh]], [[peter-racioppo]], [[andi-lin]], [[lei-guo]]
+  - [[shenglun-yi]], [[mattia-zorzi]], [[khashayar-ghanizadegan]], [[hashim-hashim]]
+  - [[frederic-jorgensen]], [[youssef-marzouk]], [[marcus-haywood-alexander]], [[gregory-duthe]]
+  - [[zhongrui-wang]], [[chuanqi-chen-wisconsin]], [[jin-long-wu]], [[nan-chen-wisconsin]]
+
+- **Updated (1):** [[eleni-chatzi]] — PiGGO 논문 추가
+
+- **Deep-research finding:** UKF sigma point cloud를 permutation-invariant set으로 처리하는 연구는 전무. 승원님의 UFI + sigma cloud conditioning = 글로벌 unique novelty. Bach (2025)는 EnKF ensemble 전용.
+- **Total:** 425 → **461** (+36)
