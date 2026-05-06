@@ -1278,4 +1278,8 @@
 - **Backfill:** unscented-feature-interaction.md → set-transformer, robust-filter-attention wikilink 추가
 - **New concept pages (2):** [[ensemble-kalman-filter]], [[extended-kalman-filter]] (기존 broken link 해소)
 - **New concept pages (1):** [[conditional-gaussian-koopman-network]] (CGKN, LaCGKN broken link 해소)
-- **Total:** 425 → **464** (+39)
+- **New entity pages (6):** [[gerhard-neumann]], [[christoph-h-williams]], [[ryan-turner]], [[amit-levy]], [[ondrej-straka]], [[daniel-sanz-alonso]]
+- **New concept pages (10):** [[dynamical-variational-autoencoder]], [[gaussian-processes]], [[graph-neural-network]], [[infrastructure-notes]], [[koopman-operator-theory]], [[neural-ode]], [[neural-ode-dynamical-systems]], [[riemannian-optimization]], [[rigor-development]], [[takens-delay-embedding]]
+- **Fixed typo:** log.md `[[deeponet\\]]` → `[[deeponet|DeepONet]]`
+- **Pre-existing broken links 모두 정리** (gerhard-neumann 5건, graph-neural-network 3건, neural-ode 3건, gaussian-processes 1건, koopman-operator-theory 1건, riemannian-optimization 1건, takens-delay-embedding 1건, 그 외 4건)
+- **Total:** 425 → **480** (+55)

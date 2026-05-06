@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-06 | Total pages: 464
+> Last updated: 2026-05-06 | Total pages: 480
 
 ## Entities
 - [[zhongrui-wang]] — "Zhongrui Wang — LaCGKN, UW-Madison"
@@ -21,6 +21,11 @@
 - [[gregory-duthe]] — "Gregory Duthé — PiGGO, ETH Zurich"
 - [[frederic-jorgensen]] — "Frederic J. N. Jorgensen — Exact Affine Conditioning, MIT"
 - [[chuanqi-chen-wisconsin]] — "Chuanqi Chen — LaCGKN, UW-Madison"
+- [[ryan-turner]] — "Ryan Turner — UKF-L, GP State-Space Models"
+- [[ondrej-straka]] — "Ondřej Straka — Sigma-Point Methods, UWB"
+- [[gerhard-neumann]] — "Gerhard Neumann — KIT Autonomous Learning Robots Lab"
+- [[daniel-sanz-alonso]] — "Daniel Sanz-Alonso — Data Assimilation, EnKF Theory"
+- [[christoph-h-williams]] — "Christopher K. I. Williams — GPML, University of Edinburgh"
 - [[andi-lin]] — "Andi Lin — Attentional Filtering, ZJUT"
 
 ## Entities
@@ -241,6 +246,7 @@
 - [[double-projection-dva-reconstruction]] — "Double Projection for Dynamical System Reconstruction — DVAE with State+Noise Estimation"
 - [[dual-x-mlff-explainability]] — DUAL-X — Dual-Level Explainability Framework for Machine Learning Force Fields
 - [[dynamic-sparsity-perception]] — "Neuro-Inspired Dynamic Sparsity for Energy-Efficient Perception"
+- [[dynamical-variational-autoencoder]] — "Dynamical VAE (DVAE) — Latent Dynamics for Sequential Data" — "Neuro-Inspired Dynamic Sparsity for Energy-Efficient Perception"
 - [[effective-theory-transformers]] — Effective Theory of Transformers at Initialization
 - [[ekf-stochastic-stability-fading]] — "EKF Stochastic Stability over Fading Channels"
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
@@ -263,12 +269,14 @@
 - [[function-space-variational-inference-bnn]] — "Generalized Function-Space Variational Inference for Bayesian Neural Networks"
 - [[gan-lattice-simulations]] — GAN-based Overrelaxation for Lattice Simulations
 - [[gap-sbm]] — Gap-SBM — Shifted Boundary Method Variant
+- [[gaussian-processes]] — "Gaussian Processes — Bayesian Nonparametric Regression"
 - [[gated-recurrent-units]] — Gated Recurrent Units (GRU & LSTM)
 - [[genai-stock-selection]] — Generative AI for Stock Selection
 - [[generalized-gaussian-cubature]] — "Generalized Gaussian Cubature for Nonlinear Filtering"
 - [[generative-models-physics]] — Generative Models for Physics — Spin Systems and Lattice Field Theory
 - [[gmt-geometric-multigrid-transformer]] — GMT — Geometric Multigrid Transformer for Microstructure Homogenization
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
+- [[graph-neural-network]] — "Graph Neural Network (GNN) — Message-Passing Architectures"
 - [[graph-neural-ode-structural-dynamics]] — "Graph Neural ODE for Structural Dynamics — PiGGO Component"
 - [[gru-d]] — GRU-D — Gated Recurrent Unit with Missingness Patterns for Time Series
 - [[hamiltonian-neural-networks]] — Hamiltonian Neural Networks — Physics-Embedded Dynamics with Energy Conservation
@@ -285,6 +293,7 @@
 - [[imn-porous-materials]] — "Interaction-based Material Network (IMN) for Porous Materials"
 - [[improved-ckf-gnss-ins]] — "Improved Cubature Kalman Filter for GNSS/INS — Posterior Sigma-Point Error Transformation"
 - [[in-context-modeling-physics]] — In-Context Modeling (ICM) for Computational Science
+- [[infrastructure-notes]] — "Infrastructure Notes — Cloud GPU Compute Platforms"
 - [[information-koopman-representation]] — Information Shapes Koopman Representation
 - [[isentropic-relations]] — Isentropic Relations — Thermodynamic Derivation for Gas Dynamics
 - [[isomap]] — Isomap — Isometric Feature Mapping
@@ -301,6 +310,7 @@
 - [[knudsen-number-and-continuum]] — Knudsen Number and Continuum Assumption — Flow Regime Classification
 - [[kolmogorov-arnold-networks]] — Kolmogorov-Arnold Networks (KAN) — Learnable B-Spline Activations on Edges
 - [[koopman-learner-continual-lifting]] — Continual Learning and Lifting of Koopman Dynamics for Legged Robots
+- [[koopman-operator-theory]] — "Koopman Operator Theory — Linear Representation of Nonlinear Dynamics" and Lifting of Koopman Dynamics for Legged Robots
 - [[koopman-resolvent-dynamics]] — Koopman-Resolvent Data-Driven Dynamics — Generator Learning for Continuous Systems
 - [[label-wise-uncertainty-quantification]] — "Label-wise Aleatoric & Epistemic Uncertainty Quantification"
 - [[lagrangian-koopman-network]] — "LaCGKN — Lagrangian Conditional Gaussian Koopman Network for DA and Prediction (Wang et al., 2026)"
@@ -344,6 +354,8 @@
 - [[muon-optimizer]] — Muon Optimizer for LLM Training
 - [[needle-punching-process-jca-mapping]] — "Needle Punching Process — Microstructure — JCA Parameter Mapping"
 - [[neural-mpc-terminal-constraint]] — "Neural MPC Terminal Constraint via HJ Reachability for Collision Avoidance"
+- [[neural-ode]] — "Neural ODE — Continuous-Depth Neural Networks"
+- [[neural-ode-dynamical-systems]] — "Neural ODE for Dynamical Systems — System Identification"
 - [[neural-odes]] — Neural Ordinary Differential Equations — Continuous-Depth Latent Dynamics
 - [[neural-tangent-kernel]] — Neural Tangent Kernel (NTK)
 - [[neural-thermodynamic-integration]] — "Neural Thermodynamic Integration (Neural TI)"
@@ -384,6 +396,8 @@
 - [[recursive-kalmannet]] — Recursive KalmanNet — Deep Learning-Augmented Kalman Filtering with Consistent Uncertainty Quantification
 - [[ren-recurrent-equilibrium-networks]] — "REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness"
 - [[residual-networks]] — Residual Networks (ResNet)
+- [[riemannian-optimization]] — "Riemannian Optimization — Manifold-Constrained Optimization"
+- [[rigor-development]] — "RIGOR Development — Differentiable SR-UKF Framework"
 - [[rigor-filter]] — RIGOR Filter — Differentiable SR-UKF
 - [[rigor-sigma-point-research]] — "RIGOR Sigma Point Innovation — Research Landscape & Gap Analysis"
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
@@ -418,6 +432,7 @@
 - [[structured-inference-networks]] — Structured Inference Networks for Nonlinear State Space Models — Deep Markov Models
 - [[surrogate-model]] — Surrogate Modeling — Physics-Constrained Data-Driven Approximation
 - [[t-sne]] — t-SNE — t-distributed Stochastic Neighbor Embedding
+- [[takens-delay-embedding]] — "Takens Embedding Theorem — State-Space Reconstruction"
 - [[thermoelastic-dmn]] — "Thermoelastic Deep Material Network"
 - [[tracer-homogenization]] — "Tracer Homogenization — Permutation-Equivariant Set Encoding for Lagrangian DA"
 - [[transfer-matrix-method-acoustic-porous]] — "Transfer Matrix Method (TMM) for Acoustic Porous Materials"
