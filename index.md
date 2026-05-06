@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-06 | Total pages: 461
+> Last updated: 2026-05-06 | Total pages: 463
 
 ## Entities
 - [[zhongrui-wang]] — "Zhongrui Wang — LaCGKN, UW-Madison"
@@ -246,11 +246,13 @@
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
 - [[em-kalman-smoother-noise-covariance]] — EM-Kalman Smoother — Analytical Noise Covariance Update (Shumway-Stoffer)
 - [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
+- [[ensemble-kalman-filter]] — "Ensemble Kalman Filter (EnKF) — Monte Carlo-based Kalman Filtering"
 - [[ensemble-loss-landscape]] — Deep Ensembles — Loss Landscape Perspective
 - [[epiplexity]] — Epiplexity — Structural Information for Computationally Bounded Observers
 - [[esn-as-ssm]] — Echo State Networks as State-Space Models — A Systems Perspective
 - [[evoxels-differentiable-voxel]] — "evoxels — Differentiable Voxel-Based Microstructure Simulation"
 - [[exact-affine-conditioning-ensemble-kalman-update]] — "Exact Affine Conditioning beyond Gaussians — EnKF Update Characterization (Jorgensen & Marzouk, 2025)"
+- [[extended-kalman-filter]] — "Extended Kalman Filter (EKF) — Linearized Nonlinear Filtering"
 - [[factorized-inference-dmm]] — Factorized Inference in Deep Markov Models — Multimodal Time Series
 - [[fft-homogenization-composites]] — "FFT-Based Homogenization for Composites — Willot Discretization & 3D Fibrous"
 - [[fft-homogenization-polymer-composites]] — "FFT-Based Homogenization for Composite & Biological Materials"

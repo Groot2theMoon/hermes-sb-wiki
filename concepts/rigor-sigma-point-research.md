@@ -194,6 +194,10 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 - [[adurthi-singla-higher-order-unscented-estimator]] — HOUE (closed-form, 2021)
 - [[unscented-feature-interaction]] — UFI (③' 확장, sigma point pairwise feature)
 - [[polynomial-unscented-kalman-filter]] — ⑥ Polynomial Update with CUT (Cherian & Servadio 2026)
+- [[robust-sigma-point-kalman-filter]] — Robust Sigma Point KF: Minimax Approach (Yi & Zorzi, 2025)
+- [[exact-affine-conditioning-ensemble-kalman-update]] — Exact Affine Conditioning beyond Gaussians (Jorgensen & Marzouk, 2025)
+- [[set-transformer]] — Set Transformer: Attention-based Permutation-Invariant NN (Lee et al., 2019)
+- [[robust-filter-attention]] — Robust Filter Attention: Self-Attention as Parallel Filter (Racioppo, 2025)
 
 ## Experiment Updates (2026-05-05)
 

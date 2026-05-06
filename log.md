@@ -1274,4 +1274,7 @@
 - **Updated (1):** [[eleni-chatzi]] — PiGGO 논문 추가
 
 - **Deep-research finding:** UKF sigma point cloud를 permutation-invariant set으로 처리하는 연구는 전무. 승원님의 UFI + sigma cloud conditioning = 글로벌 unique novelty. Bach (2025)는 EnKF ensemble 전용.
-- **Total:** 425 → **461** (+36)
+- **Backfill:** rigor-sigma-point-research.md → robust-sigma-point-kf, exact-affine-conditioning, set-transformer, robust-filter-attention wikilink 추가
+- **Backfill:** unscented-feature-interaction.md → set-transformer, robust-filter-attention wikilink 추가
+- **New concept pages (2):** [[ensemble-kalman-filter]], [[extended-kalman-filter]] (기존 broken link 해소)
+- **Total:** 425 → **463** (+38)

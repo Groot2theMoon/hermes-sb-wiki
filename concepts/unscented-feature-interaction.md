@@ -184,3 +184,5 @@ UFI는 ③의 자연스러운 확장. ①과 결합 시 시너지 예상.
 - [[rigor-filter]] — RIGOR SR-UKF VDP benchmark
 - [[ma-ukf-meta-adaptive]] — MA-UKF
 - [[auto-diff-data-assimilation]] — Auto-differentiable data assimilation
+- [[set-transformer]] — Set Transformer: Attention-based Permutation-Invariant NN
+- [[robust-filter-attention]] — Robust Filter Attention: Self-Attention as Parallel Filter
