@@ -1277,4 +1277,5 @@
 - **Backfill:** rigor-sigma-point-research.md → robust-sigma-point-kf, exact-affine-conditioning, set-transformer, robust-filter-attention wikilink 추가
 - **Backfill:** unscented-feature-interaction.md → set-transformer, robust-filter-attention wikilink 추가
 - **New concept pages (2):** [[ensemble-kalman-filter]], [[extended-kalman-filter]] (기존 broken link 해소)
-- **Total:** 425 → **463** (+38)
+- **New concept pages (1):** [[conditional-gaussian-koopman-network]] (CGKN, LaCGKN broken link 해소)
+- **Total:** 425 → **464** (+39)

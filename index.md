@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-06 | Total pages: 463
+> Last updated: 2026-05-06 | Total pages: 464
 
 ## Entities
 - [[zhongrui-wang]] — "Zhongrui Wang — LaCGKN, UW-Madison"
