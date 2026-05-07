@@ -38,6 +38,7 @@ RIGOR development uses cloud GPU compute for benchmarking and training (see [[cl
 ## Wikilinks
 - [[rigor-filter]] — Core RIGOR filter architecture
 - [[rigor-sigma-point-research]] — Research landscape and gap analysis
+- [[rigor-research-roadmap]] — Research roadmap and timeline
 - [[rigor-heuristics-analysis]] — Heuristic audit and theoretical fixes (v4.8)
 - [[gating-ablation-2026-05-07]] — Gating ON vs OFF experimental results
 - [[cloud-gpu-compute-platforms]] — Cloud GPU setup for RIGOR benchmarks
