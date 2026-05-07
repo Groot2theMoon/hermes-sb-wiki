@@ -1,3 +1,13 @@
+---
+title: "Lecture 4 — Supplementary: Forward-Backward, Viterbi, Baum-Welch"
+course: "Machine Learning 2/2-X (SoSe 2026)"
+instructor: "Klaus-Robert Müller"
+source: supplementary
+ingested: 2026-05-07
+sha256: 5bccbf55f4260bf3656e3bf8d771d39c405d50e505a2021cd35031750ec70a6f
+conversion: marker-api
+---
+
 
 
 ## Example: Sun, Rain, and Activities

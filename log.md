@@ -1315,3 +1315,12 @@
 - **Updated entity:** [[klaus-robert-muller]] — Lecture 4 (HMM) 추가, [[hmm-tutorial]] wikilink
 - **Backfill:** [[klaus-robert-muller]] → [[hmm-tutorial]] wikilink 추가
 
+## [2026-05-07] ingest | auto-parsed — Lecture 4 supplement + Exercise Sheet 4
+
+- **Raw sources (auto-parsed, 2):**
+  - raw/papers/lecture04-supplement.md — Forward-Backward, Viterbi, Baum-Welch 상세 유도 + 수치 예제
+  - raw/papers/sheet04.md — Exercise Sheet 4 (Markov Forward, HMM Forward, Programming)
+- **변환:** marker-api ✅ (user laptop pipeline)
+- **Updated concept:** [[hmm-tutorial]] — sources에 supplement + sheet 추가
+- **Updated entity:** [[klaus-robert-muller]] — sources에 supplement + sheet 추가
+

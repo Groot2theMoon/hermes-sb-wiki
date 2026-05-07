@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-05-07
 type: concept
 tags: [classic-ai, algorithms, generative-model, sequence-modeling]
-sources: [raw/papers/rabiner1.md, raw/papers/ml2-lecture-04.md]
+sources: [raw/papers/rabiner1.md, raw/papers/ml2-lecture-04.md, raw/papers/lecture04-supplement.md, raw/papers/sheet04.md]
 confidence: high
 ---
 

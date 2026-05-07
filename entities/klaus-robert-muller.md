@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-05-07
 type: entity
 tags: [person, classic-ai, survey]
-sources: [raw/papers/ml2-lecture-01.md, raw/papers/ml2-lecture-02.md, raw/papers/ml2-lecture-04.md]
+sources: [raw/papers/ml2-lecture-01.md, raw/papers/ml2-lecture-02.md, raw/papers/ml2-lecture-04.md, raw/papers/lecture04-supplement.md, raw/papers/sheet04.md]
 confidence: high
 ---
 

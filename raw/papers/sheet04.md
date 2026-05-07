@@ -1,3 +1,13 @@
+---
+title: "Exercise Sheet 4 — HMM"
+course: "Machine Learning 2/2-X (SoSe 2026)"
+instructor: "Klaus-Robert Müller"
+source: exercise
+ingested: 2026-05-07
+sha256: 7f0bd7a284251ead8df226d94b208abf9ad63f7ae4d82044fb331f85e3765dee
+conversion: marker-api
+---
+
 
 
 # Exercise Sheet 4
