@@ -1306,3 +1306,12 @@
   - 2605.01665 — Robust Filtering for Gauss-Cauchy Distributions
 
 - **Index rebuilt** from filesystem (475 total pages)
+
+## [2026-05-07] ingest | lecture — ML2 Lecture 4: Hidden Markov Models
+
+- **Raw source:** raw/papers/ml2-lecture-04.md — Lecture 4 (HMM)
+- **변환:** pymupdf4llm ✅ (42 pages)
+- **Updated concept:** [[hmm-tutorial]] — ML2 lecture 관점 추가 (motivation, directed→undirected graphical models, CRF 연결)
+- **Updated entity:** [[klaus-robert-muller]] — Lecture 4 (HMM) 추가, [[hmm-tutorial]] wikilink
+- **Backfill:** [[klaus-robert-muller]] → [[hmm-tutorial]] wikilink 추가
+

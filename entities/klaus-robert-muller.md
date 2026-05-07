@@ -1,10 +1,10 @@
 ---
 title: Klaus-Robert Müller
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-07
 type: entity
 tags: [person, classic-ai, survey]
-sources: [raw/papers/ml2-lecture-01.md, raw/papers/ml2-lecture-02.md]
+sources: [raw/papers/ml2-lecture-01.md, raw/papers/ml2-lecture-02.md, raw/papers/ml2-lecture-04.md]
 confidence: high
 ---
 
@@ -27,7 +27,7 @@ Support Vector Machine, Kernel PCA 등 kernel 기법의 이론 및 응용에 기
 - **재료과학**: 물질 발견 및 특성 예측
 
 ### Machine Learning 2 (TU Berlin)
-TU Berlin에서 Machine Learning 2 강좌를 담당하며, [[lle| LLE]], [[multi-dimensional-scaling| MDS]], [[isomap| Isomap]], [[stochastic-neighbor-embedding| SNE]], [[t-sne| t-SNE]] 등 비선형 차원 축소 기법의 전반을 강의하였다. Lecture notes에는 Grégoire Montavon, Wojciech Samek과 공동 집필한 상세한 수학적 유도가 포함되어 있다.
+TU Berlin에서 Machine Learning 2 강좌를 담당하며, [[lle| LLE]], [[multi-dimensional-scaling| MDS]], [[isomap| Isomap]], [[stochastic-neighbor-embedding| SNE]], [[t-sne| t-SNE]] 등 비선형 차원 축소 기법과 [[hmm-tutorial| HMM (Lecture 4)]] 및 undirected graphical models → CRF로의 확장을 강의하였다. Lecture notes에는 Grégoire Montavon, Wojciech Samek과 공동 집필한 상세한 수학적 유도가 포함되어 있다.
 
 ## 관계
 

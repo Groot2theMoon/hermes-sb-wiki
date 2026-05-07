@@ -1,10 +1,10 @@
 ---
 title: Hidden Markov Model — Tutorial
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-07
 type: concept
 tags: [classic-ai, algorithms, generative-model, sequence-modeling]
-sources: [raw/papers/rabiner1.md]
+sources: [raw/papers/rabiner1.md, raw/papers/ml2-lecture-04.md]
 confidence: high
 ---
 
@@ -52,6 +52,31 @@ $$\hat{a}_{ij} = \frac{\sum_{t=1}^{T-1} \xi_t(i,j)}{\sum_{t=1}^{T-1} \sum_k \xi_
 | 상태 수 사전 결정 | Bayesian HMM, Infinite HMM |
 | 음향 모델만 가능 | **RNN/LSTM** — 과거 전체 맥락 활용 |
 | 순차 처리 강제 | **Transformer** — 병렬 self-attention |
+
+## ML2 Lecture 관점 (Müller, SoSe 2026)
+
+TU Berlin Machine Learning 2 (Klaus-Robert Müller) Lecture 4는 HMM을 **확률적 그래피컬 모델의 프레임워크** 안에서 조명한다^[raw/papers/ml2-lecture-04.md].
+
+### 동기: 구조화된 확률 모델의 필요성
+
+고차원 데이터에서 단순 빈도 추정은 차원의 저주에 직면한다 (예: 28×28 바이너리 이미지 → 2²⁸×²⁸ ≈ 우주 나이보다 큰 경우의 수). 해결책은 **데이터의 독립성 가정에 구조를 부여**하는 것 — Markov 성질, stationarity를 통해 파라미터 수를 극적으로 줄인다.
+
+### HMM → Undirected Graphical Models로의 확장
+
+Lecture 후반부는 HMM을 넘어 **undirected graphical models (Markov Random Fields)** 로의 확장을 다룬다:
+
+| 개념 | Directed (HMM) | Undirected (CRF/MRF) |
+|------|---------------|---------------------|
+| 인과 관계 | 명시적 (원인→결과) | 미지정 (potential functions) |
+| 조건부 독립 | d-separation | graph separation |
+| 정규화 | 불필요 (확률 곱) | partition function Z 필요 |
+| 대표 모델 | HMM, Naive Bayes | Boltzmann Machine, CRF |
+
+**"Explaining away" 효과:** Directed 모델에서 관측된 변수의 여러 원인이 **조건부 종속**이 되는 현상. Undirected 모델에서는 발생하지 않음 — 인과 관계가 제거되었기 때문.
+
+### CRF로의 연결
+
+HMM의 한계 (causality 가정이 틀리면 modeling bias 발생)를 극복하기 위해 **Conditional Random Fields (CRF)** 가 등장 — Sutton (2011)의 CRF 소개가 Lecture 4를 마무리한다.
 
 ## 융합 도메인에서의 의의
 
