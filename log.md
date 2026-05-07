@@ -1283,3 +1283,26 @@
 - **Fixed typo:** log.md `[[deeponet\\]]` → `[[deeponet|DeepONet]]`
 - **Pre-existing broken links 모두 정리** (gerhard-neumann 5건, graph-neural-network 3건, neural-ode 3건, gaussian-processes 1건, koopman-operator-theory 1건, riemannian-optimization 1건, takens-delay-embedding 1건, 그 외 4건)
 - **Total:** 425 → **480** (+55)
+## [2026-05-07] trending-scan | Script timeout → arXiv fallback | 4 new concept pages
+
+- **Script error:** trending-papers-wrapper.py timed out (110s) — used arXiv MCP fallback + web_search
+- **Scanned:** 5 arXiv categories (cs.LG, cs.CE, physics.comp-ph) + targeted web_search
+- **Tier 2 papers identified:** 12 papers, 4 selected for concept pages
+
+- **New concept pages (4):**
+  - [[multi-fidelity-surrogate-composites]] — Multi-fidelity surrogate modeling for composite mechanics review (arXiv:2605.02871)
+  - [[pilir-physics-informed-local-implicit]] — PILIR: Local implicit representation for PINN spectral bias (arXiv:2605.00385)
+  - [[natural-gradient-bayesian-filtering]] — Natural Gradient Gaussian Approximation (NANO) Filter (arXiv:2605.02306)
+  - [[vmlfn-variational-matrix-learning-fourier]] — VMLFN: Variational Matrix-Learning Fourier Networks for multiphysics surrogates (arXiv:2605.02280)
+
+- **Other papers noted (Tier 3, no pages):**
+  - 2605.02310 — Variational Kolosov-Muskhelishvili Network for Elasticity
+  - 2605.00760 — Helmholtz DeepONet for non-parametric 2D geometries
+  - 2605.03497 — GRIFDIR: Graph Resolution-Invariant FEM Diffusion Models
+  - 2605.00509 — PeFNO: Physics-Encoded FNO for divergence-free stress
+  - 2605.03710 — Amortized Variational Inference for Bayesian UQ + FEM
+  - 2605.01463 — Neural Latent Dynamics for cardiac inverse problems
+  - 2605.04186 — Real-Time Estimation of High-Resolution Flow Fields
+  - 2605.01665 — Robust Filtering for Gauss-Cauchy Distributions
+
+- **Index rebuilt** from filesystem (475 total pages)
