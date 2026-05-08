@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-08 | Total pages: 483
+> Last updated: 2026-05-08 | Total pages: 487
 
 
 ## Entities
@@ -20,6 +20,7 @@
 - [[anima-anandkumar]] — Anima Anandkumar
 - [[anthony-ohagan]] — Anthony O'Hagan
 - [[ashish-vaswani]] — Ashish Vaswani
+- [[ashwin-gopinath]] — Ashwin Gopinath — Sentra + MIT, Geometry of Memory Trilogy
 - [[autonomous-learning-robots-kit]] — Autonomous Learning Robots (ALR) — KIT, Gerhard Neumann Group
 - [[balaji-lakshminarayanan]] — Balaji Lakshminarayanan
 - [[bernd-prach]] — Bernd Prach
@@ -278,6 +279,8 @@
 - [[genai-stock-selection]] — Generative AI for Stock Selection
 - [[generalized-gaussian-cubature]] — Generalized Gaussian Cubature for Nonlinear Filtering
 - [[generative-models-physics]] — Generative Models for Physics — Spin Systems and Lattice Field Theory
+- [[geometry-of-consolidation]] — The Geometry of Consolidation — Consolidation-Interference Duality & GAC
+- [[geometry-of-forgetting]] — The Geometry of Forgetting — Memory as Geometry, Not Biology
 - [[gmt-geometric-multigrid-transformer]] — GMT — Geometric Multigrid Transformer for Microstructure Homogenization
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
 - [[granular-failure-neural-operator]] — Granular Micromechanics Failure Envelope Neural Operator
@@ -397,6 +400,7 @@
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[porous-nonwoven-homogenization]] — Porous Nonwoven Homogenization — Computational Homogenization & Compression Modeling
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
+- [[price-of-meaning]] — The Price of Meaning — No Escape Theorem for Semantic Memory
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
 - [[predictivity-neural-surrogates-multiscale-pde]] — Predictivity and Utility of Neural Surrogates of Multiscale PDEs — Critical Analysis
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)

@@ -1,4 +1,13 @@
-
+---
+title: "The Geometry of Consolidation"
+arxiv: "NeurIPS 2026 submission (arXiv version in repo: paper/arxiv/main.pdf)"
+authors: ["Anirudh Bharadwaj Vangara", "Ashwin Gopinath"]
+year: 2026
+source: paper
+ingested: 2026-05-08
+sha256: 4d0d72671c767c6eab3b8c950e0c9a7a95141005da64ec9af423ef960e1d0b1d
+conversion: marker-api
+---
 
 # The Geometry of Consolidation
 

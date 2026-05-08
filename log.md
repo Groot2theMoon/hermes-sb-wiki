@@ -1335,5 +1335,19 @@
   - [[deeponet-helmholtz-sdf-geometry]] — DeepONet for Helmholtz Equation on Non-Parametric Geometries via SDF (arXiv:2605.00760)
 - **Already covered:** VMLFN (arXiv:2605.02280), Multi-fidelity composites review (arXiv:2605.02871) — pages exist
 - **Deferred:** 99-Line Homogenization Code (2604.23181), PISTM Koopman surrogate (2604.14424), PINN-Learnable Loss (2605.05217)
-- **Index rebuilt:** 475→483 pages (+5 new, +3 previously unaccounted)
-
+|- **Index rebuilt:** 475→483 pages (+5 new, +3 previously unaccounted)
+|
+|## [2026-05-08] ingest | Geometry of Memory Trilogy (3 papers) + Gopinath entity
+|- **Raw sources (3):**
+|  - raw/papers/2604.06222v1.md — The Geometry of Forgetting (Barman et al., Sentra+MIT)
+|  - raw/papers/2603.27116v1.md — The Price of Meaning (Barman et al., Sentra+MIT)
+|  - raw/papers/main.md — The Geometry of Consolidation (Vangara & Gopinath, NeurIPS 2026)
+|- **New Concepts (3):**
+|  - [[geometry-of-forgetting]] — 간섭이 망각의 원인임을 증명
+|  - [[price-of-meaning]] — 의미 기반 메모리의 impossibility theorem
+|  - [[geometry-of-consolidation]] — Consolidation-Interference Duality + GAC 알고리즘
+|- **New Entities (1):**
+|  - [[ashwin-gopinath]] — Sentra Chief Scientist, MIT MechE
+|- **RIGOR 관련성:** sigma point cloud = embedding memory의 일종. $d_{\text{eff}}$ 측정으로 RIGOR UFI sigma compression 안전성 예측 및 GAC 알고리즘 접목 가능
+|- **총 페이지:** 483 → 487 (+4)
+|
