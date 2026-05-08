@@ -186,3 +186,4 @@ UFI는 ③의 자연스러운 확장. ①과 결합 시 시너지 예상.
 - [[auto-diff-data-assimilation]] — Auto-differentiable data assimilation
 - [[set-transformer]] — Set Transformer: Attention-based Permutation-Invariant NN
 - [[robust-filter-attention]] — Robust Filter Attention: Self-Attention as Parallel Filter
+- [[rigor-geometry-of-memory-integration]] — RIGOR × Geometry of Memory: $d_{\text{eff}}$ 진단, GAC adaptive routing, Phase 2 재해석

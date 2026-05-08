@@ -1349,5 +1349,12 @@
 |- **New Entities (1):**
 |  - [[ashwin-gopinath]] — Sentra Chief Scientist, MIT MechE
 |- **RIGOR 관련성:** sigma point cloud = embedding memory의 일종. $d_{\text{eff}}$ 측정으로 RIGOR UFI sigma compression 안전성 예측 및 GAC 알고리즘 접목 가능
-|- **총 페이지:** 483 → 487 (+4)
-|
+- **총 페이지:** 483 → 487 (+4)
+
+## [2026-05-08] create + backfill | RIGOR × Geometry of Memory integration analysis
+- **New Concept (1):** [[rigor-geometry-of-memory-integration]] — $d_{\text{eff}}$ 진단, GAC adaptive UFI, Phase 2 재해석
+- **Backfill (3 pages):**
+  - [[rigor-sigma-point-research]] → 5번째 key insight로 추가
+  - [[rigor-research-roadmap]] → Wikilinks 섹션에 추가
+  - [[unscented-feature-interaction]] → 관련 wiki 페이지에 추가
+- **총 페이지:** 487 → 488 (+1)

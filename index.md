@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-08 | Total pages: 487
+> Last updated: 2026-05-08 | Total pages: 488
 
 
 ## Entities
@@ -414,6 +414,7 @@
 - [[riemannian-optimization]] — Riemannian Optimization
 - [[rigor-development]] — RIGOR Development — Differentiable SR-UKF Framework
 - [[rigor-filter]] — RIGOR Filter — Differentiable SR-UKF
+- [[rigor-geometry-of-memory-integration]] — RIGOR × Geometry of Memory — $d_{\text{eff}}$ 진단, GAC Adaptive UFI
 - [[rigor-heuristics-analysis]] — RIGOR Heuristic Analysis — Empirical Gaps & Theoretical Fixes
 - [[rigor-research-roadmap]] — RIGOR Research Roadmap — UKF + Sigma Cloud Conditioning
 - [[rigor-sigma-point-research]] — RIGOR Sigma Point Innovation — Research Landscape & Gap Analysis

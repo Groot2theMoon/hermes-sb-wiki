@@ -222,3 +222,4 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 2. 구조적 확장 (parameter-conditioned A+NN)
 3. Delay embedding (Takens)으로 관측 정보 augment
 4. **UFI (③' Unscented Feature Interaction)** — sigma point 간 pairwise 상호작용을 명시적 특징으로 NN 제공. [[unscented-feature-interaction]] 참조.
+5. **[[rigor-geometry-of-memory-integration]]** — Sentra+MIT "Geometry of Memory" 3부작 접목: $d_{\text{eff}}$ 진단, GAC-inspired adaptive UFI, Phase 2 residual 재해석.

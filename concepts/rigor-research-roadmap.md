@@ -67,6 +67,7 @@ confidence: high
 ## Wikilinks
 - [[rigor-development]] — Main RIGOR development page
 - [[rigor-heuristics-analysis]] — Heuristic audit and theoretical fixes
+- [[rigor-geometry-of-memory-integration]] — Geometry of Memory Trilogy 접목 분석: $d_{\text{eff}}$ 진단, GAC adaptive UFI
 - [[gating-ablation-2026-05-07]] — Gating ON vs OFF ablation
 - [[rigor-sigma-point-research]] — Research landscape and gap analysis
 - [[square-root-unscented-kalman-filter]] — Standard SR-UKF formulation
