@@ -2,7 +2,8 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-07 | Total pages: 475
+> Last updated: 2026-05-08 | Total pages: 483
+
 
 ## Entities
 - [[acoustipy]] — acoustipy — Python Transfer Matrix Method Package
@@ -219,6 +220,7 @@
 - [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
 - [[deeponet]] — DeepONet — Deep Operator Networks
+- [[deeponet-helmholtz-sdf-geometry]] — DeepONet for Helmholtz Equation on Non-Parametric Geometries via SDF
 - [[deeponet-poroelastic-surrogate]] — DeepONet for Poroelastic Surrogate Modeling — Random Permeability Fields
 - [[deeppropnet-thermal-plasma]] — DeepPropNet — Operator Learning for Thermal Plasma Property Prediction
 - [[deepukf-vin]] — DeepUKF-VIN — Adaptively-tuned Deep Unscented Kalman Filter for Visual-Inertial Navigation
@@ -271,12 +273,14 @@
 - [[gan-lattice-simulations]] — GAN-based Overrelaxation for Lattice Simulations
 - [[gap-sbm]] — Gap-SBM — Shifted Boundary Method Variant
 - [[gated-recurrent-units]] — Gated Recurrent Units (GRU & LSTM)
+- [[gating-ablation-2026-05-07]] — Gating Ablation — Statistical Gating ON vs OFF
 - [[gaussian-processes]] — Gaussian Processes (GP)
 - [[genai-stock-selection]] — Generative AI for Stock Selection
 - [[generalized-gaussian-cubature]] — Generalized Gaussian Cubature for Nonlinear Filtering
 - [[generative-models-physics]] — Generative Models for Physics — Spin Systems and Lattice Field Theory
 - [[gmt-geometric-multigrid-transformer]] — GMT — Geometric Multigrid Transformer for Microstructure Homogenization
 - [[gpt-1]] — GPT-1 — Generative Pre-Training
+- [[granular-failure-neural-operator]] — Granular Micromechanics Failure Envelope Neural Operator
 - [[graph-neural-network]] — Graph Neural Network (GNN)
 - [[graph-neural-ode-structural-dynamics]] — Graph Neural ODE (GNODE) for Structural Dynamics
 - [[gru-d]] — GRU-D — Gated Recurrent Unit with Missingness Patterns for Time Series
@@ -339,6 +343,7 @@
 - [[ma-ukf-meta-adaptive]] — MA-UKF — Meta-Adaptive Unscented Kalman Filter
 - [[mc-dropout]] — Dropout as Bayesian Approximation (Gal & Ghahramani)
 - [[memory-caching-rnn]] — Memory Caching RNNs
+- [[metasymbo-multi-agent-metamaterial]] — MetaSymbO — Multi-Agent Language-Guided Metamaterial Discovery
 - [[mhc-deepseek]] — [[deepseek|DeepSeek]] mHC — Manifold-Constrained Hyper-Connections
 - [[miao-robust-observer]] — Miao Robust Observer — Learning Robust KKL Observers via Neural ODEs
 - [[micromechanics-homogenization]] — Micromechanics and Homogenization
@@ -360,6 +365,7 @@
 - [[neural-ode-dynamical-systems]] — Neural ODE for Dynamical Systems
 - [[neural-ode]] — Neural ODE (Neural Ordinary Differential Equation)
 - [[neural-odes]] — Neural Ordinary Differential Equations — Continuous-Depth Latent Dynamics
+- [[neural-operator-stability-receptivity]] — Neural Operator Framework for Data-Driven Stability & Receptivity
 - [[neural-tangent-kernel]] — Neural Tangent Kernel (NTK)
 - [[neural-thermodynamic-integration]] — Neural Thermodynamic Integration (Neural TI)
 - [[neural-variational-inference]] — Neural Variational Inference (NVIL)
@@ -371,6 +377,7 @@
 - [[optimized-sigma-points-n-plus-1]] — Optimized Sigma Point Selection — n+1 Points for UKF
 - [[orthogonal-projection-regularization]] — Orthogonal Projection Regularization for Efficient Model Augmentation
 - [[pac-bayesian-epistemic-uncertainty]] — PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference
+- [[pefno-physics-encoded-fno]] — PeFNO — Physics-Encoded Fourier Neural Operator for Divergence-Free Stress
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
 - [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)
 - [[physics-informed]] — Physics-Informed Machine Learning
@@ -403,6 +410,8 @@
 - [[riemannian-optimization]] — Riemannian Optimization
 - [[rigor-development]] — RIGOR Development — Differentiable SR-UKF Framework
 - [[rigor-filter]] — RIGOR Filter — Differentiable SR-UKF
+- [[rigor-heuristics-analysis]] — RIGOR Heuristic Analysis — Empirical Gaps & Theoretical Fixes
+- [[rigor-research-roadmap]] — RIGOR Research Roadmap — UKF + Sigma Cloud Conditioning
 - [[rigor-sigma-point-research]] — RIGOR Sigma Point Innovation — Research Landscape & Gap Analysis
 - [[rino]] — RINO — Renormalization Group Invariance with No Labels
 - [[rnn-enhanced-ukf]] — RNN-Enhanced UKF — Deep Learning + UKF for Human Motion Prediction (Liu 2024)

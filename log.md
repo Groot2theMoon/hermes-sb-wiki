@@ -1324,3 +1324,16 @@
 - **Updated concept:** [[hmm-tutorial]] — sources에 supplement + sheet 추가
 - **Updated entity:** [[klaus-robert-muller]] — sources에 supplement + sheet 추가
 
+## [2026-05-08] trending-scan | 2604-2605 AI/ML × Mechanics | 5 new concept(s), 0 updated
+- **Script timeout** — wrapper timed out at 110s; switched to arXiv MCP + web_search fallback
+- **Scanned:** cs.LG, cs.CE, cs.AI, physics.comp-ph categories (2604-2605 timeframe)
+- **New Concepts (5):**
+  - [[metasymbo-multi-agent-metamaterial]] — MetaSymbO: Multi-Agent Language-Guided Metamaterial Discovery (arXiv:2604.27300)
+  - [[pefno-physics-encoded-fno]] — PeFNO: Physics-Encoded FNO for Divergence-Free Stress Fields (arXiv:2605.00509)
+  - [[neural-operator-stability-receptivity]] — Neural Operator Framework for Data-Driven Stability & Receptivity (arXiv:2604.19465)
+  - [[granular-failure-neural-operator]] — Granular Micromechanics Failure Envelope Neural Operator via DeepONet (arXiv:2604.19027)
+  - [[deeponet-helmholtz-sdf-geometry]] — DeepONet for Helmholtz Equation on Non-Parametric Geometries via SDF (arXiv:2605.00760)
+- **Already covered:** VMLFN (arXiv:2605.02280), Multi-fidelity composites review (arXiv:2605.02871) — pages exist
+- **Deferred:** 99-Line Homogenization Code (2604.23181), PISTM Koopman surrogate (2604.14424), PINN-Learnable Loss (2605.05217)
+- **Index rebuilt:** 475→483 pages (+5 new, +3 previously unaccounted)
+
