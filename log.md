@@ -1383,3 +1383,9 @@
 
 - **RIGOR 관련성:** Grothe (2012)가 Bouc-Wen z 추정 실패의 근본 원인을 정확히 명시. UFI + TE의 loss design에 Grothe의 HOC-UKF formula를 regularizer로 통합하는 방향 제시.
 - **총 페이지:** 488 → 492 (+4)
+
+## [2026-05-09] update | Virtual Measurement 접근법 wiki 기록
+- **Updated Concepts (2):**
+  - [[rigor-research-roadmap]] — Direction ③ 상세 설계 추가 (Virtual Measurement): TE→pseudo-z→UKF obs augment; H=[[1,0,0],[0,0,1]]; loss on x-dim only; TE/UKF/UFI 역할 분리 명시
+  - [[rigor-sigma-point-research]] — Item ⑧ Virtual Measurement 추가 (진행 중 test_E)
+- **실험 상태:** test_E (virtual measurement approach), SSH WSL sandbox에서 background 실행 중 (4000 iter, CPU)

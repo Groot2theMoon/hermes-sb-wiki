@@ -196,7 +196,7 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 | **③' (UFI)** | **0건** | **★★★★★** | **낮음** | **높음** | **✅ 제안**
 | ④       2건       ★★☆☆☆    매우 낮음 중간    ⚠️ 결합 필요
 | ⑤       0건       ★★★★★    매우 높음 높음    📌 장기 과제
-| **⑥ Polynomial Update** | **1건 (Cherian & Servadio 2026)** | **★★★★☆** | **중간** | **높음** | **⏳ ①/③ 이후**\n| **⑦ HOC-UKF (Grothe 2012)** | **1건 (Grothe 2012)** | **★★★★☆** | **중간** | **매우 높음** | **⏳ UFI+TE와 병행**
+| **⑥ Polynomial Update** | **1건 (Cherian & Servadio 2026)** | **★★★★☆** | **중간** | **높음** | **⏳ ①/③ 이후**\n| **⑦ HOC-UKF (Grothe 2012)** | **1건 (Grothe 2012)** | **★★★★☆** | **중간** | **매우 높음** | **⏳ UFI+TE와 병행**\n| **⑧ Virtual Measurement (TE→pseudo-z→UKF)** | **— (new)** | **★★★★★** | **낮음** | **매우 높음** | **✅ test_E 진행 중: TE pseudo-measurement로 observation augment**\n```
 ```
 
 ## References

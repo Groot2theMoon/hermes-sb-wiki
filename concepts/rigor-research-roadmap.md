@@ -1,7 +1,7 @@
 ---
 title: "RIGOR Research Roadmap — UKF + Sigma Cloud Conditioning"
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-09
 type: concept
 tags: [rigor, research, roadmap, planning, ufi, sigma-cloud, paper]
 confidence: high
@@ -22,8 +22,27 @@ confidence: high
 이것은 RIGOR의 UFI+TE 실패의 **근본 원인**이며, 단순한 engineering 문제가 아니다. 가능한 해결 방향:
 
 1. **Pure NN (TE-only):** UKF 없이 Conv1D로 z 직접 추정. z corr 0.717 달성 (UFI+TE 0.416 대비 우수). 자유도는 높지만 UKF의 covariance 구조를 잃음.
-2. **UKF + HOC-UKF regularizer:** Grothe (2012)의 higher-order correlation formula를 UFI loss에 통합. 가장 principled한 접근.
-3. **UKF + 분리된 z estimator:** UKF는 x, v 추정에 집중하고, TE가 z를 따로 추정.
+2. **UKF + HOC-UKF regularizer:** Grothe (2012)의 higher-order correlation formula를 UFI loss에 통합. 가장 principled한 접근. (보류 — 우선 virtual measurement 검증)
+3. **✅ UKF + Virtual Measurement (TE → pseudo-measurement):** [[higher-order-correlation-ukf|selected]] — TE가 z의 pseudo-measurement를 생성, UKF의 observation을 1D(y=x) → 2D([x, z_hat])로 augment. H = [[1,0,0],[0,0,1]]로 Kalman gain K_z가 자연스럽게 non-zero가 됨. 이론적 근거: Grothe (2012), 실험 검증: test_E 진행 중.
+
+### Direction ③ 상세 설계 (Virtual Measurement Approach)
+
+| 구성 요소 | 역할 |
+|-----------|------|
+| **Conv1DEncoder** | observation window → z_hat 예측 (TE-only와 동일 구조, ks=3) |
+| **UKF (d_out=2)** | augmented observation [x, z_hat]으로 x, v, z 공동 추정 |
+| **H matrix** | [[1,0,0],[0,0,1]] — x와 z에 직접 Kalman gain 할당 |
+| **Loss** | MSE on x dim만 (z dim은 TE가 학습) |
+| **UFI** | sigma cloud conditioning으로 x, v dynamics 개선 |
+
+**TE vs UKF의 역할 분리:**
+- TE → z의 temporal pattern 인식 (temporal context 활용)
+- UKF → x, v의 covariance 구조 유지 (SR-UKF stable dynamics)
+- UFI → sigma point cloud conditioning (x, v 비선형성 학습)
+
+이 분리는 additive TE (Phase 1)와 residual carry (Phase 2) 사이의 중간적 접근. NN output(z_hat)이 UKF의 observation으로 자연스럽게 흘러들어가 "NN output이 다시 NN에 feedback"되는 문제 회피.
+
+**Reference:** [[higher-order-correlation-ukf]], Grothe (2012), [[bouc-wen-dl-parameter-estimation]]
 
 ### Three Information Sources (orthogonal)
 
