@@ -1358,3 +1358,28 @@
   - [[rigor-research-roadmap]] → Wikilinks 섹션에 추가
   - [[unscented-feature-interaction]] → 관련 wiki 페이지에 추가
 - **총 페이지:** 487 → 488 (+1)
+
+## [2026-05-08] deep-research | Bouc-Wen Hysteresis Filtering — 근본적 한계 진단 및 문헌 조사
+
+- **Deep-research 주제:** UFI + Temporal Encoder가 Bouc-Wen z를 추정하지 못하는 근본 원인 조사
+- **핵심 발견:** 표준 UKF/Gaussian filter는 observation과 correlation이 있는 state만 추정 가능 (Grothe 2012). Bouc-Wen z는 observation y=x와 correlation ≈ 0 → UKF의 Kalman gain K_z ≈ 0 → z 추정 불가. **Engineering 문제가 아닌 UKF의 근본적 정보 구조 한계.**
+
+- **Raw sources (3):**
+  - raw/papers/grothe12-higher-order-correlation-ukf.md — HOC-UKF: higher-order correlation measurement update (arXiv:1207.4300)
+  - raw/papers/liu22-neural-ekf.md — Neural EKF for structural systems (Chatzi et al., 2022)
+  - raw/papers/oh24-bouc-wen-dl-parameter.md — DL-based Bouc-Wen parameter estimation (Oh, Song & Kim 2024)
+
+- **New Concepts (3):**
+  - [[higher-order-correlation-ukf]] — Grothe HOC-UKF: uncorrelated state estimation via higher-order moments
+  - [[neural-ekf-structural-systems]] — Liu, Chatzi et al. Neural EKF: learnable EKF for SHM
+  - [[bouc-wen-dl-parameter-estimation]] — Oh, Song & Kim: CNN-based Bouc-Wen parameter ID
+
+- **New Entities (1):**
+  - [[oliver-grothe]] — HOC-UKF 저자, University of Cologne
+
+- **Updated Concepts (2):**
+  - [[rigor-sigma-point-research]] — Item #7 (HOC-UKF) 추가; References 10-12 추가 (Grothe, Chatzi, Oh)
+  - [[rigor-research-roadmap]] — Core Novelty에 근본적 한계 발견 및 3가지 해결 방향 추가; Wikilinks 업데이트
+
+- **RIGOR 관련성:** Grothe (2012)가 Bouc-Wen z 추정 실패의 근본 원인을 정확히 명시. UFI + TE의 loss design에 Grothe의 HOC-UKF formula를 regularizer로 통합하는 방향 제시.
+- **총 페이지:** 488 → 492 (+4)

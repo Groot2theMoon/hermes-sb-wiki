@@ -2,8 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-08 | Total pages: 488
-
+> Last updated: 2026-05-08 | Total pages: 492
 
 ## Entities
 - [[acoustipy]] — acoustipy — Python Transfer Matrix Method Package
@@ -20,7 +19,7 @@
 - [[anima-anandkumar]] — Anima Anandkumar
 - [[anthony-ohagan]] — Anthony O'Hagan
 - [[ashish-vaswani]] — Ashish Vaswani
-- [[ashwin-gopinath]] — Ashwin Gopinath — Sentra + MIT, Geometry of Memory Trilogy
+- [[ashwin-gopinath]] — Ashwin Gopinath
 - [[autonomous-learning-robots-kit]] — Autonomous Learning Robots (ALR) — KIT, Gerhard Neumann Group
 - [[balaji-lakshminarayanan]] — Balaji Lakshminarayanan
 - [[bernd-prach]] — Bernd Prach
@@ -116,6 +115,7 @@
 - [[nan-chen-wisconsin]] — Nan Chen (UW-Madison)
 - [[nir-shlezinger]] — Nir Shlezinger — Signal Processing & Model-Based Deep Learning
 - [[nvidia]] — NVIDIA — GPU 컴퓨팅 및 AI 플랫폼
+- [[oliver-grothe]] — Oliver Grothe
 - [[ondrej-straka]] — Ondřej Straka
 - [[openai]] — OpenAI
 - [[paris-perdikaris]] — Paris Perdikaris
@@ -197,6 +197,7 @@
 - [[bayesian-pinns]] — B-PINNs — Bayesian Physics-Informed Neural Networks
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
+- [[bouc-wen-dl-parameter-estimation]] — Deep Learning-Based Bouc-Wen Parameter Estimation — Oh, Song & Kim (2024)
 - [[brain-active-inference]] — BRAIN — Bayesian Reasoning via Active Inference for Agentic Intelligence
 - [[building-acoustic-standards]] — 건축 음향 규격 — 층간소음 기준 및 흡음 등급
 - [[buisson-fenet-kkl-observer]] — Buisson-Fenet KKL Observer — Recognition Models for Neural ODEs from Partial Observations
@@ -220,8 +221,8 @@
 - [[deep-learning-nature-survey]] — Deep Learning (Nature 2015 Survey)
 - [[deep-material-network]] — Deep Material Network (DMN) — 기본 아키텍처
 - [[deep-material-network-quilting]] — Deep Material Network with Quilting Strategy
-- [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deeponet-helmholtz-sdf-geometry]] — DeepONet for Helmholtz Equation on Non-Parametric Geometries via SDF
+- [[deeponet]] — DeepONet — Deep Operator Networks
 - [[deeponet-poroelastic-surrogate]] — DeepONet for Poroelastic Surrogate Modeling — Random Permeability Fields
 - [[deeppropnet-thermal-plasma]] — DeepPropNet — Operator Learning for Thermal Plasma Property Prediction
 - [[deepukf-vin]] — DeepUKF-VIN — Adaptively-tuned Deep Unscented Kalman Filter for Visual-Inertial Navigation
@@ -291,6 +292,7 @@
 - [[hedesh-local-stability-roa]] — Local Stability and ROA for NN Feedback Systems — Hedesh, Wafi & Siami 2025
 - [[hedesh-siami-sector-bound]] — Sector-Bounded Nonlinearity for NN-Controlled Systems — Hedesh & Siami 2024
 - [[hierarchical-autoregressive-networks]] — Hierarchical Autoregressive Networks (HAN) for Statistical Systems
+- [[higher-order-correlation-ukf]] — Higher-Order Correlation UKF (HOC-UKF) — Grothe (2012)
 - [[higher-order-unscented-transform]] — Higher-Order Unscented Transform — 4th Moment Matching for Sigma Points
 - [[hilbert-simplex-geometry]] — Non-linear Embeddings in Hilbert Simplex Geometry
 - [[hmm-tutorial]] — Hidden Markov Model — Tutorial
@@ -309,8 +311,8 @@
 - [[jca-inverse-parameter-estimation]] — JCA 5-Parameter Inverse Estimation — Impedance Tube / Microstructure → JCA
 - [[jeffreys-prior-dimension-scaling]] — Jeffreys Prior Dimension Scaling — 표준 vs RIGOR 변형 분석
 - [[jepa-world-models]] — JEPA — Joint-Embedding Predictive Architecture
-- [[kalman-filter]] — Kalman Filter
 - [[kalman-filter-koopman-federated]] — Kalman Filter Aided Federated Koopman Learning — UKF for Partial Observations
+- [[kalman-filter]] — Kalman Filter
 - [[kalmannet]] — KalmanNet — Neural Network Aided Kalman Filtering for Partially Known Dynamics
 - [[kennedy-ohagan-calibration]] — Kennedy-[[anthony-ohagan|O'Hagan]] Framework for Computer Model Calibration
 - [[kernel-methods]] — Kernel Methods — An Introduction (Müller et al. 2001 Survey)
@@ -364,6 +366,7 @@
 - [[muon-optimizer]] — Muon Optimizer for LLM Training
 - [[natural-gradient-bayesian-filtering]] — Natural Gradient Bayesian Filtering — Geometry-Aware Gaussian Filtering
 - [[needle-punching-process-jca-mapping]] — Needle Punching Process — Microstructure — JCA Parameter Mapping
+- [[neural-ekf-structural-systems]] — Neural Extended Kalman Filter for Structural Systems — Liu, Chatzi et al. (2022)
 - [[neural-mpc-terminal-constraint]] — Neural MPC Terminal Constraint via HJ Reachability for Collision Avoidance
 - [[neural-ode-dynamical-systems]] — Neural ODE for Dynamical Systems
 - [[neural-ode]] — Neural ODE (Neural Ordinary Differential Equation)
@@ -382,8 +385,8 @@
 - [[pac-bayesian-epistemic-uncertainty]] — PAC-Bayesian Analysis of Epistemic Uncertainty in Variational Inference
 - [[pefno-physics-encoded-fno]] — PeFNO — Physics-Encoded Fourier Neural Operator for Divergence-Free Stress
 - [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
-- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)
 - [[physics-informed]] — Physics-Informed Machine Learning
+- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
 - [[pigg-graph-kalman-filter]] — PiGGO — Physics-Guided Graph Kalman Filter for Virtual Sensing
 - [[pi-jepa-surrogate-pretraining]] — PI-JEPA — Label-Free Surrogate Pretraining for Coupled Multiphysics Simulation
@@ -400,10 +403,10 @@
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
 - [[porous-nonwoven-homogenization]] — Porous Nonwoven Homogenization — Computational Homogenization & Compression Modeling
 - [[ppi-no]] — PPI-NO — Pseudo Physics-Informed Neural Operator
-- [[price-of-meaning]] — The Price of Meaning — No Escape Theorem for Semantic Memory
 - [[predictive-control-barrier-functions]] — Predictive Control Barrier Functions — Learning for Layered Safety-Critical Control
 - [[predictivity-neural-surrogates-multiscale-pde]] — Predictivity and Utility of Neural Surrogates of Multiscale PDEs — Critical Analysis
 - [[pressure-gain-combustion]] — Pressure Gain Combustion (PGC)
+- [[price-of-meaning]] — The Price of Meaning — No Escape Theorem for Semantic Memory
 - [[principal-component-analysis]] — Principal Component Analysis (PCA) — 선형 차원 축소
 - [[pseudo-differential-neural-operator]] — Pseudo-Differential Neural Operator (PDNO)
 - [[pseudo-hamiltonian-neural-networks]] — Pseudo-Hamiltonian Neural Networks (PHNN) for PDEs
@@ -414,7 +417,7 @@
 - [[riemannian-optimization]] — Riemannian Optimization
 - [[rigor-development]] — RIGOR Development — Differentiable SR-UKF Framework
 - [[rigor-filter]] — RIGOR Filter — Differentiable SR-UKF
-- [[rigor-geometry-of-memory-integration]] — RIGOR × Geometry of Memory — $d_{\text{eff}}$ 진단, GAC Adaptive UFI
+- [[rigor-geometry-of-memory-integration]] — RIGOR × Geometry of Memory Trilogy — Sigma Cloud Embedding & GAC-Inspired Adaptive UFI
 - [[rigor-heuristics-analysis]] — RIGOR Heuristic Analysis — Empirical Gaps & Theoretical Fixes
 - [[rigor-research-roadmap]] — RIGOR Research Roadmap — UKF + Sigma Cloud Conditioning
 - [[rigor-sigma-point-research]] — RIGOR Sigma Point Innovation — Research Landscape & Gap Analysis
@@ -498,4 +501,3 @@
 - [[sn-gan-vs-gan-lattice]] — SN-GAN vs GAN Lattice Simulations — GAN 안정화 방법 비교
 - [[transformer-vs-mamba]] — Transformer vs Mamba — Attention vs SSM 비교
 - [[vae-vs-gan]] — VAE vs GAN — Generative Model 비교
-

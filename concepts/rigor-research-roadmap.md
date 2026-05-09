@@ -15,6 +15,16 @@ confidence: high
 
 기존 differentiable filtering은 UKF의 sigma point를 dynamics propagation에만 사용하고, neural network conditioning에는 covariance (P_pred)나 innovation만 전달했다. RIGOR는 sigma point cloud 자체를 NN에 conditioning input으로 제공하여 UKF가 생성한 고차원 비선형 변형 정보를 dynamics 학습에 직접 활용한다.
 
+### 근본적 한계 발견 (2026-05-08, Deep Research)
+
+표준 UKF의 근본적 한계: **observation과 correlation이 있는 state만 추정 가능** (Grothe 2012). Bouc-Wen z는 observation y=x와 correlation 0 → UKF의 Kalman gain K_z ≈ 0 → z 추정 불가.
+
+이것은 RIGOR의 UFI+TE 실패의 **근본 원인**이며, 단순한 engineering 문제가 아니다. 가능한 해결 방향:
+
+1. **Pure NN (TE-only):** UKF 없이 Conv1D로 z 직접 추정. z corr 0.717 달성 (UFI+TE 0.416 대비 우수). 자유도는 높지만 UKF의 covariance 구조를 잃음.
+2. **UKF + HOC-UKF regularizer:** Grothe (2012)의 higher-order correlation formula를 UFI loss에 통합. 가장 principled한 접근.
+3. **UKF + 분리된 z estimator:** UKF는 x, v 추정에 집중하고, TE가 z를 따로 추정.
+
 ### Three Information Sources (orthogonal)
 
 | Source | Type | Content | Status |
@@ -67,7 +77,9 @@ confidence: high
 ## Wikilinks
 - [[rigor-development]] — Main RIGOR development page
 - [[rigor-heuristics-analysis]] — Heuristic audit and theoretical fixes
-- [[rigor-geometry-of-memory-integration]] — Geometry of Memory Trilogy 접목 분석: $d_{\text{eff}}$ 진단, GAC adaptive UFI
+- [[rigor-geometry-of-memory-integration]] — Geometry of Memory Trilogy 접목 분석
 - [[gating-ablation-2026-05-07]] — Gating ON vs OFF ablation
 - [[rigor-sigma-point-research]] — Research landscape and gap analysis
 - [[square-root-unscented-kalman-filter]] — Standard SR-UKF formulation
+- [[higher-order-correlation-ukf]] — Grothe (2012) HOC-UKF: 근본적 한계와 해결 방향
+- [[polynomial-unscented-kalman-filter]] — Cherian & Servadio (2026) Polynomial UKF

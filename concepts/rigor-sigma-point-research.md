@@ -155,6 +155,36 @@ mu_f = mu_pred + K @ innov_val
 
 ---
 
+### ⑦ Higher-Order Correlation UKF — Grothe (2012) ⭐
+
+**선행연구:** Grothe (2012), arXiv:1207.4300. "A higher order correlation unscented Kalman filter."
+
+**핵심 발견:** 표준 UKF/Gaussian filter는 **observation과 correlation이 있는 state만 추정 가능**하다는 근본적 한계. $P_{xy} \\approx 0$인 state (volatility, Bouc-Wen z)는 UKF가 추정하지 못함.
+
+**해결책:** Higher-order correlation (2차 이상 joint moment)을 measurement update에 포함 → continuous-discrete state space에서 explicit formula 유도.
+
+**RIGOR 연결:**
+- Bouc-Wen z correlation 문제의 **이론적 해결책을 정확히 명시한 유일한 논문**
+- UFI가 현재 heuristic하게 학습하는 것을 Grothe는 analytical formula로 정식화
+- **Loss function 수정:** Grothe의 HOC-UKF formula를 UFI regularizer로 사용 가능
+- **직접 실현:** UFI + Temporal Encoder의 정보 흐름을 Grothe의 analytical higher-order moment로 가이드
+
+**Bouc-Wen 특화 분석:**
+- Bouc-Wen z는 observation y=x와 **linear correlation 0**이지만, **2차 moment (z²-observation)** 는 nonzero (Bouc-Wen의 quadratic nonlinearity)
+- Grothe의 HOC-UKF는 이 2차 correlation을 measurement update에 포함
+- 현재 UFI가 학습하는 quadratic feature (tensored sigma points)가 이 higher-order correlation을 암시적으로 포착
+- 문제는 loss horizon K=4가 이 correlation 학습을 방해 → Grothe의 접근이 loss 구조 개선의 principled한 방향 제시
+
+**관련 접근:**
+- [[polynomial-unscented-kalman-filter]] — Servadio & Cherian (2026): Polynomial UKF via CUT. Grothe와 같은 higher-order moment를 활용하지만 measurement update 확장 방식에서 차이.
+- [[higher-order-unscented-transform]] — HOUT (4차 moment matching, 2021)
+
+**난이도:** 중간 (moment 계산 공식 구현 필요)
+**Impact:** 매우 높음 (z correlation 0.4 → 0.7+ 가능성)
+→ **추천: UFI+TE와 병행 연구. loss regularizer로 시작.**
+
+---
+
 ## 종합 Gap Matrix
 
 ```
@@ -166,7 +196,7 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 | **③' (UFI)** | **0건** | **★★★★★** | **낮음** | **높음** | **✅ 제안**
 | ④       2건       ★★☆☆☆    매우 낮음 중간    ⚠️ 결합 필요
 | ⑤       0건       ★★★★★    매우 높음 높음    📌 장기 과제
-| **⑥ Polynomial Update** | **1건 (Cherian & Servadio 2026)** | **★★★★☆** | **중간** | **높음** | **⏳ ①/③ 이후**
+| **⑥ Polynomial Update** | **1건 (Cherian & Servadio 2026)** | **★★★★☆** | **중간** | **높음** | **⏳ ①/③ 이후**\n| **⑦ HOC-UKF (Grothe 2012)** | **1건 (Grothe 2012)** | **★★★★☆** | **중간** | **매우 높음** | **⏳ UFI+TE와 병행**
 ```
 
 ## References
@@ -180,6 +210,9 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 7. Revach, G. et al. (2022). KalmanNet: Neural Network Aided Kalman Filtering for Partially Known Dynamics. *IEEE Trans. Signal Processing*.
 8. Bach, E. et al. (2025). Learning Enhanced Ensemble Filters. *J. Comp. Physics*. arXiv:2504.17836. — Set transformer 기반 implicit ensemble interaction (③ 유사 접근)
 9. Cherian & Servadio (2026). Polynomial Updates for the Unscented Kalman Filter. arXiv:2603.20259. — **⑥ Polynomial Update**의 선행연구
+10. Grothe, O. (2012). A higher order correlation unscented Kalman filter. arXiv:1207.4300. — **⑦ HOC-UKF**: observation과 uncorrelated인 state 추정을 위한 higher-order measurement update
+11. Liu, W., Lai, Z., Bacsa, K. & Chatzi, E. (2022). Neural Extended Kalman Filters for Learning and Predicting Dynamics of Structural Systems. *Structural Health Monitoring*, 2023. arXiv:2210.04165. — Neural EKF: learnable EKF for SHM
+12. Oh, S., Song, J. & Kim, T. (2024). Deep learning-based modularized loading protocol for parameter estimation of Bouc-Wen class models. arXiv:2411.02776. — CNN-based Bouc-Wen parameter ID
 
 ## Wikilinks
 - [[differentiable-sigma-point-quadrature]] — RIGOR sigma point quadrature
