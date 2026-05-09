@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-09 | Total pages: 496
+> Last updated: 2026-05-09 | Total pages: 498
 
 ## Entities
 - [[acoustipy]] — acoustipy — Python Transfer Matrix Method Package
@@ -198,6 +198,7 @@
 - [[bayesian-uncertainty-vision]] — Aleatoric & Epistemic Uncertainty in Deep Learning
 - [[bert]] — BERT (Bidirectional Encoder Representations from Transformers)
 - [[bouc-wen-dl-parameter-estimation]] — Deep Learning-Based Bouc-Wen Parameter Estimation — Oh, Song & Kim (2024)
+- [[bouc-wen-filter-landscape]] — Bouc-Wen in Estimator/Filter Research Landscape
 - [[brain-active-inference]] — BRAIN — Bayesian Reasoning via Active Inference for Agentic Intelligence
 - [[building-acoustic-standards]] — 건축 음향 규격 — 층간소음 기준 및 흡음 등급
 - [[buisson-fenet-kkl-observer]] — Buisson-Fenet KKL Observer — Recognition Models for Neural ODEs from Partial Observations

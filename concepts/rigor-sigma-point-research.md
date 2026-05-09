@@ -159,7 +159,7 @@ mu_f = mu_pred + K @ innov_val
 
 **선행연구:** Grothe (2012), arXiv:1207.4300. "A higher order correlation unscented Kalman filter."
 
-**핵심 발견:** 표준 UKF/Gaussian filter는 **observation과 correlation이 있는 state만 추정 가능**하다는 근본적 한계. $P_{xy} \\approx 0$인 state (volatility, Bouc-Wen z)는 UKF가 추정하지 못함.
+**핵심 발견:** 표준 UKF/Gaussian filter는 **observation과 correlation이 있는 state만 추정 가능**하다는 근본적 한계. $P_{xy} \\\\approx 0$인 state (volatility, Bouc-Wen z)는 UKF가 추정하지 못함. → [[bouc-wen-filter-landscape]] 참조
 
 **해결책:** Higher-order correlation (2차 이상 joint moment)을 measurement update에 포함 → continuous-discrete state space에서 explicit formula 유도.
 

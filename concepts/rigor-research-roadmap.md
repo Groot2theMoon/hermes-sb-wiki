@@ -17,7 +17,7 @@ confidence: high
 
 ### 근본적 한계 발견 (2026-05-08, Deep Research)
 
-표준 UKF의 근본적 한계: **observation과 correlation이 있는 state만 추정 가능** (Grothe 2012). Bouc-Wen z는 observation y=x와 correlation 0 → UKF의 Kalman gain K_z ≈ 0 → z 추정 불가.
+표준 UKF의 근본적 한계: **observation과 correlation이 있는 state만 추정 가능** (Grothe 2012). Bouc-Wen z는 observation y=x와 correlation 0 → UKF의 Kalman gain K_z ≈ 0 → z 추정 불가. ([[bouc-wen-filter-landscape]] 참조)
 
 이것은 RIGOR의 UFI+TE 실패의 **근본 원인**이며, 단순한 engineering 문제가 아니다. 가능한 해결 방향:
 

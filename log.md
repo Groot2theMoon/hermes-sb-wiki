@@ -1442,3 +1442,11 @@
 
 - **Index rebuilt:** header updated, 3 entries added alphabetically
 - **총 페이지:** 493 → 496 (+3)
+
+## [2026-05-09] deep-research | Bouc-Wen Filtering Landscape — 종합 분석
+
+- **Raw Source:** raw/papers/phylstm-bouc-wen.md — Zhang, Liu & Sun (2020), PhyLSTM for Bouc-Wen hysteresis (arXiv:2002.10253)
+- **Created Concept:** [[bouc-wen-filter-landscape]] — Bouc-Wen in Estimator/Filter Research (4개 계열 분석 + RIGOR gap analysis)
+- **Backfill:** rigor-sigma-point-research.md, higher-order-correlation-ukf.md, rigor-research-roadmap.md → [[bouc-wen-filter-landscape]] wikilink 추가
+- **발견:** Differentiable SR-UKF + Bouc-Wen 조합은 RIGOR가 최초. 기존 연구는 parameter ID 또는 pure DL surrogate에 집중.
+- **총 페이지:** 496 → 498 (+2)
