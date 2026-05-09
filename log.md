@@ -1404,3 +1404,41 @@
   - [[rigor-research-roadmap]] — Direction ③ 상세 설계 추가 (Virtual Measurement): TE→pseudo-z→UKF obs augment; H=[[1,0,0],[0,0,1]]; loss on x-dim only; TE/UKF/UFI 역할 분리 명시
   - [[rigor-sigma-point-research]] — Item ⑧ Virtual Measurement 추가 (진행 중 test_E)
 - **실험 상태:** test_E (virtual measurement approach), SSH WSL sandbox에서 background 실행 중 (4000 iter, CPU)
+
+## [2026-05-09] trending-scan | Script timeout → arXiv web_search fallback | 3 new concept pages
+
+- **Script error:** trending-papers-wrapper.py timed out (110s) — used `web_search` arXiv fallback (skill-recommended recovery)
+- **Scanned:** cs.LG, cs.CE, cs.AI, physics.comp-ph, eess.SY categories (2605 timeframe) via `site:arxiv.org 2605` queries
+- **Tier 2 papers identified:** ~20 papers reviewed, 3 selected for concept pages
+
+- **New concept pages (3):**
+  - [[hycop-hybrid-composition-operators]] — HyCOP: Hybrid Composition Operators for Interpretable PDE Learning (arXiv:2605.00820)
+  - [[equation-free-digital-twin-koopman]] — Equation-Free Digital Twin: Koopman-based DT for Nonlinear Structural Dynamics (arXiv:2605.00950)
+  - [[hyparlyve-neural-lyapunov-verification]] — HyParLyVe: Hyperplane Partitioning for Neural Lyapunov Verification (arXiv:2605.03992)
+
+- **Already covered (from previous scans):**
+  - arXiv:2605.02871 (Multi-fidelity composites review) → [[multi-fidelity-surrogate-composites]] ✅
+  - arXiv:2605.00509 (PeFNO) → [[pefno-physics-encoded-fno]] ✅
+  - arXiv:2605.00385 (PILIR) → [[pilir-physics-informed-local-implicit]] ✅
+  - arXiv:2605.02280 (VMLFN) → [[vmlfn-variational-matrix-learning-fourier]] ✅
+  - arXiv:2605.00760 (Helmholtz DeepONet) → [[deeponet-helmholtz-sdf-geometry]] ✅
+
+- **Deferred (Tier 3, no pages):**
+  - 2605.00863 — PINN form-finding of membrane structures
+  - 2605.04708 — Differentiable Chemistry in PINNs for stiff reactions
+  - 2605.04229 — Autoencoder/PCA for phase-field acceleration
+  - 2605.00330 — Conformalized Quantum DeepONet
+  - 2605.05530 — Energy Generative Modeling (Lyapunov-based)
+  - 2605.05989 — Verifiable Model-Free Safety Filters via RL
+  - 2605.04853 — HIN-LRI: Hybrid Neural Low-Regularity Integrator
+  - 2605.06281 — INEUS: Iterative Neural Solver for PIDEs
+  - 2604.16621 — Physics-informed GAN for funicular shells
+  - 2605.02524 — PINN for greenhouse climate dynamics
+  - 2605.00070 — CRADIPOR: crash dispersion predictor
+  - 2605.01090 — Sampled-data robust control of stimulated tissue
+  - 2605.03086 — iGENE: differentiable gyrokinetic code in TF
+  - 2605.01195 — TAIL-Safe: Task-Agnostic Safety Monitoring
+  - 2605.02790 — Compositional Neural-CPS Verification
+
+- **Index rebuilt:** header updated, 3 entries added alphabetically
+- **총 페이지:** 493 → 496 (+3)

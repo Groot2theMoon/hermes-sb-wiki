@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-08 | Total pages: 492
+> Last updated: 2026-05-09 | Total pages: 496
 
 ## Entities
 - [[acoustipy]] — acoustipy — Python Transfer Matrix Method Package
@@ -257,6 +257,7 @@
 - [[elmo]] — ELMo (Deep Contextualized Word Representations)
 - [[em-kalman-smoother-noise-covariance]] — EM-Kalman Smoother — Analytical Noise Covariance Update (Shumway-Stoffer)
 - [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
+- [[equation-free-digital-twin-koopman]] — Equation-Free Digital Twin — Koopman-Based DT for Structural Dynamics
 - [[ensemble-kalman-filter]] — Ensemble Kalman Filter (EnKF)
 - [[ensemble-loss-landscape]] — Deep Ensembles — Loss Landscape Perspective
 - [[epiplexity]] — Epiplexity — Structural Information for Computationally Bounded Observers
@@ -297,6 +298,8 @@
 - [[hilbert-simplex-geometry]] — Non-linear Embeddings in Hilbert Simplex Geometry
 - [[hmm-tutorial]] — Hidden Markov Model — Tutorial
 - [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
+- [[hycop-hybrid-composition-operators]] — HyCOP — Hybrid Composition Operators for Interpretable PDE Learning
+- [[hyparlyve-neural-lyapunov-verification]] — HyParLyVe — Hyperplane Partitioning for Neural Lyapunov Verification
 - [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
 - [[hybrid-fno-lbm]] — Hybrid FNO-LBM — Fourier Neural Operator-Lattice Boltzmann Method Coupling
 - [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
