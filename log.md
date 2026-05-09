@@ -1384,6 +1384,21 @@
 - **RIGOR 관련성:** Grothe (2012)가 Bouc-Wen z 추정 실패의 근본 원인을 정확히 명시. UFI + TE의 loss design에 Grothe의 HOC-UKF formula를 regularizer로 통합하는 방향 제시.
 - **총 페이지:** 488 → 492 (+4)
 
+## [2026-05-09] ingest | 3 papers — User-sent PDFs (Turner, Cui, Dunik)
+
+- **Raw sources (3):**
+  - raw/papers/turner10-sigma-point-learning.md — Turner & Rasmussen: UKF sigma point learning (Neurocomputing 2012)
+  - raw/papers/cui17-improved-ckf-sigma-transform.md — Cui, Chen & Tang: Improved CKF for GNSS/INS (IEEE TSP 2017)
+  - raw/papers/dunik12-ukf-adaptive-scaling.md — Dunik, Simandl & Straka: UKF adaptive scaling (IEEE TAC 2012)
+- **Updated Concept pages (3):**
+  - [[ukf-learning-sigma-points]] — added raw file turner10 (was turras10 only)
+  - [[improved-ckf-gnss-ins]] — added raw file cui17 (was arxiv only), wikilink [[bing-cui]]
+  - [[ukf-scaling-adaptive-dunik]] — added raw file dunik12 (was arxiv only)
+- **New Entity (1):**
+  - [[bing-cui]] — First author of improved CKF, Southeast University
+- **총 페이지:** 492 → 493 (+1)
+- **RIGOR 관련성:** Sigma point learning (Turner), posterior sigma-point transform (Cui), UKF scaling (Dunik) 모두 RIGOR의 sigma cloud conditioning 연구와 직접 연결됨
+
 ## [2026-05-09] update | Virtual Measurement 접근법 wiki 기록
 - **Updated Concepts (2):**
   - [[rigor-research-roadmap]] — Direction ③ 상세 설계 추가 (Virtual Measurement): TE→pseudo-z→UKF obs augment; H=[[1,0,0],[0,0,1]]; loss on x-dim only; TE/UKF/UFI 역할 분리 명시

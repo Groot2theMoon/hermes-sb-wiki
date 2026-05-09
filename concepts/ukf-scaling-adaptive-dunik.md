@@ -1,11 +1,12 @@
 ---
 title: "UKF Scaling Parameter — Analysis and Adaptive Setting"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-09
 type: concept
 tags: [ukf, scaling-parameter, adaptive-filtering, nonlinear-estimation, ieee-tac]
 sources:
   - raw/papers/ukf-scaling-adaptive-setting.md
+  - raw/papers/dunik12-ukf-adaptive-scaling.md
 confidence: high
 ---
 

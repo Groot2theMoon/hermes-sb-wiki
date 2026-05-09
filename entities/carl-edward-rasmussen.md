@@ -1,7 +1,7 @@
 ---
 title: Carl Edward Rasmussen
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-09
 type: entity
 tags: [person, researcher, cambridge, gaussian-process, machine-learning]
 confidence: high

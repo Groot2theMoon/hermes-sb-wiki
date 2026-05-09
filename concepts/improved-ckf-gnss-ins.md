@@ -1,11 +1,12 @@
 ---
 title: "Improved Cubature Kalman Filter for GNSS/INS — Posterior Sigma-Point Error Transformation"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-09
 type: concept
 tags: [ckf, gnss, ins, navigation, sigma-point, nonlinear-filtering, ieee-tsp]
 sources:
   - raw/papers/improved-ckf-gnss-ins.md
+  - raw/papers/cui17-improved-ckf-sigma-transform.md
 confidence: medium
 ---
 
@@ -48,6 +49,7 @@ $P_{k|k} = P_{k|k-1} - K_k P_{zz,k} K_k^T$ (표준)
 | 재획득 후 | 느린 수렴 | 빠른 수렴 |
 
 ## Wikilinks
+- [[bing-cui]] — First author
 - [[square-root-unscented-kalman-filter]] — SR-UKF (square-root form)
 - [[generalized-gaussian-cubature]] — Generalized Gaussian Cubature (Linares & Crassidis)
 - [[multi-scaled-ukf]] — Multi-scaled UKF

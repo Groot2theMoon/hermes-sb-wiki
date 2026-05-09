@@ -1,11 +1,12 @@
 ---
 title: "UKF-L — Model Based Learning of Sigma Points"
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-09
 type: concept
 tags: [ukf, sigma-point, learning, bayesian, gaussian-process, nonlinear-filtering]
 sources:
   - raw/papers/turras10.md
+  - raw/papers/turner10-sigma-point-learning.md
 confidence: high
 ---
 

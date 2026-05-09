@@ -1,7 +1,7 @@
 ---
 title: "Ryan Turner"
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-09
 type: entity
 tags: [researcher, gaussian-process, bayesian-optimization, uncertainty-quantification, uber]
 confidence: medium
