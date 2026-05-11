@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-09 | Total pages: 498
+> Last updated: 2026-05-11 | Total pages: 502
 
 ## Entities
 - [[acoustipy]] — acoustipy — Python Transfer Matrix Method Package
@@ -347,6 +347,7 @@
 - [[lyapunov-stable-nn-control]] — Lyapunov-Stable Neural Network Control — Certified Stability via NN + Quadratic Programming
 - [[machine-collective-intelligence]] — Machine Collective Intelligence for Explainable Scientific Discovery
 - [[mach-number-and-flow-regimes]] — Mach Number and Flow Regimes — Subsonic to Hypersonic
+- [[maka-physics-multi-agent-manufacturing]] — MAKA — Physics-Grounded Multi-Agent Architecture for Manufacturing Decision Support
 - [[mamba]] — Mamba — Linear-Time Sequence Models with Selective SSMs
 - [[maml-kalmannet]] — MAML-KalmanNet — Neural Network-Assisted Kalman Filter Based on Model-Agnostic Meta-Learning
 - [[ma-ukf-meta-adaptive]] — MA-UKF — Meta-Adaptive Unscented Kalman Filter
@@ -397,6 +398,7 @@
 - [[pilir-physics-informed-local-implicit]] — PILIR — Physics-Informed Local Implicit Representation for Spectral Bias Mitigation
 - [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail
 - [[pinn-high-speed-flows]] — Physics-Informed Neural Networks for High-Speed Flows
+- [[pinn-learnable-blending-transfer]] — PINN with Learnable Loss Blending & Transfer Learning — Adaptive PINN for Data-Scarce Problems
 - [[pinn-lyapunov-functions]] — PINN Lyapunov Functions — PDE Characterization, Learning, and Verification
 - [[pinn-ukf]] — PINN-UKF — Physics-Informed Neural Network + Adaptive UKF
 - [[pinode-physics-informed-neural-ode]] — PINODE (Physics-Informed Neural ODE)
@@ -417,6 +419,7 @@
 - [[quadratic-iss-lyapunov]] — Quadratic ISS Lyapunov Functions for Linear Analytic Systems
 - [[recursive-kalmannet]] — Recursive KalmanNet — Deep Learning-Augmented Kalman Filtering with Consistent Uncertainty Quantification
 - [[ren-recurrent-equilibrium-networks]] — REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness
+- [[replay-continual-learning-pino]] — Replay-Based Continual Learning for Physics-Informed Neural Operators — Catastrophic Forgetting Mitigation
 - [[residual-networks]] — Residual Networks (ResNet)
 - [[riemannian-optimization]] — Riemannian Optimization
 - [[rigor-development]] — RIGOR Development — Differentiable SR-UKF Framework
@@ -475,6 +478,7 @@
 - [[uq-aeroelasticity]] — Uncertainty Quantification in Aeroelasticity
 - [[variational-autoencoder]] — Variational Autoencoder (VAE)
 - [[variational-autoregressive-networks]] — Variational Autoregressive Networks for Statistical Mechanics
+- [[variational-kolosov-muskhelishvili-network]] — Variational Kolosov–Muskhelishvili Network — Physics-Encoded NN for Elasticity & Fracture
 - [[vdp-benchmark-v2-v3]] — 
 - [[vmlfn-variational-matrix-learning-fourier]] — VMLFN — Variational Matrix-Learning Fourier Networks for Multiphysics Surrogates
 - [[vvuq-framework]] — Verification, Validation, and Uncertainty Quantification (VV&UQ) Framework

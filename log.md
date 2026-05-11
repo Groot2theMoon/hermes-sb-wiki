@@ -1450,3 +1450,17 @@
 - **Backfill:** rigor-sigma-point-research.md, higher-order-correlation-ukf.md, rigor-research-roadmap.md → [[bouc-wen-filter-landscape]] wikilink 추가
 - **발견:** Differentiable SR-UKF + Bouc-Wen 조합은 RIGOR가 최초. 기존 연구는 parameter ID 또는 pure DL surrogate에 집중.
 - **총 페이지:** 496 → 498 (+2)
+## [2026-05-11] trending-scan | Script timeout → arXiv web_search fallback | 4 new concept pages
+
+- **Script error:** trending-papers-wrapper.py timed out (110s) — used `web_search` arXiv fallback (skill-recommended recovery with MCP 429 fallback)
+- **Scanned:** cs.LG, cs.CE, cs.AI, physics.comp-ph, math.NA categories (2605 timeframe) via `site:arxiv.org 2605` queries
+- **Tier 2 papers reviewed:** ~30 papers reviewed, 4 selected for concept pages
+
+- **New concept pages (4):**
+  - [[replay-continual-learning-pino]] — Replay-Based Continual Learning for PINOs (arXiv:2605.04832)
+  - [[variational-kolosov-muskhelishvili-network]] — Variational Kolosov-Muskhelishvili Network for Elasticity and Fracture (arXiv:2605.02310)
+  - [[pinn-learnable-blending-transfer]] — PINN with Learnable Loss Blending and Transfer Learning (arXiv:2605.05217)
+  - [[maka-physics-multi-agent-manufacturing]] — MAKA — Physics-Grounded Multi-Agent Architecture for Manufacturing (arXiv:2605.04003)
+
+- **Index rebuilt:** header updated, 4 entries added alphabetically
+- **Total pages:** 498 → 502 (+4)
