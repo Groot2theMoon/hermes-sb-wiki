@@ -142,6 +142,8 @@ $$\mathcal{L}_{\text{total}} = \lambda_d \mathcal{L}_{\text{data}} + \lambda_p \
 - [[ai-hallucination-physics]] — 물리 AI의 환각 현상
 - [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net
 - [[generative-models-physics]] — 생성 모델의 물리학 응용
+- [[nn-poly-dynamical-system-constraints]] — NN-Poly: 학습된 NN을 Taylor 다항식으로 변환하여 물리 제약 적용
+- [[kernel-operator-bayesian-filter]] — RKHS 기반 Functional Bayesian Filter
 
 ## 2026년 최신 동향
 

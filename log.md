@@ -1464,3 +1464,23 @@
 
 - **Index rebuilt:** header updated, 4 entries added alphabetically
 - **Total pages:** 498 → 502 (+4)
+
+## [2026-05-11] ingest | 2 papers — Kernel Operator Bayesian Filter + NN-Poly
+
+- **Raw sources (2):**
+  - raw/papers/kernel-operator-bayesian-filter-2411.00198.md — Kernel Operator-Theoretic Bayesian Filter (Li & Principe, arXiv:2411.00198, 2024)
+  - raw/papers/nn-poly-zhu22.md — NN-Poly: NN to Taylor Polynomial for dynamical system constraints (Zhu et al., Frontiers in Robotics and AI, 2022)
+
+- **Concept pages (2):**
+  - [[kernel-operator-bayesian-filter]] — RKHS + Koopman 융합 Functional Bayesian Filter (Li & Principe, 2024)
+  - [[nn-poly-dynamical-system-constraints]] — NN-Poly: learned NN to Taylor polynomial for physical constraints (Zhu et al., 2022)
+
+- **Entity pages (4):**
+  - [[kan-li]] — Kan Li, CNEL, University of Florida
+  - [[jose-c-principe]] — Jose C. Principe, CNEL Director, University of Florida
+  - [[frances-zhu]] — Frances Zhu, University of Hawaii
+  - [[silvia-ferrari]] — Silvia Ferrari, Cornell University
+
+- **Backfill:** koopman-operator-theory -> kernel-operator-bayesian-filter, kernel-methods -> kernel-operator-bayesian-filter, physics-informed -> nn-poly-dynamical-system-constraints + kernel-operator-bayesian-filter
+
+- Total pages: 502 -> 507

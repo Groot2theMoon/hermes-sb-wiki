@@ -55,6 +55,7 @@ This provides a global linear representation of the nonlinear dynamics — akin 
 - [[information-koopman-representation]] — Information shapes Koopman representation
 - [[koopman-resolvent-dynamics]] — Koopman-resolvent framework
 - [[koopman-learner-continual-lifting]] — Continual learning of Koopman dynamics
+- [[kernel-operator-bayesian-filter]] — RKHS + Koopman 융합 Functional Bayesian Filter (Li & Príncipe, 2024)
 
 ## References
 - Koopman, B. O. (1931). Hamiltonian Systems and Transformation in Hilbert Space. *Proc. Natl. Acad. Sci.*, 17(5), 315–318.

@@ -92,3 +92,4 @@ $$ \max_{\alpha} \sum_i \alpha_i - \frac{1}{2}\sum_{i,j} \alpha_i \alpha_j y_i y
 - [[kernel-pca]] — Kernel PCA 상세
 - [[neural-tangent-kernel]] — NTK: 딥러닝과 커널 방법의 연결
 - [[hilbert-simplex-geometry]]
+- [[kernel-operator-bayesian-filter]] — RKHS 기반 Functional Bayesian Filter: 비선형 동역학계를 위한 커널 방법 + Bayesian filtering
