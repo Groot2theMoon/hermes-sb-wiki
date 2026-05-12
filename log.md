@@ -1484,3 +1484,17 @@
 - **Backfill:** koopman-operator-theory -> kernel-operator-bayesian-filter, kernel-methods -> kernel-operator-bayesian-filter, physics-informed -> nn-poly-dynamical-system-constraints + kernel-operator-bayesian-filter
 
 - Total pages: 502 -> 507
+
+## [2026-05-11] create | RIGOR v3 Design Philosophy
+- **New:** [[rigor-design-philosophy-v3]] — A+NN partition philosophy, UFI as gradient routing, structural skeleton, basis expansion proposal
+- **Source:** Synthesis of v3.x ablation experiments (projection ON/OFF, UFI ON/OFF, structural skeleton) across Duffing and VDP
+
+## [2026-05-12] trending-scan | May 12, 2026 — PILIR, Iso-FNO, Constitutive Priors | 3 new concept(s), 0 updated
+- **New concepts (3):**
+  - [[pilir-physics-informed-local-implicit]] — PILIR: Local implicit representation for PINN spectral bias mitigation (Li, Wang, Tang 2026, arXiv:2605.00385)
+  - [[isotropic-fourier-neural-operator]] — Iso-FNO: Symmetry-preserving FNO with up to 96× parameter reduction (Staddon 2026, arXiv:2605.02597)
+  - [[constitutive-priors-inverse-design]] — End-to-end elastic network inverse design via constitutive priors (Han, Bahmani 2026, arXiv:2605.09307)
+- **Already in wiki (skipped):** 2605.02871 (multi-fidelity composites review ✓), 2605.04832 (replay CL PINO ✓), 2605.05217 (learnable blending PINN ✓), 2605.00509 (PeFNO ✓), 2605.02280 (VMLFN ✓), 2605.00760 (DeepONet Helmholtz SDF ✓)
+- **Script:** Trending wrapper returned 0 papers (API failure) → manual scan via web_search recovery per Pitfall #9
+- **MCP:** 429 rate-limited → switched to web_search (Pitfall #10)
+- Total pages: 507 → 510

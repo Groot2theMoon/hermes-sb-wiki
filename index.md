@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-11 | Total pages: 507
+> Last updated: 2026-05-12 | Total pages: 510
 
 ## Entities
 
@@ -219,6 +219,7 @@
 - [[compressible-flow-governing-equations]] — Compressible Flow Governing Equations — Gas Dynamics 1
 - [[conditional-gaussian-koopman-network]] — Conditional Gaussian Koopman Network (CGKN)
 - [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
+- [[constitutive-priors-inverse-design]] — Constitutive Priors for Inverse Design — End-to-End Elastic Network Design
 - [[continual-learning-physical-systems]] — Continual Learning for Physical Systems — Particle Accelerator Case Study
 - [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
 - [[deep-delta-learning]] — Deep Delta Learning — Householder Reflection as Learnable Residual Connections
@@ -318,6 +319,7 @@
 - [[infrastructure-notes]] — Infrastructure Notes — Cloud GPU Compute & Local Setup
 - [[isentropic-relations]] — Isentropic Relations — Thermodynamic Derivation for Gas Dynamics
 - [[isomap]] — Isomap — Isometric Feature Mapping
+- [[isotropic-fourier-neural-operator]] — Iso-FNO — Isotropic Fourier Neural Operators for Symmetry-Preserving PDE Learning
 - [[iss-lyapunov-theory]] — ISS Lyapunov Theory for Infinite-Dimensional Systems
 - [[jca-inverse-parameter-estimation]] — JCA 5-Parameter Inverse Estimation — Impedance Tube / Microstructure → JCA
 - [[jeffreys-prior-dimension-scaling]] — Jeffreys Prior Dimension Scaling — 표준 vs RIGOR 변형 분석
@@ -431,6 +433,7 @@
 - [[replay-continual-learning-pino]] — Replay-Based Continual Learning for Physics-Informed Neural Operators
 - [[residual-networks]] — Residual Networks (ResNet)
 - [[riemannian-optimization]] — Riemannian Optimization
+- [[rigor-design-philosophy-v3]] — RIGOR v3 Design Philosophy — A+NN Partition, UFI, Structural Skeleton
 - [[rigor-development]] — RIGOR Development — Differentiable SR-UKF Framework
 - [[rigor-filter]] — RIGOR Filter — Differentiable SR-UKF
 - [[rigor-geometry-of-memory-integration]] — RIGOR × Geometry of Memory Trilogy — Sigma Cloud Embedding & GAC-Inspired Adaptive UFI
