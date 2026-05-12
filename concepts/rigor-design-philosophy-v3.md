@@ -1,7 +1,7 @@
 ---
 title: "RIGOR v3 Design Philosophy — A+NN Partition, UFI, Structural Skeleton"
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-12
 type: concept
 tags: [rigor, kalman-filter, differentiable-filtering, architecture, design-philosophy, ufi]
 sources: []
@@ -112,6 +112,8 @@ The main direction to resolve the central tension:
 - w_k are scalar **learnable but interpretable**
 - A's expressivity ↑ → NN burden ↓ → "A as main" achievable
 - Still non-blackbox (each basis has physical meaning)
+
+**→ Generalization:** [[koopman-lifting-rigor|Koopman Lifting]] (2026-05-12 deep-research) — polynomial/kernel-based state augmentation으로 A를 lifted space로 확장. Physics-specific basis 대신 universal polynomial/RFF lifting을 통해 **어떤 비선형 시스템에도 적용 가능**. Lifted A에 contractivity LMI 직접 적용 가능.
 
 ### Near-term Plan
 
