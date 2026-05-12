@@ -65,4 +65,4 @@ This paper is **directly relevant** to the [[rigor-filter|RIGOR Filter]] project
 - **Observation model** — Both handle time-varying $H_t$, but RIGOR adds nonlinear observation models via the unscented transform.
 - **Dynamics modeling** — This paper uses neural network residual corrections; RIGOR uses the structured A+NN hybrid with Lur'e contractivity.
 
-See also: [[differentiable-filter-kloss]], [[differentiable-enkf]], [[kalman-filter]], [[state-space-model]]
+See also: [[differentiable-filter-kloss]], [[differentiable-enkf]], [[kalman-filter]], [[state-space-model]], [[variational-bayes-adaptive-kalman-filter]]

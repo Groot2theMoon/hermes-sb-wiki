@@ -68,4 +68,5 @@ All experiments: VDP μ=1.0, dt=0.1, steps=300, obs_std=0.3, SR-UKF (no KKL), 50
 - Position-velocity trade-off 해결을 위한 loss 구조 개선 (normalized loss?)
 - Parameter-conditioned A+NN (RIGOR++: mu를 입력으로)
 - Delay embedding (Takens)으로 관측 augment
+- **VB 기반 adaptive noise covariance** — [[variational-bayes-adaptive-kalman-filter]] 참조
 - 다양한 dynamics family에서의 벤치마크

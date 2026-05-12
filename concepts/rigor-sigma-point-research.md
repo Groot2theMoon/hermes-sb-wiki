@@ -231,6 +231,7 @@ Idea    선행연구  Novelty   난이도  Impact   추천
 - [[exact-affine-conditioning-ensemble-kalman-update]] — Exact Affine Conditioning beyond Gaussians (Jorgensen & Marzouk, 2025)
 - [[set-transformer]] — Set Transformer: Attention-based Permutation-Invariant NN (Lee et al., 2019)
 - [[robust-filter-attention]] — Robust Filter Attention: Self-Attention as Parallel Filter (Racioppo, 2025)
+- [[variational-bayes-adaptive-kalman-filter]] — VB 기반 adaptive noise covariance for KF
 
 ## Experiment Updates (2026-05-05)
 
