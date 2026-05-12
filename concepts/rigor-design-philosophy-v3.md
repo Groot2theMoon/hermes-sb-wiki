@@ -46,7 +46,7 @@ confidence: high
 
 ### UFI as Gradient Routing Device
 
-UFI ([[UFI|Uncertainty Feature Injection]]) is NOT just a performance boost — it's a **gradient routing mechanism**:
+UFI ([[unscented-feature-interaction|UFI]]) is NOT just a performance boost — it's a **gradient routing mechanism**:
 - Sigma point mean/std → NN learns "what A has already covered" via information channel
 - UFI ON → NN gradient flows more stably toward velocity correction
 - UFI OFF → NN receives competing position and velocity gradients → collapse under high LR

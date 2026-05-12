@@ -110,4 +110,4 @@ KKF 스타일의 kernel-based lifting을 JAX로 differentiable하게 구현.
 - [[shima-contractivity-lure]] — Contractivity LMI for Lur'e systems
 - [[differentiable-lmi-contractivity]] — Gokhale-Bullo exact parameterization
 - [[rigor-filter]] — Differentiable SR-UKF
-- [[UFI]] — Uncertainty Feature Injection
+- [[unscented-feature-interaction]] — Uncertainty Feature Injection
