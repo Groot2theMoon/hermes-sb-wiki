@@ -73,7 +73,12 @@ R_s = c_p − c_v 관계는 thermally/calorically perfect gas에서 성립하며
 - [[stagnation-properties]] — total/stagnation 조건 유도
 - [[compressible-flow-governing-equations]] — 에너지 방정식의 열역학적 폐쇄
 
-## MATLAB 실습 — GD1 Tutorial 1 (Isentropic Flow Relations)
+## MATLAB 실습 — GD1 Tutorial 1 & 2
+
+- Tutorial 1: Isentropic Relations 계산 및 플로팅 (`raw/papers/gd1-tutorial-1-isentropic-relations-matlab.md`)
+- [[laval-nozzle-quasi-1d-flow]] — Tutorial 2: Laval Nozzle Quasi-1D 유동 해석
+
+### Tutorial 1 (Isentropic Flow Relations)
 
 ### 개요
 

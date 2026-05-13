@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-13 | Total pages: 521
+> Last updated: 2027-05-13 | Total pages: 521
      5|
      6|## Entities
      7|
@@ -350,6 +350,7 @@
    345|- [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
    346|- [[lagrangian-koopman-network]] — LaCGKN — Lagrangian Conditional Gaussian Koopman Network
    347|- [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
+   347|- [[laval-nozzle-quasi-1d-flow]] — Laval Nozzle — Quasi-1D Isentropic Flow (GD1 Tutorial 2)
    348|- [[lbdn-lipschitz-bounded-networks]] — LBDN — Lipschitz-Bounded Deep Networks via Direct Parameterization
    349|- [[lenet-5]] — LeNet-5 — Gradient-Based Learning for Document Recognition
    350|- [[lesnets-pino-wall-turbulence]] — LESnets — Physics-Informed Neural Operator for Wall-Bounded Turbulence

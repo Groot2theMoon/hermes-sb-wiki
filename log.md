@@ -45,3 +45,15 @@
   - [[physpring-gnn-twin-reduction]] — PhySPRING: Structure-Preserving Reduction of Physics-Informed Twins via GNN
 - **기존 페이지 확인됨:** VMLFN (arXiv:2605.02280), multi-fidelity-surrogate-composites (arXiv:2605.02871) — 이미 존재하므로 업데이트 생략
 - Total pages: 516 → 521
+
+
+## [2026-05-13] ingest | GD1 Tutorial 2 — Laval Nozzle (MATLAB)
+
+- **Raw source (1):**
+  - raw/papers/gd1-tutorial-2-laval-nozzle.md — Gas Dynamics 1 Tutorial 2: Laval nozzle isentropic flow simulation (MATLAB)
+- **New concept (1):**
+  - concepts/laval-nozzle-quasi-1d-flow.md — Laval Nozzle — Quasi-1D Isentropic Flow with MATLAB tutorial
+- **Wikilink backfill:**
+  - Added [[laval-nozzle-quasi-1d-flow]] to related concept pages
+- **Tags:** fluid-dynamics, thermodynamics, mechanics, exercise
+- **Total pages:** 521 → 522
