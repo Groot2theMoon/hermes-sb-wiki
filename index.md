@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-12 | Total pages: 516
+> Last updated: 2026-05-13 | Total pages: 521
      5|
      6|## Entities
      7|
@@ -216,8 +216,9 @@
    215|- [[building-acoustic-standards]] — 건축 음향 규격 — 층간소음 기준 및 흡음 등급
    216|- [[buisson-fenet-kkl-observer]] — Buisson-Fenet KKL Observer — Recognition Models for Neural ODEs from Partial Observations
    217|- [[canonical-correlation-analysis]] — Canonical Correlation Analysis (CCA) — CCA, kCCA, tkCCA, CTA
-   218|- [[canonical-form-nonlinear-discrete-models]] — Canonical Form of Nonlinear Discrete-Time Models
-   219|- [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
+- [[canonical-form-nonlinear-discrete-models]] — Canonical Form of Nonlinear Discrete-Time Models
+- [[cato-charted-attention-operator]] — CATO — Charted Attention for Neural PDE Operators on General Geometries
+- [[causal-semantic-xai-segmentation]]
    220|- [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
    221|- [[centimeter-scale-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
    222|- [[cloud-gpu-compute-platforms]] — Cloud GPU Compute Platforms — Modal vs RunPod vs Beam
@@ -226,8 +227,9 @@
    225|- [[conditional-gaussian-koopman-network]] — Conditional Gaussian Koopman Network (CGKN)
    226|- [[conditional-normalizing-flow-lattice]] — Conditional Normalizing Flow (C-NF) for Lattice Field Theory Sampling
    227|- [[constitutive-priors-inverse-design]] — Constitutive Priors for Inverse Design — End-to-End Elastic Network Design
-   228|- [[continual-learning-physical-systems]] — Continual Learning for Physical Systems — Particle Accelerator Case Study
-   229|- [[decoding-material-networks]] — Decoding Material Networks: DMN vs IMN Performance Comparison
+- [[continual-learning-physical-systems]] — Continual Learning for Physical Systems — Particle Accelerator Case Study
+- [[crash-assessment-mesh-gnn-surrogate]] — Crash Assessment via Mesh-Based GNN and Physics-Aware Attention
+- [[decoding-material-networks]]
    230|- [[deep-delta-learning]] — Deep Delta Learning — Householder Reflection as Learnable Residual Connections
    231|- [[deep-ensembles]] — Deep Ensembles for Uncertainty Estimation
    232|- [[deep-equilibrium-networks]] — Deep Equilibrium Networks (DEQ)
@@ -274,8 +276,9 @@
    273|- [[engram-sparse-memory]] — [[deepseek|DeepSeek]] Engram — Conditional Sparse Memory for LLMs
    274|- [[ensemble-kalman-filter]] — Ensemble Kalman Filter (EnKF)
    275|- [[ensemble-loss-landscape]] — Deep Ensembles — Loss Landscape Perspective
-   276|- [[epiplexity]] — Epiplexity — Structural Information for Computationally Bounded Observers
-   277|- [[equation-free-digital-twin-koopman]] — Equation-Free Digital Twin — Koopman-Based Rank-Optimized DT for Structural Dynamics
+- [[epiplexity]] — Epiplexity — Structural Information for Computationally Bounded Observers
+- [[eqod-pde-identification]] — EqOD — Symmetry-Informed Stability Selection for PDE Identification
+- [[equation-free-digital-twin-koopman]]
    278|- [[esn-as-ssm]] — Echo State Networks as State-Space Models — A Systems Perspective
    279|- [[evoxels-differentiable-voxel]] — evoxels — Differentiable Voxel-Based Microstructure Simulation
    280|- [[exact-affine-conditioning-ensemble-kalman-update]] — Exact Affine Conditioning Beyond Gaussians — Unique Characterization of the Ensemble Kalman Update
@@ -313,8 +316,9 @@
    312|- [[hilbert-simplex-geometry]] — Non-linear Embeddings in Hilbert Simplex Geometry
    313|- [[hmm-tutorial]] — Hidden Markov Model — Tutorial
    314|- [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
-   315|- [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
-   316|- [[hybrid-fno-lbm]] — Hybrid FNO-LBM — Fourier Neural Operator-Lattice Boltzmann Method Coupling
+- [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
+- [[hs-fno-history-space-fno]] — HS-FNO — History-Space FNO for Non-Markovian PDEs
+- [[hybrid-fno-lbm]]
    317|- [[hycop-hybrid-composition-operators]] — HyCOP — Hybrid Composition Operators for Interpretable PDE Learning
    318|- [[hyparlyve-neural-lyapunov-verification]] — HyParLyVe — Hyperplane Partitioning for Neural Lyapunov Verification
    319|- [[i-jepa]] — I-JEPA — Image-based Joint-Embedding Predictive Architecture
@@ -410,8 +414,9 @@
    409|- [[physics-constrained-surrogate]] — Physics-Constrained Deep Learning for Surrogate Modeling
    410|- [[physics-informed-neural-networks]] — Physics-Informed Neural Networks (PINN) — [[maziar-raissi|Raissi]], [[paris-perdikaris|Perdikaris]] & Karniadakis (2019)
    411|- [[physics-informed-temporal-unet]] — Physics-Informed Temporal U-Net — Fluid Interpolation
-   412|- [[physics-informed]] — Physics-Informed Machine Learning
-   413|- [[pi-jepa-surrogate-pretraining]] — PI-JEPA — Label-Free Surrogate Pretraining for Coupled Multiphysics Simulation
+- [[physics-informed]] — Physics-Informed Machine Learning
+- [[physpring-gnn-twin-reduction]] — PhySPRING — Structure-Preserving Reduction of Physics-Informed Twins via GNN
+- [[pi-jepa-surrogate-pretraining]]
    414|- [[pigg-graph-kalman-filter]] — PiGGO — Physics-Guided Graph Kalman Filter for Virtual Sensing
    415|- [[pilir-physics-informed-local-implicit]] — PILIR — Physics-Informed Local Implicit Representation for Spectral Bias Mitigation
    416|- [[pinn-failure-modes]] — PINN Failure Modes — NTK Perspective on Why and When PINNs Fail

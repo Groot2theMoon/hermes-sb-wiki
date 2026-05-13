@@ -33,3 +33,15 @@
 - **Backfill:** rigor-sigma-point-research, rigor-filter, auto-diff-data-assimilation, entity wikilinks
 - **RIGOR 관련성:** VB 기반 adaptive Q/R noise covariance 학습 — RIGOR의 EM 기반 covariance learning 대체/보완 가능
 - Total pages: 510 → 516
+
+## [2026-05-13] trending-scan | Script timeout recovery | 5 new concept(s), 0 updated
+- **스크립트:** `trending-papers-wrapper.py` 타임아웃 (110s) → MCP arXiv + web_search로 수동 복구
+- **스캔한 카테고리:** cs.CE, cs.LG, cs.RO, cs.AI, physics.comp-ph
+- **신규 개념 (5):**
+  - [[crash-assessment-mesh-gnn-surrogate]] — Crash Assessment via Mesh-GNN + Physics-Aware Attention
+  - [[hs-fno-history-space-fno]] — HS-FNO: History-Space FNO for Non-Markovian PDEs
+  - [[eqod-pde-identification]] — EqOD: Symmetry-Informed Stability Selection for PDE Discovery
+  - [[cato-charted-attention-operator]] — CATO: Charted Attention for Neural PDE Operators
+  - [[physpring-gnn-twin-reduction]] — PhySPRING: Structure-Preserving Reduction of Physics-Informed Twins via GNN
+- **기존 페이지 확인됨:** VMLFN (arXiv:2605.02280), multi-fidelity-surrogate-composites (arXiv:2605.02871) — 이미 존재하므로 업데이트 생략
+- Total pages: 516 → 521
