@@ -108,3 +108,9 @@
 - UKF의 deterministic sigma point가 EnKF의 random ensemble보다 gradient variance 측면에서 strictly superior함을 증명
 - RIGOR의 UKF 선택에 대한 이론적 근거 제공
 - Total pages: 554 → 555
+
+## [2026-05-14] concept | a-plus-nn-svd-projection-analysis — Lemma 4-5
+
+- Lemma 4: A+NN SVD projection으로 structural stability guarantee
+- Lemma 5: Residual orthogonality — no expressivity loss proof
+- Total pages: 556 → 557
