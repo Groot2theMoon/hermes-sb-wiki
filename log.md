@@ -102,3 +102,9 @@
 - **Backfill:** rigor-filter, kalmannet, rigor-research-roadmap → wikilinks added
 - Total pages: 548 → 551
 - **RIGOR 관련성:** RIGOR의 UKF + sigma cloud conditioning과 직접 비교해야 할 3개 계열 — variational filtering (DVBF), ensemble filtering (EnKF-GPSSM), learned Kalman gain (Bayesian KalmanNet) — 의 방법론 및 차별점 정리.
+
+## [2026-05-14] concept | ukf-enkf-gradient-variance-analysis — Lemma
+
+- UKF의 deterministic sigma point가 EnKF의 random ensemble보다 gradient variance 측면에서 strictly superior함을 증명
+- RIGOR의 UKF 선택에 대한 이론적 근거 제공
+- Total pages: 554 → 555
