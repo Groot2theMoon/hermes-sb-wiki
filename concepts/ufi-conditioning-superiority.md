@@ -49,13 +49,11 @@ The NN in RIGOR receives $\sigma_{\text{cond}}$ as a conditioning input:
 
 $$y = \text{NN}(x, \sigma_{\text{cond}}; \theta)$$
 
-For EnKF, the conditioning feature noise propagates through NN:
+For EnKF, the conditioning feature noise propagates through NN. Using the **Delta method** (first-order Taylor expansion), valid when $\text{NN}$ is approximately linear in $\sigma$ over the support of $\sigma_{\text{cond}}^{\text{EnKF}}$ (i.e., $\|\partial^2\text{NN}/\partial\sigma^2\| \cdot \text{Var}[\sigma] \ll \|\partial\text{NN}/\partial\sigma\|$):
 
 $$\text{Var}[\text{NN}(x, \sigma_{\text{cond}}^{\text{EnKF}}; \theta)] \approx \left(\frac{\partial \text{NN}}{\partial \sigma}\right)^\top \cdot \text{Var}[\sigma_{\text{cond}}^{\text{EnKF}}] \cdot \frac{\partial \text{NN}}{\partial \sigma} + \mathcal{O}(1/N^2)$$
 
-where the leading term scales as:
-
-$$\text{Var}[\sigma_{\text{cond}}^{\text{EnKF}}] = \mathcal{O}\left(\frac{1}{N}\right)$$
+where the leading term scales as $\text{Var}[\sigma_{\text{cond}}^{\text{EnKF}}] = \mathcal{O}(1/N)$.
 
 **Theorem:** For any differentiable NN with non-zero sensitivity to $\sigma_{\text{cond}}$, the EnKF conditioning adds $\mathcal{O}(1/N)$ variance to the dynamics output. This is **irreducible** for finite $N$.
 

@@ -111,13 +111,31 @@ The SVD projection is what makes the "A is main, NN is residual" philosophy **ma
 
 ### 5.1 Expressivity
 
-Let $f^*(x) = A^* x + \Delta^*(x)$ be the true dynamics, where $A^*$ is the optimal linearization (minimizing $\mathbb{E}\|\Delta^*(x)\|^2$ over the data distribution). Then:
+Let $f^*(x) = A^* x + \Delta^*(x)$ be the true dynamics, where $A^*$ is the optimal linearization (minimizing $\mathbb{E}\|\Delta^*(x)\|^2$ over the data distribution). The overall RIGOR approximation with SVD-projected NN is:
 
-$$\|f^*(x) - (A x + \Pi_{\mathcal{S}_1^\perp}(\text{NN}(x)))\|^2 = \|(A^* - A)x\|^2 + \|\Delta^*(x) - \Pi_{\mathcal{S}_1^\perp}(\text{NN}(x))\|^2$$
+$$f_\theta(x) = A x + \Pi_{\mathcal{S}_1^\perp}(\text{NN}(x))$$
 
-The cross-term vanishes because $(A^* - A)x$ lies primarily in $\mathcal{S}_1$ (by definition of SVD) while $\Pi_{\mathcal{S}_1^\perp}(\text{NN}) \in \mathcal{S}_1^\perp$.
+**Approach 1: Triangle inequality bound.** Without assuming any orthogonality structure between $(A^* - A)x$ and $\Pi_{\mathcal{S}_1^\perp}(\text{NN})$, the worst-case error is bounded by:
 
-**Implication:** A learns the optimal linearization $A^*$ via gradient descent. NN learns $\Pi_{\mathcal{S}_1^\perp}(\Delta^*)$, the nonlinear residual projected onto the orthogonal complement. **No expressivity is lost** — any $\Delta^*(x)$ can be decomposed into its $\mathcal{S}_1$ and $\mathcal{S}_1^\perp$ components, and only the $\mathcal{S}_1$ component (which A can already capture) is removed from NN's responsibility.
+$$\|f^*(x) - f_\theta(x)\| \leq \|(A^* - A)x\| + \|\Delta^*(x) - \Pi_{\mathcal{S}_1^\perp}(\text{NN}(x))\|$$
+
+This is a valid (if loose) bound via the triangle inequality. No cross-term cancellation is needed.
+
+**Approach 2: Explicit decomposition of $\Delta^*$.** Decompose the nonlinear residual into components parallel and orthogonal to $\mathcal{S}_1$:
+
+$$\Delta^*(x) = \underbrace{u_1 u_1^\top \Delta^*(x)}_{\parallel \mathcal{S}_1} + \underbrace{(I - u_1 u_1^\top) \Delta^*(x)}_{\parallel \mathcal{S}_1^\perp}$$
+
+The NN with SVD projection learns only the $\mathcal{S}_1^\perp$ component:
+
+$$\Pi_{\mathcal{S}_1^\perp}(\text{NN}) \to \Pi_{\mathcal{S}_1^\perp}(\Delta^*) = (I - u_1 u_1^\top) \Delta^*(x)$$
+
+The $\mathcal{S}_1$ component $u_1 u_1^\top \Delta^*(x)$ is **already captured by A's dominant direction** — if $A$ is close to $A^*$, then $A^* x$'s projection onto $\mathcal{S}_1$ is approximately $Ax$, and $\|\Pi_{\mathcal{S}_1}(\Delta^*)\|$ is minimized by the definition of $A^*$ as the optimal linearization.
+
+**No expressivity is lost** because:
+1. $\Pi_{\mathcal{S}_1^\perp}$ is a linear projection of rank $n-1$
+2. Any function $\Delta^*(x)$ can be decomposed into its $\mathcal{S}_1$ and $\mathcal{S}_1^\perp$ components
+3. Only the $\mathcal{S}_1$ component (captured by A) is excluded from NN's responsibility
+4. The $\mathcal{S}_1^\perp$ component is fully learnable (see 5.2)
 
 ### 5.2 Universal Approximation
 

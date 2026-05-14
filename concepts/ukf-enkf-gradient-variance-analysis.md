@@ -96,11 +96,11 @@ $$\boxed{\text{Var}\left[\nabla_\theta \ell_t^{\text{EnKF}}\right]
 
 ### 1.3 Scaling with $N$
 
-The variance in Eq. (10) scales as $\mathcal{O}(1/N)$. For the total gradient over $T$ steps:
+The variance in Eq. (10) is a **first-order approximation** that treats $\partial \ell_t / \partial \mu$ as locally constant. In reality, $\mu_{t+1|t}^{\text{EnKF}}$ is itself a random variable, so $(\partial \ell_t / \partial \mu)$ and $\nabla_\theta f_\theta(x^{(j)})$ are correlated. The exact variance includes additional covariance terms:
 
-$$\text{Var}\left[\nabla_\theta \mathcal{L}^{\text{EnKF}}\right] 
-= \frac{1}{N} \sum_{t=1}^T \left\|\frac{\partial \ell_t}{\partial \mu}\right\|^2 \cdot 
-\text{Var}_{x\sim\mathcal{N}(\mu_t,P_t)}\!\left[\nabla_\theta f_\theta(x)\right] \tag{11}$$
+$$\text{Var}\left[\nabla_\theta \ell_t^{\text{EnKF}}\right] = \frac{1}{N}\,\left\|\frac{\partial \ell_t}{\partial \mu}\right\|^2 \cdot \text{Var}_{x\sim\mathcal{N}(\mu_t,P_t)}\!\left[\nabla_\theta f_\theta(x)\right] + \mathcal{O}\left(\frac{1}{N^2}\right)$$
+
+The leading $\mathcal{O}(1/N)$ scaling is the dominant term for moderate $N$, but the exact value may differ from the simplified expression in Eq. (10).
 
 **To achieve the same gradient quality as UKF ($\text{Var}=0$), EnKF requires $N \to \infty$.** In practice, EnKF uses $N=20\text{--}100$, for which the gradient noise is non-negligible.
 

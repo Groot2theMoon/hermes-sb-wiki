@@ -120,3 +120,10 @@
 - Lemma 6: UFI conditioning superiority — why sigma cloud > ensemble for NN conditioning
 - Lemma 7: Option B K-step rollout error bound — exponential failure for rho > 1
 - Total pages: 557 → 559
+
+## [2026-05-14] patch | 4 Lemma fixes based on mathematical review
+
+- Lemma 5: REMOVED invalid Eq (116) — replaced with triangle inequality + explicit Δ* decomposition
+- Lemma 1: variance caveat — ∂ℓ/∂μ randomness acknowledged, O(1/N²) residual term added
+- Lemma 6: Delta method validity condition explicitly stated
+- Lemma 7: Assumption A4 (Gradient Regularity) added → bounded ∂x̂_K/∂θ

@@ -133,9 +133,15 @@ The gradient of this term through $\hat{x}_K$:
 
 $$\nabla_\theta \mathcal{L}_{\text{KL}}^{(K)} = Q^{-1} (\hat{x}_K - \mu_{t+K}^{\text{filt}}) \cdot \frac{\partial \hat{x}_K}{\partial \theta}$$
 
-From Eq. (25), $\hat{x}_K$ depends on $\theta$ through $\{A_{\text{eff},t+k}(\theta)\}$ and $\{\bar{r}_{t+k}(\theta)\}$. The gradient approximation error:
+From Eq. (25), $\hat{x}_K$ depends on $\theta$ through $\{A_{\text{eff},t+k}(\theta)\}$ and $\{\bar{r}_{t+k}(\theta)\}$. The gradient approximation error is bounded under the additional assumption that the Jacobian $\partial \hat{x}_K / \partial \theta$ is Lipschitz in the rollout error:
 
-$$\left\| \nabla_\theta \mathcal{L}_{\text{KL}}^{(K)} - \nabla_\theta \mathcal{L}_{\text{KL}}^{(\text{exact})} \right\| \leq \|Q^{-1}\| \cdot \|\delta_K\| \cdot \left\| \frac{\partial \hat{x}_K}{\partial \theta} \right\| \tag{34}$$
+**Assumption 4 (Gradient Regularity):** $\|\partial \hat{x}_K / \partial \theta\|_F \leq G$ uniformly over $\theta$ in the training domain. This holds if $A_{\text{eff}}$ and NN are Lipschitz in $\theta$, which is standard for differentiable filters with bounded activations.
+
+Under Assumption A4:
+
+$$\left\| \nabla_\theta \mathcal{L}_{\text{KL}}^{(K)} - \nabla_\theta \mathcal{L}_{\text{KL}}^{(\text{exact})} \right\| \leq \|Q^{-1}\| \cdot \|\delta_K\| \cdot G$$
+
+where $\|\delta_K\|$ follows the bound in Eq. (29). The gradient error thus inherits the same $\rho$-dependent scaling as the rollout error itself: exponentially growing for $\rho > 1$, bounded for $\rho < 1$.
 
 ### 7.8 Practical Recommendations
 
