@@ -4,7 +4,7 @@ created: 2026-05-12
 updated: 2026-05-12
 type: concept
 tags: [kalman-filter, state-estimation, sigma-point, nonlinear-filtering, unscented-transform]
-sources: []
+sources: [raw/papers/julier-uhlmann-2004-unscented-filtering.md]
 confidence: medium
 ---
 

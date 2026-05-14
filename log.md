@@ -127,3 +127,10 @@
 - Lemma 1: variance caveat — ∂ℓ/∂μ randomness acknowledged, O(1/N²) residual term added
 - Lemma 6: Delta method validity condition explicitly stated
 - Lemma 7: Assumption A4 (Gradient Regularity) added → bounded ∂x̂_K/∂θ
+
+## [2026-05-14] ingest | Julier & Uhlmann (2004) — Unscented Filtering raw paper
+
+- Source: raw/papers/julier-uhlmann-2004-unscented-filtering.md
+- Proc. IEEE 2004, Vol 92(3), pp. 401-422 — UKF 원논문
+- 오픈액세스 PDF (UBC)
+- Backfill: unscented-kalman-filter.md → sources 추가
