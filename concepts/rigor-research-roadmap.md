@@ -80,7 +80,8 @@ confidence: high
 | **DVBF** (Karl 2017) | Amortized VAE | Learned latent | Encoder variance | No physical state structure |
 | **EnKF-GPSSM** (Lin 2023) | EnKF ensemble | GP (nonparam) | Ensemble spread | Stochastic vs deterministic sigma |
 | **Koopman+KF** (Chen 2025) | UKF | Koopman linear | UKF covariance | Federated, no NN residual |
-| **RIGOR (ours)** | **UKF** | **A(x)·x + NN** | **Built-in P** | Deterministic, interpretable |
+|| **Koopman MPC** (Korda 2018) | None (open-loop) | Lifted linear ($\psi$) | None | Black-box latent, no filtering |
+|| **RIGOR (ours)** | **UKF** | **A(x)·x + NN** | **Built-in P** | Deterministic, interpretable |
 
 ### Ablation Study (1~2주)
 - UFI only vs raw cloud only vs UFI+raw vs ISAB+raw

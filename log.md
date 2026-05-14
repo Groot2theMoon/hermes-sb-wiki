@@ -134,3 +134,14 @@
 - Proc. IEEE 2004, Vol 92(3), pp. 401-422 — UKF 원논문
 - 오픈액세스 PDF (UBC)
 - Backfill: unscented-kalman-filter.md → sources 추가
+
+## [2026-05-14] ingest | 2 papers — Blei VI Review + Korda & Mezić Koopman MPC
+
+- **Raw sources (2):**
+  - raw/papers/variational-inference-review-blei17.md — Blei et al. (arXiv:1601.00670, JASA 2017)
+  - raw/papers/koopman-mpc-linear-predictors-korda18.md — Korda & Mezić (arXiv:1611.03537, Automatica 2018)
+- **Concept pages (2):**
+  - concepts/variational-inference-review-blei17.md — VI Review — VFE loss의 정보이론적 기반
+  - concepts/koopman-mpc-linear-predictors-korda18.md — Koopman MPC — RIGOR A+NN과의 비교
+- **Backfill:** rigor-research-roadmap, variational-bayes-adaptive-kalman-filter
+- Total pages: 561 → 563
