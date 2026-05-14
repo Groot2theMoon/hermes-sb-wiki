@@ -114,3 +114,9 @@
 - Lemma 4: A+NN SVD projection으로 structural stability guarantee
 - Lemma 5: Residual orthogonality — no expressivity loss proof
 - Total pages: 556 → 557
+
+## [2026-05-14] concept | Lemma 6-7 — UFI superiority + K-step rollout bound
+
+- Lemma 6: UFI conditioning superiority — why sigma cloud > ensemble for NN conditioning
+- Lemma 7: Option B K-step rollout error bound — exponential failure for rho > 1
+- Total pages: 557 → 559
