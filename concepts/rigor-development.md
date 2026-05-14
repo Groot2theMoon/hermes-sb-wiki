@@ -1,9 +1,9 @@
 ---
 title: "RIGOR Development — Differentiable SR-UKF Framework"
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-14
 type: concept
-tags: [rigor, kalman-filter, differentiable-filtering, development, infrastructure, sr-ukf]
+tags: [rigor, kalman-filter, differentiable-filtering, development, infrastructure, sr-ukf, lorenz, rollout]
 confidence: high
 ---
 
@@ -165,3 +165,27 @@ All experiments: VDP μ=1.0, dt=0.1, steps=500, obs_std=0.3, N_BATCH=4, SEED=43,
 2. **γ=0.99** gives A enough freedom to capture velocity dynamics while SVD clamp still prevents divergence
 3. **NN ⟂ u₁** is required for gradient separation (verified by failed ablation)
 4. Longer training (1000 vs 500 iter) continues to improve performance — still not fully converged
+
+## v5.x Changelog (May 2026, Lorenz63 Focus)
+
+| Version | Date | Key Change |
+|---------|------|------------|
+| v5.8 | May 13 | LPV (MLP-based state-dependent A), RFF C_lift, dead code cleanup |
+| v5.11 | May 13 | K-step rollout VFE — `jax.lax.scan` + state clamping (NaN fix) |
+| v5.11.1 | May 14 | Fix K-step rollout — clamp instead of `stop_gradient` |
+| v5.12 | May 14 | NN residual in rollout (Option B: cached mean from history) |
+| v5.13 | May 14 | Jacobian-corrected rollout (1st-order Taylor) |
+| v5.14 | May 14 | A_eff_dyn includes LPV delta, vfe_loss integrated into `rigor_loss_fn` |
+| v5.15 | May 14 | Fix NLL double-counting — `vfe_loss(include_nll=False)` |
+| v5.16 | May 14 | LPV: remove warmup (scope mismatch), configurable `lpv_clamp` |
+| v5.17 | May 14 | LPV zero-init — fix iter-1 NaN via `MLPBackbone.zero_final` |
+| v5.18 | May 14 | Eliminate LPV post-compute vmap (B×T memory bomb) |
+| v5.19 | May 14 | **Quadratic A(x) = A₀+A₁⊗x+xᵀA₂x** — replaces LPV MLP, pure einsum |
+
+## See Also
+
+- [[state-dependent-a-quadratic-form]] — A(x) evolution
+- [[k-step-rollout-vfe-loss]] — VFE loss design
+- [[lorenz63-rigor-experiments]] — Lorenz benchmark results
+- [[rigor-filter]] — Architecture overview
+- [[rigor-research-roadmap]] — Research trajectory

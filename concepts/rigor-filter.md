@@ -1,9 +1,9 @@
 ---
 title: RIGOR Filter — Differentiable SR-UKF
 created: 2026-05-04
-updated: 2026-05-05
+updated: 2026-05-14
 type: concept
-tags: [kalman-filter, state-estimation, system-identification]
+tags: [rigor, kalman-filter, state-estimation, system-identification, lorenz, rollout, state-dependent-dynamics]
 sources: []
 confidence: high
 ---
@@ -66,7 +66,36 @@ All experiments: VDP μ=1.0, dt=0.1, steps=300, obs_std=0.3, SR-UKF (no KKL), 50
 
 ### Open Questions
 - Position-velocity trade-off 해결을 위한 loss 구조 개선 (normalized loss?)
-- Parameter-conditioned A+NN (RIGOR++: mu를 입력으로)
+- **✅ Parameter-conditioned A+NN** — [[state-dependent-a-quadratic-form|Quadratic A(x)]] as Taylor expansion of J(x)·dt (v5.19)
 - Delay embedding (Takens)으로 관측 augment
 - **VB 기반 adaptive noise covariance** — [[variational-bayes-adaptive-kalman-filter]] 참조
 - 다양한 dynamics family에서의 벤치마크
+
+## v5.x: State-Dependent Dynamics & K-step Rollout (May 2026)
+
+### Core Innovations
+
+| Component | Version | Description |
+|-----------|:-------:|-------------|
+| **State-Dependent A(x)** | v5.8→v5.19 | Static A → LPV MLP → Quadratic form A₀+A₁⊗x+xᵀA₂x |
+| **K-step Rollout VFE** | v5.11 | Multi-step ELBO for dynamics consistency |
+| **NN Residual in Rollout** | v5.12 | Cached mean residual (Option B) |
+| **Jacobian-corrected Rollout** | v5.13 | 1st-order Taylor correction for long K |
+
+### Lorenz63 Benchmark
+
+RIGOR tested on [[lorenz63-rigor-experiments|Lorenz63]] — a chaotic 3D system with 2-lobe switching. Key finding: static A fails catastrophically on 2-lobe data (\|ρ\|≈0.4). State-dependent A(x) via quadratic form is the proposed solution.
+
+### CPU Compilation Challenge
+
+LPV MLP (Flax module in `nn.scan`) causes 5+ GB RAM OOM on CPU. [[state-dependent-a-quadratic-form|Quadratic A(x)]] (pure einsum, no Flax modules) addresses this structurally. See [[k-step-rollout-vfe-loss]] for VFE loss architecture.
+
+## See Also
+
+- [[rigor-development]] — Implementation history and benchmarks
+- [[state-dependent-a-quadratic-form]] — A(x) architecture evolution
+- [[k-step-rollout-vfe-loss]] — Multi-step ELBO design
+- [[lorenz63-rigor-experiments]] — Full Lorenz experiment log
+- [[rigor-research-roadmap]] — Research trajectory
+- [[rigor-heuristics-analysis]] — Heuristic audit
+- [[rigor-design-philosophy-v3]] — A+NN partition philosophy

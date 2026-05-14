@@ -1,9 +1,9 @@
 ---
 title: "RIGOR Research Roadmap — UKF + Sigma Cloud Conditioning"
 created: 2026-05-07
-updated: 2026-05-09
+updated: 2026-05-14
 type: concept
-tags: [rigor, research, roadmap, planning, ufi, sigma-cloud, paper]
+tags: [rigor, research, roadmap, planning, ufi, sigma-cloud, paper, lorenz, state-dependent-dynamics]
 confidence: high
 ---
 
@@ -82,12 +82,22 @@ confidence: high
 - Core contribution: "Sigma Point Cloud Conditioning for Differentiable UKF"
 - 시스템: VDP + Duffing + SHM benchmark
 
+### Phase 4: State-Dependent Dynamics (2026-05-13~, 진행 중)
+- **Lorenz63 2-lobe switching** — static A fails (\|ρ\|≈0.4); requires state-dependent A
+- **LPV (MLP)** → OOM on CPU → abandoned (v5.8–v5.18)
+- **Quadratic A(x) = A₀+A₁⊗x+xᵀA₂x** (v5.19) — pure einsum, Taylor expansion of J(x)·dt
+- **K-step rollout VFE** — multi-step ELBO for dynamics consistency (v5.11–v5.15)
+- Target: Demonstrate A(x) advantage over static A on chaotic systems
+- See [[state-dependent-a-quadratic-form]], [[lorenz63-rigor-experiments]], [[k-step-rollout-vfe-loss]]
+
 ## Timeline
 
 ```
 2026-05-07 (현재): VDP 최적화 완료, 방향성 확정
-2026-05-14: Phase 1 완료 (multi-system benchmark)
-2026-06-01: Phase 2 완료 (UFI/ISAB ablation)
+2026-05-13: Lorenz63 K-step rollout experiments (static A, single-lobe \|ρ\|=0.77)
+2026-05-14: LPV → Quadratic A(x) evolution, CPU compilation battle
+2026-05-17 (target): Lorenz63 2-lobe switching with Quadratic A(x) (±0.6+)
+2026-06-01: Phase 2 완료 (UFI/ISAB ablation + Lorenz benchmark)
 2026-06-15: 논문 초안 완료
 2026-07: DSLab 접촉, 실험실 방문
 2026-08: POSTECH 대학원 지원

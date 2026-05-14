@@ -83,3 +83,8 @@
 
 ### Note
 - Original "duplicate file" claim withdrawn upon SHA256 re-verification — suspected pairs have different content
+
+## [2026-05-14] update | RIGOR v5.x Wiki Backfill
+- **New Concepts (3):** [[state-dependent-a-quadratic-form]], [[k-step-rollout-vfe-loss]], [[lorenz63-rigor-experiments]]
+- **Updated Concepts (3):** [[rigor-filter]] (v5.x section, See Also), [[rigor-research-roadmap]] (Phase 4, updated timeline), [[rigor-development]] (v5.x changelog)
+- **Summary:** Filled major gap — all v5.8–v5.19 work (LPV→Quadratic A, K-step rollout, Lorenz63 experiments) now documented. Total pages: 548→551.

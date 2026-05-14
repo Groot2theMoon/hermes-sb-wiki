@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-14 | Total pages: 548
+> Last updated: 2026-05-14 | Total pages: 551
 
 ## Entities
 
@@ -355,6 +355,7 @@
 - [[koopman-lifting-rigor]] — Koopman Lifting for RIGOR — A+NN UKF with Augmented State Dynamics
 - [[koopman-operator-theory]] — Koopman Operator Theory
 - [[koopman-resolvent-dynamics]] — Koopman-Resolvent Data-Driven Dynamics — Generator Learning for Continuous Systems
+- [[k-step-rollout-vfe-loss]] — K-step Multi-step Rollout — VFE Loss & NN Residual in RIGOR
 - [[label-wise-uncertainty-quantification]] — Label-wise Aleatoric & Epistemic Uncertainty Quantification
 - [[lagrangian-koopman-network]] — LaCGKN — Lagrangian Conditional Gaussian Koopman Network
 - [[landauer-friston-connection]] — Landauer's Principle ↔ Friston's Free Energy Principle — Information Thermodynamics Connection
@@ -369,6 +370,7 @@
 - [[lottery-ticket-hypothesis]] — Lottery Ticket Hypothesis
 - [[low-frequency-absorption-technologies-comparison]] — Low-Frequency Sound Absorption Technologies Comparison
 - [[low-rank-spatial-attention-neural-operators]] — Low-Rank Spatial Attention for Neural Operators — Unifying Global Mixing Modules
+- [[lorenz63-rigor-experiments]] — Lorenz63 RIGOR Experiments — 2-Lobe Switching & K-step Rollout
 - [[ls-yolo]] — LS-YOLO for Autonomous Driving
 - [[lstm-forget-gate]] — LSTM Forget Gate — Gers, Schmidhuber & Cummins (2000)
 - [[lure-stability]] — Lur'e Stability Analysis — A+NN Systems
@@ -499,6 +501,7 @@
 - [[stagnation-properties]] — Stagnation Properties and Critical Conditions — Gas Dynamics
 - [[state-space-model-emergence-ergodicity]] — State Space Models — Emergence, Ergodicity, and Critical Parameter Thresholds
 - [[state-space-model]] — State-Space Model (SSM) — State-Space Representation of Dynamical Systems
+- [[state-dependent-a-quadratic-form]] — State-Dependent Dynamics A(x) — LPV to Quadratic Form in RIGOR
 - [[stochastic-neighbor-embedding]] — Stochastic Neighbor Embedding (SNE)
 - [[structural-analysis]] — Structural Analysis
 - [[structured-hybrid-mechanistic-models]] — Structured Hybrid Mechanistic Models — Physics + ML for Intervention Outcome Estimation
