@@ -88,3 +88,17 @@
 - **New Concepts (3):** [[state-dependent-a-quadratic-form]], [[k-step-rollout-vfe-loss]], [[lorenz63-rigor-experiments]]
 - **Updated Concepts (3):** [[rigor-filter]] (v5.x section, See Also), [[rigor-research-roadmap]] (Phase 4, updated timeline), [[rigor-development]] (v5.x changelog)
 - **Summary:** Filled major gap — all v5.8–v5.19 work (LPV→Quadratic A, K-step rollout, Lorenz63 experiments) now documented. Total pages: 548→551.
+
+## [2026-05-14] ingest | 3 papers — Differentiable Filtering Landscape
+
+- **Raw sources (3):**
+  - raw/papers/dvbf-karl16.md — Deep Variational Bayes Filters (ICLR 2017, arXiv:1605.06432)
+  - raw/papers/enkf-gpssm-lin23.md — EnKF Meets GP SSM (2023, arXiv:2312.05910)
+  - raw/papers/bayesian-kalmannet-dahan23.md — Bayesian KalmanNet (2023, arXiv:2309.03058)
+- **Concept pages (3):**
+  - concepts/dvbf-karl16.md — DVBF: unsupervised SSM learning via variational inference
+  - concepts/enkf-gpssm-lin23.md — EnKF-GPSSM: ensemble KF for variational GP state-space models
+  - concepts/bayesian-kalmannet-dahan23.md — Bayesian KalmanNet: uncertainty quantification in DNN-augmented KF
+- **Backfill:** rigor-filter, kalmannet, rigor-research-roadmap → wikilinks added
+- Total pages: 548 → 551
+- **RIGOR 관련성:** RIGOR의 UKF + sigma cloud conditioning과 직접 비교해야 할 3개 계열 — variational filtering (DVBF), ensemble filtering (EnKF-GPSSM), learned Kalman gain (Bayesian KalmanNet) — 의 방법론 및 차별점 정리.

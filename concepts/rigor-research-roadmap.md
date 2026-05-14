@@ -72,7 +72,17 @@ confidence: high
 - **SHM benchmark**: Z24 bridge 또는 IASC-ASCE benchmark (DSLab 연결)
 - 각 시스템별 config 자동 튜닝 or adaptive mechanism
 
-### Phase 2: Ablation Study (1~2주)
+### Related Work: Differentiable Filtering Landscape
+
+| Method | Filtering | Dynamics | Uncertainty | Key Diff from RIGOR |
+|--------|:---------:|----------|:-----------:|---------------------|
+| **KalmanNet** (Revach 2021) | KF + learned K | Partially known | MC Dropout (BKN) | Black-box K vs analytic UKF gain |
+| **DVBF** (Karl 2017) | Amortized VAE | Learned latent | Encoder variance | No physical state structure |
+| **EnKF-GPSSM** (Lin 2023) | EnKF ensemble | GP (nonparam) | Ensemble spread | Stochastic vs deterministic sigma |
+| **Koopman+KF** (Chen 2025) | UKF | Koopman linear | UKF covariance | Federated, no NN residual |
+| **RIGOR (ours)** | **UKF** | **A(x)·x + NN** | **Built-in P** | Deterministic, interpretable |
+
+### Ablation Study (1~2주)
 - UFI only vs raw cloud only vs UFI+raw vs ISAB+raw
 - 각 조합의 성능 비교 및 scaling 분석 (d_state ↑)
 - ISAB의 d_state ≥ 10에서의 효용성 검증

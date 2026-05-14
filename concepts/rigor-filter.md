@@ -99,3 +99,6 @@ LPV MLP (Flax module in `nn.scan`) causes 5+ GB RAM OOM on CPU. [[state-dependen
 - [[rigor-research-roadmap]] — Research trajectory
 - [[rigor-heuristics-analysis]] — Heuristic audit
 - [[rigor-design-philosophy-v3]] — A+NN partition philosophy
+- [[dvbf-karl16]] — Deep Variational Bayes Filters (closest variational competitor)
+- [[bayesian-kalmannet-dahan23]] — Bayesian KalmanNet (uncertainty-aware KalmanNet)
+- [[enkf-gpssm-lin23]] — EnKF-GPSSM (ensemble filtering variant)
