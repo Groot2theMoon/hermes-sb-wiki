@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-28
 type: concept
 tags: [paper, mechanics, materials, optimization]
-sources: [raw/papers/ghadimi-2024-centimeter-nanomechanical-resonators.md]
+sources: [raw/papers/ghadimi-2024-centimeter-nanomechanical-resonators.md, raw/papers/cupertino-2024-centimeter-resonators.md]
 confidence: high
 ---
 

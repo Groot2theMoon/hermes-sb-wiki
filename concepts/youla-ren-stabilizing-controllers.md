@@ -2,6 +2,7 @@
 title: "Youla-REN — Learning over All Stabilizing Nonlinear Controllers"
 created: 2026-05-01
 updated: 2026-05-01
+sources: [raw/papers/youla-ren-stabilizing-nonlinear-control-wang21.md]
 type: concept
 tags: [youla, ren, stabilizing-control, nonlinear-control, partial-observation]
 sources:

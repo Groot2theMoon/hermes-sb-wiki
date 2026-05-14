@@ -2,6 +2,7 @@
 title: "Robust Sigma Point Kalman Filter — Dynamic Minimax Game for Nonlinear State Estimation"
 created: 2026-05-06
 updated: 2026-05-06
+sources: [raw/papers/robust-sigma-point-kf-yi25.md]
 type: concept
 tags: [ukf, sigma-point, robust-filtering, minimax, nonlinear-state-estimation, mcmc]
 sources:

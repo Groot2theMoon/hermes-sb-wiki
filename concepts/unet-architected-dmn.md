@@ -2,6 +2,7 @@
 title: "U-Net Architected Deep Material Network (Shin et al. 2026)"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/shin-2026-unet-dmn.md]
 type: concept
 tags: [materials, surrogate-model, micromechanics, homogenization, deep-learning]
 sources:

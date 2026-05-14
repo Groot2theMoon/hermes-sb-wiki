@@ -2,6 +2,7 @@
 title: "DMN for Short Fiber-Reinforced Thermoplastics — Fatigue & Creep"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/dey24-dmn-sfrt-effectiveness.md]
 type: concept
 tags: [dmn, materials, surrogate-model, fatigue, sfrt, micromechanics]
 sources:

@@ -57,3 +57,29 @@
   - Added [[laval-nozzle-quasi-1d-flow]] to related concept pages
 - **Tags:** fluid-dynamics, thermodynamics, mechanics, exercise
 - **Total pages:** 521 → 522
+
+## [2026-05-14] lint-fix | Wiki Source Reference Audit & Repair
+
+### Lint Results
+- ✅ **Dangling sources (sources: → raw):** 0 (392개 참조 전부 실제 raw 파일과 일치)
+- 📄 **Unreferenced raw files (raw/ but no wiki page link):** 64 → 0 (전부 처리 완료)
+
+### Categories A+B: sources: frontmatter repair (55 concept pages, 71 raw links added)
+- 51 pages had NO `sources:` field → inserted `sources:` with associated raw files
+- 4 pages had existing `sources:` → appended additional raw files
+- Key fixes: ensemble-kalman-filter (+2), differentiable-lmi-contractivity (+3), jca-inverse-parameter-estimation (+5), lure-stability (+3), rigor-sigma-point-research (+2), etc.
+
+### Category C: New concept pages (5 created)
+- [[sciml-schwarzschild-orbits]] — Neural ODE, UDE & Symbolic Recovery for Black Hole Orbits
+- [[mars-bench]] — Benchmark for Foundation Models for Mars Science
+- [[baryonic-feedback-continuous-representation]] — Flow Matching for Cosmology Simulations
+- [[irc-safe-jet-clustering-gatr]] — IRC-Safe Jet Clustering with L-GATr
+- [[platonic-universe-foundation-models]] — Representational Convergence of Foundation Models
+
+### Index
+- Rebuilt from filesystem: 521 → 548 pages (Entities: 181, Concepts: 351, Comparisons: 16)
+- 22 previously unlisted pages now properly indexed
+- Updated total count and last-updated date in header
+
+### Note
+- Original "duplicate file" claim withdrawn upon SHA256 re-verification — suspected pairs have different content

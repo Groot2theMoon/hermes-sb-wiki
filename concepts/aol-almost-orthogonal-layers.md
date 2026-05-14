@@ -2,6 +2,7 @@
 title: "AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks"
 created: 2026-05-02
 updated: 2026-05-02
+sources: [raw/papers/aol-almost-orthogonal-layers.md]
 type: concept
 tags: [lipschitz, almost-orthogonal, certified-robustness, orthogonal-layers, aol]
 sources:

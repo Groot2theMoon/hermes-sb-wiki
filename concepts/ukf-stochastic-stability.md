@@ -2,6 +2,7 @@
 title: "UKF Stochastic Stability — Modified UKF with Fading Measurements"
 created: 2026-05-01
 updated: 2026-05-01
+sources: [raw/papers/modified-ukf-stochastic-stability-li17.md]
 type: concept
 tags: [ukf, stochastic-stability, fading-measurements, bounded-error, nonlinear-filtering]
 sources:

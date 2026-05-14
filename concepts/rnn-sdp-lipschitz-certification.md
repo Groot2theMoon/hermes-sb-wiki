@@ -2,6 +2,7 @@
 title: "RNN-SDP — Lipschitz Robustness Certification for RNNs"
 created: 2026-05-01
 updated: 2026-05-01
+sources: [raw/papers/rnn-sdp-lipschitz-certification-hamelbeck25.md]
 type: concept
 tags: [lipschitz, sdp, rnn, certification, robustness, convex-relaxation]
 sources:

@@ -2,6 +2,7 @@
 title: "NN-Poly: Neural Network to Taylor Polynomial Approximation for Dynamical System Constraints"
 created: 2026-05-11
 updated: 2026-05-11
+sources: [raw/papers/nn-poly-zhu22.md]
 type: concept
 tags: [system-identification, hybrid-modeling, physics-informed, state-estimation, safety, interpretable-learning]
 sources:

@@ -2,6 +2,7 @@
 title: "REN — Recurrent Equilibrium Networks with Guaranteed Stability and Robustness"
 created: 2026-05-01
 updated: 2026-05-03
+sources: [raw/papers/ren-recurrent-equilibrium-networks-revay21.md]
 type: concept
 tags: [contracting, ren, iqc, lipschitz, stability, nn-dynamics, system-identification, monotone-operator]
 sources:

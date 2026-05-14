@@ -2,6 +2,7 @@
 title: "Extended Kalman Filter (EKF)"
 created: 2026-05-06
 updated: 2026-05-06
+sources: [raw/papers/robust-sigma-point-kf-yi25.md]
 type: concept
 tags: [kalman-filter, state-estimation, nonlinear-filtering, linearization]
 confidence: high

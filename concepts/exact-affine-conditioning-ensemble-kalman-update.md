@@ -2,6 +2,7 @@
 title: "Exact Affine Conditioning Beyond Gaussians — Unique Characterization of the Ensemble Kalman Update"
 created: 2026-05-06
 updated: 2026-05-06
+sources: [raw/papers/exact-affine-conditioning-jorgensen25.md]
 type: concept
 tags: [ensemble-kalman-filter, exact-conditioning, affine-transport, measure-transport, bayesian-inverse-problems, data-assimilation]
 sources:

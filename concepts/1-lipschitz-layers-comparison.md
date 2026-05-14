@@ -2,6 +2,7 @@
 title: "1-Lipschitz Layers Compared — Comprehensive Benchmark of Lipschitz Constraint Methods"
 created: 2026-05-02
 updated: 2026-05-03
+sources: [raw/papers/1-lipschitz-layers-compared.md]
 type: concept
 tags: [lipschitz, comparison, benchmark, certified-robustness, orthogonal-layers]
 sources:

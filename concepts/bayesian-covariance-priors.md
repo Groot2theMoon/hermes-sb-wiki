@@ -2,6 +2,7 @@
 title: "Bayesian Covariance Matrix Priors — SIW, IW, Reference Prior"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/1408.4050v2.md, raw/papers/Download.md]
 type: concept
 tags: [bayesian, covariance-estimation, prior, jeffreys-prior, reference-prior, shrinkage-prior]
 sources:

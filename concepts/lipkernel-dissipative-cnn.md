@@ -2,6 +2,7 @@
 title: "LipKernel — Lipschitz-Bounded CNNs via Dissipative Layers (2-D Roesser Parameterization)"
 created: 2026-05-02
 updated: 2026-05-02
+sources: [raw/papers/lipkernel-dissipative-cnn.md]
 type: concept
 tags: [lipschitz, dissipativity, cnn, 2d-systems, roesser-model, lmi, lipkernel]
 sources:

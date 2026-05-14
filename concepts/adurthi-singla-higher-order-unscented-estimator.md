@@ -2,6 +2,7 @@
 title: "Higher-Order Unscented Estimator — Asymmetric Sigma Points with Closed-Form Weights"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/adurthi-singla-2022-higher-order-unscented-estimator.md]
 type: concept
 tags: [sigma-point, ukf, unscented-transform, skewness, kurtosis, kalman-filter, nonlinear-estimation]
 sources:

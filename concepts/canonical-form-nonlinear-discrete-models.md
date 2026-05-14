@@ -5,6 +5,7 @@ year: 1998
 authors: ["Gérard Dreyfus", "Yizhak Idan"]
 source: paper
 tags: [system-identification, neural-networks, state-space-methods, graph-theory, nonlinear-dynamics]
+sources: [raw/papers/CANONIQUE.md]
 related_papers: ["CANONIQUE"]
 related_concepts: ["state-space-model", "neural-odes", "universal-differential-equations", "physics-informed", "structured-hybrid-mechanistic-models"]
 ---

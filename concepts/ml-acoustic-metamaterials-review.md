@@ -2,6 +2,7 @@
 title: "ML for Acoustic Metamaterials and Phononic Crystals — Review (2024)"
 created: 2026-05-03
 updated: 2026-05-04
+sources: [raw/papers/ml-acoustic-metamaterials-review24.md]
 type: concept
 tags: [review, machine-learning, acoustic-metamaterials, phononic-crystals, deep-learning, inverse-design]
 sources:

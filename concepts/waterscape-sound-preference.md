@@ -2,6 +2,7 @@
 title: "Waterscape Sound Preference — Visual & Acoustic Factors"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/yang22-visual-acoustic-sound-preference.md]
 type: concept
 tags: [acoustics, soundscape, urban-acoustics, audio-visual, waterscape, applied-acoustics]
 sources:

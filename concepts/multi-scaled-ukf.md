@@ -2,6 +2,7 @@
 title: "Multi-Scaled Unscented Kalman Filter — Per-State Scaling"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/2604.04792v1.md]
 type: concept
 tags: [ukf, multi-scale, sigma-point, scaling-parameter, nonlinear-estimation]
 sources:

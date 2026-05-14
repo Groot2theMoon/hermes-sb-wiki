@@ -22,6 +22,7 @@ related_concepts:
   - "universal-differential-equations"
   - "autoencoder-rom"
 tags:
+sources: [raw/papers/s41598-023-36799-6.md]
   - "reduced-order-modeling"
   - "physics-informed"
   - "collocation"

@@ -2,6 +2,7 @@
 title: "Interaction-based Material Network (IMN) for Porous Materials"
 created: 2026-05-03
 updated: 2026-05-04
+sources: [raw/papers/nguyen23-imn-porous-interaction.md]
 type: concept
 tags: [paper, dmn, imn, porous, homogenization, interaction-based]
 sources:

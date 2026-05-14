@@ -2,6 +2,7 @@
 title: "Differentiable LMI for Contractivity — Train-Time Stability Enforcement"
 created: 2026-05-02
 updated: 2026-05-03
+sources: [raw/papers/bullo-nonlinear-separation-principle.md, raw/papers/lmi-net-differentiable-projection.md, raw/papers/non-euclidean-contractivity.md]
 type: concept
 tags: [differentiable-lmi, contractivity, lure-system, shima-lmi, bullo-param, stability, monotone-operator]
 sources:

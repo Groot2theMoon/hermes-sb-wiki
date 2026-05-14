@@ -2,6 +2,7 @@
 title: "Variational Bayes Adaptive Kalman Filter — VB 기반 Noise Covariance Adaptation"
 created: 2026-05-12
 updated: 2026-05-12
+sources: [raw/papers/adaptive-noise-kf-akhlaghi17.md]
 type: concept
 tags: [kalman-filter, adaptive-filtering, variational-bayes, noise-covariance-estimation]
 confidence: high

@@ -2,6 +2,7 @@
 title: "Porous Nonwoven Homogenization — Computational Homogenization & Compression Modeling"
 created: 2026-05-03
 updated: 2026-05-04
+sources: [raw/papers/kuts24-porous-nonwoven-homogenization.md, raw/papers/wan24-nonwoven-compression-microscale.md]
 type: concept
 tags: [nonwoven, porous-media, homogenization, fem, fibrous-networks, compression-modeling]
 sources:

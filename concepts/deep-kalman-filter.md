@@ -4,7 +4,7 @@ created: 2026-04-29
 updated: 2026-04-29
 type: concept
 tags: [model, sequence-modeling, state-space-model, kalman-filter, variational-inference, latent-dynamics]
-sources: [raw/papers/deep-kalman-filters.md]
+sources: [raw/papers/deep-kalman-filters.md, raw/papers/2510.01089v2.md]
 confidence: high
 ---
 

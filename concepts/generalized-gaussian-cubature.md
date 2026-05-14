@@ -2,6 +2,7 @@
 title: "Generalized Gaussian Cubature for Nonlinear Filtering"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/aas-2015-423-ukf.md]
 type: concept
 tags: [cubature, quadrature, gaussian-filter, nonlinear-filtering, sigma-point, optimal-sampling]
 sources:

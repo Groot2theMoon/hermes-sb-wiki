@@ -4,7 +4,7 @@ created: 2026-04-28
 updated: 2026-04-28
 type: concept
 tags: [model, neural-network, training, inference, paper]
-sources: [raw/papers/1312.6114v11.md]
+sources: [raw/papers/1312.6114v11.md, raw/papers/2510.01089v2.md]
 confidence: high
 ---
 

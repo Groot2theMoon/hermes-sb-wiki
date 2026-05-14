@@ -2,6 +2,7 @@
 title: "Higher-Order Unscented Transform — 4th Moment Matching for Sigma Points"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/2006.13429v1.md]
 type: concept
 tags: [sigma-point, ukf, unscented-transform, skewness, kurtosis, tensor-decomposition, quadrature, nonlinear-filtering, rigorous-math]
 sources:

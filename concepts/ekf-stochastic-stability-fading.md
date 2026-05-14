@@ -2,6 +2,7 @@
 title: "EKF Stochastic Stability over Fading Channels"
 created: 2026-05-01
 updated: 2026-05-01
+sources: [raw/papers/modified-ekf-stochastic-stability-fading-liu17.md]
 type: concept
 tags: [ekf, stochastic-stability, fading-channels, transmission-failure, signal-fluctuation]
 sources:

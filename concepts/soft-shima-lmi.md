@@ -2,6 +2,7 @@
 title: "Soft Shima LMI — Train-Time Contractivity via P-learning"
 created: 2026-05-02
 updated: 2026-05-03
+sources: [raw/papers/shima-davydov-bullo-contractivity-lure-systems.md]
 type: concept
 tags: [shima-lmi, contractivity, p-learning, lur-e-system, a-plus-nn, soft-penalty]
 sources:

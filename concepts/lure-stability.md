@@ -2,6 +2,7 @@
 title: "Lur'e Stability Analysis — A+NN Systems"
 created: 2026-05-01
 updated: 2026-05-03
+sources: [raw/papers/hedesh-local-stability-nn-feedback-positivity.md, raw/papers/hedesh-siami-positivity-stability-sector-bound-nn.md, raw/papers/shima-davydov-bullo-contractivity-lure-systems.md]
 type: concept
 tags: [lure-system, contractivity, sector-bound, aizerman, lmi, stability, nn-control]
 sources:

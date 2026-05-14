@@ -2,6 +2,7 @@
 title: "Contractivity Analysis for Lur'e Systems — Shima, Davydov & Bullo 2025"
 created: 2026-05-01
 updated: 2026-05-01
+sources: [raw/papers/shima-davydov-bullo-contractivity-lure-systems.md]
 type: concept
 tags: [contractivity, lure-system, lmi, lipschitz, sector-bound, monotone, stability]
 sources:

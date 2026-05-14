@@ -2,6 +2,7 @@
 title: "Unscented Feature Interaction (UFI) — Sigma Point Pairwise Features for Neural Residual"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/bach25-enhanced-ensemble-filter.md, raw/papers/wu25-dkfnet.md]
 type: concept
 tags: [rigor, sigma-point, ukf, differentiable-filter, state-estimation, research-idea, feature-engineering, vdp]
 confidence: medium

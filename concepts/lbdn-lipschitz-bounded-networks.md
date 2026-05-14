@@ -2,6 +2,7 @@
 title: "LBDN — Lipschitz-Bounded Deep Networks via Direct Parameterization"
 created: 2026-05-01
 updated: 2026-05-03
+sources: [raw/papers/lbdn-lipschitz-bounded-networks-wang23.md]
 type: concept
 tags: [lipschitz, sdp, robust-accuracy, sandwich-layer, certification, monotone-operator]
 sources:

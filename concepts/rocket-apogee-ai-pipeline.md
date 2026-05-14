@@ -2,6 +2,7 @@
 title: "Rocket Apogee AI Pipeline (PSIntelligence)"
 created: 2026-05-03
 updated: 2026-05-03
+sources: [raw/papers/psintelligence.md]
 type: concept
 tags: [rocket, apogee, kalman-filter, ekf, ukf, pinn, gru, uq, mamba, onnx, postech, psi]
 confidence: high

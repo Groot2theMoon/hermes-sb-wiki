@@ -2,6 +2,7 @@
 title: "Local Stability and ROA for NN Feedback Systems — Hedesh, Wafi & Siami 2025"
 created: 2026-05-01
 updated: 2026-05-03
+sources: [raw/papers/hedesh-local-stability-nn-feedback-positivity.md, raw/papers/hedesh-siami-positivity-stability-sector-bound-nn.md]
 type: concept
 tags: [local-stability, roa, lure-system, sector-bound, lmi, nn-control]
 sources:

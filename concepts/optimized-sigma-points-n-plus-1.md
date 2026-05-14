@@ -2,6 +2,7 @@
 title: "Optimized Sigma Point Selection — n+1 Points for UKF"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/optimized-sigma-points-ukf.md]
 type: concept
 tags: [sigma-point, ukf, kalman-filter, nonlinear-estimation, sampling]
 sources:

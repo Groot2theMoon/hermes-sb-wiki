@@ -2,6 +2,7 @@
 title: "DeepUKF-VIN — Adaptively-tuned Deep Unscented Kalman Filter for Visual-Inertial Navigation"
 created: 2026-05-06
 updated: 2026-05-06
+sources: [raw/papers/deepukf-vin-ghanizadegan25.md]
 type: concept
 tags: [ukf, deep-learning, visual-inertial-navigation, adaptive-tuning, quaternion, gps-denied]
 sources:

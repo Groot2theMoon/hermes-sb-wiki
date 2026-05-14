@@ -2,6 +2,7 @@
 title: "Sector-Bounded Nonlinearity for NN-Controlled Systems — Hedesh & Siami 2024"
 created: 2026-05-01
 updated: 2026-05-03
+sources: [raw/papers/hedesh-siami-positivity-stability-sector-bound-nn.md]
 type: concept
 tags: [sector-bound, nn-control, lure-system, aizerman, stability, positive-system]
 sources:

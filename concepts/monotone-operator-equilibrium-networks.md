@@ -4,7 +4,7 @@ created: 2026-05-03
 updated: 2026-05-03
 type: concept
 tags: [implicit-depth, equilibrium-network, monotone-operator, operator-splitting, stability, fixed-point]
-sources: [raw/papers/monotone-operator-equilibrium-networks.md]
+sources: [raw/papers/monotone-operator-equilibrium-networks.md, raw/papers/bullo-nonlinear-separation-principle.md]
 confidence: high
 ---
 

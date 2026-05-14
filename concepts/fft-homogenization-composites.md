@@ -2,6 +2,7 @@
 title: "FFT-Based Homogenization for Composites — Willot Discretization & 3D Fibrous"
 created: 2026-05-03
 updated: 2026-05-04
+sources: [raw/papers/karakoc-3d-fibrous-homogenization.md, raw/papers/willot15-fourier-fft-homogenization.md]
 type: concept
 tags: [fft-homogenization, composites, willot-discretization, micromechanics, fibrous-materials, computational-homogenization]
 sources:

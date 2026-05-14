@@ -2,6 +2,7 @@
 title: "JCA 5-Parameter Inverse Estimation — Impedance Tube / Microstructure → JCA"
 created: 2026-05-04
 updated: 2026-05-05
+sources: [raw/papers/atalla05-inverse-acoustical-characterization.md, raw/papers/jaouen20-jcal-6param-impedance-tube.md, raw/papers/niskanen20-bayesian-inversion-poroviscoelastic.md, raw/papers/xu21-pso-parameter-identification.md, raw/papers/yi24-ml-jca-prediction.md]
 type: concept
 tags: [jca, inverse-problem, parameter-estimation, impedance-tube, optimization, bayesian, machine-learning, sequential-estimation, differential-evolution, particle-swarm-optimization]
 sources:

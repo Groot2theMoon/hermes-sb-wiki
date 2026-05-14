@@ -2,6 +2,7 @@
 title: "Neuro-Inspired Dynamic Sparsity for Energy-Efficient Perception"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/s41467-025-65387-7 (1).md]
 type: concept
 tags: [neuromorphic, sparsity, efficient-inference, perception, event-camera, edge-ai, nature-communications]
 sources:

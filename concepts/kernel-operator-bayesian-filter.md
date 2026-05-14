@@ -2,6 +2,7 @@
 title: "Kernel Operator-Theoretic Bayesian Filter — Functional Bayesian Filter (FBF) for Nonlinear Dynamical Systems"
 created: 2026-05-11
 updated: 2026-05-11
+sources: [raw/papers/kernel-operator-bayesian-filter-2411.00198.md]
 type: concept
 tags: [kalman-filter, nonlinear-estimation, koopman, kernel-method, bayesian, state-estimation, hybrid-modeling]
 sources:

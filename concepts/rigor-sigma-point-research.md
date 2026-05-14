@@ -2,6 +2,7 @@
 title: "RIGOR Sigma Point Innovation — Research Landscape & Gap Analysis"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/bach25-enhanced-ensemble-filter.md, raw/papers/exact-affine-conditioning-jorgensen25.md]
 type: concept
 tags: [rigor, sigma-point, ukf, differentiable-filter, state-estimation, research-landscape]
 sources:

@@ -2,6 +2,7 @@
 title: "Solar Sail MFBO (Multi-Fidelity Bayesian Optimization)"
 created: 2026-05-03
 updated: 2026-05-03
+sources: [raw/papers/solar-sail-mfbo.md]
 type: concept
 tags: [solar-sail, mfbo, multi-fidelity, bayesian-optimization, abaqus, botorch, post-buckling, structural-optimization]
 confidence: high

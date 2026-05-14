@@ -2,6 +2,7 @@
 title: "Micropolar Deep Material Network (Francis, Shin et al. 2025)"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/francis-2025-micropolar-dmn.md]
 type: concept
 tags: [materials, surrogate-model, micromechanics, homogenization, solid-mechanics]
 sources:

@@ -2,6 +2,7 @@
 title: "Ensemble Kalman Filter (EnKF)"
 created: 2026-05-06
 updated: 2026-05-06
+sources: [raw/papers/bach25-enhanced-ensemble-filter.md, raw/papers/exact-affine-conditioning-jorgensen25.md]
 type: concept
 tags: [kalman-filter, ensemble-filter, data-assimilation, state-estimation, stochastic-filtering]
 confidence: high

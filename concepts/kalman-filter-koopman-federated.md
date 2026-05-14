@@ -2,6 +2,7 @@
 title: "Kalman Filter Aided Federated Koopman Learning — UKF for Partial Observations"
 created: 2026-05-05
 updated: 2026-05-05
+sources: [raw/papers/2507.04808v1.md]
 type: concept
 tags: [kalman-filter, koopman-operator, federated-learning, partial-observation, ukf, state-estimation, linearization]
 sources:

@@ -2,6 +2,7 @@
 title: "Refractiveindex.info Database of Optical Constants"
 created: 2026-05-03
 updated: 2026-05-03
+sources: [raw/papers/polyanskiy2024-refractiveindex-database.md]
 type: concept
 tags: [optical-constants, refractive-index, database, solar-sail, spectroscopy, yaml]
 confidence: high

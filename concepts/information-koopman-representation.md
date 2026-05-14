@@ -4,6 +4,7 @@ tags: [koopman, information-bottleneck, representation-learning, dynamical-syste
 confidence: high
 created: 2026-05-02
 updated: 2026-05-05
+sources: [raw/papers/information-koopman-2510.13025.md, raw/papers/2510.13025v2.md]
 sources:
   - raw/papers/information-koopman-2510.13025.md
   - raw/papers/2510.13025v2.md
