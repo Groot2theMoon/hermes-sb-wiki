@@ -135,6 +135,15 @@
 - 오픈액세스 PDF (UBC)
 - Backfill: unscented-kalman-filter.md → sources 추가
 
+## [2026-05-15] maintenance | Wiki maintenance — index fix, frontmatter, raw cleanup
+
+- **index.md:** page count 560→564, added missing entry for [[differentiable-sigma-point-quadrature]]
+- **concepts/vdp-benchmark-v2-v3.md:** added YAML frontmatter (missing schema violation)
+- **differentiable-sigma-point-quadrature.md:** moved from root → concepts/ (was miscategorized at root level)
+- **raw/papers/{bach25-enhanced-ensemble-filter,wu25-dkfnet,acoustipy-jakep72-2026}.md:** removed non-standard `tags:` and extra frontmatter fields (schema violation — raw files should only have source_url/ingested)
+- Total pages: 563 → 564 (+1 discovered page)
+
+
 ## [2026-05-14] ingest | 2 papers — Blei VI Review + Korda & Mezić Koopman MPC
 
 - **Raw sources (2):**

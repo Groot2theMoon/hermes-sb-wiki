@@ -1,3 +1,12 @@
+---
+title: VDP Benchmark — v2_pi vs v3_bullo
+created: 2026-05-07
+updated: 2026-05-07
+type: comparison
+tags: [kalman-filter, lyapunov, state-space-model, deeponet, nas]
+confidence: high
+---
+
 # VDP Benchmark: v2_pi vs v3_bullo
 
 ## Experiment Setup

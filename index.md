@@ -2,7 +2,7 @@
      2|     2|     2|     2|     2|
      3|     3|     3|     3|     3|> Content catalog. Read this first.
      4|     4|     4|     4|     4|> Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-     5|     5|     5|     5|     5|> Last updated: 2026-05-14 | Total pages: 560
+     5|     5|     5|     5|     5|> Last updated: 2026-05-15 | Total pages: 564
      6|     6|     6|     6|     6|
      7|     7|     7|     7|     7|## Entities
      8|     8|     8|     8|     8|
@@ -259,8 +259,9 @@
    257|   255|   254|   253|   253|- [[density-functional-theory]] — Density Functional Theory (DFT)
    258|   256|   255|   254|   254|- [[differentiable-enkf]] — Differentiable Ensemble Kalman Filter — Data-Driven State Estimation for Robotics
    259|   257|   256|   255|   255|- [[differentiable-filter-kloss]] — Differentiable Filter — Kloss, Martius & Bohg (2021)
-   260|   258|   257|   256|   256|- [[differentiable-lmi-contractivity]] — Differentiable LMI for Contractivity — Train-Time Stability Enforcement
-   261|   259|   258|   257|   257|- [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
+262|   260|   258|   257|   256|   256|- [[differentiable-lmi-contractivity]] — Differentiable LMI for Contractivity — Train-Time Stability Enforcement
+263|   261|   259|   258|   257|   257|- [[differentiable-sigma-point-quadrature]] — Differentiable Sigma Point Quadrature — RIGOR Sigma Point Framework
+264|   262|   260|   259|   258|   258|- [[diffusion-lattice]] — Generative Diffusion Models for Lattice Field Theory
    262|   260|   259|   258|   258|- [[diffusion-les-super-resolution]] — Conditional Diffusion Model for LES Super-Resolution in Atmospheric Boundary Layer
    263|   261|   260|   259|   259|- [[diffusion-metamaterial-inverse-design]] — Guided Diffusion for Inverse Design of Mechanical Metamaterials
    264|   262|   261|   260|   260|- [[diffusion-trajectory-optimization]] — DIFFUSOLVE — Diffusion-based Solver for Non-Convex Trajectory Optimization

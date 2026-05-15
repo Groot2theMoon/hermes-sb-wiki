@@ -1,10 +1,6 @@
 ---
-title: "acoustipy — Acoustic Transfer Matrix Method Python Package"
-created: 2026-05-03
-updated: 2026-05-03
-type: raw
-tags: [tmm, transfer-matrix-method, jca, acoustics, porous-materials, open-source, python]
-confidence: high
+source_url: https://github.com/jakep72/acoustipy
+ingested: 2026-05-03
 ---
 
 # acoustipy — Acoustic TMM Python Package

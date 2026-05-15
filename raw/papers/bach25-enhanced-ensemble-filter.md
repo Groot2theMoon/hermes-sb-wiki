@@ -1,8 +1,6 @@
 ---
 source_url: https://arxiv.org/abs/2504.17836
 ingested: 2026-05-05
-type: raw-paper
-tags: [ensemble-kalman-filter, set-transformer, measure-neural-mapping, learned-filter]
 ---
 
 ## Highlights 

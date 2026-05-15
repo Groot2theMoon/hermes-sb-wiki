@@ -1,8 +1,6 @@
 ---
 source_url: https://arxiv.org/abs/2509.07474
 ingested: 2026-05-05
-type: raw-paper
-tags: [differentiable-kalman-filter, field-inversion, closure-modeling, adjoint]
 ---
 
 # DKFNet: Differentiable Kalman Filter for Field Inversion and Machine Learning 
