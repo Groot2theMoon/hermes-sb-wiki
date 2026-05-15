@@ -128,6 +128,13 @@
 - Lemma 6: Delta method validity condition explicitly stated
 - Lemma 7: Assumption A4 (Gradient Regularity) added → bounded ∂x̂_K/∂θ
 
+## [2026-05-15] concept | Lemma 7 — UFI-Adaptive Projection (Spectral Feedback Control)
+
+- Lemma 7: UFI-adaptive projection — α = σ(η·(ρ - ρ₀)) replaces arbitrary leaky α
+- UFI 역할 확장: passive gradient routing → active spectral feedback controller
+- "Leaky projection: arbitrary scaling, no theory" 문제 해결
+- a-plus-nn-svd-projection-analysis.md 페이지에 추가
+
 ## [2026-05-14] ingest | Julier & Uhlmann (2004) — Unscented Filtering raw paper
 
 - Source: raw/papers/julier-uhlmann-2004-unscented-filtering.md
