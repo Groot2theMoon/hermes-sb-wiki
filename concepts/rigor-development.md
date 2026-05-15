@@ -13,7 +13,7 @@ RIGOR (Recursively-Informed, Graph-Optimized, Robust) is a **differentiable Squa
 
 ## Development Setup
 
-The RIGOR codebase is developed in Python using PyTorch for automatic differentiation. The framework implements the full SR-UKF recursion (sigma points, predict, update, square-root covariance propagation) as differentiable operations, enabling end-to-end learning of:
+The RIGOR codebase is developed in Python using **JAX/Flax** for automatic differentiation and JIT compilation. The framework implements the full SR-UKF recursion (sigma points, predict, update, square-root covariance propagation) as differentiable operations, enabling end-to-end learning of:
 
 - **State estimates** via gradient-based refinement.
 - **Dynamics models** (hybrid A+NN architectures with known physics + learned residual).
@@ -22,7 +22,7 @@ The RIGOR codebase is developed in Python using PyTorch for automatic differenti
 
 ## Key Components
 
-- **Differentiable SR-UKF step**: Cholesky factorization, sigma point generation, unscented transform, Kalman gain computation — all implemented in differentiable PyTorch.
+- **Differentiable SR-UKF step**: Cholesky factorization, sigma point generation, unscented transform, Kalman gain computation — all implemented in differentiable **JAX/Flax**.
 - **Hybrid dynamics model**: `F = A_known + NN_θ` where `A` encodes known linear physics and the neural network captures unmodeled nonlinearities.
 - **Rollout loss**: Multi-step prediction loss enables learning beyond single-step filtering.
 - **Benchmarking suite**: Comparison against standard UKF, EKF, and baseline differentiable filters on VdP oscillator, structural dynamics, and other test problems.
@@ -176,11 +176,6 @@ All experiments: VDP μ=1.0, dt=0.1, steps=500, obs_std=0.3, N_BATCH=4, SEED=43,
 | v5.12 | May 14 | NN residual in rollout (Option B: cached mean from history) |
 | v5.13 | May 14 | Jacobian-corrected rollout (1st-order Taylor) |
 | v5.14 | May 14 | A_eff_dyn includes LPV delta, vfe_loss integrated into `rigor_loss_fn` |
-| v5.15 | May 14 | Fix NLL double-counting — `vfe_loss(include_nll=False)` |
-| v5.16 | May 14 | LPV: remove warmup (scope mismatch), configurable `lpv_clamp` |
-| v5.17 | May 14 | LPV zero-init — fix iter-1 NaN via `MLPBackbone.zero_final` |
-| v5.18 | May 14 | Eliminate LPV post-compute vmap (B×T memory bomb) |
-| v5.19 | May 14 | **Quadratic A(x) = A₀+A₁⊗x+xᵀA₂x** — replaces LPV MLP, pure einsum |
 
 ## See Also
 

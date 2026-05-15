@@ -137,6 +137,13 @@
 
 ## [2026-05-15] maintenance | Wiki maintenance — index fix, frontmatter, raw cleanup
 
+## [2026-05-15] patch | 4 RIGOR wiki pages — 코드리뷰 반영 전면 업데이트
+
+- **rigor-filter.md**: Full rewrite — v5.14 architecture, latest benchmarks (Pendulum K=8 vel=0.993, Lorenz63), Lemma 1-7 references, outdated experiment log removed
+- **rigor-research-roadmap.md**: Timeline updated from "2026-05-07 (현재)" → 2026-05-14. α=0.01 → α=1.0. Bouc-Wen abandoned direction removed. Current milestones added
+- **rigor-development.md**: Fixed "PyTorch" → "JAX/Flax" (2 locations). Removed aspirational v5.15-v5.19 from changelog (not implemented)
+- **lorenz63-rigor-experiments.md**: Updated — Phase 3 LPV OOM narrative → LPV post-compute success. Added LPV post-compute code snippet. Updated insight table with Lemma 7 reference
+
 - **index.md:** page count 560→564, added missing entry for [[differentiable-sigma-point-quadrature]]
 - **concepts/vdp-benchmark-v2-v3.md:** added YAML frontmatter (missing schema violation)
 - **differentiable-sigma-point-quadrature.md:** moved from root → concepts/ (was miscategorized at root level)

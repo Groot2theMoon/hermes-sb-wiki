@@ -1,104 +1,186 @@
 ---
-title: RIGOR Filter — Differentiable SR-UKF
+title: "RIGOR Filter — Differentiable SR-UKF (v5.14)"
 created: 2026-05-04
 updated: 2026-05-14
 type: concept
-tags: [rigor, kalman-filter, state-estimation, system-identification, lorenz, rollout, state-dependent-dynamics]
+tags: [rigor, kalman-filter, state-estimation, sr-ukf, differentiable-filtering, a-plus-nn]
 sources: []
 confidence: high
 ---
 
-# RIGOR Filter
+# RIGOR Filter — Differentiable SR-UKF
 
-A differentiable Square-Root Unscented Kalman Filter with A+NN dynamics. Implements Lur'e contractivity LMI constraints and EM-based noise covariance learning. See [[square-root-unscented-kalman-filter|SR-UKF]] for the base algorithm.
+A differentiable **Square-Root Unscented Kalman Filter** with A+NN dynamics. Implements Lur'e contractivity LMI constraints, K-step NN residual rollout, and EM-based noise covariance learning.
 
-Closely related to [[auto-diff-data-assimilation|Auto-differentiable Data Assimilation]] (co-learning states + dynamics + filtering) and [[observability-nssm|Observability for NSSM]] (theoretical conditions for unobserved state recovery).
+> **v5.14** — LPV delta in `A_eff_dyn`, `vfe_loss` integrated into `rigor_loss_fn`, Lemma 1-7 proofs.
 
-## Related Dynamics Approaches
+---
 
-- [[skanode]] — Structured KAN Neural ODEs for interpretable symbolic discovery of nonlinear dynamics; relevant for interpretable dynamics in RIGOR
-- [[buisson-fenet-kkl-observer]] — KKL observer-based recognition models for NODEs under partial observations; directly foundational for DeltaObserver
+## Architecture (v5.14)
 
-This filter addresses the same learning-based state estimation problem as [[miao-robust-observer|Miao & Gatsis (2023)]], which learns KKL observers via Neural ODEs. Key differences: RIGOR uses SR-UKF with contractivity LMI for robustness, while Miao uses Neural ODE latent dynamics with D-eigenvalue regularization.
+### Forward Pass: Differentiable SR-UKF with A+NN Dynamics
 
-## Sigma Point Innovation Research
+```
+sigma = [μ, μ±γ·L]  (2n+1 sigma points)        ← UKF quadrature
+     ↓
+x_phys = sigma · A_eff_dyn                      ← Linear skeleton (+LPV if enabled)
+[RFF: x_phys += C_lift · φ(sigma)]              ← Koopman lifting (optional)
+residual = DeltaModulator(sigma, x_phys, cond)  ← UFI + sigma_cond
+residual = ch_scale · ortho(residual)           ← Channel scale + ⟂ u₁
+     ↓
+x_dyn = x_phys + residual                       ← A+NN full dynamics
+μ_pred = Σ wᵢ · x_dynᵢ                         ← Weighted mean
+L_pred = QR(dev_pred, √Q)                       ← Prediction Cholesky
+     ↓
+y_pred = C·μ_pred;  L_innov = QR(dev_obs, √R)
+K = UKF gain(dev_obs, L_innov)                  ← Kalman gain
+μ_filt = μ_pred + K·(y − y_pred)               ← Innovation update
+L_filt = QR(dev_post)                           ← Updated Cholesky
+     ↓
+A_eff[t] = cross_cov · P⁻¹                     ← Empirical linearization
+[Stats Gating]: Q *= α                          ← Mehra+Sage-Husa (opt)
+```
 
-[[rigor-sigma-point-research|RIGOR Sigma Point Innovation Research]] 문서에서 5가지 sigma point 개선 아이디어의 연구 현황과 RIGOR-specific novelty를 분석:
+### Backward Pass: RTS Smoother
 
-| Priority | Idea | Key Reference | Impact |
-|----------|------|---------------|--------|
-| ✅ 즉시 | ① Differentiable sigma point spread | MS-UKF (Levy 2026), Turner & Rasmussen (2010) | 가장 높음 |
-| ✅ 병행 | ③ Sigma point trajectory as feature | Novel (선행연구 없음) | medium |
-| ⚠️ 결합 | ④ Learnable sigma weights | MA-UKF (Majewski 2026) | ①+③과 결합 시 시너지 |
-| ❌ 보류 | ② LMI-aware adaptive point count | Novel | 낮음 |
-| 📌 장기 | ⑤ Per-sigma-point correction | Novel | 매우 높음 (risk 높음) |
+| Step | Formula | Description |
+|:-----|:--------|:------------|
+| Gain | Jₜ = P_filt[t]·A_eff[t]ᵀ·P_pred[t+1]⁻¹ | Rauch-Tung-Striebel gain |
+| State | μ_s[t] = μ_filt[t] + Jₜ·(μ_s[t+1] − μ_pred[t+1]) | Smoothed state |
+| Cov | P_s[t] = P_filt[t] + Jₜ·(P_s[t+1] − P_pred[t+1])·Jₜᵀ | Smoothed covariance |
 
-## Comprehensive Experiment Log (2026-05-05)
+### Loss: VFE + K-step NN Residual Rollout
 
-All experiments: VDP μ=1.0, dt=0.1, steps=300, obs_std=0.3, SR-UKF (no KKL), 500 iter, SEED=43.
+```
+VFE = NLL(innov, L_innov) + KL_dyn(P_pred, μ, μ_pred)
 
-### Unsupervised Experiments (position NLL only)
+K-step Rollout (v5.12-5.14):
+  [Option B] Cached mean residual: NN(x) ≈ NN(μ_filt[t])
+             └─ from: mu_pred[t+1] - A_eff_dyn[t] · mu_filt[t]
+  [Jacobian] 1st-order Taylor: NN(x) ≈ NN(μ) + J·(x-μ)   (v5.13, 실험적)
 
-| # | Approach | pos_corr | vel_corr | RMSE | Note |
-|---|----------|----------|----------|------|------|
-| 0 | Baseline (clean v2) | 0.9914 | 0.9054 | 0.798 | SR-UKF + A+NN only |
-| 1 | Whiteness loss w=0.1 | 0.9866 | 0.9023 | 1.205 | lag-1 innovation autocorrelation |
-| 2 | Whiteness + LMI (0.1+0.01) | 0.9827 | 0.8824 | 1.343 | LMI contractivity penalty (ρ=0.99) |
-| 3 | Per-state spread (bad init) | 0.9349 | 0.8182 | 1.690 | softplus(logits)+0.5 → init 1.19 < gamma 1.414 |
-| 4 | Per-state spread (good init) | 0.9891 | 0.8995 | 0.742 | gamma+delta, RMSE best |
-| 5 | Sigma spread regularizer w=0.01 | 0.9740 | 0.9197 | 1.103 | (pos_std/vel_std)² penalty |
-| 6 | **Sigma cloud conditioning** | 0.9246 | **0.9191** | 1.251 | std+skew → NN residual conditioning |
+Total = NLL + Inv-Gamma(Q) + LMI_penalty + rollout_weight · vfe_loss(K_rollout)
+```
 
-### Supervised Experiments (pos NLL + λ·vel MSE)
+---
 
-| # | Approach | pos_corr | vel_corr | RMSE | Note |
-|---|----------|----------|----------|------|------|
-| 7 | Supervised w=1.0 | 0.336 | 0.226 | 1.409 | Weight too high → pos collapse |
-| 8 | Supervised w=0.1 (μ=1.0) | 0.907 | 0.914 | 1.572 | Better vel but pos sacrificed |
-| 9 | OOD μ=3.0 (from #8) | 0.141 | 0.181 | 1.927 | Supervised doesn't generalize OOD |
+## Key Components
 
-### Key Findings
+### Core Filter
 
-1. **Velocity 비선형성의 근본적 한계:** Position NLL만으로는 velocity의 rich dynamics를 covariance → Kalman gain 경로로만 간접 학습. True velocity의 sharp peak(±4) 대비 추정 amplitude는 ±1.5 수준.
-2. **Sigma point 정보 활용 방향성은 유효:** vel_corr이 0.905→0.919로 개선된 두 접근법(spread reg, cloud cond) 모두 sigma point 정보를 활용. 다만 pos_corr/RMSE 희생.
-3. **OOD generalization은 미해결:** Supervised + multi-mu로도 μ=1.0→3.0 일반화 실패. A+NN 구조의 근본적 한계.
-4. **초기화 중요성:** Per-state spread의 init 값이 gamma와 다르면 성능 급락. Zero-delta init 필요.
+| Component | Since | Description |
+|:----------|:-----:|:------------|
+| **RigorCell** | v2 | Single SR-UKF step: sigma points → A+NN dynamics → Kalman update → carry |
+| **DeltaModulator** | v2 | Learnable NN residual: sigma point MLP → tanh-norm bounded output |
+| **UFI (Unscented Feature Interaction)** | v4.4 | Per-sigma-point quadratic polynomial feature expansion |
+| **Statistical Gating** | v2.3 | 0-parameter adaptive Q: Mehra (1970) + Sage-Husa (1969) |
+| **StableSystemMatrix** | v4 | SVD/power-iteration spectral clamping of A (‖A‖₂ ≤ γ) |
 
-### Open Questions
-- Position-velocity trade-off 해결을 위한 loss 구조 개선 (normalized loss?)
-- **✅ Parameter-conditioned A+NN** — [[state-dependent-a-quadratic-form|Quadratic A(x)]] as Taylor expansion of J(x)·dt (v5.19)
-- Delay embedding (Takens)으로 관측 augment
-- **VB 기반 adaptive noise covariance** — [[variational-bayes-adaptive-kalman-filter]] 참조
-- 다양한 dynamics family에서의 벤치마크
+### Dynamics Augmentation
 
-## v5.x: State-Dependent Dynamics & K-step Rollout (May 2026)
+| Component | Since | Flag | Description |
+|:----------|:-----:|:----:|:------------|
+| **Channel Scale** | v5 | `use_channel_scale=True` | Per-channel learnable residual gain |
+| **Ortho-NN** | v2.3 | `use_ortho_nn=True` | `residual ⟂ u₁` (A's dominant singular vector) |
+| **RFF Lifting** | v5.4 | `use_rff_lifting=True` | Random Fourier Features: Koopman-style lifting |
+| **LPV** | v5.8 | `use_lpv=True` | Input-dependent A: `A + 0.05·tanh(MLP(μ))` — post-computed from μ_filt |
 
-### Core Innovations
+### Rollout Loss (NN Residual)
 
-| Component | Version | Description |
-|-----------|:-------:|-------------|
-| **State-Dependent A(x)** | v5.8→v5.19 | Static A → LPV MLP → Quadratic form A₀+A₁⊗x+xᵀA₂x |
-| **K-step Rollout VFE** | v5.11 | Multi-step ELBO for dynamics consistency |
-| **NN Residual in Rollout** | v5.12 | Cached mean residual (Option B) |
-| **Jacobian-corrected Rollout** | v5.13 | 1st-order Taylor correction for long K |
+| Component | Since | Description |
+|:----------|:-----:|:------------|
+| **1-step Rollout** | v5 | `rollout_1step_loss()` — basic dynamics consistency |
+| **K-step Rollout (A only)** | v5.11 | `A_eff^k` rollout — linear only, no NN |
+| **K-step Rollout + NN (Option B)** | **v5.12** | Cached mean residual from history → `A·x + NN(μ)` |
+| **K-step + Jacobian** | **v5.13** | 1st-order Taylor: `A·x + NN(μ) + J·(x-μ)` via `jax.jacfwd` (실험적) |
+| **LPV in Rollout** | **v5.14** | `A_eff_dyn` post-computed with LPV delta from `mu_filt` |
 
-### Lorenz63 Benchmark
+---
 
-RIGOR tested on [[lorenz63-rigor-experiments|Lorenz63]] — a chaotic 3D system with 2-lobe switching. Key finding: static A fails catastrophically on 2-lobe data (\|ρ\|≈0.4). State-dependent A(x) via quadratic form is the proposed solution.
+## Benchmarks
 
-### CPU Compilation Challenge
+### Driven Pendulum (T=300, dt=0.05, obs_noise=0.3, θ only → recover ω)
 
-LPV MLP (Flax module in `nn.scan`) causes 5+ GB RAM OOM on CPU. [[state-dependent-a-quadratic-form|Quadratic A(x)]] (pure einsum, no Flax modules) addresses this structurally. See [[k-step-rollout-vfe-loss]] for VFE loss architecture.
+| Config | pos_corr | vel_corr | abs_avg | K | Iters |
+|:-------|:--------:|:--------:|:-------:|:-:|:-----:|
+| UFI + NN16 (Option B) | 0.979 | 0.959 | 0.969 | 8 | 2000 |
+| **UFI + RFF20 (Option B)** | **0.998** | **0.993** | **0.995** | **8** | **2000** |
+| UFI + RFF20 + Jacobian | 0.998 | 0.992 | 0.995 | 8 | 2000 |
+
+> Position-only observation에서 **hidden velocity를 vel_corr=0.99로 복원.** K=8 NN residual rollout 성공. Jacobian correction은 이점 없음 (Δx drift 미미).
+
+### Lorenz63 (chaotic, T=500, dt=0.01, x₁ observed → recover x₂, x₃)
+
+| Config | abs_avg | K | γ | Note |
+|:-------|:-------:|:-:|:-:|:-----|
+| Baseline (K=4) | 0.730 | 4 | 1.5 | Single-lobe, x₁<0 only |
+| +Jacobian | 0.765 | 4 | 1.5 | x₃ +65%, extreme JIT cost |
+| K=8 rollout | 0.650 | 8 | 1.5 | Sign recovery but lower abs_avg |
+| Two-lobe (static A) | ~0.40 | 4 | 0.95 | **Static A fails** — structural limitation |
+| Two-lobe + LPV | 진행 중 | 4 | 1.5 | Post-compute LPV, CPU-friendly |
+
+> **Lemma 7**에 의해 Lorenz63 (ρ≈1.5)는 Option B의 K-step error가 exponential. `γ=1.5` 필요 (0.95는 너무 타이트).
+
+### VDP (historical, μ=1.0, dt=0.1, steps=300)
+
+| Config | pos_corr | vel_corr | RMSE | Note |
+|:-------|:--------:|:--------:|:----:|:-----|
+| VFE + γ=0.99 (500 iter) | 0.9928 | 0.9333 | 0.500 | — |
+| **VFE + γ=0.99 (1000 iter)** | **0.9971** | **0.9612** | **0.383** | **🏆 역대 최고** |
+
+---
+
+## Theoretical Foundation
+
+RIGOR의 설계 결정은 다음 7개 Lemma로 수학적으로 정당화된다:
+
+| Lemma | 제목 | 핵심 주장 |
+|:-----:|:-----|:---------|
+| **1** | Gradient Variance | UKF = deterministic (Var=0), EnKF = O(1/N) gradient noise |
+| **2** | Information Efficiency | UKF exact moment matching vs EnKF O(1/√N) error |
+| **3** | Ensemble Collapse | EnKF N<n → singular; UKF 항상 full-rank |
+| **4** | A+NN SVD Projection | NN ⟂ u₁ → A의 dominant dynamics 보존 |
+| **5** | Residual Orthogonality Bound | SVD projection = rank n-1 → 표현력 손실 없음 |
+| **6** | UFI Conditioning Superiority | Sigma cloud feature = deterministic → 안정적 conditioning |
+| **7** | Option B Rollout Error Bound | ρ<1: bounded, ρ>1: exponential divergence |
+
+자세한 증명: [[ukf-enkf-gradient-variance-analysis]] (Lemma 1-3), [[a-plus-nn-svd-projection-analysis]] (Lemma 4-5), [[ufi-conditioning-superiority]] (Lemma 6), [[k-step-rollout-error-bound]] (Lemma 7).
+
+---
+
+## Key Parameters
+
+| Parameter | Default | Recommended | Description |
+|:----------|:-------:|:-----------:|:------------|
+| `alpha` | 1.0 | **1.0** (필수) | Sigma point spread |
+| `kappa` | 0.0 | **1.0** | Secondary scaling (VDP/Pendulum) |
+| `sinkhorn_gamma` | 0.99 | 0.95–1.5 | A spectral bound (Lorenz: 1.5) |
+| `residual_scale` | 0.5 | 0.15 | NN residual magnitude bound |
+| `K_rollout` | 1 | 4–8 | Multi-step rollout horizon |
+| `rollout_weight` | 0.0 | 0.5 | K-step rollout loss weight |
+
+---
+
+## Repository
+
+- GitHub: `github.com/Groot2theMoon/rigor-filter`
+- JAX/Flax, Python 3.10+
+- Tests: `tests/{pendulum,lorenz,vdp,smoke}/`
+
+---
 
 ## See Also
 
 - [[rigor-development]] — Implementation history and benchmarks
+- [[rigor-research-roadmap]] — Research timeline
 - [[state-dependent-a-quadratic-form]] — A(x) architecture evolution
 - [[k-step-rollout-vfe-loss]] — Multi-step ELBO design
-- [[lorenz63-rigor-experiments]] — Full Lorenz experiment log
-- [[rigor-research-roadmap]] — Research trajectory
-- [[rigor-heuristics-analysis]] — Heuristic audit
-- [[rigor-design-philosophy-v3]] — A+NN partition philosophy
-- [[dvbf-karl16]] — Deep Variational Bayes Filters (closest variational competitor)
-- [[bayesian-kalmannet-dahan23]] — Bayesian KalmanNet (uncertainty-aware KalmanNet)
-- [[enkf-gpssm-lin23]] — EnKF-GPSSM (ensemble filtering variant)
+- [[lorenz63-rigor-experiments]] — Lorenz experiment log
+- [[ukf-enkf-gradient-variance-analysis]] — Lemma 1-3
+- [[a-plus-nn-svd-projection-analysis]] — Lemma 4-5
+- [[ufi-conditioning-superiority]] — Lemma 6
+- [[k-step-rollout-error-bound]] — Lemma 7
+- [[square-root-unscented-kalman-filter]] — SR-UKF base algorithm
+- [[dvbf-karl16]] — DVBF (closest variational competitor)
+- [[bayesian-kalmannet-dahan23]] — Bayesian KalmanNet
+- [[kalmannet-revach21]] — KalmanNet

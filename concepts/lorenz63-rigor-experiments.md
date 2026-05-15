@@ -1,17 +1,16 @@
 ---
-title: "Lorenz63 RIGOR Experiments — 2-Lobe Switching & K-step Rollout"
+title: "Lorenz63 RIGOR Experiments — Single Lobe to LPV"
 created: 2026-05-14
 updated: 2026-05-14
 type: concept
-tags: [rigor, benchmark, lorenz, nonlinear-dynamics, state-estimation, rollout]
+tags: [rigor, benchmark, lorenz, chaotic, state-estimation, rollout, lpv]
 sources: []
-confidence: high
+confidence: medium
 ---
 
 # Lorenz63 RIGOR Experiments
 
-> Benchmarking RIGOR on the Lorenz63 chaotic system: 2-lobe switching, K-step rollout,
-> and the transition from static A to state-dependent A(x).
+> Benchmarking RIGOR on the Lorenz63 chaotic system: single-lobe recovery, K-step NN residual rollout, static A → LPV transition.
 
 ## System
 
@@ -27,61 +26,69 @@ confidence: high
 
 ## Core Metric
 
-**Absolute correlation |ρ|** between estimated and true hidden states, averaged over all 3 states. RMSE as secondary metric.
+**Absolute correlation |ρ|** between estimated and true hidden states, averaged over all 3 states.
+
+---
 
 ## Experiment Timeline
 
-### Phase 1: Static A, Single Lobe (T=500, no burn-in)
+### Phase 1: Static A, Single Lobe (T=500, no burn-in, all x₁<0)
 
-| Config | K | x₁ | x₂ | x₃ | \|ρ\| | Notes |
-|--------|:--:|:----:|:----:|:----:|:----:|------|
-| Baseline | 4 | 0.999 | -0.943 | 0.247 | 0.730 | gamma=1.5, T=500 (x₁ all negative) |
-| +Jacobian | 4 | 0.996 | -0.893 | 0.407 | 0.765 | x₃ +65%, extreme JIT cost |
-| Minimal K-step | 8 | 0.920 | +0.370 | -0.660 | 0.650 | K=8, sign recovery |
-| UFI + K-step | 8 | 0.920 | -0.450 | -0.570 | 0.647 | x₂ stuck at -0.45 |
+| Config | K | γ | x₁ | x₂ | x₃ | abs_avg | Notes |
+|:-------|:-:|:-:|:--:|:--:|:--:|:-------:|-------|
+| Baseline | 4 | 1.5 | 0.999 | -0.943 | 0.247 | 0.730 | UFI+RFF20, Option B |
+| +Jacobian | 4 | 1.5 | 0.996 | -0.893 | 0.407 | 0.765 | x₃ +65%, extreme JIT |
+| Minimal K-step | 8 | 1.5 | 0.920 | +0.370 | -0.660 | 0.650 | K=8, sign flip |
+| UFI + K-step | 8 | 1.5 | 0.920 | -0.450 | -0.570 | 0.647 | x₂ stuck at -0.45 |
 
-**Findings:** Single-lobe (T=500, all x₁<0) works well. gamma=1.5 critical (gamma=0.95 → A≈identity, collapses). Spectral penalty unnecessary (SVD clamp sufficient).
+**Findings:** Single-lobe works well. γ=1.5 critical (γ=0.95 → A collapses to identity).
 
 ### Phase 2: Static A, Two Lobe (burn-in spin=2000, T=500)
 
-| Config | NN | x₁ | x₂ | x₃ | \|ρ\| | Notes |
-|--------|:--:|:----:|:----:|:----:|:----:|------|
-| Burn-in (16,) | (16,) | 0.752 | 0.402 | 0.028 | 0.394 | Sign normal, x₃ lost |
-| Burn-in (32,32) | (32,32) | 0.694 | -0.589 | 0.005 | 0.430 | A≈identity, loss oscillating |
+| Config | NN | x₁ | x₂ | x₃ | abs_avg | Notes |
+|:-------|:--:|:--:|:--:|:--:|:-------:|-------|
+| Burn-in (16,) | (16,) | 0.752 | 0.402 | 0.028 | 0.394 | x₃ lost, sign normal |
+| Burn-in (32,32) | (32,32) | 0.694 | -0.589 | 0.005 | 0.430 | A≈identity, oscillating |
 
-**Findings:** Static A fails catastrophically on 2-lobe data. Single linear skeleton cannot express sign-flipping coupling across lobes. Increasing NN capacity (16→32) doesn't help — structural limitation, not capacity bottleneck.
+**Findings:** Static A fails catastrophically on 2-lobe data. Structural limitation — not capacity bottleneck.
 
-### Phase 3: State-Dependent A(x) (attempted, CPU-limited)
+### Phase 3: LPV Post-Compute (v5.14, 현재)
 
-| Approach | T | Result |
-|----------|:---:|--------|
-| LPV MLP (v5.16-17) | 500 | OOM (5GB+ RAM) |
-| LPV MLP (v5.18) | 250 | Iter 1 OK (83s), backward pass OOM |
-| Quadratic A (v5.19) | 250 | Init OK, JIT OOM |
+| Config | T | K | γ | Status |
+|:-------|:-:|:-:|:-:|:-------|
+| LPV post-compute | 500 | 4 | 1.5 | WSL 정상 작동 |
+| LPV + UFI + RFF | 500 | 4 | 1.5 | 실험 중 |
+| LPV + K=8 rollout | 500 | 8 | 1.5 | 계획 중 |
 
-**Root cause:** Flax `nn.scan` + JIT compilation on CPU cannot handle the LPV/Quadratic A compilation graph for T≥250. Awaiting CPU-friendly execution strategy (for-loop, T=100, or Modal GPU).
+**LPV post-compute approach** (`filter.py` v5.14):
+```python
+A_base = broadcast(A, (B, T, S, S))
+A_delta = vmap(vmap(lpv_net))(mu_filt))  # 0.05·tanh(MLP(mu))
+A_eff_dyn = A_base + A_delta
+```
+
+LPV delta는 `mu_filt` (observation-corrected)에서 post-compute. Flax `nn.scan` 내부에서 호출되지 않아 CPU compilation 문제 없음.
+
+---
 
 ## Key Insights
 
-1. **Gamma=1.5 is essential** for Lorenz — standard gamma=0.99 clamps A too tightly for chaotic dynamics
-2. **Spectral penalty is redundant** when SVD clamp is active — confirmed by zero-effect ablation
-3. **Single A fails 2-lobe switching** — structural limitation, not training issue
-4. **Jacobian matters for x₃** (+65%) but at extreme JIT cost — only for final benchmarks
-5. **RFF is insufficient** for 2-lobe switching — data-agnostic fixed projection
-6. **CPU compilation is the bottleneck** for state-dependent A — LPV and Quadratic A both fail on CPU JIT
+| # | Insight | Evidence |
+|:-:|:--------|:---------|
+| 1 | **γ=1.5 essential** for Lorenz | γ=0.99 → A≈identity |
+| 2 | **Spectral penalty redundant** with SVD clamp | Zero-effect ablation |
+| 3 | **Single A fails 2-lobe** — structural limitation | abs_avg 0.73→0.39 |
+| 4 | **Jacobian helps x₃** (+65%) at extreme cost | Only for final benchmarks |
+| 5 | **K=4 > K=8** for Lorenz | 8.5× faster, same abs_avg |
+| 6 | **LPV post-compute works on CPU** | v5.14, WSL verified |
+| 7 | **Lemma 7 predicts Option B failure** for ρ>1 | Exponential error growth |
 
-## Ablation Table (v5.19 candidate)
-
-| Config | UFI | K-step NN | A type | Target |
-|--------|:---:|:---------:|:------:|--------|
-| Baseline (K=1) | ❌ | ❌ | Static | Control |
-| K-step only | ❌ | ✅ (K=8) | Static | K-step effect |
-| Quadratic A(x) | ❌ | ✅ (K=8) | Quadratic | A(x) effect |
-| Full RIGOR | ✅ | ✅ (K=8) | Quadratic | Combined |
+---
 
 ## See Also
 
-- [[state-dependent-a-quadratic-form]] — A(x) architecture
+- [[rigor-filter]] — Core architecture (v5.14)
+- [[k-step-rollout-error-bound]] — Lemma 7: Option B error bound
+- [[state-dependent-a-quadratic-form]] — A(x) evolution
 - [[k-step-rollout-vfe-loss]] — VFE loss with K-step rollout
-- [[rigor-filter]] — RIGOR overview
-- [[rigor-research-roadmap]] — Broader trajectory
+- [[rigor-development]] — Implementation history

@@ -1,125 +1,130 @@
 ---
-title: "RIGOR Research Roadmap — UKF + Sigma Cloud Conditioning"
+title: "RIGOR Research Roadmap — UKF + NN Residual Rollout (v5.14)"
 created: 2026-05-07
 updated: 2026-05-14
 type: concept
-tags: [rigor, research, roadmap, planning, ufi, sigma-cloud, paper, lorenz, state-dependent-dynamics]
+tags: [rigor, research, roadmap, planning, ufi, rollout, lorenz, state-dependent-dynamics]
 confidence: high
 ---
 
-# RIGOR Research Roadmap — UKF + Sigma Cloud Conditioning
+# RIGOR Research Roadmap — UKF + NN Residual Rollout
 
 ## Core Novelty
 
-**UKF sigma point cloud를 structured neural conditioning feature로 활용하는 최초의 접근.**
+**UKF sigma point cloud를 structured neural conditioning feature로 활용 + NN residual을 K-step rollout에 전파하는 최초의 접근.**
 
-기존 differentiable filtering은 UKF의 sigma point를 dynamics propagation에만 사용하고, neural network conditioning에는 covariance (P_pred)나 innovation만 전달했다. RIGOR는 sigma point cloud 자체를 NN에 conditioning input으로 제공하여 UKF가 생성한 고차원 비선형 변형 정보를 dynamics 학습에 직접 활용한다.
+기존 differentiable filtering:
+- UKF sigma point를 dynamics propagation에만 사용, NN conditioning에는 covariance나 innovation만 전달
+- K-step rollout 시 NN residual 무시 (linear skeleton A만 rollout)
+- EnKF는 random ensemble → conditioning feature가 매 iter마다 달라짐
 
-### 근본적 한계 발견 (2026-05-08, Deep Research)
+RIGOR:
+- **UFI + sigma_cond:** Sigma cloud 직접 conditioning → deterministic, zero Monte Carlo error
+- **Option B rollout:** Cached mean residual `NN(μ)`을 K-step rollout에 포함
+- **Lemma 1-7:** 설계 결정의 수학적 정당화 완료
 
-표준 UKF의 근본적 한계: **observation과 correlation이 있는 state만 추정 가능** (Grothe 2012). Bouc-Wen z는 observation y=x와 correlation 0 → UKF의 Kalman gain K_z ≈ 0 → z 추정 불가. ([[bouc-wen-filter-landscape]] 참조)
+---
 
-이것은 RIGOR의 UFI+TE 실패의 **근본 원인**이며, 단순한 engineering 문제가 아니다. 가능한 해결 방향:
+## Recent Milestones
 
-1. **Pure NN (TE-only):** UKF 없이 Conv1D로 z 직접 추정. z corr 0.717 달성 (UFI+TE 0.416 대비 우수). 자유도는 높지만 UKF의 covariance 구조를 잃음.
-2. **UKF + HOC-UKF regularizer:** Grothe (2012)의 higher-order correlation formula를 UFI loss에 통합. 가장 principled한 접근. (보류 — 우선 virtual measurement 검증)
-3. **✅ UKF + Virtual Measurement (TE → pseudo-measurement):** [[higher-order-correlation-ukf|selected]] — TE가 z의 pseudo-measurement를 생성, UKF의 observation을 1D(y=x) → 2D([x, z_hat])로 augment. H = [[1,0,0],[0,0,1]]로 Kalman gain K_z가 자연스럽게 non-zero가 됨. 이론적 근거: Grothe (2012), 실험 검증: test_E 진행 중.
+| Date | Milestone | Status |
+|:----|:----------|:------:|
+| 2026-05-07 | VDP 최적화 완료 (pos=0.997, vel=0.961) | ✅ |
+| 2026-05-11 | K-step rollout NaN fix (clamp + jax.lax.scan) | ✅ |
+| 2026-05-12 | NN residual in rollout (Option B) | ✅ |
+| 2026-05-13 | Pendulum K=8 NN rollout: vel_corr=0.993 | ✅ |
+| 2026-05-13 | Jacobian-corrected rollout (실험적) | ✅ |
+| 2026-05-14 | LPV delta in A_eff_dyn, vfe_loss 통합 | ✅ |
+| 2026-05-14 | Lemma 1-7 증명 완료 | ✅ |
+| 2026-05-14 | Lorenz63 single-lobe: abs_avg=0.73 (K=4, γ=1.5) | ✅ |
 
-### Direction ③ 상세 설계 (Virtual Measurement Approach)
+---
 
-| 구성 요소 | 역할 |
-|-----------|------|
-| **Conv1DEncoder** | observation window → z_hat 예측 (TE-only와 동일 구조, ks=3) |
-| **UKF (d_out=2)** | augmented observation [x, z_hat]으로 x, v, z 공동 추정 |
-| **H matrix** | [[1,0,0],[0,0,1]] — x와 z에 직접 Kalman gain 할당 |
-| **Loss** | MSE on x dim만 (z dim은 TE가 학습) |
-| **UFI** | sigma cloud conditioning으로 x, v dynamics 개선 |
+## Current Status (2026-05-14)
 
-**TE vs UKF의 역할 분리:**
-- TE → z의 temporal pattern 인식 (temporal context 활용)
-- UKF → x, v의 covariance 구조 유지 (SR-UKF stable dynamics)
-- UFI → sigma point cloud conditioning (x, v 비선형성 학습)
+### Completed
 
-이 분리는 additive TE (Phase 1)와 residual carry (Phase 2) 사이의 중간적 접근. NN output(z_hat)이 UKF의 observation으로 자연스럽게 흘러들어가 "NN output이 다시 NN에 feedback"되는 문제 회피.
+| 항목 | 결과 |
+|:----|:-----|
+| **VDP benchmark** | pos=0.997, vel=0.961 (VFE + γ=0.99, 1000 iter) |
+| **Pendulum K=8 NN rollout** | vel_corr=0.993 (UFI+RFF20, Option B) |
+| **Lorenz63 single-lobe** | abs_avg=0.765 (Jacobian, K=4, γ=1.5) |
+| **K-step rollout (A only)** | jax.lax.scan + clamp → NaN-free |
+| **K-step rollout + NN (Option B)** | Cached mean residual → A + NN(μ) rollout |
+| **LPV post-compute** | LPV delta from mu_filt → CPU-friendly |
+| **Lemma 1-7** | All 7 lemmas mathematically verified |
+| **α=1.0 requirement** | Confirmed: α<1 → UKF degenerates to near-EKF → NaN |
 
-**Reference:** [[higher-order-correlation-ukf]], Grothe (2012), [[bouc-wen-dl-parameter-estimation]]
+### In Progress
 
-### Three Information Sources (orthogonal)
+| 항목 | 현재 상태 |
+|:----|:---------|
+| **Lorenz63 two-lobe** | Static A → abs_avg ~0.40 (structural limitation). LPV rollout computed every iter but no significant improvement yet |
+| **K=8 vs K=4 Lorenz** | K=4 converges 8.5× faster, similar abs_avg (0.74) |
+| **Quadratic A(x)** | 설계 완료 (v5.19 plan). Post-compute LPV로 대체 중 |
+| **CPU compilation** | LPV post-compute로 해결. WSL sandbox에서 정상 작동 |
 
-| Source | Type | Content | Status |
-|--------|------|---------|--------|
-| **UFI** | Static geometry | Quadratic expansion of sigma points (state-independent basis) | ✅ VDP 검증 완료 |
-| **Raw cloud** | Dynamic distortion | Per-step nonlinear spread from UKF propagation | ✅ VDP 검증 완료 |
-| **ISAB encoder** | Permutation-invariant | Set Transformer over sigma cloud → compact embedding | 설계 완료, VDP 검증 필요 |
+### Next Steps
 
-## Current Best Config (VDP μ=1.0, 2026-05-07)
+| # | Task | Priority |
+|:-:|:-----|:--------:|
+| 1 | Lorenz63 LPV two-lobe: gamma sweep (1.0→2.0) | 🔴 High |
+| 2 | K=4 convergence analysis (sign-flip 원인 파악) | 🔴 High |
+| 3 | Pendulum K=12+ rollout stability test | 🟡 Medium |
+| 4 | SHM/Duffing benchmark with K-step rollout | 🟡 Medium |
+| 5 | 논문 Structure 확정 — Lemma 1-7 중심 | 🟡 Medium |
+| 6 | Modal GPU for larger benchmarks | 🟢 Low |
 
-| Parameter | Value | 비고 |
-|-----------|-------|------|
-| Activation | GELU (16, 16) | GELU > tanh > ELU 순 |
-| UKF α | 0.01 | Wan & van der Merwe 권장값 검증 |
-| Gating | OFF | 1000 iter에서는 불필요 |
-| Norm bounding | Softsign | tanh 대비 gradient 30배 개선 |
-| residual_scale | Learnable c ∈ (0,1) | Behrmann i-ResNet 스타일 |
-| Loss | VFE + 0.5 × rollout MSE | 정보이론적 multi-step ELBO |
-| **Results** | pos=0.9986, vel=0.9703, RMSE=0.320 | 🏆 역대 최고 |
+---
 
-## Roadmap
+## Ablation Plan
 
-### Phase 1: Multi-System Validation (2~3주)
-- Duffing oscillator (nonlinear stiffness, SHM 연결)
-- Pendulum / cart-pole (control community baseline)
-- **SHM benchmark**: Z24 bridge 또는 IASC-ASCE benchmark (DSLab 연결)
-- 각 시스템별 config 자동 튜닝 or adaptive mechanism
+| Config | UFI | K-step NN | A type | Target |
+|:-------|:---:|:---------:|:------:|:-------|
+| Baseline (K=1) | ❌ | ❌ | Static | Control |
+| K-step only | ❌ | ✅ (K=4-8) | Static | K-step effect |
+| UFI only | ✅ | ❌ | Static | UFI effect |
+| LPV + K-step | ❌ | ✅ (K=4) | LPV | LPV effect |
+| Full RIGOR | ✅ | ✅ (K=4) | LPV | Combined |
 
-### Related Work: Differentiable Filtering Landscape
-
-| Method | Filtering | Dynamics | Uncertainty | Key Diff from RIGOR |
-|--------|:---------:|----------|:-----------:|---------------------|
-| **KalmanNet** (Revach 2021) | KF + learned K | Partially known | MC Dropout (BKN) | Black-box K vs analytic UKF gain |
-| **DVBF** (Karl 2017) | Amortized VAE | Learned latent | Encoder variance | No physical state structure |
-| **EnKF-GPSSM** (Lin 2023) | EnKF ensemble | GP (nonparam) | Ensemble spread | Stochastic vs deterministic sigma |
-| **Koopman+KF** (Chen 2025) | UKF | Koopman linear | UKF covariance | Federated, no NN residual |
-|| **Koopman MPC** (Korda 2018) | None (open-loop) | Lifted linear ($\psi$) | None | Black-box latent, no filtering |
-|| **RIGOR (ours)** | **UKF** | **A(x)·x + NN** | **Built-in P** | Deterministic, interpretable |
-
-### Ablation Study (1~2주)
-- UFI only vs raw cloud only vs UFI+raw vs ISAB+raw
-- 각 조합의 성능 비교 및 scaling 분석 (d_state ↑)
-- ISAB의 d_state ≥ 10에서의 효용성 검증
-
-### Phase 3: Paper Writing (2~3주)
-- Target: ML4Dynamics / L4DC (conference) 또는 논문
-- Core contribution: "Sigma Point Cloud Conditioning for Differentiable UKF"
-- 시스템: VDP + Duffing + SHM benchmark
-
-### Phase 4: State-Dependent Dynamics (2026-05-13~, 진행 중)
-- **Lorenz63 2-lobe switching** — static A fails (\|ρ\|≈0.4); requires state-dependent A
-- **LPV (MLP)** → OOM on CPU → abandoned (v5.8–v5.18)
-- **Quadratic A(x) = A₀+A₁⊗x+xᵀA₂x** (v5.19) — pure einsum, Taylor expansion of J(x)·dt
-- **K-step rollout VFE** — multi-step ELBO for dynamics consistency (v5.11–v5.15)
-- Target: Demonstrate A(x) advantage over static A on chaotic systems
-- See [[state-dependent-a-quadratic-form]], [[lorenz63-rigor-experiments]], [[k-step-rollout-vfe-loss]]
+---
 
 ## Timeline
 
 ```
-2026-05-07 (현재): VDP 최적화 완료, 방향성 확정
-2026-05-13: Lorenz63 K-step rollout experiments (static A, single-lobe \|ρ\|=0.77)
-2026-05-14: LPV → Quadratic A(x) evolution, CPU compilation battle
-2026-05-17 (target): Lorenz63 2-lobe switching with Quadratic A(x) (±0.6+)
-2026-06-01: Phase 2 완료 (UFI/ISAB ablation + Lorenz benchmark)
+2026-05-14 (현재): Lorenz63 LPV two-lobe 실험, 코드리뷰 fix
+2026-05-17 (target): Lorenz63 two-lobe abs_avg ≥ 0.6
+2026-05-20: SHM/Duffing benchmark 1차 완료
+2026-05-25: 논문 골격 (Introduction + Method + Lemma)
+2026-06-01: 실험 결과 수집 완료
 2026-06-15: 논문 초안 완료
-2026-07: DSLab 접촉, 실험실 방문
-2026-08: POSTECH 대학원 지원
+2026-07-01: 논문 1차 리뷰
 ```
 
+---
+
+## Related Work: Differentiable Filtering Landscape
+
+| Method | Filtering | Dynamics | Uncertainty | Key Diff from RIGOR |
+|:-------|:---------:|:--------:|:-----------:|:--------------------|
+| **KalmanNet** (Revach 2021) | KF + learned K | Partially known | MC Dropout | Black-box K vs analytic UKF |
+| **DVBF** (Karl 2017) | Amortized VAE | Learned latent | Encoder variance | No physical state structure |
+| **EnKF-GPSSM** (Lin 2023) | EnKF ensemble | GP (nonparam) | Ensemble spread | Stochastic vs deterministic |
+| **Koopman+KF** (Chen 2025) | UKF | Koopman linear | UKF cov | No NN residual |
+| **ac-RKN** (Shaj 2020) | RKN | Learned latent | RKN | 1-step loss only |
+| **RIGOR (ours)** | **SR-UKF** | **A(x)·x + NN** | **Built-in P** | **K-step + NN residual** |
+
+---
+
 ## Wikilinks
-- [[rigor-development]] — Main RIGOR development page
-- [[rigor-heuristics-analysis]] — Heuristic audit and theoretical fixes
-- [[rigor-geometry-of-memory-integration]] — Geometry of Memory Trilogy 접목 분석
-- [[gating-ablation-2026-05-07]] — Gating ON vs OFF ablation
-- [[rigor-sigma-point-research]] — Research landscape and gap analysis
-- [[square-root-unscented-kalman-filter]] — Standard SR-UKF formulation
-- [[higher-order-correlation-ukf]] — Grothe (2012) HOC-UKF: 근본적 한계와 해결 방향
-- [[polynomial-unscented-kalman-filter]] — Cherian & Servadio (2026) Polynomial UKF
+
+- [[rigor-filter]] — Core RIGOR architecture
+- [[rigor-development]] — Implementation history
+- [[ukf-enkf-gradient-variance-analysis]] — Lemma 1-3
+- [[a-plus-nn-svd-projection-analysis]] — Lemma 4-5
+- [[ufi-conditioning-superiority]] — Lemma 6
+- [[k-step-rollout-error-bound]] — Lemma 7
+- [[lorenz63-rigor-experiments]] — Lorenz benchmark
+- [[k-step-rollout-vfe-loss]] — Loss design
+- [[state-dependent-a-quadratic-form]] — A(x) evolution
+- [[square-root-unscented-kalman-filter]] — SR-UKF base
