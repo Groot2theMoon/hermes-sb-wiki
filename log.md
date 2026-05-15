@@ -165,3 +165,15 @@
   - λ의 이론적 정당화: 존재 이유($Q_K \neq Q$) + 범위($\rho$, $K$, clipping) + 값(empirical)
   - `rollout_1step_loss` 제거 근거 (KL_1step과 redundant)
 - **Backfill:** rigor-filter.md, rigor-development.md → wikilinks 추가 예정
+
+## [2026-05-15] trending-scan | Script timeout recovery via web_search | 4 new concepts
+- **Script:** `trending-papers-wrapper.py` timed out after 110s (subprocess timeout)
+- **Recovery:** arXiv MCP → 429 + timeout → `web_search` with `site:arxiv.org 2605` queries
+- **Scanned categories:** cs.LG, cs.CE, physics.flu-dyn, cond-mat.mtrl-sci, physics.comp-ph
+- **New concept pages (4):**
+  - [[hodge-spectral-duality-neural-operator]] — HSD-NO: Topology-Preserving NO via Hodge Decomposition (ICML 2026)
+  - [[fp-bayesian-pinn]] — fpBPINN: Functional-Prior Bayesian PINNs for PDE-Constrained Inversion
+  - [[ale-gno-transformer-fsi]] — ALE-Consistent GNO-Transformer Framework for FSI
+  - [[multiscale-materials-neural-operators]] — Multiscale Modeling of Materials and NO — Bhattacharya Review
+- **Skipped (already in wiki):** Iso-FNO (2605.02597), Replay Continual Learning PINO (2605.04832), CATO (2605.09016)
+- Total pages: 564 → 568 (+4)

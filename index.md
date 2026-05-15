@@ -2,7 +2,7 @@
      2|     2|     2|     2|     2|
      3|     3|     3|     3|     3|> Content catalog. Read this first.
      4|     4|     4|     4|     4|> Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-     5|     5|     5|     5|     5|> Last updated: 2026-05-15 | Total pages: 564
+     5|     5|     5|     5|     5|> Last updated: 2026-05-15 | Total pages: 568
      6|     6|     6|     6|     6|
      7|     7|     7|     7|     7|## Entities
      8|     8|     8|     8|     8|
@@ -206,8 +206,9 @@
    204|   202|   201|   200|   200|- [[agent-scaling]] — Agent Scaling Systems — Google Research
    205|   203|   202|   201|   201|- [[ai-hallucination-physics]] — AI Hallucination in Fluid/Physics Simulation
    206|   204|   203|   202|   202|- [[ai-research-automation]] — AI Research Automation (Nature 2026)
-   207|   205|   204|   203|   203|- [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
-   208|   206|   205|   204|   204|- [[aol-almost-orthogonal-layers]] — AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks
+- [[ai-scientific-taste]] — Sci Taste — AI for Scientific Taste
+- [[ale-gno-transformer-fsi]] — ALE-Consistent GNO-Transformer Framework for Fluid-Structure Interaction
+- [[aol-almost-orthogonal-layers]] — AOL — Almost-Orthogonal Layers for Efficient General-Purpose Lipschitz Networks
    209|   207|   206|   205|   205|- [[attentional-filtering]] — Attentional Filtering (AF) — Dynamic System State Estimation as an Attention Mechanism
    210|   208|   207|   206|   206|- [[auto-diff-data-assimilation]] — Auto-differentiable Data Assimilation — Co-learning States, Dynamics, and Filtering Algorithms
    211|   209|   208|   207|   207|- [[autoencoder-rom]] — Autoencoder-Based Reduced Order Models (ROM)
@@ -297,8 +298,9 @@
    294|   292|   291|   290|   290|- [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
    295|   293|   292|   291|   291|- [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
    296|   294|   293|   292|   292|- [[fluid-dynamics]] — Fluid Dynamics
-   297|   295|   294|   293|   293|- [[fm-dem-pore-network]] — FM-DEM — Fiber-level Discrete Element Model for Porous Media
-   298|   296|   295|   294|   294|- [[fourier-feature-embeddings]] — Fourier Feature Embeddings
+- [[fm-dem-pore-network]] — FM-DEM — Fiber-level Discrete Element Model for Porous Media
+- [[fp-bayesian-pinn]] — fpBPINN — Functional-Prior Bayesian PINNs for PDE-Constrained Inversion
+- [[fourier-feature-embeddings]] — Fourier Feature Embeddings
    299|   297|   296|   295|   295|- [[fourier-neural-operator]] — Fourier Neural Operator (FNO)
    300|   298|   297|   296|   296|- [[free-energy-principle]] — Free Energy Principle — Variational Free Energy Minimization as a Unified Brain Theory
    301|   299|   298|   297|   297|- [[function-space-variational-inference-bnn]] — Generalized Function-Space Variational Inference for Bayesian Neural Networks
@@ -325,8 +327,9 @@
    322|   320|   319|   318|   318|- [[higher-order-correlation-ukf]] — Higher-Order Correlation UKF (HOC-UKF) — Grothe (2012)
    323|   321|   320|   319|   319|- [[higher-order-unscented-transform]] — Higher-Order Unscented Transform — 4th Moment Matching for Sigma Points
    324|   322|   321|   320|   320|- [[hilbert-simplex-geometry]] — Non-linear Embeddings in Hilbert Simplex Geometry
-   325|   323|   322|   321|   321|- [[hmm-tutorial]] — Hidden Markov Model — Tutorial
-   326|   324|   323|   322|   322|- [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
+- [[hmm-tutorial]] — Hidden Markov Model — Tutorial
+- [[hodge-spectral-duality-neural-operator]] — HSD-NO — Topology-Preserving Neural Operator via Hodge Spectral Duality (ICML 2026)
+- [[how-to-read-a-paper]] — How to Read a Paper — Three-Pass Method (S. Keshav)
    327|   325|   324|   323|   323|- [[hpinns-inverse-design]] — hPINNs — Physics-Informed Neural Networks with Hard Constraints for Inverse Design
    328|   326|   325|   324|   324|- [[hs-fno-history-space-fno]] — HS-FNO: History-Space Fourier Neural Operator for Non-Markovian PDEs
    329|   327|   326|   325|   325|- [[hybrid-fno-lbm]] — Hybrid FNO-LBM — Fourier Neural Operator-Lattice Boltzmann Method Coupling
@@ -409,8 +412,9 @@
    406|   404|   403|   402|   402|- [[multi-agent-investment]] — Multi-Agent LLM Investment System
    407|   405|   404|   403|   403|- [[multi-dimensional-scaling]] — Multi-Dimensional Scaling (MDS)
    408|   406|   405|   404|   404|- [[multi-fidelity-surrogate-composites]] — Multi-fidelity Surrogate Modeling for Composite Mechanics — Comprehensive Review
-   409|   407|   406|   405|   405|- [[multi-scaled-ukf]] — Multi-Scaled Unscented Kalman Filter — Per-State Scaling
-   410|   408|   407|   406|   406|- [[muon-optimizer]] — Muon Optimizer for LLM Training
+- [[multi-scaled-ukf]] — Multi-Scaled Unscented Kalman Filter — Per-State Scaling
+- [[multiscale-materials-neural-operators]] — Multiscale Modeling of Materials and Neural Operators — Bhattacharya Review
+- [[muon-optimizer]] — Muon Optimizer for LLM Training
    411|   409|   408|   407|   407|- [[natural-gradient-bayesian-filtering]] — Natural Gradient Bayesian Filtering — Geometry-Aware Gaussian Filtering
    412|   410|   409|   408|   408|- [[needle-punching-process-jca-mapping]] — Needle Punching Process — Microstructure — JCA Parameter Mapping
    413|   411|   410|   409|   409|- [[neural-ekf-structural-systems]] — Neural Extended Kalman Filter for Structural Systems — Liu, Chatzi et al. (2022)
