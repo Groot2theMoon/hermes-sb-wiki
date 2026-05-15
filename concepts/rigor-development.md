@@ -184,3 +184,4 @@ All experiments: VDP μ=1.0, dt=0.1, steps=500, obs_std=0.3, N_BATCH=4, SEED=43,
 - [[lorenz63-rigor-experiments]] — Lorenz benchmark results
 - [[rigor-filter]] — Architecture overview
 - [[rigor-research-roadmap]] — Research trajectory
+- [[rigor-loss-structure-theory]] — VFE + K-step plain MSE theory

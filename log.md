@@ -137,13 +137,6 @@
 
 ## [2026-05-15] maintenance | Wiki maintenance — index fix, frontmatter, raw cleanup
 
-## [2026-05-15] patch | 4 RIGOR wiki pages — 코드리뷰 반영 전면 업데이트
-
-- **rigor-filter.md**: Full rewrite — v5.14 architecture, latest benchmarks (Pendulum K=8 vel=0.993, Lorenz63), Lemma 1-7 references, outdated experiment log removed
-- **rigor-research-roadmap.md**: Timeline updated from "2026-05-07 (현재)" → 2026-05-14. α=0.01 → α=1.0. Bouc-Wen abandoned direction removed. Current milestones added
-- **rigor-development.md**: Fixed "PyTorch" → "JAX/Flax" (2 locations). Removed aspirational v5.15-v5.19 from changelog (not implemented)
-- **lorenz63-rigor-experiments.md**: Updated — Phase 3 LPV OOM narrative → LPV post-compute success. Added LPV post-compute code snippet. Updated insight table with Lemma 7 reference
-
 - **index.md:** page count 560→564, added missing entry for [[differentiable-sigma-point-quadrature]]
 - **concepts/vdp-benchmark-v2-v3.md:** added YAML frontmatter (missing schema violation)
 - **differentiable-sigma-point-quadrature.md:** moved from root → concepts/ (was miscategorized at root level)
@@ -161,3 +154,14 @@
   - concepts/koopman-mpc-linear-predictors-korda18.md — Koopman MPC — RIGOR A+NN과의 비교
 - **Backfill:** rigor-research-roadmap, variational-bayes-adaptive-kalman-filter
 - Total pages: 561 → 563
+
+## [2026-05-15] concept | rigor-loss-structure-theory — VFE + K-step plain MSE 이론적 정당화
+
+- **새 페이지:** `concepts/rigor-loss-structure-theory.md` — 12.7KB
+- **핵심 내용:**
+  - VFE 유도 (NLL + KL_cov + KL_1step) — 정보이론적 기원
+  - $Q_K \neq Q$ 증명: K-step transition noise covariance ≠ Q
+  - $\rho(A_{\text{eff}})$ 의존성: $\rho>1$에서 $Q^{-1}$ weight 부정확
+  - λ의 이론적 정당화: 존재 이유($Q_K \neq Q$) + 범위($\rho$, $K$, clipping) + 값(empirical)
+  - `rollout_1step_loss` 제거 근거 (KL_1step과 redundant)
+- **Backfill:** rigor-filter.md, rigor-development.md → wikilinks 추가 예정

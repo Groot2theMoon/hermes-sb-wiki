@@ -180,6 +180,7 @@ RIGOR의 설계 결정은 다음 7개 Lemma로 수학적으로 정당화된다:
 - [[a-plus-nn-svd-projection-analysis]] — Lemma 4-5
 - [[ufi-conditioning-superiority]] — Lemma 6
 - [[k-step-rollout-error-bound]] — Lemma 7
+- [[rigor-loss-structure-theory]] — VFE + K-step plain MSE: 이론적 정당화
 - [[square-root-unscented-kalman-filter]] — SR-UKF base algorithm
 - [[dvbf-karl16]] — DVBF (closest variational competitor)
 - [[bayesian-kalmannet-dahan23]] — Bayesian KalmanNet
