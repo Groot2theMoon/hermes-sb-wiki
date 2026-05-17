@@ -184,3 +184,18 @@
   - [[multiscale-materials-neural-operators]] — Multiscale Modeling of Materials and NO — Bhattacharya Review
 - **Skipped (already in wiki):** Iso-FNO (2605.02597), Replay Continual Learning PINO (2605.04832), CATO (2605.09016)
 - Total pages: 564 → 568 (+4)
+
+## [2026-05-17] trending-scan | Script timeout → web_search recovery | 5 new concept(s), 1 updated
+- **Script:** `trending-papers-wrapper.py` timed out after 110s (subprocess.TimeoutExpired)
+- **Recovery:** arXiv MCP (429 + timeout) → `web_search` with `site:arxiv.org 2605` queries
+- **Scanned categories:** cs.LG, cs.CE, physics.comp-ph, cond-mat.mtrl-sci
+- **New concept pages (5):**
+  - [[nest-neural-schwarz-tiling]] — NEST: local-to-global PDE solver via Neural-Schwarz Tiling (2605.12343)
+  - [[compno-compositional-neural-operator]] — CompNO: Modular NO library, ICLR 2026 (2605.11691)
+  - [[per-loss-adapters-pinn]] — Per-Loss Adapters for PINN gradient conflict regimes (2605.10136)
+  - [[nn-history-dependent-constitutive-laws]] — Thermally consistent constitutive law learning, Bhattacharya/Stuart (2605.14179)
+  - [[jno-jax-neural-operator-library]] — jNO: JAX NO library, Fraunhofer IISB (2605.10159)
+- **Updated concepts (1):**
+  - [[multi-fidelity-surrogate-composites]] — Corrected author info (Wen, Kiyani, Li, Pilla, Karniadakis, Li)
+- **Skipped (already in wiki):** HS-FNO (2605.09523), PeFNO (2605.00509)
+- Total pages: 568 → 571 (+3 net, 5 new + 1 updated)

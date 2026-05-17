@@ -1,7 +1,7 @@
 ---
 title: "Multi-fidelity Surrogate Modeling for Composite Mechanics — Comprehensive Review"
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-17
 type: concept
 tags: [surrogate-model, materials, mechanics, survey, paper]
 confidence: medium
@@ -12,7 +12,7 @@ sources: [arXiv:2605.02871]
 
 ## 개요
 
-**Li, Zhang, Chen (2026)** 의 리뷰 논문^[arXiv:2605.02871]은 **복합재료(composites) 역학**을 위한 **multi-fidelity surrogate modeling** 방법론을 체계적으로 정리한다. 복합재료의 예측 모델링은 고가의 고충실도(hf) 시뮬레이션과 저렴한 저충실도(lf) 데이터를 결합하여 해결한다.
+**Haizhou Wen, Elham Kiyani, Gang Li, Srikanth Pilla, George Em Karniadakis, Zhen Li (2026)** 의 리뷰 논문^[arXiv:2605.02871]은 **복합재료(composites) 역학**을 위한 **multi-fidelity surrogate modeling** 방법론을 체계적으로 정리한다. 복합재료의 예측 모델링은 고가의 고충실도(hf) 시뮬레이션과 저렴한 저충실도(lf) 데이터를 결합하여 해결한다.
 
 ## 핵심 내용
 
