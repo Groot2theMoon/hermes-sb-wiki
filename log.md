@@ -224,3 +224,13 @@
 - **Backfill:** neural-operator, surrogate-model, digital-twin, materials, micromechanics-homogenization, graph-neural-network
 - Total pages: 571 → 586 (+15)
 
+
+
+## [2026-05-17] ingest | 1 Tier 2 paper — Hessian Matching CG-MD
+
+- **Raw source:** raw/papers/hessian-matching-cg-molecular-dynamics.md — HVP matching for CG MD (2605.12823)
+- **Concept page:** [[hessian-matching-cg-molecular-dynamics]] — Force matching + HVP matching for free-energy surface curvature
+- **Entity pages (2):** [[sanya-murdeshwar]], [[razvan-marinescu]]
+- **Backfill:** surrogate-model, materials, free-energy-principle
+- Total pages: 586 → 589 (+3)
+

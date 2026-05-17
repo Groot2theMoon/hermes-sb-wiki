@@ -2,7 +2,7 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-17 | Total pages: 586
+> Last updated: 2026-05-17 | Total pages: 589
 
 ## Entities
 
@@ -143,6 +143,7 @@
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
 - [[ralf-drautz]] — Ralf Drautz
 - [[raymond-panneton]] — Raymond Panneton
+- [[razvan-marinescu]] — Razvan Marinescu
 - [[rebecca-willett]] — Rebecca Willett
 - [[remi-dingreville]] — Rémi Dingreville
 - [[ricardo-lebensohn]] — Ricardo A. Lebensohn
@@ -158,6 +159,7 @@
 - [[s-keshav]] — S. Keshav
 - [[sakana-ai]] — Sakana AI
 - [[sam-roweis]] — Sam T. Roweis
+- [[sanya-murdeshwar]] — Sanya Murdeshwar
 - [[sepp-hochreiter]] — Sepp Hochreiter
 - [[sergey-zhdan]] — Sergey A. Zhdan
 - [[seungwon-lee]] — Seungwon Lee (이승원)
@@ -335,6 +337,7 @@
 - [[hamiltonian-neural-networks]] — Hamiltonian Neural Networks — Physics-Embedded Dynamics with Energy Conservation
 - [[hedesh-local-stability-roa]] — Local Stability and ROA for NN Feedback Systems — Hedesh, Wafi & Siami 2025
 - [[hedesh-siami-sector-bound]] — Sector-Bounded Nonlinearity for NN-Controlled Systems — Hedesh & Siami 2024
+- [[hessian-matching-cg-molecular-dynamics]] — Hessian Matching for ML Coarse-Grained Molecular Dynamics
 - [[hierarchical-autoregressive-networks]] — Hierarchical Autoregressive Networks (HAN) for Statistical Systems
 - [[higher-order-correlation-ukf]] — Higher-Order Correlation UKF (HOC-UKF) — Grothe (2012)
 - [[higher-order-unscented-transform]] — Higher-Order Unscented Transform — 4th Moment Matching for Sigma Points
