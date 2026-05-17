@@ -39,6 +39,9 @@ $$\bar{\sigma} = \frac{1}{|V|} \int_V \sigma(x) dV \quad \text{(응력 평균화
 **국소화 방향 (macro → micro):**
 $$\varepsilon(x) = \mathbb{A}(x) : \bar{\varepsilon} \quad \text{(변형 집중)}$$
 
+## 관련 페이지
+- [[polycrystalline-microstructure-hyperspherical-harmonics]] — Generative reconstruction of polycrystalline microstructures using SHSH
+
 ## Wikilinks
 - [[deep-material-network]] — DMN (데이터 기반 균질화)
 - [[fft-homogenization-composites]] — FFT 균질화 (Willot discretization)

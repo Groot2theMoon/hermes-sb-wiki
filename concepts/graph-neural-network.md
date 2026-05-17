@@ -35,6 +35,9 @@ where `m_uv = MSG^(k)(h_u^(k), h_v^(k), e_uv)` encodes edge features `e_uv`. Com
 - **Physical simulations**: Mesh-based GNNs (Pfaff et al., 2021) learned simulators for fluid dynamics, cloth, and rigid bodies.
 - **Molecular modeling**: Equivariant GNNs (SchNet, DimeNet, MACE) predict quantum properties from molecular graphs.
 
+## 관련 페이지
+- [[fast-clebsch-gordan-equivariant-gnn]] — O(L^3) accelerated Clebsch-Gordan tensor products for equivariant GNNs
+
 ## Wikilinks
 - [[graph-neural-ode-structural-dynamics]] — GNODE combining GNN with Neural ODE for structural dynamics
 - [[pigg-graph-kalman-filter]] — PiGGO: Physics-Guided Graph Kalman Filter using GNNs

@@ -2,13 +2,14 @@
 
 > Content catalog. Read this first.
 > Domain: AI/ML × Mechanical Engineering and Physics/Mechanics
-> Last updated: 2026-05-17 | Total pages: 571
+> Last updated: 2026-05-17 | Total pages: 586
 
 ## Entities
 
 - [[acoustipy]] — acoustipy — Python Transfer Matrix Method Package
 - [[albert-gu]] — Albert Gu
 - [[alexander-davydov]] — Alexander Davydov
+- [[ali-r-safi]] — Ali R. Safi
 - [[allen-institute-for-ai]] — Allen Institute for AI
 - [[amit-levy]] — Amit Levy
 - [[andi-lin]] — Andi Lin — Attentional Filtering & Deep Learning for State Estimation
@@ -19,10 +20,13 @@
 - [[andrii-mironchenko]] — Andrii Mironchenko
 - [[anima-anandkumar]] — Anima Anandkumar
 - [[anthony-ohagan]] — Anthony O'Hagan
+- [[anton-bochkarev]] — Anton Bochkarev
+- [[arastu-sharma]] — Arastu Sharma
 - [[ashish-vaswani]] — Ashish Vaswani
 - [[ashwin-gopinath]] — Ashwin Gopinath
 - [[autonomous-learning-robots-kit]] — Autonomous Learning Robots (ALR) — KIT, Gerhard Neumann Group
 - [[balaji-lakshminarayanan]] — Balaji Lakshminarayanan
+- [[benjamin-klusemann]] — Benjamin Klusemann
 - [[bernd-prach]] — Bernd Prach
 - [[bernhard-scholkopf]] — Bernhard Schölkopf
 - [[bing-cui]] — Bing Cui
@@ -44,6 +48,7 @@
 - [[duke-university]] — Duke University
 - [[eduardo-sontag]] — Eduardo Sontag
 - [[eleni-chatzi]] — Eleni Chatzi
+- [[ellwil-sharma]] — Ellwil Sharma
 - [[ezra-winston]] — Ezra Winston
 - [[fabio-brau]] — Fabio Brau
 - [[fedor-bykovskii]] — Fedor A. Bykovskii
@@ -107,6 +112,7 @@
 - [[marco-pavone]] — Marco Pavone — Stanford University, Autonomous Systems
 - [[marcus-haywood-alexander]] — Marcus Haywood-Alexander
 - [[marin-soljacic]] — Marin Soljačić
+- [[markus-kaestner]] — Markus Kästner
 - [[massimo-garai]] — Massimo Garai
 - [[matti-niskanen]] — Matti Niskanen
 - [[mattia-zorzi]] — Mattia Zorzi
@@ -128,12 +134,14 @@
 - [[paris-perdikaris]] — Paris Perdikaris
 - [[patricia-pauli]] — Patricia Pauli
 - [[paul-hamelbeck]] — Paul Hamelbeck
+- [[peng-chen]] — Peng Chen
 - [[penn-state-university]] — Penn State University
 - [[peter-racioppo]] — Peter Racioppo — Robust Filter Attention & Uncertainty-Aware Self-Attention
 - [[philipp-becker]] — Philipp Becker — RKN, Recurrent Kalman Networks
 - [[ping-lin]] — Ping Lin
 - [[piotr-wolanski]] — Piotr Wolański (Piotr Wolanski)
 - [[rahul-krishnan]] — Rahul Krishnan — ML Researcher, Temporal Generative Models
+- [[ralf-drautz]] — Ralf Drautz
 - [[raymond-panneton]] — Raymond Panneton
 - [[rebecca-willett]] — Rebecca Willett
 - [[remi-dingreville]] — Rémi Dingreville
@@ -142,6 +150,7 @@
 - [[richard-norte]] — Richard A. Norte
 - [[ross-girshick]] — Ross Girshick
 - [[ruigang-wang]] — Ruigang Wang (王瑞刚)
+- [[ruoyan-li]] — Ruoyan Li
 - [[ruoyong-yang]] — Ruoyong Yang
 - [[russ-tedrake]] — Russ Tedrake — MIT / TRI, Robotics & Control
 - [[ryan-turner]] — Ryan Turner
@@ -178,6 +187,7 @@
 - [[yann-lecun]] — Yann LeCun
 - [[yee-whye-teh]] — Yee Whye Teh — Bayesian Statistics & Deep Learning
 - [[yifan-zhang]] — Yifan Zhang
+- [[yizhou-sun]] — Yizhou Sun
 - [[yoshua-bengio]] — Yoshua Bengio
 - [[youssef-atalla]] — Youssef Atalla
 - [[youssef-marzouk]] — Youssef M. Marzouk
@@ -225,6 +235,7 @@
 - [[causal-semantic-xai-segmentation]] — Causal XAI — SAM vs SLIC Segmentation Trade-Off
 - [[centimeter-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
 - [[centimeter-scale-nanomechanical-resonators]] — Centimeter-Scale Nanomechanical Resonators with Low Dissipation
+- [[cldnet-flood-digital-twin-swe-surrogate]] — CLDNet: Conditional Latent Dynamics Network for Flood Digital Twins
 - [[cloud-gpu-compute-platforms]] — Cloud GPU Compute Platforms — Modal vs RunPod vs Beam
 - [[compno-compositional-neural-operator]] — CompNO — Compositional Neural Operators for Multi-Dimensional Fluid Dynamics
 - [[compressibility-and-speed-of-sound]] — Compressibility and Speed of Sound — Newton vs Laplace
@@ -293,9 +304,11 @@
 - [[exact-affine-conditioning-ensemble-kalman-update]] — Exact Affine Conditioning Beyond Gaussians — Unique Characterization of the Ensemble Kalman Update
 - [[extended-kalman-filter]] — Extended Kalman Filter (EKF)
 - [[factorized-inference-dmm]] — Factorized Inference in Deep Markov Models — Multimodal Time Series
+- [[fast-clebsch-gordan-equivariant-gnn]] — Fast Contracted Clebsch-Gordan Tensor Products for Equivariant GNNs
 - [[fft-homogenization-composites]] — FFT-Based Homogenization for Composites — Willot Discretization & 3D Fibrous
 - [[fft-homogenization-polymer-composites]] — FFT-Based Homogenization for Composite & Biological Materials
 - [[flow-based-mcmc]] — Flow-based MCMC for Lattice Field Theory
+- [[flow-reconstruction-sensor-placement-policy]] — Flow Field Reconstruction with Sensor Placement Policy Learning
 - [[fluid-dynamics]] — Fluid Dynamics
 - [[fm-dem-pore-network]] — FM-DEM — Fiber-level Discrete Element Model for Porous Media
 - [[fourier-feature-embeddings]] — Fourier Feature Embeddings
@@ -460,6 +473,7 @@
 - [[pisml-sparse-neural]] — PISML — Physics-Informed Sparse ML (Sparse + Neural Residual for Dynamics Discovery)
 - [[platonic-universe-foundation-models]] — The Platonic Universe — Do Foundation Models See the Same Sky?
 - [[polyanskiy2024-refractiveindex-database]] — Refractiveindex.info Database of Optical Constants
+- [[polycrystalline-microstructure-hyperspherical-harmonics]] — Generative Reconstruction of Polycrystalline Microstructures using Symmetrized Hyperspherical Harmonics
 - [[polynomial-unscented-kalman-filter]] — Polynomial Unscented Kalman Filter — PUKF/QUKF/CUT Higher-Order Measurement Update
 - [[poroelastic-dmn-research]] — 7×7 Acusto-Elastic DMN — 확장 연구 분석
 - [[poroelasticity-thermoelasticity-correspondence]] — Poroelasticity–Thermoelasticity Correspondence ([[andrew-norris|Norris]] 1992)
@@ -509,6 +523,7 @@
 - [[solar-sail-mfbo]] — Solar Sail MFBO (Multi-Fidelity Bayesian Optimization)
 - [[solid-mechanics]] — Solid Mechanics
 - [[solis-physics-informed-surrogates]] — SOLIS: Physics-Informed Learning of Interpretable Neural Surrogates
+- [[sparse-moe-multiphysics-negative-transfer]] — Sparse MoE Multi-Physics Negative Transfer
 - [[spectral-bias-pinn]] — Spectral Bias in PINNs
 - [[spectral-margin-generalization-bounds]] — Spectrally-Normalized Margin Bounds for Neural Network Generalization
 - [[spectral-normalization-gan]] — Spectral Normalization for GANs — Lipschitz Constraint via Weight Normalization

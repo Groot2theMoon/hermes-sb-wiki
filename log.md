@@ -199,3 +199,28 @@
   - [[multi-fidelity-surrogate-composites]] — Corrected author info (Wen, Kiyani, Li, Pilla, Karniadakis, Li)
 - **Skipped (already in wiki):** HS-FNO (2605.09523), PeFNO (2605.00509)
 - Total pages: 568 → 571 (+3 net, 5 new + 1 updated)
+
+
+## [2026-05-17] ingest | 5 Tier 2 papers — Trending Scan (weekly digest)
+
+- **Raw sources (5):**
+  - raw/papers/sparse-moe-multiphysics-negative-transfer.md — Sparse MoE for SciML negative transfer (2605.15179)
+  - raw/papers/flow-reconstruction-sensor-placement-policy.md — RL sensor placement for flow reconstruction (2605.14137)
+  - raw/papers/cldnet-flood-digital-twin-swe-surrogate.md — CLDNet flood digital twin SWE surrogate (2605.13761)
+  - raw/papers/fast-clebsch-gordan-equivariant-gnn.md — O(L^3) CG tensor products for equivariant GNNs (2605.15073)
+  - raw/papers/polycrystalline-microstructure-hyperspherical-harmonics.md — Generative 3D microstructure from 2D EBSD (2605.14898)
+- **Concept pages (5):**
+  - [[sparse-moe-multiphysics-negative-transfer]] — Sparse MoE routing for multi-PDE SciML
+  - [[flow-reconstruction-sensor-placement-policy]] — RL sensor placement + neural operator flow reconstruction
+  - [[cldnet-flood-digital-twin-swe-surrogate]] — Conditional latent dynamics SWE surrogate (1,435x speedup)
+  - [[fast-clebsch-gordan-equivariant-gnn]] — O(L^3) accelerated CG for equivariant GNN potentials
+  - [[polycrystalline-microstructure-hyperspherical-harmonics]] — SHSH-based generative 3D microstructure reconstruction
+- **Entity pages (10):**
+  - [[ellwil-sharma]], [[arastu-sharma]] — Sparse MoE authors
+  - [[ruoyan-li]], [[yizhou-sun]] — Sensor placement policy authors
+  - [[peng-chen]] — CLDNet corresponding author
+  - [[anton-bochkarev]], [[ralf-drautz]] — Fast CG tensor product authors
+  - [[ali-r-safi]], [[markus-kaestner]], [[benjamin-klusemann]] — Microstructure reconstruction authors
+- **Backfill:** neural-operator, surrogate-model, digital-twin, materials, micromechanics-homogenization, graph-neural-network
+- Total pages: 571 → 586 (+15)
+
